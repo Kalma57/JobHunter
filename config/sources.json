@@ -1,0 +1,29 @@
+{
+  "_about": "Data for the company agents (stage 8, docs/agents/company-agents.md). Adding a company on an existing system = one entry here, no code change. Keywords mirror docs/search.md.",
+  "keywords": {
+    "_rules": "Whole words, case-insensitive. English: a trailing s also matches (Intern -> Interns). Hebrew: prefix letters and endings also match (סטודנט -> לסטודנטים, סטודנטית).",
+    "daily": ["Student", "Intern", "Internship", "סטודנט"],
+    "weekly": ["Student", "Intern", "Internship", "סטודנט", "Junior", "Graduate", "Early Career", "Entry Level"]
+  },
+  "israel": {
+    "country_codes": ["IL"],
+    "names": ["Israel", "ישראל",
+              "Tel Aviv", "Tel-Aviv", "Jerusalem", "Haifa", "Herzliya", "Petah Tikva", "Petach Tikva", "Ramat Gan",
+              "Ra'anana", "Raanana", "Netanya", "Rehovot", "Yokneam", "Caesarea", "Hod Hasharon", "Kfar Saba",
+              "Rosh HaAyin", "Rosh Haayin", "Beer Sheva", "Be'er Sheva", "Beersheba", "Airport City", "Or Yehuda",
+              "Modiin", "Modi'in", "Holon", "Bnei Brak", "Givatayim", "Rishon LeZion", "Ness Ziona", "Lod",
+              "Migdal HaEmek", "Migdal Haemek", "Kiryat Gat", "Ashdod", "Ashkelon", "Beit Shemesh",
+              "תל אביב", "ירושלים", "חיפה", "הרצליה", "פתח תקווה", "רמת גן", "רעננה", "נתניה", "רחובות", "יקנעם",
+              "באר שבע", "כפר סבא", "הוד השרון", "ראש העין", "מודיעין", "חולון", "קריית גת", "אשדוד"]
+  },
+  "systems": {
+    "greenhouse": [
+      {"company": "Nebius", "slug": "nebius"},
+      {"company": "ScaleOps", "slug": "scaleops"},
+      {"company": "Cato Networks", "slug": "catonetworks"}
+    ],
+    "lever": [
+      {"company": "Mobileye", "slug": "mobileye", "host": "api.eu.lever.co"}
+    ]
+  }
+}
