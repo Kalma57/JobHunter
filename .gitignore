@@ -7,3 +7,4 @@ node_modules/
 .idea/
 state/board/
 state/plan/
+state/runs/
