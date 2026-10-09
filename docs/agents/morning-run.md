@@ -11,7 +11,7 @@
 
 **0. תאריך.** `D` = התאריך היום באזור זמן ישראל (YYYY-MM-DD). `<state>` = `state` אלא אם נאמר אחרת.
 
-**1. תתי-הסוכנים.** (יתווסף בשלבים 8-9: `python -m jobhunter.agents run --today D`.) אם המודול לא קיים — מדלגים.
+**1. תתי-הסוכנים.** `.venv\Scripts\python.exe -m jobhunter.agents run --today D --state <state>` — ואם היום **יום ראשון**, להוסיף `--weekly` (רשת הביטחון: מילות חיפוש רחבות יותר). קוד בלבד ([`company-agents.md`](company-agents.md)): המשרות החדשות נכנסות ל-`<state>/inbox/D.json`, והדוח נשמר ל-`<state>/runs/D-agents.json`. מהדוח לוקחים `new`, `errors` ו-`warnings` — הם נכנסים לשורת הריצה ולהתראה (צעדים 6-7). חברה שנכשלה לא עוצרת את הריצה. במצב DRY RUN — מריצים עם `--state` של תיקיית בדיקה.
 
 **2. תמונת מצב של הלוח.** `ArtifactData list` על `jobs` עם `query.limit` 1000 ו-`out_dir` = `<state>/board`. לרשום את ה-`version` של כל משרה מתוך התוצאה — צריך אותו לכל עדכון.
 
@@ -25,9 +25,9 @@
 
 **5. כלל 30 הימים.** לכל פריט ב-`compactions`: `update` עם ה-`version` מצעד 2.
 
-**6. שורת ריצה.** קודם `get` על `runs` / `D` (אם קיימת — להשתמש ב-`version` שלה כ-`if_version`), ואז `set`: `{at: <עכשיו UTC>, kind: "daily", summary: "<N> חדשות · <M> סוננו · <K> כפילויות"}`.
+**6. שורת ריצה.** קודם `get` על `runs` / `D` (אם קיימת — להשתמש ב-`version` שלה כ-`if_version`), ואז `set`: `{at: <עכשיו UTC>, kind: "daily" / "weekly", summary: "<N> חדשות · <M> סוננו · <K> כפילויות", errors: [...], warnings: [...]}` (השגיאות והאזהרות מדוח צעד 1).
 
-**7. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות הבוקר. הלוח: https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu"`.
+**7. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות הבוקר. הלוח: https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu"`. אם בדוח של צעד 1 יש שגיאות או אזהרות — להוסיף בסוף: `" ⚠️ לא נקראו: <שמות החברות>"` / `" ⚠️ בדוק: <שמות החברות>"`.
 
 **8. גיבוי.** `git add state/seen state/inbox`, commit `"Morning run D"`, `git push`. (`state/board` ו-`state/plan` לא נכנסים ל-git.)
 
