@@ -5,3 +5,5 @@ __pycache__/
 .env
 node_modules/
 .idea/
+state/board/
+state/plan/
