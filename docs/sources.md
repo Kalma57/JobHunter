@@ -15,7 +15,7 @@
 | 2 | SecretHunter (secrethunter.io) | |
 | 3 | Glassdoor | |
 
-## חברות — 39 (סוכן לכל מערכת גיוס, 4-6 סוכנים)
+## חברות — 39 (שלוש שכבות, ראה למטה)
 מערכת הגיוס של כל חברה תזוהה בשלב 8 (בדיקת קריאה בלבד). העמודה "סוג" מסמנת חברות השמה/מיקור חוץ — מפרסמות משרות בשם חברות אחרות, נשמרות לבקשת המשתמש.
 
 | # | חברה | משרות (מקור: פוסט, 10/2026) | סוג |
@@ -60,23 +60,44 @@
 | 38 | Cato Networks | 34 | |
 | 39 | Teva Pharmaceuticals | 33 | |
 
-## זיהוי מערכות הגיוס (שלב 8, צעד 1 — בתהליך, 10/10/2026)
+## זיהוי מערכות הגיוס (שלב 8, צעד 1 — הושלם, 10/10/2026)
 
-| מערכת | חברות שאומתו | איך אומת / כתובת |
+כל 39 החברות נבדקו (קריאה בלבד). השכבות **אושרו ע"י המשתמש** (10/10/2026).
+
+### שכבה 1 — מערכות ציבוריות (סוכן אחד לכל מערכת, קוד בלבד, נבנים ראשונים)
+
+| מערכת | חברות | איך קוראים |
 |---|---|---|
-| Greenhouse | Nebius (42 בישראל), ScaleOps (32), Cato Networks (34) | `https://boards-api.greenhouse.io/v1/boards/<slug>/jobs` — slugs: `nebius`, `scaleops`, `catonetworks` |
-| Lever (EU) | Mobileye (160 בישראל) | `https://api.eu.lever.co/v0/postings/mobileye?mode=json` |
+| Greenhouse | Nebius (42 בישראל), ScaleOps (32), Cato Networks (34) | GET `https://boards-api.greenhouse.io/v1/boards/<slug>/jobs` — slugs: `nebius`, `scaleops`, `catonetworks` |
+| Lever (EU) | Mobileye (160 בישראל) | GET `https://api.eu.lever.co/v0/postings/mobileye?mode=json` |
 | Workday | NVIDIA, KLA, Applied Materials | POST `https://<host>/wday/cxs/<tenant>/<site>/jobs` עם `{"appliedFacets":{},"limit":20,"offset":0,"searchText":"..."}` — `nvidia.wd5.myworkdayjobs.com/nvidia/NVIDIAExternalCareerSite`, `kla.wd1.myworkdayjobs.com/kla/Search`, `amat.wd1.myworkdayjobs.com/amat/External` |
-| Comeet | DriveNets, HiBob | מזהי משרה בפורמט Comeet (`BD.24D`, `E1.248`) בעמודי הקריירה. ה-API של Comeet דורש company uid + token מתוך עמוד הקריירה — לחלץ בשלב הבנייה |
-| אתר עצמי | Check Point (`careers.checkpoint.com`), IAI (`jobs.iai.co.il`), Palo Alto (`jobs.paloaltonetworks.com`), Amazon (`amazon.jobs`), Google, Apple, Microsoft, Oracle | עמוד המשרות על דומיין של החברה |
-| חוסם קריאה אוטומטית | Elbit (HTTP 403), Rafael (העמוד נבנה בדפדפן, מגיע ריק) | |
-| עוד לא נבדקו | Matrix, Ness, ONE, GAV, Deloitte, abra, SolarEdge, CyberArk, QualityAI, Qualcomm, DRS RADA, Commit, monday.com, Aman, G-STAT, Experis, Nova, Wix, Bynet, Teva | |
+| Eightfold (**חדש**) | Qualcomm (37 בישראל), Teva (35 בישראל) | Qualcomm: GET `https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=<מילה>&location=Israel&start=0`. Teva: GET `https://www.careers.teva/api/apply/v2/jobs?domain=tevapharm.com&location=Israel&start=0&num=10`. ⚠️ כל דומיין עונה רק לאחת משתי הכתובות (השנייה 403) |
+| Comeet | DriveNets, HiBob, Nova, SolarEdge (כנראה) | מזהי משרה בפורמט Comeet בעמודי הקריירה; Nova מציגה משרות בנתיב `novami.com/comeetitem/...`. SolarEdge — משרות שלה מופיעות באתרים חיצוניים "Powered by Comeet", ואתר החברה חוסם (403); לאמת בבנייה. ה-API של Comeet דורש company uid + token מתוך עמוד הקריירה — לחלץ בשלב הבנייה |
 
-⚠️ מלכודת: SmartRecruiters מחזיר HTTP 200 גם לחברה שלא קיימת (רשימה ריקה) — לבדוק `totalFound`, לא את קוד התשובה.
+### שכבה 2 — חברות גדולות עם אתר עצמי (מתאם לכל אחת, אחרי שכבה 1)
 
-### הצעה (ממתינה לאישור המשתמש): שלוש שכבות
-1. **מערכות ציבוריות** (Greenhouse, Lever, Workday, Comeet) — סוכן אחד לכל מערכת, קוד בלבד. נבנים ראשונים.
-2. **חברות גדולות עם אתר עצמי** (Amazon, Google, Apple, Microsoft...) — מתאם נפרד לכל אחת. אחרי שכבה 1.
-3. **חסומות / מסובכות** (Elbit, Rafael, IAI, כנראה גם חברות ההשמה) — בלי סוכן; המשרות שלהן מגיעות דרך סוכני אתרי החיפוש.
+| חברה | אתר המשרות |
+|---|---|
+| Check Point | `careers.checkpoint.com` |
+| Palo Alto Networks (**כולל CyberArk**) | `jobs.paloaltonetworks.com` — `careers.cyberark.com` מפנה היום ל-`paloaltonetworks.com/idira` (המיזוג) |
+| Amazon (כולל Annapurna Labs) | `amazon.jobs` |
+| Google, Apple, Microsoft, Oracle | אתרי הקריירה שלהן |
+| monday.com | `monday.com/careers/<uuid>` (אתר עצמי) |
+| Wix | `careers.wix.com/positions` (אתר Wix) |
+| Deloitte | `careers.deloitte.co.il` |
+| QualityAI (לשעבר Qualitest) | `careers.qualitestgroup.com` |
+
+### שכבה 3 — בלי סוכן משלהן (המשרות מגיעות דרך סוכני אתרי החיפוש, שלב 9)
+
+| חברה | סיבה |
+|---|---|
+| Elbit | HTTP 403 |
+| Rafael | העמוד נבנה בדפדפן ומגיע ריק |
+| IAI | אתר עצמי מסובך (`jobs.iai.co.il`) |
+| DRS RADA | HTTP 403 (גם `leonardodrs.com`) |
+| ONE Technologies | HTTP 403 |
+| חברות השמה: Matrix (`matrix.co.il/jobs`), Ness (`ness-tech.co.il/careers`), GAV (`gav.co.il/jobs`), abra (`abra-it.com/career`), Commit (`commit.co.il`), Aman (`aman.co.il/careers`), G-STAT (`g-stat.com/careers`), Experis (`experis.co.il/search`), Bynet (`bynet.co.il/career`) | אתרי WordPress / עצמיים, כל אחד במבנה אחר; מפרסמות בשם חברות אחרות — וממילא מופיעות באתרי החיפוש. אם יתברר בשבוע הצל שמפספסים מהן משרות — נוסיף מתאם |
+
+⚠️ מלכודות: SmartRecruiters מחזיר HTTP 200 גם לחברה שלא קיימת (רשימה ריקה) — לבדוק `totalFound`. גם Workable מחזיר 200 עם רשימה ריקה לכל שם — לא סימן לקיום.
 
 סה"כ ~4,500 משרות פתוחות — לכן הסינון באתר + "רק משרות חדשות" הם קריטיים.
