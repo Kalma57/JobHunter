@@ -12,7 +12,7 @@
 | 1 | Java Backend + AI (SQLink, חברה חסויה) | אתר | ❌ | 3 שנות ניסיון (האתר מתייג Student — סתירה) |
 | 2 | Cloud Monitoring Engineer Student (Upwind) | אתר | ❌ | לפחות 4 ימים + משמרות 24/7 · משרה ישנה (04/2026) |
 | 3 | SW Engineer Student, Virtual Platforms (Amazon) | אתר | ✅ נמוך | שנתיים לסיום ✓, 2-3 ימים ✓, עיר לא צוינה, C/C++ ⬇ |
-| 4 | Test Automation Developer Student (Mobileye) | אתר | ✅ | Python ⬆, עיר והיקף לא צוינו, C++ ⬇ |
+| 4 | Test Automation Developer Student (Mobileye) | אתר | ❌ | אוטומציית בדיקות = QA (תוקן 09/10 — התיוג המקורי נעשה לפני ש-QA הוצא) |
 | 5 | Junior AI Security Researcher (A Security) | אתר | ✅ גבוה | ת"א, Python + AI ⬆⬆, היקף לא מספרי |
 | 6 | IP & Brand Protection Student (Moon Active) 🌍 | אתר | ❌ | משפטים |
 | 7 | סטודנט/ית לפיתוח (רפאל) | אתר | ❌ | קריית ביאליק — צפון |
