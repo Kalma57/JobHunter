@@ -60,4 +60,23 @@
 | 38 | Cato Networks | 34 | |
 | 39 | Teva Pharmaceuticals | 33 | |
 
+## זיהוי מערכות הגיוס (שלב 8, צעד 1 — בתהליך, 10/10/2026)
+
+| מערכת | חברות שאומתו | איך אומת / כתובת |
+|---|---|---|
+| Greenhouse | Nebius (42 בישראל), ScaleOps (32), Cato Networks (34) | `https://boards-api.greenhouse.io/v1/boards/<slug>/jobs` — slugs: `nebius`, `scaleops`, `catonetworks` |
+| Lever (EU) | Mobileye (160 בישראל) | `https://api.eu.lever.co/v0/postings/mobileye?mode=json` |
+| Workday | NVIDIA, KLA, Applied Materials | POST `https://<host>/wday/cxs/<tenant>/<site>/jobs` עם `{"appliedFacets":{},"limit":20,"offset":0,"searchText":"..."}` — `nvidia.wd5.myworkdayjobs.com/nvidia/NVIDIAExternalCareerSite`, `kla.wd1.myworkdayjobs.com/kla/Search`, `amat.wd1.myworkdayjobs.com/amat/External` |
+| Comeet | DriveNets, HiBob | מזהי משרה בפורמט Comeet (`BD.24D`, `E1.248`) בעמודי הקריירה. ה-API של Comeet דורש company uid + token מתוך עמוד הקריירה — לחלץ בשלב הבנייה |
+| אתר עצמי | Check Point (`careers.checkpoint.com`), IAI (`jobs.iai.co.il`), Palo Alto (`jobs.paloaltonetworks.com`), Amazon (`amazon.jobs`), Google, Apple, Microsoft, Oracle | עמוד המשרות על דומיין של החברה |
+| חוסם קריאה אוטומטית | Elbit (HTTP 403), Rafael (העמוד נבנה בדפדפן, מגיע ריק) | |
+| עוד לא נבדקו | Matrix, Ness, ONE, GAV, Deloitte, abra, SolarEdge, CyberArk, QualityAI, Qualcomm, DRS RADA, Commit, monday.com, Aman, G-STAT, Experis, Nova, Wix, Bynet, Teva | |
+
+⚠️ מלכודת: SmartRecruiters מחזיר HTTP 200 גם לחברה שלא קיימת (רשימה ריקה) — לבדוק `totalFound`, לא את קוד התשובה.
+
+### הצעה (ממתינה לאישור המשתמש): שלוש שכבות
+1. **מערכות ציבוריות** (Greenhouse, Lever, Workday, Comeet) — סוכן אחד לכל מערכת, קוד בלבד. נבנים ראשונים.
+2. **חברות גדולות עם אתר עצמי** (Amazon, Google, Apple, Microsoft...) — מתאם נפרד לכל אחת. אחרי שכבה 1.
+3. **חסומות / מסובכות** (Elbit, Rafael, IAI, כנראה גם חברות ההשמה) — בלי סוכן; המשרות שלהן מגיעות דרך סוכני אתרי החיפוש.
+
 סה"כ ~4,500 משרות פתוחות — לכן הסינון באתר + "רק משרות חדשות" הם קריטיים.
