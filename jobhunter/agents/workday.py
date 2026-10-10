@@ -1,9 +1,7 @@
 """Workday agent (stage 8): NVIDIA, KLA, Applied Materials... - companies come from config/sources.json.
 
-The job list has no job text, and each job's text is one more request, so texts are cached:
-each job's text is fetched once, kept in <cache_dir>/<key>.json, and deleted when the job leaves the site.
-After the first run a morning costs only the list pages plus the jobs posted since yesterday,
-and the weekly scan (other keywords) needs no extra requests.
+The job list has no job text, and each job's text is one more request, so texts are fetched once per job
+and kept (cache.py).
 
 List:   POST https://<host>/wday/cxs/<tenant>/<site>/jobs   {"appliedFacets": {<israel facet>}, "limit": 20, "offset": n}
 Detail: GET  https://<host>/wday/cxs/<tenant>/<site><externalPath>
@@ -11,13 +9,12 @@ Detail: GET  https://<host>/wday/cxs/<tenant>/<site><externalPath>
 Workday's own searchText is fuzzy ("intern" finds "international"), so keywords are checked in code on the full text.
 """
 
-import json
 import re
 from pathlib import Path
 
+from jobhunter.agents.cache import TextCache
 from jobhunter.agents.filters import html_to_text, is_israel, matching_keyword
 from jobhunter.agents.http import FetchError, fetch_json
-from jobhunter.state import _write_json
 
 PAGE_SIZE = 20  # Workday's maximum
 
@@ -44,10 +41,26 @@ def israel_facet(facets: list[dict]) -> dict:
                     yield facet["facetParameter"], value["id"]
 
     found = list(walk(facets))
-    if not found:
+    if found:
+        parameter, value_id = found[0]
+        return {parameter: [value_id]}
+    # No single "Israel" option (Palo Alto lists offices: "Office - Israel - Tel Aviv", "Remote - Israel"...):
+    # take every option of one location filter that names Israel - the site ORs options of the same filter.
+    def walk_named(facet_list):
+        for facet in facet_list:
+            for value in facet.get("values") or []:
+                if "values" in value:
+                    yield from walk_named([value])
+                elif re.search(r"\bIsrael\b", value.get("descriptor") or "", re.I):
+                    yield facet["facetParameter"], value["id"]
+
+    by_parameter: dict[str, list[str]] = {}
+    for parameter, value_id in walk_named(facets):
+        by_parameter.setdefault(parameter, []).append(value_id)
+    if not by_parameter:
         raise FetchError("no 'Israel' option in the site's location filters")
-    parameter, value_id = found[0]
-    return {parameter: [value_id]}
+    parameter = max(by_parameter, key=lambda p: len(by_parameter[p]))
+    return {parameter: by_parameter[parameter]}
 
 
 def list_israel(company: dict) -> tuple[list[dict], int]:
@@ -76,19 +89,10 @@ def job_key(external_path: str) -> str:
     return re.sub(r"[^A-Za-z0-9.-]", "-", tail)
 
 
-def _detail(company: dict, posting: dict, cache_dir: Path | None) -> dict:
-    """The job's details, from the cache or fetched once."""
-    key = job_key(posting["externalPath"])
-    path = cache_dir / f"{key}.json" if cache_dir else None
-    if path and path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
+def _fetch_detail(company: dict, posting: dict) -> dict:
     info = fetch_json(f"{_base(company)}{posting['externalPath']}").get("jobPostingInfo") or {}
-    detail = {k: info.get(k) for k in ("title", "jobDescription", "location", "additionalLocations",
-                                       "startDate", "jobReqId", "externalUrl", "country")}
-    detail["_fetched"] = True
-    if path:
-        _write_json(path, {k: v for k, v in detail.items() if k != "_fetched"})
-    return detail
+    return {k: info.get(k) for k in ("title", "jobDescription", "location", "additionalLocations",
+                                     "startDate", "jobReqId", "externalUrl", "country")}
 
 
 def to_job(posting: dict, detail: dict, company: dict) -> dict:
@@ -112,10 +116,10 @@ def to_job(posting: dict, detail: dict, company: dict) -> dict:
 def fetch(company: dict, israel: dict, keywords: list[str], cache_dir: Path | None = None) -> tuple[list[dict], dict]:
     """Jobs in Israel that match a keyword, and counts for the run report. Raises FetchError if the site can't be read."""
     postings, site_total = list_israel(company)
-    jobs, in_israel, fetched = [], 0, 0
+    texts = TextCache(cache_dir)
+    jobs, in_israel = [], 0
     for posting in postings:
-        detail = _detail(company, posting, cache_dir)
-        fetched += bool(detail.get("_fetched"))
+        detail = texts.get(job_key(posting["externalPath"]), lambda: _fetch_detail(company, posting))
         job = to_job(posting, detail, company)
         country = "IL" if ((detail.get("country") or {}).get("descriptor") or "").lower() == "israel" else None
         if not is_israel(job["location"], country, israel):
@@ -125,11 +129,7 @@ def fetch(company: dict, israel: dict, keywords: list[str], cache_dir: Path | No
         if keyword:
             job["matched_keyword"] = keyword
             jobs.append(job)
-    if cache_dir and cache_dir.exists():  # forget the texts of jobs that left the site
-        listed = {f"{job_key(p['externalPath'])}.json" for p in postings}
-        for path in cache_dir.glob("*.json"):
-            if path.name not in listed:
-                path.unlink()
+    texts.keep_only({job_key(p["externalPath"]) for p in postings})  # forget the texts of jobs that left the site
     stats = {"total": len(postings), "site_total": site_total, "israel": in_israel,
-             "matched": len(jobs), "texts_fetched": fetched}
+             "matched": len(jobs), "texts_fetched": texts.fetched}
     return jobs, stats

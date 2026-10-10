@@ -21,6 +21,12 @@ TOO_MANY_REQUESTS_WAIT = 30.0  # 429 without a Retry-After header (Qualcomm)
 MAX_WAIT_SECONDS = 120.0
 
 _last_request: dict[str, float] = {}  # host -> time.monotonic() of the last request
+_pause_by_host: dict[str, float] = {}  # stricter sites get a longer pause (config: "pause_seconds")
+
+
+def set_pause(host: str, seconds: float) -> None:
+    """A longer pause between requests to one host (Microsoft answers 429 at one request per second)."""
+    _pause_by_host[host] = seconds
 
 
 class FetchError(Exception):
@@ -30,7 +36,7 @@ class FetchError(Exception):
 def _wait_for_turn(host: str) -> None:
     last = _last_request.get(host)
     if last is not None:
-        wait = PAUSE_SECONDS - (time.monotonic() - last)
+        wait = _pause_by_host.get(host, PAUSE_SECONDS) - (time.monotonic() - last)
         if wait > 0:
             time.sleep(wait)
     _last_request[host] = time.monotonic()

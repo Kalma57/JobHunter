@@ -561,3 +561,92 @@ def test_hiremetech_sign_in_wall_falls_back_to_the_card(tmp_path):
     assert len(jobs) == 2
     for job in jobs:
         assert "Student / Intern" in job["description"] and hiremetech.TEXT_HIDDEN_NOTE in job["description"]
+
+
+# --- tier 2: Amazon, SmartRecruiters (Wix), Oracle -------------------------------------------------
+
+def test_amazon_israel_keywords_and_fields(monkeypatch):
+    from jobhunter.agents import amazon
+    urls = []
+    monkeypatch.setattr(amazon, "fetch_json", lambda url: urls.append(url) or fixture("amazon.json"))
+    jobs, stats = amazon.fetch({"company": "Amazon", "slug": "amazon", "country": "ISR"}, ISRAEL, DAILY)
+
+    assert "country=ISR" in urls[0] and stats == {"total": 2, "site_total": 2, "israel": 2, "matched": 1}
+    [job] = jobs
+    assert job["title"] == "SW Automation Student, Annapurna Labs" and job["matched_keyword"] == "Student"
+    assert job["company"] == "Amazon (Annapurna Labs Ltd.)"  # the legal employer stays visible
+    assert job["url"].startswith("https://www.amazon.jobs/en/jobs/") and job["id"] == f"amazon:{job['job_number']}"
+    assert job["posted_at"] and "Basic qualifications" in job["description"]
+
+
+def test_amazon_count_mismatch_is_an_error(monkeypatch):
+    from jobhunter.agents import amazon
+    monkeypatch.setattr(amazon, "fetch_json", lambda url: {**fixture("amazon.json"), "hits": 5} if "offset=0" in url else {"jobs": []})
+    with pytest.raises(FetchError, match="listed 2 jobs but the site says 5"):
+        amazon.fetch({"company": "Amazon", "slug": "amazon"}, ISRAEL, DAILY)
+
+
+def test_smartrecruiters_wix(tmp_path, monkeypatch):
+    from jobhunter.agents import smartrecruiters
+    saved = fixture("smartrecruiters_wix.json")
+    calls = []
+
+    def fake(url):
+        calls.append(url)
+        if "/postings?" in url:
+            assert "country=il" in url
+            return saved["list"] if "offset=0" in url else {"totalFound": 2, "content": []}
+        return saved["details"][url.rsplit("/", 1)[1]]
+
+    monkeypatch.setattr(smartrecruiters, "fetch_json", fake)
+    wix = {"company": "Wix", "slug": "wix", "company_id": "Wix2"}
+    jobs, stats = smartrecruiters.fetch(wix, ISRAEL, DAILY, tmp_path)
+    assert stats == {"total": 2, "site_total": 2, "israel": 2, "matched": 1, "texts_fetched": 2}
+    [job] = jobs
+    assert job["title"] == "IT Support Engineer (Student)" and job["id"].startswith("smartrecruiters:wix:")
+    assert job["url"].startswith("https://jobs.smartrecruiters.com/Wix2/") and "Tel Aviv" in job["location"]
+    assert "Job Description" in job["description"]
+
+    calls.clear()
+    smartrecruiters.fetch(wix, ISRAEL, WEEKLY, tmp_path)
+    assert all("/postings?" in c for c in calls)  # texts come from the cache
+
+
+def test_oracle(tmp_path, monkeypatch):
+    from jobhunter.agents import oracle
+    saved = fixture("oracle.json")
+
+    def fake(url):
+        if "recruitingCEJobRequisitions?" in url:
+            assert "location=Israel" in url
+            return saved["list"]
+        req_id = re.search(r'Id=(?:%22|")(\d+)', url).group(1)
+        return saved["details"][req_id]
+
+    monkeypatch.setattr(oracle, "fetch_json", fake)
+    company = {"company": "Oracle", "slug": "oracle", "host": "x.oraclecloud.com", "site": "CX_45001",
+               "job_url": "https://careers.oracle.com/en/sites/jobsearch/job/{id}"}
+    jobs, stats = oracle.fetch(company, ISRAEL, DAILY, tmp_path)
+    assert stats["total"] == 2 and stats["israel"] == 2 and stats["texts_fetched"] == 2
+    job = oracle.to_job(next(iter(saved["details"])), oracle._fetch_detail(company, next(iter(saved["details"]))), company)
+    assert job["url"].startswith("https://careers.oracle.com/en/sites/jobsearch/job/") and job["posted_at"]
+    assert job["description"].startswith("Description") and "Israel" in job["location"]
+
+
+def test_set_pause_slows_one_host(monkeypatch):
+    slept = []
+    monkeypatch.setattr(http.time, "sleep", slept.append)
+    monkeypatch.setattr(http, "_last_request", {"slow.example": http.time.monotonic()})
+    monkeypatch.setattr(http, "_pause_by_host", {})
+    http.set_pause("slow.example", 5)
+    http._wait_for_turn("slow.example")
+    assert slept and slept[0] > 4
+
+
+def test_workday_israel_offices_when_there_is_no_israel_option():
+    """Palo Alto: no "Israel" option, only offices - every option naming Israel in that filter is taken."""
+    from jobhunter.agents import workday
+    facets = [{"facetParameter": "locationMainGroup", "values": [{"facetParameter": "locations", "values": [
+        {"descriptor": "Office - Israel - Tel Aviv", "id": "ta"}, {"descriptor": "Remote - Israel", "id": "rem"},
+        {"descriptor": "Office - Germany - Munich", "id": "mu"}, {"descriptor": "Israeli Street, Ohio", "id": "no"}]}]}]
+    assert workday.israel_facet(facets) == {"locations": ["ta", "rem"]}

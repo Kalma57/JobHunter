@@ -6,18 +6,16 @@ Eightfold career sites answer on one of two API versions (the other gives 403), 
   apply_v2  list: GET https://<host>/api/apply/v2/jobs?domain=<d>&location=Israel&start=n&num=10  -> positions
             text: GET https://<host>/api/apply/v2/jobs/<id>?domain=<d>
 
-Like Workday, the list has no job text: each text is fetched once and kept in <cache_dir>/<id>.json,
-and deleted when the job leaves the site. The site's location filter is not exact (Teva lists a job in
+Like Workday, the list has no job text: each text is fetched once and kept (cache.py). The site's location filter is not exact (Teva lists a job in
 Atlanta under Israel), so Israel is checked again in code.
 """
 
-import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from jobhunter.agents.cache import TextCache
 from jobhunter.agents.filters import html_to_text, is_israel, matching_keyword
-from jobhunter.agents.http import FetchError, fetch_json
-from jobhunter.state import _write_json
+from jobhunter.agents.http import FetchError, fetch_json, set_pause
 
 SITE_LOCATION = "Israel"
 
@@ -60,17 +58,6 @@ def _fetch_detail(company: dict, position_id: str) -> dict:
             "url": d.get("canonicalPositionUrl"), "job_number": d.get("display_job_id")}
 
 
-def _detail(company: dict, position_id: str, cache_dir: Path | None) -> tuple[dict, bool]:
-    """(details, fetched_now) - from the cache, or fetched once."""
-    path = cache_dir / f"{position_id}.json" if cache_dir else None
-    if path and path.exists():
-        return json.loads(path.read_text(encoding="utf-8")), False
-    detail = _fetch_detail(company, position_id)
-    if path:
-        _write_json(path, detail)
-    return detail, True
-
-
 def to_job(position_id: str, detail: dict, company: dict) -> dict:
     """One Eightfold position -> the job format of docs/agents/company-agents.md."""
     posted = detail.get("posted_ts")
@@ -91,12 +78,14 @@ def to_job(position_id: str, detail: dict, company: dict) -> dict:
 
 def fetch(company: dict, israel: dict, keywords: list[str], cache_dir: Path | None = None) -> tuple[list[dict], dict]:
     """Jobs in Israel that match a keyword, and counts for the run report. Raises FetchError if the site can't be read."""
+    if company.get("pause_seconds"):
+        set_pause(company["host"], company["pause_seconds"])
     positions, site_total = list_positions(company)
-    jobs, in_israel, fetched = [], 0, 0
+    texts = TextCache(cache_dir)
+    jobs, in_israel = [], 0
     for position in positions:
         position_id = str(position["id"])
-        detail, fetched_now = _detail(company, position_id, cache_dir)
-        fetched += fetched_now
+        detail = texts.get(position_id, lambda: _fetch_detail(company, position_id))
         job = to_job(position_id, detail, company)
         if not is_israel(job["location"], None, israel):
             continue
@@ -107,11 +96,7 @@ def fetch(company: dict, israel: dict, keywords: list[str], cache_dir: Path | No
         if keyword:
             job["matched_keyword"] = keyword
             jobs.append(job)
-    if cache_dir and cache_dir.exists():  # forget the texts of jobs that left the site
-        listed = {f"{p['id']}.json" for p in positions}
-        for path in cache_dir.glob("*.json"):
-            if path.name not in listed:
-                path.unlink()
+    texts.keep_only({str(p["id"]) for p in positions})  # forget the texts of jobs that left the site
     stats = {"total": len(positions), "site_total": site_total, "israel": in_israel,
-             "matched": len(jobs), "texts_fetched": fetched}
+             "matched": len(jobs), "texts_fetched": texts.fetched}
     return jobs, stats

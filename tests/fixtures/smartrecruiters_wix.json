@@ -1,0 +1,743 @@
+{
+ "list": {
+  "totalFound": 2,
+  "content": [
+   {
+    "id": "744000149303599",
+    "name": "IT Support Engineer (Student)",
+    "uuid": "dad2c391-f4b7-4829-81ae-9e21da970407",
+    "jobAdId": "aac175a3-ccb0-4dd3-a213-dc92176831fd",
+    "defaultJobAd": true,
+    "refNumber": "oracle-207489a0-5182-56c1-9a68-0c7c4458687f-T1789378244",
+    "company": {
+     "identifier": "Wix2",
+     "name": "Wix"
+    },
+    "releasedDate": "2026-09-14T11:08:54.544Z",
+    "location": {
+     "city": "Tel Aviv",
+     "country": "il",
+     "remote": false,
+     "hybrid": false,
+     "fullLocation": "Tel Aviv, , Israel"
+    },
+    "industry": {
+     "id": "internet",
+     "label": "Internet"
+    },
+    "department": {},
+    "function": {
+     "id": "engineering",
+     "label": "Engineering"
+    },
+    "typeOfEmployment": {
+     "id": "permanent",
+     "label": "Full-time"
+    },
+    "experienceLevel": {
+     "id": "mid_senior_level",
+     "label": "Mid-Senior Level"
+    },
+    "customField": [
+     {
+      "fieldId": "6437bd8e8ea74a72671fc0be",
+      "fieldLabel": "Shifts",
+      "valueId": "ec54d13f-eae2-4088-92cf-abe3f84a5b92",
+      "valueLabel": "No"
+     },
+     {
+      "fieldId": "6437b37c07c43310e8c5d111",
+      "fieldLabel": "FTE",
+      "valueId": "4b0273ee-c024-4bd2-a14a-fa85141e469b",
+      "valueLabel": "0.5"
+     },
+     {
+      "fieldId": "6437b9e5c9f4d66fc814ca64",
+      "fieldLabel": "Seniority",
+      "valueId": "81fbfcd3-d5f3-42d9-8d63-6056419b19a4",
+      "valueLabel": "Mid"
+     },
+     {
+      "fieldId": "6437b0896fc67f3872da25f4",
+      "fieldLabel": "Employment Terms",
+      "valueId": "9da7603e-7df4-4540-83b2-24872dd1b33a",
+      "valueLabel": "IL Hourly Part Time"
+     },
+     {
+      "fieldId": "6437b82c8ea74a72671fc0bd",
+      "fieldLabel": "Guild",
+      "valueId": "300001435040332",
+      "valueLabel": "IPE"
+     },
+     {
+      "fieldId": "6437be5bc9f4d66fc814ca66",
+      "fieldLabel": "Child / Parent",
+      "valueId": "8ae13d47-2afa-44bf-9dda-0736fe53b4b5",
+      "valueLabel": "Child"
+     },
+     {
+      "fieldId": "6437b45199ea7f358c21d565",
+      "fieldLabel": "Site",
+      "valueId": "300000444526746",
+      "valueLabel": "Campus"
+     },
+     {
+      "fieldId": "6432abd34d9f434bdb15aaf0",
+      "fieldLabel": "Brands",
+      "valueId": "default",
+      "valueLabel": "Wix"
+     },
+     {
+      "fieldId": "6437bd6bbb340d0b0a89a889",
+      "fieldLabel": "Student/Intern",
+      "valueId": "0d1727a0-e8d1-43e9-9cad-41a2b1b7a0b7",
+      "valueLabel": "Student"
+     },
+     {
+      "fieldId": "6437bd30c9f4d66fc814ca65",
+      "fieldLabel": "Temp",
+      "valueId": "b24ee80e-cb83-4cee-9400-f703ed3e17ef",
+      "valueLabel": "N"
+     },
+     {
+      "fieldId": "6437b9a2dc27cf10eb3e8148",
+      "fieldLabel": "Profession",
+      "valueId": "300000004407481",
+      "valueLabel": "IT System"
+     },
+     {
+      "fieldId": "6437b25ea34c143a5e67c0dc",
+      "fieldLabel": "Salary Basis",
+      "valueId": "a4cf7356-e234-42ce-8380-cc7b3c2da9bd",
+      "valueLabel": "Salary-Hourly [ILS]"
+     },
+     {
+      "fieldId": "COUNTRY",
+      "fieldLabel": "Country/Region",
+      "valueId": "il",
+      "valueLabel": "Israel"
+     },
+     {
+      "fieldId": "6437b7bdbb340d0b0a89a888",
+      "fieldLabel": "Team",
+      "valueId": "300001435082735",
+      "valueLabel": "IPE\\IT Support"
+     },
+     {
+      "fieldId": "6437b41f07c43310e8c5d112",
+      "fieldLabel": "City",
+      "valueId": "200000000000214",
+      "valueLabel": "Tel Aviv"
+     },
+     {
+      "fieldId": "6437b88a1d810c4bc5ad4cc9",
+      "fieldLabel": "Department/Company",
+      "valueId": "300001435082461",
+      "valueLabel": "IPE"
+     },
+     {
+      "fieldId": "6437b40dbb340d0b0a89a887",
+      "fieldLabel": "Wix Country",
+      "valueId": "100000002995936",
+      "valueLabel": "Israel"
+     },
+     {
+      "fieldId": "6437bfeb1d810c4bc5ad4cca",
+      "fieldLabel": "Internal/External",
+      "valueId": "902c72ad-6d44-42f9-897a-c6bae6dbc78e",
+      "valueLabel": "Both"
+     },
+     {
+      "fieldId": "6437b32abedfdf6c4a01c637",
+      "fieldLabel": "Hourly Salaried Code",
+      "valueId": "728f484a-0c54-4861-a027-1bd0733e67e2",
+      "valueLabel": "HO"
+     },
+     {
+      "fieldId": "6437bd0199ea7f358c21d566",
+      "fieldLabel": "Full Part Time",
+      "valueId": "c5cf41be-3ee1-40ff-ba3e-39a6b4454032",
+      "valueLabel": "Full time"
+     },
+     {
+      "fieldId": "6437be3307c43310e8c5d113",
+      "fieldLabel": "Priority Level",
+      "valueId": "90563a9f-1c3d-4a0f-b5e1-407dabb89ced",
+      "valueLabel": "Focus"
+     }
+    ],
+    "visibility": "PUBLIC",
+    "ref": "https://api.smartrecruiters.com/v1/companies/Wix2/postings/744000149303599",
+    "language": {
+     "code": "en",
+     "label": "English",
+     "labelNative": "English (US)"
+    }
+   },
+   {
+    "id": "744000154401111",
+    "name": "Social Media Manager",
+    "uuid": "c8a6e3a8-42d9-4206-9d75-ed8f2d97517a",
+    "jobAdId": "5c1b5c49-cfeb-49c1-984a-43cdd840c555",
+    "defaultJobAd": true,
+    "refNumber": "oracle-e2a2cd53-3ff2-58a5-816d-d3aa2d9a7684-T1791455667",
+    "company": {
+     "identifier": "Wix2",
+     "name": "Wix"
+    },
+    "releasedDate": "2026-10-08T10:45:47.019Z",
+    "location": {
+     "city": "Tel Aviv",
+     "country": "il",
+     "remote": false,
+     "hybrid": false,
+     "fullLocation": "Tel Aviv, , Israel"
+    },
+    "industry": {
+     "id": "internet",
+     "label": "Internet"
+    },
+    "department": {},
+    "function": {
+     "id": "other",
+     "label": "Other"
+    },
+    "typeOfEmployment": {
+     "id": "permanent",
+     "label": "Full-time"
+    },
+    "experienceLevel": {
+     "id": "mid_senior_level",
+     "label": "Mid-Senior Level"
+    },
+    "customField": [
+     {
+      "fieldId": "6437bd8e8ea74a72671fc0be",
+      "fieldLabel": "Shifts",
+      "valueId": "ec54d13f-eae2-4088-92cf-abe3f84a5b92",
+      "valueLabel": "No"
+     },
+     {
+      "fieldId": "6437b37c07c43310e8c5d111",
+      "fieldLabel": "FTE",
+      "valueId": "14d19fca-c9b0-4eb7-a386-a54dba4efbe4",
+      "valueLabel": "1"
+     },
+     {
+      "fieldId": "6437b9e5c9f4d66fc814ca64",
+      "fieldLabel": "Seniority",
+      "valueId": "81fbfcd3-d5f3-42d9-8d63-6056419b19a4",
+      "valueLabel": "Mid"
+     },
+     {
+      "fieldId": "6437b0896fc67f3872da25f4",
+      "fieldLabel": "Employment Terms",
+      "valueId": "2cbb6c41-5599-4031-99ec-81f837ce3ea0",
+      "valueLabel": "IL Global Full Time"
+     },
+     {
+      "fieldId": "6437b82c8ea74a72671fc0bd",
+      "fieldLabel": "Guild",
+      "valueId": "300000004457059",
+      "valueLabel": "Marketing"
+     },
+     {
+      "fieldId": "6437be5bc9f4d66fc814ca66",
+      "fieldLabel": "Child / Parent",
+      "valueId": "8ae13d47-2afa-44bf-9dda-0736fe53b4b5",
+      "valueLabel": "Child"
+     },
+     {
+      "fieldId": "6437b45199ea7f358c21d565",
+      "fieldLabel": "Site",
+      "valueId": "300000444526746",
+      "valueLabel": "Campus"
+     },
+     {
+      "fieldId": "6432abd34d9f434bdb15aaf0",
+      "fieldLabel": "Brands",
+      "valueId": "default",
+      "valueLabel": "Wix"
+     },
+     {
+      "fieldId": "6437bd6bbb340d0b0a89a889",
+      "fieldLabel": "Student/Intern",
+      "valueId": "8339fec2-bc5c-4c74-b40e-e8b9d930c78b",
+      "valueLabel": "No"
+     },
+     {
+      "fieldId": "6437bd30c9f4d66fc814ca65",
+      "fieldLabel": "Temp",
+      "valueId": "b24ee80e-cb83-4cee-9400-f703ed3e17ef",
+      "valueLabel": "N"
+     },
+     {
+      "fieldId": "6437b9a2dc27cf10eb3e8148",
+      "fieldLabel": "Profession",
+      "valueId": "300000290999040",
+      "valueLabel": "Social Media"
+     },
+     {
+      "fieldId": "6437b25ea34c143a5e67c0dc",
+      "fieldLabel": "Salary Basis",
+      "valueId": "0afcbea5-ef7b-46d9-819f-768592778926",
+      "valueLabel": "Salary-Monthly[ILS]"
+     },
+     {
+      "fieldId": "COUNTRY",
+      "fieldLabel": "Country/Region",
+      "valueId": "il",
+      "valueLabel": "Israel"
+     },
+     {
+      "fieldId": "6437b7bdbb340d0b0a89a888",
+      "fieldLabel": "Team",
+      "valueId": "300002404580906",
+      "valueLabel": "Marketing\\Social"
+     },
+     {
+      "fieldId": "6437b41f07c43310e8c5d112",
+      "fieldLabel": "City",
+      "valueId": "200000000000214",
+      "valueLabel": "Tel Aviv"
+     },
+     {
+      "fieldId": "6437b88a1d810c4bc5ad4cc9",
+      "fieldLabel": "Department/Company",
+      "valueId": "300000004416591",
+      "valueLabel": "Marketing"
+     },
+     {
+      "fieldId": "6437b40dbb340d0b0a89a887",
+      "fieldLabel": "Wix Country",
+      "valueId": "100000002995936",
+      "valueLabel": "Israel"
+     },
+     {
+      "fieldId": "6437bfeb1d810c4bc5ad4cca",
+      "fieldLabel": "Internal/External",
+      "valueId": "902c72ad-6d44-42f9-897a-c6bae6dbc78e",
+      "valueLabel": "Both"
+     },
+     {
+      "fieldId": "6437b32abedfdf6c4a01c637",
+      "fieldLabel": "Hourly Salaried Code",
+      "valueId": "21486b9c-2de7-40fc-bf3a-4ad6cbc49006",
+      "valueLabel": "GH"
+     },
+     {
+      "fieldId": "6437bd0199ea7f358c21d566",
+      "fieldLabel": "Full Part Time",
+      "valueId": "c5cf41be-3ee1-40ff-ba3e-39a6b4454032",
+      "valueLabel": "Full time"
+     },
+     {
+      "fieldId": "6437be3307c43310e8c5d113",
+      "fieldLabel": "Priority Level",
+      "valueId": "90563a9f-1c3d-4a0f-b5e1-407dabb89ced",
+      "valueLabel": "Focus"
+     }
+    ],
+    "visibility": "PUBLIC",
+    "ref": "https://api.smartrecruiters.com/v1/companies/Wix2/postings/744000154401111",
+    "language": {
+     "code": "en",
+     "label": "English",
+     "labelNative": "English (US)"
+    }
+   }
+  ]
+ },
+ "details": {
+  "744000149303599": {
+   "id": "744000149303599",
+   "name": "IT Support Engineer (Student)",
+   "uuid": "dad2c391-f4b7-4829-81ae-9e21da970407",
+   "jobId": "66e2cd71-0560-4106-ab2d-1b4f5a64d988",
+   "jobAdId": "aac175a3-ccb0-4dd3-a213-dc92176831fd",
+   "defaultJobAd": true,
+   "refNumber": "oracle-207489a0-5182-56c1-9a68-0c7c4458687f-T1789378244",
+   "company": {
+    "name": "Wix",
+    "identifier": "Wix2"
+   },
+   "location": {
+    "city": "Tel Aviv",
+    "country": "il",
+    "remote": false,
+    "hybrid": false,
+    "fullLocation": "Tel Aviv, , Israel"
+   },
+   "customField": [
+    {
+     "fieldId": "6437bd8e8ea74a72671fc0be",
+     "fieldLabel": "Shifts",
+     "valueId": "ec54d13f-eae2-4088-92cf-abe3f84a5b92",
+     "valueLabel": "No"
+    },
+    {
+     "fieldId": "6437b37c07c43310e8c5d111",
+     "fieldLabel": "FTE",
+     "valueId": "4b0273ee-c024-4bd2-a14a-fa85141e469b",
+     "valueLabel": "0.5"
+    },
+    {
+     "fieldId": "6437b9e5c9f4d66fc814ca64",
+     "fieldLabel": "Seniority",
+     "valueId": "81fbfcd3-d5f3-42d9-8d63-6056419b19a4",
+     "valueLabel": "Mid"
+    },
+    {
+     "fieldId": "6437b0896fc67f3872da25f4",
+     "fieldLabel": "Employment Terms",
+     "valueId": "9da7603e-7df4-4540-83b2-24872dd1b33a",
+     "valueLabel": "IL Hourly Part Time"
+    },
+    {
+     "fieldId": "6437b82c8ea74a72671fc0bd",
+     "fieldLabel": "Guild",
+     "valueId": "300001435040332",
+     "valueLabel": "IPE"
+    },
+    {
+     "fieldId": "6437be5bc9f4d66fc814ca66",
+     "fieldLabel": "Child / Parent",
+     "valueId": "8ae13d47-2afa-44bf-9dda-0736fe53b4b5",
+     "valueLabel": "Child"
+    },
+    {
+     "fieldId": "6437b45199ea7f358c21d565",
+     "fieldLabel": "Site",
+     "valueId": "300000444526746",
+     "valueLabel": "Campus"
+    },
+    {
+     "fieldId": "6432abd34d9f434bdb15aaf0",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Wix"
+    },
+    {
+     "fieldId": "6437bd6bbb340d0b0a89a889",
+     "fieldLabel": "Student/Intern",
+     "valueId": "0d1727a0-e8d1-43e9-9cad-41a2b1b7a0b7",
+     "valueLabel": "Student"
+    },
+    {
+     "fieldId": "6437bd30c9f4d66fc814ca65",
+     "fieldLabel": "Temp",
+     "valueId": "b24ee80e-cb83-4cee-9400-f703ed3e17ef",
+     "valueLabel": "N"
+    },
+    {
+     "fieldId": "6437b9a2dc27cf10eb3e8148",
+     "fieldLabel": "Profession",
+     "valueId": "300000004407481",
+     "valueLabel": "IT System"
+    },
+    {
+     "fieldId": "6437b25ea34c143a5e67c0dc",
+     "fieldLabel": "Salary Basis",
+     "valueId": "a4cf7356-e234-42ce-8380-cc7b3c2da9bd",
+     "valueLabel": "Salary-Hourly [ILS]"
+    },
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "il",
+     "valueLabel": "Israel"
+    },
+    {
+     "fieldId": "6437b7bdbb340d0b0a89a888",
+     "fieldLabel": "Team",
+     "valueId": "300001435082735",
+     "valueLabel": "IPE\\IT Support"
+    },
+    {
+     "fieldId": "6437b41f07c43310e8c5d112",
+     "fieldLabel": "City",
+     "valueId": "200000000000214",
+     "valueLabel": "Tel Aviv"
+    },
+    {
+     "fieldId": "6437b88a1d810c4bc5ad4cc9",
+     "fieldLabel": "Department/Company",
+     "valueId": "300001435082461",
+     "valueLabel": "IPE"
+    },
+    {
+     "fieldId": "6437b40dbb340d0b0a89a887",
+     "fieldLabel": "Wix Country",
+     "valueId": "100000002995936",
+     "valueLabel": "Israel"
+    },
+    {
+     "fieldId": "6437bfeb1d810c4bc5ad4cca",
+     "fieldLabel": "Internal/External",
+     "valueId": "902c72ad-6d44-42f9-897a-c6bae6dbc78e",
+     "valueLabel": "Both"
+    },
+    {
+     "fieldId": "6437b32abedfdf6c4a01c637",
+     "fieldLabel": "Hourly Salaried Code",
+     "valueId": "728f484a-0c54-4861-a027-1bd0733e67e2",
+     "valueLabel": "HO"
+    },
+    {
+     "fieldId": "6437bd0199ea7f358c21d566",
+     "fieldLabel": "Full Part Time",
+     "valueId": "c5cf41be-3ee1-40ff-ba3e-39a6b4454032",
+     "valueLabel": "Full time"
+    },
+    {
+     "fieldId": "6437be3307c43310e8c5d113",
+     "fieldLabel": "Priority Level",
+     "valueId": "90563a9f-1c3d-4a0f-b5e1-407dabb89ced",
+     "valueLabel": "Focus"
+    }
+   ],
+   "releasedDate": "2026-09-14T11:08:54.544Z",
+   "postingUrl": "https://jobs.smartrecruiters.com/Wix2/744000149303599-it-support-engineer-student-",
+   "applyUrl": "https://jobs.smartrecruiters.com/Wix2/744000149303599-it-support-engineer-student-?oga=true",
+   "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/Wix2/publication/dad2c391-f4b7-4829-81ae-9e21da970407?dcr_ci=Wix2",
+   "jobAd": {
+    "sections": {
+     "companyDescription": {
+      "title": "Company Description",
+      "text": ""
+     },
+     "jobDescription": {
+      "title": "Job Description",
+      "text": "<ul><li>Ensure employees are provided efficient and timely desktop and local infrastructure support across the organization</li><li>Provide professional and efficient IT support to Wix employees across different locations and time zones remotely</li><li>Manage, monitor, and respond to requests received through the IT Helpdesk in line with our agreed SLAs</li><li>Identify opportunities to reduce service requests through better user training and documentation</li><li>Manage equipment inventory from evaluation and purchasing to maintenance and depreciation</li><li>Take ownership of the IT procurement process by working closely with suppliers, procurement, and finance teams</li><li>Work with auditors to ensure that procurement procedures are being followed</li><li>Manage onboarding and offboarding processes for on-site and remote workers</li><li>Manage and maintain audio-visual equipment around the offices</li><li>Manage endpoint installations, upgrades, and troubleshooting (for MacOS, Windows, and Linux)</li></ul>"
+     },
+     "qualifications": {
+      "title": "Qualifications",
+      "text": "<ul><li>An IT professional with 3+ years hands-on experience in IT Support or Administration</li><li>Experienced in a multi-OS environment (MacOS, Windows, and Linux)</li><li>Excellent diagnostic and problem-solving skills</li><li>Excellent communication and interpersonal skills</li><li>Outstanding organizational and time-management skills</li><li>Proven ability to provide proactive customer service with strong attention to detail</li><li>Experienced with Active Directory/Azure/GSuite environments</li><li>Experience supporting audio-visual conference room technologies</li><li>Additional experience with tools and systems like Meraki, Jira, Intune, Jamf, and Slack</li></ul><p>At Wix, we believe our best work happens together. Our work model is fully in person, with 3 days a week from our office for this student role. Flexibility remains a core value at Wix and special requests are handled thoughtfully at the team level.</p>"
+     },
+     "additionalInformation": {
+      "title": "Additional Information",
+      "text": "<p>We are Wix’s IT Team. We provide technical assistance and support to Wix employees regarding computers, servers, hardware, software, and events on a global scale. We take care of everything from configuration to control and maintenance, troubleshooting, and monitoring, using the newest technology for device management services, Ansible, and automation engines.&#xa0; We build fully automated processes for monitoring, purchasing, security incidences, SLM, CRM, etc.</p>"
+     }
+    }
+   },
+   "active": true,
+   "visibility": "PUBLIC",
+   "industry": {
+    "id": "internet",
+    "label": "Internet"
+   },
+   "function": {
+    "id": "engineering",
+    "label": "Engineering"
+   },
+   "experienceLevel": {
+    "id": "mid_senior_level",
+    "label": "Mid-Senior Level"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  "744000154401111": {
+   "id": "744000154401111",
+   "name": "Social Media Manager",
+   "uuid": "c8a6e3a8-42d9-4206-9d75-ed8f2d97517a",
+   "jobId": "f71317bb-9019-471c-8dfd-157438829bb4",
+   "jobAdId": "5c1b5c49-cfeb-49c1-984a-43cdd840c555",
+   "defaultJobAd": true,
+   "refNumber": "oracle-e2a2cd53-3ff2-58a5-816d-d3aa2d9a7684-T1791455667",
+   "company": {
+    "name": "Wix",
+    "identifier": "Wix2"
+   },
+   "location": {
+    "city": "Tel Aviv",
+    "country": "il",
+    "remote": false,
+    "hybrid": false,
+    "fullLocation": "Tel Aviv, , Israel"
+   },
+   "customField": [
+    {
+     "fieldId": "6437bd8e8ea74a72671fc0be",
+     "fieldLabel": "Shifts",
+     "valueId": "ec54d13f-eae2-4088-92cf-abe3f84a5b92",
+     "valueLabel": "No"
+    },
+    {
+     "fieldId": "6437b37c07c43310e8c5d111",
+     "fieldLabel": "FTE",
+     "valueId": "14d19fca-c9b0-4eb7-a386-a54dba4efbe4",
+     "valueLabel": "1"
+    },
+    {
+     "fieldId": "6437b9e5c9f4d66fc814ca64",
+     "fieldLabel": "Seniority",
+     "valueId": "81fbfcd3-d5f3-42d9-8d63-6056419b19a4",
+     "valueLabel": "Mid"
+    },
+    {
+     "fieldId": "6437b0896fc67f3872da25f4",
+     "fieldLabel": "Employment Terms",
+     "valueId": "2cbb6c41-5599-4031-99ec-81f837ce3ea0",
+     "valueLabel": "IL Global Full Time"
+    },
+    {
+     "fieldId": "6437b82c8ea74a72671fc0bd",
+     "fieldLabel": "Guild",
+     "valueId": "300000004457059",
+     "valueLabel": "Marketing"
+    },
+    {
+     "fieldId": "6437be5bc9f4d66fc814ca66",
+     "fieldLabel": "Child / Parent",
+     "valueId": "8ae13d47-2afa-44bf-9dda-0736fe53b4b5",
+     "valueLabel": "Child"
+    },
+    {
+     "fieldId": "6437b45199ea7f358c21d565",
+     "fieldLabel": "Site",
+     "valueId": "300000444526746",
+     "valueLabel": "Campus"
+    },
+    {
+     "fieldId": "6432abd34d9f434bdb15aaf0",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Wix"
+    },
+    {
+     "fieldId": "6437bd6bbb340d0b0a89a889",
+     "fieldLabel": "Student/Intern",
+     "valueId": "8339fec2-bc5c-4c74-b40e-e8b9d930c78b",
+     "valueLabel": "No"
+    },
+    {
+     "fieldId": "6437bd30c9f4d66fc814ca65",
+     "fieldLabel": "Temp",
+     "valueId": "b24ee80e-cb83-4cee-9400-f703ed3e17ef",
+     "valueLabel": "N"
+    },
+    {
+     "fieldId": "6437b9a2dc27cf10eb3e8148",
+     "fieldLabel": "Profession",
+     "valueId": "300000290999040",
+     "valueLabel": "Social Media"
+    },
+    {
+     "fieldId": "6437b25ea34c143a5e67c0dc",
+     "fieldLabel": "Salary Basis",
+     "valueId": "0afcbea5-ef7b-46d9-819f-768592778926",
+     "valueLabel": "Salary-Monthly[ILS]"
+    },
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "il",
+     "valueLabel": "Israel"
+    },
+    {
+     "fieldId": "6437b7bdbb340d0b0a89a888",
+     "fieldLabel": "Team",
+     "valueId": "300002404580906",
+     "valueLabel": "Marketing\\Social"
+    },
+    {
+     "fieldId": "6437b41f07c43310e8c5d112",
+     "fieldLabel": "City",
+     "valueId": "200000000000214",
+     "valueLabel": "Tel Aviv"
+    },
+    {
+     "fieldId": "6437b88a1d810c4bc5ad4cc9",
+     "fieldLabel": "Department/Company",
+     "valueId": "300000004416591",
+     "valueLabel": "Marketing"
+    },
+    {
+     "fieldId": "6437b40dbb340d0b0a89a887",
+     "fieldLabel": "Wix Country",
+     "valueId": "100000002995936",
+     "valueLabel": "Israel"
+    },
+    {
+     "fieldId": "6437bfeb1d810c4bc5ad4cca",
+     "fieldLabel": "Internal/External",
+     "valueId": "902c72ad-6d44-42f9-897a-c6bae6dbc78e",
+     "valueLabel": "Both"
+    },
+    {
+     "fieldId": "6437b32abedfdf6c4a01c637",
+     "fieldLabel": "Hourly Salaried Code",
+     "valueId": "21486b9c-2de7-40fc-bf3a-4ad6cbc49006",
+     "valueLabel": "GH"
+    },
+    {
+     "fieldId": "6437bd0199ea7f358c21d566",
+     "fieldLabel": "Full Part Time",
+     "valueId": "c5cf41be-3ee1-40ff-ba3e-39a6b4454032",
+     "valueLabel": "Full time"
+    },
+    {
+     "fieldId": "6437be3307c43310e8c5d113",
+     "fieldLabel": "Priority Level",
+     "valueId": "90563a9f-1c3d-4a0f-b5e1-407dabb89ced",
+     "valueLabel": "Focus"
+    }
+   ],
+   "releasedDate": "2026-10-08T10:45:47.019Z",
+   "postingUrl": "https://jobs.smartrecruiters.com/Wix2/744000154401111-social-media-manager",
+   "applyUrl": "https://jobs.smartrecruiters.com/Wix2/744000154401111-social-media-manager?oga=true",
+   "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/Wix2/publication/c8a6e3a8-42d9-4206-9d75-ed8f2d97517a?dcr_ci=Wix2",
+   "jobAd": {
+    "sections": {
+     "companyDescription": {
+      "title": "Company Description",
+      "text": "<p>Wix makes it possible for anyone to succeed online. Since 2006, we've grown to around 4,400 employees in 22 countries, launched over 40 products, and serve over 299 million users and their visitors worldwide. At Wix, we push you to innovate and evolve in non-traditional ways. We operate in collaborative, high-performing teams, building cutting-edge products and leveraging AI to redefine how our users create, manage and grow their dreams online.</p><p>Although we're already industry leaders in web creation and business, our work is nowhere near done. Our goal is to become the main engine of the Internet so we can create a more open web for all.</p><p>We're proud to be an equal opportunity employer. Wix was built around the idea that everyone has the right to be successful, online. This same vision defines us as an employer: creating a work environment where everyone is welcome, and anyone has the right to succeed.</p>"
+     },
+     "jobDescription": {
+      "title": "Job Description",
+      "text": "<p>We are looking for a sharp, trend-obsessed Social Media Manager to manage the social presence of some of Wix's biggest brands, including Wix.com, Wix Studio and Symphony. You will own the strategy and the craft: planning what we say and where, then creating the short-form videos that bring it to life, for both organic and paid, from A to Z.&#xa0;</p><p>This is a hands-on role for someone early in their career who lives on social, spots trends before they peak, and can take an idea from a first hook to a published video on their own.<br>\n<br>\nOn your day to day you will:&#xa0;</p><ul><li><p>Establish social media strategies for various Wix products across short form video platforms - TikTok, Instagram, and YouTube Shorts.</p></li><li><p>Build and manage content calendars, balancing always-on organic content with campaign, launch and product moments</p></li><li><p>Create short-form video content from A to Z: concepting, scripting, shooting, editing, captioning and publishing, for both organic and paid use</p></li><li><p>Develop platform-native content that fits the nuances of each channel and each brand's voice and audience</p></li><li><p>Partner with the paid media team to produce, test and iterate on social ad creative, including hooks, formats and variations</p></li><li><p>Monitor trends, memes, sounds and formats, and turn them into timely content that feels native and fresh</p></li><li><p>Track performance across channels, report on results and use insights to optimize "
+     },
+     "qualifications": {
+      "title": "Qualifications",
+      "text": "<ul><li><p>1-2 years of experience in social media, content creation or a similar role (agency, in-house at a tech/AI brand or personal brand experience all count)</p></li><li><p>Proven ability to create short-form video end to end, with a portfolio or sample videos that show your work</p></li><li><p>Hands-on editing skills with tools such as CapCut, Premiere Pro, After Effects or similar</p></li><li><p>Hands-on experience with Ai video creation tools, like Higgsfield, Weavy or similar</p></li><li><p>A fresh perspective on social and an intuitive grasp of trends, formats, creators and culture across TikTok, Instagram and beyond</p></li><li><p>Natural instinct for strong hooks, storytelling and what makes people stop scrolling</p></li><li><p>Understanding of content strategy and planning, including calendars, platform best practices and audience insights</p></li><li><p>Familiarity with paid social creative and what makes an ad perform, or strong curiosity to learn fast</p></li><li><p>Strong writing skills and a clear, clever tone of voice</p></li><li><p>Analytical mindset: comfortable reading metrics and adapting based on performance</p></li><li><p>Self-starter who ships consistently, takes initiative and thrives in a fast-moving environment</p></li><li><p>Excellent communication and collaboration skills; fluent English (written and spoken)</p></li></ul>"
+     },
+     "additionalInformation": {
+      "title": "Additional Information",
+      "text": ""
+     }
+    }
+   },
+   "active": true,
+   "visibility": "PUBLIC",
+   "industry": {
+    "id": "internet",
+    "label": "Internet"
+   },
+   "function": {
+    "id": "other",
+    "label": "Other"
+   },
+   "experienceLevel": {
+    "id": "mid_senior_level",
+    "label": "Mid-Senior Level"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  }
+ }
+}

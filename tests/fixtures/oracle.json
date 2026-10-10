@@ -1,0 +1,133 @@
+{
+ "list": {
+  "items": [
+   {
+    "TotalJobsCount": 2,
+    "requisitionList": [
+     {
+      "Id": "346932",
+      "Title": "Deputy Program Manager",
+      "PostedDate": "2026-10-07",
+      "PostingEndDate": null,
+      "Language": "US",
+      "PrimaryLocationCountry": "IL",
+      "GeographyId": 300000289316229,
+      "HotJobFlag": false,
+      "WorkplaceTypeCode": null,
+      "JobFamily": null,
+      "JobFunction": null,
+      "WorkerType": null,
+      "ContractType": null,
+      "ManagerLevel": null,
+      "JobSchedule": null,
+      "JobShift": null,
+      "JobType": null,
+      "StudyLevel": null,
+      "DomesticTravelRequired": null,
+      "InternationalTravelRequired": null,
+      "WorkDurationYears": null,
+      "WorkDurationMonths": null,
+      "WorkHours": null,
+      "WorkDays": null,
+      "LegalEmployer": null,
+      "BusinessUnit": null,
+      "Department": null,
+      "Organization": null,
+      "BusinessUnitId": 300001096514462,
+      "LegalEmployerId": 300000000864358,
+      "OrganizationId": 300001902541887,
+      "MediaThumbURL": "https://img.youtube.com/vi/BV0GMCITXg4/hqdefault.jpg",
+      "ShortDescriptionStr": "The Deputy Program Manager (DPM) is responsible for the day-to-day program governance and business operations of SOCO. The DPM will ensure disciplined execution of Oracle's commitments, provide operational leadership across the projects, and support the Program TPM in successful program delivery.",
+      "PrimaryLocation": "PETACH TIKVA, Israel",
+      "Distance": 9,
+      "TrendingFlag": false,
+      "BeFirstToApplyFlag": false,
+      "Relevancy": 9,
+      "WorkplaceType": "",
+      "ExternalQualificationsStr": null,
+      "ExternalResponsibilitiesStr": null
+     },
+     {
+      "Id": "337210",
+      "Title": "Solution Engineer (Pre-Sales) – Oracle HCM Solutions",
+      "PostedDate": "2026-06-16",
+      "PostingEndDate": null,
+      "Language": "US",
+      "PrimaryLocationCountry": "IL",
+      "GeographyId": 300000289316229,
+      "HotJobFlag": false,
+      "WorkplaceTypeCode": null,
+      "JobFamily": null,
+      "JobFunction": null,
+      "WorkerType": null,
+      "ContractType": null,
+      "ManagerLevel": null,
+      "JobSchedule": null,
+      "JobShift": null,
+      "JobType": null,
+      "StudyLevel": null,
+      "DomesticTravelRequired": null,
+      "InternationalTravelRequired": null,
+      "WorkDurationYears": null,
+      "WorkDurationMonths": null,
+      "WorkHours": null,
+      "WorkDays": null,
+      "LegalEmployer": null,
+      "BusinessUnit": null,
+      "Department": null,
+      "Organization": null,
+      "BusinessUnitId": 300001096514462,
+      "LegalEmployerId": 300000000864358,
+      "OrganizationId": 300001902541887,
+      "MediaThumbURL": "https://img.youtube.com/vi/BV0GMCITXg4/hqdefault.jpg",
+      "ShortDescriptionStr": "Do you enjoy inspiring people as much as solving business challenges?\nOracle is looking for a passionate Pre-Sales Solutions Engineer to join our HCM team and help organizations transform the future of HR.\nThis is more than a technical pre-sales role- it's an opportunity to become a trusted advisor, a compelling presenter, and a strategic partner to HR leaders. If you enjoy engaging with people, presenting innovative solutions, and influencing decision-makers, we'd love to hear from you.\n",
+      "PrimaryLocation": "PETACH TIKVA, Israel",
+      "Distance": 2,
+      "TrendingFlag": false,
+      "BeFirstToApplyFlag": false,
+      "Relevancy": 2,
+      "WorkplaceType": "",
+      "ExternalQualificationsStr": null,
+      "ExternalResponsibilitiesStr": null
+     }
+    ]
+   }
+  ]
+ },
+ "details": {
+  "346932": {
+   "items": [
+    {
+     "Id": "346932",
+     "Title": "Deputy Program Manager",
+     "ExternalDescriptionStr": "<p><span>Israeli Citizenship required</span><br>\n  &nbsp;</p>\n<p>The DPM <span>owns the end-to-end <strong>Oracle Obligation Management process</strong>&nbsp;and will:</span></p>\n<ul style=\"list-style-type: disc\">\n <li><span>Lead and collaborate across diverse, matrixed teams to achieve PMT objectives&nbsp;</span></li>\n <li><span><span>Support the TPM, in the overall execution and delivery of the program.</span></span></li>\n <li><span>Support execution of large-scale cloud and infrastructure programs for Public Sector customers&nbsp;</span></li>\n <li><span>Identify, assess, and manage program risks, issues, dependencies, and opportunities across multiple lines of business.</span></li>\n <li><span>Maintain integrated program plans, milestones, actions, dependencies, risks, and issues.&nbsp;</span></li>\n <li><span>Provide recommendations to improve integration and alignment across interfacing programs and projects&nbsp;</span></li>\n <li><span>Support development of program-level briefings, documentation, and decision-support materials&nbsp;</span></li>\n <li><span>Drive operational consistency through development of repeatable PMT processes and best practices&nbsp;</span></li>\n <li><span>Partner with customer stakeholders and internal Oracle organizations to support successful program delivery&nbsp;</span></li>\n <li><span>Ensure timely delivery of contractual deliverables and overall program commitments&nbsp;</span></li>\n <li><span>Lead internal and external collaboration, commun",
+     "ExternalResponsibilitiesStr": "<ul style=\"list-style-type: disc;\"><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot;, sans-serif;\"><span lang=\"EN-US\">Bachelor’s degree in information technology, Computer Science, Engineering, Business, or a related field, with 10+ years of relevant experience&nbsp;</span></span></li><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot;, sans-serif;\"><span lang=\"EN-US\">Active security clearance (required)&nbsp;</span></span></li><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot;, sans-serif;\"><span lang=\"EN-US\">Demonstrated experience managing cloud or infrastructure programs for Public Sector customers.&nbsp;</span></span></li><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot;, sans-serif;\"><span lang=\"EN-US\">Strong understanding of cloud migration, modernization, and hybrid cloud delivery models&nbsp;</span></span></li><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot;, sans-serif;\"><span lang=\"EN-US\">Experience supporting PMT-level program execution and governance activities&nbsp;</span></span></li><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot;, sans-serif;\"><span lang=\"EN-US\">Proven ability to communicate effectively with senior customer and industry stakeholders&nbsp;</span></span></li><li style=\"line-height: normal;\"><span style=\"font-family: &quot;Calibri Light&quot",
+     "ExternalQualificationsStr": "",
+     "PrimaryLocation": "PETACH TIKVA, Israel",
+     "PrimaryLocationCountry": "IL",
+     "ExternalPostedStartDate": "2026-10-07T09:56:00+00:00",
+     "JobLevel": null,
+     "JobSchedule": null,
+     "RequisitionType": "Professional"
+    }
+   ]
+  },
+  "337210": {
+   "items": [
+    {
+     "Id": "337210",
+     "Title": "Solution Engineer (Pre-Sales) – Oracle HCM Solutions",
+     "ExternalDescriptionStr": "<p><strong>What You'll Do</strong><br>\n  &nbsp;</p>\n<ul style=\" border: 0px;  font-style: normal;  font-weight: 400;  list-style-type: disc;  margin-bottom: 0px;  margin-right: 0px;  margin-top: 0px;  padding: 0px 0px 0px 18px;  text-decoration-color: initial;  text-decoration-style: initial;  text-decoration-thickness: initial\">\n <li style=\" border: 0px;  font-weight: 400;  margin-bottom: 0px;  margin-right: 0px;  margin-top: 0px;  padding: 0px\">\n  <p style=\"margin-left: 16px\">Partner with Sales to understand customer needs and design tailored Oracle HCM solutions.</p></li>\n <li style=\" border: 0px;  font-weight: 400;  margin-bottom: 0px;  margin-right: 0px;  margin-top: 0px;  padding: 0px\">\n  <p style=\"margin-left: 16px\">Lead discovery workshops and strategic conversations with HR leaders and executives.</p></li>\n <li style=\" border: 0px;  font-weight: 400;  margin-bottom: 0px;  margin-right: 0px;  margin-top: 0px;  padding: 0px\">\n  <p style=\"margin-left: 16px\">Deliver engaging product demonstrations, presentations, and proof of concepts that bring Oracle HCM to life.</p></li>\n <li style=\" border: 0px;  font-weight: 400;  margin-bottom: 0px;  margin-right: 0px;  margin-top: 0px;  padding: 0px\">\n  <p style=\"margin-left: 16px\">Present confidently to audiences of all sizes, from executive meetings to customer events.</p></li>\n <li style=\" border: 0px;  font-weight: 400;  margin-bottom: 0px;  margin-right: 0px;  margin-top: 0px;  padding: 0px\">\n  <p style=\"margin-left: 16px\">Ch",
+     "ExternalResponsibilitiesStr": "<p dir=\"RTL\" style=\"direction: rtl; unicode-bidi: embed;\"><strong style=\"--hue-web-line-height-open: 1.5; --hue-web-line-height-regular: 1.25; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); border: 0px; box-sizing: inherit; color: rgba(0, 0, 0, 0.9); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Fira Sans&quot;, Ubuntu, Oxygen, &quot;Oxygen Sans&quot;, Cantarell, &quot;Droid Sans&quot;, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Lucida Grande&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; letter-spacing: normal; margin: 0px; orphans: 2; outline: rgba(0, 0, 0, 0.9) none 0px; padding: 0px; text-align: start; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: initial; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: 2; word-spacing: 0px;\">What You'll Bring</strong><br>&nbsp;</p><ul style=\"--artdeco-reset-typography_getFontSize: 1.4rem; --artdeco-reset-typography_getLineHeight: 1.42857; --hue-web-line-height-open: 1.5; --hue-web-line-height-regular: 1.25; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); border: 0px; box-sizing: inherit; color: rgba(0, 0, 0, 0.9); font-family: -apple-system, system-ui, BlinkMacSyste",
+     "ExternalQualificationsStr": "<p>Career Level - IC4</p>",
+     "PrimaryLocation": "PETACH TIKVA, Israel",
+     "PrimaryLocationCountry": "IL",
+     "ExternalPostedStartDate": "2026-06-16T09:16:26+00:00",
+     "JobLevel": null,
+     "JobSchedule": null,
+     "RequisitionType": "Professional"
+    }
+   ]
+  }
+ }
+}

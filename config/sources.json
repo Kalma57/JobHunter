@@ -28,11 +28,13 @@
     "workday": [
       {"company": "NVIDIA", "slug": "nvidia", "host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia", "site": "NVIDIAExternalCareerSite"},
       {"company": "KLA", "slug": "kla", "host": "kla.wd1.myworkdayjobs.com", "tenant": "kla", "site": "Search"},
-      {"company": "Applied Materials", "slug": "amat", "host": "amat.wd1.myworkdayjobs.com", "tenant": "amat", "site": "External"}
+      {"company": "Applied Materials", "slug": "amat", "host": "amat.wd1.myworkdayjobs.com", "tenant": "amat", "site": "External"},
+      {"company": "Palo Alto Networks", "slug": "paloalto", "host": "paloaltonetworks.wd5.myworkdayjobs.com", "tenant": "paloaltonetworks", "site": "panwexternalcareers"}
     ],
     "eightfold": [
       {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"},
-      {"company": "Teva", "slug": "teva", "host": "www.careers.teva", "domain": "tevapharm.com", "api": "apply_v2"}
+      {"company": "Teva", "slug": "teva", "host": "www.careers.teva", "domain": "tevapharm.com", "api": "apply_v2"},
+      {"company": "Microsoft", "slug": "microsoft", "host": "apply.careers.microsoft.com", "domain": "microsoft.com", "api": "pcsx", "pause_seconds": 5}
     ],
     "comeet": [
       {"company": "DriveNets", "slug": "drivenets", "uid": "72.006", "token": "2769D81626762C4E762762C4EC4E1626"},
@@ -40,6 +42,16 @@
     ],
     "hiremetech": [
       {"company": "HireMeTech", "slug": "juniors", "host": "juniors.hiremetech.com", "max_pages": 40}
+    ],
+    "amazon": [
+      {"company": "Amazon", "slug": "amazon", "country": "ISR"}
+    ],
+    "smartrecruiters": [
+      {"company": "Wix", "slug": "wix", "company_id": "Wix2"}
+    ],
+    "oracle": [
+      {"company": "Oracle", "slug": "oracle", "host": "eeho.fa.us2.oraclecloud.com", "site": "CX_45001",
+       "job_url": "https://careers.oracle.com/en/sites/jobsearch/job/{id}"}
     ]
   }
 }
