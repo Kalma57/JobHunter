@@ -486,3 +486,78 @@ def test_comeet_tags_count_for_keywords(monkeypatch):
     jobs, _ = comeet.fetch(DRIVENETS, ISRAEL, WEEKLY)
     assert [j["matched_keyword"] for j in jobs] == ["Entry Level"]
     assert "Entry-level" not in jobs[0]["description"]
+
+
+# --- HireMeTech (stage 9) - the decision logic, without a browser -----------------------------------
+
+HMT = {"company": "HireMeTech", "slug": "juniors", "host": "juniors.hiremetech.com"}
+
+# Screen texts as the site shows them (10/10/2026).
+HMT_STUDENT_CARD = "Fresh\nStudent\nSign in to see company details\nLinkedIn\n·\nIsrael\nStudent / Intern\n·\nN/A\n·\nN/A\n1 day ago"
+HMT_OTHER_CARD = "New\nSales Development Representative\nSign in to see company details\nLinkedIn\n·\nTel Aviv\nJunior / Entry Level\n·\n1–2 yrs"
+HMT_JOB_PAGE = ("חזרה\nבית\nמשרות\nמצאו את המשרה הבאה\nStudent\nהתחברו לראות את פרטי החברה\nIsrael\nפרטי המשרה\n"
+                "Student / Intern\nרמת המשרה\nעל התפקיד\n\nמשרד רואי חשבון ברמת גן מגייס סטודנט/ית לקראת סיום.\n\n"
+                "מינימום 3 ימים בשבוע\n\nניסיון נדרש\nstudent\nפרטים נוספים\n\nמימון ויזה:\nפורסם\nOct 9, 2026\nמשרות דומות\nטרי\nFin Ops")
+HMT_SIGN_IN_WALL = ("חזרה\nבית\nמצאו את המשרה הבאה\nהתחבר כדי להגיש 🔐\n\nההתחברות חינמית לחלוטין — רק כדי לוודא שמדובר "
+                    "במשתמש אמיתי ולסנן בוטים.\n\nהמשך עם Google")
+
+
+def test_hiremetech_parses_cards_and_job_pages():
+    from jobhunter.agents import hiremetech
+    card = hiremetech.parse_card(HMT_STUDENT_CARD)
+    assert card["title"] == "Student" and card["location"] == "Israel"  # the "Fresh" badge is not the title
+    assert "Student / Intern" in card["card"]
+
+    page = hiremetech.parse_job_page(HMT_JOB_PAGE)
+    assert page["description"].startswith("משרד רואי חשבון") and "משרות דומות" not in page["description"]
+    assert page["posted_at"] == "2026-10-09"
+    assert hiremetech.parse_job_page(HMT_SIGN_IN_WALL) is None
+
+
+def _hmt_site(pages, job_pages):
+    """Fake list pages {n: [(id, card)]} and job pages {id: text}. Returns the readers and a log of what was opened."""
+    opened = []
+
+    def read_list_page(n):
+        opened.append(f"list:{n}")
+        return pages.get(n, [])
+
+    def read_job_page(job_id):
+        opened.append(f"job:{job_id}")
+        return job_pages[job_id]
+
+    return read_list_page, read_job_page, opened
+
+
+def test_hiremetech_collects_matches_and_stops_at_known_jobs(tmp_path):
+    from jobhunter.agents import hiremetech
+    pages = {1: [("1", HMT_STUDENT_CARD), ("2", HMT_OTHER_CARD)], 2: [("3", HMT_OTHER_CARD)]}
+    read_list, read_job, opened = _hmt_site(pages, {"1": HMT_JOB_PAGE})
+
+    jobs, stats = hiremetech.collect(read_list, read_job, HMT, DAILY, tmp_path, DAY1, max_pages=10)
+    assert [j["id"] for j in jobs] == ["hiremetech:1"]
+    job = jobs[0]
+    assert job["company"] == "חסוי — דרך HireMeTech" and job["url"] == "https://juniors.hiremetech.com/job/1"
+    assert job["posted_at"] == "2026-10-09" and job["matched_keyword"] == "Student"
+    assert opened == ["list:1", "list:2", "list:3", "job:1"]  # list:3 is empty = end of list
+
+    # Next day: page 1 holds one new job, page 2 only known ones -> stop there; known texts are not reopened.
+    pages[1] = [("9", HMT_OTHER_CARD), ("1", HMT_STUDENT_CARD)]
+    pages[2] = [("2", HMT_OTHER_CARD), ("3", HMT_OTHER_CARD)]
+    opened.clear()
+    jobs, stats = hiremetech.collect(read_list, read_job, HMT, DAILY, tmp_path, DAY2, max_pages=10)
+    assert opened == ["list:1", "list:2"]
+    assert stats["texts_fetched"] == 0 and [j["id"] for j in jobs] == ["hiremetech:1"]
+
+
+def test_hiremetech_sign_in_wall_falls_back_to_the_card(tmp_path):
+    """Once the site asks to sign in, no more job pages are opened this run; matches carry their card instead."""
+    from jobhunter.agents import hiremetech
+    pages = {1: [("1", HMT_STUDENT_CARD), ("2", HMT_STUDENT_CARD.replace("\nStudent\n", "\nHR Student\n", 1))]}
+    read_list, read_job, opened = _hmt_site(pages, {"1": HMT_SIGN_IN_WALL, "2": HMT_JOB_PAGE})
+
+    jobs, stats = hiremetech.collect(read_list, read_job, HMT, DAILY, tmp_path, DAY1, max_pages=10)
+    assert stats["sign_in_wall"] is True and "job:2" not in opened
+    assert len(jobs) == 2
+    for job in jobs:
+        assert "Student / Intern" in job["description"] and hiremetech.TEXT_HIDDEN_NOTE in job["description"]

@@ -1,0 +1,4 @@
+# Runtime dependencies. Everything else uses the standard library.
+# playwright: a background browser for job boards whose pages load their content in the browser (hiremetech.py).
+# After installing: python -m playwright install chromium
+playwright==1.63.0
