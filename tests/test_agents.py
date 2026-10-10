@@ -7,6 +7,7 @@ workday_kla.json          real KLA list + texts (an "Internship" only in the tex
 """
 
 import json
+import re
 import urllib.error
 from datetime import date, timedelta
 from pathlib import Path
@@ -350,3 +351,101 @@ def test_runner_gives_workday_its_cache(tmp_path, workday_site):
     assert report["new"] == 2 and report["errors"] == []
     assert len(list((tmp_path / "cache" / "workday-kla").glob("*.json"))) == 3
     assert (tmp_path / "seen" / "workday-kla.json").exists()
+
+
+def test_fetch_waits_and_retries_once_on_429(monkeypatch):
+    """Too Many Requests (Qualcomm): wait what the site asks for (Retry-After), else 30s, then one retry."""
+    waits = []
+    for headers, expected in (({"Retry-After": "7"}, 7.0), ({}, 30.0)):
+        outcomes = [urllib.error.HTTPError("https://x", 429, "slow down", headers, None), b'{"ok": 1}']
+        calls = _fake_requests(monkeypatch, outcomes)
+        monkeypatch.setattr(http.time, "sleep", waits.append)
+        assert http.fetch_json("https://x") == {"ok": 1}
+        assert len(calls) == 2 and waits[-1] == expected
+
+
+def test_fetch_gives_up_after_second_429(monkeypatch):
+    calls = _fake_requests(monkeypatch, [urllib.error.HTTPError("https://x", 429, "slow down", {}, None)] * 2)
+    with pytest.raises(FetchError, match="429"):
+        http.fetch_json("https://x")
+    assert len(calls) == 2
+
+
+# --- Eightfold -------------------------------------------------------------------------------------
+
+QUALCOMM = {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"}
+TEVA = {"company": "Teva", "slug": "teva", "host": "www.careers.teva", "domain": "tevapharm.com", "api": "apply_v2"}
+
+
+@pytest.fixture
+def eightfold_sites(monkeypatch):
+    """Fake Qualcomm (pcsx API) and Teva (apply_v2 API) from saved responses, one position per page.
+    .details lists the job-text requests made; .count overrides what a site claims."""
+    from jobhunter.agents import eightfold
+    saved = fixture("eightfold.json")
+    state = SimpleNamespace(details=[], count={})
+
+    def page(name, url):
+        start = int(re.search(r"start=(\d+)", url).group(1))
+        positions = saved[name]["positions"]
+        return {"count": state.count.get(name, len(positions)), "positions": positions[start:start + 1]}
+
+    def fake(url, data=None):
+        if "/api/pcsx/search" in url:
+            return {"data": page("qualcomm", url)}
+        if "/api/apply/v2/jobs?" in url:
+            return page("teva", url)
+        position_id = re.search(r"position_id=(\d+)|/jobs/(\d+)", url)
+        position_id = position_id.group(1) or position_id.group(2)
+        state.details.append(position_id)
+        name = "qualcomm" if "pcsx" in url else "teva"
+        return saved[name]["details"][position_id]
+
+    monkeypatch.setattr(eightfold, "fetch_json", fake)
+    return state
+
+
+def test_eightfold_pcsx_api(tmp_path, eightfold_sites):
+    from jobhunter.agents import eightfold
+    jobs, stats = eightfold.fetch(QUALCOMM, ISRAEL, DAILY, tmp_path / "cache")
+
+    assert stats == {"total": 2, "site_total": 2, "israel": 2, "matched": 1, "texts_fetched": 2}
+    [job] = jobs
+    assert job["title"].startswith("FY26 Intern - Camera Algorithm") and job["matched_keyword"] == "Intern"
+    assert job["id"].startswith("eightfold:qualcomm:") and job["source"] == "eightfold:qualcomm"
+    assert job["url"].startswith("https://careers.qualcomm.com/careers/job/")
+    assert job["job_number"] and job["posted_at"] and "Israel" in job["location"]
+    assert job["description"] and "<" not in job["description"]
+
+
+def test_eightfold_apply_v2_api_and_leaky_location_filter(tmp_path, eightfold_sites):
+    """Teva's site lists a job in Atlanta under Israel - the code drops it."""
+    from jobhunter.agents import eightfold
+    jobs, stats = eightfold.fetch(TEVA, ISRAEL, DAILY, tmp_path / "cache")
+    assert stats["total"] == 2 and stats["israel"] == 1
+
+    israeli = next(p for p in fixture("eightfold.json")["teva"]["positions"] if "Israel" in p["locations"][0])
+    job = eightfold.to_job(str(israeli["id"]), eightfold._fetch_detail(TEVA, str(israeli["id"])), TEVA)
+    assert job["title"] == israeli["name"] and job["job_number"]
+    assert job["url"].startswith("https://www.careers.teva/careers/job/") and job["posted_at"]
+
+
+def test_eightfold_texts_are_fetched_once(tmp_path, eightfold_sites):
+    from jobhunter.agents import eightfold
+    eightfold.fetch(QUALCOMM, ISRAEL, DAILY, tmp_path / "cache")
+    eightfold_sites.details.clear()
+    _, stats = eightfold.fetch(QUALCOMM, ISRAEL, WEEKLY, tmp_path / "cache")
+    assert eightfold_sites.details == [] and stats["texts_fetched"] == 0
+
+
+def test_eightfold_count_mismatch_is_an_error(tmp_path, eightfold_sites):
+    from jobhunter.agents import eightfold
+    eightfold_sites.count["qualcomm"] = 5
+    with pytest.raises(FetchError, match="listed 2 jobs but the site says 5"):
+        eightfold.fetch(QUALCOMM, ISRAEL, DAILY, tmp_path / "cache")
+
+
+def test_runner_gives_eightfold_its_cache(tmp_path, eightfold_sites):
+    report = runner.run_all({**CONFIG, "systems": {"eightfold": [QUALCOMM, TEVA]}}, tmp_path, DAY1)
+    assert report["errors"] == [] and report["new"] == 1
+    assert len(list((tmp_path / "cache" / "eightfold-teva").glob("*.json"))) == 2

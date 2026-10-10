@@ -29,6 +29,10 @@
       {"company": "NVIDIA", "slug": "nvidia", "host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia", "site": "NVIDIAExternalCareerSite"},
       {"company": "KLA", "slug": "kla", "host": "kla.wd1.myworkdayjobs.com", "tenant": "kla", "site": "Search"},
       {"company": "Applied Materials", "slug": "amat", "host": "amat.wd1.myworkdayjobs.com", "tenant": "amat", "site": "External"}
+    ],
+    "eightfold": [
+      {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"},
+      {"company": "Teva", "slug": "teva", "host": "www.careers.teva", "domain": "tevapharm.com", "api": "apply_v2"}
     ]
   }
 }

@@ -17,6 +17,8 @@ USER_AGENT = "JobHunter/1.0 (personal job search; read-only; one request at a ti
 TIMEOUT_SECONDS = 20
 PAUSE_SECONDS = 1.0  # between two requests to the same host
 RETRY_AFTER_SECONDS = 3.0
+TOO_MANY_REQUESTS_WAIT = 30.0  # 429 without a Retry-After header (Qualcomm)
+MAX_WAIT_SECONDS = 120.0
 
 _last_request: dict[str, float] = {}  # host -> time.monotonic() of the last request
 
@@ -44,20 +46,34 @@ def _request_once(url: str, body: bytes | None) -> bytes:
         return resp.read()
 
 
+def _too_many_requests_wait(e: urllib.error.HTTPError) -> float:
+    """How long a 429 asks us to wait: its Retry-After header (seconds), else 30s, never more than 2 minutes."""
+    try:
+        seconds = float((e.headers or {}).get("Retry-After") or TOO_MANY_REQUESTS_WAIT)
+    except ValueError:  # Retry-After can also be a date; then just use the default
+        seconds = TOO_MANY_REQUESTS_WAIT
+    return min(max(seconds, 0), MAX_WAIT_SECONDS)
+
+
 def fetch_json(url: str, data: dict | None = None):
-    """GET `url`, or POST `data` as JSON. One retry on a network error or a 5xx; a 4xx is final (403 = blocked)."""
+    """GET `url`, or POST `data` as JSON. One retry on a network error, a 5xx, or a 429 (after the wait the site asks for).
+    Any other 4xx is final (403 = blocked)."""
     body = json.dumps(data).encode("utf-8") if data is not None else None
     for attempt in (1, 2):
+        wait = RETRY_AFTER_SECONDS
         try:
             raw = _request_once(url, body)
             break
         except urllib.error.HTTPError as e:
-            if e.code < 500 or attempt == 2:
+            retryable = e.code >= 500 or e.code == 429
+            if not retryable or attempt == 2:
                 raise FetchError(f"HTTP {e.code} from {url}") from e
+            if e.code == 429:
+                wait = _too_many_requests_wait(e)
         except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
             if attempt == 2:
                 raise FetchError(f"network error from {url}: {e}") from e
-        time.sleep(RETRY_AFTER_SECONDS)
+        time.sleep(wait)
     try:
         return json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as e:
