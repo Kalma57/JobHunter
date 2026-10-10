@@ -1,6 +1,9 @@
 """Run all company agents - step 1 of the morning run (stage 8, docs/agents/company-agents.md).
 
-    python -m jobhunter.agents run --today YYYY-MM-DD [--weekly] [--state state] [--config config/sources.json]
+    python -m jobhunter.agents run [--today YYYY-MM-DD] [--weekly] [--state state] [--config config/sources.json]
+
+--today defaults to the computer's local date (Israel), so the morning run needs no date command.
+On Sundays the wider weekly keywords are used without --weekly.
 
 For every company in the config: fetch its jobs in Israel that match the keywords (daily, or the wider
 weekly words), then hand them over with collect_new - new jobs go to state/inbox/<date>.json.
@@ -24,6 +27,7 @@ AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workd
           "smartrecruiters": smartrecruiters.fetch, "oracle": oracle.fetch,
           "ashby": ashby.fetch, "apple": apple.fetch,
           "google": google.fetch, "hibob": hibob.fetch}
+SUNDAY = 6  # date.weekday()
 CACHED = {"workday", "eightfold", "hiremetech", "smartrecruiters", "oracle", "apple"}  # its job list has no text; each text is fetched once and kept in state/cache/<system>-<slug>/
 
 
@@ -81,7 +85,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
-    report = run_all(config, args.state, args.today, args.weekly)
+    weekly = args.weekly or args.today.weekday() == SUNDAY  # the weekly safety net runs by itself on Sundays
+    report = run_all(config, args.state, args.today, weekly)
     out = args.state / "runs" / f"{args.today.isoformat()}-agents.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(report, ensure_ascii=False, indent=2)

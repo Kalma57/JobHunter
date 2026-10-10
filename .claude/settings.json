@@ -6,11 +6,13 @@
       "PowerShell(git add state/seen state/inbox*)",
       "PowerShell(git commit -m \"Morning run *)",
       "PowerShell(git push)",
+      "PowerShell(Get-Date*)",
       "Bash(.venv/Scripts/python.exe -m jobhunter.agents run *)",
       "Bash(.venv/Scripts/python.exe -m jobhunter.morning plan *)",
       "Bash(git add state/seen state/inbox*)",
       "Bash(git commit -m \"Morning run *)",
       "Bash(git push)",
+      "Bash(date*)",
       "ArtifactData",
       "PushNotification"
     ]
