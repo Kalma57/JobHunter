@@ -108,16 +108,17 @@ def test_daily_limit_takes_students_first_and_keeps_the_rest():
     """User's decision (10/10/2026): at most 40 jobs a morning; the rest wait for the next mornings."""
     from jobhunter.morning import take_todays_share
     junior = [{"id": f"j{i}", "matched_keyword": "Junior", "source": "amazon:amazon", "posted_at": "2026-10-09"} for i in range(3)]
-    board = {"id": "b1", "matched_keyword": "Student", "source": "hiremetech:juniors", "posted_at": "2026-10-09"}
-    old = {"id": "s-old", "matched_keyword": "Student", "source": "lever:mobileye", "posted_at": "2026-09-01"}
-    new = {"id": "s-new", "matched_keyword": "Intern", "source": "google:google", "posted_at": "2026-10-08"}
+    board = {"id": "b1", "title": "Student", "matched_keyword": "Student", "source": "hiremetech:juniors", "posted_at": "2026-10-09"}
+    old = {"id": "s-old", "title": "Algorithm Student", "matched_keyword": "Student", "source": "lever:mobileye", "posted_at": "2026-09-01"}
+    new = {"id": "s-new", "title": "SW Intern", "matched_keyword": "Intern", "source": "google:google", "posted_at": "2026-10-08"}
+    text_only = {"id": "t1", "title": "US Tax Manager", "matched_keyword": "Internship", "source": "comeet:deloitte", "posted_at": "2026-10-09"}
 
-    todays, rest = take_todays_share([old], junior + [board, new, old], limit=3)
-    assert [j["id"] for j in todays] == ["s-new", "s-old", "b1"]  # students first; company sites before the board; newest first
-    assert [j["id"] for j in rest] == ["j0", "j1", "j2"]
+    todays, rest = take_todays_share([old], junior + [text_only, board, new, old], limit=3)
+    assert [j["id"] for j in todays] == ["s-new", "s-old", "b1"]  # title matches first; company sites before the board; newest first
+    assert [j["id"] for j in rest] == ["t1", "j0", "j1", "j2"]  # a keyword only in the text comes after
 
     todays, rest = take_todays_share(rest, [], limit=3)  # next morning: the backlog goes first
-    assert [j["id"] for j in todays] == ["j0", "j1", "j2"] and rest == []
+    assert [j["id"] for j in todays] == ["t1", "j0", "j1"] and [j["id"] for j in rest] == ["j2"]
 
 
 def test_plan_command_writes_the_backlog(tmp_path):

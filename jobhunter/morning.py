@@ -12,7 +12,7 @@ out_dir, under <dir>/jobs/). The plan is printed and saved to state/plan/<date>.
 
 The brain reads every job of the plan, which costs Claude Pro usage, so one morning takes at most DAILY_LIMIT
 jobs (user's decision, 10/10/2026). The rest wait in state/inbox/backlog.json and go first the next morning.
-Order: jobs that matched a daily keyword (student / intern), company sites before job boards, newest first.
+Order: student / intern in the title, then only in the text, then the rest; company sites before job boards; newest first.
 
 The brain then reads the plan: it builds cards only for jobs without an exact match, decides the
 borderline ones, and writes everything to the board.
@@ -25,6 +25,7 @@ from dataclasses import asdict
 from datetime import date
 from pathlib import Path
 
+from jobhunter.agents.filters import matching_keyword
 from jobhunter.dedup import find_matches
 from jobhunter.retention import compaction_update
 from jobhunter.state import Inbox, _read_json, _write_json
@@ -35,9 +36,15 @@ BOARD_SOURCES = ("hiremetech:",)  # job boards: often card details only, and man
 
 
 def priority(job: dict) -> tuple:
-    """Sort key: student/intern matches first, then company sites before job boards, then newest first."""
+    """Sort key: student/intern in the title first, then student/intern only in the text, then the rest;
+    within each: company sites before job boards, newest first."""
+    keyword = job.get("matched_keyword")
+    if keyword in DAILY_KEYWORDS:
+        group = 0 if matching_keyword(job.get("title"), "", [keyword]) else 1
+    else:
+        group = 2
     return (
-        0 if job.get("matched_keyword") in DAILY_KEYWORDS else 1,
+        group,
         1 if (job.get("source") or "").startswith(BOARD_SOURCES) else 0,
         -_posted_ordinal(job),  # newest first; no date = last
     )
