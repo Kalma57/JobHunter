@@ -15,7 +15,7 @@
 
 **2. תמונת מצב של הלוח.** `ArtifactData list` על `jobs` עם `query.limit` 1000 ו-`out_dir` = `<state>/board`. לרשום את ה-`version` של כל משרה מתוך התוצאה — צריך אותו לכל עדכון.
 
-**3. התכנית.** `.venv\Scripts\python.exe -m jobhunter.morning plan --board-dir <state>/board --today D --state <state>`. הפלט: לכל משרה מהתיבה — מועמדים לכפילות; ורשימת `compactions`.
+**3. התכנית.** `.venv\Scripts\python.exe -m jobhunter.morning plan --board-dir <state>/board --today D --state <state>`. הפלט: **עד 40 משרות** להיום (החלטת המשתמש — מגבלת ה-Pro), כל אחת עם מועמדים לכפילות; `backlog` = כמה מחכות לבקרים הבאים (נשמרות ב-`<state>/inbox/backlog.json` ועוברות ראשונות מחר); ורשימת `compactions`. מעבדים **רק** את המשרות שבתכנית.
 
 **4. לכל משרה בתכנית:**
 - **התאמה `exact` למשרה בלוח** ← **לא יוצרים משרה חדשה.** מעדכנים את המשרה הקיימת: מוסיפים ל-`sightings` (רשימה) את `{source, url, date: D}`. `update` מחליף רשימה שלמה — לשלוח את הרשימה הקיימת מתמונת המצב **ועוד** הפריט החדש. אם המשרה הנכנסת מאתר החברה והקיימת מאתר חיפוש — `url` ו-`apply_url` של אתר החברה מחליפים (אתר החברה הוא המקור). **הסטטוס לא משתנה** — משרה שסומנה הוגש / בהמתנה / לא מעוניין נשארת כך ולא חוזרת כחדשה.
@@ -25,11 +25,11 @@
 
 **5. כלל 30 הימים.** לכל פריט ב-`compactions`: `update` עם ה-`version` מצעד 2.
 
-**6. שורת ריצה.** קודם `get` על `runs` / `D` (אם קיימת — להשתמש ב-`version` שלה כ-`if_version`), ואז `set`: `{at: <עכשיו UTC>, kind: "daily" / "weekly", summary: "<N> חדשות · <M> סוננו · <K> כפילויות", errors: [...], warnings: [...]}` (השגיאות והאזהרות מדוח צעד 1).
+**6. שורת ריצה.** קודם `get` על `runs` / `D` (אם קיימת — להשתמש ב-`version` שלה כ-`if_version`), ואז `set`: `{at: <עכשיו UTC>, kind: "daily" / "weekly", summary: "<N> חדשות · <M> סוננו · <K> כפילויות · <B> ממתינות", errors: [...], warnings: [...]}` (השגיאות והאזהרות מדוח צעד 1).
 
 **7. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות הבוקר. הלוח: https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu"`. אם בדוח של צעד 1 יש שגיאות או אזהרות — להוסיף בסוף: `" ⚠️ לא נקראו: <שמות החברות>"` / `" ⚠️ בדוק: <שמות החברות>"`.
 
-**8. גיבוי.** `git add state/seen state/inbox`, commit `"Morning run D"`, `git push`. (`state/board` ו-`state/plan` לא נכנסים ל-git.)
+**8. גיבוי.** `git add state/seen state/inbox` (כולל `backlog.json`), commit `"Morning run D"`, `git push`. (`state/board` ו-`state/plan` לא נכנסים ל-git.)
 
 **כתיבות:** כמה שיותר ב-`batch` אחד (עד 50 לכל batch). כל עדכון למסמך קיים עם `if_version`. כתיבה שנכשלה בגלל גרסה ← לקרוא מחדש ולנסות פעם אחת.
 

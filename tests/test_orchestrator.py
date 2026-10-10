@@ -102,3 +102,31 @@ def test_retention_leaves_alone_what_must_stay():
     assert compaction_update(_job("applied", 400), TODAY) is None       # applied: forever
     assert compaction_update(_job("hold", 90), TODAY) is None           # on hold: forever
     assert compaction_update(_job("closed", 60, compacted="2026-09-01"), TODAY) is None  # already done
+
+
+def test_daily_limit_takes_students_first_and_keeps_the_rest():
+    """User's decision (10/10/2026): at most 40 jobs a morning; the rest wait for the next mornings."""
+    from jobhunter.morning import take_todays_share
+    junior = [{"id": f"j{i}", "matched_keyword": "Junior", "source": "amazon:amazon", "posted_at": "2026-10-09"} for i in range(3)]
+    board = {"id": "b1", "matched_keyword": "Student", "source": "hiremetech:juniors", "posted_at": "2026-10-09"}
+    old = {"id": "s-old", "matched_keyword": "Student", "source": "lever:mobileye", "posted_at": "2026-09-01"}
+    new = {"id": "s-new", "matched_keyword": "Intern", "source": "google:google", "posted_at": "2026-10-08"}
+
+    todays, rest = take_todays_share([old], junior + [board, new, old], limit=3)
+    assert [j["id"] for j in todays] == ["s-new", "s-old", "b1"]  # students first; company sites before the board; newest first
+    assert [j["id"] for j in rest] == ["j0", "j1", "j2"]
+
+    todays, rest = take_todays_share(rest, [], limit=3)  # next morning: the backlog goes first
+    assert [j["id"] for j in todays] == ["j0", "j1", "j2"] and rest == []
+
+
+def test_plan_command_writes_the_backlog(tmp_path):
+    import json
+    from jobhunter.morning import main
+    from jobhunter.state import Inbox
+    Inbox(tmp_path / "inbox").add(TODAY, [{"id": f"x{i}", "title": f"Job {i}", "matched_keyword": "Student"} for i in range(5)])
+    (tmp_path / "board").mkdir()
+    main(["plan", "--board-dir", str(tmp_path / "board"), "--today", TODAY.isoformat(), "--state", str(tmp_path), "--limit", "2"])
+    plan = json.loads((tmp_path / "plan" / f"{TODAY}.json").read_text(encoding="utf-8"))
+    assert len(plan["jobs"]) == 2 and plan["backlog"] == 3
+    assert len(json.loads((tmp_path / "inbox" / "backlog.json").read_text(encoding="utf-8"))) == 3

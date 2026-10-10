@@ -5,8 +5,14 @@
 <dir> holds a snapshot of the board's jobs (one <id>.json per job, as ArtifactData saves them with
 out_dir, under <dir>/jobs/). The plan is printed and saved to state/plan/<date>.json:
 
-  jobs         every inbox job, with its duplicate candidates on the board (or earlier in today's inbox)
+  jobs         today's share of the inbox (at most DAILY_LIMIT), each with its duplicate candidates on the
+               board (or earlier in today's share)
+  backlog      how many jobs wait for the next mornings
   compactions  board jobs that the 30-day rule shrinks today
+
+The brain reads every job of the plan, which costs Claude Pro usage, so one morning takes at most DAILY_LIMIT
+jobs (user's decision, 10/10/2026). The rest wait in state/inbox/backlog.json and go first the next morning.
+Order: jobs that matched a daily keyword (student / intern), company sites before job boards, newest first.
 
 The brain then reads the plan: it builds cards only for jobs without an exact match, decides the
 borderline ones, and writes everything to the board.
@@ -21,7 +27,34 @@ from pathlib import Path
 
 from jobhunter.dedup import find_matches
 from jobhunter.retention import compaction_update
-from jobhunter.state import Inbox
+from jobhunter.state import Inbox, _read_json, _write_json
+
+DAILY_LIMIT = 40
+DAILY_KEYWORDS = {"Student", "Intern", "Internship", "סטודנט"}
+BOARD_SOURCES = ("hiremetech:",)  # job boards: often card details only, and many repeat company-site jobs
+
+
+def priority(job: dict) -> tuple:
+    """Sort key: student/intern matches first, then company sites before job boards, then newest first."""
+    return (
+        0 if job.get("matched_keyword") in DAILY_KEYWORDS else 1,
+        1 if (job.get("source") or "").startswith(BOARD_SOURCES) else 0,
+        -_posted_ordinal(job),  # newest first; no date = last
+    )
+
+
+def _posted_ordinal(job: dict) -> int:
+    try:
+        return date.fromisoformat(job.get("posted_at") or "").toordinal()
+    except ValueError:
+        return 0
+
+
+def take_todays_share(backlog: list[dict], inbox_jobs: list[dict], limit: int = DAILY_LIMIT) -> tuple[list[dict], list[dict]]:
+    """(today's jobs, the rest) - the backlog and today's inbox together, best first, each job once."""
+    jobs = list({job["id"]: job for job in backlog + inbox_jobs}.values())
+    jobs.sort(key=priority)
+    return jobs[:limit], jobs[limit:]
 
 
 def load_board(board_dir: Path) -> dict[str, dict]:
@@ -59,9 +92,14 @@ def main(argv: list[str] | None = None) -> int:
     plan_cmd.add_argument("--board-dir", type=Path, required=True)
     plan_cmd.add_argument("--today", type=date.fromisoformat, default=date.today())
     plan_cmd.add_argument("--state", type=Path, default=Path("state"))
+    plan_cmd.add_argument("--limit", type=int, default=DAILY_LIMIT, help="most jobs the brain reads this morning")
     args = parser.parse_args(argv)
 
-    plan = build_plan(load_board(args.board_dir), Inbox(args.state / "inbox").read(args.today), args.today)
+    backlog_path = args.state / "inbox" / "backlog.json"
+    todays, rest = take_todays_share(_read_json(backlog_path, []), Inbox(args.state / "inbox").read(args.today), args.limit)
+    _write_json(backlog_path, rest)
+    plan = build_plan(load_board(args.board_dir), todays, args.today)
+    plan["backlog"] = len(rest)
     out = args.state / "plan" / f"{args.today.isoformat()}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(plan, ensure_ascii=False, indent=2)
