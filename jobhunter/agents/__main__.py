@@ -16,10 +16,11 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from jobhunter.agents import eightfold, greenhouse, lever, workday
+from jobhunter.agents import comeet, eightfold, greenhouse, lever, workday
 from jobhunter.state import Inbox, SeenStore, collect_new
 
-AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workday.fetch, "eightfold": eightfold.fetch}
+AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workday.fetch, "eightfold": eightfold.fetch,
+          "comeet": comeet.fetch}
 CACHED = {"workday", "eightfold"}  # its job list has no text; each text is fetched once and kept in state/cache/<system>-<slug>/
 
 

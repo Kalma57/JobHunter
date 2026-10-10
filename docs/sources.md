@@ -72,7 +72,7 @@
 | Lever (EU) | Mobileye (160 בישראל) | GET `https://api.eu.lever.co/v0/postings/mobileye?mode=json` |
 | Workday | NVIDIA, KLA, Applied Materials | POST `https://<host>/wday/cxs/<tenant>/<site>/jobs` עם `{"appliedFacets":{},"limit":20,"offset":0,"searchText":"..."}` — `nvidia.wd5.myworkdayjobs.com/nvidia/NVIDIAExternalCareerSite`, `kla.wd1.myworkdayjobs.com/kla/Search`, `amat.wd1.myworkdayjobs.com/amat/External` |
 | Eightfold (**חדש**) | Qualcomm (37 בישראל), Teva (35 בישראל) | Qualcomm: GET `https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=<מילה>&location=Israel&start=0`. Teva: GET `https://www.careers.teva/api/apply/v2/jobs?domain=tevapharm.com&location=Israel&start=0&num=10`. ⚠️ כל דומיין עונה רק לאחת משתי הכתובות (השנייה 403) |
-| Comeet | DriveNets, HiBob, Nova, SolarEdge (כנראה) | מזהי משרה בפורמט Comeet בעמודי הקריירה; Nova מציגה משרות בנתיב `novami.com/comeetitem/...`. SolarEdge — משרות שלה מופיעות באתרים חיצוניים "Powered by Comeet", ואתר החברה חוסם (403); לאמת בבנייה. ה-API של Comeet דורש company uid + token מתוך עמוד הקריירה — לחלץ בשלב הבנייה |
+| Comeet | DriveNets (35 בישראל), Nova (39) | GET `https://www.comeet.co/careers-api/2.0/company/<uid>/positions?token=<token>&details=true` — ה-uid וה-token הציבוריים מופיעים בעמוד Comeet של החברה (`comeet.com/jobs/<slug>/<uid>`, ב-`COMPANY_DATA`): DriveNets `72.006`, Nova `A5.007` |
 
 ### שכבה 2 — חברות גדולות עם אתר עצמי (מתאם לכל אחת, אחרי שכבה 1)
 
@@ -84,6 +84,7 @@
 | Google, Apple, Microsoft, Oracle | אתרי הקריירה שלהן |
 | monday.com | `monday.com/careers/<uuid>` (אתר עצמי) |
 | Wix | `careers.wix.com/positions` (אתר Wix) |
+| HiBob | `careers.hibob.com` — עברה מ-Comeet למערכת הגיוס של Bob (נבדק 10/10/2026) |
 | Deloitte | `careers.deloitte.co.il` |
 | QualityAI (לשעבר Qualitest) | `careers.qualitestgroup.com` |
 
@@ -96,6 +97,7 @@
 | IAI | אתר עצמי מסובך (`jobs.iai.co.il`) |
 | DRS RADA | HTTP 403 (גם `leonardodrs.com`) |
 | ONE Technologies | HTTP 403 |
+| SolarEdge | האתר מחזיר 403, וה-uid שלה ב-Comeet לא נמצא בשום מקום ציבורי |
 | חברות השמה: Matrix (`matrix.co.il/jobs`), Ness (`ness-tech.co.il/careers`), GAV (`gav.co.il/jobs`), abra (`abra-it.com/career`), Commit (`commit.co.il`), Aman (`aman.co.il/careers`), G-STAT (`g-stat.com/careers`), Experis (`experis.co.il/search`), Bynet (`bynet.co.il/career`) | אתרי WordPress / עצמיים, כל אחד במבנה אחר; מפרסמות בשם חברות אחרות — וממילא מופיעות באתרי החיפוש. אם יתברר בשבוע הצל שמפספסים מהן משרות — נוסיף מתאם |
 
 ⚠️ מלכודות: SmartRecruiters מחזיר HTTP 200 גם לחברה שלא קיימת (רשימה ריקה) — לבדוק `totalFound`. גם Workable מחזיר 200 עם רשימה ריקה לכל שם — לא סימן לקיום.

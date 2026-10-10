@@ -4,6 +4,8 @@ greenhouse_scaleops.json  real ScaleOps jobs (2 in Tel Aviv, 1 in the US) + 1 ed
 lever_mobileye.json       real Mobileye jobs: a student job, a full-time job in Israel, a job in India
 workday_kla.json          real KLA list + texts (an "Internship" only in the text, a student job, a regular job)
                           and NVIDIA's nested location filter
+eightfold.json            real Qualcomm (pcsx API) and Teva (apply_v2 API) positions and texts, incl. Teva's Atlanta job
+comeet_drivenets.json     real DriveNets jobs: an Internship in the text, Tel Aviv / Red Bank with no country code
 """
 
 import json
@@ -449,3 +451,38 @@ def test_runner_gives_eightfold_its_cache(tmp_path, eightfold_sites):
     report = runner.run_all({**CONFIG, "systems": {"eightfold": [QUALCOMM, TEVA]}}, tmp_path, DAY1)
     assert report["errors"] == [] and report["new"] == 1
     assert len(list((tmp_path / "cache" / "eightfold-teva").glob("*.json"))) == 2
+
+
+# --- Comeet ----------------------------------------------------------------------------------------
+
+DRIVENETS = {"company": "DriveNets", "slug": "drivenets", "uid": "72.006", "token": "T0KEN"}
+
+
+def test_comeet_israel_keywords_and_fields(monkeypatch):
+    """Real DriveNets jobs: Raanana (IL), Tel Aviv with no country code, Red Bank NJ with no country code."""
+    from jobhunter.agents import comeet
+    urls = []
+    monkeypatch.setattr(comeet, "fetch_json", lambda url: urls.append(url) or fixture("comeet_drivenets.json"))
+    jobs, stats = comeet.fetch(DRIVENETS, ISRAEL, DAILY)
+
+    assert urls == ["https://www.comeet.co/careers-api/2.0/company/72.006/positions?token=T0KEN&details=true"]
+    assert stats == {"total": 4, "site_total": None, "israel": 3, "matched": 1}  # Red Bank is out, Tel Aviv is in
+    [job] = jobs
+    assert job["title"] == "Controller" and job["matched_keyword"] == "Internship"
+    assert job["id"] == f"comeet:drivenets:{job['job_number']}" and job["source"] == "comeet:drivenets"
+    assert job["url"].startswith("https://drivenets.com/")
+    assert job["apply_url"].startswith("https://www.comeet.com/jobs/drivenets/72.006/")
+    assert "Raanana" in job["location"] and job["posted_at"]
+    assert job["description"].startswith("Description") and "<" not in job["description"]
+
+
+def test_comeet_tags_count_for_keywords(monkeypatch):
+    """Comeet's experience level ("Entry-level") counts for the weekly words, not as job text."""
+    from jobhunter.agents import comeet
+    raw = fixture("comeet_drivenets.json")[3]
+    raw["experience_level"] = "Entry-level"
+    monkeypatch.setattr(comeet, "fetch_json", lambda url: [raw])
+    assert comeet.fetch(DRIVENETS, ISRAEL, DAILY)[0] == []
+    jobs, _ = comeet.fetch(DRIVENETS, ISRAEL, WEEKLY)
+    assert [j["matched_keyword"] for j in jobs] == ["Entry Level"]
+    assert "Entry-level" not in jobs[0]["description"]

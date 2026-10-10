@@ -1,0 +1,206 @@
+[
+ {
+  "name": "Controller",
+  "department": "Finance",
+  "email": "drivenets.89.E64@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/controller/89.E64",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/controller/89.E64",
+  "url_active_page": "https://drivenets.com/job/?id=89.E64",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "89.E64",
+  "location": {
+   "name": "Raanana, Israel",
+   "country": "IL",
+   "city": "Raanana",
+   "state": "Center district",
+   "postal_code": "",
+   "street_name": "Zarhin Street 1, Building B, 11th floor",
+   "street_number": "1",
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "8E.408",
+   "is_remote": false
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://drivenets.com/job/?id=89.E64",
+  "picture_url": null,
+  "time_updated": "2026-10-07T13:33:34Z",
+  "company_name": "DRIVENETS",
+  "is_internal": false,
+  "linkedin_job_posting_id": "MTVfMTQxMzc2XzQ1Mjk5Nl8xODM2MTgy",
+  "workplace_type": "On-site",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/72.006/positions/89.E64?token=2769D81626762C4E762762C4EC4E1626",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p>On-site | Israel</p><p><strong>About the Company</strong></p><p>DriveNets is a leader in large-scale networking solutions for AI infrastructure and service providers. The company's disaggregated networking architecture transforms the economics of large-scale infrastructures while maximizing performance, utilization, and operational efficiency. Its high-performance AI fabric maximizes GPU utilization and accelerates deployments by optimizing the AI stack end-to-end, resulting in higher tokens-per-second and lower cost-per-token. DriveNets' solutions power production networks for global tier-1 operators like AT&amp;T and Comcast, and scale multi-vendor AI infrastructures at foundation model labs, NeoClouds, and enterprises.</p><p><br></p><p><strong>Responsibilities</strong></p><ul><li>Take a key role in the month-end, quarter-end, and year-end closing processes, ensuring compliance with US GAAP.</li><li>Implement and monitor internal controls, policies, and workflows across the company.</li><li>Oversee the Bookkeeper's responsibilities, verify accuracy, and reconcile accounts for period-end closing.</li><li>Oversee foreign subsidiaries' accounting, local requirements, salaries, and financial reports.</li><li>Manage and support day-to-day finance activities, including accounts payable, cash flow, banking transactions, payments, billing, and VAT returns.</li><li>Manage the payroll process in coordination with the external payroll bureau.</li><li>Work with the external auditor and prepare the annual financial statements and tax reports in compliance with official guidelines and requirements.</li><li>Undertake ad hoc accounting and finance-related projects as needed.</li></ul>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<p><strong>Technical Skills</strong></p><ul><li> 2–4 years of experience in a similar position within the hi-tech industry.</li><li>Internship at one of the Big 4 accounting firms — a must.</li><li> Solid knowledge and hands-on experience with US GAAP.</li><li> Advanced knowledge of ERP systems, with NetSuite being an advantage.</li><li> Strong Microsoft Excel skills, including experience with inventory-related workflows.</li><li> Native-level proficiency in English — a must.</li></ul><p><br></p><p><strong>Soft Skills</strong></p><ul><li> Strong analytical skills with high attention to detail.</li><li>Ability to work in a fast-paced environment, prioritize workload, and meet tight deadlines.</li><li> Accurate, detail-oriented, and highly professional in approach.</li></ul><p><br></p><p><strong>Nice to Have / Advantage</strong></p><ul><li> Experience with NetSuite ERP.</li><li> Experience with inventory-related workflows.</li></ul><p><br></p><p>If your experience is close but doesn't fulfil all requirements, please submit your application. DriveNets is on a mission to build a special company comprised of individuals with different backgrounds, perspectives, and experiences.</p><p>DriveNets is an equal opportunity employer. We do not discriminate based on upon race, religion, national origin, sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with disability, or other applicable legally protected characteristics.</p><p><br></p><p>More About DriveNets</p><p>Based in Israel with extended teams located in the US, Japan, and Romania, DriveNets operations cover more than twelve countries globally. Powering production networks for global tier-1 operators, DriveNets is a leader in large-scale networking solutions for AI infrastructure and service providers. Visit our website to learn more:</p><p><a href=\"https://drivenets.com/company/\" target=\"_blank\" rel=\"noopener noreferrer\">https://drivenets.com/company/</a></p>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "AI Platform Software Engineer",
+  "department": "R&D",
+  "email": "drivenets.AA.B6C@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/ai-platform-software-engineer/AA.B6C",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/ai-platform-software-engineer/AA.B6C",
+  "url_active_page": "https://drivenets.com/job/?id=AA.B6C",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "AA.B6C",
+  "location": {
+   "name": "Tozeret Haaretz 3",
+   "country": "",
+   "city": "Tel Aviv",
+   "state": null,
+   "postal_code": null,
+   "street_name": "Office Location:    Tozeret Haaretz 3, 6th floor, Tel Aviv, Center District   EA",
+   "street_number": null,
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "AD.605",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://drivenets.com/job/?id=AA.B6C",
+  "picture_url": null,
+  "time_updated": "2026-10-06T08:29:00Z",
+  "company_name": "DRIVENETS",
+  "is_internal": false,
+  "linkedin_job_posting_id": "MTVfMTQxMzc2XzQ0MTAwNF8xNzgyMjEy",
+  "workplace_type": "Hybrid",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/72.006/positions/AA.B6C?token=2769D81626762C4E762762C4EC4E1626",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p><strong>#Hybrid</strong></p><p>DriveNets is a leader in high-scale disaggregated networking solutions. Founded in 2015, DriveNets modernizes the way service providers, cloud providers, and hyperscalers build networks. Supporting the largest network in the world, more than half of AT&amp;T's backbone traffic is running on DriveNets' Network Cloud open disaggregated architecture. Raising $587 million in three funding rounds, DriveNets is disrupting the networking market from high-scale architecture to AI platforms, and is bringing onboard the most talented people. We are seeking people that want to make an impact on the world's leading communication networks and are experienced in networking architecture or AI infrastructure solutions.</p><p><strong>Job Summary</strong></p><p>We are looking for a talented and motivated Software Engineer with hands-on experience building and operating multi-agent AI systems in production to join our DriveNets Automation Platform (DAP) team.</p><p>The team develops automation tools, orchestration capabilities, and intelligent platforms that simplify the deployment, management, troubleshooting, and optimization of large-scale network and AI infrastructure environments.</p><p>You will work on the design and development of AI-powered systems that bridge networking, automation, observability, and distributed infrastructure — running on Kubernetes at scale. Our stack includes LangGraph, Langfuse, RAG pipelines, MCP, and agent-to-agent (A2A) communication patterns.</p><p>This role combines strong software engineering with practical AI application development, with a sharp focus on production hardening, tracing, evaluation, and safety of agentic systems — not model training or research prototypes.</p>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul><li>8+ years of hands-on software engineering experience building production-grade backend services, APIs, or AI-powered systems.</li><li>Proven production experience with multi-agent AI systems: deployment, tracing, guardrails, hardening, and incident management.</li><li>Hands-on experience with agentic frameworks such as LangGraph, CrewAI, Google ADK, AutoGen, or equivalent.</li><li>Experience building and running evaluation pipelines for agentic solutions - including trajectory tracing, ground truth validation, and harshness/quality scoring.</li><li>Strong Python proficiency: comfortable building scalable backend services using gRPC and REST APIs.</li><li>Solid understanding of distributed systems: fault tolerance, consistency models, service communication, and operational challenges at scale.</li><li>Hands-on Kubernetes experience: deploying and operating containerized services, managing workloads, config, and scaling in production clusters.</li><li>Practical experience with embeddings, vector databases, and semantic retrieval systems in production.</li><li>Practical experience with RAG pipelines, LLM API integration, structured outputs, and tool calling in production environments including building and serving MCP servers at scale.</li><li>Working knowledge of SQL and/or NoSQL databases, schema design, and query optimization.</li><li>Strong debugging skills across application logic, APIs, data, and AI agent behavior.</li><li>Strong communication skills and a bias toward ownership and delivery.</li></ul><p>Nice to Have</p><ul><li>Familiarity with Langfuse/Arize Pheonix.</li><li>Familarity with A2A &amp; A2UI protocols.</li><li>Experience with network automation, orchestration, or configuration management (Ansible, Terraform, NETCONF, gNMI, or similar).</li></ul><p>DriveNets is on a mission to build a special company comprised of individuals with diverse backgrounds, perspectives, and experiences.&nbsp;</p><p>DriveNets is an equal opportunity employer. We do not discriminate based on upon race, religion, national origin, sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with disability, or other applicable legally protected characteristics.&nbsp;</p>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "Senior Solution Engineer",
+  "department": "Product & Solutions Engineering",
+  "email": "drivenets.A9.371@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/senior-solution-engineer/A9.371",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/senior-solution-engineer/A9.371",
+  "url_active_page": "https://drivenets.com/careers/",
+  "employment_type": null,
+  "experience_level": null,
+  "uid": "A9.371",
+  "location": {
+   "name": "Red Bank NJ",
+   "country": "",
+   "city": "Red Bank",
+   "state": "New Jersey",
+   "postal_code": "07701",
+   "street_name": null,
+   "street_number": null,
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "90.705",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": null,
+  "picture_url": null,
+  "time_updated": "2026-10-07T12:47:13Z",
+  "company_name": "DRIVENETS",
+  "is_internal": false,
+  "linkedin_job_posting_id": "MTVfMTQxMzc2XzQ3MzUwNV8xOTA1OTI4",
+  "workplace_type": "Remote",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/72.006/positions/A9.371?token=2769D81626762C4E762762C4EC4E1626",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p>DriveNets&nbsp;is a leader in high-scale networking software for AI infrastructure and service providers. The company pioneered a disaggregated networking architecture that transforms the economics of large-scale networks while maximizing performance,&nbsp;utilization, and operational efficiency.&nbsp;DriveNets-powered networks are deployed by global leaders, including AT&amp;T and Comcast, supporting more than 30% of total U.S. internet traffic.&nbsp;DriveNets&nbsp;AI Fabric delivers full-stack networking for AI infrastructures, providing the highest-performance, Ethernet-based alternative to InfiniBand. The solution is deployed by&nbsp;hyperscalers,&nbsp;NeoClouds, and enterprises worldwide.&nbsp;With over $1B raised,&nbsp;DriveNets&nbsp;continues to push the boundaries of modern networking infrastructure.</p><p>DriveNets seeks a Senior Solution Engineer to work based out of their Red Bank, NJ office. Telecommuting within the U.S. is permitted.</p><p><strong>In this role you will:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Pre-Deployment Planning:&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conduct&nbsp;customer meetings to define system requirements.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plan the physical deployment of the product within the customer's environment.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coordinate software version compatibility and hardware integration.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure power planning is aligned with infrastructure requirements.&nbsp;</p><p>On-Site Installation &amp; Setup:&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mount the product in network racks according to deployment architecture.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect internal cabling to integrate the solution into the customer's infrastructure.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configure and install the product with the required software version.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Establish connectivity between&nbsp;DriveNets’s solution and the customer's networking environment.&nbsp;</p><p>Customer Handover &amp; Training:&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deliver the solution and verify its functionality.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provide technical training and explanations to ensure the customer understands system operations.&nbsp;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guide customers on best practices for mana",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<p><br></p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seven (7) years of experience in a Network Engineer or closely related occupation;</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge in DriveNets specific domains:</p><p>o&nbsp;&nbsp;DriveNets Network Operating System (DNOS), and key components like DNOR (DriveNets Orchestrator).&nbsp;</p><p>o&nbsp;&nbsp;Microservices solutions such as Docker containers, and Linux OS and Linux tools</p><p>o&nbsp;&nbsp;Networking protocols, including BGP (Border Gateway Protocol), MPLS, SR (Segment Routing), and QoS.&nbsp;</p><p>o&nbsp;&nbsp;Feature development for NC (Network Cloud) and NC-AI (Network Cloud Artificial Intelligence), including routing technologies, QoS, and Telemetry integration</p><p><br></p><p><strong>﻿Offered Salary:</strong> $160,000 - $170,000/year</p><p><strong>To Apply:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send resumes to jobs@drivenets.com.</p><p><br></p><p>This position is eligible for DriveNet’s employee incentive referral program. Please review the terms of DriveNet’s referral policy found in the employee handbook or by requesting it from Human Resources.</p><p>DriveNets&nbsp;is an equal opportunity employer. We do not discriminate based on upon race, religion, national origin, sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with disability, or other applicable legally protected characteristics.&nbsp;</p><p>&nbsp;<strong>More About&nbsp;DriveNets </strong>&nbsp;</p><p>Based in Israel with locations in Romania, US,&nbsp;India&nbsp;and Japan as well as extended teams,&nbsp;DriveNets&nbsp;operations cover more than twelve countries. With recognition by industry analysts and through&nbsp;partnerships with market&nbsp;leaders&nbsp;such&nbsp;as AMD, Broadcom,&nbsp;Dell&nbsp;and others,&nbsp;DriveNets&nbsp;is pushing market momentum,&nbsp;delivering the scale and efficiency that modern AI workloads demand.&nbsp;Visit our website:&nbsp;&nbsp;<a href=\"https://drivenets.com/company/&nbsp;\" target=\"_blank\" rel=\"noopener noreferrer\">https://drivenets.com/company/&nbsp;</a>;</p>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "AI Specialist Engineer",
+  "department": "AI Tools Enablement",
+  "email": "drivenets.9D.660@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/ai-specialist-engineer/9D.660",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/drivenets/72.006/ai-specialist-engineer/9D.660",
+  "url_active_page": "https://drivenets.com/job/?id=9D.660",
+  "employment_type": null,
+  "experience_level": null,
+  "uid": "9D.660",
+  "location": {
+   "name": "Raanana, Israel",
+   "country": "IL",
+   "city": "Raanana",
+   "state": "Center district",
+   "postal_code": "",
+   "street_name": "Zarhin Street 1, Building B, 11th floor",
+   "street_number": "1",
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "8E.408",
+   "is_remote": false
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://drivenets.com/job/?id=9D.660",
+  "picture_url": null,
+  "time_updated": "2026-10-07T08:33:18Z",
+  "company_name": "DRIVENETS",
+  "is_internal": false,
+  "linkedin_job_posting_id": "MTVfMTQxMzc2XzQyMTI2NF8xNjk3ODQ0",
+  "workplace_type": "On-site",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/72.006/positions/9D.660?token=2769D81626762C4E762762C4EC4E1626",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p class=\"ql-align-justify\"><strong>AI Specialist Engineer</strong></p><p><strong>Location:</strong> <strong>Ra’anana, Israel</strong></p><p class=\"ql-align-justify\"><strong>About Us:</strong></p><p>DriveNets is a leader in disaggregated high-scale networking solutions for service providers and AI infrastructures. Founded in December 2015, DriveNets created a radical new way to build networks by adapting the architectural model of the cloud to telco-grade networking. This solution accelerates network deployment, improves the network’s economic model, and radically simplifies network operations. With customers including Comcast, Orange, and KDDI - over 80% of AT&amp;T’s network traffic now runs through a disaggregated core powered by DriveNets software. DriveNets Network Cloud-AI solution, based on the same technology, was introduced to the market in 2023, providing the highest-performance Ethernet-based AI networking solution, and is already deployed by&nbsp;Hyperscalers, NeoClouds and Enterprises. Raising over $587 million in three funding rounds, DriveNets continues to deploy the most innovative network infrastructure and is looking for the most talented people to be part of this journey.</p><p><strong>The Role:</strong></p><p>We're looking for an AI Specialist Engineer to join our AI Enablement team. This is a high-impact role where you will build products and internal tools used across the entire company, while working with the most advanced AI tools and best practices available today.</p><p><strong>Key Responsibilities</strong></p><ul><li>Develop internal AI-powered products and tools used by teams across DriveNets to work faster and smarter.</li><li>Lead the evaluation, integration, and rollout of AI-powered development tools across engineering teams.</li><li>Build proof-of-concept projects and internal tooling that demonstrate the practical value of AI in real workflows.</li><li>Develop best practices, prompt engineering guidelines, and training materials for AI-assisted development.</li><li>Stay current with the rapidly evolving AI tooling landscape and advise leadership on strategic adoption.</li><li>Work hands-on with the most advanced AI development tools and shape how the company uses them.</li></ul>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul><li>B.Sc. or M.Sc. in Computer Science, Electrical Engineering, or a related field, graduated with Honors</li><li>AI Development Tools: Hands-on experience using AI-powered coding assistants and agentic development tools — not just familiarity, but meaningful integration into your workflow.</li><li>Communication: Ability to explain technical concepts clearly and influence adoption across teams with varying levels of AI experience.</li><li>As part of the initial stages of the recruitment process, you will be required to submit an AI project presentation based on a project built using <strong>Claude Code</strong>.</li></ul>",
+    "order": 2
+   }
+  ]
+ }
+]
