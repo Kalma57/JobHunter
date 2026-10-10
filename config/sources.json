@@ -38,7 +38,8 @@
     ],
     "comeet": [
       {"company": "DriveNets", "slug": "drivenets", "uid": "72.006", "token": "2769D81626762C4E762762C4EC4E1626"},
-      {"company": "Nova", "slug": "nova", "uid": "A5.007", "token": "5A71C4332DFB4E10F532DFB4E32DF0B4E"}
+      {"company": "Nova", "slug": "nova", "uid": "A5.007", "token": "5A71C4332DFB4E10F532DFB4E32DF0B4E"},
+      {"company": "Deloitte", "slug": "deloitte", "uid": "F7.00B", "token": "7FB2FE21FEC3FD847D33FD8FF603FD81FEC"}
     ],
     "hiremetech": [
       {"company": "HireMeTech", "slug": "juniors", "host": "juniors.hiremetech.com", "max_pages": 40}
@@ -48,6 +49,18 @@
     ],
     "smartrecruiters": [
       {"company": "Wix", "slug": "wix", "company_id": "Wix2"}
+    ],
+    "ashby": [
+      {"company": "monday.com", "slug": "monday", "board": "monday.com"}
+    ],
+    "apple": [
+      {"company": "Apple", "slug": "apple", "location": "israel-ISR"}
+    ],
+    "google": [
+      {"company": "Google", "slug": "google", "location": "Israel"}
+    ],
+    "hibob": [
+      {"company": "HiBob", "slug": "hibob"}
     ],
     "oracle": [
       {"company": "Oracle", "slug": "oracle", "host": "eeho.fa.us2.oraclecloud.com", "site": "CX_45001",

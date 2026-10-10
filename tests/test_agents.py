@@ -650,3 +650,97 @@ def test_workday_israel_offices_when_there_is_no_israel_option():
         {"descriptor": "Office - Israel - Tel Aviv", "id": "ta"}, {"descriptor": "Remote - Israel", "id": "rem"},
         {"descriptor": "Office - Germany - Munich", "id": "mu"}, {"descriptor": "Israeli Street, Ohio", "id": "no"}]}]}]
     assert workday.israel_facet(facets) == {"locations": ["ta", "rem"]}
+
+
+# --- tier 2: Ashby (monday.com), Apple, Google, HiBob - page structures as the sites send them (10/10/2026) ---
+
+def test_ashby_monday(monkeypatch):
+    from jobhunter.agents import ashby
+    board = {"jobs": [
+        {"id": "a1", "title": "Data Analyst Student", "employmentType": "Intern", "location": "Tel Aviv", "secondaryLocations": [],
+         "publishedAt": "2026-10-01T07:00:00.000+00:00", "isListed": True, "jobUrl": "https://jobs.ashbyhq.com/monday.com/a1",
+         "applyUrl": "https://jobs.ashbyhq.com/monday.com/a1/application", "descriptionHtml": "<p>Join our BI team.</p>",
+         "address": {"postalAddress": {"addressCountry": "Israel"}}},
+        {"id": "a2", "title": "Account Executive", "employmentType": "FullTime", "location": "New York", "isListed": True,
+         "jobUrl": "https://jobs.ashbyhq.com/monday.com/a2", "descriptionHtml": "<p>Students welcome</p>",
+         "address": {"postalAddress": {"addressCountry": "United States"}}},
+        {"id": "a3", "title": "Hidden Student Role", "location": "Tel Aviv", "isListed": False}]}
+    monkeypatch.setattr(ashby, "fetch_json", lambda url: board)
+    jobs, stats = ashby.fetch({"company": "monday.com", "slug": "monday", "board": "monday.com"}, ISRAEL, DAILY)
+    assert stats == {"total": 2, "site_total": None, "israel": 1, "matched": 1}  # unlisted job ignored, New York out
+    [job] = jobs
+    assert job["id"] == "ashby:monday:a1" and job["location"] == "Tel Aviv, Israel" and job["posted_at"] == "2026-10-01"
+    assert job["description"] == "Join our BI team."
+
+
+def _apple_page(loader_data: dict) -> str:
+    inner = json.dumps({"loaderData": loader_data})
+    return f'<script>window.__staticRouterHydrationData = JSON.parse({json.dumps(inner)});</script>'
+
+
+def test_apple_search_and_details(monkeypatch, tmp_path):
+    from jobhunter.agents import apple
+    result = {"id": "200676939-1451", "postingTitle": "Software Engineering Student", "transformedPostingTitle": "software-engineering-student",
+              "postDateInGMT": "2026-10-05T10:28:06.889Z", "reqId": "200676939-1451",
+              "locations": [{"name": "Haifa", "countryName": "Israel"}]}
+    details = {"postingTitle": "Software Engineering Student", "jobSummary": "Design future Apple products.",
+               "description": "In this student role you will work on low-level software.", "minimumQualifications": "Pursuing a B.Sc.",
+               "preferredQualifications": "Python", "teamNames": ["Hardware", "Students"], "jobNumber": "200676939-1451"}
+    pages = []
+
+    def fake(url):
+        pages.append(url)
+        if "/details/" in url:
+            return _apple_page({"jobDetails": {"jobsData": details}})
+        if "search=&" in url:
+            return _apple_page({"search": {"searchResults": [], "totalRecords": 101}})
+        return _apple_page({"search": {"searchResults": [result] if "search=Student" in url else [], "totalRecords": 1}})
+
+    monkeypatch.setattr(apple, "fetch_text", fake)
+    jobs, stats = apple.fetch({"company": "Apple", "slug": "apple"}, ISRAEL, DAILY, tmp_path)
+    assert stats["israel"] == 101 and stats["matched"] == 1 and stats["texts_fetched"] == 1
+    [job] = jobs
+    assert job["url"] == "https://jobs.apple.com/en-us/details/200676939-1451/software-engineering-student"
+    assert job["location"] == "Haifa, Israel" and "Minimum qualifications" in job["description"]
+    with pytest.raises(FetchError, match="embedded data"):
+        apple.page_data("<html>changed</html>")
+
+
+def test_google_results_page(monkeypatch):
+    from jobhunter.agents import google
+    row = ["103632882076918470", "Part-Time Software Engineering BS/MS Intern, 2027", "https://www.google.com/about/careers/applications/signin?jobId=x",
+           [None, "<ul><li>Develop scripts.</li></ul>"], [None, "<h3>Minimum qualifications:</h3><ul><li>Currently enrolled in a Bachelor's</li></ul>"],
+           "projects/x", None, "Google", "en-US",
+           [["Tel Aviv, Israel", ["Yigal Alon St 98"], "Tel Aviv-Yafo", None, "Tel Aviv District", "IL"]],
+           [None, "<p>Include your graduation date.</p>"], [2, 3], [1788428294, 0], None, None, [None, "<p>Apply before 23rd October.</p>"],
+           None, None, [None, "Note: Tel Aviv"], None, 5]
+
+    def fake(url):
+        payload = [[row] if "q=Intern" in url else [], None, 90 if "q=&" in url else (1 if "q=Intern" in url else 0), 20]
+        return f"<script>AF_initDataCallback({{key: 'ds:1', hash: '2', data:{json.dumps(payload)}, sideChannel: {{}}}});</script>"
+
+    monkeypatch.setattr(google, "fetch_text", fake)
+    jobs, stats = google.fetch({"company": "Google", "slug": "google"}, ISRAEL, DAILY)
+    assert stats["israel"] == 90 and stats["matched"] == 1
+    [job] = jobs
+    assert job["id"] == "google:103632882076918470" and job["matched_keyword"] == "Intern"
+    assert job["url"].endswith("/103632882076918470-part-time-software-engineering-bs-ms-intern-2027")
+    assert job["location"] == "Tel Aviv, Israel" and job["posted_at"] and "Responsibilities" in job["description"]
+
+
+def test_hibob_careers_page(monkeypatch):
+    from jobhunter.agents import hibob
+    def li(site, dept, uuid, title, meta):
+        return (f'<li class="hibob-careers__job" data-site="{site}" data-department="{dept}">\n'
+                f'<a class="comeet-position hibob-careers__job-link" href="https://hibob-fa0ad69d0cb34a.careers.hibob.com/jobs/{uuid}" target="_blank">\n'
+                f'<span class="comeet-position-name hibob-careers__position-title">{title}</span>\n'
+                f'<span class="comeet-position-meta hibob-careers__position-meta">{meta}</span>\n</a></li>')
+    page = (li("Israel", "R&amp;D", "e41aa061-751d-436f-a34c-d8f7bb65cb57", "Backend Developer Student", "Student | Israel")
+            + li("United Kingdom", "Sales", "071012db-d5c7-44a5-811b-7a9a0debb02f", "Sales Intern", "Intern | United Kingdom")
+            + li("Israel", "Finance", "084b8135-73c7-4d37-81f4-b6eb2ec9d367", "Controller", "Permanent | Israel"))
+    monkeypatch.setattr(hibob, "fetch_text", lambda url: page)
+    jobs, stats = hibob.fetch({"company": "HiBob", "slug": "hibob"}, ISRAEL, DAILY)
+    assert stats == {"total": 3, "site_total": None, "israel": 2, "matched": 1}
+    [job] = jobs
+    assert job["title"] == "Backend Developer Student" and job["id"] == "hibob:e41aa061-751d-436f-a34c-d8f7bb65cb57"
+    assert "R&D" in job["description"] and hibob.TEXT_HIDDEN_NOTE in job["description"]

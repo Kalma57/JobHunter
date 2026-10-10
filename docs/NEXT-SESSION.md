@@ -20,7 +20,8 @@
 
 **פתוח:**
 - ריצת הבוקר של 10/10 נתקעה בצעד 3 (כנראה מחכה לאישור כלי) — לבדוק עם `mcp__scheduled-tasks__list_task_runs`.
-- שכבה 2 (אתרים עצמיים: Check Point, Palo Alto+CyberArk, Amazon, Google, Apple, Microsoft, Oracle, monday, Wix, Deloitte, QualityAI, HiBob).
+- ✅ שכבה 2 נבנתה (אותה שיחה): `amazon.py`, `smartrecruiters.py`, `oracle.py`, `ashby.py`, `apple.py`, `google.py`, `hibob.py`, `cache.py`; Microsoft/Palo Alto/Deloitte בהגדרות. 21 חברות + HireMeTech, ריצה משותפת: 154 משרות, 0 שגיאות. 82 בדיקות.
+- ⚠️ הריצה האמיתית הראשונה תשלח ~150 משרות למוח בבת אחת — לבדוק שזה נכנס במגבלות ה-Pro (אחר כך: כמה בודדות ביום).
 - התראות מייל ל-Glassdoor / SecretHunter.
 - שלב 7 (3 בקרים), שלב 10 (שבוע צל), סטטוס "נסגרה" למשרה שירדה מהאתר — לא ממומש.
 - פרטיות לפני שלב 11: להפריד מידע אישי (`profile/` מחוץ ל-git, קבצי `.example`), ולגרסה ציבורית ל-LinkedIn — ריפו נפרד עם היסטוריה נקייה.

@@ -3,8 +3,9 @@
 Read-only and polite: one request at a time, a short pause between requests to the same host,
 an identifying User-Agent, and only the public JSON endpoints the sites' own pages use.
 
-fetch_json  GET (or POST with a JSON body) -> parsed JSON. Raises FetchError when the site can't be read,
-            so the caller can skip that company without marking anything as seen.
+fetch_json  GET (or POST with a JSON body) -> parsed JSON.  fetch_text  GET a web page -> its HTML.
+            Both raise FetchError when the site can't be read, so the caller can skip that company
+            without marking anything as seen.
 """
 
 import json
@@ -43,7 +44,7 @@ def _wait_for_turn(host: str) -> None:
 
 
 def _request_once(url: str, body: bytes | None) -> bytes:
-    headers = {"User-Agent": USER_AGENT, "Accept": "application/json"}
+    headers = {"User-Agent": USER_AGENT, "Accept": "application/json, text/html;q=0.9, */*;q=0.8"}
     if body is not None:
         headers["Content-Type"] = "application/json"
     req = urllib.request.Request(url, data=body, headers=headers, method="POST" if body is not None else "GET")
@@ -61,15 +62,12 @@ def _too_many_requests_wait(e: urllib.error.HTTPError) -> float:
     return min(max(seconds, 0), MAX_WAIT_SECONDS)
 
 
-def fetch_json(url: str, data: dict | None = None):
-    """GET `url`, or POST `data` as JSON. One retry on a network error, a 5xx, or a 429 (after the wait the site asks for).
-    Any other 4xx is final (403 = blocked)."""
-    body = json.dumps(data).encode("utf-8") if data is not None else None
+def _fetch(url: str, body: bytes | None) -> bytes:
+    """One retry on a network error, a 5xx, or a 429 (after the wait the site asks for). Any other 4xx is final."""
     for attempt in (1, 2):
         wait = RETRY_AFTER_SECONDS
         try:
-            raw = _request_once(url, body)
-            break
+            return _request_once(url, body)
         except urllib.error.HTTPError as e:
             retryable = e.code >= 500 or e.code == 429
             if not retryable or attempt == 2:
@@ -80,7 +78,18 @@ def fetch_json(url: str, data: dict | None = None):
             if attempt == 2:
                 raise FetchError(f"network error from {url}: {e}") from e
         time.sleep(wait)
+    raise AssertionError("unreachable")
+
+
+def fetch_json(url: str, data: dict | None = None):
+    """GET `url`, or POST `data` as JSON -> parsed JSON (403 = blocked, final)."""
+    raw = _fetch(url, json.dumps(data).encode("utf-8") if data is not None else None)
     try:
         return json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as e:
         raise FetchError(f"not JSON from {url}") from e
+
+
+def fetch_text(url: str) -> str:
+    """GET a web page -> its HTML (for sites that put their data inside the page, like Apple)."""
+    return _fetch(url, None).decode("utf-8", "replace")
