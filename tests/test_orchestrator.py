@@ -131,3 +131,32 @@ def test_plan_command_writes_the_backlog(tmp_path):
     plan = json.loads((tmp_path / "plan" / f"{TODAY}.json").read_text(encoding="utf-8"))
     assert len(plan["jobs"]) == 2 and plan["backlog"] == 3
     assert len(json.loads((tmp_path / "inbox" / "backlog.json").read_text(encoding="utf-8"))) == 3
+
+
+def test_far_jobs_stay_whole_while_open():
+    far = {"status": "filtered", "far": True, "first_seen": "2026-08-01", "description": "x"}
+    assert compaction_update(far, TODAY) is None  # filtered 70 days ago, still kept
+    closed_far = {**far, "status": "closed"}
+    assert "description" in compaction_update(closed_far, TODAY)
+
+
+def test_job_gone_from_the_site_is_closed(tmp_path):
+    import json
+    from jobhunter.morning import find_closures
+    (tmp_path / "runs").mkdir()
+    (tmp_path / "seen").mkdir()
+    (tmp_path / "runs" / f"{TODAY}-agents.json").write_text(json.dumps({"companies": [
+        {"source": "lever:mobileye"}, {"source": "workday:kla", "error": "FetchError: 503"}, {"source": "hiremetech:juniors"}]}))
+    (tmp_path / "seen" / "lever-mobileye.json").write_text(json.dumps({"open": TODAY.isoformat(), "weekly": "2026-10-04", "gone": "2026-09-20"}))
+    board = {
+        "a": {"agent_id": "open", "source": "lever:mobileye", "status": "new"},
+        "b": {"agent_id": "weekly", "source": "lever:mobileye", "status": "filtered"},   # Sunday-scan job, 6 days
+        "c": {"agent_id": "gone", "source": "lever:mobileye", "status": "filtered", "history": [{"status": "filtered"}]},
+        "d": {"agent_id": "gone", "source": "lever:mobileye", "status": "applied"},      # the user's own tracking
+        "e": {"agent_id": "x", "source": "workday:kla", "status": "new"},                # site failed today
+        "f": {"agent_id": "y", "source": "hiremetech:juniors", "status": "new"},         # board reads newest pages only
+        "g": {"source": "lever:mobileye", "status": "new"},                              # no agent id (gold set)
+    }
+    [closure] = find_closures(board, tmp_path, TODAY)
+    assert closure["board_id"] == "c" and closure["update"]["status"] == "closed"
+    assert closure["update"]["history"][-1]["note"] == "ירדה מאתר החברה (נראתה לאחרונה 2026-09-20)"

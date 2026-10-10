@@ -162,8 +162,8 @@ const EMPTY_TEXT = {
   hold: "אין משרות בהמתנה. סמן משרה \"בהמתנה\" כדי לחזור אליה בהמשך.",
   applied: "עוד לא סימנת הגשה. לחיצה על \"הגשתי\" שומרת את התאריך ואת תיאור התפקיד.",
   not_interested: "אין משרות שסימנת \"לא מעוניין\".",
-  closed: "אין משרות שנסגרו.",
-  filtered: "הסוכן לא סינן משרות. משרות שלא עמדו בדרישות החובה יופיעו כאן עם הנימוק.",
+  closed: "אין משרות שנסגרו. משרה שירדה מאתר החברה עוברת לכאן בריצת הבוקר.",
+  filtered: "הסוכן לא סינן משרות. משרות שלא עמדו בדרישות החובה יופיעו כאן עם הנימוק; משרות שרק המיקום שלהן רחוק מסומנות \"רחוקה\" ומופיעות ראשונות.",
 };
 const RANK = { high: { label: "התאמה גבוהה", tone: "ok" }, mid: { label: "התאמה בינונית", tone: "accent" }, low: { label: "התאמה נמוכה", tone: "warn" } };
 const FIELD_LABELS = { location: "מיקום", work_mode: "אופן עבודה", level: "רמה", scope: "היקף", employment: "סוג העסקה", salary: "שכר", experience: "ניסיון", education: "השכלה", degree_time: "זמן לסיום תואר", degree_year: "שנה בתואר", company: "חברה" };
@@ -245,6 +245,7 @@ function cardHTML(job) {
   const pills = [];
   if (rank && !["filtered", "not_interested", "closed"].includes(job.status)) pills.push(`<span class="pill t-${rank.tone}">${rank.label}</span>`);
   if (state.tab === "applied" || job.status === "hold") pills.push(`<span class="pill t-${st.tone}">${st.label}</span>`);
+  if (job.far && job.status === "filtered") pills.push(`<span class="pill t-warn" title="עברה את כל דרישות החובה חוץ מהמיקום. נשמרת במלואה כל עוד היא פתוחה באתר.">רחוקה</span>`);
   const sub = [fv(job, "company"), fv(job, "location"), fv(job, "work_mode")].join(" · ");
   const facts = ["level", "scope", "experience", "degree_time"].map((k) => `<span class="fact"><span class="k">${FIELD_LABELS[k]}:</span> ${fv(job, k)}</span>`).join("");
   const prefs = [...(job.prefs_up || []).map((p) => `<span class="pref up">⬆ ${esc(p)}</span>`), ...(job.prefs_down || []).map((p) => `<span class="pref down">⬇ ${esc(p)}</span>`)].join("");
@@ -306,7 +307,7 @@ function render() {
   const rankOrder = { high: 0, mid: 1, low: 2 };
   const shown = state.jobs
     .filter((j) => tab.statuses.includes(j.status) && matches(j, state.query))
-    .sort((a, b) => (rankOrder[a.rank] ?? 3) - (rankOrder[b.rank] ?? 3) || String(b.first_seen || "").localeCompare(String(a.first_seen || "")));
+    .sort((a, b) => (b.far ? 1 : 0) - (a.far ? 1 : 0) || (rankOrder[a.rank] ?? 3) - (rankOrder[b.rank] ?? 3) || String(b.first_seen || "").localeCompare(String(a.first_seen || "")));
 
   if (!shown.length) {
     const text = state.query ? "אין משרות שמתאימות לחיפוש בלשונית הזו." : EMPTY_TEXT[state.tab];

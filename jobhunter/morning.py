@@ -8,6 +8,7 @@ out_dir, under <dir>/jobs/). The plan is printed and saved to state/plan/<date>.
   jobs         today's share of the inbox (at most DAILY_LIMIT), each with its duplicate candidates on the
                board (or earlier in today's share)
   backlog      how many jobs wait for the next mornings
+  closures     board jobs whose job left the company site -> status "closed"
   compactions  board jobs that the 30-day rule shrinks today
 
 The brain reads every job of the plan, which costs Claude Pro usage, so one morning takes at most DAILY_LIMIT
@@ -29,6 +30,12 @@ from jobhunter.agents.filters import matching_keyword
 from jobhunter.dedup import find_matches
 from jobhunter.retention import compaction_update
 from jobhunter.state import Inbox, _read_json, _write_json
+
+# A job is "closed" when its company was read successfully today but the job hasn't been listed for more than
+# CLOSED_AFTER_DAYS (a week, so jobs found only by the Sunday scan aren't closed between Sundays).
+CLOSED_AFTER_DAYS = 7
+CLOSABLE = {"new", "filtered", "hold", "not_interested"}  # applied & co. keep their status; the user tracks them
+NO_FULL_LISTING = ("hiremetech:",)  # reads only the newest pages, so an old job not listed there is not a sign
 
 DAILY_LIMIT = 40
 DAILY_KEYWORDS = {"Student", "Intern", "Internship", "סטודנט"}
@@ -71,6 +78,29 @@ def load_board(board_dir: Path) -> dict[str, dict]:
     return {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(jobs_dir.glob("*.json"))}
 
 
+def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict]:
+    """Board jobs from a company agent whose job is gone from the site (see CLOSED_AFTER_DAYS)."""
+    report = _read_json(state / "runs" / f"{today.isoformat()}-agents.json", {})
+    read_ok = {c["source"] for c in report.get("companies", []) if "error" not in c}
+    seen_cache: dict[str, dict] = {}
+    out = []
+    for board_id, job in board.items():
+        agent_id, source = job.get("agent_id"), job.get("source") or ""
+        if not agent_id or job.get("status") not in CLOSABLE or source not in read_ok or source.startswith(NO_FULL_LISTING):
+            continue
+        if source not in seen_cache:
+            seen_cache[source] = _read_json(state / "seen" / f"{source.replace(':', '-')}.json", {})
+        last = seen_cache[source].get(agent_id)
+        if last and (today - date.fromisoformat(last)).days <= CLOSED_AFTER_DAYS:
+            continue
+        note = f"ירדה מאתר החברה (נראתה לאחרונה {last})" if last else "ירדה מאתר החברה"
+        out.append({"board_id": board_id, "update": {
+            "status": "closed",
+            "history": list(job.get("history") or []) + [{"status": "closed", "at": f"{today.isoformat()}T07:00:00Z", "note": note}],
+        }})
+    return out
+
+
 def build_plan(board: dict[str, dict], inbox_jobs: list[dict], today: date) -> dict:
     planned = []
     seen_today: dict[str, dict] = {}
@@ -105,8 +135,10 @@ def main(argv: list[str] | None = None) -> int:
     backlog_path = args.state / "inbox" / "backlog.json"
     todays, rest = take_todays_share(_read_json(backlog_path, []), Inbox(args.state / "inbox").read(args.today), args.limit)
     _write_json(backlog_path, rest)
-    plan = build_plan(load_board(args.board_dir), todays, args.today)
+    board = load_board(args.board_dir)
+    plan = build_plan(board, todays, args.today)
     plan["backlog"] = len(rest)
+    plan["closures"] = find_closures(board, args.state, args.today)
     out = args.state / "plan" / f"{args.today.isoformat()}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(plan, ensure_ascii=False, indent=2)
