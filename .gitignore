@@ -8,3 +8,4 @@ node_modules/
 state/board/
 state/plan/
 state/runs/
+state/cache/

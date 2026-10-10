@@ -2,12 +2,15 @@
 
 greenhouse_scaleops.json  real ScaleOps jobs (2 in Tel Aviv, 1 in the US) + 1 edited copy with "students" only in the text
 lever_mobileye.json       real Mobileye jobs: a student job, a full-time job in Israel, a job in India
+workday_kla.json          real KLA list + texts (an "Internship" only in the text, a student job, a regular job)
+                          and NVIDIA's nested location filter
 """
 
 import json
 import urllib.error
 from datetime import date, timedelta
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
@@ -254,3 +257,96 @@ def test_main_writes_the_report(tmp_path, offline_sites, monkeypatch, capsys):
     report = json.loads((tmp_path / "runs" / f"{DAY1}-agents.json").read_text(encoding="utf-8"))
     assert report["kind"] == "daily" and report["new"] == 2
     assert '"new": 2' in capsys.readouterr().out
+
+
+# --- Workday ---------------------------------------------------------------------------------------
+
+KLA = {"company": "KLA", "slug": "kla", "host": "kla.wd1.myworkdayjobs.com", "tenant": "kla", "site": "Search"}
+
+
+@pytest.fixture
+def workday_site(monkeypatch):
+    """A fake KLA Workday site from saved responses. Pages of 2, total sent on the first page only (like Workday).
+    .details lists the job-text requests made; .site["total"] is what the site claims."""
+    from jobhunter.agents import workday
+    saved = fixture("workday_kla.json")
+    detail_calls = []
+    site = {"total": len(saved["postings"])}
+
+    def fake(url, data=None):
+        if url.endswith("/jobs"):
+            if not data["appliedFacets"]:
+                return {"facets": saved["facets"], "total": 1077, "jobPostings": []}
+            assert data["appliedFacets"] == {"Country": ["084562884af243748dad7c84c304d89a"]}
+            offset = data["offset"]
+            return {"total": site["total"] if offset == 0 else 0,
+                    "jobPostings": saved["postings"][offset:offset + workday.PAGE_SIZE]}
+        path = url.split("/Search", 1)[1]
+        detail_calls.append(path)
+        return {"jobPostingInfo": saved["details"][path]}
+
+    monkeypatch.setattr(workday, "fetch_json", fake)
+    monkeypatch.setattr(workday, "PAGE_SIZE", 2)
+    return SimpleNamespace(details=detail_calls, site=site)
+
+
+def test_workday_finds_the_israel_filter_flat_and_nested():
+    from jobhunter.agents import workday
+    saved = fixture("workday_kla.json")
+    assert workday.israel_facet(saved["facets"]) == {"Country": ["084562884af243748dad7c84c304d89a"]}
+    nested = workday.israel_facet([saved["nvidia_location_facet"]])  # NVIDIA: locationMainGroup -> locationHierarchy1
+    assert list(nested) == ["locationHierarchy1"]
+    with pytest.raises(FetchError, match="Israel"):
+        workday.israel_facet([{"facetParameter": "Country", "values": [{"descriptor": "Germany", "id": "x"}]}])
+
+
+def test_workday_pages_filters_and_formats(tmp_path, workday_site):
+    from jobhunter.agents import workday
+    jobs, stats = workday.fetch(KLA, ISRAEL, DAILY, tmp_path / "cache")
+
+    assert stats == {"total": 3, "site_total": 3, "israel": 3, "matched": 2, "texts_fetched": 3}
+    by_title = {j["title"]: j for j in jobs}
+    assert set(by_title) == {"Software Developer", "Research Scientist Student"}
+    assert by_title["Software Developer"]["matched_keyword"] == "Internship"  # only in the text
+    job = by_title["Research Scientist Student"]
+    assert job["id"].startswith("workday:kla:") and job["source"] == "workday:kla"
+    assert job["url"].startswith("https://kla.wd1.myworkdayjobs.com/Search/job/")
+    assert job["job_number"] and job["posted_at"] and "Israel" in job["location"]
+    assert job["description"] and "<" not in job["description"]
+
+
+def test_workday_texts_are_fetched_once(tmp_path, workday_site):
+    from jobhunter.agents import workday
+    workday.fetch(KLA, ISRAEL, DAILY, tmp_path / "cache")
+    workday_site.details.clear()
+    jobs, stats = workday.fetch(KLA, ISRAEL, WEEKLY, tmp_path / "cache")  # other keywords, same cached texts
+
+    assert workday_site.details == [] and stats["texts_fetched"] == 0
+    assert len(jobs) >= 2
+
+
+def test_workday_forgets_texts_of_jobs_that_left(tmp_path, workday_site):
+    from jobhunter.agents import workday
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    (cache / "OLD-1.json").write_text("{}", encoding="utf-8")
+    workday.fetch(KLA, ISRAEL, DAILY, cache)
+
+    assert not (cache / "OLD-1.json").exists()
+    assert len(list(cache.glob("*.json"))) == 3
+
+
+def test_workday_count_mismatch_is_an_error(tmp_path, workday_site):
+    from jobhunter.agents import workday
+    workday_site.site["total"] = 5  # the site says 5, only 3 can be listed
+    with pytest.raises(FetchError, match="listed 3 jobs in Israel but the site says 5"):
+        workday.fetch(KLA, ISRAEL, DAILY, tmp_path / "cache")
+
+
+def test_runner_gives_workday_its_cache(tmp_path, workday_site):
+    config = {**CONFIG, "systems": {"workday": [KLA]}}
+    report = runner.run_all(config, tmp_path, DAY1)
+
+    assert report["new"] == 2 and report["errors"] == []
+    assert len(list((tmp_path / "cache" / "workday-kla").glob("*.json"))) == 3
+    assert (tmp_path / "seen" / "workday-kla.json").exists()

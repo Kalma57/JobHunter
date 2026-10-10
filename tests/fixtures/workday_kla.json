@@ -1,0 +1,149 @@
+{
+ "_about": "real KLA responses, trimmed; nvidia_location_facet is NVIDIA's nested location filter",
+ "facets": [
+  {
+   "facetParameter": "Country",
+   "descriptor": "Region",
+   "values": [
+    {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09",
+     "count": 444
+    },
+    {
+     "descriptor": "Israel",
+     "id": "084562884af243748dad7c84c304d89a",
+     "count": 75
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Job Category",
+   "values": [
+    {
+     "descriptor": "Engineering",
+     "id": "bcb876733f8601b7cce000ff551b9f1e",
+     "count": 363
+    }
+   ]
+  }
+ ],
+ "nvidia_location_facet": {
+  "facetParameter": "locationMainGroup",
+  "values": [
+   {
+    "facetParameter": "locationHierarchy2",
+    "descriptor": "Location Type",
+    "values": []
+   },
+   {
+    "facetParameter": "locationHierarchy1",
+    "descriptor": "Locations",
+    "values": [
+     {
+      "descriptor": "Germany",
+      "id": "2fcb99c455831013ea52adc65f5d3254",
+      "count": 56
+     },
+     {
+      "descriptor": "Israel",
+      "id": "2fcb99c455831013ea52bbe14cf9326c",
+      "count": 420
+     }
+    ]
+   },
+   {
+    "facetParameter": "locations",
+    "descriptor": "Sites",
+    "values": [
+     {
+      "descriptor": "Israel, Beer Sheva",
+      "id": "970bf8c909a701bb080521ddd400ae07",
+      "count": 28
+     },
+     {
+      "descriptor": "Israel, Raanana",
+      "id": "970bf8c909a7013ea54a57dcd4008107",
+      "count": 103
+     },
+     {
+      "descriptor": "Israel, Tel Aviv",
+      "id": "c7769ee377291036b08490819096b8bf",
+      "count": 234
+     }
+    ]
+   }
+  ]
+ },
+ "postings": [
+  {
+   "title": "Supplier Quality Engineer",
+   "externalPath": "/job/Yavne-Israel/Supplier-Quality-Engineer_2641788-1",
+   "locationsText": "Yavne, Israel",
+   "postedOn": "Posted 2 Days Ago",
+   "bulletFields": [
+    "2641788"
+   ]
+  },
+  {
+   "title": "Software Developer",
+   "externalPath": "/job/Migdal-Haemek-Israel/Software-Developer_2640327-1",
+   "locationsText": "Migdal Ha'emek, Israel",
+   "postedOn": "Posted 26 Days Ago",
+   "bulletFields": [
+    "2640327"
+   ]
+  },
+  {
+   "title": "Research Scientist Student",
+   "externalPath": "/job/Migdal-Haemek-Israel/Research-Scientist-Student_2638234-1",
+   "locationsText": "Migdal Ha'emek, Israel",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "2638234"
+   ]
+  }
+ ],
+ "details": {
+  "/job/Yavne-Israel/Supplier-Quality-Engineer_2641788-1": {
+   "additionalLocations": null,
+   "country": {
+    "descriptor": "Israel",
+    "id": "084562884af243748dad7c84c304d89a"
+   },
+   "externalUrl": "https://kla.wd1.myworkdayjobs.com/Search/job/Yavne-Israel/Supplier-Quality-Engineer_2641788-1",
+   "jobDescription": "<p style=\"text-align:left !important\">To make electronics, you need chips, wafers, transistors, reticles, and... To make these, you must see, test and manufacture them at scale—faster and better than ever before. That&#39;s where KLA comes in. Whether you&#39;re early in your career or an experienced professional, you&#39;ll solve complex challenges, work alongside brilliant minds and help shape the future of technology.</p><br /><br /><p style=\"text-align:left\"><b><span>Group/Division</span></b></p>KLA has manufacturing sites worldwide. The Global Operations (GOPS) team, comprised of Manufacturing, Supply Chain Management, Manufacturing Engineering, Installation and Quality, builds our leading-edge technology. GOPS partners with KLA's global supply base and design engineering teams to develop new products, working continuously to build better, faster and more cost-efficient solutions.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p><span style=\"color:#444444\"><b>What You&#39;ll Do</b></span></p><p>In this role, you will play a key part in advancing business priorities by delivering high-impact work across your area of expertise.</p><br /><h3>The Supplier Quality Engineer (SQE) leads supplier quality management for assigned suppliers, owning the resolution of supplier-related quality issues identified by Manufacturing and driving timely corrective actions to prevent production disruptions. The role is accountable for supplier quality performance, continuous improvement initiatives, and ensuring supplier quality issues are resolved effectively with minimal impact to product quality, manufacturing cycle time, and business operations.</h3><br /><p>Support supplier quality activities, including supplier performance monitoring, non-conformance management, corrective actions, audits, and NPI readiness, while partnering with Engineering, Manufacturing, and Supply Chain teams to drive quality improvements.</p><h3>Preferred Qualifications</h3><p>Bachelor’s degree in Engineering or related field, 2&#43; years of experience in Quality, Manufacturing, or Supplier Quality Engineering, and knowledge of quality tools such as 8D, Root Cause Analysis, and ISO 9001.</p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Minimum Qualifications</b></p><h2></h2><ul><li>B.Sc. in Mechanical, Industrial, Electrical, Manufacturing, Quality Engineering or related discipline.</li><li>2-5 years of experience in Quality Engineering, Manufacturing Engineering, Process Engineering, Supplier Quality or a similar role.</li><li>Experience working in a manufacturing environment.</li><li>Understanding of quality tools and methodologies: Root Cause Analysis 8D CAPA Statistical Analysis</li><li>Strong analytical and problem-solving skills.</li><li>Excellent interpersonal and communication skills.</li><li>Fluent English.</li></ul><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p><b>About KLA</b></p><p>We provide advanced inspection tools, metrology systems, process solutions, and computational analytics that make electronics possible, tackling complex challenges. From electron and photon optics to machine learning and data analytics, we seek perfection at the most fundamental level of matter in the universe. If you want to make electronics that push industries forward and make the world a better place, join us.</p><br /><p><b>Use of AI Statement </b></p><p>At KLA, our interviews seek to understand your individual skills, problem-solving approach and authentic thinking. To ensure a fair and consistent evaluation, the use of AI, recording tools or other technologies to generate, suggest or provide responses during interviews—whether virtual or in person—is not permitted unless explicitly approved in advance as part of a reasonable accommodation or invited by the interviewer. Use of these tools may interfere with our ability to evaluate your individual qualifications and affect your candidacy. KLA is committed to advancing innovation through responsible AI, and we value candidates who share this mindset.</p><br /><p><br /><i>We offer a competitive, family friendly total rewards package. We design our programs to reflect our commitment to an inclusive environment, while ensuring we provide benefits that meet the diverse needs of our employees. </i></p><br /><p><i>KLA is proud to be an equal opportunity employer.</i></p><br /><br />",
+   "jobReqId": "2641788",
+   "location": "Yavne, Israel",
+   "startDate": "2026-10-08",
+   "title": "Supplier Quality Engineer"
+  },
+  "/job/Migdal-Haemek-Israel/Software-Developer_2640327-1": {
+   "additionalLocations": null,
+   "country": {
+    "descriptor": "Israel",
+    "id": "084562884af243748dad7c84c304d89a"
+   },
+   "externalUrl": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Software-Developer_2640327-1",
+   "jobDescription": "<div><div><div><div><div><div><div><p style=\"text-align:left\"><b><span>Company Overview</span></b></p></div></div></div></div></div></div></div>KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No laptop, smartphone, wearable device, voice-controlled gadget, flexible screen, VR device or smart car would have made it into your hands without us. KLA invents systems and solutions for the manufacturing of wafers and reticles, integrated circuits, packaging, printed circuit boards and flat panel displays.  The innovative ideas and devices that are advancing humanity all begin with inspiration, research and development. KLA focuses more than average on innovation and we invest 15% of sales back into R&amp;D. Our expert teams of physicists, engineers, data scientists and problem-solvers work together with the world’s leading technology providers to accelerate the delivery of tomorrow’s electronic devices. Life here is exciting and our teams thrive on tackling really hard problems. There is never a dull moment with us.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p><b>Job <span><span><span><span><span><span><span><span><span><span>Description/Preferred</span></span></span></span></span></span></span></span></span></span> Qualifications</b></p><div><ul><li><p>Design, develop, and maintain software components for advanced semiconductor systems.</p></li><li><p>Participate throughout the software development lifecycle, including requirements analysis, design, implementation, testing, and deployment.</p></li><li><p>Develop robust, maintainable, and high-quality code following software engineering best practices.</p></li><li><p>Investigate and resolve software defects, performance issues, and customer-reported problems.</p></li><li><p>Collaborate with cross-functional teams, including Systems Engineering, Hardware Engineering, QA, and Field Support.</p></li><li><p>Create and maintain technical documentation.</p></li><li><p>Support product releases and continuous improvement initiatives.</p></li><li><p>Participate in code reviews and promote software quality standards.</p></li><li><p>Learn and adopt new technologies, tools, and development methodologies.</p></li></ul></div><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Minimum Qualifications</b></p><p style=\"text-align:inherit\"></p><div><ul><li><p>B.Sc. in Computer Science, Software Engineering, or a related technical discipline.</p></li><li><p>3&#43; years of software development experience, or equivalent hands-on experience gained through military service, internships, or significant academic projects.</p></li><li><p>Strong programming skills in <b>C#/.NET</b> and object-oriented design.</p></li><li><p>Good understanding of software engineering principles and design patterns.</p></li><li><p>Experience with multithreaded programming and debugging.</p></li><li><p>Familiarity with Windows-based application development.</p></li><li><p>Strong analytical and problem-solving skills.</p></li><li><p>Ability to work effectively in a multidisciplinary team environment.</p></li><li><p>Strong verbal and written communication skills in English.</p></li></ul><div><p></p><p>Preferred Qualifications</p><ul><li><p>Experience with modern .NET technologies.</p></li><li><p>Familiarity with database technologies and SQL.</p></li><li><p>Experience working with hardware-integrated systems.</p></li><li><p>Experience in industrial automation, machine control, or semiconductor-related environments.</p></li></ul></div><p></p></div><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><i>We offer a competitive, family friendly total rewards package. We design our programs to reflect our commitment to an inclusive environment, while ensuring we provide benefits that meet the diverse needs of our employees. </i></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><i>KLA is proud to be an equal opportunity employer</i></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\">Be aware of potentially fraudulent job postings or suspicious recruiting activity by persons that are currently posing as KLA employees.  KLA never asks for any financial compensation to be considered for an interview, to become an employee, or for equipment. Further, KLA does not work with any recruiters or third parties who charge such fees either directly or on behalf of KLA<span>. Please ensure that you have searched </span><a target=\"_blank\" href=\"https://kla.com/careers\">KLA’s Careers website</a><span><span> </span>for legitimate job postings.  KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers.  If you are concerned that a communication, an interview, an offer of employment, or that an employee is not legitimate, please send an email to </span><span><a target=\"_blank\" href=\"mailto:talent.acquisition&#64;kla.com\"><span><span class=\"WKM1\">talent.acquisition&#64;kla.com</span></span></a></span><span> to </span><span>confirm the person you are communicating with is an employee. We take your privacy very seriously and confidentially handle your information. </span></p>",
+   "jobReqId": "2640327",
+   "location": "Migdal Ha'emek, Israel",
+   "startDate": "2026-09-14",
+   "title": "Software Developer"
+  },
+  "/job/Migdal-Haemek-Israel/Research-Scientist-Student_2638234-1": {
+   "additionalLocations": null,
+   "country": {
+    "descriptor": "Israel",
+    "id": "084562884af243748dad7c84c304d89a"
+   },
+   "externalUrl": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Research-Scientist-Student_2638234-1",
+   "jobDescription": "<div><div><div><div><div><div><div><p style=\"text-align:left\"><b><span>Company Overview</span></b></p></div></div></div></div></div></div></div>KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No laptop, smartphone, wearable device, voice-controlled gadget, flexible screen, VR device or smart car would have made it into your hands without us. KLA invents systems and solutions for the manufacturing of wafers and reticles, integrated circuits, packaging, printed circuit boards and flat panel displays.  The innovative ideas and devices that are advancing humanity all begin with inspiration, research and development. KLA focuses more than average on innovation and we invest 15% of sales back into R&amp;D. Our expert teams of physicists, engineers, data scientists and problem-solvers work together with the world’s leading technology providers to accelerate the delivery of tomorrow’s electronic devices. Life here is exciting and our teams thrive on tackling really hard problems. There is never a dull moment with us.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><div><div><div><div><div><div><div><p style=\"text-align:left\"><b><span>Group/Division</span></b></p></div></div></div></div></div></div></div>With over 40 years of semiconductor process control experience, chipmakers around the globe rely on KLA to ensure that their fabs ramp next-generation devices to volume production quickly and cost-effectively. Enabling the movement towards advanced chip design, KLA's Global Products Group (GPG), which is responsible for creating all of KLA’s metrology and inspection products, is looking for the best and the brightest research scientist, software engineers, application development engineers, and senior product technology process engineers.  The Optical Metrology Division products are used for optical overlay metrology. The portfolio of products includes unique solution packages which are based on hardware and software systems to enhance yield and effectiveness. As a world leader in its field of expertise, the division's products are the most advanced in performance (measurement accuracy of nanometers and below), reliability, ease of use and compatibility with other KLA's products.  KLA (Israel) controls over 80% of the world market sales in its field, and its products are used by every major semiconductor manufacturer around the world.  KLA Israel is located in the Migdal Haemek Industrial Park.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p><b>Job <span><span><span><span><span><span><span><span><span><span>Description/Preferred</span></span></span></span></span></span></span></span></span></span> Qualifications</b></p><ul><li><span>Proposing novel concepts and developing creative theoretical approaches to challenging problems in optical metrology</span></li><li><span>Formulating analytical models and running numerical simulations to explore and demonstrate proof-of-concept for new ideas</span></li><li><span>Bridging theory and experiment: developing models, comparing against experimental data, and iterating to refine the theoretical framework</span></li><li><span>Rigorous analysis and interpretation of simulation results and experimental data</span></li><li><span>Exploring and evaluating new technologies and concepts from the scientific literature</span></li><li><span>Formulating conclusions and recommendations to guide next-generation products and roadmap</span></li><li><span>Collaborating closely within the team and across functions in the organization </span></li></ul><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Minimum Qualifications</b></p><ul><li><span>BSc / MSc / PhD student in Physics, Electrical Engineering, or a related field</span></li><li><b>Proven analytical and modeling skills</b><span> — formulating analytical models and/or building numerical simulations is the core of the role</span></li><li><span>Strong mathematical foundations</span></li></ul><ul><li><span>Scientific curiosity and critical thinking, with a drive to question assumptions, explore alternatives, and refine ideas</span></li></ul><ul><li><span>Excellent scientific communication skills, both written and verbal</span></li><li><span>Independent, creative, out-of-the-box thinker with strong scientific rigor</span></li><li><span>Team player, comfortable working in a multidisciplinary R&amp;D environment</span></li></ul><p></p><p>Advantages:</p><ul><li><span>Prior research experience in industry or academia (e.g., thesis project, lab rotation, internship)</span></li><li><span>Experience comparing theoretical models against experimental data</span></li></ul><ul><li><span>Solid theoretical background in optics and the physics of light–matter interaction</span></li></ul><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><i>We offer a competitive, family friendly total rewards package. We design our programs to reflect our commitment to an inclusive environment, while ensuring we provide benefits that meet the diverse needs of our employees. </i></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><i>KLA is proud to be an equal opportunity employer</i></p><p style=\"text-align:inherit\"></p><p style=\"text-align:left\">Be aware of potentially fraudulent job postings or suspicious recruiting activity by persons that are currently posing as KLA employees.  KLA never asks for any financial compensation to be considered for an interview, to become an employee, or for equipment. Further, KLA does not work with any recruiters or third parties who charge such fees either directly or on behalf of KLA<span>. Please ensure that you have searched </span><a target=\"_blank\" href=\"https://kla.com/careers\">KLA’s Careers website</a><span><span> </span>for legitimate job postings.  KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers.  If you are concerned that a communication, an interview, an offer of employment, or that an employee is not legitimate, please send an email to </span><span><a target=\"_blank\" href=\"mailto:talent.acquisition&#64;kla.com\"><span><span class=\"WKM1\">talent.acquisition&#64;kla.com</span></span></a></span><span> to </span><span>confirm the person you are communicating with is an employee. We take your privacy very seriously and confidentially handle your information. </span></p>",
+   "jobReqId": "2638234",
+   "location": "Migdal Ha'emek, Israel",
+   "startDate": "2026-07-02",
+   "title": "Research Scientist Student"
+  }
+ }
+}

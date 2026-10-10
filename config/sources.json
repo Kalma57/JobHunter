@@ -3,7 +3,7 @@
   "keywords": {
     "_rules": "Whole words, case-insensitive. English: a trailing s also matches (Intern -> Interns). Hebrew: prefix letters and endings also match (סטודנט -> לסטודנטים, סטודנטית).",
     "daily": ["Student", "Intern", "Internship", "סטודנט"],
-    "weekly": ["Student", "Intern", "Internship", "סטודנט", "Junior", "Graduate", "Early Career", "Entry Level"]
+    "weekly": ["Student", "Intern", "Internship", "סטודנט", "Junior", "Graduate", "Early Career", "Entry Level", "College Grad", "College Graduate"]
   },
   "israel": {
     "country_codes": ["IL"],
@@ -24,6 +24,11 @@
     ],
     "lever": [
       {"company": "Mobileye", "slug": "mobileye", "host": "api.eu.lever.co"}
+    ],
+    "workday": [
+      {"company": "NVIDIA", "slug": "nvidia", "host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia", "site": "NVIDIAExternalCareerSite"},
+      {"company": "KLA", "slug": "kla", "host": "kla.wd1.myworkdayjobs.com", "tenant": "kla", "site": "Search"},
+      {"company": "Applied Materials", "slug": "amat", "host": "amat.wd1.myworkdayjobs.com", "tenant": "amat", "site": "External"}
     ]
   }
 }

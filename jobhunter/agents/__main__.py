@@ -16,10 +16,11 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from jobhunter.agents import greenhouse, lever
+from jobhunter.agents import greenhouse, lever, workday
 from jobhunter.state import Inbox, SeenStore, collect_new
 
-AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch}
+AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workday.fetch}
+CACHED = {"workday"}  # its job list has no text; each text is fetched once and kept in state/cache/<system>-<slug>/
 
 
 def previous_report(runs_dir: Path, today: date) -> dict | None:
@@ -41,7 +42,8 @@ def run_all(config: dict, state: Path, today: date, weekly: bool = False) -> dic
             row = {"source": source, "company": company["company"]}
             try:
                 fetch = AGENTS[system]
-                jobs, stats = fetch(company, config["israel"], keywords)
+                extra = {"cache_dir": state / "cache" / f"{system}-{company['slug']}"} if system in CACHED else {}
+                jobs, stats = fetch(company, config["israel"], keywords, **extra)
             except Exception as e:  # any failure of one site: skip it, mark nothing as seen
                 row["error"] = f"{type(e).__name__}: {e}"
                 companies.append(row)
