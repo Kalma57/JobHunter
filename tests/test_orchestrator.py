@@ -146,7 +146,8 @@ def test_job_gone_from_the_site_is_closed(tmp_path):
     (tmp_path / "runs").mkdir()
     (tmp_path / "seen").mkdir()
     (tmp_path / "runs" / f"{TODAY}-agents.json").write_text(json.dumps({"companies": [
-        {"source": "lever:mobileye"}, {"source": "workday:kla", "error": "FetchError: 503"}, {"source": "hiremetech:juniors"}]}))
+        {"source": "lever:mobileye"}, {"source": "workday:kla", "error": "FetchError: 503"}, {"source": "hiremetech:juniors"},
+        {"source": "apple:apple", "warning": "0 jobs in Israel today"}]}))
     (tmp_path / "seen" / "lever-mobileye.json").write_text(json.dumps({"open": TODAY.isoformat(), "weekly": "2026-10-04", "gone": "2026-09-20"}))
     board = {
         "a": {"agent_id": "open", "source": "lever:mobileye", "status": "new"},
@@ -156,6 +157,7 @@ def test_job_gone_from_the_site_is_closed(tmp_path):
         "e": {"agent_id": "x", "source": "workday:kla", "status": "new"},                # site failed today
         "f": {"agent_id": "y", "source": "hiremetech:juniors", "status": "new"},         # board reads newest pages only
         "g": {"source": "lever:mobileye", "status": "new"},                              # no agent id (gold set)
+        "h": {"agent_id": "z", "source": "apple:apple", "status": "new"},                # 0 jobs today: a glitch
     }
     [closure] = find_closures(board, tmp_path, TODAY)
     assert closure["board_id"] == "c" and closure["update"]["status"] == "closed"

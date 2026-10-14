@@ -39,7 +39,9 @@ def test_prefilter_field_words_but_not_when_the_title_names_software():
     assert "תחום" in reject_reason(_job("Marketing Student"), RULES)
     assert "תחום" in reject_reason(_job("נציג/ת תמיכה טכנית - מתאים לסטודנטים"), RULES)
     assert reject_reason(_job("סטודנט/ית להנדסת חשמל או מדעי המחשב"), RULES) is None
-    assert reject_reason(_job("Test Automation Developer - Student"), RULES) is None  # software word: the brain decides
+    assert reject_reason(_job("Data Engineer - Finance Systems"), RULES) is None  # software word: the brain decides
+    assert "תחום" in reject_reason(_job("Junior QA & AI Automation Engineer"), RULES)  # QA is out even in software
+    assert "תחום" in reject_reason(_job("Sales Development Representative - משרת סטודנט"), RULES)
 
 
 def test_prefilter_hebrew_word_inside_another_word_is_not_a_match():
@@ -66,6 +68,14 @@ def test_two_ids_from_one_site_are_two_jobs():
                           "company": "Amazon", "location": "Haifa"}}
     other = {"id": "amazon:2", "source": "amazon:amazon", "title": "Embedded SW Engineer", "company": "Amazon", "location": "Haifa"}
     assert find_matches(other, board) == []
+
+
+def test_a_job_board_can_list_one_job_twice():  # HireMeTech, 14/10/2026: same Ashdod job, two ids
+    board = {"hiremetech-1": {"agent_id": "hiremetech:1", "source": "hiremetech:juniors", "title": "סטודנט/ית מוביל/ת חדשנות",
+                              "company": "חסוי — דרך HireMeTech", "location": "Ashdod"}}
+    other = {"id": "hiremetech:2", "source": "hiremetech:juniors", "title": "סטודנט/ית מוביל/ת חדשנות",
+             "company": "חסוי — דרך HireMeTech", "location": "Ashdod"}
+    assert [m.kind for m in find_matches(other, board)] == ["borderline"]
 
 
 def test_same_role_from_a_company_site_and_a_board_is_still_exact():

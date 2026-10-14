@@ -83,7 +83,8 @@ def load_board(board_dir: Path) -> dict[str, dict]:
 def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict]:
     """Board jobs from a company agent whose job is gone from the site (see CLOSED_AFTER_DAYS)."""
     report = _read_json(state / "runs" / f"{today.isoformat()}-agents.json", {})
-    read_ok = {c["source"] for c in report.get("companies", []) if "error" not in c}
+    # a site that failed, or suddenly listed 0 jobs (a glitch, not 0 jobs), says nothing about which jobs closed
+    read_ok = {c["source"] for c in report.get("companies", []) if "error" not in c and "warning" not in c}
     seen_cache: dict[str, dict] = {}
     out = []
     for board_id, job in board.items():

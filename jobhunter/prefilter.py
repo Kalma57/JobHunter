@@ -3,7 +3,8 @@
 The brain reads every job that reaches it, and that costs Claude Pro usage and time. Most new jobs fail on
 something the code can see for sure in the title or in a plain number, so the code filters those first:
 
-  field       the title names a field outside the search (sales, finance, QA, support...) and no software role
+  field       the title names a field outside the search (sales, finance, hardware...) and no software role,
+              or a field the search excludes even in software (QA, testing, support, teaching)
   degree      the title asks for a doctorate
   seniority   the title is senior / lead / manager... and has no student word
   experience  the title has no student word and the text asks for more years than the search allows
@@ -47,6 +48,8 @@ def years_asked(text: str | None) -> int | None:
 def reject_reason(job: dict, rules: dict) -> str | None:
     """Why the code filters this job for sure, in Hebrew, or None if it goes to the brain."""
     title = job.get("title") or ""
+    if word := matching_keyword(title, "", rules["always_field_title_words"]):
+        return f"תחום אחר ({word} בשם המשרה)"
     software = matching_keyword(title, "", rules["software_title_words"])
     if not software and (word := matching_keyword(title, "", rules["field_title_words"])):
         return f"תחום אחר ({word} בשם המשרה)"

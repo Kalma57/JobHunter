@@ -21,7 +21,7 @@ from jobhunter.state import _read_json
 TEMPLATE = Path("site/public.html")
 CONFIG = Path("config/public.json")
 OUT_DIR = Path("public")
-HIDDEN_STATUSES = {"filtered", "closed"}  # the rest (new, hold, applied, not_interested...) look the same in public
+HIDDEN_STATUSES = {"filtered", "closed", "not_interested"}  # the rest (new, hold, applied...) look the same in public
 JOB_FIELDS = ("title", "company", "location", "work_mode", "scope", "rank", "first_seen", "posted_at", "deadline")
 BOARD_SOURCES = ("hiremetech:", "drushim:", "jobmaster:")
 

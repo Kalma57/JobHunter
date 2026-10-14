@@ -81,11 +81,15 @@ def title_level(title: str | None) -> frozenset[str]:
     return frozenset(LEVEL_WORDS[w] for w in _clean(title or "").split() if w in LEVEL_WORDS)
 
 
+# Job boards collect jobs from many places, so one job can sit there twice under two ids (HireMeTech, 14/10/2026).
+AGGREGATORS = ("hiremetech:", "drushim:", "jobmaster:")
+
+
 def _site_id(job: dict) -> tuple[str, str] | None:
-    """(source, the site's own id) of a job from a sub-agent (board jobs keep it as agent_id), else None."""
+    """(source, the site's own id) of a job from a company site (board jobs keep it as agent_id), else None."""
     job_id = job.get("agent_id") or job.get("id")
     source = job.get("source")
-    if not job_id or not source or ":" not in str(job_id):
+    if not job_id or not source or ":" not in str(job_id) or source.startswith(AGGREGATORS):
         return None
     return source, str(job_id)
 

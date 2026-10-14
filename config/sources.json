@@ -45,7 +45,7 @@
     "eightfold": [
       {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"},
       {"company": "Teva", "slug": "teva", "host": "www.careers.teva", "domain": "tevapharm.com", "api": "apply_v2"},
-      {"company": "Microsoft", "slug": "microsoft", "host": "apply.careers.microsoft.com", "domain": "microsoft.com", "api": "pcsx", "pause_seconds": 5}
+      {"company": "Microsoft", "slug": "microsoft", "host": "apply.careers.microsoft.com", "domain": "microsoft.com", "api": "pcsx", "pause_seconds": 10}
     ],
     "comeet": [
       {"company": "DriveNets", "slug": "drivenets", "uid": "72.006", "token": "2769D81626762C4E762762C4EC4E1626"},
