@@ -1,0 +1,195 @@
+{
+ "JobAnalytics": {
+  "id": "38532098",
+  "name": "דרושים -  עוזר מודד / מודד",
+  "price": "5000",
+  "dimension22": "RankF",
+  "brand": "1CAA62",
+  "category": " הנדסה",
+  "position": "0",
+  "quantity": 1,
+  "list": null,
+  "dimension15": "Active",
+  "dimension16": "1.5000",
+  "ppcd": "RankF",
+  "dimension17": "10",
+  "dimension18": "51",
+  "paidresult": 0,
+  "dimension19": "1140.00026074",
+  "metric1": "1.5000",
+  "ppcm": "RankF",
+  "dimension20": "24/09/2026 14:03:10",
+  "dimension21": "13/10/2026 15:02:32",
+  "preferred": true,
+  "TransactionId": "A5463F9558",
+  "revenue": 1,
+  "tax": 1,
+  "shipping": 1,
+  "affiliation": "drushim",
+  "label": "דרושים -  עוזר מודד / מודד",
+  "cd68": "38532098",
+  "cd69": "0"
+ },
+ "SendCVButtonModel": {
+  "Text": "שלח/י קורות חיים",
+  "ExternalLink": "",
+  "ButtonLink": "https://www.drushim.co.il/sendcv.aspx?jobcode=38532098"
+ },
+ "Code": 38532098,
+ "Company": {
+  "Job2Link": false,
+  "CompanyDisplayName": "- חסוי -",
+  "ToUrl": "",
+  "CompanyLogoLink": "",
+  "HotJobLogoLink": "https://webapi.drushim.co.il/logos/companyhiddenhotjobimage.png",
+  "HotJobBannerLink": "",
+  "Code": 1974179,
+  "NameInHebrew": ""
+ },
+ "JobContent": {
+  "Name": "דרושים -  עוזר מודד / מודד",
+  "Filters": [],
+  "Salary": 0,
+  "SalaryRangeText": null,
+  "JobCode": 38532098,
+  "FullName": "דרושים -  עוזר מודד / מודד",
+  "Scopes": [
+   {
+    "Code": 1,
+    "NameInHebrew": "משרה מלאה"
+   }
+  ],
+  "Regions": [
+   {
+    "Code": 15,
+    "NameInHebrew": "אשדוד / גן יבנה"
+   },
+   {
+    "Code": 17,
+    "NameInHebrew": "יבנה"
+   },
+   {
+    "Code": 30,
+    "NameInHebrew": "באר שבע"
+   },
+   {
+    "Code": 31,
+    "NameInHebrew": "אשקלון"
+   },
+   {
+    "Code": 32,
+    "NameInHebrew": "קרית גת / קרית מלאכי"
+   }
+  ],
+  "Zones": [
+   {
+    "NameInEnglish": "Ashfela",
+    "GeoLexId": 539068,
+    "RegionIds": [
+     15,
+     16,
+     17
+    ],
+    "Link": "/jobs/area/15-16-17/",
+    "Code": 17,
+    "NameInHebrew": "שפלה"
+   },
+   {
+    "NameInEnglish": "South",
+    "GeoLexId": 539067,
+    "RegionIds": [
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "Link": "/jobs/area/30-31-32-33-34/",
+    "Code": 4,
+    "NameInHebrew": "דרום"
+   }
+  ],
+  "SubCategories": [
+   {
+    "Link": "/jobs/subcat/112/",
+    "Categories": [
+     10
+    ],
+    "Code": 112,
+    "NameInHebrew": "הנדסאים כללי"
+   },
+   {
+    "Link": "/jobs/subcat/345/",
+    "Categories": [
+     10,
+     35
+    ],
+    "Code": 345,
+    "NameInHebrew": "הנדסאי/ת בניין"
+   },
+   {
+    "Link": "/jobs/subcat/356/",
+    "Categories": [
+     10,
+     35
+    ],
+    "Code": 356,
+    "NameInHebrew": "שרטט/ת"
+   }
+  ],
+  "Categories": [
+   {
+    "Link": "/jobs/cat10/",
+    "Code": 10,
+    "NameInHebrew": "הנדסה"
+   }
+  ],
+  "Requirements": "נכונות לעבודה בשטח.<br/> אחריות, רצינות ויכולת עבודה בצוות.<br/>ידע ב-AutoCAD - יתרון <br/>* המשרה מתאימה גם לסטודנטים להנדסאי בניין המעוניינים לצבור ניסיון מקצועי.",
+  "Description": "לחברה מובילה בתחום המדידות באזור קריית גת דרוש/ה עוזר/ת מודד או מודד/ת למשרת שטח במשרה מלאה.",
+  "Experience": {
+   "Code": 1,
+   "NameInHebrew": "ללא נסיון"
+  },
+  "Addresses": [
+   {
+    "CityId": 268,
+    "City": "קריית גת",
+    "CityEnglish": "\tKiryat Gat\t",
+    "GeoLexId": 539109,
+    "Longitude": 34.768459,
+    "Latitude": 31.611148,
+    "RegionIds": [
+     32
+    ]
+   }
+  ],
+  "DeclarationAllGenders": "משרה זו פונה לנשים וגברים כאחד.",
+  "JobBenefits": [],
+  "JobSuitabilities": []
+ },
+ "JobInfo": {
+  "Lang": 1,
+  "JumpDateString": "לפני 19 שעות",
+  "JumpDate": "2026-10-13T14:47:42.263",
+  "CanDisplayLinks": false,
+  "HasFilter": false,
+  "RecommendedStatisticsRowId": 0,
+  "SeekerJobStatus": 0,
+  "G4JobScript": null,
+  "AllowNoCV": false,
+  "Link": "/job/38532098/a9c2cb21/",
+  "JobCode": 38532098,
+  "Hash": "A9C2CB21",
+  "EmployerJobCode": "",
+  "Date": "2026-09-24T14:03:10.52",
+  "DisplayDate": "2026-10-13T15:02:32.1190872+03:00",
+  "Preferred": true,
+  "TopJob": false,
+  "IsExpired": false,
+  "STSJobCode": 30466774,
+  "Hot": false,
+  "IsClassifiedJob": true,
+  "IsCorona": false,
+  "IsRecommender": false
+ }
+}

@@ -3,18 +3,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: one reading column; sticky header with run summary and status tabs; one card per job, details folded. */
+/* Layout: a triage desk. Run strip on top; a scan-list of jobs on the right (RTL start), the open job's full card beside it.
+   Narrow screens: one column, the card replaces the list with a back button. */
 :root {
-  --bg: #eef2f5;
+  --bg: #eceff2;
   --surface: #ffffff;
-  --fg: #16202a;
-  --muted: #5a6875;
-  --line: #d6dee5;
-  --accent: #1d5ca8;
-  --accent-soft: #e2ecf8;
+  --sunken: #f5f7f9;
+  --fg: #17212b;
+  --muted: #5b6876;
+  --line: #d5dce3;
+  --accent: #0f6b74;
+  --accent-soft: #dcefef;
   --ok: #1c7347;
   --ok-soft: #dff1e6;
-  --warn: #8f5500;
+  --warn: #8a5300;
   --warn-soft: #fbedd5;
   --bad: #a1302a;
   --bad-soft: #f7e1df;
@@ -25,183 +27,237 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #10161c; --surface: #18212a; --fg: #e4ebf1; --muted: #93a3b1; --line: #2b3742;
-    --accent: #7fb0ec; --accent-soft: #1b2e45;
+    --bg: #0f1519; --surface: #172026; --sunken: #121a1f; --fg: #e3eaef; --muted: #93a3ae; --line: #2a3640;
+    --accent: #5cc2c9; --accent-soft: #15333a;
     --ok: #6fcf98; --ok-soft: #173326; --warn: #e9b35d; --warn-soft: #3a2b12;
     --bad: #f08a82; --bad-soft: #3d1d1b; --inferred: #c4a3ef; --inferred-soft: #2c2140;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #10161c; --surface: #18212a; --fg: #e4ebf1; --muted: #93a3b1; --line: #2b3742;
-  --accent: #7fb0ec; --accent-soft: #1b2e45;
+  --bg: #0f1519; --surface: #172026; --sunken: #121a1f; --fg: #e3eaef; --muted: #93a3ae; --line: #2a3640;
+  --accent: #5cc2c9; --accent-soft: #15333a;
   --ok: #6fcf98; --ok-soft: #173326; --warn: #e9b35d; --warn-soft: #3a2b12;
   --bad: #f08a82; --bad-soft: #3d1d1b; --inferred: #c4a3ef; --inferred-soft: #2c2140;
   color-scheme: dark;
 }
 
+* { box-sizing: border-box; }
 body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55; direction: rtl; }
-.wrap { max-width: 880px; margin: 0 auto; padding-inline: 16px; padding-block: 0 48px; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-inline: 16px; padding-block: 0 40px; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:is(button, input, textarea, select, summary, a):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 16px 10px; border-bottom: 1px solid var(--line); }
-.brand { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.brand h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
-.brand h1 span { color: var(--accent); }
-.run { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.run b { color: var(--fg); font-weight: 600; }
+/* ---- header + run strip ---- */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 14px 12px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; }
+.brand { margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+.brand span { color: var(--accent); }
+.strip { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; color: var(--muted); align-items: baseline; flex: 1 1 520px; }
+.strip .stat b { font-family: var(--font-data); font-weight: 500; color: var(--fg); font-variant-numeric: tabular-nums; }
+.strip .when { color: var(--fg); font-weight: 600; }
+.strip .bad { color: var(--bad); font-weight: 600; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
 
-.controls { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
-.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
-.tab { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 999px; padding: 5px 12px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
-.tab .n { font-family: var(--font-data); font-size: 12px; color: var(--muted); }
-.tab[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
-.tab[aria-selected="true"] .n { color: var(--surface); }
-.tab:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.search { font: inherit; width: 100%; box-sizing: border-box; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 8px; padding: 8px 12px; }
+/* ---- desk ---- */
+.desk { display: grid; grid-template-columns: minmax(340px, 440px) minmax(0, 1fr); gap: 20px; margin-top: 16px; align-items: start; }
+.side { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+.tab { border: 1px solid transparent; background: none; border-radius: 6px; padding: 4px 10px; cursor: pointer; display: inline-flex; gap: 6px; align-items: baseline; font-size: 14px; color: var(--muted); }
+.tab .n { font-family: var(--font-data); font-size: 12px; }
+.tab:hover { color: var(--fg); }
+.tab[aria-selected="true"] { background: var(--surface); border-color: var(--line); color: var(--fg); font-weight: 600; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.filters input, .filters select { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 6px 10px; font-size: 14px; min-width: 0; }
+.filters input { flex: 1 1 180px; }
+.filters select { flex: 0 1 auto; }
 
-.list { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
-.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 28px 20px; text-align: center; color: var(--muted); }
-.empty strong { display: block; color: var(--fg); font-size: 16px; margin-bottom: 4px; }
+.rows { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.row { display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; gap: 0 12px; align-items: center; text-align: start; border: 0; border-bottom: 1px solid var(--line); background: none; padding: 10px 12px 10px 14px; cursor: pointer; width: 100%; }
+.row:last-child { border-bottom: 0; }
+.row:hover { background: var(--sunken); }
+.row[aria-current="true"] { background: var(--accent-soft); }
+.row .stripe { align-self: stretch; border-radius: 2px; background: var(--line); }
+.row .stripe.high { background: var(--ok); }
+.row .stripe.mid { background: var(--accent); }
+.row .stripe.low { background: var(--warn); }
+.row .t { font-weight: 600; font-size: 14.5px; line-height: 1.35; overflow-wrap: anywhere; }
+.row .s { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+.row .meta { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.row .d { font-family: var(--font-data); font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+.count-line { font-size: 12.5px; color: var(--muted); }
 
-.job { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-.job-head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
-.job-head > div { min-width: 0; }
-.job-title { margin: 0; font-size: 17px; font-weight: 600; text-wrap: balance; overflow-wrap: anywhere; }
-.job-sub { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
-.pills { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; flex-shrink: 0; }
+/* ---- card ---- */
+.main { min-width: 0; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 92px); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; max-height: calc(100vh - 120px); overflow-y: auto; }
+.back { display: none; }
+.card h2 { margin: 0; font-size: 21px; line-height: 1.3; text-wrap: balance; overflow-wrap: anywhere; }
+.sub { color: var(--muted); font-size: 14.5px; overflow-wrap: anywhere; }
+.pills { display: flex; gap: 6px; flex-wrap: wrap; }
 .pill { font-size: 12px; font-weight: 600; border-radius: 999px; padding: 2px 9px; white-space: nowrap; }
 .t-accent { background: var(--accent-soft); color: var(--accent); }
 .t-ok { background: var(--ok-soft); color: var(--ok); }
 .t-warn { background: var(--warn-soft); color: var(--warn); }
 .t-bad { background: var(--bad-soft); color: var(--bad); }
-.t-muted { background: var(--bg); color: var(--muted); }
+.t-muted { background: var(--sunken); color: var(--muted); }
 
-.facts { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; }
-.fact { display: inline-flex; gap: 4px; }
-.fact .k { color: var(--muted); }
+.facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px 18px; margin: 0; }
+.facts div { min-width: 0; }
+.facts dt { font-size: 11.5px; font-weight: 600; color: var(--muted); letter-spacing: 0.03em; }
+.facts dd { margin: 0; font-size: 14px; overflow-wrap: anywhere; }
 .ns { color: var(--muted); font-style: italic; }
 .inf { color: var(--inferred); background: var(--inferred-soft); border-radius: 4px; padding: 0 4px; }
 .inf::after { content: " · הוסק"; font-size: 11px; }
-
+.reason { margin: 0; font-size: 14.5px; padding: 8px 12px; border-radius: 8px; background: var(--sunken); }
+.reason b { font-weight: 600; }
 .prefs { display: flex; flex-wrap: wrap; gap: 6px; }
 .pref { font-family: var(--font-data); font-size: 12px; border-radius: 4px; padding: 1px 7px; }
 .pref.up { background: var(--ok-soft); color: var(--ok); }
 .pref.down { background: var(--bad-soft); color: var(--bad); }
-
 .alerts { display: flex; flex-direction: column; gap: 4px; }
-.alert { font-size: 13px; border-radius: 6px; padding: 4px 10px; }
-.reason { margin: 0; font-size: 14px; color: var(--muted); }
-.reason b { color: var(--fg); font-weight: 600; }
+.alert { font-size: 13.5px; border-radius: 6px; padding: 4px 10px; }
 
-details { border-top: 1px solid var(--line); padding-top: 8px; }
-summary { cursor: pointer; font-size: 14px; color: var(--accent); }
-.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; margin-top: 10px; font-size: 14px; }
-.detail-grid > div { min-width: 0; }
-.detail-grid h4 { margin: 0 0 4px; font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0.02em; }
-.detail-grid ul { margin: 0; padding-inline-start: 18px; }
-.detail-grid .wide { grid-column: 1 / -1; }
-.hist { font-family: var(--font-data); font-size: 12px; color: var(--muted); }
-@media (max-width: 560px) { .detail-grid { grid-template-columns: 1fr; } .job-head { flex-direction: column; } .pills { justify-content: flex-start; } }
-
-.notes { font: inherit; font-size: 14px; width: 100%; box-sizing: border-box; min-height: 38px; resize: vertical; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; background: var(--bg); color: var(--fg); }
-.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.btn { font: inherit; font-size: 14px; border-radius: 6px; padding: 5px 12px; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--fg); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-block: 4px; }
+.btn { font-size: 14px; border-radius: 6px; padding: 6px 13px; cursor: pointer; border: 1px solid var(--line); background: var(--surface); }
+.btn:hover { border-color: var(--muted); }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
 .btn.apply { background: var(--ok); border-color: var(--ok); color: var(--surface); text-decoration: none; font-weight: 600; }
 .btn:disabled { opacity: 0.5; cursor: default; }
-.link { font-size: 14px; color: var(--accent); margin-inline-start: auto; }
+.ext { font-size: 14px; color: var(--accent); margin-inline-start: auto; }
 .inline-form { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; }
 .inline-form label { font-size: 13px; color: var(--muted); }
-.inline-form input { font: inherit; font-size: 14px; border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--surface); color: var(--fg); min-width: 0; }
+.inline-form input { font-size: 14px; border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--surface); min-width: 0; }
 .inline-form input[type="text"] { flex: 1 1 200px; }
-.toast { position: fixed; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); inset-inline-start: 50%; transform: translateX(50%); background: var(--fg); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 14px; }
+
+.section h3 { margin: 0 0 6px; font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; }
+.section ul { margin: 0; padding-inline-start: 18px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
+.two > div { min-width: 0; }
+.desc { white-space: pre-line; font-size: 14.5px; max-width: 72ch; }
+.notes { width: 100%; min-height: 64px; resize: vertical; border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; background: var(--sunken); font-size: 14px; }
+.applyurl { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; background: var(--sunken); font-size: 14px; }
+.hist { font-family: var(--font-data); font-size: 12px; color: var(--muted); }
+.src { font-size: 13px; color: var(--muted); }
+.src a { color: var(--accent); }
+
+/* ---- run report ---- */
+.report table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.report th { text-align: start; font-size: 11.5px; color: var(--muted); font-weight: 600; letter-spacing: 0.03em; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.report td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+.report td a { color: var(--fg); text-decoration: none; }
+.report td a:hover { color: var(--accent); text-decoration: underline; }
+.tablebox { overflow-x: auto; }
+.kv { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.kv div { background: var(--sunken); border-radius: 8px; padding: 8px 12px; }
+.kv b { display: block; font-family: var(--font-data); font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.kv span { font-size: 12.5px; color: var(--muted); }
+.errs { margin: 0; padding-inline-start: 18px; color: var(--bad); font-size: 13.5px; }
+
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 28px 20px; text-align: center; color: var(--muted); }
+.empty strong { display: block; color: var(--fg); font-size: 16px; margin-bottom: 4px; }
+.toast { position: fixed; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 14px; z-index: 10; }
 .notice { margin-top: 16px; background: var(--warn-soft); color: var(--warn); border-radius: 8px; padding: 10px 14px; font-size: 14px; }
-@media (prefers-reduced-motion: no-preference) { .job { transition: border-color .15s; } .job:hover { border-color: var(--accent); } }
+
+@media (max-width: 900px) {
+  .desk { grid-template-columns: 1fr; }
+  .main { position: static; }
+  .card { max-height: none; }
+  .desk.reading .side { display: none; }
+  .desk:not(.reading) .main { display: none; }
+  .back { display: inline-flex; align-self: flex-start; }
+  .two { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) { .row { transition: background-color .12s; } }
 </style>
 
 <div class="wrap">
-  <div class="top">
-    <div class="brand">
-      <h1>Job<span>Hunter</span></h1>
-      <div class="run" id="run">טוען נתונים…</div>
-    </div>
-    <div class="controls">
-      <div class="tabs" id="tabs" role="tablist"></div>
-      <input class="search" id="search" type="search" placeholder="חיפוש לפי תפקיד, חברה, עיר או הערה">
-    </div>
-  </div>
+  <header class="top">
+    <h1 class="brand">Job<span>Hunter</span></h1>
+    <div class="strip" id="strip">טוען נתונים…</div>
+  </header>
   <div class="notice" id="notice" hidden></div>
-  <div class="list" id="list">
-    <div class="empty"><strong>טוען משרות…</strong>המשרות מגיעות מהסוכן הגדול בכל בוקר ב-09:00.</div>
+  <div class="desk" id="desk">
+    <section class="side" aria-label="רשימת משרות">
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="filters">
+        <input id="search" type="search" placeholder="חיפוש: תפקיד, חברה, עיר, הערה" aria-label="חיפוש">
+        <select id="f-rank" aria-label="התאמה">
+          <option value="">כל ההתאמות</option><option value="high">גבוהה</option><option value="mid">בינונית</option><option value="low">נמוכה</option>
+        </select>
+        <select id="f-kind" aria-label="מקור">
+          <option value="">כל המקורות</option><option value="company">אתרי חברות</option><option value="board">אתרי משרות</option>
+        </select>
+      </div>
+      <div class="count-line" id="count"></div>
+      <div id="list"><div class="empty"><strong>טוען משרות…</strong>המשרות מגיעות מריצת הבוקר.</div></div>
+    </section>
+    <section class="main" id="main" aria-live="polite"></section>
   </div>
 </div>
 <div class="toast" id="toast" hidden></div>
 
 <script>
 const STATUS = {
-  new: { label: "חדש", tone: "accent" },
-  hold: { label: "בהמתנה", tone: "warn" },
-  applied: { label: "הוגש", tone: "ok" },
-  interview: { label: "ראיון", tone: "ok" },
-  offer: { label: "הצעה", tone: "ok" },
-  rejected: { label: "דחייה", tone: "bad" },
-  not_interested: { label: "לא מעוניין", tone: "muted" },
-  closed: { label: "נסגרה", tone: "muted" },
-  filtered: { label: "סוננה", tone: "muted" },
+  new: { label: "חדש", tone: "accent" }, hold: { label: "בהמתנה", tone: "warn" }, applied: { label: "הוגש", tone: "ok" },
+  interview: { label: "ראיון", tone: "ok" }, offer: { label: "הצעה", tone: "ok" }, rejected: { label: "דחייה", tone: "bad" },
+  not_interested: { label: "לא מעוניין", tone: "muted" }, closed: { label: "נסגרה", tone: "muted" }, filtered: { label: "סוננה", tone: "muted" },
 };
 const TABS = [
   { id: "new", label: "חדש", statuses: ["new"] },
   { id: "hold", label: "בהמתנה", statuses: ["hold"] },
-  { id: "applied", label: "הוגש", statuses: ["applied", "interview", "offer", "rejected"] },
+  { id: "applied", label: "הגשתי", statuses: ["applied", "interview", "offer", "rejected"] },
   { id: "not_interested", label: "לא מעוניין", statuses: ["not_interested"] },
-  { id: "closed", label: "נסגרה", statuses: ["closed"] },
-  { id: "filtered", label: "סוננו ע״י הסוכן", statuses: ["filtered"] },
+  { id: "filtered", label: "סוננו", statuses: ["filtered"] },
+  { id: "closed", label: "נסגרו", statuses: ["closed"] },
+  { id: "run", label: "דוח הבוקר", statuses: [] },
 ];
 const EMPTY_TEXT = {
-  new: "אין משרות חדשות. משרות חדשות יופיעו כאן אחרי הריצה של 09:00.",
-  hold: "אין משרות בהמתנה. סמן משרה \"בהמתנה\" כדי לחזור אליה בהמשך.",
-  applied: "עוד לא סימנת הגשה. לחיצה על \"הגשתי\" שומרת את התאריך ואת תיאור התפקיד.",
+  new: "אין משרות חדשות כרגע. ריצת הבוקר מוסיפה לכאן משרות שעברו את כל דרישות החובה.",
+  hold: "אין משרות בהמתנה. \"בהמתנה\" שומר משרה כדי לחזור אליה.",
+  applied: "עוד לא סימנת הגשה. \"הגשתי\" שומר את התאריך ואת תיאור התפקיד.",
   not_interested: "אין משרות שסימנת \"לא מעוניין\".",
-  closed: "אין משרות שנסגרו. משרה שירדה מאתר החברה עוברת לכאן בריצת הבוקר.",
-  filtered: "הסוכן לא סינן משרות. משרות שלא עמדו בדרישות החובה יופיעו כאן עם הנימוק; משרות שרק המיקום שלהן רחוק מסומנות \"רחוקה\" ומופיעות ראשונות.",
+  filtered: "המוח לא סינן משרות. משרות שלא עמדו בדרישות החובה יופיעו כאן עם הנימוק.",
+  closed: "אין משרות שנסגרו. משרה שירדה מאתר החברה עוברת לכאן לבד.",
 };
 const RANK = { high: { label: "התאמה גבוהה", tone: "ok" }, mid: { label: "התאמה בינונית", tone: "accent" }, low: { label: "התאמה נמוכה", tone: "warn" } };
-const FIELD_LABELS = { location: "מיקום", work_mode: "אופן עבודה", level: "רמה", scope: "היקף", employment: "סוג העסקה", salary: "שכר", experience: "ניסיון", education: "השכלה", degree_time: "זמן לסיום תואר", degree_year: "שנה בתואר", company: "חברה" };
+const FIELD_LABELS = { location: "מיקום", work_mode: "אופן עבודה", level: "רמה", scope: "היקף", employment: "סוג העסקה", salary: "שכר", experience: "ניסיון", education: "השכלה", degree_time: "זמן לסיום תואר", company: "חברה" };
+const BOARD_SOURCES = ["hiremetech:", "drushim:", "jobmaster:"];
+const SOURCE_NAMES = { hiremetech: "HireMeTech", drushim: "דרושים", jobmaster: "JobMaster" };
 
-const state = { jobs: [], tab: "new", query: "", form: null, draft: {}, lastRun: null, db: null, busy: new Set(), openDetails: new Set() };
+const state = { jobs: [], runs: [], tab: "new", query: "", rank: "", kind: "", sel: null, form: null, draft: {}, db: null, busy: new Set() };
 const el = (id) => document.getElementById(id);
-
-function esc(v) {
-  return String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function fmtDate(iso) {
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const isBoard = (job) => BOARD_SOURCES.some((p) => String(job.source || "").startsWith(p));
+function fmtDate(iso, short) {
   if (!iso) return "";
   const d = new Date(iso);
   if (isNaN(d)) return esc(iso);
-  return d.toLocaleDateString("he-IL", { day: "2-digit", month: "2-digit", year: "numeric" });
+  return d.toLocaleDateString("he-IL", short ? { day: "2-digit", month: "2-digit" } : { day: "2-digit", month: "2-digit", year: "numeric" });
 }
-function todayISO() { return new Date().toISOString().slice(0, 10); }
-function daysUntil(iso) { return Math.ceil((new Date(iso + "T23:59:59") - new Date()) / 86400000); }
+const todayISO = () => new Date().toISOString().slice(0, 10);
+const daysUntil = (iso) => Math.ceil((new Date(iso + "T23:59:59") - new Date()) / 86400000);
+function sourceLabel(src) {
+  const [sys, slug] = String(src || "").split(":");
+  return SOURCE_NAMES[sys] || (slug ? `אתר החברה (${sys})` : sys);
+}
 
-// One field value, honouring the card rules: "not stated" in grey, inferred values in their own colour with the agent's note.
+// A field value under the card rules: "not stated" in grey, inferred values marked with the agent's note.
 function fv(job, key) {
   if ((job.not_stated || []).includes(key)) return `<span class="ns">לא צוין</span>`;
   const raw = job[key];
   const val = Array.isArray(raw) ? raw.join(" / ") : raw;
   if (val === undefined || val === null || val === "") return `<span class="ns">לא צוין</span>`;
   const note = (job.inferred || {})[key];
-  if (note) return `<span class="inf" title="${esc(note)}">${esc(val)}</span>`;
-  return esc(val);
+  return note ? `<span class="inf" title="${esc(note)}">${esc(val)}</span>` : esc(val);
 }
 
 function alertsFor(job) {
   const out = [];
   if (job.deadline) {
     const d = daysUntil(job.deadline);
-    if (d >= 0) out.push({ tone: d <= 7 ? "bad" : "warn", text: `⏰ הגשה עד ${fmtDate(job.deadline)} (${d === 0 ? "היום" : "עוד " + d + " ימים"})` });
-    else out.push({ tone: "muted", text: `⏰ מועד ההגשה עבר (${fmtDate(job.deadline)})` });
+    out.push(d >= 0 ? { tone: d <= 7 ? "bad" : "warn", text: `הגשה עד ${fmtDate(job.deadline)} (${d === 0 ? "היום" : "עוד " + d + " ימים"})` }
+                    : { tone: "muted", text: `מועד ההגשה עבר (${fmtDate(job.deadline)})` });
   }
-  for (const a of job.alerts || []) out.push({ tone: "warn", text: "⚠️ " + a });
+  for (const a of job.alerts || []) out.push({ tone: "warn", text: a });
   return out;
 }
 
@@ -216,7 +272,7 @@ function actionsFor(job) {
   }
   if (s === "applied") return [{ kind: "interview", label: "ראיון" }, { kind: "offer", label: "הצעה" }, { kind: "rejected", label: "דחייה" }];
   if (s === "interview") return [{ kind: "offer", label: "הצעה" }, { kind: "rejected", label: "דחייה" }];
-  if (s === "not_interested") return [{ kind: "new", label: "החזר לחדש" }];
+  if (["not_interested", "closed"].includes(s)) return [{ kind: "new", label: "החזר לחדש" }];
   return [];
 }
 
@@ -225,15 +281,15 @@ function formHTML(job) {
   const d = state.draft;
   if (state.form.kind === "apply") {
     return `<form class="inline-form" data-form="apply" data-id="${esc(job.id)}">
-      <label for="f-date-${esc(job.id)}">תאריך הגשה</label>
-      <input id="f-date-${esc(job.id)}" type="date" name="date" value="${esc(d.date || todayISO())}">
-      <input id="f-note-${esc(job.id)}" type="text" name="note" placeholder="איך הגשת? (אתר החברה, מייל, חבר…)" value="${esc(d.note || "")}">
+      <label for="f-date">תאריך הגשה</label>
+      <input id="f-date" type="date" name="date" value="${esc(d.date || todayISO())}">
+      <input id="f-note" type="text" name="note" placeholder="איך הגשת? אתר החברה, מייל, חבר…" value="${esc(d.note || "")}">
       <button class="btn primary" type="submit">שמור הגשה</button>
       <button class="btn" type="button" data-cancel>ביטול</button>
     </form>`;
   }
   return `<form class="inline-form" data-form="not_interested" data-id="${esc(job.id)}">
-    <input id="f-reason-${esc(job.id)}" type="text" name="note" placeholder="למה לא? (נשמר יחד עם שם המשרה)" value="${esc(d.note || "")}">
+    <input id="f-reason" type="text" name="note" placeholder="למה לא? הסיבה עוזרת לשפר את הסינון" value="${esc(d.note || "")}">
     <button class="btn primary" type="submit">שמור</button>
     <button class="btn" type="button" data-cancel>ביטול</button>
   </form>`;
@@ -241,114 +297,165 @@ function formHTML(job) {
 
 function cardHTML(job) {
   const st = STATUS[job.status] || STATUS.new;
+  const pills = [`<span class="pill t-${st.tone}">${st.label}</span>`];
   const rank = RANK[job.rank];
-  const pills = [];
-  if (rank && !["filtered", "not_interested", "closed"].includes(job.status)) pills.push(`<span class="pill t-${rank.tone}">${rank.label}</span>`);
-  if (state.tab === "applied" || job.status === "hold") pills.push(`<span class="pill t-${st.tone}">${st.label}</span>`);
-  if (job.far && job.status === "filtered") pills.push(`<span class="pill t-warn" title="עברה את כל דרישות החובה חוץ מהמיקום. נשמרת במלואה כל עוד היא פתוחה באתר.">רחוקה</span>`);
-  const sub = [fv(job, "company"), fv(job, "location"), fv(job, "work_mode")].join(" · ");
-  const facts = ["level", "scope", "experience", "degree_time"].map((k) => `<span class="fact"><span class="k">${FIELD_LABELS[k]}:</span> ${fv(job, k)}</span>`).join("");
+  if (rank && !["filtered", "closed"].includes(job.status)) pills.push(`<span class="pill t-${rank.tone}">${rank.label}</span>`);
+  if (job.far && job.status === "filtered") pills.push(`<span class="pill t-warn" title="עברה את כל דרישות החובה חוץ מהמיקום">רחוקה</span>`);
+  if (isBoard(job)) pills.push(`<span class="pill t-muted">מאתר משרות</span>`);
+  const rel = job.relevance || {};
+  const reason = rel.reason ? `<p class="reason"><b>${job.status === "filtered" ? "למה סוננה" : "למה מתאימה"}:</b> ${esc(rel.reason)}</p>` : "";
+  const extra = [
+    job.not_interested_reason ? `<p class="reason"><b>למה לא מעוניין:</b> ${esc(job.not_interested_reason)}</p>` : "",
+    job.applied_at ? `<p class="reason"><b>הוגש ב-${fmtDate(job.applied_at)}</b>${job.apply_channel ? " · " + esc(job.apply_channel) : ""}</p>` : "",
+  ].join("");
+  const facts = ["level", "scope", "experience", "degree_time", "work_mode", "employment"]
+    .map((k) => `<div><dt>${FIELD_LABELS[k]}</dt><dd>${fv(job, k)}</dd></div>`).join("");
   const prefs = [...(job.prefs_up || []).map((p) => `<span class="pref up">⬆ ${esc(p)}</span>`), ...(job.prefs_down || []).map((p) => `<span class="pref down">⬇ ${esc(p)}</span>`)].join("");
   const alerts = alertsFor(job).map((a) => `<div class="alert t-${a.tone}">${esc(a.text)}</div>`).join("");
-  const rel = job.relevance || {};
-  const reasonLabel = job.status === "filtered" ? "למה סוננה" : "למה עברה";
-  const reason = rel.reason ? `<p class="reason"><b>${reasonLabel}:</b> ${esc(rel.reason)}</p>` : "";
-  const extraReason = job.status === "not_interested" && job.not_interested_reason ? `<p class="reason"><b>למה לא מעוניין:</b> ${esc(job.not_interested_reason)}</p>` : "";
-  const applied = job.applied_at ? `<p class="reason"><b>הוגש ב-</b>${fmtDate(job.applied_at)}</p>` : "";
   const li = (arr) => (arr && arr.length ? `<ul>${arr.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : `<span class="ns">לא צוין</span>`);
   const inferred = Object.entries(job.inferred || {});
   const hist = (job.history || []).map((h) => `${fmtDate(h.at)} · ${esc((STATUS[h.status] || {}).label || h.status)}${h.note ? " · " + esc(h.note) : ""}`).join("<br>");
+  const sightings = (job.sightings || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(sourceLabel(s.source))}</a> (${fmtDate(s.date, true)})`).join(" · ");
   const actions = actionsFor(job).map((a) => `<button class="btn${a.primary ? " primary" : ""}" type="button" data-act="${a.kind}" data-id="${esc(job.id)}" ${state.busy.has(job.id) ? "disabled" : ""}>${a.label}</button>`).join("");
   const applyHref = job.apply_url || job.url;
-  const applyBtn = applyHref ? `<a class="btn apply" href="${esc(applyHref)}" target="_blank" rel="noopener">${job.apply_url ? "הגשה ↗" : "לעמוד המשרה ↗"}</a>` : "";
-  const link = job.apply_url && job.url && job.url !== job.apply_url ? `<a class="link" href="${esc(job.url)}" target="_blank" rel="noopener">לעמוד המשרה ↗</a>` : "";
+  const applyBtn = applyHref ? `<a class="btn apply" href="${esc(applyHref)}" target="_blank" rel="noopener">${job.apply_url ? "להגשה ↗" : "לעמוד המשרה ↗"}</a>` : "";
+  const pageLink = job.apply_url && job.url && job.url !== job.apply_url ? `<a class="ext" href="${esc(job.url)}" target="_blank" rel="noopener">עמוד המשרה ↗</a>` : "";
 
-  return `<article class="job" data-id="${esc(job.id)}">
-    <div class="job-head">
-      <div><h3 class="job-title">${esc(job.title)}</h3><div class="job-sub">${sub}</div></div>
-      <div class="pills">${pills.join("")}</div>
-    </div>
-    <div class="facts">${facts}</div>
-    ${prefs ? `<div class="prefs">${prefs}</div>` : ""}
+  return `<article class="card">
+    <button class="btn back" type="button" data-back>→ חזרה לרשימה</button>
+    <div class="pills">${pills.join("")}</div>
+    <div><h2>${esc(job.title)}</h2><div class="sub">${fv(job, "company")} · ${fv(job, "location")}</div></div>
+    ${reason}${extra}
     ${alerts ? `<div class="alerts">${alerts}</div>` : ""}
-    ${reason}${extraReason}${applied}
-    <details data-det="${esc(job.id)}" ${state.openDetails.has(job.id) ? "open" : ""}>
-      <summary>פרטים</summary>
-      <div class="detail-grid">
-        <div class="wide"><h4>תיאור</h4>${job.description ? esc(job.description) : `<span class="ns">לא צוין</span>`}</div>
-        <div><h4>דרישות חובה</h4>${li(job.requirements_must)}</div>
-        <div><h4>יתרון</h4>${li(job.requirements_adv)}</div>
-        <div><h4>השכלה</h4>${fv(job, "education")}</div>
-        <div><h4>סוג העסקה · שכר</h4>${fv(job, "employment")} · ${fv(job, "salary")}</div>
-        ${job.apply_instructions ? `<div class="wide"><h4>הנחיות הגשה</h4>${esc(job.apply_instructions)}</div>` : ""}
-        ${inferred.length ? `<div class="wide"><h4>מה הסוכן הסיק</h4><ul>${inferred.map(([k, v]) => `<li><span class="inf">${esc(FIELD_LABELS[k] || k)}</span> ${esc(v)}</li>`).join("")}</ul></div>` : ""}
-        <div class="wide"><h4><label for="apply-${esc(job.id)}">קישור להגשה</label></h4><input class="search" id="apply-${esc(job.id)}" data-apply="${esc(job.id)}" type="url" placeholder="הדבק כאן קישור ישיר להגשה" value="${esc(job.apply_url || "")}"></div>
-        <div><h4>מקור</h4>${esc(job.source || "")}${job.posted_at ? " · פורסם " + fmtDate(job.posted_at) : ""}</div>
-        <div><h4>היסטוריה</h4><div class="hist">${hist || "—"}</div></div>
-      </div>
-    </details>
-    <textarea class="notes" id="notes-${esc(job.id)}" data-notes="${esc(job.id)}" placeholder="הערות שלך על המשרה">${esc(job.notes || "")}</textarea>
+    <div class="actions">${applyBtn}${actions}${pageLink}</div>
     ${formHTML(job)}
-    <div class="actions">${applyBtn}${actions}${link}</div>
+    <dl class="facts">${facts}</dl>
+    ${prefs ? `<div class="prefs">${prefs}</div>` : ""}
+    <div class="section"><h3>על התפקיד</h3><div class="desc">${job.description ? esc(job.description) : `<span class="ns">לא צוין</span>`}</div></div>
+    <div class="two">
+      <div class="section"><h3>דרישות חובה</h3>${li(job.requirements_must)}</div>
+      <div class="section"><h3>יתרון</h3>${li(job.requirements_adv)}</div>
+      <div class="section"><h3>השכלה</h3>${fv(job, "education")}</div>
+      <div class="section"><h3>שכר</h3>${fv(job, "salary")}</div>
+    </div>
+    ${job.apply_instructions ? `<div class="section"><h3>הנחיות הגשה</h3>${esc(job.apply_instructions)}</div>` : ""}
+    ${inferred.length ? `<div class="section"><h3>מה הסוכן הסיק</h3><ul>${inferred.map(([k, v]) => `<li><span class="inf">${esc(FIELD_LABELS[k] || k)}</span> ${esc(v)}</li>`).join("")}</ul></div>` : ""}
+    <div class="section"><h3><label for="notes">ההערות שלי</label></h3><textarea class="notes" id="notes" data-notes="${esc(job.id)}" placeholder="מה חשוב לזכור על המשרה הזו">${esc(job.notes || "")}</textarea></div>
+    <div class="section"><h3><label for="applyurl">קישור ישיר להגשה</label></h3><input class="applyurl" id="applyurl" data-apply="${esc(job.id)}" type="url" placeholder="https://…" value="${esc(job.apply_url || "")}"></div>
+    <div class="two">
+      <div class="section"><h3>נמצאה ב</h3><div class="src">${sightings || esc(sourceLabel(job.source))}${job.posted_at ? ` · פורסמה ${fmtDate(job.posted_at)}` : ""}</div></div>
+      <div class="section"><h3>היסטוריה</h3><div class="hist">${hist || "—"}</div></div>
+    </div>
   </article>`;
 }
 
-function matches(job, q) {
-  if (!q) return true;
-  const hay = [job.title, job.company, job.location, job.notes, job.not_interested_reason].join(" ").toLowerCase();
-  return hay.includes(q.toLowerCase());
+function reportHTML() {
+  const r = state.runs[0];
+  if (!r) return `<div class="empty"><strong>עוד אין דוח</strong>הדוח נכתב בסוף כל ריצת בוקר.</div>`;
+  const pre = r.prefiltered || [];
+  const tiles = [
+    ["sources_read", `מקורות נקראו${r.sources_total ? " מתוך " + r.sources_total : ""}`], ["found_new", "משרות חדשות נמצאו"],
+    ["prefiltered_count", "סוננו בקוד"], ["to_brain", "נקראו ע״י המוח"], ["passed", "עברו את הסינון"], ["backlog", "ממתינות למחר"],
+  ].filter(([k]) => r[k] !== undefined).map(([k, label]) => `<div><b>${esc(r[k])}</b><span>${label}</span></div>`).join("");
+  const errs = [...(r.errors || []).map((e) => "לא נקרא: " + e), ...(r.warnings || []).map((w) => "לבדוק: " + w)];
+  const rows = pre.map((p) => `<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></td><td>${esc(p.company)}</td><td>${esc(p.reason)}</td></tr>`).join("");
+  return `<article class="card report">
+    <button class="btn back" type="button" data-back>→ חזרה</button>
+    <div><h2>דוח הבוקר · ${fmtDate(r.at)}</h2><div class="sub">${esc(r.summary || "")}</div></div>
+    ${tiles ? `<div class="kv">${tiles}</div>` : ""}
+    ${errs.length ? `<div class="section"><h3>שגיאות ואזהרות</h3><ul class="errs">${errs.map((e) => `<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
+    ${(r.borderline || []).length ? `<div class="section"><h3>מקרי גבול בכפילויות</h3><ul>${r.borderline.map((b) => `<li>${esc(b)}</li>`).join("")}</ul></div>` : ""}
+    <div class="section"><h3>סוננו בקוד לפני המוח (${pre.length})</h3>
+      ${pre.length ? `<div class="tablebox"><table><thead><tr><th>משרה</th><th>חברה</th><th>למה</th></tr></thead><tbody>${rows}</tbody></table></div>`
+                   : `<span class="ns">אף משרה לא סוננה בקוד הבוקר.</span>`}
+    </div>
+  </article>`;
+}
+
+function matches(job) {
+  if (state.rank && job.rank !== state.rank) return false;
+  if (state.kind && (state.kind === "board") !== isBoard(job)) return false;
+  if (!state.query) return true;
+  return [job.title, job.company, job.location, job.notes, job.not_interested_reason].join(" ").toLowerCase().includes(state.query.toLowerCase());
+}
+const RANK_ORDER = { high: 0, mid: 1, low: 2 };
+function visibleJobs() {
+  const tab = TABS.find((t) => t.id === state.tab);
+  return state.jobs.filter((j) => tab.statuses.includes(j.status) && matches(j))
+    .sort((a, b) => (b.far ? 1 : 0) - (a.far ? 1 : 0) || (RANK_ORDER[a.rank] ?? 3) - (RANK_ORDER[b.rank] ?? 3) || String(b.first_seen || "").localeCompare(String(a.first_seen || "")));
 }
 
 function render() {
   const counts = Object.fromEntries(TABS.map((t) => [t.id, state.jobs.filter((j) => t.statuses.includes(j.status)).length]));
-  el("tabs").innerHTML = TABS.map((t) => `<button class="tab" role="tab" type="button" data-tab="${t.id}" aria-selected="${t.id === state.tab}">${t.label}<span class="n">${counts[t.id]}</span></button>`).join("");
+  el("tabs").innerHTML = TABS.map((t) => `<button class="tab" role="tab" type="button" data-tab="${t.id}" aria-selected="${t.id === state.tab}">${t.label}${t.id === "run" ? "" : `<span class="n">${counts[t.id]}</span>`}</button>`).join("");
 
-  const tab = TABS.find((t) => t.id === state.tab);
-  const rankOrder = { high: 0, mid: 1, low: 2 };
-  const shown = state.jobs
-    .filter((j) => tab.statuses.includes(j.status) && matches(j, state.query))
-    .sort((a, b) => (b.far ? 1 : 0) - (a.far ? 1 : 0) || (rankOrder[a.rank] ?? 3) - (rankOrder[b.rank] ?? 3) || String(b.first_seen || "").localeCompare(String(a.first_seen || "")));
+  const r = state.runs[0];
+  el("strip").innerHTML = r
+    ? `<span class="when">ריצה אחרונה ${fmtDate(r.at)}</span>
+       ${r.found_new !== undefined ? `<span class="stat"><b>${esc(r.found_new)}</b> נמצאו</span><span class="stat"><b>${esc(r.prefiltered_count ?? 0)}</b> סוננו בקוד</span><span class="stat"><b>${esc(r.to_brain ?? 0)}</b> נקראו</span>` : `<span>${esc(r.summary || "")}</span>`}
+       ${(r.errors || []).length ? `<span class="bad">${r.errors.length} מקורות לא נקראו</span>` : ""}
+       <button class="linkbtn" type="button" data-tab="run">לדוח המלא</button>`
+    : "עוד לא הייתה ריצת בוקר.";
 
-  if (!shown.length) {
-    const text = state.query ? "אין משרות שמתאימות לחיפוש בלשונית הזו." : EMPTY_TEXT[state.tab];
-    el("list").innerHTML = `<div class="empty"><strong>${state.jobs.length ? "הלשונית ריקה" : "אין עדיין משרות"}</strong>${esc(text)}</div>`;
-  } else {
-    el("list").innerHTML = shown.map(cardHTML).join("");
+  const side = state.tab !== "run";
+  el("search").parentElement.hidden = !side;
+  if (!side) {
+    el("count").textContent = "";
+    el("list").innerHTML = `<div class="empty"><strong>דוח הבוקר</strong>מה נקרא, מה סונן בקוד ולמה, ומה נכשל.</div>`;
+    el("main").innerHTML = reportHTML();
+    return;
   }
-
-  const r = state.lastRun;
-  el("run").innerHTML = r
-    ? `ריצה אחרונה: <b>${fmtDate(r.at)}</b> · ${esc(r.summary || "")}`
-    : "עוד לא הייתה ריצה. הריצה הראשונה: 09:00.";
+  const shown = visibleJobs();
+  el("count").textContent = shown.length ? `${shown.length} משרות` : "";
+  if (!shown.length) {
+    el("list").innerHTML = `<div class="empty"><strong>${state.jobs.length ? "אין כאן משרות" : "אין עדיין משרות"}</strong>${esc(state.query || state.rank || state.kind ? "אין משרות שמתאימות לסינון בלשונית הזו." : EMPTY_TEXT[state.tab])}</div>`;
+    el("main").innerHTML = "";
+    return;
+  }
+  if (!shown.some((j) => j.id === state.sel)) state.sel = shown[0].id;
+  el("list").innerHTML = `<div class="rows">${shown.map((j) => `
+    <button class="row" type="button" data-sel="${esc(j.id)}" aria-current="${j.id === state.sel}">
+      <span class="stripe ${esc(j.rank || "")}"></span>
+      <span><span class="t">${esc(j.title)}</span><br><span class="s">${esc(j.company || "")}${j.location ? " · " + esc(j.location) : ""}</span></span>
+      <span class="meta"><span class="d">${fmtDate(j.first_seen, true)}</span>${j.far && j.status === "filtered" ? `<span class="pill t-warn">רחוקה</span>` : ""}</span>
+    </button>`).join("")}</div>`;
+  el("main").innerHTML = cardHTML(state.jobs.find((j) => j.id === state.sel));
 }
 
 function toast(msg) {
   const t = el("toast");
-  t.textContent = msg;
-  t.hidden = false;
+  t.textContent = msg; t.hidden = false;
   clearTimeout(toast.timer);
   toast.timer = setTimeout(() => { t.hidden = true; }, 2200);
 }
 
 async function changeStatus(job, status, extra = {}, note = "") {
   if (!state.db || state.busy.has(job.id)) return;
-  state.busy.add(job.id);
-  render();
+  state.busy.add(job.id); render();
   const history = [...(job.history || []), { status, at: new Date().toISOString(), note }];
   try {
     await state.db.collection("jobs").doc(job.id).update({ status, history, ...extra });
     toast(`"${job.title}" סומנה: ${STATUS[status].label}`);
   } catch (e) {
     toast(e && e.code === "invalid_argument" ? "אין הרשאה לשמור שינויים בדף הזה." : "השמירה לא הצליחה. נסה שוב בעוד רגע.");
-  } finally {
-    state.busy.delete(job.id);
-    render();
-  }
+  } finally { state.busy.delete(job.id); render(); }
 }
 
 document.addEventListener("click", (e) => {
   const tabBtn = e.target.closest("[data-tab]");
-  if (tabBtn) { state.tab = tabBtn.dataset.tab; state.form = null; try { localStorage.setItem("jh-tab", state.tab); } catch {} render(); return; }
+  if (tabBtn) {
+    state.tab = tabBtn.dataset.tab; state.form = null; state.sel = null;
+    el("desk").classList.toggle("reading", state.tab === "run");
+    try { localStorage.setItem("jh-tab", state.tab); } catch {}
+    render(); return;
+  }
+  const row = e.target.closest("[data-sel]");
+  if (row) { state.sel = row.dataset.sel; state.form = null; el("desk").classList.add("reading"); render(); el("main").scrollIntoView({ block: "start" }); return; }
+  if (e.target.closest("[data-back]")) {
+    el("desk").classList.remove("reading");
+    if (state.tab === "run") { state.tab = "new"; }
+    render(); return;
+  }
   if (e.target.closest("[data-cancel]")) { state.form = null; state.draft = {}; render(); return; }
   const act = e.target.closest("[data-act]");
   if (!act) return;
@@ -360,7 +467,7 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("input", (e) => {
-  if (e.target.id === "search") { state.query = e.target.value.trim(); render(); el("search").focus(); return; }
+  if (e.target.id === "search") { state.query = e.target.value.trim(); render(); return; }
   const form = e.target.closest("form[data-form]");
   if (form && e.target.name) state.draft[e.target.name] = e.target.value;
 });
@@ -374,14 +481,15 @@ document.addEventListener("submit", (e) => {
   const note = String(data.get("note") || "").trim();
   state.form = null; state.draft = {};
   if (form.dataset.form === "apply") {
-    const date = String(data.get("date") || todayISO());
-    changeStatus(job, "applied", { applied_at: date, applied_description: job.description || "", apply_channel: note }, note);
+    changeStatus(job, "applied", { applied_at: String(data.get("date") || todayISO()), applied_description: job.description || "", apply_channel: note }, note);
   } else {
     changeStatus(job, "not_interested", { not_interested_reason: note }, note);
   }
 });
 
 document.addEventListener("change", async (e) => {
+  if (e.target.id === "f-rank") { state.rank = e.target.value; render(); return; }
+  if (e.target.id === "f-kind") { state.kind = e.target.value; render(); return; }
   const applyId = e.target.dataset && e.target.dataset.apply;
   if (applyId && state.db) {
     const job = state.jobs.find((j) => j.id === applyId);
@@ -395,41 +503,26 @@ document.addEventListener("change", async (e) => {
   const id = e.target.dataset && e.target.dataset.notes;
   if (!id || !state.db) return;
   const job = state.jobs.find((j) => j.id === id);
-  const value = e.target.value;
-  if (!job || value === (job.notes || "")) return;
-  try { await state.db.collection("jobs").doc(id).update({ notes: value }); toast("ההערה נשמרה"); }
+  if (!job || e.target.value === (job.notes || "")) return;
+  try { await state.db.collection("jobs").doc(id).update({ notes: e.target.value }); toast("ההערה נשמרה"); }
   catch { toast("ההערה לא נשמרה. נסה שוב."); }
 });
 
-document.addEventListener("toggle", (e) => {
-  const id = e.target.dataset && e.target.dataset.det;
-  if (!id) return;
-  if (e.target.open) state.openDetails.add(id); else state.openDetails.delete(id);
-}, true);
-
-try { const saved = localStorage.getItem("jh-tab"); if (saved && TABS.some((t) => t.id === saved)) state.tab = saved; } catch {}
+try { const saved = localStorage.getItem("jh-tab"); if (saved && TABS.some((t) => t.id === saved && t.id !== "run")) state.tab = saved; } catch {}
 render();
 
 (async () => {
   const db = await window.claude?.use?.("db");
   if (!db) {
-    el("run").textContent = "";
+    el("strip").textContent = "";
     el("notice").hidden = false;
-    el("notice").textContent = "החיבור לנתוני הדף לא זמין בתצוגה הזו. פתח את הדף ב-claude.ai כשאתה מחובר לחשבון שלך.";
+    el("notice").textContent = "הנתונים של הלוח לא זמינים בתצוגה הזו. פתח את הדף ב-claude.ai כשאתה מחובר לחשבון שלך.";
     el("list").innerHTML = "";
     return;
   }
   state.db = db;
-  db.collection("jobs").onSnapshot((snap) => {
-    state.jobs = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-    render();
-  }, () => {
-    el("notice").hidden = false;
-    el("notice").textContent = "טעינת המשרות נעצרה. רענן את הדף.";
-  });
-  db.collection("runs").orderBy("at", "desc").limit(1).onSnapshot((snap) => {
-    state.lastRun = snap.empty ? null : snap.docs[0].data();
-    render();
-  }, () => {});
+  db.collection("jobs").onSnapshot((snap) => { state.jobs = snap.docs.map((d) => ({ id: d.id, ...d.data() })); render(); },
+    () => { el("notice").hidden = false; el("notice").textContent = "טעינת המשרות נעצרה. רענן את הדף."; });
+  db.collection("runs").orderBy("at", "desc").limit(1).onSnapshot((snap) => { state.runs = snap.docs.map((d) => d.data()); render(); }, () => {});
 })();
 </script>

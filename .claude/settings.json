@@ -1,18 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(.venv\\Scripts\\python.exe -m jobhunter.agents run *)",
-      "PowerShell(.venv\\Scripts\\python.exe -m jobhunter.morning plan *)",
-      "PowerShell(git add state/seen state/inbox*)",
-      "PowerShell(git commit -m \"Morning run *)",
-      "PowerShell(git push)",
-      "PowerShell(Get-Date*)",
+      "Bash(.venv/Scripts/python.exe -m jobhunter.morning prepare*)",
+      "Bash(.venv/Scripts/python.exe -m jobhunter.morning finish*)",
       "Bash(.venv/Scripts/python.exe -m jobhunter.agents run *)",
       "Bash(.venv/Scripts/python.exe -m jobhunter.morning plan *)",
-      "Bash(git add state/seen state/inbox*)",
-      "Bash(git commit -m \"Morning run *)",
-      "Bash(git push)",
-      "Bash(date*)",
+      "PowerShell(.venv\\Scripts\\python.exe -m jobhunter.morning prepare*)",
+      "PowerShell(.venv\\Scripts\\python.exe -m jobhunter.morning finish*)",
+      "PowerShell(.venv/Scripts/python.exe -m jobhunter.morning prepare*)",
+      "PowerShell(.venv/Scripts/python.exe -m jobhunter.morning finish*)",
       "ArtifactData",
       "PushNotification"
     ]

@@ -20,7 +20,13 @@
     "greenhouse": [
       {"company": "Nebius", "slug": "nebius"},
       {"company": "ScaleOps", "slug": "scaleops"},
-      {"company": "Cato Networks", "slug": "catonetworks"}
+      {"company": "Cato Networks", "slug": "catonetworks"},
+      {"company": "Wiz", "slug": "wizinc"},
+      {"company": "JFrog", "slug": "jfrog"},
+      {"company": "Taboola", "slug": "taboola"},
+      {"company": "Similarweb", "slug": "similarweb"},
+      {"company": "Payoneer", "slug": "payoneer"},
+      {"company": "SentinelOne", "slug": "sentinellabs"}
     ],
     "lever": [
       {"company": "Mobileye", "slug": "mobileye", "host": "api.eu.lever.co"}
@@ -29,7 +35,12 @@
       {"company": "NVIDIA", "slug": "nvidia", "host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia", "site": "NVIDIAExternalCareerSite"},
       {"company": "KLA", "slug": "kla", "host": "kla.wd1.myworkdayjobs.com", "tenant": "kla", "site": "Search"},
       {"company": "Applied Materials", "slug": "amat", "host": "amat.wd1.myworkdayjobs.com", "tenant": "amat", "site": "External"},
-      {"company": "Palo Alto Networks", "slug": "paloalto", "host": "paloaltonetworks.wd5.myworkdayjobs.com", "tenant": "paloaltonetworks", "site": "panwexternalcareers"}
+      {"company": "Palo Alto Networks", "slug": "paloalto", "host": "paloaltonetworks.wd5.myworkdayjobs.com", "tenant": "paloaltonetworks", "site": "panwexternalcareers"},
+      {"company": "Intel", "slug": "intel", "host": "intel.wd1.myworkdayjobs.com", "tenant": "intel", "site": "External"},
+      {"company": "Marvell", "slug": "marvell", "host": "marvell.wd1.myworkdayjobs.com", "tenant": "marvell", "site": "MarvellCareers"},
+      {"company": "HP", "slug": "hp", "host": "hp.wd5.myworkdayjobs.com", "tenant": "hp", "site": "ExternalCareerSite"},
+      {"company": "Salesforce", "slug": "salesforce", "host": "salesforce.wd12.myworkdayjobs.com", "tenant": "salesforce", "site": "External_Career_Site"},
+      {"company": "Cisco", "slug": "cisco", "host": "cisco.wd5.myworkdayjobs.com", "tenant": "cisco", "site": "Cisco_Careers"}
     ],
     "eightfold": [
       {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"},
@@ -40,6 +51,14 @@
       {"company": "DriveNets", "slug": "drivenets", "uid": "72.006", "token": "2769D81626762C4E762762C4EC4E1626"},
       {"company": "Nova", "slug": "nova", "uid": "A5.007", "token": "5A71C4332DFB4E10F532DFB4E32DF0B4E"},
       {"company": "Deloitte", "slug": "deloitte", "uid": "F7.00B", "token": "7FB2FE21FEC3FD847D33FD8FF603FD81FEC"}
+    ],
+    "drushim": [
+      {"company": "Drushim", "slug": "drushim", "queries": [
+        {"term": "סטודנט", "catdir": 5}, {"term": "סטודנט", "catdir": 10},
+        {"term": "סטודנטית", "catdir": 5}, {"term": "התמחות", "catdir": 5}]}
+    ],
+    "jobmaster": [
+      {"company": "JobMaster", "slug": "jobmaster", "queries": ["q-סטודנט-תוכנה", "q-סטודנט-פיתוח", "q-סטודנט-מדעי-המחשב", "q-סטודנט-הייטק", "q-סטודנט-אלגוריתמים", "q-סטודנט-data", "q-student-software", "q-student-developer", "q-intern-software"]}
     ],
     "hiremetech": [
       {"company": "HireMeTech", "slug": "juniors", "host": "juniors.hiremetech.com", "max_pages": 40}
