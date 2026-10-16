@@ -1,0 +1,332 @@
+{
+ "amazon-10432733": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:43.016Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "amazon-10458621": {
+  "history": [
+   {
+    "at": "2026-10-16T06:14:03.505Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "amazon-10530731": {
+  "history": [
+   {
+    "at": "2026-10-16T06:11:14.228Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "amazon-10558894": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:50.154Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "amazon-10577304": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:09.850Z",
+    "note": "",
+    "status": "new"
+   },
+   {
+    "at": "2026-10-16T06:13:18.621Z",
+    "note": "נמצאת בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצאת בחיפה",
+  "status": "not_interested"
+ },
+ "eightfold-microsoft-1970393556768751": {
+  "history": [
+   {
+    "at": "2026-10-16T06:11:02.699Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "eightfold-qualcomm-446717394546": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:56.765Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "g01": {
+  "history": [
+   {
+    "at": "2026-10-08T09:24:27.614Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "g02": {
+  "history": [
+   {
+    "at": "2026-10-08T09:24:39.028Z",
+    "note": "יותר מידי ימים",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "יותר מידי ימים",
+  "status": "not_interested"
+ },
+ "g03": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:02.466Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "g05": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:20.326Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "g16": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:28.840Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "g17": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:43.314Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "g19": {
+  "history": [
+   {
+    "at": "2026-10-16T06:14:00.776Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "google-120211620121977542": {
+  "history": [
+   {
+    "at": "2026-10-10T17:15:23.798Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150021111": {
+  "history": [
+   {
+    "at": "2026-10-16T06:14:35.891Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150186129": {
+  "history": [
+   {
+    "at": "2026-10-16T06:14:54.798Z",
+    "note": "משרת הדרכה ולא משרת פיתוח או מחקר",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "משרת הדרכה ולא משרת פיתוח או מחקר",
+  "status": "not_interested"
+ },
+ "hiremetech-150392362": {
+  "history": [
+   {
+    "at": "2026-10-16T06:15:10.704Z",
+    "note": "נמצאת בקיסריה שזה גם רחוק מידי",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצאת בקיסריה שזה גם רחוק מידי",
+  "status": "not_interested"
+ },
+ "hiremetech-150404396": {
+  "history": [
+   {
+    "at": "2026-10-16T06:15:31.346Z",
+    "note": "משרת ג'וניור ומשרה מלאה כרגע לא יכול להתחייב למשרה מלאה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "משרת ג'וניור ומשרה מלאה כרגע לא יכול להתחייב למשרה מלאה",
+  "status": "not_interested"
+ },
+ "hiremetech-150407544": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:08.245Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150411816": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:11.389Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150494879": {
+  "history": [
+   {
+    "at": "2026-10-16T06:15:44.699Z",
+    "note": "יותר מהנדס נתונים ממהנדס תוכנה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "יותר מהנדס נתונים ממהנדס תוכנה",
+  "status": "not_interested"
+ },
+ "hiremetech-150524195": {
+  "history": [
+   {
+    "at": "2026-10-16T06:12:31.559Z",
+    "note": "ההגשה סגורה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "ההגשה סגורה",
+  "status": "not_interested"
+ },
+ "hiremetech-150565012": {
+  "history": [
+   {
+    "at": "2026-10-16T06:11:30.422Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150600426": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:46.993Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "hiremetech-150733011": {
+  "history": [
+   {
+    "at": "2026-10-16T06:13:38.647Z",
+    "note": "נמצא בחיפה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "נמצא בחיפה",
+  "status": "not_interested"
+ },
+ "hiremetech-150735057": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:49.210Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150762371": {
+  "history": [
+   {
+    "at": "2026-10-16T06:09:25.783Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150822535": {
+  "history": [
+   {
+    "at": "2026-10-16T06:09:35.790Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "hiremetech-150878293": {
+  "history": [
+   {
+    "at": "2026-10-16T06:11:41.241Z",
+    "note": "",
+    "status": "hold"
+   }
+  ],
+  "status": "hold"
+ },
+ "workday-marvell-2604499": {
+  "history": [
+   {
+    "at": "2026-10-16T06:10:02.666Z",
+    "note": "יותר מהנדס נתונים ממהנדס תוכנה",
+    "status": "not_interested"
+   }
+  ],
+  "not_interested_reason": "יותר מהנדס נתונים ממהנדס תוכנה",
+  "status": "not_interested"
+ }
+}
