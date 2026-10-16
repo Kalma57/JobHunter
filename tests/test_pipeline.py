@@ -131,23 +131,31 @@ def test_jobmaster_cards_parse():
 
 # ---- public page ----
 
-def test_public_page_shows_only_open_matches_and_nothing_private(tmp_path, monkeypatch):
-    from jobhunter import public
+def test_public_board_embeds_every_job_and_the_marks(tmp_path, monkeypatch):
+    """User's decision 16/10/2026: the public site is the board - every tab visible, owner-only changes."""
+    from jobhunter import public, overlay
     monkeypatch.chdir(Path(__file__).parent.parent)
+    monkeypatch.setattr(overlay, "load", lambda cwd=None: ({"a": {"status": "applied", "history": []}}, None))
     board_dir = tmp_path / "board"
     (board_dir / "jobs").mkdir(parents=True)
-    docs = {
-        "a": {"agent_id": "x:a", "title": "Open match", "status": "applied", "notes": "SECRET-NOTE", "relevance": {"pass": True}, "rank": "high"},
-        "b": {"agent_id": "x:b", "title": "Filtered", "status": "filtered", "relevance": {"pass": False}},
-        "c": {"agent_id": "x:c", "title": "Closed", "status": "closed", "relevance": {"pass": True}},
-        "g01": {"title": "Gold set", "status": "new", "relevance": {"pass": True}},
-    }
-    for k, v in docs.items():
+    for k, v in {"a": {"title": "Open match", "status": "new", "applied_description": "BIG"}, "b": {"title": "Filtered", "status": "filtered"}}.items():
         (board_dir / "jobs" / f"{k}.json").write_text(json.dumps(v), encoding="utf-8")
     result = public.build(board_dir, tmp_path, TODAY, out_dir=tmp_path / "public")
     html = (tmp_path / "public" / "index.html").read_text(encoding="utf-8")
-    assert result["jobs"] == 1 and "Open match" in html
-    assert "SECRET-NOTE" not in html and "applied" not in html and "Gold set" not in html
+    assert result["jobs"] == 2 and "Open match" in html and "Filtered" in html and '"applied"' in html
+    assert "BIG" not in html  # the stored copy of the description stays out
+
+
+def test_marks_win_unless_the_card_has_a_newer_event():
+    from jobhunter.overlay import merge
+    card = {"status": "new", "history": [{"status": "new", "at": "2026-10-14T07:00:00Z"}]}
+    mark = {"status": "applied", "applied_at": "2026-10-16", "history": [{"status": "applied", "at": "2026-10-16T10:00:00Z"}]}
+    merged = merge(card, mark)
+    assert merged["status"] == "applied" and merged["applied_at"] == "2026-10-16" and len(merged["history"]) == 2
+    closed = {**card, "status": "closed", "history": card["history"] + [{"status": "closed", "at": "2026-10-20T07:00:00Z"}]}
+    assert merge(closed, mark)["status"] == "closed"  # the morning closed it after the mark
+    reopened = {**mark, "status": "new", "history": mark["history"] + [{"status": "new", "at": "2026-10-21T08:00:00Z"}]}
+    assert merge(closed, reopened)["status"] == "new"  # and the user reopened it after that
 
 
 def test_jobmaster_links_differ_by_their_key():  # 15/10/2026: every JobMaster job looked like one link

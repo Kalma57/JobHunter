@@ -1,12 +1,12 @@
-"""The public page (docs/public-page.md): a static page that shows what the morning run found, for a link on LinkedIn.
+"""The public site (docs/public-page.md): the job board on GitHub Pages, for the user and for anyone with the link.
 
     python -m jobhunter.public build [--board-dir state/board] [--state state]   (also runs inside `morning finish`)
 
-Built from the board snapshot taken after the morning writes, so it needs no server and no Claude: the template
-site/public.html + the data as JSON -> public/index.html. Anyone with the link sees it, so it shows only:
-  - jobs that passed the search and are still open (title, company, place, fit, link) - never a status, a note,
-    an application, or anything else the user marked on the board
-  - the run's numbers: sources read, jobs scanned, filtered by code, read by the brain
+Built from the board snapshot taken after the morning writes: the template site/public.html + the data as JSON
+-> public/index.html. Everyone sees the whole board (user's decision, 16/10/2026: statuses and notes visible);
+only the owner can change it - the page writes the owner's marks to statuses.json on the board-data branch with
+the owner's own GitHub key (jobhunter/overlay.py). The embedded marks are this morning's; the page fetches the
+latest ones when it opens.
 The owner's name and links come from config/public.json.
 """
 
@@ -21,28 +21,12 @@ from jobhunter.state import _read_json
 TEMPLATE = Path("site/public.html")
 CONFIG = Path("config/public.json")
 OUT_DIR = Path("public")
-HIDDEN_STATUSES = {"filtered", "closed", "not_interested"}  # the rest (new, hold, applied...) look the same in public
-JOB_FIELDS = ("title", "company", "location", "work_mode", "scope", "rank", "first_seen", "posted_at", "deadline")
-BOARD_SOURCES = ("hiremetech:", "drushim:", "jobmaster:")
+HEAVY = ("applied_description",)  # a copy of the description, kept on the board for the user's records
 
 
-def public_jobs(board: dict[str, dict]) -> list[dict]:
-    out = []
-    for job in board.values():
-        if job.get("status") in HIDDEN_STATUSES or job.get("compacted") or not (job.get("relevance") or {}).get("pass"):
-            continue
-        if not job.get("agent_id"):  # the hand-made test set, not real jobs from this morning's sources
-            continue
-        item = {k: job.get(k) for k in JOB_FIELDS}
-        item["url"] = job.get("url")
-        item["tags"] = list(job.get("prefs_up") or [])
-        item["summary"] = job.get("description") if len(job.get("description") or "") <= 220 else None
-        item["via_board"] = (job.get("source") or "").startswith(BOARD_SOURCES)
-        out.append(item)
-    rank = {"high": 0, "mid": 1, "low": 2}
-    out.sort(key=lambda j: j.get("first_seen") or "", reverse=True)  # newest first...
-    out.sort(key=lambda j: rank.get(j.get("rank"), 3))                # ...within each fit level
-    return out
+def board_jobs(board: dict[str, dict]) -> list[dict]:
+    """Every board job (the page has tabs for every status), with its board id."""
+    return [{"id": doc_id, **{k: v for k, v in job.items() if k not in HEAVY}} for doc_id, job in sorted(board.items())]
 
 
 def run_numbers(state: Path, today: date) -> dict:
@@ -61,13 +45,18 @@ def run_numbers(state: Path, today: date) -> dict:
         "prefiltered": run.get("prefiltered_count", 0),
         "to_brain": run.get("to_brain", 0),
         "companies": sorted({c["company"] for c in companies if "error" not in c}),
+        "errors": report.get("errors", []),
+        "warnings": report.get("warnings", []),
+        "prefiltered_list": run.get("prefiltered", []),
     }
 
 
 def build(board_dir: Path, state: Path, today: date, out_dir: Path = OUT_DIR) -> dict:
     from jobhunter.morning import load_board
-    board = load_board(board_dir)
-    data = {"config": _read_json(CONFIG, {}), "run": run_numbers(state, today), "jobs": public_jobs(board)}
+    from jobhunter import overlay
+    marks, _ = overlay.load()
+    data = {"config": _read_json(CONFIG, {}), "run": run_numbers(state, today), "jobs": board_jobs(load_board(board_dir)),
+            "marks": marks}
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     html = TEMPLATE.read_text(encoding="utf-8").replace("/*__DATA__*/null", payload)
     out_dir.mkdir(parents=True, exist_ok=True)

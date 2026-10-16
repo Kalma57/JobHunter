@@ -3,180 +3,567 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>JobHunter Morning Run</title>
+<title>JobHunter Board</title>
+<meta name="description" content="סוכן חיפוש עבודה אישי: כל בוקר קורא עשרות אתרי קריירה, מסנן, ו-Claude בונה כרטיס לכל משרה.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Hebrew:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: one column. The morning's funnel is the hero (real numbers, bars to scale), then the open matches, then how it works. */
+/* Layout: a triage desk. Who + this morning's numbers on top; the job list beside the open job's full card.
+   Everyone reads; only the owner (with a GitHub key in this browser) sees the buttons. */
 :root {
-  --paper: #f1f3f2;
-  --surface: #ffffff;
-  --ink: #142027;
-  --muted: #5d6b70;
-  --rule: #d3dbda;
-  --teal: #0f6b74;
-  --teal-soft: #d9ecec;
-  --amber: #9a5b00;
-  --amber-soft: #f6e8d0;
-  --font-display: "Frank Ruhl Libre", "David", Georgia, serif;
+  --bg: #eceff2; --surface: #ffffff; --sunken: #f5f7f9; --fg: #17212b; --muted: #5b6876; --line: #d5dce3;
+  --accent: #0f6b74; --accent-soft: #dcefef; --ok: #1c7347; --ok-soft: #dff1e6; --warn: #8a5300; --warn-soft: #fbedd5;
+  --bad: #a1302a; --bad-soft: #f7e1df; --inferred: #6a3d9e; --inferred-soft: #eee6f8;
+  --font-display: "Frank Ruhl Libre", Georgia, serif;
   --font-body: "IBM Plex Sans Hebrew", "Segoe UI", Arial, sans-serif;
-  --font-data: "IBM Plex Mono", Consolas, monospace;
+  --font-data: "IBM Plex Mono", Consolas, "Courier New", monospace;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0e1517; --surface: #151f22; --ink: #e2eaea; --muted: #93a4a7; --rule: #26353a;
-    --teal: #5cc2c9; --teal-soft: #14343a; --amber: #e7b15e; --amber-soft: #3a2a12; color-scheme: dark;
+    --bg: #0f1519; --surface: #172026; --sunken: #121a1f; --fg: #e3eaef; --muted: #93a3ae; --line: #2a3640;
+    --accent: #5cc2c9; --accent-soft: #15333a; --ok: #6fcf98; --ok-soft: #173326; --warn: #e9b35d; --warn-soft: #3a2b12;
+    --bad: #f08a82; --bad-soft: #3d1d1b; --inferred: #c4a3ef; --inferred-soft: #2c2140; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #0e1517; --surface: #151f22; --ink: #e2eaea; --muted: #93a4a7; --rule: #26353a;
-  --teal: #5cc2c9; --teal-soft: #14343a; --amber: #e7b15e; --amber-soft: #3a2a12; color-scheme: dark;
+  --bg: #0f1519; --surface: #172026; --sunken: #121a1f; --fg: #e3eaef; --muted: #93a3ae; --line: #2a3640;
+  --accent: #5cc2c9; --accent-soft: #15333a; --ok: #6fcf98; --ok-soft: #173326; --warn: #e9b35d; --warn-soft: #3a2b12;
+  --bad: #f08a82; --bad-soft: #3d1d1b; --inferred: #c4a3ef; --inferred-soft: #2c2140; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
-.page { max-width: 1040px; margin: 0 auto; padding-inline: 20px; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 56px; }
-a { color: var(--teal); }
-a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-inline: 16px; padding-block: 0 40px; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:is(button, input, textarea, select, a):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: var(--accent); }
 
-.eyebrow { font-family: var(--font-data); font-size: 12.5px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 8px 0 14px; text-wrap: balance; letter-spacing: -0.01em; }
-h1 em { font-style: normal; color: var(--teal); }
-.lede { max-width: 62ch; font-size: 18px; color: var(--muted); margin: 0; }
-.who { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 18px; font-size: 15px; }
-.who b { font-weight: 600; }
-h2 { font-family: var(--font-display); font-weight: 700; font-size: 28px; margin: 0 0 6px; text-wrap: balance; }
-.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; margin-bottom: 18px; }
-.sec-head p { margin: 0; color: var(--muted); font-size: 14.5px; }
+/* header */
+.intro { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 24px; padding-block: 22px 10px; }
+.brand { margin: 0; font-family: var(--font-display); font-weight: 900; font-size: 32px; letter-spacing: -0.01em; line-height: 1.1; }
+.brand span { color: var(--accent); }
+.who { display: flex; flex-wrap: wrap; gap: 2px 14px; font-size: 14px; color: var(--muted); margin-top: 4px; }
+.who b { color: var(--fg); font-weight: 600; }
+.owner { display: flex; gap: 8px; align-items: center; font-size: 13px; }
+.owner .state { color: var(--ok); font-weight: 600; }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
+.strip { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; color: var(--muted); align-items: baseline; }
+.strip b { font-family: var(--font-data); font-weight: 500; color: var(--fg); font-variant-numeric: tabular-nums; }
+.strip .when { color: var(--fg); font-weight: 600; }
+.strip .bad { color: var(--bad); font-weight: 600; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
 
-/* funnel */
-.funnel { display: flex; flex-direction: column; border-top: 2px solid var(--ink); }
-.stage { display: grid; grid-template-columns: minmax(96px, 150px) minmax(0, 1fr); gap: 4px 20px; align-items: center; padding-block: 12px; border-bottom: 1px solid var(--rule); }
-.stage .n { font-family: var(--font-data); font-size: clamp(24px, 4vw, 34px); font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1; }
-.stage .what { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
-.stage .label { font-size: 15px; }
-.stage .label small { color: var(--muted); font-size: 13.5px; margin-inline-start: 6px; }
-.bar { height: 8px; background: var(--teal-soft); border-radius: 2px; overflow: hidden; }
-.bar i { display: block; height: 100%; background: var(--teal); min-width: 2px; }
-.stage.final .n { color: var(--amber); }
-.stage.final .bar i { background: var(--amber); }
-.scale-note { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+/* owner key panel */
+.keybox { margin-top: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; max-width: 720px; }
+.keybox p { margin: 0; font-size: 14px; color: var(--muted); }
+.keybox .row2 { display: flex; gap: 8px; flex-wrap: wrap; }
+.keybox input { flex: 1 1 280px; min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; background: var(--sunken); font-family: var(--font-data); font-size: 13px; }
+.keybox .err { color: var(--bad); font-size: 13.5px; }
 
-/* jobs */
-.jobs { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
-.job { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-.job h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
-.job .where { color: var(--muted); font-size: 14.5px; overflow-wrap: anywhere; }
-.job .sum { margin: 0; font-size: 14.5px; }
-.job .foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: auto; padding-top: 6px; font-size: 13px; }
-.chip { font-size: 12px; font-weight: 600; border-radius: 999px; padding: 1px 9px; white-space: nowrap; }
-.fit-high { background: var(--teal-soft); color: var(--teal); }
-.fit-mid { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); }
-.fit-low { background: var(--amber-soft); color: var(--amber); }
-.tag { font-family: var(--font-data); font-size: 12px; color: var(--muted); }
-.job .date { font-family: var(--font-data); font-size: 12px; color: var(--muted); }
-.job a.go { margin-inline-start: auto; font-weight: 600; text-decoration: none; }
-.job a.go:hover { text-decoration: underline; }
-.empty { border: 1px dashed var(--rule); border-radius: 8px; padding: 28px; color: var(--muted); text-align: center; }
+/* desk */
+.desk { display: grid; grid-template-columns: minmax(340px, 440px) minmax(0, 1fr); gap: 20px; margin-top: 16px; align-items: start; }
+.side { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+.tab { border: 1px solid transparent; background: none; border-radius: 6px; padding: 4px 10px; cursor: pointer; display: inline-flex; gap: 6px; align-items: baseline; font-size: 14px; color: var(--muted); }
+.tab .n { font-family: var(--font-data); font-size: 12px; }
+.tab:hover { color: var(--fg); }
+.tab[aria-selected="true"] { background: var(--surface); border-color: var(--line); color: var(--fg); font-weight: 600; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.filters input, .filters select { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 6px 10px; font-size: 14px; min-width: 0; }
+.filters input { flex: 1 1 180px; }
+.rows { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.row { display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; gap: 0 12px; align-items: center; text-align: start; border: 0; border-bottom: 1px solid var(--line); background: none; padding: 10px 12px 10px 14px; cursor: pointer; width: 100%; }
+.row:last-child { border-bottom: 0; }
+.row:hover { background: var(--sunken); }
+.row[aria-current="true"] { background: var(--accent-soft); }
+.row .stripe { align-self: stretch; border-radius: 2px; background: var(--line); }
+.row .stripe.high { background: var(--ok); } .row .stripe.mid { background: var(--accent); } .row .stripe.low { background: var(--warn); }
+.row .t { font-weight: 600; font-size: 14.5px; line-height: 1.35; overflow-wrap: anywhere; }
+.row .s { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+.row .meta { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.row .d { font-family: var(--font-data); font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+.count-line { font-size: 12.5px; color: var(--muted); }
 
-/* how */
-.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; counter-reset: s; }
-.steps li { counter-increment: s; border-top: 2px solid var(--ink); padding-top: 10px; min-width: 0; }
-.steps li::before { content: counter(s); font-family: var(--font-data); font-size: 13px; color: var(--teal); display: block; margin-bottom: 4px; }
-.steps b { display: block; font-size: 16px; margin-bottom: 4px; }
-.steps p { margin: 0; color: var(--muted); font-size: 14.5px; }
-.companies { font-size: 13.5px; color: var(--muted); margin-top: 18px; max-width: 90ch; }
-footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
-@media (max-width: 520px) { .stage { grid-template-columns: 1fr; } .page { gap: 44px; padding-block: 32px 48px; } }
+/* card */
+.main { min-width: 0; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 56px); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; max-height: calc(100vh - 90px); overflow-y: auto; }
+.back { display: none; }
+.card h2 { margin: 0; font-size: 21px; line-height: 1.3; text-wrap: balance; overflow-wrap: anywhere; }
+.sub { color: var(--muted); font-size: 14.5px; overflow-wrap: anywhere; }
+.pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill { font-size: 12px; font-weight: 600; border-radius: 999px; padding: 2px 9px; white-space: nowrap; }
+.t-accent { background: var(--accent-soft); color: var(--accent); } .t-ok { background: var(--ok-soft); color: var(--ok); }
+.t-warn { background: var(--warn-soft); color: var(--warn); } .t-bad { background: var(--bad-soft); color: var(--bad); }
+.t-muted { background: var(--sunken); color: var(--muted); }
+.facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px 18px; margin: 0; }
+.facts div { min-width: 0; }
+.facts dt { font-size: 11.5px; font-weight: 600; color: var(--muted); letter-spacing: 0.03em; }
+.facts dd { margin: 0; font-size: 14px; overflow-wrap: anywhere; }
+.ns { color: var(--muted); font-style: italic; }
+.inf { color: var(--inferred); background: var(--inferred-soft); border-radius: 4px; padding: 0 4px; }
+.inf::after { content: " · הוסק"; font-size: 11px; }
+.reason { margin: 0; font-size: 14.5px; padding: 8px 12px; border-radius: 8px; background: var(--sunken); }
+.reason b { font-weight: 600; }
+.prefs { display: flex; flex-wrap: wrap; gap: 6px; }
+.pref { font-family: var(--font-data); font-size: 12px; border-radius: 4px; padding: 1px 7px; }
+.pref.up { background: var(--ok-soft); color: var(--ok); } .pref.down { background: var(--bad-soft); color: var(--bad); }
+.alerts { display: flex; flex-direction: column; gap: 4px; }
+.alert { font-size: 13.5px; border-radius: 6px; padding: 4px 10px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-block: 4px; }
+.btn { font-size: 14px; border-radius: 6px; padding: 6px 13px; cursor: pointer; border: 1px solid var(--line); background: var(--surface); }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn.apply { background: var(--ok); border-color: var(--ok); color: var(--surface); text-decoration: none; font-weight: 600; }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.ext { font-size: 14px; color: var(--accent); margin-inline-start: auto; }
+.inline-form { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; }
+.inline-form label { font-size: 13px; color: var(--muted); }
+.inline-form input { font-size: 14px; border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--surface); min-width: 0; }
+.inline-form input[type="text"] { flex: 1 1 200px; }
+.section h3 { margin: 0 0 6px; font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; }
+.section ul { margin: 0; padding-inline-start: 18px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; }
+.two > div { min-width: 0; }
+.desc { white-space: pre-line; font-size: 14.5px; max-width: 72ch; }
+.notes { width: 100%; min-height: 64px; resize: vertical; border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; background: var(--sunken); font-size: 14px; }
+.notes-ro { white-space: pre-line; font-size: 14px; background: var(--sunken); border-radius: 6px; padding: 8px 10px; }
+.applyurl { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; background: var(--sunken); font-size: 14px; }
+.hist { font-family: var(--font-data); font-size: 12px; color: var(--muted); }
+.src { font-size: 13px; color: var(--muted); }
+
+/* report + about */
+.report table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.report th { text-align: start; font-size: 11.5px; color: var(--muted); font-weight: 600; letter-spacing: 0.03em; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.report td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+.report td a { color: var(--fg); text-decoration: none; }
+.report td a:hover { color: var(--accent); text-decoration: underline; }
+.tablebox { overflow-x: auto; }
+.funnel { display: flex; flex-direction: column; border-top: 2px solid var(--fg); }
+.stage { display: grid; grid-template-columns: minmax(80px, 120px) minmax(0, 1fr); gap: 4px 16px; align-items: center; padding-block: 9px; border-bottom: 1px solid var(--line); }
+.stage .n { font-family: var(--font-data); font-size: 24px; font-variant-numeric: tabular-nums; line-height: 1; }
+.stage .label small { color: var(--muted); font-size: 13px; margin-inline-start: 6px; }
+.bar { height: 7px; background: var(--accent-soft); border-radius: 2px; overflow: hidden; margin-top: 5px; }
+.bar i { display: block; height: 100%; background: var(--accent); min-width: 2px; }
+.errs { margin: 0; padding-inline-start: 18px; color: var(--bad); font-size: 13.5px; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; counter-reset: s; }
+.steps li { counter-increment: s; border-top: 2px solid var(--fg); padding-top: 8px; min-width: 0; }
+.steps li::before { content: counter(s); font-family: var(--font-data); font-size: 13px; color: var(--accent); display: block; margin-bottom: 2px; }
+.steps b { display: block; margin-bottom: 2px; }
+.steps p { margin: 0; color: var(--muted); font-size: 14px; }
+
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 28px 20px; text-align: center; color: var(--muted); }
+.empty strong { display: block; color: var(--fg); font-size: 16px; margin-bottom: 4px; }
+.toast { position: fixed; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 14px; z-index: 10; }
+@media (max-width: 900px) {
+  .desk { grid-template-columns: 1fr; }
+  .main { position: static; }
+  .card { max-height: none; }
+  .desk.reading .side { display: none; }
+  .desk:not(.reading) .main { display: none; }
+  .back { display: inline-flex; align-self: flex-start; }
+  .two { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) { .row { transition: background-color .12s; } }
 </style>
 </head>
 <body>
-<main class="page" id="page">
-  <header>
-    <div class="eyebrow" id="eyebrow">JobHunter · ריצת בוקר</div>
-    <h1>כל בוקר, סוכן אחד קורא <em id="h-sources">עשרות</em> אתרי קריירה בשבילי</h1>
-    <p class="lede">מערכת שבניתי: סוכני קוד מושכים משרות מאתרי החברות ומאתרי משרות, הקוד מסנן את מה שבטוח לא מתאים, ו-Claude קורא כל משרה שנשארה, בונה לה כרטיס ובודק אותה מול מה שאני מחפש. הדף הזה מתעדכן לבד אחרי כל ריצה.</p>
-    <div class="who" id="who"></div>
+<div class="wrap">
+  <header class="intro">
+    <div>
+      <h1 class="brand">Job<span>Hunter</span></h1>
+      <div class="who" id="who"></div>
+    </div>
+    <div class="owner" id="owner"></div>
   </header>
-
-  <section aria-labelledby="t-funnel">
-    <div class="sec-head"><h2 id="t-funnel">הבוקר במספרים</h2><p id="run-date"></p></div>
-    <div class="funnel" id="funnel"></div>
-    <div class="scale-note">אורך כל פס יחסי למספר המשרות שנסרקו הבוקר.</div>
-  </section>
-
-  <section aria-labelledby="t-jobs">
-    <div class="sec-head"><h2 id="t-jobs">משרות פתוחות שמתאימות לי</h2><p id="jobs-note"></p></div>
-    <div class="jobs" id="jobs"></div>
-  </section>
-
-  <section aria-labelledby="t-how">
-    <div class="sec-head"><h2 id="t-how">איך זה עובד</h2></div>
-    <ol class="steps">
-      <li><b>סוכני קוד</b><p>סוכן לכל מערכת גיוס (Workday, Greenhouse, Lever, Eightfold, Comeet ועוד) ולכל אתר משרות. קוראים רק ממשקים ציבוריים, ומעבירים רק משרות שלא נראו קודם.</p></li>
-      <li><b>סינון בקוד</b><p>כללים פשוטים וודאיים: משרה בכירה, תחום אחר או דרישת ניסיון של שנים נפסלת לפני שמישהו קורא אותה.</p></li>
-      <li><b>Claude קורא</b><p>כל משרה שנשארה הופכת לכרטיס: מיקום, היקף, דרישות, ומה הוסק לעומת מה שכתוב. אחר כך בדיקה מול החיפוש שלי ודירוג.</p></li>
-      <li><b>לוח והתראה</b><p>הכפילויות בין אתרים מתאחדות, הכול נכתב ללוח פרטי שבו אני מסמן הגשות, ונשלחת התראה. את ההגשה עצמה אני עושה בעצמי.</p></li>
-    </ol>
-    <p class="companies" id="companies"></p>
-  </section>
-
-  <footer id="footer">Python (ספרייה סטנדרטית + Playwright) · Claude · נבנה ב-2026.</footer>
-</main>
+  <div class="top"><div class="strip" id="strip"></div></div>
+  <div id="keybox"></div>
+  <div class="desk" id="desk">
+    <section class="side" aria-label="רשימת משרות">
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="filters" id="filters">
+        <input id="search" type="search" placeholder="חיפוש: תפקיד, חברה, עיר, הערה" aria-label="חיפוש">
+        <select id="f-rank" aria-label="התאמה">
+          <option value="">כל ההתאמות</option><option value="high">גבוהה</option><option value="mid">בינונית</option><option value="low">נמוכה</option>
+        </select>
+        <select id="f-kind" aria-label="מקור">
+          <option value="">כל המקורות</option><option value="company">אתרי חברות</option><option value="board">אתרי משרות</option>
+        </select>
+      </div>
+      <div class="count-line" id="count"></div>
+      <div id="list"></div>
+    </section>
+    <section class="main" id="main" aria-live="polite"></section>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
 <script id="data" type="application/json">/*__DATA__*/null</script>
 <script>
-const DATA = JSON.parse(document.getElementById("data").textContent || "null");
-const $ = (id) => document.getElementById(id);
+const REPO = "Kalma57/JobHunter", BRANCH = "board-data", FILE = "statuses.json";
+const DATA = JSON.parse(document.getElementById("data").textContent || "null") || { config: {}, run: {}, jobs: [], marks: {} };
+const STATUS = {
+  new: { label: "חדש", tone: "accent" }, hold: { label: "בהמתנה", tone: "warn" }, applied: { label: "הוגש", tone: "ok" },
+  interview: { label: "ראיון", tone: "ok" }, offer: { label: "הצעה", tone: "ok" }, rejected: { label: "דחייה", tone: "bad" },
+  not_interested: { label: "לא מעוניין", tone: "muted" }, closed: { label: "נסגרה", tone: "muted" }, filtered: { label: "סוננה", tone: "muted" },
+};
+const TABS = [
+  { id: "new", label: "חדש", statuses: ["new"] },
+  { id: "hold", label: "בהמתנה", statuses: ["hold"] },
+  { id: "applied", label: "הגשתי", statuses: ["applied", "interview", "offer", "rejected"] },
+  { id: "not_interested", label: "לא מעוניין", statuses: ["not_interested"] },
+  { id: "filtered", label: "סוננו", statuses: ["filtered"] },
+  { id: "closed", label: "נסגרו", statuses: ["closed"] },
+  { id: "run", label: "דוח הבוקר", statuses: [] },
+  { id: "about", label: "על המערכת", statuses: [] },
+];
+const EMPTY_TEXT = {
+  new: "אין משרות חדשות כרגע. ריצת הבוקר מוסיפה לכאן משרות שעברו את כל דרישות החובה.",
+  hold: "אין משרות בהמתנה.", applied: "עוד אין משרות שהוגשו.", not_interested: "אין משרות שסומנו \"לא מעוניין\".",
+  filtered: "המוח לא סינן משרות.", closed: "אין משרות שנסגרו.",
+};
+const RANK = { high: { label: "התאמה גבוהה", tone: "ok" }, mid: { label: "התאמה בינונית", tone: "accent" }, low: { label: "התאמה נמוכה", tone: "warn" } };
+const FIELD_LABELS = { location: "מיקום", work_mode: "אופן עבודה", level: "רמה", scope: "היקף", employment: "סוג העסקה", salary: "שכר", experience: "ניסיון", education: "השכלה", degree_time: "זמן לסיום תואר", company: "חברה" };
+const BOARD_SOURCES = ["hiremetech:", "drushim:", "jobmaster:"];
+const SOURCE_NAMES = { hiremetech: "HireMeTech", drushim: "דרושים", jobmaster: "JobMaster" };
+const USER_FIELDS = ["notes", "applied_at", "apply_channel", "applied_description", "not_interested_reason", "apply_url"];
+
+const state = { marks: DATA.marks || {}, sha: null, token: null, tab: "new", query: "", rank: "", kind: "", sel: null, form: null, draft: {}, busy: new Set(), keyOpen: false, keyError: "" };
+const el = (id) => document.getElementById(id);
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const nf = new Intl.NumberFormat("he-IL");
-const fmt = (iso, opts) => { const d = new Date(iso); return isNaN(d) ? "" : d.toLocaleDateString("he-IL", opts || { day: "numeric", month: "long", year: "numeric" }); };
-const FIT = { high: ["התאמה גבוהה", "fit-high"], mid: ["התאמה בינונית", "fit-mid"], low: ["התאמה חלקית", "fit-low"] };
-
-if (!DATA) {
-  $("funnel").innerHTML = `<div class="empty">הנתונים עוד לא נבנו. הדף נבנה בסוף ריצת הבוקר.</div>`;
-} else {
-  const { config: cfg = {}, run = {}, jobs = [] } = DATA;
-  $("h-sources").textContent = run.sources_read ? nf.format(run.sources_read) : "עשרות";
-  $("eyebrow").textContent = `JobHunter · עודכן ${fmt(run.date)}`;
-  const links = Object.entries(cfg.links || {}).filter(([, u]) => u).map(([k, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${k === "linkedin" ? "LinkedIn" : k === "github" ? "GitHub" : esc(k)}</a>`);
-  $("who").innerHTML = [cfg.owner ? `<b>${esc(cfg.owner)}</b>` : "", esc(cfg.role || ""), esc(cfg.looking_for || ""), ...links].filter(Boolean).map((x) => `<span>${x}</span>`).join("");
-  $("run-date").textContent = run.date ? `ריצה של ${fmt(run.date, { weekday: "long", day: "numeric", month: "long" })}` : "";
-
-  const top = Math.max(run.scanned || 0, 1);
-  const stages = [
-    [run.scanned, "משרות בישראל נסרקו", `ב-${nf.format(run.sources_read || 0)} מקורות`],
-    [run.matched, "עברו את מילות החיפוש של האתר", "סטודנט, Intern, התמחות"],
-    [run.new, "חדשות מאז אתמול", "רק אלה ממשיכות"],
-    [run.after_prefilter, "עברו את הסינון בקוד", `מתוך ${nf.format(run.candidates || 0)} (כולל משרות שחיכו מאתמול)`],
-    [run.to_brain, "נקראו ע״י Claude הבוקר", "השאר ממתינות לבוקר הבא"],
-    [jobs.length, "משרות פתוחות שמתאימות כרגע", "מכל הבקרים יחד"],
-  ];
-  $("funnel").innerHTML = stages.map(([n, label, small], i) => `
-    <div class="stage${i === stages.length - 1 ? " final" : ""}">
-      <div class="n">${nf.format(n || 0)}</div>
-      <div class="what"><div class="label">${label}<small>${esc(small)}</small></div>
-        <div class="bar" aria-hidden="true"><i style="width:${Math.min(100, ((n || 0) / top) * 100).toFixed(2)}%"></i></div></div>
-    </div>`).join("");
-
-  $("jobs-note").textContent = jobs.length ? `${nf.format(jobs.length)} משרות, מהמתאימה ביותר` : "";
-  $("jobs").innerHTML = jobs.length ? jobs.map((j) => {
-    const fit = FIT[j.rank];
-    const where = [j.company, j.location, j.work_mode].filter(Boolean).map(esc).join(" · ");
-    const tags = (j.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join(" ");
-    return `<article class="job">
-      <h3>${esc(j.title)}</h3>
-      <div class="where">${where}</div>
-      ${j.summary ? `<p class="sum">${esc(j.summary)}</p>` : ""}
-      <div class="foot">${fit ? `<span class="chip ${fit[1]}">${fit[0]}</span>` : ""}${tags}
-        <span class="date">נמצאה ${fmt(j.first_seen, { day: "numeric", month: "numeric" })}</span>
-        ${j.url ? `<a class="go" href="${esc(j.url)}" target="_blank" rel="noopener">למשרה ↗</a>` : ""}</div>
-    </article>`;
-  }).join("") : `<div class="empty">אין כרגע משרות פתוחות שעוברות את כל הדרישות. הסוכן ממשיך לחפש כל בוקר.</div>`;
-
-  if ((run.companies || []).length) $("companies").textContent = `המקורות שנקראו הבוקר: ${run.companies.join(", ")}.`;
+const isBoard = (job) => BOARD_SOURCES.some((p) => String(job.source || "").startsWith(p));
+const isOwner = () => !!state.token;
+function fmtDate(iso, short) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (isNaN(d)) return esc(iso);
+  return d.toLocaleDateString("he-IL", short ? { day: "2-digit", month: "2-digit" } : { day: "2-digit", month: "2-digit", year: "numeric" });
 }
+const todayISO = () => new Date().toISOString().slice(0, 10);
+const daysUntil = (iso) => Math.ceil((new Date(iso + "T23:59:59") - new Date()) / 86400000);
+function sourceLabel(src) { const [sys, slug] = String(src || "").split(":"); return SOURCE_NAMES[sys] || (slug ? `אתר החברה (${sys})` : sys); }
+
+// Same rule as jobhunter/overlay.py: the owner's mark counts unless the card has a newer event (a "closed" from the morning run).
+function mergeMark(job, mark) {
+  if (!mark) return job;
+  const cardHist = job.history || [];
+  const seen = new Set(cardHist.map((h) => `${h.at}|${h.status}`));
+  const history = [...cardHist, ...(mark.history || []).filter((h) => !seen.has(`${h.at}|${h.status}`))];
+  const last = (arr) => arr.reduce((m, h) => ((h.at || "") > m ? h.at || "" : m), "");
+  const out = { ...job, history };
+  for (const k of USER_FIELDS) if (k in mark) out[k] = mark[k];
+  if (mark.status && last(mark.history || []) >= last(cardHist)) out.status = mark.status;
+  return out;
+}
+const jobs = () => DATA.jobs.map((j) => mergeMark(j, state.marks[j.id]));
+
+// ---- GitHub store: statuses.json on the board-data branch ----
+const utf8ToB64 = (s) => { const b = new TextEncoder().encode(s); let bin = ""; for (let i = 0; i < b.length; i += 0x8000) bin += String.fromCharCode(...b.subarray(i, i + 0x8000)); return btoa(bin); };
+const b64ToUtf8 = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, "")), (c) => c.charCodeAt(0)));
+function api(path, opts = {}) {
+  return fetch(`https://api.github.com/repos/${REPO}${path}`, { ...opts, headers: { Accept: "application/vnd.github+json", ...(state.token ? { Authorization: `Bearer ${state.token}` } : {}), ...(opts.headers || {}) } });
+}
+async function fetchMarks() {
+  if (state.token) {
+    const r = await api(`/contents/${FILE}?ref=${BRANCH}&t=${Date.now()}`);
+    if (!r.ok) throw new Error(`GitHub ${r.status}`);
+    const j = await r.json();
+    state.sha = j.sha;
+    return JSON.parse(b64ToUtf8(j.content) || "{}");
+  }
+  const r = await fetch(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${FILE}?t=${Date.now()}`);
+  return r.ok ? r.json() : state.marks;
+}
+async function saveMark(id, patch, event) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const latest = await fetchMarks();
+    const cur = latest[id] || {};
+    latest[id] = { ...cur, ...patch, ...(event ? { history: [...(cur.history || []), event] } : {}) };
+    if (event) latest[id].status = event.status;
+    const r = await api(`/contents/${FILE}`, { method: "PUT", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: `Board: ${id}${event ? " -> " + event.status : ""}`, branch: BRANCH, sha: state.sha,
+        content: utf8ToB64(JSON.stringify(latest, null, 1)) }) });
+    if (r.ok) { state.sha = (await r.json()).content.sha; state.marks = latest; return; }
+    if (r.status !== 409 && r.status !== 422) throw new Error(`GitHub ${r.status}`);
+  }
+  throw new Error("conflict");
+}
+async function checkKey(token) {
+  const r = await fetch(`https://api.github.com/repos/${REPO}`, { headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${token}` } });
+  if (!r.ok) return "המפתח לא עובד (GitHub ענה " + r.status + "). בדוק שהעתקת אותו במלואו.";
+  const j = await r.json();
+  return j.permissions && j.permissions.push ? "" : "למפתח אין הרשאת כתיבה לריפו. צריך Contents: Read and write.";
+}
+
+// ---- rendering ----
+function fv(job, key) {
+  if ((job.not_stated || []).includes(key)) return `<span class="ns">לא צוין</span>`;
+  const raw = job[key];
+  const val = Array.isArray(raw) ? raw.join(" / ") : raw;
+  if (val === undefined || val === null || val === "") return `<span class="ns">לא צוין</span>`;
+  const note = (job.inferred || {})[key];
+  return note ? `<span class="inf" title="${esc(note)}">${esc(val)}</span>` : esc(val);
+}
+function alertsFor(job) {
+  const out = [];
+  if (job.deadline) {
+    const d = daysUntil(job.deadline);
+    out.push(d >= 0 ? { tone: d <= 7 ? "bad" : "warn", text: `הגשה עד ${fmtDate(job.deadline)} (${d === 0 ? "היום" : "עוד " + d + " ימים"})` } : { tone: "muted", text: `מועד ההגשה עבר (${fmtDate(job.deadline)})` });
+  }
+  for (const a of job.alerts || []) out.push({ tone: "warn", text: a });
+  return out;
+}
+function actionsFor(job) {
+  if (!isOwner()) return [];
+  const s = job.status;
+  if (["new", "hold", "filtered"].includes(s)) {
+    const list = [{ kind: "apply", label: "הגשתי", primary: true }];
+    if (s !== "hold") list.push({ kind: "hold", label: "בהמתנה" });
+    list.push({ kind: "not_interested", label: "לא מעוניין" });
+    if (s !== "new") list.push({ kind: "new", label: "החזר לחדש" });
+    return list;
+  }
+  if (s === "applied") return [{ kind: "interview", label: "ראיון" }, { kind: "offer", label: "הצעה" }, { kind: "rejected", label: "דחייה" }];
+  if (s === "interview") return [{ kind: "offer", label: "הצעה" }, { kind: "rejected", label: "דחייה" }];
+  if (["not_interested", "closed"].includes(s)) return [{ kind: "new", label: "החזר לחדש" }];
+  return [];
+}
+function formHTML(job) {
+  if (!state.form || state.form.id !== job.id) return "";
+  const d = state.draft;
+  if (state.form.kind === "apply") {
+    return `<form class="inline-form" data-form="apply" data-id="${esc(job.id)}">
+      <label for="f-date">תאריך הגשה</label><input id="f-date" type="date" name="date" value="${esc(d.date || todayISO())}">
+      <input id="f-note" type="text" name="note" placeholder="איך הגשת? אתר החברה, מייל, חבר…" value="${esc(d.note || "")}">
+      <button class="btn primary" type="submit">שמור הגשה</button><button class="btn" type="button" data-cancel>ביטול</button></form>`;
+  }
+  return `<form class="inline-form" data-form="not_interested" data-id="${esc(job.id)}">
+    <input id="f-reason" type="text" name="note" placeholder="למה לא? הסיבה עוזרת לשפר את הסינון" value="${esc(d.note || "")}">
+    <button class="btn primary" type="submit">שמור</button><button class="btn" type="button" data-cancel>ביטול</button></form>`;
+}
+function cardHTML(job) {
+  const st = STATUS[job.status] || STATUS.new;
+  const pills = [`<span class="pill t-${st.tone}">${st.label}</span>`];
+  const rank = RANK[job.rank];
+  if (rank && !["filtered", "closed"].includes(job.status)) pills.push(`<span class="pill t-${rank.tone}">${rank.label}</span>`);
+  if (job.far && job.status === "filtered") pills.push(`<span class="pill t-warn">רחוקה</span>`);
+  if (isBoard(job)) pills.push(`<span class="pill t-muted">מאתר משרות</span>`);
+  const rel = job.relevance || {};
+  const reason = rel.reason ? `<p class="reason"><b>${job.status === "filtered" ? "למה סוננה" : "למה מתאימה"}:</b> ${esc(rel.reason)}</p>` : "";
+  const extra = (job.not_interested_reason ? `<p class="reason"><b>למה לא מעוניין:</b> ${esc(job.not_interested_reason)}</p>` : "")
+    + (job.applied_at ? `<p class="reason"><b>הוגש ב-${fmtDate(job.applied_at)}</b>${job.apply_channel ? " · " + esc(job.apply_channel) : ""}</p>` : "");
+  const facts = ["level", "scope", "experience", "degree_time", "work_mode", "employment"].map((k) => `<div><dt>${FIELD_LABELS[k]}</dt><dd>${fv(job, k)}</dd></div>`).join("");
+  const prefs = [...(job.prefs_up || []).map((p) => `<span class="pref up">⬆ ${esc(p)}</span>`), ...(job.prefs_down || []).map((p) => `<span class="pref down">⬇ ${esc(p)}</span>`)].join("");
+  const alerts = alertsFor(job).map((a) => `<div class="alert t-${a.tone}">${esc(a.text)}</div>`).join("");
+  const li = (arr) => (arr && arr.length ? `<ul>${arr.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : `<span class="ns">לא צוין</span>`);
+  const inferred = Object.entries(job.inferred || {});
+  const hist = (job.history || []).map((h) => `${fmtDate(h.at)} · ${esc((STATUS[h.status] || {}).label || h.status)}${h.note ? " · " + esc(h.note) : ""}`).join("<br>");
+  const sightings = (job.sightings || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(sourceLabel(s.source))}</a> (${fmtDate(s.date, true)})`).join(" · ");
+  const actions = actionsFor(job).map((a) => `<button class="btn${a.primary ? " primary" : ""}" type="button" data-act="${a.kind}" data-id="${esc(job.id)}" ${state.busy.has(job.id) ? "disabled" : ""}>${a.label}</button>`).join("");
+  const applyHref = job.apply_url || job.url;
+  const applyBtn = applyHref ? `<a class="btn apply" href="${esc(applyHref)}" target="_blank" rel="noopener">${job.apply_url ? "להגשה ↗" : "לעמוד המשרה ↗"}</a>` : "";
+  const pageLink = job.apply_url && job.url && job.url !== job.apply_url ? `<a class="ext" href="${esc(job.url)}" target="_blank" rel="noopener">עמוד המשרה ↗</a>` : "";
+  const notes = isOwner()
+    ? `<textarea class="notes" id="notes" data-notes="${esc(job.id)}" placeholder="מה חשוב לזכור על המשרה הזו">${esc(job.notes || "")}</textarea>`
+    : (job.notes ? `<div class="notes-ro">${esc(job.notes)}</div>` : `<span class="ns">אין הערות</span>`);
+  return `<article class="card">
+    <button class="btn back" type="button" data-back>→ חזרה לרשימה</button>
+    <div class="pills">${pills.join("")}</div>
+    <div><h2>${esc(job.title)}</h2><div class="sub">${fv(job, "company")} · ${fv(job, "location")}</div></div>
+    ${reason}${extra}
+    ${alerts ? `<div class="alerts">${alerts}</div>` : ""}
+    <div class="actions">${applyBtn}${actions}${pageLink}</div>
+    ${formHTML(job)}
+    <dl class="facts">${facts}</dl>
+    ${prefs ? `<div class="prefs">${prefs}</div>` : ""}
+    <div class="section"><h3>על התפקיד</h3><div class="desc">${job.description ? esc(job.description) : `<span class="ns">לא צוין</span>`}</div></div>
+    <div class="two">
+      <div class="section"><h3>דרישות חובה</h3>${li(job.requirements_must)}</div>
+      <div class="section"><h3>יתרון</h3>${li(job.requirements_adv)}</div>
+      <div class="section"><h3>השכלה</h3>${fv(job, "education")}</div>
+      <div class="section"><h3>שכר</h3>${fv(job, "salary")}</div>
+    </div>
+    ${job.apply_instructions ? `<div class="section"><h3>הנחיות הגשה</h3>${esc(job.apply_instructions)}</div>` : ""}
+    ${inferred.length ? `<div class="section"><h3>מה הסוכן הסיק</h3><ul>${inferred.map(([k, v]) => `<li><span class="inf">${esc(FIELD_LABELS[k] || k)}</span> ${esc(v)}</li>`).join("")}</ul></div>` : ""}
+    <div class="section"><h3><label for="notes">הערות</label></h3>${notes}</div>
+    ${isOwner() ? `<div class="section"><h3><label for="applyurl">קישור ישיר להגשה</label></h3><input class="applyurl" id="applyurl" data-apply="${esc(job.id)}" type="url" placeholder="https://…" value="${esc(job.apply_url || "")}"></div>` : ""}
+    <div class="two">
+      <div class="section"><h3>נמצאה ב</h3><div class="src">${sightings || esc(sourceLabel(job.source))}${job.posted_at ? ` · פורסמה ${fmtDate(job.posted_at)}` : ""}</div></div>
+      <div class="section"><h3>היסטוריה</h3><div class="hist">${hist || "—"}</div></div>
+    </div>
+  </article>`;
+}
+function reportHTML() {
+  const r = DATA.run || {};
+  if (!r.date) return `<div class="empty"><strong>עוד אין דוח</strong>הדוח נבנה בסוף כל ריצת בוקר.</div>`;
+  const top = Math.max(r.scanned || 0, 1);
+  const stages = [
+    [r.scanned, "משרות בישראל נסרקו", `ב-${nf.format(r.sources_read || 0)} מקורות`],
+    [r.matched, "עברו את מילות החיפוש", "סטודנט, Intern, התמחות"],
+    [r.new, "חדשות מאז הריצה הקודמת", ""],
+    [r.after_prefilter, "עברו את הסינון בקוד", `מתוך ${nf.format(r.candidates || 0)}`],
+    [r.to_brain, "נקראו ע״י Claude", ""],
+  ];
+  const errs = [...(r.errors || []).map((e) => "לא נקרא: " + e), ...(r.warnings || []).map((w) => "לבדוק: " + w)];
+  const pre = r.prefiltered_list || [];
+  return `<article class="card report">
+    <button class="btn back" type="button" data-back>→ חזרה</button>
+    <div><h2>דוח הבוקר · ${fmtDate(r.date)}</h2><div class="sub">מה נקרא, מה סונן ולמה.</div></div>
+    <div class="funnel">${stages.map(([n, label, small]) => `<div class="stage"><div class="n">${nf.format(n || 0)}</div><div><div class="label">${label}${small ? `<small>${esc(small)}</small>` : ""}</div><div class="bar"><i style="width:${Math.min(100, ((n || 0) / top) * 100).toFixed(2)}%"></i></div></div></div>`).join("")}</div>
+    ${errs.length ? `<div class="section"><h3>שגיאות ואזהרות</h3><ul class="errs">${errs.map((e) => `<li>${esc(e)}</li>`).join("")}</ul></div>` : ""}
+    <div class="section"><h3>סוננו בקוד לפני Claude (${pre.length})</h3>
+      ${pre.length ? `<div class="tablebox"><table><thead><tr><th>משרה</th><th>חברה</th><th>למה</th></tr></thead><tbody>${pre.map((p) => `<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></td><td>${esc(p.company)}</td><td>${esc(p.reason)}</td></tr>`).join("")}</tbody></table></div>` : `<span class="ns">אף משרה לא סוננה בקוד הבוקר.</span>`}</div>
+  </article>`;
+}
+function aboutHTML() {
+  const r = DATA.run || {};
+  return `<article class="card">
+    <button class="btn back" type="button" data-back>→ חזרה</button>
+    <div><h2>על המערכת</h2><div class="sub">סוכן חיפוש עבודה אישי שבניתי. הלוח הזה הוא הכלי שאני עובד איתו: כל משרה שאני מסמן כאן נשמרת, וריצת הבוקר לומדת ממנה.</div></div>
+    <ol class="steps">
+      <li><b>סוכני קוד</b><p>סוכן לכל מערכת גיוס (Workday, Greenhouse, Lever, Eightfold, Comeet ועוד) ולכל אתר משרות. קוראים רק ממשקים ציבוריים ומעבירים רק משרות שלא נראו קודם.</p></li>
+      <li><b>סינון בקוד</b><p>כללים ודאיים: משרה בכירה, תחום אחר, דרישת ניסיון של שנים או הגשה שנסגרה נפסלות לפני שמישהו קורא אותן.</p></li>
+      <li><b>Claude קורא</b><p>כל משרה שנשארה הופכת לכרטיס: מיקום, היקף, דרישות, ומה הוסק לעומת מה שכתוב. אחר כך בדיקה מול החיפוש שלי ודירוג.</p></li>
+      <li><b>הלוח</b><p>כפילויות בין אתרים מתאחדות, והכול נכתב לכאן. את ההגשה עצמה אני עושה בעצמי.</p></li>
+    </ol>
+    ${(r.companies || []).length ? `<p class="src">המקורות שנקראו בריצה האחרונה: ${esc(r.companies.join(", "))}.</p>` : ""}
+    <p class="src">Python (ספרייה סטנדרטית + Playwright) · Claude · GitHub Pages. <a href="https://github.com/${REPO}" target="_blank" rel="noopener">הקוד ב-GitHub</a></p>
+  </article>`;
+}
+function keyboxHTML() {
+  if (!state.keyOpen) return "";
+  return `<form class="keybox" id="keyform">
+    <p>מצב עריכה הוא רק לבעלים. הדבק כאן מפתח GitHub (fine-grained token) עם הרשאת <b>Contents: Read and write</b> לריפו <b>${REPO}</b> בלבד. המפתח נשמר רק בדפדפן הזה.</p>
+    <div class="row2"><input id="keyinput" type="password" autocomplete="off" placeholder="github_pat_…" aria-label="מפתח GitHub"><button class="btn primary" type="submit">כניסה</button><button class="btn" type="button" data-keyclose>ביטול</button></div>
+    ${state.keyError ? `<div class="err">${esc(state.keyError)}</div>` : ""}
+  </form>`;
+}
+function matches(job) {
+  if (state.rank && job.rank !== state.rank) return false;
+  if (state.kind && (state.kind === "board") !== isBoard(job)) return false;
+  if (!state.query) return true;
+  return [job.title, job.company, job.location, job.notes, job.not_interested_reason].join(" ").toLowerCase().includes(state.query.toLowerCase());
+}
+const RANK_ORDER = { high: 0, mid: 1, low: 2 };
+function render() {
+  const cfg = DATA.config || {}, r = DATA.run || {};
+  const links = Object.entries(cfg.links || {}).filter(([, u]) => u).map(([k, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${k === "linkedin" ? "LinkedIn" : k === "github" ? "GitHub" : esc(k)}</a>`);
+  el("who").innerHTML = [cfg.owner ? `<b>${esc(cfg.owner)}</b>` : "", esc(cfg.role || ""), esc(cfg.looking_for || ""), ...links].filter(Boolean).map((x) => `<span>${x}</span>`).join("");
+  el("owner").innerHTML = isOwner() ? `<span class="state">מצב עריכה</span><button class="linkbtn" type="button" data-logout>יציאה</button>` : `<button class="linkbtn" type="button" data-login>כניסת בעלים</button>`;
+  el("keybox").innerHTML = keyboxHTML();
+  el("strip").innerHTML = r.date
+    ? `<span class="when">ריצת בוקר ${fmtDate(r.date)}</span><span><b>${nf.format(r.sources_read || 0)}</b> מקורות</span><span><b>${nf.format(r.scanned || 0)}</b> משרות נסרקו</span><span><b>${nf.format(r.new || 0)}</b> חדשות</span><span><b>${nf.format(r.to_brain || 0)}</b> נקראו ע״י Claude</span>${(r.errors || []).length ? `<span class="bad">${r.errors.length} מקורות לא נקראו</span>` : ""}<button class="linkbtn" type="button" data-tab="run">לדוח המלא</button>`
+    : "עוד לא הייתה ריצת בוקר.";
+  const all = jobs();
+  const counts = Object.fromEntries(TABS.map((t) => [t.id, all.filter((j) => t.statuses.includes(j.status)).length]));
+  el("tabs").innerHTML = TABS.map((t) => `<button class="tab" role="tab" type="button" data-tab="${t.id}" aria-selected="${t.id === state.tab}">${t.label}${t.statuses.length ? `<span class="n">${counts[t.id]}</span>` : ""}</button>`).join("");
+  const special = state.tab === "run" || state.tab === "about";
+  el("filters").hidden = special;
+  if (special) {
+    el("count").textContent = "";
+    el("list").innerHTML = "";
+    el("main").innerHTML = state.tab === "run" ? reportHTML() : aboutHTML();
+    return;
+  }
+  const tab = TABS.find((t) => t.id === state.tab);
+  const shown = all.filter((j) => tab.statuses.includes(j.status) && matches(j))
+    .sort((a, b) => (b.far ? 1 : 0) - (a.far ? 1 : 0) || (RANK_ORDER[a.rank] ?? 3) - (RANK_ORDER[b.rank] ?? 3) || String(b.first_seen || "").localeCompare(String(a.first_seen || "")));
+  el("count").textContent = shown.length ? `${shown.length} משרות` : "";
+  if (!shown.length) {
+    el("list").innerHTML = `<div class="empty"><strong>אין כאן משרות</strong>${esc(state.query || state.rank || state.kind ? "אין משרות שמתאימות לסינון בלשונית הזו." : EMPTY_TEXT[state.tab])}</div>`;
+    el("main").innerHTML = "";
+    return;
+  }
+  if (!shown.some((j) => j.id === state.sel)) state.sel = shown[0].id;
+  el("list").innerHTML = `<div class="rows">${shown.map((j) => `
+    <button class="row" type="button" data-sel="${esc(j.id)}" aria-current="${j.id === state.sel}">
+      <span class="stripe ${esc(j.rank || "")}"></span>
+      <span><span class="t">${esc(j.title)}</span><br><span class="s">${esc(j.company || "")}${j.location ? " · " + esc(j.location) : ""}</span></span>
+      <span class="meta"><span class="d">${fmtDate(j.first_seen, true)}</span>${j.far && j.status === "filtered" ? `<span class="pill t-warn">רחוקה</span>` : ""}</span>
+    </button>`).join("")}</div>`;
+  el("main").innerHTML = cardHTML(all.find((j) => j.id === state.sel));
+}
+function toast(msg) { const t = el("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.timer); toast.timer = setTimeout(() => { t.hidden = true; }, 2600); }
+
+async function changeStatus(job, status, extra = {}, note = "") {
+  if (!isOwner() || state.busy.has(job.id)) return;
+  state.busy.add(job.id); render();
+  try {
+    await saveMark(job.id, extra, { status, at: new Date().toISOString(), note });
+    toast(`"${job.title}" סומנה: ${STATUS[status].label}`);
+  } catch (e) {
+    toast(String(e.message).includes("401") ? "המפתח לא תקף יותר. צא והיכנס עם מפתח חדש." : "השמירה לא הצליחה. נסה שוב בעוד רגע.");
+  } finally { state.busy.delete(job.id); render(); }
+}
+async function saveField(id, patch, okMsg) {
+  try { await saveMark(id, patch, null); toast(okMsg); } catch { toast("השמירה לא הצליחה. נסה שוב."); } finally { render(); }
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target.closest("[data-login]")) { state.keyOpen = true; state.keyError = ""; render(); el("keyinput")?.focus(); return; }
+  if (e.target.closest("[data-keyclose]")) { state.keyOpen = false; render(); return; }
+  if (e.target.closest("[data-logout]")) { try { localStorage.removeItem("jh-gh-token"); } catch {} state.token = null; render(); toast("יצאת ממצב עריכה"); return; }
+  const tabBtn = e.target.closest("[data-tab]");
+  if (tabBtn) { state.tab = tabBtn.dataset.tab; state.form = null; state.sel = null; el("desk").classList.toggle("reading", ["run", "about"].includes(state.tab)); try { localStorage.setItem("jh-tab", state.tab); } catch {} render(); return; }
+  const row = e.target.closest("[data-sel]");
+  if (row) { state.sel = row.dataset.sel; state.form = null; el("desk").classList.add("reading"); render(); el("main").scrollIntoView({ block: "start" }); return; }
+  if (e.target.closest("[data-back]")) { el("desk").classList.remove("reading"); if (["run", "about"].includes(state.tab)) state.tab = "new"; render(); return; }
+  if (e.target.closest("[data-cancel]")) { state.form = null; state.draft = {}; render(); return; }
+  const act = e.target.closest("[data-act]");
+  if (!act) return;
+  const job = jobs().find((j) => j.id === act.dataset.id);
+  if (!job) return;
+  const kind = act.dataset.act;
+  if (kind === "apply" || kind === "not_interested") { state.form = { id: job.id, kind }; state.draft = {}; render(); return; }
+  changeStatus(job, kind);
+});
+document.addEventListener("input", (e) => {
+  if (e.target.id === "search") { state.query = e.target.value.trim(); render(); el("search").focus(); return; }
+  const form = e.target.closest("form[data-form]");
+  if (form && e.target.name) state.draft[e.target.name] = e.target.value;
+});
+document.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (e.target.id === "keyform") {
+    const token = el("keyinput").value.trim();
+    if (!token) return;
+    state.keyError = await checkKey(token);
+    if (state.keyError) { render(); return; }
+    state.token = token; state.keyOpen = false;
+    try { localStorage.setItem("jh-gh-token", token); } catch {}
+    try { state.marks = await fetchMarks(); } catch {}
+    render(); toast("מצב עריכה פעיל בדפדפן הזה");
+    return;
+  }
+  const form = e.target.closest("form[data-form]");
+  const job = form && jobs().find((j) => j.id === form.dataset.id);
+  if (!job) return;
+  const data = new FormData(form);
+  const note = String(data.get("note") || "").trim();
+  state.form = null; state.draft = {};
+  if (form.dataset.form === "apply") changeStatus(job, "applied", { applied_at: String(data.get("date") || todayISO()), apply_channel: note }, note);
+  else changeStatus(job, "not_interested", { not_interested_reason: note }, note);
+});
+document.addEventListener("change", (e) => {
+  if (e.target.id === "f-rank") { state.rank = e.target.value; render(); return; }
+  if (e.target.id === "f-kind") { state.kind = e.target.value; render(); return; }
+  if (!isOwner()) return;
+  const applyId = e.target.dataset && e.target.dataset.apply;
+  if (applyId) {
+    const value = e.target.value.trim();
+    if (value && !/^https?:\/\//.test(value)) { toast("הקישור צריך להתחיל ב-https://"); return; }
+    saveField(applyId, { apply_url: value }, "קישור ההגשה נשמר");
+    return;
+  }
+  const id = e.target.dataset && e.target.dataset.notes;
+  if (id) saveField(id, { notes: e.target.value }, "ההערה נשמרה");
+});
+
+try { state.token = localStorage.getItem("jh-gh-token"); } catch {}
+try { const saved = localStorage.getItem("jh-tab"); if (saved && TABS.some((t) => t.id === saved)) state.tab = saved; } catch {}
+render();
+fetchMarks().then((m) => { state.marks = m; render(); }).catch(() => {});
 </script>
 </body>
 </html>

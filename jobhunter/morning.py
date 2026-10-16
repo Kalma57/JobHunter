@@ -235,7 +235,7 @@ def _write_batch_files(writes: list[dict], out_dir: Path) -> list[dict]:
 
 
 def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
-            config: Path = Path("config/sources.json"), run_agents: bool = True) -> dict:
+            config: Path = Path("config/sources.json"), run_agents: bool = True, use_marks: bool = True) -> dict:
     """Steps 1-3 of the morning run in one command: sub-agents, code prefilter, plan, and the brain's files."""
     from jobhunter import prefilter
     from jobhunter.agents.__main__ import SUNDAY, run_all
@@ -254,7 +254,9 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     todays, rest = take_todays_share(keep, [], limit)
     _write_json(backlog_path, rest)
 
-    board = load_board(board_dir)
+    from jobhunter import overlay
+    marks, marks_error = overlay.load() if use_marks else ({}, None)
+    board = overlay.apply(load_board(board_dir), marks)  # the user's marks from the public site count
     plan = build_plan(board, todays, today)
     plan["backlog"] = len(rest)
     plan["closures"] = find_closures(board, state, today)
@@ -282,7 +284,7 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "compacted": len(plan["compactions"]),
         "backlog": len(rest),
         "errors": report.get("errors", []),
-        "warnings": report.get("warnings", []),
+        "warnings": report.get("warnings", []) + ([marks_error] if marks_error else []),
     }
     _write_json(files["run"], run)
     (plan_dir / "last-prepare.txt").write_text(today.isoformat(), encoding="utf-8")
