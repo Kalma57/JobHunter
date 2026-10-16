@@ -80,8 +80,33 @@ def load_board(board_dir: Path) -> dict[str, dict]:
     return {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(jobs_dir.glob("*.json"))}
 
 
+def _closed(job: dict, today: date, note: str) -> dict:
+    return {"status": "closed",
+            "history": list(job.get("history") or []) + [{"status": "closed", "at": f"{today.isoformat()}T07:00:00Z", "note": note}]}
+
+
+def deadline_closures(board: dict[str, dict], today: date) -> list[dict]:
+    """Board jobs whose application deadline has passed. Only applied & co. stay (user's rule, 16/10/2026:
+    a job you can no longer apply to is interesting only if you already applied)."""
+    out = []
+    for board_id, job in board.items():
+        deadline = job.get("deadline")
+        if job.get("status") not in CLOSABLE or not deadline:
+            continue
+        try:
+            passed = date.fromisoformat(str(deadline)[:10]) < today
+        except ValueError:
+            continue
+        if passed:
+            out.append({"board_id": board_id, "update": _closed(job, today, f"מועד ההגשה עבר ({str(deadline)[:10]})")})
+    return out
+
+
 def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict]:
-    """Board jobs from a company agent whose job is gone from the site (see CLOSED_AFTER_DAYS)."""
+    """Board jobs from a company agent whose job is gone from the site (see CLOSED_AFTER_DAYS), and board jobs
+    whose application deadline has passed."""
+    by_deadline = deadline_closures(board, today)
+    done = {c["board_id"] for c in by_deadline}
     report = _read_json(state / "runs" / f"{today.isoformat()}-agents.json", {})
     # a site that failed, or suddenly listed 0 jobs (a glitch, not 0 jobs), says nothing about which jobs closed
     read_ok = {c["source"] for c in report.get("companies", []) if "error" not in c and "warning" not in c}
@@ -89,7 +114,7 @@ def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict
     out = []
     for board_id, job in board.items():
         agent_id, source = job.get("agent_id"), job.get("source") or ""
-        if not agent_id or job.get("status") not in CLOSABLE or source not in read_ok or source.startswith(NO_FULL_LISTING):
+        if board_id in done or not agent_id or job.get("status") not in CLOSABLE or source not in read_ok or source.startswith(NO_FULL_LISTING):
             continue
         if source not in seen_cache:
             seen_cache[source] = _read_json(state / "seen" / f"{source.replace(':', '-')}.json", {})
@@ -97,11 +122,8 @@ def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict
         if last and (today - date.fromisoformat(last)).days <= CLOSED_AFTER_DAYS:
             continue
         note = f"ירדה מאתר החברה (נראתה לאחרונה {last})" if last else "ירדה מאתר החברה"
-        out.append({"board_id": board_id, "update": {
-            "status": "closed",
-            "history": list(job.get("history") or []) + [{"status": "closed", "at": f"{today.isoformat()}T07:00:00Z", "note": note}],
-        }})
-    return out
+        out.append({"board_id": board_id, "update": _closed(job, today, note)})
+    return by_deadline + out
 
 
 def build_plan(board: dict[str, dict], inbox_jobs: list[dict], today: date) -> dict:
@@ -263,6 +285,7 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "warnings": report.get("warnings", []),
     }
     _write_json(files["run"], run)
+    (plan_dir / "last-prepare.txt").write_text(today.isoformat(), encoding="utf-8")
     return {
         "date": today.isoformat(),
         "sources_read": f"{run['sources_read']}/{run['sources_total']}",
@@ -324,7 +347,10 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(result, ensure_ascii=False, indent=1))
         return 0
     if args.cmd == "finish":
-        print(json.dumps(finish(args.state, args.board_dir, args.today, push=not args.no_push), ensure_ascii=False, indent=1))
+        # the morning that prepare prepared - a run that waited past midnight still finishes its own date (15/10/2026)
+        last = args.state / "plan" / "last-prepare.txt"
+        day = args.today if "--today" in (argv or sys.argv) or not last.exists() else date.fromisoformat(last.read_text().strip())
+        print(json.dumps(finish(args.state, args.board_dir, day, push=not args.no_push), ensure_ascii=False, indent=1))
         return 0
 
     backlog_path = args.state / "inbox" / "backlog.json"

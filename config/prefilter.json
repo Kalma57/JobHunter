@@ -28,6 +28,9 @@
                                "בודק", "בודקת", "בדיקות", "תמיכה", "תומך", "מדריך", "מורה"],
   "_always_rule": "Outside the search even when the title also names software (docs/search.md: no QA incl. test automation, no IT support) - filtered regardless of software_title_words.",
   "_software_rule": "A title that also names a software role is never filtered by field_title_words - the brain decides (e.g. 'סטודנט להנדסת חשמל או מדעי המחשב').",
+  "closed_markers": ["ההגשה סגורה", "ההגשה למשרה נסגרה", "המשרה נסגרה", "המשרה אינה פעילה", "לא ניתן להגיש", "התקבלו מספיק מועמדים",
+                     "applications are closed", "application is closed", "no longer accepting applications", "this position has been filled",
+                     "this job is no longer available", "position is closed"],
   "degree_title_words": ["PhD", "Ph.D", "Postdoc", "Post-doc", "Doctoral", "דוקטורט", "דוקטורנט"],
   "max_years_experience": 1,
   "_years_rule": "A job whose title has no student word and whose text asks for at least max_years_experience+1 years of experience (the smallest number it asks for) is filtered."

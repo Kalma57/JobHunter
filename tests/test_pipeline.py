@@ -164,3 +164,15 @@ def test_two_jobs_matching_one_board_job_make_one_write():
               "location": "Jerusalem", "url": f"https://dr/{n}"} for n in (1, 2)]
     _, writes, _ = split_plan(build_plan(board, inbox, TODAY), board, TODAY)
     assert len(writes) == 1 and len(writes[0]["data"]["sightings"]) == 2
+
+
+def test_deadline_passed_closes_everything_but_applied():  # user's rule, 16/10/2026
+    from jobhunter.morning import deadline_closures
+    board = {"a": {"status": "hold", "deadline": "2026-10-13"}, "b": {"status": "applied", "deadline": "2026-10-01"},
+             "c": {"status": "new", "deadline": "2026-10-20"}, "d": {"status": "new"}}
+    [c] = deadline_closures(board, TODAY)
+    assert c["board_id"] == "a" and c["update"]["status"] == "closed" and "מועד ההגשה עבר" in c["update"]["history"][-1]["note"]
+
+
+def test_closed_applications_are_filtered():
+    assert reject_reason(_job("Software Engineering Student", "שימו לב: ההגשה סגורה"), RULES) == "ההגשה סגורה"

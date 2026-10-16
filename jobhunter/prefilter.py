@@ -8,6 +8,7 @@ something the code can see for sure in the title or in a plain number, so the co
   degree      the title asks for a doctorate
   seniority   the title is senior / lead / manager... and has no student word
   experience  the title has no student word and the text asks for more years than the search allows
+  closed      the text says applications are closed (user's rule, 16/10/2026)
 
 The words come from config/prefilter.json (data, like docs/search.md). Anything uncertain passes to the brain:
 better a job the brain filters than a job the code swallowed. Filtered jobs are not lost - they are listed
@@ -48,6 +49,9 @@ def years_asked(text: str | None) -> int | None:
 def reject_reason(job: dict, rules: dict) -> str | None:
     """Why the code filters this job for sure, in Hebrew, or None if it goes to the brain."""
     title = job.get("title") or ""
+    text = (job.get("description") or "").lower()
+    if any(marker.lower() in text for marker in rules.get("closed_markers", [])):
+        return "ההגשה סגורה"
     if word := matching_keyword(title, "", rules["always_field_title_words"]):
         return f"תחום אחר ({word} בשם המשרה)"
     software = matching_keyword(title, "", rules["software_title_words"])
