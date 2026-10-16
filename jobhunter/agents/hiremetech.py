@@ -36,7 +36,10 @@ POSTED_LINE = re.compile(r"^(?:פורסם|Posted)\s*$")
 # After a few job pages the site asks visitors to sign in "to verify a real user and filter bots". That is a
 # block, so we don't get past it: from that point the job is passed on with its card only.
 LOGIN_WALL = ("התחבר כדי להגיש", "Sign in to apply", "Log in to apply")
-TEXT_HIDDEN_NOTE = "(הטקסט המלא של המשרה זמין באתר רק למשתמשים מחוברים — מוצגים פרטי הכרטיס מהרשימה.)"
+# A job that no longer takes applications: the apply button changes colour and says so (user, 16/10/2026).
+CLOSED = ("אי אפשר להגיש", "לא ניתן להגיש", "ההגשה סגורה", "ההגשה נסגרה", "המשרה סגורה", "Applications closed",
+          "No longer accepting applications", "This job is closed")
+TEXT_HIDDEN_NOTE ="(הטקסט המלא של המשרה זמין באתר רק למשתמשים מחוברים — מוצגים פרטי הכרטיס מהרשימה.)"
 
 
 def parse_card(text: str) -> dict:
@@ -53,14 +56,18 @@ def parse_card(text: str) -> dict:
 
 def parse_job_page(text: str) -> dict | None:
     """A job page's screen text -> the job text (from "About the role" to "Similar jobs") and the posting date.
-    None when the page shows the sign-in wall instead of the job."""
-    if any(marker in text for marker in LOGIN_WALL):
+    None when the page shows the sign-in wall instead of the job.
+    A closed job says so next to the apply button, outside the job text, so the whole page is checked for it."""
+    closed = any(marker in text for marker in CLOSED)
+    if not closed and any(marker in text for marker in LOGIN_WALL):
         return None
     lines = text.splitlines()
     start = next((i for i, line in enumerate(lines) if line.strip() in TEXT_STARTS), None)
     end = next((i for i, line in enumerate(lines) if start is not None and i > start and line.strip() in TEXT_ENDS), len(lines))
     body = "\n".join(lines[start + 1:end] if start is not None else lines)
     description = re.sub(r"\n{3,}", "\n\n", body).strip()
+    if closed:  # the words the prefilter knows (config/prefilter.json, closed_markers)
+        description = "ההגשה סגורה (לפי עמוד המשרה ב-HireMeTech).\n\n" + description
     posted_at = None
     for i, line in enumerate(lines[:-1]):
         if POSTED_LINE.match(line.strip()):

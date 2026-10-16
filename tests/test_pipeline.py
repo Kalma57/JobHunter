@@ -176,3 +176,11 @@ def test_deadline_passed_closes_everything_but_applied():  # user's rule, 16/10/
 
 def test_closed_applications_are_filtered():
     assert reject_reason(_job("Software Engineering Student", "שימו לב: ההגשה סגורה"), RULES) == "ההגשה סגורה"
+
+
+def test_hiremetech_closed_job_page_is_marked_and_prefiltered():  # 16/10/2026: the apply button says you can't apply
+    from jobhunter.agents.hiremetech import parse_job_page
+    page = "Software Engineer Intern\nאי אפשר להגיש למשרה זו\nעל התפקיד\nפיתוח ב-Python\nמשרות דומות\n..."
+    parsed = parse_job_page(page)
+    assert parsed["description"].startswith("ההגשה סגורה")
+    assert reject_reason(_job("Software Engineer Intern", parsed["description"]), RULES) == "ההגשה סגורה"

@@ -76,10 +76,11 @@ def build(board_dir: Path, state: Path, today: date, out_dir: Path = OUT_DIR) ->
 
 
 def publish(today: date, out_dir: Path = OUT_DIR) -> str:
-    """Push public/ to its own public repo (Kalma57/jobhunter-live, branch gh-pages -> GitHub Pages).
+    """Publish public/ as the gh-pages branch of the project repo (GitHub Pages: kalma57.github.io/JobHunter/).
 
-    public/ is a separate git checkout (set up once, see docs/public-page.md), so nothing of the private repo goes
-    public. Returns "ok", "unchanged", or "error: ..."; without the checkout, "not set up".
+    public/ is its own small git history (only index.html), so gh-pages never carries the project's files.
+    It is committed there, fetched into the project repo and pushed through the project's own origin.
+    Returns "ok", "unchanged", or "error: ..."; without the public/ history, "not set up".
     """
     import subprocess
 
@@ -92,10 +93,13 @@ def publish(today: date, out_dir: Path = OUT_DIR) -> str:
 
     git("add", "-A")
     code, out = git("commit", "-m", f"Morning run {today.isoformat()}")
-    if code != 0:
-        return "unchanged" if "nothing to commit" in out else f"error: {out[-300:]}"
-    code, out = git("push", "origin", "gh-pages")
-    return "ok" if code == 0 else f"error: {out[-300:]}"
+    if code != 0 and "nothing to commit" not in out:
+        return f"error: {out[-300:]}"
+    for args in (["fetch", "-q", str(out_dir), "gh-pages"], ["push", "-q", "origin", "FETCH_HEAD:refs/heads/gh-pages"]):
+        done = subprocess.run(["git", *args], capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if done.returncode != 0:
+            return f"error: {(done.stdout + done.stderr).strip()[-300:]}"
+    return "ok"
 
 
 def main(argv: list[str] | None = None) -> int:
