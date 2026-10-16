@@ -35,7 +35,7 @@
 ```
 .venv/Scripts/python.exe -m jobhunter.morning finish
 ```
-בונה את הדף הציבורי (`public/index.html`) מהלוח המעודכן, ושומר גיבוי של `state/seen` ו-`state/inbox` ב-git (commit + push). מהפלט לוקחים `git` ו-`public_error` אם יש.
+בונה את הדף הציבורי (`public/index.html`) מהלוח המעודכן ודוחף אותו ל-GitHub Pages, ושומר גיבוי של `state/seen` ו-`state/inbox` ב-git (commit + push). מהפלט לוקחים `git`, `public.published` ו-`public_error` אם יש.
 
 **7. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות שמתאימות הבוקר. הלוח: https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu"`. אם יש שגיאות מצעד 2 — להוסיף `" ⚠️ לא נקראו: <שמות>"`; אם `git` לא `ok` — `" ⚠️ הגיבוי נכשל"`.
 

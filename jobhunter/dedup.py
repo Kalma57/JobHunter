@@ -16,7 +16,7 @@ from dataclasses import dataclass
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 # Query parameters that identify a job on some sites; every other parameter (utm_*, ref...) is noise.
-ID_PARAMS = {"gh_jid", "jobid", "job_id", "id", "jk", "jid"}
+ID_PARAMS = {"gh_jid", "jobid", "job_id", "id", "jk", "jid", "key", "jobcode"}  # key: JobMaster (checknum.asp?key=N)
 
 # Words that say nothing about which role it is.
 TITLE_NOISE = {

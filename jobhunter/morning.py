@@ -158,6 +158,11 @@ def split_plan(plan: dict, board: dict[str, dict], today: date) -> tuple[list[di
         if on_board:
             board_id = on_board[0]["board_id"]
             other = board.get(board_id, {})
+            earlier = next((w for w in writes if w["doc_id"] == board_id), None)
+            if earlier:  # a second job matching the same board job this morning: one write per document
+                earlier["data"]["sightings"].append(_sighting(job, today))
+                counts["exact_board"] += 1
+                continue
             update = {"sightings": list(other.get("sightings") or []) + [_sighting(job, today)]}
             if not (job.get("source") or "").startswith(BOARD_SOURCES) and (other.get("source") or "").startswith(BOARD_SOURCES):
                 update.update({"url": job.get("url"), "apply_url": job.get("apply_url") or job.get("url")})
@@ -285,6 +290,7 @@ def finish(state: Path, board_dir: Path, today: date, push: bool = True) -> dict
     try:
         from jobhunter import public
         result["public"] = public.build(board_dir, state, today)
+        result["public"]["published"] = public.publish(today)
     except Exception as e:  # the backup must still happen
         result["public_error"] = f"{type(e).__name__}: {e}"
     code, out = _git("add", str(state / "seen"), str(state / "inbox"))

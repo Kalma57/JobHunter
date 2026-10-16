@@ -148,3 +148,19 @@ def test_public_page_shows_only_open_matches_and_nothing_private(tmp_path, monke
     html = (tmp_path / "public" / "index.html").read_text(encoding="utf-8")
     assert result["jobs"] == 1 and "Open match" in html
     assert "SECRET-NOTE" not in html and "applied" not in html and "Gold set" not in html
+
+
+def test_jobmaster_links_differ_by_their_key():  # 15/10/2026: every JobMaster job looked like one link
+    from jobhunter.dedup import normalize_url
+    a = "https://www.jobmaster.co.il/jobs/checknum.asp?key=1"
+    b = "https://www.jobmaster.co.il/jobs/checknum.asp?key=2"
+    assert normalize_url(a) != normalize_url(b)
+
+
+def test_two_jobs_matching_one_board_job_make_one_write():
+    board = {"lever-m-1": {"agent_id": "lever:m:1", "source": "lever:mobileye", "title": "Algorithm Student",
+                           "company": "Mobileye", "location": "Jerusalem", "url": "https://lever/1"}}
+    inbox = [{"id": f"drushim:{n}", "source": "drushim:drushim", "title": "Algorithm Student", "company": "Mobileye",
+              "location": "Jerusalem", "url": f"https://dr/{n}"} for n in (1, 2)]
+    _, writes, _ = split_plan(build_plan(board, inbox, TODAY), board, TODAY)
+    assert len(writes) == 1 and len(writes[0]["data"]["sightings"]) == 2

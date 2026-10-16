@@ -14,5 +14,10 @@
 ## איך הוא נבנה
 `python -m jobhunter.morning finish` (צעד 6 בריצת הבוקר) קורא את תמונת המצב של הלוח אחרי הכתיבות, ובונה `public/index.html` מהתבנית `site/public.html`. קובץ HTML אחד, בלי שרת ובלי Claude.
 
-## איפה הוא יושב — ממתין להחלטת המשתמש
-הריפו `Kalma57/JobHunter` פרטי, ולכן הדף לא עולה ממנו. האפשרות המומלצת: ריפו ציבורי נפרד (למשל `Kalma57/jobhunter-live`) עם GitHub Pages, ש-`finish` דוחף אליו רק את `index.html` כל בוקר. כתובת: `https://kalma57.github.io/jobhunter-live/`. זה פרסום ציבורי, לכן לא נעשה בלי אישור.
+## איפה הוא יושב
+ריפו ציבורי נפרד `Kalma57/jobhunter-live`, ענף `gh-pages` (GitHub Pages מפעיל את עצמו על הענף הזה). כתובת: **https://kalma57.github.io/jobhunter-live/**.
+- `public/` הוא checkout נפרד של הריפו הזה (לא חלק מהריפו הפרטי, ב-`.gitignore`), כך ששום דבר מהריפו הפרטי לא נהיה ציבורי.
+- `morning finish` בונה את `public/index.html`, עושה commit ו-push לריפו הציבורי (`public.publish`). אם לא השתנה כלום — `unchanged`.
+- ה-commits בריפו הציבורי חתומים עם `Kalma57@users.noreply.github.com`, לא עם המייל האישי.
+
+**הקמה (פעם אחת, 16/10/2026):** המשתמש יוצר ריפו **ציבורי וריק** בשם `jobhunter-live` בחשבון Kalma57 (בלי README). אחרי זה הדחיפה הראשונה מתבצעת לבד בריצת הבוקר הבאה.

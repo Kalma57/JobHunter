@@ -75,6 +75,29 @@ def build(board_dir: Path, state: Path, today: date, out_dir: Path = OUT_DIR) ->
     return {"path": str((out_dir / "index.html").resolve()), "jobs": len(data["jobs"]), "sources_read": data["run"]["sources_read"]}
 
 
+def publish(today: date, out_dir: Path = OUT_DIR) -> str:
+    """Push public/ to its own public repo (Kalma57/jobhunter-live, branch gh-pages -> GitHub Pages).
+
+    public/ is a separate git checkout (set up once, see docs/public-page.md), so nothing of the private repo goes
+    public. Returns "ok", "unchanged", or "error: ..."; without the checkout, "not set up".
+    """
+    import subprocess
+
+    if not (out_dir / ".git").exists():
+        return "not set up"
+
+    def git(*args: str) -> tuple[int, str]:
+        done = subprocess.run(["git", "-C", str(out_dir), *args], capture_output=True, text=True, encoding="utf-8", errors="replace")
+        return done.returncode, (done.stdout + done.stderr).strip()
+
+    git("add", "-A")
+    code, out = git("commit", "-m", f"Morning run {today.isoformat()}")
+    if code != 0:
+        return "unchanged" if "nothing to commit" in out else f"error: {out[-300:]}"
+    code, out = git("push", "origin", "gh-pages")
+    return "ok" if code == 0 else f"error: {out[-300:]}"
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="jobhunter.public")
     sub = parser.add_subparsers(dest="cmd", required=True)
