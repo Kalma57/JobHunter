@@ -1,48 +1,46 @@
 # הריצה של הבוקר — הוראות לסוכן הגדול
 
-(גרסה 2, 14/10/2026. זו ההוראה שהמשימה המתוזמנת של 09:05 מריצה. הדרישות: [`orchestrator.md`](orchestrator.md), המוח: [`brain.md`](brain.md).)
+(גרסה 3, 21/10/2026. המשימה המתוזמנת של 09:05 מריצה את זה. הדרישות: [`orchestrator.md`](orchestrator.md), המוח: [`brain.md`](brain.md).)
+
+## מי עושה מה
+- **הקוד** רץ מ-Windows Task Scheduler (משימה "JobHunter morning", 08:00, הסקריפט `scripts/morning-task.cmd`), בלי Claude:
+  `prepare` (תתי-סוכנים, סינון בקוד, תכנית) ← כותב `state/plan/next.json` ← `finish --wait` מחכה לסימן "סיימתי" של Claude ← דף ציבורי + גיבוי ל-git.
+- **Claude (אתה)** — רק קריאת קבצים, כתיבה ללוח, והתראה. **אין שום פקודה להריץ.**
 
 הריצה רצה **בלי אדם**. לכן:
-- **פקודות מריצים רק בכלי Bash, ורק את שתי הפקודות שכתובות כאן, בדיוק כפי שהן.** בלי `cd`, בלי פקודות נוספות, בלי PowerShell. כל פקודה אחרת תעצור את הריצה ותחכה לאישור.
-- קבצים קוראים בכלי Read. **לא כותבים קבצים** — כל הכתיבות הולכות ללוח דרך `ArtifactData`.
-- הלוח: `https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu`. הכלים `ArtifactData` ו-`PushNotification` נטענים עם ToolSearch: `select:ArtifactData,PushNotification`.
-- משהו נכשל ← לא מחפשים דרך עוקפת. רושמים את השגיאה המדויקת, ממשיכים בצעדים שלא תלויים בה, ומדווחים בסוף.
+- **לא מריצים פקודות** (לא Bash, לא PowerShell). לא כותבים ולא עורכים קבצים. קוראים בכלי Read בלבד.
+- כלים: `ArtifactData` ו-`PushNotification` (ToolSearch: `select:ArtifactData,PushNotification`).
+- הלוח: `https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu`.
+- משהו נכשל ← לא מחפשים דרך עוקפת. רושמים את השגיאה, ממשיכים בצעדים שלא תלויים בה, ומדווחים בסוף.
 
 ## הצעדים
 
-**1. תמונת מצב של הלוח.** `ArtifactData` `list` על `jobs`, `query.limit` 1000, `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board`. **לשמור את התוצאה** — יש בה ה-`version` של כל משרה, וצריך אותו לכל עדכון.
+**1. מה מוכן.** Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\next.json`.
+- הקובץ לא קיים, או ש-`date` בו **לא** התאריך של היום ← הקוד עוד לא רץ היום (המחשב נדלק מאוחר, או ש-Task Scheduler לא רץ). **לא עושים כלום מלבד:** `PushNotification`: `"JobHunter: הקוד של הבוקר עוד לא רץ — המשרות ייקלטו בריצה הבאה."` ומסיימים.
+- אחרת: `D` = `date`. ב-`files` שלושה קבצים: `brain`, `batch`, `run`. ב-`errors` / `warnings` — מקורות שלא נקראו.
 
-**2. הכנה בקוד (פקודה אחת).**
-```
-.venv/Scripts/python.exe -m jobhunter.morning prepare
-```
-הפקודה מריצה את כל תתי-הסוכנים (ביום ראשון — הסריקה השבועית), מסננת בקוד את מה שבטוח לא מתאים (`config/prefilter.json`), מורידה כפילויות ודאיות, ומכינה קבצים. הפלט קצר: מספרים, שגיאות, ושלושה קבצים:
-- `files.brain` — המשרות שהמוח צריך לקרוא (עד 40).
-- `files.batch` — כתיבות שהקוד כבר הכין (מקור נוסף למשרה קיימת, "נסגרה", כלל 30 הימים).
-- `files.run` — שורת הריצה.
+**2. תמונת מצב של הלוח.** `ArtifactData` `list` על `jobs`, `query.limit` 1000, `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board`. **לשמור את התוצאה** — יש בה ה-`version` של כל משרה.
 
-**3. הכתיבות של הקוד.** קוראים את `files.batch`. אם הרשימה לא ריקה — `ArtifactData` `batch` עם כל הפריטים (עד 50 בכל קריאה): `op`, `collection`, `doc_id`, `file_path` כמו שהם, ו-`if_version` = ה-version של אותו `doc_id` מהתוצאה של צעד 1. (השדה `why` רק להסבר — לא שולחים אותו.)
+**3. הכתיבות של הקוד.** Read `files.batch`. אם לא ריק — `ArtifactData` `batch` (עד 50 בכל קריאה): `op`, `collection`, `doc_id`, `file_path` כמו שהם, ו-`if_version` = ה-version של אותו `doc_id` מצעד 2. (`why` — רק להסבר, לא שולחים.)
 
-**4. המוח.** קוראים את `files.brain`, את [`brain.md`](brain.md), [`job-card.md`](../job-card.md) ו-[`search.md`](../search.md). לכל פריט:
-- **אם יש `borderline`** — להחליט אם זו אותה משרה כמו המועמד: רק אם התפקיד, הדרישות והמיקום תואמים ואין סתירה. בספק ← **לא כפילות**. אם כפילות ← לא יוצרים משרה; `update` למשרה הקיימת: `sightings` = הרשימה הקיימת (מקובץ `state/board/jobs/<id>.json`) ועוד הפריטים מ-`fields.sightings`, ו-`alerts` = הקיימות ועוד "אוחדה עם משרה דומה — בדוק". הסטטוס לא משתנה.
-- **אחרת** — כרטיס לפי `brain.md` מתוך `job` (הטקסט המלא ב-`job.description`), ואז מסמך חדש ב-`jobs`, `doc_id` = `doc_id` של הפריט: כל שדות הכרטיס + כל מה שב-`fields` + `status` (`new` / `filtered`) + `history: [{status, at: "<D>T07:00:00Z", note: <history_note>}]`. בלי `if_version` (מסמך חדש).
-- כותבים ב-`batch` של עד 50, `data` בתוך הקריאה.
+**4. המוח.** Read `files.brain`, [`brain.md`](brain.md), [`job-card.md`](../job-card.md), [`search.md`](../search.md). לכל פריט:
+- **יש `borderline`** — אותה משרה כמו המועמד? רק אם התפקיד, הדרישות והמיקום תואמים ואין סתירה. בספק ← **לא כפילות**. כפילות ← לא יוצרים משרה; `update` למשרה הקיימת: `sightings` = הקיימות (מ-`state/board/jobs/<id>.json`) + `fields.sightings`, `alerts` = הקיימות + "אוחדה עם משרה דומה — בדוק". הסטטוס לא משתנה.
+- **אחרת** — כרטיס לפי `brain.md` מ-`job` (הטקסט ב-`job.description`) ← מסמך חדש ב-`jobs`, `doc_id` = `doc_id` של הפריט: שדות הכרטיס + `fields` + `status` (`new` / `filtered`) + `history: [{status, at: "<D>T07:00:00Z", note: <history_note>}]`. בלי `if_version`.
+- ב-`batch` של עד 50, `data` בתוך הקריאה.
 
-**5. שורת הריצה.** `ArtifactData` `get` על `runs` / `<D>` (D = `date` מצעד 2). אם קיימת — `set` עם `if_version` שלה; אחרת `set` בלי. `file_path` = `files.run`. אחר כך `update` לאותו מסמך (עם ה-version שחזר) עם:
-`{passed: <כמה עברו>, brain_filtered: <כמה סוננו ע"י המוח>, far: <כמה רחוקות>, borderline: ["<משרה> — <מה הוחלט ולמה>"...], summary: "<N> עברו · <M> סוננו ע\"י המוח · <P> סוננו בקוד · <K> כפילויות · <B> ממתינות"}`.
+**5. שורת הריצה.** `ArtifactData` `get` על `runs` / `D`. קיימת ← `set` עם `if_version` שלה; אחרת `set` בלי. `file_path` = `files.run`. אחר כך `update` (עם ה-version שחזר):
+`{passed, brain_filtered, far, borderline: ["<משרה> — <מה הוחלט ולמה>"], summary: "<N> עברו · <M> סוננו ע\"י המוח · <P> סוננו בקוד · <K> כפילויות · <B> ממתינות"}`.
 
-**6. תמונת מצב שנייה + סיום (פקודה שנייה).** שוב צעד 1 (אותה קריאה בדיוק), ואז:
-```
-.venv/Scripts/python.exe -m jobhunter.morning finish
-```
-בונה את הדף הציבורי (`public/index.html`) מהלוח המעודכן ודוחף אותו ל-GitHub Pages, ושומר גיבוי של `state/seen` ו-`state/inbox` ב-git (commit + push). מהפלט לוקחים `git`, `public.published` ו-`public_error` אם יש.
+**6. תמונת מצב שנייה** — אותה קריאה של צעד 2 בדיוק (ממנה נבנה הדף הציבורי).
 
-**7. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות שמתאימות הבוקר. הלוח: https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu"`. אם יש שגיאות מצעד 2 — להוסיף `" ⚠️ לא נקראו: <שמות>"`; אם `git` לא `ok` — `" ⚠️ הגיבוי נכשל"`.
+**7. סימן "סיימתי".** `ArtifactData` `get` על `runs` / `D` עם `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\done`. הקובץ שנוצר הוא הסימן ש-`finish` מחכה לו (דף ציבורי + גיבוי). **בלי הצעד הזה הבוקר לא נשמר** — לעשות אותו גם אם צעד קודם נכשל.
 
-**דוח סיום** (עברית, קצר): כמה נמצאו / סוננו בקוד / נקראו / עברו / כפילויות / מקרי גבול (ומה הוחלט) / שגיאות.
+**8. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות שמתאימות הבוקר. https://kalma57.github.io/JobHunter/"` + `" ⚠️ לא נקראו: <שמות>"` אם יש `errors`.
+
+**דוח סיום** (עברית, קצר): נמצאו / סוננו בקוד / נקראו / עברו / כפילויות / מקרי גבול (ומה הוחלט) / שגיאות.
 
 ## אסור
-- לשנות סטטוס של משרה קיימת (רק המשתמש משנה סטטוס; "נסגרה" מגיע מהקוד בצעד 3).
-- לקרוא את כל הלוח לתוך המוח — רק את `files.brain` ואת המשרות הספציפיות של מקרי הגבול.
+- להריץ פקודה כלשהי, או לכתוב קובץ.
+- לשנות סטטוס של משרה קיימת (רק המשתמש; "נסגרה" מגיע מהקוד בצעד 3).
+- לקרוא את כל הלוח לתוך המוח — רק את `files.brain` ואת המשרות של מקרי הגבול.
 - למחוק משרה מהלוח.
-- להריץ פקודה שלא כתובה כאן.

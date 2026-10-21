@@ -192,3 +192,14 @@ def test_hiremetech_closed_job_page_is_marked_and_prefiltered():  # 16/10/2026: 
     parsed = parse_job_page(page)
     assert parsed["description"].startswith("ההגשה סגורה")
     assert reject_reason(_job("Software Engineer Intern", parsed["description"]), RULES) == "ההגשה סגורה"
+
+
+def test_a_morning_claude_never_finished_goes_back_to_the_queue(tmp_path):  # 21/10/2026
+    from jobhunter.morning import done_marker, unfinished_jobs
+    (tmp_path / "plan").mkdir()
+    (tmp_path / "plan" / "last-prepare.txt").write_text("2026-10-20", encoding="utf-8")
+    (tmp_path / "plan" / "2026-10-20.json").write_text(json.dumps({"jobs": [{"inbox_job": {"id": "x:1"}, "matches": []}]}), encoding="utf-8")
+    assert [j["id"] for j in unfinished_jobs(tmp_path)] == ["x:1"]
+    done_marker(tmp_path, "2026-10-20").parent.mkdir(parents=True)
+    done_marker(tmp_path, "2026-10-20").write_text("{}", encoding="utf-8")
+    assert unfinished_jobs(tmp_path) == []

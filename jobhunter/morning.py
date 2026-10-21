@@ -234,6 +234,23 @@ def _write_batch_files(writes: list[dict], out_dir: Path) -> list[dict]:
     return entries
 
 
+def done_marker(state: Path, day: str) -> Path:
+    """Written by the Claude run as its last board step (ArtifactData get runs/<day> with out_dir state/plan/done)."""
+    return state / "plan" / "done" / "runs" / f"{day}.json"
+
+
+def unfinished_jobs(state: Path) -> list[dict]:
+    """The last prepared morning's jobs, if the Claude run never finished it (computer off, app closed, a stall).
+    They go back to the queue, so a missed morning loses nothing (21/10/2026)."""
+    last = state / "plan" / "last-prepare.txt"
+    if not last.exists():
+        return []
+    day = last.read_text(encoding="utf-8").strip()
+    if done_marker(state, day).exists():
+        return []
+    return [item["inbox_job"] for item in _read_json(state / "plan" / f"{day}.json", {}).get("jobs", [])]
+
+
 def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
             config: Path = Path("config/sources.json"), run_agents: bool = True, use_marks: bool = True) -> dict:
     """Steps 1-3 of the morning run in one command: sub-agents, code prefilter, plan, and the brain's files."""
@@ -249,7 +266,8 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     report = _read_json(report_path, {"new": 0, "errors": [], "warnings": [], "companies": [], "kind": "daily"})
 
     backlog_path = state / "inbox" / "backlog.json"
-    candidates = list({j["id"]: j for j in _read_json(backlog_path, []) + Inbox(state / "inbox").read(today)}.values())
+    requeued = unfinished_jobs(state)
+    candidates = list({j["id"]: j for j in requeued + _read_json(backlog_path, []) + Inbox(state / "inbox").read(today)}.values())
     keep, filtered = prefilter.split(candidates, prefilter.load_rules())
     todays, rest = take_todays_share(keep, [], limit)
     _write_json(backlog_path, rest)
@@ -288,7 +306,8 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     }
     _write_json(files["run"], run)
     (plan_dir / "last-prepare.txt").write_text(today.isoformat(), encoding="utf-8")
-    return {
+    done_marker(state, today.isoformat()).unlink(missing_ok=True)
+    result = {
         "date": today.isoformat(),
         "sources_read": f"{run['sources_read']}/{run['sources_total']}",
         "found_new": run["found_new"],
@@ -299,8 +318,11 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "borderline_jobs": sum(1 for b in brain if b["borderline"]),
         "code_writes": len(writes),
         "backlog": len(rest),
+        "requeued": len(requeued),
         "files": {name: str(path.resolve()) for name, path in files.items()},
     }
+    _write_json(plan_dir / "next.json", result)  # what the Claude run reads first (docs/agents/morning-run.md)
+    return result
 
 
 def _git(*args: str) -> tuple[int, str]:
@@ -341,6 +363,8 @@ def main(argv: list[str] | None = None) -> int:
         cmd.add_argument("--limit", type=int, default=DAILY_LIMIT, help="most jobs the brain reads this morning")
         cmd.add_argument("--no-agents", action="store_true", help="prepare: reuse today's agents report (a re-run)")
         cmd.add_argument("--no-push", action="store_true", help="finish: commit without pushing")
+        cmd.add_argument("--wait", action="store_true", help="finish: first wait for the Claude run's done marker")
+        cmd.add_argument("--wait-hours", type=float, default=10.0)
     args = parser.parse_args(argv)
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -352,6 +376,12 @@ def main(argv: list[str] | None = None) -> int:
         # the morning that prepare prepared - a run that waited past midnight still finishes its own date (15/10/2026)
         last = args.state / "plan" / "last-prepare.txt"
         day = args.today if "--today" in (argv or sys.argv) or not last.exists() else date.fromisoformat(last.read_text().strip())
+        if args.wait:  # Windows Task Scheduler: prepare, then this waits for the Claude run, then publishes (21/10/2026)
+            import time
+            deadline = time.monotonic() + args.wait_hours * 3600
+            while not done_marker(args.state, day.isoformat()).exists() and time.monotonic() < deadline:
+                time.sleep(60)
+            print(json.dumps({"waited_for": day.isoformat(), "claude_done": done_marker(args.state, day.isoformat()).exists()}))
         print(json.dumps(finish(args.state, args.board_dir, day, push=not args.no_push), ensure_ascii=False, indent=1))
         return 0
 
