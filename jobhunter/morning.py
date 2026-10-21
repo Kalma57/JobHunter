@@ -126,6 +126,28 @@ def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict
     return by_deadline + out
 
 
+REMOVE_CLOSED_AFTER_DAYS = 7  # user's rule, 21/10/2026: a job closed for over a week leaves the board
+
+
+def removals(board: dict[str, dict], today: date) -> list[str]:
+    """Board jobs that have been "closed" for more than REMOVE_CLOSED_AFTER_DAYS -> deleted from the board.
+    Only "closed" (gone from the site, or deadline passed); applied jobs never close, so they always stay.
+    A deleted job does not come back as new: it is no longer listed on its site, and its id stays in the agent's
+    memory (state/seen) for 30 more days."""
+    out = []
+    for board_id, job in board.items():
+        if job.get("status") != "closed":
+            continue
+        closed_at = max((h.get("at") or "" for h in job.get("history") or [] if h.get("status") == "closed"), default="")
+        try:
+            days = (today - date.fromisoformat(closed_at[:10])).days
+        except ValueError:
+            continue
+        if days > REMOVE_CLOSED_AFTER_DAYS:
+            out.append(board_id)
+    return out
+
+
 def build_plan(board: dict[str, dict], inbox_jobs: list[dict], today: date) -> dict:
     planned = []
     seen_today: dict[str, dict] = {}
@@ -139,12 +161,13 @@ def build_plan(board: dict[str, dict], inbox_jobs: list[dict], today: date) -> d
             ],
         })
         seen_today[f"inbox:{job['id']}"] = job
+    removed = set(removals(board, today))
     compactions = [
         {"board_id": board_id, "update": update}
         for board_id, job in board.items()
-        if (update := compaction_update(job, today)) is not None
+        if board_id not in removed and (update := compaction_update(job, today)) is not None
     ]
-    return {"date": today.isoformat(), "jobs": planned, "compactions": compactions}
+    return {"date": today.isoformat(), "jobs": planned, "compactions": compactions, "removals": sorted(removed)}
 
 
 def doc_id(job_id: str) -> str:
@@ -217,6 +240,9 @@ def split_plan(plan: dict, board: dict[str, dict], today: date) -> tuple[list[di
     for item in plan.get("closures", []) + plan.get("compactions", []):
         writes.append({"op": "update", "collection": "jobs", "doc_id": item["board_id"], "data": item["update"],
                        "why": "נסגרה" if item["update"].get("status") == "closed" else "כלל 30 הימים"})
+    for board_id in plan.get("removals", []):
+        writes.append({"op": "delete", "collection": "jobs", "doc_id": board_id, "data": None,
+                       "why": "נסגרה לפני יותר משבוע — יוצאת מהלוח"})
     return brain, writes, counts
 
 
@@ -227,10 +253,12 @@ def _write_batch_files(writes: list[dict], out_dir: Path) -> list[dict]:
         old.unlink()
     entries = []
     for n, w in enumerate(writes, 1):
-        path = out_dir / f"{n:03d}-{w['doc_id']}.json"
-        path.write_text(json.dumps(w["data"], ensure_ascii=False, indent=1), encoding="utf-8")
-        entries.append({"op": w["op"], "collection": w["collection"], "doc_id": w["doc_id"],
-                        "file_path": str(path.resolve()), "if_version": None, "why": w["why"]})
+        entry = {"op": w["op"], "collection": w["collection"], "doc_id": w["doc_id"], "if_version": None, "why": w["why"]}
+        if w["data"] is not None:  # a delete has no data
+            path = out_dir / f"{n:03d}-{w['doc_id']}.json"
+            path.write_text(json.dumps(w["data"], ensure_ascii=False, indent=1), encoding="utf-8")
+            entry["file_path"] = str(path.resolve())
+        entries.append(entry)
     return entries
 
 
@@ -300,6 +328,7 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "duplicates_code": counts["exact_board"] + counts["exact_today"],
         "closed": len(plan["closures"]),
         "compacted": len(plan["compactions"]),
+        "removed": len(plan["removals"]),
         "backlog": len(rest),
         "errors": report.get("errors", []),
         "warnings": report.get("warnings", []) + ([marks_error] if marks_error else []),

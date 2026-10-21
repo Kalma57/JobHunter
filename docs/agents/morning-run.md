@@ -21,7 +21,7 @@
 
 **2. תמונת מצב של הלוח.** `ArtifactData` `list` על `jobs`, `query.limit` 1000, `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board`. **לשמור את התוצאה** — יש בה ה-`version` של כל משרה.
 
-**3. הכתיבות של הקוד.** Read `files.batch`. אם לא ריק — `ArtifactData` `batch` (עד 50 בכל קריאה): `op`, `collection`, `doc_id`, `file_path` כמו שהם, ו-`if_version` = ה-version של אותו `doc_id` מצעד 2. (`why` — רק להסבר, לא שולחים.)
+**3. הכתיבות של הקוד.** Read `files.batch`. אם לא ריק — `ArtifactData` `batch` (עד 50 בכל קריאה): `op`, `collection`, `doc_id`, `file_path` (אם יש) כמו שהם, ו-`if_version` = ה-version של אותו `doc_id` מצעד 2. (`why` — רק להסבר, לא שולחים.) פריט `delete` (בלי `file_path`) = משרה שנסגרה לפני יותר משבוע — יוצאת מהלוח (החלטת המשתמש 21/10).
 
 **4. המוח.** Read `files.brain`, [`brain.md`](brain.md), [`job-card.md`](../job-card.md), [`search.md`](../search.md). לכל פריט:
 - **יש `borderline`** — אותה משרה כמו המועמד? רק אם התפקיד, הדרישות והמיקום תואמים ואין סתירה. בספק ← **לא כפילות**. כפילות ← לא יוצרים משרה; `update` למשרה הקיימת: `sightings` = הקיימות (מ-`state/board/jobs/<id>.json`) + `fields.sightings`, `alerts` = הקיימות + "אוחדה עם משרה דומה — בדוק". הסטטוס לא משתנה.
@@ -43,4 +43,4 @@
 - להריץ פקודה כלשהי, או לכתוב קובץ.
 - לשנות סטטוס של משרה קיימת (רק המשתמש; "נסגרה" מגיע מהקוד בצעד 3).
 - לקרוא את כל הלוח לתוך המוח — רק את `files.brain` ואת המשרות של מקרי הגבול.
-- למחוק משרה מהלוח.
+- למחוק משרה מהלוח בעצמך. מחיקות מגיעות רק מהקוד, ב-`files.batch` (צעד 3).

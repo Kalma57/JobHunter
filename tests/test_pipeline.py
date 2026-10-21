@@ -212,3 +212,14 @@ def test_workday_entry_without_a_link_is_skipped(monkeypatch):  # NVIDIA, 21/10/
     monkeypatch.setattr(workday, "_list_page", lambda company, facets, offset: pages[0] if not facets else pages[1])
     postings, total = workday.list_israel({"host": "h", "tenant": "t", "site": "s"})
     assert [p["externalPath"] for p in postings] == ["/job/a_JR1"] and total == 2
+
+
+def test_closed_for_over_a_week_leaves_the_board():  # user's rule, 21/10/2026
+    from jobhunter.morning import removals
+    board = {"old": {"status": "closed", "history": [{"status": "closed", "at": "2026-10-05T07:00:00Z"}]},
+             "recent": {"status": "closed", "history": [{"status": "closed", "at": "2026-10-10T07:00:00Z"}]},
+             "applied": {"status": "applied", "history": [{"status": "applied", "at": "2026-09-01T07:00:00Z"}]}}
+    assert removals(board, TODAY) == ["old"]
+    plan = build_plan(board, [], TODAY)
+    _, writes, _ = split_plan(plan, board, TODAY)
+    assert [(w["op"], w["doc_id"]) for w in writes] == [("delete", "old")]
