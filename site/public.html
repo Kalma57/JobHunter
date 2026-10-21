@@ -293,7 +293,10 @@ async function checkKey(token) {
   const r = await fetch(`https://api.github.com/repos/${REPO}`, { headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${token}` } });
   if (!r.ok) return "המפתח לא עובד (GitHub ענה " + r.status + "). בדוק שהעתקת אותו במלואו.";
   const j = await r.json();
-  return j.permissions && j.permissions.push ? "" : "למפתח אין הרשאת כתיבה לריפו. צריך Contents: Read and write.";
+  if (!(j.permissions && j.permissions.push)) return "למפתח אין הרשאת כתיבה לריפו. צריך Contents: Read and write, והריפו " + REPO + " ברשימה.";
+  const me = await fetch("https://api.github.com/user", { headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${token}` } });
+  const login = me.ok ? (await me.json()).login : "";
+  return login.toLowerCase() === REPO.split("/")[0].toLowerCase() ? "" : "המפתח שייך לחשבון " + login + " ולא לבעלי הלוח.";
 }
 
 // ---- rendering ----
@@ -433,8 +436,12 @@ function aboutHTML() {
 }
 function keyboxHTML() {
   if (!state.keyOpen) return "";
+  const owner = REPO.split("/")[0];
+  const newKey = `https://github.com/settings/personal-access-tokens/new?name=JobHunter+board&description=Edit+the+JobHunter+board&target_name=${owner}&expires_in=366&contents=write`;
   return `<form class="keybox" id="keyform">
-    <p>מצב עריכה הוא רק לבעלים. הדבק כאן מפתח GitHub (fine-grained token) עם הרשאת <b>Contents: Read and write</b> לריפו <b>${REPO}</b> בלבד. המפתח נשמר רק בדפדפן הזה.</p>
+    <p><b>כניסה עם GitHub — רק לבעלי החשבון ${esc(owner)}.</b></p>
+    <p>1. <a class="btn primary" href="${newKey}" target="_blank" rel="noopener">התחברות ל-GitHub ↗</a> — נכנסים עם הסיסמה של GitHub. הטופס כבר ממולא; רק לבחור <b>Only select repositories ← ${esc(REPO)}</b> וללחוץ <b>Generate token</b>.</p>
+    <p>2. להעתיק את המפתח שנוצר ולהדביק כאן. הוא נשמר רק בדפדפן הזה, שנה אחת.</p>
     <div class="row2"><input id="keyinput" type="password" autocomplete="off" placeholder="github_pat_…" aria-label="מפתח GitHub"><button class="btn primary" type="submit">כניסה</button><button class="btn" type="button" data-keyclose>ביטול</button></div>
     ${state.keyError ? `<div class="err">${esc(state.keyError)}</div>` : ""}
   </form>`;
@@ -450,7 +457,7 @@ function render() {
   const cfg = DATA.config || {}, r = DATA.run || {};
   const links = Object.entries(cfg.links || {}).filter(([, u]) => u).map(([k, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${k === "linkedin" ? "LinkedIn" : k === "github" ? "GitHub" : esc(k)}</a>`);
   el("who").innerHTML = [cfg.owner ? `<b>${esc(cfg.owner)}</b>` : "", esc(cfg.role || ""), esc(cfg.looking_for || ""), ...links].filter(Boolean).map((x) => `<span>${x}</span>`).join("");
-  el("owner").innerHTML = isOwner() ? `<span class="state">מצב עריכה</span><button class="linkbtn" type="button" data-logout>יציאה</button>` : `<button class="linkbtn" type="button" data-login>כניסת בעלים</button>`;
+  el("owner").innerHTML = isOwner() ? `<span class="state">מצב עריכה</span><button class="linkbtn" type="button" data-logout>יציאה</button>` : `<button class="linkbtn" type="button" data-login>כניסה עם GitHub</button>`;
   el("keybox").innerHTML = keyboxHTML();
   el("strip").innerHTML = r.date
     ? `<span class="when">ריצת בוקר ${fmtDate(r.date)}</span><span><b>${nf.format(r.sources_read || 0)}</b> מקורות</span><span><b>${nf.format(r.scanned || 0)}</b> משרות נסרקו</span><span><b>${nf.format(r.new || 0)}</b> חדשות</span><span><b>${nf.format(r.to_brain || 0)}</b> נקראו ע״י Claude</span>${(r.errors || []).length ? `<span class="bad">${r.errors.length} מקורות לא נקראו</span>` : ""}<button class="linkbtn" type="button" data-tab="run">לדוח המלא</button>`
