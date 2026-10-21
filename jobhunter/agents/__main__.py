@@ -20,7 +20,7 @@ from datetime import date
 from pathlib import Path
 
 from jobhunter.agents import (amazon, apple, ashby, comeet, drushim, eightfold, google, greenhouse, hibob, hiremetech, jobmaster,
-                              lever, oracle, smartrecruiters, workday)
+                              lever, oracle, sitemap, smartrecruiters, workday)
 from jobhunter.state import Inbox, SeenStore, collect_new
 
 AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workday.fetch, "eightfold": eightfold.fetch,
@@ -28,9 +28,9 @@ AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workd
           "smartrecruiters": smartrecruiters.fetch, "oracle": oracle.fetch,
           "ashby": ashby.fetch, "apple": apple.fetch,
           "google": google.fetch, "hibob": hibob.fetch,
-          "drushim": drushim.fetch, "jobmaster": jobmaster.fetch}
+          "drushim": drushim.fetch, "jobmaster": jobmaster.fetch, "sitemap": sitemap.fetch}
 SUNDAY = 6  # date.weekday()
-CACHED = {"workday", "eightfold", "hiremetech", "smartrecruiters", "oracle", "apple", "jobmaster"}  # its job list has no text; each text is fetched once and kept in state/cache/<system>-<slug>/
+CACHED = {"workday", "eightfold", "hiremetech", "smartrecruiters", "oracle", "apple", "jobmaster", "sitemap"}  # its job list has no text; each text is fetched once and kept in state/cache/<system>-<slug>/
 
 
 def previous_report(runs_dir: Path, today: date) -> dict | None:

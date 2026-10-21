@@ -223,3 +223,15 @@ def test_closed_for_over_a_week_leaves_the_board():  # user's rule, 21/10/2026
     plan = build_plan(board, [], TODAY)
     _, writes, _ = split_plan(plan, board, TODAY)
     assert [(w["op"], w["doc_id"]) for w in writes] == [("delete", "old")]
+
+
+def test_sitemap_agent_keeps_israel_jobs_and_reads_json_ld():  # Intuit / Synopsys, 21/10/2026
+    from jobhunter.agents import sitemap
+    xml = """<urlset><url><loc>https://jobs.x.com/job/petah-tikva/software-engineer-intern/27595/111</loc></url>
+             <url><loc>https://jobs.x.com/job/toronto/intern/27595/222</loc></url>
+             <url><loc>https://jobs.x.com/category/software/27595/1</loc></url></urlset>"""
+    assert sitemap.job_urls(xml, "jobs.x.com", sitemap.ISRAEL_CITIES) == ["https://jobs.x.com/job/petah-tikva/software-engineer-intern/27595/111"]
+    page = '<script type="application/ld+json">{"@type": "JobPosting", "title": "Software Engineer Intern", "description": "<p>Python</p>", "datePosted": "2026-10-04T00:00:00", "jobLocation": [{"@type": "Place", "address": {"addressLocality": "Petach Tikva", "addressCountry": "Israel"}}]}</script>'
+    posting = sitemap.job_posting(page)
+    assert posting["title"] == "Software Engineer Intern" and posting["description"] == "Python"
+    assert posting["posted_at"] == "2026-10-04" and posting["location"] == "Petach Tikva, Israel"

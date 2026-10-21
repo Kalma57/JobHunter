@@ -40,7 +40,13 @@
       {"company": "Marvell", "slug": "marvell", "host": "marvell.wd1.myworkdayjobs.com", "tenant": "marvell", "site": "MarvellCareers"},
       {"company": "HP", "slug": "hp", "host": "hp.wd5.myworkdayjobs.com", "tenant": "hp", "site": "ExternalCareerSite"},
       {"company": "Salesforce", "slug": "salesforce", "host": "salesforce.wd12.myworkdayjobs.com", "tenant": "salesforce", "site": "External_Career_Site"},
-      {"company": "Cisco", "slug": "cisco", "host": "cisco.wd5.myworkdayjobs.com", "tenant": "cisco", "site": "Cisco_Careers"}
+      {"company": "Cisco", "slug": "cisco", "host": "cisco.wd5.myworkdayjobs.com", "tenant": "cisco", "site": "Cisco_Careers"},
+      {"company": "PayPal", "slug": "paypal", "host": "paypal.wd1.myworkdayjobs.com", "tenant": "paypal", "site": "jobs"},
+      {"company": "Cadence", "slug": "cadence", "host": "cadence.wd1.myworkdayjobs.com", "tenant": "cadence", "site": "External_Careers"}
+    ],
+    "sitemap": [
+      {"company": "Intuit", "slug": "intuit", "host": "jobs.intuit.com"},
+      {"company": "Synopsys", "slug": "synopsys", "host": "careers.synopsys.com"}
     ],
     "eightfold": [
       {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"},
