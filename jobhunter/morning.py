@@ -33,9 +33,7 @@ from jobhunter.dedup import find_matches
 from jobhunter.retention import compaction_update
 from jobhunter.state import Inbox, _read_json, _write_json
 
-# A job is "closed" when its company was read successfully today but the job hasn't been listed for more than
-# CLOSED_AFTER_DAYS (a week, so jobs found only by the Sunday scan aren't closed between Sundays).
-CLOSED_AFTER_DAYS = 7
+# A job is "closed" when a weekly scan read its company after it was last seen and did not list it (find_closures).
 CLOSABLE = {"new", "filtered", "hold", "not_interested"}  # applied & co. keep their status; the user tracks them
 NO_FULL_LISTING = ("hiremetech:", "jobmaster:")  # read only the newest pages, so an old job not listed there is not a sign
 
@@ -102,26 +100,48 @@ def deadline_closures(board: dict[str, dict], today: date) -> list[dict]:
     return out
 
 
+def weekly_scans(state: Path) -> dict[str, str]:
+    """source -> the date of its latest weekly scan that read it successfully (state/runs/*-agents.json)."""
+    out: dict[str, str] = {}
+    for path in sorted((state / "runs").glob("*-agents.json")):
+        report = _read_json(path, {})
+        if report.get("kind") != "weekly":
+            continue
+        for c in report.get("companies", []):
+            if "error" not in c and "warning" not in c:
+                out[c["source"]] = report.get("date") or path.name[:10]
+    return out
+
+
+def weekly_due(state: Path, today: date) -> bool:
+    """Sundays, or any morning when the last weekly scan is more than a week old (a Sunday the computer was off)."""
+    if today.weekday() == 6:
+        return True
+    dates = [path.name[:10] for path in (state / "runs").glob("*-agents.json") if _read_json(path, {}).get("kind") == "weekly"]
+    return not dates or (today - date.fromisoformat(max(dates))).days > 7
+
+
 def find_closures(board: dict[str, dict], state: Path, today: date) -> list[dict]:
-    """Board jobs from a company agent whose job is gone from the site (see CLOSED_AFTER_DAYS), and board jobs
-    whose application deadline has passed."""
+    """Board jobs whose job is gone from the company site, and board jobs whose application deadline has passed.
+
+    Gone = a weekly scan read the company successfully AFTER the job was last seen, and did not list it. The weekly
+    words include the daily ones, so an open job always shows up in a weekly scan. (Until 21/10/2026 the rule was
+    "not seen for 7 days", which closed 24 open jobs found by the weekly words when a Sunday scan was missed.)"""
     by_deadline = deadline_closures(board, today)
     done = {c["board_id"] for c in by_deadline}
-    report = _read_json(state / "runs" / f"{today.isoformat()}-agents.json", {})
-    # a site that failed, or suddenly listed 0 jobs (a glitch, not 0 jobs), says nothing about which jobs closed
-    read_ok = {c["source"] for c in report.get("companies", []) if "error" not in c and "warning" not in c}
+    scanned = weekly_scans(state)
     seen_cache: dict[str, dict] = {}
     out = []
     for board_id, job in board.items():
         agent_id, source = job.get("agent_id"), job.get("source") or ""
-        if board_id in done or not agent_id or job.get("status") not in CLOSABLE or source not in read_ok or source.startswith(NO_FULL_LISTING):
+        if board_id in done or not agent_id or job.get("status") not in CLOSABLE or source not in scanned or source.startswith(NO_FULL_LISTING):
             continue
         if source not in seen_cache:
             seen_cache[source] = _read_json(state / "seen" / f"{source.replace(':', '-')}.json", {})
         last = seen_cache[source].get(agent_id)
-        if last and (today - date.fromisoformat(last)).days <= CLOSED_AFTER_DAYS:
+        if last and last >= scanned[source]:
             continue
-        note = f"ירדה מאתר החברה (נראתה לאחרונה {last})" if last else "ירדה מאתר החברה"
+        note = f"ירדה מאתר החברה (נראתה לאחרונה {last}, לא הופיעה בסריקה השבועית של {scanned[source]})" if last else "ירדה מאתר החברה"
         out.append({"board_id": board_id, "update": _closed(job, today, note)})
     return by_deadline + out
 
@@ -289,7 +309,7 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     plan_dir.mkdir(parents=True, exist_ok=True)
     report_path = state / "runs" / f"{today.isoformat()}-agents.json"
     if run_agents:
-        report = run_all(json.loads(config.read_text(encoding="utf-8")), state, today, today.weekday() == SUNDAY)
+        report = run_all(json.loads(config.read_text(encoding="utf-8")), state, today, weekly_due(state, today))
         _write_json(report_path, report)
     report = _read_json(report_path, {"new": 0, "errors": [], "warnings": [], "companies": [], "kind": "daily"})
 

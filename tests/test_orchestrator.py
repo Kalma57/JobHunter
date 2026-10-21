@@ -145,20 +145,34 @@ def test_job_gone_from_the_site_is_closed(tmp_path):
     from jobhunter.morning import find_closures
     (tmp_path / "runs").mkdir()
     (tmp_path / "seen").mkdir()
-    (tmp_path / "runs" / f"{TODAY}-agents.json").write_text(json.dumps({"companies": [
+    # the latest weekly scan (Sunday 04/10) read Mobileye; KLA failed there; Apple listed 0 (a glitch)
+    (tmp_path / "runs" / "2026-10-04-agents.json").write_text(json.dumps({"kind": "weekly", "date": "2026-10-04", "companies": [
         {"source": "lever:mobileye"}, {"source": "workday:kla", "error": "FetchError: 503"}, {"source": "hiremetech:juniors"},
         {"source": "apple:apple", "warning": "0 jobs in Israel today"}]}))
     (tmp_path / "seen" / "lever-mobileye.json").write_text(json.dumps({"open": TODAY.isoformat(), "weekly": "2026-10-04", "gone": "2026-09-20"}))
     board = {
         "a": {"agent_id": "open", "source": "lever:mobileye", "status": "new"},
-        "b": {"agent_id": "weekly", "source": "lever:mobileye", "status": "filtered"},   # Sunday-scan job, 6 days
+        "b": {"agent_id": "weekly", "source": "lever:mobileye", "status": "filtered"},   # seen by the weekly scan itself
         "c": {"agent_id": "gone", "source": "lever:mobileye", "status": "filtered", "history": [{"status": "filtered"}]},
         "d": {"agent_id": "gone", "source": "lever:mobileye", "status": "applied"},      # the user's own tracking
-        "e": {"agent_id": "x", "source": "workday:kla", "status": "new"},                # site failed today
+        "e": {"agent_id": "x", "source": "workday:kla", "status": "new"},                # the weekly scan failed there
         "f": {"agent_id": "y", "source": "hiremetech:juniors", "status": "new"},         # board reads newest pages only
         "g": {"source": "lever:mobileye", "status": "new"},                              # no agent id (gold set)
-        "h": {"agent_id": "z", "source": "apple:apple", "status": "new"},                # 0 jobs today: a glitch
+        "h": {"agent_id": "z", "source": "apple:apple", "status": "new"},                # 0 jobs: a glitch
     }
     [closure] = find_closures(board, tmp_path, TODAY)
     assert closure["board_id"] == "c" and closure["update"]["status"] == "closed"
-    assert closure["update"]["history"][-1]["note"] == "ירדה מאתר החברה (נראתה לאחרונה 2026-09-20)"
+    assert "2026-09-20" in closure["update"]["history"][-1]["note"]
+
+
+def test_a_missed_sunday_does_not_close_open_jobs(tmp_path):  # 20/10/2026: 24 open jobs were closed
+    import json
+    from jobhunter.morning import find_closures, weekly_due
+    (tmp_path / "runs").mkdir()
+    (tmp_path / "seen").mkdir()
+    (tmp_path / "runs" / "2026-10-11-agents.json").write_text(json.dumps({"kind": "weekly", "date": "2026-10-11", "companies": [{"source": "amazon:amazon"}]}))
+    (tmp_path / "seen" / "amazon-amazon.json").write_text(json.dumps({"weekly-only": "2026-10-11"}))
+    board = {"a": {"agent_id": "weekly-only", "source": "amazon:amazon", "status": "filtered"}}
+    assert find_closures(board, tmp_path, date(2026, 10, 20)) == []
+    assert weekly_due(tmp_path, date(2026, 10, 20))        # Sunday 18/10 was missed: scan the next morning
+    assert not weekly_due(tmp_path, date(2026, 10, 14))
