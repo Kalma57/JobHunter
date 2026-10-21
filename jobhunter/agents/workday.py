@@ -70,15 +70,19 @@ def list_israel(company: dict) -> tuple[list[dict], int]:
     page = _list_page(company, facets, 0)
     site_total = page.get("total") or 0  # Workday sends the total on the first page only
     postings: dict[str, dict] = {}
+    broken = 0  # an entry without its job link (NVIDIA, 21/10/2026: one odd entry made the whole company fail)
     offset = 0
     while True:
         for posting in page.get("jobPostings") or []:
+            if not posting.get("externalPath"):
+                broken += 1
+                continue
             postings.setdefault(posting["externalPath"], posting)
         offset += PAGE_SIZE
         if not page.get("jobPostings") or offset >= site_total:
             break
         page = _list_page(company, facets, offset)
-    if len(postings) != site_total:
+    if len(postings) + broken != site_total:
         raise FetchError(f"listed {len(postings)} jobs in Israel but the site says {site_total}")
     return list(postings.values()), site_total
 

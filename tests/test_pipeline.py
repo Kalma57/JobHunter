@@ -203,3 +203,12 @@ def test_a_morning_claude_never_finished_goes_back_to_the_queue(tmp_path):  # 21
     done_marker(tmp_path, "2026-10-20").parent.mkdir(parents=True)
     done_marker(tmp_path, "2026-10-20").write_text("{}", encoding="utf-8")
     assert unfinished_jobs(tmp_path) == []
+
+
+def test_workday_entry_without_a_link_is_skipped(monkeypatch):  # NVIDIA, 21/10/2026
+    from jobhunter.agents import workday
+    pages = [{"facets": [{"facetParameter": "country", "values": [{"descriptor": "Israel", "id": "IL"}]}]},
+             {"total": 2, "jobPostings": [{"externalPath": "/job/a_JR1", "title": "A"}, {"title": "odd entry"}]}]
+    monkeypatch.setattr(workday, "_list_page", lambda company, facets, offset: pages[0] if not facets else pages[1])
+    postings, total = workday.list_israel({"host": "h", "tenant": "t", "site": "s"})
+    assert [p["externalPath"] for p in postings] == ["/job/a_JR1"] and total == 2
