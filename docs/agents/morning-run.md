@@ -15,8 +15,10 @@
 
 ## הצעדים
 
-**1. מה מוכן.** Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\next.json`.
-- הקובץ לא קיים, או ש-`date` בו **לא** התאריך של היום ← הקוד עוד לא רץ היום (המחשב נדלק מאוחר, או ש-Task Scheduler לא רץ). **לא עושים כלום מלבד:** `PushNotification`: `"JobHunter: הקוד של הבוקר עוד לא רץ — המשרות ייקלטו בריצה הבאה."` ומסיימים.
+**1. מה מוכן.** (המשימה רצה כל שעה 09:05-21:05; רק ריצה אחת ביום עובדת, השאר מסיימות מיד — 22/10/2026: כשהמחשב נדלק מאוחר, Claude ו-Windows התעוררו יחד ו-Claude לא חיכה לקוד.)
+Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\next.json`.
+- הקובץ לא קיים, או ש-`date` בו **לא** התאריך של היום ← הקוד עוד לא סיים היום. **מסיימים מיד, בלי התראה ובלי דוח** — הריצה של השעה הבאה תמשיך.
+- Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\done\runs\<date>.json`. **הקובץ קיים** ← הבוקר הזה כבר טופל. **מסיימים מיד, בלי התראה.**
 - אחרת: `D` = `date`. ב-`files` שלושה קבצים: `brain`, `batch`, `run`. ב-`errors` / `warnings` — מקורות שלא נקראו.
 
 **2. תמונת מצב של הלוח.** `ArtifactData` `list` על `jobs`, `query.limit` 1000, `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board`. **לשמור את התוצאה** — יש בה ה-`version` של כל משרה.
