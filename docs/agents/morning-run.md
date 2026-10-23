@@ -8,6 +8,7 @@
 - **Claude (אתה)** — רק קריאת קבצים, כתיבה ללוח, והתראה. **אין שום פקודה להריץ.**
 
 הריצה רצה **בלי אדם**. לכן:
+- **אף פעם לא `file_path` ב-ArtifactData** — כל `data` בתוך הקריאה. (`file_path` = בקשת אישור עם שם קובץ חדש כל יום, והריצה נתקעת.) `out_dir` בקריאה (צעדים 2, 6, 7) — בסדר.
 - **לא מריצים פקודות** (לא Bash, לא PowerShell). לא כותבים ולא עורכים קבצים. קוראים בכלי Read בלבד.
 - כלים: `ArtifactData` ו-`PushNotification` (ToolSearch: `select:ArtifactData,PushNotification`).
 - הלוח: `https://claude.ai/artifact/BJhyULgtUPVBvZVUm313Fu`.
@@ -19,18 +20,18 @@
 Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\next.json`.
 - הקובץ לא קיים, או ש-`date` בו **לא** התאריך של היום ← הקוד עוד לא סיים היום. **מסיימים מיד, בלי התראה ובלי דוח** — הריצה של השעה הבאה תמשיך.
 - Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\done\runs\<date>.json`. **הקובץ קיים** ← הבוקר הזה כבר טופל. **מסיימים מיד, בלי התראה.**
-- אחרת: `D` = `date`. ב-`files` שלושה קבצים: `brain`, `batch`, `run`. ב-`errors` / `warnings` — מקורות שלא נקראו.
+- אחרת: `D` = `date`. ב-`files`: `brain`, `batch`, `rundoc` (ו-`run` — לא בשבילך). ב-`errors` / `warnings` — מקורות שלא נקראו.
 
 **2. תמונת מצב של הלוח.** `ArtifactData` `list` על `jobs`, `query.limit` 1000, `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board`. **לשמור את התוצאה** — יש בה ה-`version` של כל משרה.
 
-**3. הכתיבות של הקוד.** Read `files.batch`. אם לא ריק — `ArtifactData` `batch` (עד 50 בכל קריאה): `op`, `collection`, `doc_id`, `file_path` (אם יש) כמו שהם, ו-`if_version` = ה-version של אותו `doc_id` מצעד 2. (`why` — רק להסבר, לא שולחים.) פריט `delete` (בלי `file_path`) = משרה שנסגרה לפני יותר משבוע — יוצאת מהלוח (החלטת המשתמש 21/10).
+**3. הכתיבות של הקוד.** Read `files.batch`. אם לא ריק — `ArtifactData` `batch` (עד 50 בכל קריאה): לכל פריט `op`, `collection`, `doc_id`, ו-`data` (אם יש) **מועתק כמו שהוא בתוך הקריאה**, ו-`if_version` = ה-version של אותו `doc_id` מצעד 2. (`why` — רק להסבר, לא שולחים.) פריט `delete` (בלי `data`) = משרה שנסגרה לפני יותר משבוע — יוצאת מהלוח.
 
 **4. המוח.** Read `files.brain`, [`brain.md`](brain.md), [`job-card.md`](../job-card.md), [`search.md`](../search.md). לכל פריט:
 - **יש `borderline`** — אותה משרה כמו המועמד? רק אם התפקיד, הדרישות והמיקום תואמים ואין סתירה. בספק ← **לא כפילות**. כפילות ← לא יוצרים משרה; `update` למשרה הקיימת: `sightings` = הקיימות (מ-`state/board/jobs/<id>.json`) + `fields.sightings`, `alerts` = הקיימות + "אוחדה עם משרה דומה — בדוק". הסטטוס לא משתנה.
 - **אחרת** — כרטיס לפי `brain.md` מ-`job` (הטקסט ב-`job.description`) ← מסמך חדש ב-`jobs`, `doc_id` = `doc_id` של הפריט: שדות הכרטיס + `fields` + `status` (`new` / `filtered`) + `history: [{status, at: "<D>T07:00:00Z", note: <history_note>}]`. בלי `if_version`.
 - ב-`batch` של עד 50, `data` בתוך הקריאה.
 
-**5. שורת הריצה.** `ArtifactData` `get` על `runs` / `D`. קיימת ← `set` עם `if_version` שלה; אחרת `set` בלי. `file_path` = `files.run`. אחר כך `update` (עם ה-version שחזר):
+**5. שורת הריצה.** Read `files.rundoc`. `ArtifactData` `get` על `runs` / `D`. קיימת ← `set` עם `if_version` שלה; אחרת `set` בלי. `data` = תוכן `rundoc` **ועוד** השדות: `{passed, brain_filtered, far, borderline: ["<משרה> — <מה הוחלט ולמה>"], summary: "<N> עברו · <M> סוננו ע\"י המוח · <P> סוננו בקוד · <K> כפילויות · <B> ממתינות"}` — הכל בקריאה אחת.
 `{passed, brain_filtered, far, borderline: ["<משרה> — <מה הוחלט ולמה>"], summary: "<N> עברו · <M> סוננו ע\"י המוח · <P> סוננו בקוד · <K> כפילויות · <B> ממתינות"}`.
 
 **6. תמונת מצב שנייה** — אותה קריאה של צעד 2 בדיוק (ממנה נבנה הדף הציבורי).

@@ -235,3 +235,11 @@ def test_sitemap_agent_keeps_israel_jobs_and_reads_json_ld():  # Intuit / Synops
     posting = sitemap.job_posting(page)
     assert posting["title"] == "Software Engineer Intern" and posting["description"] == "Python"
     assert posting["posted_at"] == "2026-10-04" and posting["location"] == "Petach Tikva, Israel"
+
+
+def test_board_writes_carry_their_data_inline():  # 23/10/2026: a file_path stalled the unattended runs
+    from jobhunter.morning import batch_entries
+    entries = batch_entries([{"op": "update", "collection": "jobs", "doc_id": "a", "data": {"x": 1}, "why": "w"},
+                             {"op": "delete", "collection": "jobs", "doc_id": "b", "data": None, "why": "w"}])
+    assert entries[0]["data"] == {"x": 1} and "data" not in entries[1]
+    assert not any("file_path" in e for e in entries)

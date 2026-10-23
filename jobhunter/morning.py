@@ -266,20 +266,17 @@ def split_plan(plan: dict, board: dict[str, dict], today: date) -> tuple[list[di
     return brain, writes, counts
 
 
-def _write_batch_files(writes: list[dict], out_dir: Path) -> list[dict]:
-    """Each write's data in its own file, so the board writes need no retyping. Returns the batch entries."""
-    out_dir.mkdir(parents=True, exist_ok=True)
-    for old in out_dir.glob("*.json"):
-        old.unlink()
-    entries = []
-    for n, w in enumerate(writes, 1):
+def batch_entries(writes: list[dict]) -> list[dict]:
+    """The code's board writes, ready to copy into one ArtifactData batch: data inline, never a file path.
+    (A file_path makes the board tool read a local file - an approval prompt with a new file name every day, so
+    "always allow" never covered it: the unattended runs of 15/10 and 22/10 stalled exactly there.)"""
+    out = []
+    for w in writes:
         entry = {"op": w["op"], "collection": w["collection"], "doc_id": w["doc_id"], "if_version": None, "why": w["why"]}
         if w["data"] is not None:  # a delete has no data
-            path = out_dir / f"{n:03d}-{w['doc_id']}.json"
-            path.write_text(json.dumps(w["data"], ensure_ascii=False, indent=1), encoding="utf-8")
-            entry["file_path"] = str(path.resolve())
-        entries.append(entry)
-    return entries
+            entry["data"] = w["data"]
+        out.append(entry)
+    return out
 
 
 def done_marker(state: Path, day: str) -> Path:
@@ -329,9 +326,9 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     _write_json(plan_dir / f"{today.isoformat()}.json", plan)
 
     brain, writes, counts = split_plan(plan, board, today)
-    files = {name: plan_dir / f"{today.isoformat()}-{name}.json" for name in ("brain", "batch", "run")}
+    files = {name: plan_dir / f"{today.isoformat()}-{name}.json" for name in ("brain", "batch", "run", "rundoc")}
     _write_json(files["brain"], brain)
-    _write_json(files["batch"], _write_batch_files(writes, plan_dir / f"{today.isoformat()}-writes"))
+    _write_json(files["batch"], batch_entries(writes))
 
     companies = report.get("companies", [])
     run = {
@@ -353,7 +350,11 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "errors": report.get("errors", []),
         "warnings": report.get("warnings", []) + ([marks_error] if marks_error else []),
     }
-    _write_json(files["run"], run)
+    _write_json(files["run"], run)  # the full run, for the public page
+    # the run row for the board, small enough to pass inline: the prefiltered list as short lines, at most 60
+    _write_json(files["rundoc"], {**{k: v for k, v in run.items() if k != "prefiltered"},
+                                  "prefiltered": [{"title": j["title"], "company": j["company"], "reason": j["reason"]}
+                                                  for j in run["prefiltered"][:60]]})
     (plan_dir / "last-prepare.txt").write_text(today.isoformat(), encoding="utf-8")
     done_marker(state, today.isoformat()).unlink(missing_ok=True)
     result = {
