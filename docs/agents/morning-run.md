@@ -19,7 +19,7 @@
 **1. מה מוכן.** (המשימה רצה כל שעה 09:05-21:05; רק ריצה אחת ביום עובדת, השאר מסיימות מיד — 22/10/2026: כשהמחשב נדלק מאוחר, Claude ו-Windows התעוררו יחד ו-Claude לא חיכה לקוד.)
 Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\next.json`.
 - הקובץ לא קיים, או ש-`date` בו **לא** התאריך של היום ← הקוד עוד לא סיים היום. **מסיימים מיד, בלי התראה ובלי דוח** — הריצה של השעה הבאה תמשיך.
-- Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\done\runs\<date>.json`. **הקובץ קיים** ← הבוקר הזה כבר טופל. **מסיימים מיד, בלי התראה.**
+- Read `C:\Users\kalma\IdeaProjects\JobHunter\state\board\runs\<date>.json`. **הקובץ קיים** ← הבוקר הזה כבר טופל. **מסיימים מיד, בלי התראה.**
 - אחרת: `D` = `date`. ב-`files`: `brain`, `batch`, `rundoc` (ו-`run` — לא בשבילך). ב-`errors` / `warnings` — מקורות שלא נקראו.
 
 **2. תמונת מצב של הלוח.** `ArtifactData` `list` על `jobs`, `query.limit` 1000, `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board`. **לשמור את התוצאה** — יש בה ה-`version` של כל משרה.
@@ -32,11 +32,10 @@ Read `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\next.json`.
 - ב-`batch` של עד 50, `data` בתוך הקריאה.
 
 **5. שורת הריצה.** Read `files.rundoc`. `ArtifactData` `get` על `runs` / `D`. קיימת ← `set` עם `if_version` שלה; אחרת `set` בלי. `data` = תוכן `rundoc` **ועוד** השדות: `{passed, brain_filtered, far, borderline: ["<משרה> — <מה הוחלט ולמה>"], summary: "<N> עברו · <M> סוננו ע\"י המוח · <P> סוננו בקוד · <K> כפילויות · <B> ממתינות"}` — הכל בקריאה אחת.
-`{passed, brain_filtered, far, borderline: ["<משרה> — <מה הוחלט ולמה>"], summary: "<N> עברו · <M> סוננו ע\"י המוח · <P> סוננו בקוד · <K> כפילויות · <B> ממתינות"}`.
 
 **6. תמונת מצב שנייה** — אותה קריאה של צעד 2 בדיוק (ממנה נבנה הדף הציבורי).
 
-**7. סימן "סיימתי".** `ArtifactData` `get` על `runs` / `D` עם `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\plan\done`. הקובץ שנוצר הוא הסימן ש-`finish` מחכה לו (דף ציבורי + גיבוי). **בלי הצעד הזה הבוקר לא נשמר** — לעשות אותו גם אם צעד קודם נכשל.
+**7. סימן "סיימתי".** `ArtifactData` `get` על `runs` / `D` עם `out_dir` = `C:\Users\kalma\IdeaProjects\JobHunter\state\board` (אותה תיקייה כמו צעדים 2 ו-6, לא מקום חדש). הקובץ שנוצר (`state\board\runs\D.json`) הוא הסימן שהקוד מחכה לו (דף ציבורי + גיבוי). **בלי הצעד הזה הבוקר לא נשמר** — לעשות אותו גם אם צעד קודם נכשל.
 
 **8. התראה.** `PushNotification`: `"JobHunter: <N> משרות חדשות שמתאימות הבוקר. https://kalma57.github.io/JobHunter/"` + `" ⚠️ לא נקראו: <שמות>"` אם יש `errors`.
 

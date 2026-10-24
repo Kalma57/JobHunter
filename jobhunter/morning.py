@@ -398,7 +398,7 @@ def finish(state: Path, board_dir: Path, today: date, push: bool = True) -> dict
     if code == 0:
         message = f"Morning run {today.isoformat()}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
         code, out = _git("commit", "-m", message)
-        if code != 0 and "nothing to commit" in out:
+        if code != 0 and ("nothing to commit" in out or "no changes added to commit" in out):
             code, out = 0, "nothing to commit"
     if code == 0 and push:
         code, out = _git("push")
