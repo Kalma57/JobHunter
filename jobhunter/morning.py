@@ -280,8 +280,12 @@ def batch_entries(writes: list[dict]) -> list[dict]:
 
 
 def done_marker(state: Path, day: str) -> Path:
-    """Written by the Claude run as its last board step (ArtifactData get runs/<day> with out_dir state/plan/done)."""
-    return state / "plan" / "done" / "runs" / f"{day}.json"
+    """Written by the Claude run as its last board step: ArtifactData get runs/<day> with out_dir state/board - the
+    same folder as its board snapshot, so the run never writes anywhere new (24/10/2026: a stall at that step).
+    The older place (state/plan/done/runs) still counts for mornings marked before the change."""
+    new = state / "board" / "runs" / f"{day}.json"
+    old = state / "plan" / "done" / "runs" / f"{day}.json"
+    return old if old.exists() and not new.exists() else new
 
 
 def unfinished_jobs(state: Path) -> list[dict]:
