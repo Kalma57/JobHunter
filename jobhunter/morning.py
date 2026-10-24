@@ -414,6 +414,8 @@ def main(argv: list[str] | None = None) -> int:
         cmd.add_argument("--no-agents", action="store_true", help="prepare: reuse today's agents report (a re-run)")
         cmd.add_argument("--no-push", action="store_true", help="finish: commit without pushing")
         cmd.add_argument("--wait", action="store_true", help="finish: first wait for the Claude run's done marker")
+        cmd.add_argument("--if-done", action="store_true",
+                         help="finish: only if the Claude run is done and this morning was not published yet (hourly)")
         cmd.add_argument("--wait-hours", type=float, default=10.0)
     args = parser.parse_args(argv)
     sys.stdout.reconfigure(encoding="utf-8")
@@ -426,13 +428,21 @@ def main(argv: list[str] | None = None) -> int:
         # the morning that prepare prepared - a run that waited past midnight still finishes its own date (15/10/2026)
         last = args.state / "plan" / "last-prepare.txt"
         day = args.today if "--today" in (argv or sys.argv) or not last.exists() else date.fromisoformat(last.read_text().strip())
+        published = args.state / "plan" / "published" / f"{day.isoformat()}.txt"
+        if args.if_done and (published.exists() or not done_marker(args.state, day.isoformat()).exists()):
+            print(json.dumps({"date": day.isoformat(), "skipped": "already published" if published.exists() else "Claude not done yet"}))
+            return 0
         if args.wait:  # Windows Task Scheduler: prepare, then this waits for the Claude run, then publishes (21/10/2026)
             import time
             deadline = time.monotonic() + args.wait_hours * 3600
             while not done_marker(args.state, day.isoformat()).exists() and time.monotonic() < deadline:
                 time.sleep(60)
             print(json.dumps({"waited_for": day.isoformat(), "claude_done": done_marker(args.state, day.isoformat()).exists()}))
-        print(json.dumps(finish(args.state, args.board_dir, day, push=not args.no_push), ensure_ascii=False, indent=1))
+        result = finish(args.state, args.board_dir, day, push=not args.no_push)
+        if done_marker(args.state, day.isoformat()).exists():  # this morning's board is in the page: no more publishing needed
+            published.parent.mkdir(parents=True, exist_ok=True)
+            published.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
+        print(json.dumps(result, ensure_ascii=False, indent=1))
         return 0
 
     backlog_path = args.state / "inbox" / "backlog.json"
