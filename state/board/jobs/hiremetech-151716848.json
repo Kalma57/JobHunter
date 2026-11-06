@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:151716848",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151716848",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מנהל/ת תוכנית RUNI Computer Science Internship באוניברסיטת רייכמן.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני שעה"
+  },
+  "is_job": true,
+  "level": [
+    "מנהל/ת"
+  ],
+  "location": "הרצליה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-24",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: ניהול תוכנית אקדמית, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151716848"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "דרוש/ה מנהל/ת תוכנית RUNI Computer Science Internship - לבית ספר אפי ארזי למדעי המחשב",
+  "url": "https://juniors.hiremetech.com/job/151716848",
+  "work_mode": null
+}

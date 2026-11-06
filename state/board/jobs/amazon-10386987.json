@@ -1,0 +1,59 @@
+{
+  "agent_id": "amazon:10386987",
+  "alerts": [
+    "משרה ישנה — פורסמה לפני יותר מ-60 יום"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.com/jobs/10386987/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת פיתוח תוכנה לבוגרי 2026 (SDE-I).",
+  "education": "בוגר/ת תואר",
+  "employment": "קבועה",
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-04-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה לבוגרים במשרה מלאה, לא משרת סטודנט; גם חיפה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10386987/2026-graduate-software-dev-engineer"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "2026 Graduate Software Dev Engineer",
+  "url": "https://www.amazon.jobs/en/jobs/10386987/2026-graduate-software-dev-engineer",
+  "work_mode": null
+}

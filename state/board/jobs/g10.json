@@ -1,0 +1,54 @@
+{
+  "agent_id": "workday:kla:2638234-1",
+  "alerts": [],
+  "apply_url": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Research-Scientist-Student_2638234-1",
+  "company": "KLA",
+  "description": "מחקר במטרולוגיה אופטית. (מתוך צילום מסך)",
+  "education": "סטודנט לפיזיקה / הנדסת חשמל",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #10",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "location": "הוסק מתיאור החברה (\"KLA Israel is located in Migdal Haemek\")."
+  },
+  "level": [
+    "סטודנט"
+  ],
+  "location": "מגדל העמק",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-07-02",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "פיזיקה ואופטיקה, לא פיתוח תוכנה; מגדל העמק — צפון."
+  },
+  "requirements_adv": [
+    "אופטיקה"
+  ],
+  "requirements_must": [
+    "סטודנט לפיזיקה / הנדסת חשמל",
+    "מידול אנליטי / נומרי"
+  ],
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "workday:kla",
+      "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Research-Scientist-Student_2638234-1"
+    }
+  ],
+  "source": "workday:kla",
+  "status": "filtered",
+  "title": "Research Scientist Student",
+  "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Research-Scientist-Student_2638234-1"
+}

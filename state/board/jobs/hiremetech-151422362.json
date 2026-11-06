@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:151422362",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151422362",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פרויקטורית במשרה חלקית (Excel ברמה גבוהה).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני יום"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: ניהול פרויקטים, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "Excel ברמה גבוהה"
+  ],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151422362"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "פרוייקטורית משרה חלקית",
+  "url": "https://juniors.hiremetech.com/job/151422362",
+  "work_mode": null
+}

@@ -237,9 +237,30 @@ def test_sitemap_agent_keeps_israel_jobs_and_reads_json_ld():  # Intuit / Synops
     assert posting["posted_at"] == "2026-10-04" and posting["location"] == "Petach Tikva, Israel"
 
 
-def test_board_writes_carry_their_data_inline():  # 23/10/2026: a file_path stalled the unattended runs
-    from jobhunter.morning import batch_entries
-    entries = batch_entries([{"op": "update", "collection": "jobs", "doc_id": "a", "data": {"x": 1}, "why": "w"},
-                             {"op": "delete", "collection": "jobs", "doc_id": "b", "data": None, "why": "w"}])
-    assert entries[0]["data"] == {"x": 1} and "data" not in entries[1]
-    assert not any("file_path" in e for e in entries)
+def test_the_code_writes_the_board_itself(tmp_path):  # 6/11/2026: no app tool between the code and the board
+    from jobhunter import store
+    (tmp_path / "jobs").mkdir()
+    (tmp_path / "jobs" / "a.json").write_text(json.dumps({"title": "A", "description": "long", "sightings": []}), encoding="utf-8")
+    (tmp_path / "jobs" / "b.json").write_text(json.dumps({"title": "B"}), encoding="utf-8")
+    counts = store.apply_writes(tmp_path, [
+        {"op": "update", "doc_id": "a", "data": {"sightings": [{"source": "x"}], "description": {"__delete__": True}}},
+        {"op": "delete", "doc_id": "b", "data": None}])
+    a = json.loads((tmp_path / "jobs" / "a.json").read_text(encoding="utf-8"))
+    assert counts == {"updated": 1, "deleted": 1, "missing": 0}
+    assert a["sightings"] == [{"source": "x"}] and "description" not in a and not (tmp_path / "jobs" / "b.json").exists()
+
+
+def test_cards_become_board_jobs_or_merge_into_one(tmp_path):
+    from jobhunter import store
+    (tmp_path / "jobs").mkdir()
+    (tmp_path / "jobs" / "old.json").write_text(json.dumps({"title": "Old", "status": "hold", "sightings": [{"source": "s1"}]}), encoding="utf-8")
+    brain = [{"doc_id": f"n{i}", "fields": {"agent_id": f"x:{i}", "sightings": [{"source": f"s{i + 2}"}]},
+              "history_note": "found", "job": {"title": f"T{i}"}, "borderline": []} for i in range(3)]
+    cards = [{"doc_id": "n0", "title": "T0", "status": "new", "relevance": {"pass": True}},
+             {"doc_id": "n1", "duplicate_of": "old", "duplicate_reason": "same"}]
+    counts, missing = store.apply_cards(tmp_path, brain, cards, "2026-11-06")
+    new = json.loads((tmp_path / "jobs" / "n0.json").read_text(encoding="utf-8"))
+    old = json.loads((tmp_path / "jobs" / "old.json").read_text(encoding="utf-8"))
+    assert new["status"] == "new" and new["agent_id"] == "x:0" and new["history"][0]["at"] == "2026-11-06T07:00:00Z"
+    assert old["status"] == "hold" and len(old["sightings"]) == 2 and old["alerts"]
+    assert counts["passed"] == 1 and counts["merged"] == 1 and [m["doc_id"] for m in missing] == ["n2"]

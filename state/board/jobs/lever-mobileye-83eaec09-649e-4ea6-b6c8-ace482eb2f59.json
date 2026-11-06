@@ -1,0 +1,81 @@
+{
+  "agent_id": "lever:mobileye:83eaec09-649e-4ea6-b6c8-ace482eb2f59",
+  "alerts": [
+    "משרה ישנה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/83eaec09-649e-4ea6-b6c8-ace482eb2f59/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": "תואר גמור",
+  "description": "פיתוח אלגוריתמי לוקליזציה ו-deep learning (Transformers, GNN, CNN) לרכב אוטונומי.",
+  "education": "B.Sc מדעי המחשב / הנדסת תוכנה מאוניברסיטה מובילה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-07-30",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "משרת בוגרים: דורשת B.Sc גמור, לא משרת סטודנט."
+  },
+  "requirements_adv": [
+    "M.Sc עם תזה"
+  ],
+  "requirements_must": [
+    "B.Sc מדעי המחשב / הנדסת תוכנה",
+    "Python ו-C++",
+    "אלגוריתמים, מתמטיקה, ראייה ממוחשבת / deep learning"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/83eaec09-649e-4ea6-b6c8-ace482eb2f59"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "filtered",
+  "title": "Outstanding Graduate Algorithm Developer - Vision Localization Group",
+  "url": "https://jobs.eu.lever.co/mobileye/83eaec09-649e-4ea6-b6c8-ace482eb2f59",
+  "work_mode": null
+}

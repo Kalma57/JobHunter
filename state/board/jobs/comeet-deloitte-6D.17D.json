@@ -1,0 +1,72 @@
+{
+  "agent_id": "comeet:deloitte:6D.17D",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/public-sector-junior-consultant/6D.17D",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "יועץ/ת ג'וניור במגזר הציבורי.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Tel-Aviv, Tel Aviv",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-11",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: ייעוץ עסקי."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/position/6d-17d-en/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "closed",
+  "title": "Public Sector Junior Consultant",
+  "url": "https://careers.deloitte.co.il/position/6d-17d-en/",
+  "work_mode": null
+}

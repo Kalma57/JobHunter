@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:151346347",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151346347",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית להנדסה אזרחית, מסלול תחבורה.",
+  "education": "הנדסה אזרחית (תחבורה)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני יום"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "degree_time",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש תואר אחר (הנדסה אזרחית), לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט להנדסה אזרחית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151346347"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט להנדסה אזרחית מסלול תחבורה",
+  "url": "https://juniors.hiremetech.com/job/151346347",
+  "work_mode": null
+}

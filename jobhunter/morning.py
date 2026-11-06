@@ -266,23 +266,9 @@ def split_plan(plan: dict, board: dict[str, dict], today: date) -> tuple[list[di
     return brain, writes, counts
 
 
-def batch_entries(writes: list[dict]) -> list[dict]:
-    """The code's board writes, ready to copy into one ArtifactData batch: data inline, never a file path.
-    (A file_path makes the board tool read a local file - an approval prompt with a new file name every day, so
-    "always allow" never covered it: the unattended runs of 15/10 and 22/10 stalled exactly there.)"""
-    out = []
-    for w in writes:
-        entry = {"op": w["op"], "collection": w["collection"], "doc_id": w["doc_id"], "if_version": None, "why": w["why"]}
-        if w["data"] is not None:  # a delete has no data
-            entry["data"] = w["data"]
-        out.append(entry)
-    return out
-
-
 def done_marker(state: Path, day: str) -> Path:
-    """Written by the Claude run as its last board step: ArtifactData get runs/<day> with out_dir state/board - the
-    same folder as its board snapshot, so the run never writes anywhere new (24/10/2026: a stall at that step).
-    The older place (state/plan/done/runs) still counts for mornings marked before the change."""
+    """The morning's run row, written by apply_brain when the cards are on the board (state/board/runs/<day>.json).
+    The older place (state/plan/done/runs) still counts for mornings marked before 24/10/2026."""
     new = state / "board" / "runs" / f"{day}.json"
     old = state / "plan" / "done" / "runs" / f"{day}.json"
     return old if old.exists() and not new.exists() else new
@@ -330,9 +316,11 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     _write_json(plan_dir / f"{today.isoformat()}.json", plan)
 
     brain, writes, counts = split_plan(plan, board, today)
-    files = {name: plan_dir / f"{today.isoformat()}-{name}.json" for name in ("brain", "batch", "run", "rundoc")}
+    from jobhunter import store
+    applied = store.apply_writes(board_dir, writes)  # the code writes the board itself (6/11/2026)
+    files = {name: plan_dir / f"{today.isoformat()}-{name}.json" for name in ("brain", "cards", "run")}
     _write_json(files["brain"], brain)
-    _write_json(files["batch"], batch_entries(writes))
+    files["cards"].unlink(missing_ok=True)
 
     companies = report.get("companies", [])
     run = {
@@ -354,11 +342,7 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "errors": report.get("errors", []),
         "warnings": report.get("warnings", []) + ([marks_error] if marks_error else []),
     }
-    _write_json(files["run"], run)  # the full run, for the public page
-    # the run row for the board, small enough to pass inline: the prefiltered list as short lines, at most 60
-    _write_json(files["rundoc"], {**{k: v for k, v in run.items() if k != "prefiltered"},
-                                  "prefiltered": [{"title": j["title"], "company": j["company"], "reason": j["reason"]}
-                                                  for j in run["prefiltered"][:60]]})
+    _write_json(files["run"], run)
     (plan_dir / "last-prepare.txt").write_text(today.isoformat(), encoding="utf-8")
     done_marker(state, today.isoformat()).unlink(missing_ok=True)
     result = {
@@ -370,13 +354,77 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "prefiltered": len(filtered),
         "to_brain": len(brain),
         "borderline_jobs": sum(1 for b in brain if b["borderline"]),
-        "code_writes": len(writes),
+        "code_writes": applied,
         "backlog": len(rest),
         "requeued": len(requeued),
         "files": {name: str(path.resolve()) for name, path in files.items()},
     }
-    _write_json(plan_dir / "next.json", result)  # what the Claude run reads first (docs/agents/morning-run.md)
+    _write_json(plan_dir / "next.json", result)  # what the brain reads first (docs/agents/brain-run.md)
     return result
+
+
+def claude_exe() -> str | None:
+    """The Claude Code command line: CLAUDE_EXE, `claude` on PATH, or the newest one the Claude app ships."""
+    import os
+    import shutil
+    if os.environ.get("CLAUDE_EXE"):
+        return os.environ["CLAUDE_EXE"]
+    if found := shutil.which("claude"):
+        return found
+    base = Path(os.environ.get("LOCALAPPDATA", "")) / "Claude-Data"
+    exes = sorted(base.glob("claude_*/claude-code/*/*/claude.exe"), key=lambda p: [int(x) if x.isdigit() else x for x in p.parts[-3].split(".")])
+    return str(exes[-1]) if exes else None
+
+
+BRAIN_PROMPT = ("You are the JobHunter brain. Read docs/agents/brain-run.md and follow it exactly, from start to end. "
+                "Use only Read, Glob, Grep and Write. Nobody is watching: do not ask questions.")
+
+
+def run_brain(state: Path, timeout_minutes: int = 90) -> dict:
+    """Claude Code headless (`claude -p`) on the Pro subscription: reads the brain file, writes the cards file.
+    Headless mode never waits for an approval - a tool it may not use is refused and the run goes on."""
+    import subprocess
+    nxt = _read_json(state / "plan" / "next.json", {})
+    if not nxt.get("to_brain"):
+        return {"date": nxt.get("date"), "brain": "nothing to read"}
+    exe = claude_exe()
+    if not exe:
+        return {"date": nxt.get("date"), "brain": "error: Claude Code command line not found"}
+    try:
+        done = subprocess.run([exe, "-p", BRAIN_PROMPT, "--permission-mode", "acceptEdits",
+                               "--allowedTools", "Read", "Glob", "Grep", "Write", "--output-format", "text"],
+                              capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout_minutes * 60)
+    except subprocess.TimeoutExpired:
+        return {"date": nxt.get("date"), "brain": f"error: no answer in {timeout_minutes} minutes"}
+    out = (done.stdout + done.stderr).strip()
+    return {"date": nxt.get("date"), "brain": "ok" if done.returncode == 0 else f"error {done.returncode}", "report": out[-3000:]}
+
+
+def apply_brain(state: Path, board_dir: Path) -> dict:
+    """The cards onto the board, the run row (state/board/runs/<date>.json - also the "done" marker), and any job
+    the brain left without a card back to the queue."""
+    from jobhunter import store
+    nxt = _read_json(state / "plan" / "next.json", {})
+    day = nxt.get("date")
+    if not day:
+        return {"apply": "nothing prepared"}
+    plan_dir = state / "plan"
+    brain = _read_json(plan_dir / f"{day}-brain.json", [])
+    cards = store.read_cards(plan_dir / f"{day}-cards.json")
+    if brain and not cards:
+        return {"date": day, "apply": "no cards file - the jobs stay for the next run"}
+    counts, missing = store.apply_cards(board_dir, brain, cards, day)
+    if missing:
+        backlog_path = state / "inbox" / "backlog.json"
+        plan = _read_json(plan_dir / f"{day}.json", {})
+        by_doc = {doc_id(item["inbox_job"]["id"]): item["inbox_job"] for item in plan.get("jobs", [])}
+        _write_json(backlog_path, [by_doc[m["doc_id"]] for m in missing if m["doc_id"] in by_doc] + _read_json(backlog_path, []))
+    run = _read_json(plan_dir / f"{day}-run.json", {})
+    run.update({k: counts[k] for k in ("passed", "brain_filtered", "far", "borderline")})
+    run["summary"] = (f"{counts['passed']} עברו · {counts['brain_filtered']} סוננו ע\"י המוח · {run.get('prefiltered_count', 0)} סוננו בקוד"
+                      f" · {counts['merged'] + run.get('duplicates_code', 0)} כפילויות · {run.get('backlog', 0)} ממתינות")
+    _write_json(done_marker(state, day), run)
+    return {"date": day, "apply": "ok", **{k: v for k, v in counts.items() if k != "borderline"}, "back_to_queue": len(missing)}
 
 
 def _git(*args: str) -> tuple[int, str]:
@@ -394,7 +442,7 @@ def finish(state: Path, board_dir: Path, today: date, push: bool = True) -> dict
         result["public"]["published"] = public.publish(today)
     except Exception as e:  # the backup must still happen
         result["public_error"] = f"{type(e).__name__}: {e}"
-    code, out = _git("add", str(state / "seen"), str(state / "inbox"))
+    code, out = _git("add", str(state / "seen"), str(state / "inbox"), str(board_dir))
     if code == 0:
         message = f"Morning run {today.isoformat()}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
         code, out = _git("commit", "-m", message)
@@ -409,7 +457,7 @@ def finish(state: Path, board_dir: Path, today: date, push: bool = True) -> dict
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="jobhunter.morning")
     sub = parser.add_subparsers(dest="cmd", required=True)
-    for name in ("plan", "prepare", "finish"):
+    for name in ("plan", "prepare", "finish", "brain", "apply"):
         cmd = sub.add_parser(name)
         cmd.add_argument("--board-dir", type=Path, default=Path("state/board"), required=(name == "plan"))
         cmd.add_argument("--today", type=date.fromisoformat, default=date.today())
@@ -427,6 +475,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "prepare":
         result = prepare(args.state, args.board_dir, args.today, args.limit, run_agents=not args.no_agents)
         print(json.dumps(result, ensure_ascii=False, indent=1))
+        return 0
+    if args.cmd == "brain":
+        print(json.dumps(run_brain(args.state), ensure_ascii=False, indent=1))
+        return 0
+    if args.cmd == "apply":
+        print(json.dumps(apply_brain(args.state, args.board_dir), ensure_ascii=False, indent=1))
         return 0
     if args.cmd == "finish":
         # the morning that prepare prepared - a run that waited past midnight still finishes its own date (15/10/2026)

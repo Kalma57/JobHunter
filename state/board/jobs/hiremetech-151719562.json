@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:151719562",
+  "alerts": [
+    "סתירה במיקום: הכתובת בחיפה, הכותרת ראשון לציון/גן שורק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151719562",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": "2026-10-27",
+  "degree_time": null,
+  "description": "סטודנט/ית בצוות תקשורת קווית ואלחוטית: הקמה, אינטגרציה ותקלות במערכות תקשורת ורדיו.",
+  "education": "סטודנט להנדסת חשמל/אלקטרוניקה/תוכנה או מדעי המחשב/מערכות מידע שנה ב' ומעלה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ראשון לציון / גן שורק",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: תפעול ותקלות במערכות תקשורת, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "הכשרות בתקשורת קווית/אלחוטית"
+  ],
+  "requirements_must": [
+    "רישיון נהיגה",
+    "עברית ואנגלית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151719562"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לתחום התקשורת הקווית והאלחוטית לראשון לציון גן שורק",
+  "url": "https://juniors.hiremetech.com/job/151719562",
+  "work_mode": null
+}

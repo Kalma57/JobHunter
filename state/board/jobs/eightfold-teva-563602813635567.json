@@ -1,0 +1,60 @@
+{
+  "agent_id": "eightfold:teva:563602813635567",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.careers.teva/careers/job/563602813635567",
+  "company": "Teva",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מנהל/ת פרויקט בצוות אסטרטגיה ותכנון של הביקורת הפנימית (החלפת חופשת לידה).",
+  "education": null,
+  "employment": "זמנית",
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י eightfold:teva",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "education"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה — ניהול פרויקט בביקורת פנימית."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון בכלי אנליטיקה / אוטומציה / דיווח"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "eightfold:teva",
+      "url": "https://www.careers.teva/careers/job/563602813635567"
+    }
+  ],
+  "source": "eightfold:teva",
+  "status": "filtered",
+  "title": "Project Manager - Global Internal Audit Strategy & Planning Team (Maternity Leave Cover)",
+  "url": "https://www.careers.teva/careers/job/563602813635567",
+  "work_mode": null
+}

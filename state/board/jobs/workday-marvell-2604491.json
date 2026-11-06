@@ -1,0 +1,68 @@
+{
+  "agent_id": "workday:marvell:2604491",
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Yokneam/Design-Engineer-Intern_2604491",
+  "company": "Marvell",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לפני סיום",
+  "description": "סטודנט/ית לתכנון שבבים ברמת SoC (RTL, אינטגרציית IP, אוטומציה בפייתון/Perl/TCL).",
+  "education": "סטודנט לתואר ראשון/שני במדעי המחשב או הנדסת חשמל, שנה ב' ומעלה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י workday:marvell",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "יקנעם",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: תכנון שבבים (RTL), לא פיתוח תוכנה; וגם יקנעם (צפון)."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט שנה ב' ומעלה",
+    "לפחות שנתיים לסיום"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "workday:marvell",
+      "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Yokneam/Design-Engineer-Intern_2604491"
+    },
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151423207"
+    }
+  ],
+  "source": "workday:marvell",
+  "status": "filtered",
+  "title": "Design Engineer Intern",
+  "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Yokneam/Design-Engineer-Intern_2604491",
+  "work_mode": null
+}

@@ -1,0 +1,65 @@
+{
+  "agent_id": "amazon:10503596",
+  "alerts": [],
+  "apply_instructions": "קו\"ח וגיליון ציונים בקובץ PDF אחד",
+  "apply_url": "https://account.amazon.jobs/jobs/10503596/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח אוטומציית בדיקות לשרתי Graviton.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "education"
+  ],
+  "notes": "",
+  "posted_at": "2026-08-17",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "אוטומציית בדיקות (QA) — מחוץ לחיפוש."
+  },
+  "requirements_adv": [
+    "Python, bash"
+  ],
+  "requirements_must": [
+    "ניסיון בבניית כלי אוטומציית בדיקות",
+    "Java / C++ / C#"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10503596/sw-automation-student-annapurna-labs"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "SW Automation Student, Annapurna Labs",
+  "url": "https://www.amazon.jobs/en/jobs/10503596/sw-automation-student-annapurna-labs",
+  "work_mode": null
+}

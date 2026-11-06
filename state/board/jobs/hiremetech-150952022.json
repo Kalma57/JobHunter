@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:150952022",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "סתירה במיקום: הכתובת ברמת גן, הכותרת אומרת חיפה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150952022",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לתחום ההסכמים המסחריים, מענה טלפוני ובמייל.",
+  "education": null,
+  "employment": "זמנית (9 חודשים)",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 12 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: הסכמים מסחריים ושירות, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "ניסיון במוקדי שירות",
+    "ניסוח בעברית"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150952022"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "לחברה מובילה בחיפה דרוש/ה סטודנט/ית לתפקיד בתחום ההסכמים המסחריים-זמני ל9 חודשים",
+  "url": "https://juniors.hiremetech.com/job/150952022",
+  "work_mode": null
+}

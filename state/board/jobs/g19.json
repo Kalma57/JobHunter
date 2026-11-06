@@ -1,0 +1,63 @@
+{
+  "agent_id": "amazon:10506556",
+  "alerts": [],
+  "apply_instructions": "לצרף גיליון ציונים יחד עם קו\"ח בקובץ PDF אחד.",
+  "apply_url": "https://account.amazon.jobs/jobs/10506556/apply",
+  "company": "Amazon",
+  "description": "תוכנה ואוטומציה לפלטפורמות השבבים K2 ו-Graviton: Python, Bash, שירותי AWS.",
+  "education": "סטודנט B.Sc, לפחות שנתיים לסיום",
+  "far": true,
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #19",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:14:00.776Z",
+      "note": "נמצא בחיפה",
+      "status": "not_interested"
+    }
+  ],
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_interested_reason": "נמצא בחיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-08-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (אזורי החיפוש: דרום / מרכז). עוברת את כל השאר; Python מעלה."
+  },
+  "requirements_adv": [
+    "AWS",
+    "CI/CD",
+    "Pytest"
+  ],
+  "requirements_must": [
+    "סטודנט B.Sc, לפחות שנתיים לסיום",
+    "Python ו-Linux"
+  ],
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10506556/software-engineer-student-spiv-team"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "not_interested",
+  "title": "Software Engineer Student, SPIV team",
+  "url": "https://www.amazon.jobs/en/jobs/10506556/software-engineer-student-spiv-team"
+}

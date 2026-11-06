@@ -1,0 +1,72 @@
+{
+  "agent_id": "google:120211620121977542",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckZz65l_1HiqfGaL6LhJwbpgkL7-M8BK7ZUd9H9bPfkFXEjsA9yzvgvHluqDSauzPS3BtehRHSiP1B16alobUpSsrtWkTlqMSkZs0k8yolJTX2FdwsslE2nYHLPkScg%3D%3D_V2&loc=IL&title=Student+Researcher",
+  "company": "Google",
+  "deadline": "2026-12-13",
+  "degree_time": null,
+  "description": "תוכנית Student Researcher — פרויקטי מחקר ופיתוח בצוותי Google (DeepMind, Research, Cloud).",
+  "education": "סטודנט/ית לתואר ראשון/שני/דוקטורט במדמ\"ח או תחום קרוב",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י google:google",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-10T17:15:23.798Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב / חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-05",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI",
+    "Python",
+    "Java"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט למחקר/פיתוח, B.Sc מתקבל, תל אביב. היקף גמיש."
+  },
+  "requirements_adv": [
+    "ניסיון מחקרי",
+    "פרסומים",
+    "Python / C++ / Java"
+  ],
+  "requirements_must": [
+    "סטודנט/ית בתואר (B.Sc ומעלה) בישראל",
+    "ניסיון בתחום כלשהו במדמ\"ח (ML, ראייה, הנדסת תוכנה...)"
+  ],
+  "salary": null,
+  "scope": "לפי הפרויקט — מחלקית ועד מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "google:google",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/120211620121977542-student-researcher-2027"
+    }
+  ],
+  "source": "google:google",
+  "status": "hold",
+  "title": "Student Researcher, 2027",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/120211620121977542-student-researcher-2027",
+  "work_mode": null
+}

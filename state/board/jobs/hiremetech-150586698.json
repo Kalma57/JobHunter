@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:150586698",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150586698",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת אבטחה לבוגרים, compliance בסייבר.",
+  "education": null,
+  "employment": null,
+  "experience": "עד שנתיים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "רעננה (זרחין 24)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרת בוגרים בסייבר/compliance, לא משרת סטודנט בפיתוח."
+  },
+  "requirements_adv": [
+    "cybersecurity compliance"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150586698"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Graduate Security Engineer",
+  "url": "https://juniors.hiremetech.com/job/150586698",
+  "work_mode": null
+}

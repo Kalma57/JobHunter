@@ -1,0 +1,62 @@
+{
+  "agent_id": "workday:nvidia:JR2015387",
+  "alerts": [
+    "משרה ישנה — פורסמה 2026-05-05 (יותר מ-60 יום)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2015387",
+  "company": "NVIDIA",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת כלים ורגרסיה בקבוצת חומרה.",
+  "education": "B.Sc במדמ\"ח / הנדסת מחשבים / חשמל",
+  "employment": null,
+  "experience": "12+ שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י workday:nvidia",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סניור"
+  ],
+  "location": "יקנעם",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-05-05",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "סניור עם 12+ שנות ניסיון, וגם יקנעם."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "12+ שנות ניסיון",
+    "Python ו-Perl",
+    "Java / C#"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "workday:nvidia",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2015387"
+    }
+  ],
+  "source": "workday:nvidia",
+  "status": "filtered",
+  "title": "Senior Tools Engineer",
+  "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2015387",
+  "work_mode": null
+}

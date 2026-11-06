@@ -1,0 +1,60 @@
+{
+  "agent_id": "google:133355062935069382",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckWZuepCbuA0RbrexCLK8Q63aDELcytCglX80TAzW0AqMEjsA1Ny_i9qy1rJ7kaDJzNjE51GUxXI3EnM2JqxUvXI6GrDYO4XSQhWeTCUZyrfzNKBD-bfNv_cGDPdckw%3D%3D_V2&loc=IL&title=Hardware/Silicon+Engineering+PhD+Intern",
+  "company": "Google",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות לדוקטורנטים בחומרה ושבבים.",
+  "education": "סטודנט/ית לדוקטורט",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י google:google",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-08-17",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מיועד לדוקטורנטים."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "דוקטורט"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "google:google",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/133355062935069382-hardware-silicon-engineering-phd-intern-2027"
+    }
+  ],
+  "source": "google:google",
+  "status": "filtered",
+  "title": "Hardware/Silicon Engineering PhD Intern, 2027",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/133355062935069382-hardware-silicon-engineering-phd-intern-2027",
+  "work_mode": null
+}

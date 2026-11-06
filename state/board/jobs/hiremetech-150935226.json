@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:150935226",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150935226",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות במשרה חלקית בתמיכת Presales.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 18 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "רעננה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: תמיכת Presales, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150935226"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Presales Support – Part time Internship",
+  "url": "https://juniors.hiremetech.com/job/150935226",
+  "work_mode": null
+}

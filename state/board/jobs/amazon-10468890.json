@@ -1,0 +1,64 @@
+{
+  "agent_id": "amazon:10468890",
+  "alerts": [
+    "משרה ישנה — פורסמה 2026-07-08 (יותר מ-60 יום)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10468890/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מנהל/ת פיתוח ב-AWS EBS.",
+  "education": null,
+  "employment": null,
+  "experience": "7+ שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "מנהל/ת"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "education"
+  ],
+  "notes": "",
+  "posted_at": "2026-07-08",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרת ניהול עם 7+ שנות ניסיון."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "7+ שנות ניסיון",
+    "3+ שנות ניהול"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10468890/software-development-manager-aws-ebs-data-plane-durability-engine"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Software Development Manager, AWS EBS Data Plane - Durability Engine",
+  "url": "https://www.amazon.jobs/en/jobs/10468890/software-development-manager-aws-ebs-data-plane-durability-engine",
+  "work_mode": null
+}

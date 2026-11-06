@@ -1,0 +1,76 @@
+{
+  "agent_id": "workday:amat:R2612347",
+  "alerts": [
+    "משרה ישנה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/System-Integration-Engineer_R2612347",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": "תואר גמור",
+  "description": "כיול, בדיקה ותחקור תקלות של מערכות רב-תחומיות בחדר נקי לפני משלוח ללקוח.",
+  "education": "B.Sc הנדסת מכונות / חשמל",
+  "employment": null,
+  "experience": "1-3 שנים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "מהדרישה לעבודה בחדר נקי"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "employment",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-05-12",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר (אינטגרציית מערכות) ומשרה מלאה לבוגרי מכונות/חשמל."
+  },
+  "requirements_adv": [
+    "רקע טכני"
+  ],
+  "requirements_must": [
+    "B.Sc הנדסת מכונות / חשמל",
+    "1-3 שנות ניסיון טכני",
+    "עבודה בחדר נקי",
+    "עד 10% נסיעות"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/System-Integration-Engineer_R2612347"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "filtered",
+  "title": "System Integration Engineer",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/System-Integration-Engineer_R2612347",
+  "work_mode": "משרד"
+}

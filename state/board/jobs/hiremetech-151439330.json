@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:151439330",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "מספר ימי העבודה בשבוע לא צוין (Part-time)"
+  ],
+  "apply_instructions": "הגשה עם מילוי אוטומטי",
+  "apply_url": "https://juniors.hiremetech.com/job/151439330",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית להנדסת תוכנה בתחום סייבר: Python, Linux, Docker, Kubernetes, מחקר ו-LLM.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני 23 שעות"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time"
+  ],
+  "notes": "נבדק מול משרות דומות (Software Engineer Intern רמת גן ועוד) — לא כפילות.",
+  "posted_at": "2026-10-23",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח תוכנה (סייבר) ברמת גן (מרכז), חלקית; Python + LLM."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151439330"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Student Software Engineer - Cybersecurity",
+  "url": "https://juniors.hiremetech.com/job/151439330",
+  "work_mode": null
+}

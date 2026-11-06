@@ -1,0 +1,72 @@
+{
+  "agent_id": "hiremetech:150947145",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "ייתכן שזו אותה משרה כמו amazon-10579862 (אותו שם, תל אביב, חלקית) — לא אוחדה כי הדרישות לא ידועות, בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150947145",
+  "company": "Amazon (Annapurna Labs) — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח תוכנה ב-Annapurna Labs (AWS, Machine Learning), משרה חלקית.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "company": "Annapurna Labs מופיע בשם המשרה",
+    "posted_at": "'לפני 13 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (מגדל עזריאלי שרונה)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח תוכנה בתל אביב, חלקית."
+  },
+  "requirements_adv": [
+    "AWS",
+    "Machine Learning"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150947145"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Software Development Student, Annapurna Labs",
+  "url": "https://juniors.hiremetech.com/job/150947145",
+  "work_mode": null
+}

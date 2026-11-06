@@ -1,0 +1,60 @@
+{
+  "agent_id": "hiremetech:151530270",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151530270",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכה טכנית והטמעת מערכות GIS של Esri ללקוחות.",
+  "education": "סטודנט לתואר ראשון/שני בגיאוגרפיה או גיאודזיה, שנה ב'",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (רמת החייל)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש תואר אחר (גיאוגרפיה/גיאודזיה) ותפקיד תמיכה, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "ניסיון עם כלי Esri"
+  ],
+  "requirements_must": [
+    "סטודנט לגיאוגרפיה/גיאודזיה שנה ב'"
+  ],
+  "salary": null,
+  "scope": "2.5-3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151530270"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "איש/ת GIS במשרת סטודנט",
+  "url": "https://juniors.hiremetech.com/job/151530270",
+  "work_mode": null
+}

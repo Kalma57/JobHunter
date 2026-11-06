@@ -1,0 +1,73 @@
+{
+  "agent_id": "hiremetech:150407544",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "בכרטיס באתר: Full-time — לא מאומת מול הטקסט; לבדוק היקף",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech (מקור: LinkedIn)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150407544",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "Software Engineer Intern: Java, SQL, מערכות מבוזרות ו-Big Data, כלי קוד מבוססי AI — הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:10:08.245Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Java",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "Intern בפיתוח תוכנה ברמת גן (מרכז), Java + AI. ההיקף לא מאומת (התגית אומרת Full-time) — עובר עם התראה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150407544"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "Software Engineer Intern",
+  "url": "https://juniors.hiremetech.com/job/150407544",
+  "work_mode": null
+}

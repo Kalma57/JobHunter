@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:151183803",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151183803",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט לניהול ספקים בתחום התחבורה באשדוד. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 2 ימים' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "אשדוד",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-18",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: ניהול ספקים, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "Office"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרת סטודנט",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151183803"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לניהול ספקים בתחום התחבורה",
+  "url": "https://juniors.hiremetech.com/job/151183803",
+  "work_mode": null
+}

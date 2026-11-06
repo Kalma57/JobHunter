@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:150021111",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "סתירה במיקום: הכתובת בקריית ביאליק (מרכז נעמן), העיר מתויגת חולון"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150021111",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה ג'וניור, C / C++, משרה מלאה.",
+  "education": null,
+  "employment": null,
+  "experience": "0-2 שנים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:14:35.891Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": null,
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-09",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "היקף: משרה מלאה (ג'וניור, לא משרת סטודנט)."
+  },
+  "requirements_adv": [
+    "C",
+    "C++"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150021111"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "Software Engineer",
+  "url": "https://juniors.hiremetech.com/job/150021111",
+  "work_mode": null
+}

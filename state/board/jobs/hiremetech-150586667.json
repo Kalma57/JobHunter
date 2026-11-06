@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:150586667",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150586667",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "Intern בתכנון ואימות חומרה ל-AI/ML — הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "רעננה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תכנון ואימות חומרה — לא פיתוח תוכנה; וגם רעננה (שרון)."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150586667"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "AI/ML Hardware Design and Verification Intern Engineer",
+  "url": "https://juniors.hiremetech.com/job/150586667",
+  "work_mode": null
+}

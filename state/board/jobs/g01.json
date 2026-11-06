@@ -1,0 +1,57 @@
+{
+  "alerts": [
+    "סתירה במודעה: רמה Student מול 3 שנות ניסיון."
+  ],
+  "company": "חסוי (סטארטאפ במרכז) — דרך SQLink",
+  "description": "פיתוח Backend סקיילבילי, שירותי AI, REST APIs, DevOps ב-AWS.",
+  "experience": "3+ שנים",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #1",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-08T09:24:27.614Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {
+    "level": "האתר מתייג Student, אבל המשרה דורשת 3 שנות ניסיון — בפועל רמת ביניים."
+  },
+  "level": [
+    "ביניים"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "scope",
+    "salary",
+    "education"
+  ],
+  "notes": "",
+  "prefs_down": [],
+  "prefs_up": [
+    "Java",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש 3 שנות ניסיון (מותר עד שנה)."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "3 שנות ניסיון ב-Java 11",
+    "AWS",
+    "MongoDB / Elastic",
+    "כלי AI (Cursor)",
+    "אנגלית גבוהה"
+  ],
+  "scope": null,
+  "source": "HireMeTech",
+  "status": "hold",
+  "title": "מפתח/ת Java Backend עם התמחות ב-AI",
+  "url": "https://juniors.hiremetech.com/job/150083592",
+  "work_mode": "משרד"
+}

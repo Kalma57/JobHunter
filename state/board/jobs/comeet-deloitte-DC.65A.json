@@ -1,0 +1,59 @@
+{
+  "agent_id": "comeet:deloitte:DC.65A",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/audit-intern---jerusalem-office/DC.65A",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתמחה בראיית חשבון בחטיבת Audit and Assurance, ירושלים.",
+  "education": "בוגר/ת תואר ראשון בחשבונאות",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-10",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום חשבונאות, דורש תואר גמור ומשרה מלאה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תואר ראשון בחשבונאות",
+    "אנגלית",
+    "משרה מלאה"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/position/dc-65a-en/#apply"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "filtered",
+  "title": "Audit intern - Jerusalem Office",
+  "url": "https://careers.deloitte.co.il/position/dc-65a-en/#apply",
+  "work_mode": "משרד"
+}

@@ -1,0 +1,56 @@
+{
+  "agent_id": "drushim:38737070",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38737070/896b2847/",
+  "company": "תומר חברה ממשלתית",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לענף הנדסה בחברה ממשלתית: תיעוד חומרים ותוכניות חליפיות.",
+  "education": "סטודנט/ית להנדסת חומרים / הנדסת כימיה / כימיה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמלה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: דורש הנדסת חומרים או כימיה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "לפחות יומיים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38737070/896b2847/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "לחברה ממשלתית דרוש/ה סטודנט/ית לענף הנדסה",
+  "url": "https://www.drushim.co.il/job/38737070/896b2847/",
+  "work_mode": null
+}

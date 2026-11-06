@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:151225021",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
+    "יש משרה דומה מאותו יום (HireMeTech 151223578) — כנראה חברה אחרת, לא אוחדו"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151225021",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט Forward Deployed Engineer בתל אביב (Python, APIs). הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "0+ שנים (לפי תגית האתר)",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 21 שעות' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בהנדסת תוכנה (FDE, Python) בתל אביב, חלקית; שאר הפרטים לא צוינו."
+  },
+  "requirements_adv": [
+    "Python",
+    "APIs"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי תגית האתר)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151225021"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Forward Deployed Engineer (Student Position)",
+  "url": "https://juniors.hiremetech.com/job/151225021",
+  "work_mode": null
+}

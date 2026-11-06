@@ -1,0 +1,69 @@
+{
+  "agent_id": "eightfold:qualcomm:446719918906",
+  "alerts": [
+    "הכותרת (SW Architecture) לא תואמת את הטקסט (אלגוריתמים, הנדסת חשמל)"
+  ],
+  "apply_instructions": "לצרף קו\"ח וגיליון ציונים",
+  "apply_url": "https://careers.qualcomm.com/careers/job/446719918906",
+  "company": "Qualcomm",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח אלגוריתמים בקבוצת 5G (למרות שבכותרת כתוב SW Architecture).",
+  "education": "סטודנט/ית להנדסת חשמל (B.Sc / M.Sc)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י eightfold:qualcomm",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-20, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "הוד השרון",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש הנדסת חשמל ושנת ניסיון בעיבוד אותות — תחום אחר."
+  },
+  "requirements_adv": [
+    "ניסיון בתקשורת ועיבוד אותות"
+  ],
+  "requirements_must": [
+    "סטודנט/ית להנדסת חשמל",
+    "שנה ניסיון בתקשורת / עיבוד אותות"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "eightfold:qualcomm",
+      "url": "https://careers.qualcomm.com/careers/job/446719918906"
+    }
+  ],
+  "source": "eightfold:qualcomm",
+  "status": "closed",
+  "title": "FY26 Intern -  SW Architecture - Hod Hasharon, Israel",
+  "url": "https://careers.qualcomm.com/careers/job/446719918906",
+  "work_mode": null
+}

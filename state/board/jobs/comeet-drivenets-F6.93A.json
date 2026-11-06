@@ -1,0 +1,67 @@
+{
+  "agent_id": "comeet:drivenets:F6.93A",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/drivenets/72.006/software-engineer/F6.93A",
+  "company": "DriveNets",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה בקבוצת Infra.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י comeet:drivenets",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-06",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה למהנדסים מנוסים (הנחיית ג'וניורים), לא סטודנט."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "comeet:drivenets",
+      "url": "https://drivenets.com/job/?id=F6.93A"
+    }
+  ],
+  "source": "comeet:drivenets",
+  "status": "filtered",
+  "title": "Software Engineer",
+  "url": "https://drivenets.com/job/?id=F6.93A",
+  "work_mode": null
+}

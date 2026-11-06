@@ -1,0 +1,74 @@
+{
+  "agent_id": "hiremetech:150822535",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150822535",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט בפיתוח תוכנה מחקרי בתחום AI ורשתות GPU (deep learning, networking, סטטיסטיקה לפי התגיות).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:09:35.790Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (מגדלי רובינשטיין, יצחק שדה 4)",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-14",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט חלקית בפיתוח תוכנה מחקרי ב-AI, בתל אביב."
+  },
+  "requirements_adv": [
+    "deep learning",
+    "networking",
+    "research",
+    "statistics"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150822535"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "Research Software Engineering Student, AI and GPU Networking",
+  "url": "https://juniors.hiremetech.com/job/150822535",
+  "work_mode": null
+}

@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:151003508",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech, המעסיק לפי הטקסט רפאל",
+    "האתר מתייג 'משרה מלאה' — הטקסט לא מציין היקף"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151003508",
+  "company": "רפאל",
+  "deadline": null,
+  "degree_time": "סמסטר שלישי-רביעי",
+  "description": "פיתוח ממשק משתמש גרפי עם גישה עיצובית, Design system ורכיבי תשתית בארכיטקטורת Headless.",
+  "education": "סטודנט/ית לתואר ראשון במדמ\"ח / הנדסת תוכנה",
+  "employment": null,
+  "experience": "לא נדרש",
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "משגב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-16",
+  "prefs_down": [
+    "C#"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "שנה בתואר: דורש סמסטר 3-4 (אני בשנה ג'); וגם משגב — צפון."
+  },
+  "requirements_adv": [
+    "HTML, CSS, React, JS",
+    "XAML / WPF",
+    "Figma / Illustrator / Photoshop",
+    "C#, Angular, Git, SaaS"
+  ],
+  "requirements_must": [
+    "תואר ראשון במדמ\"ח / הנדסת תוכנה, סמסטר שלישי-רביעי"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151003508"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית למדמ\"ח -פיתוח UI",
+  "url": "https://juniors.hiremetech.com/job/151003508",
+  "work_mode": null
+}

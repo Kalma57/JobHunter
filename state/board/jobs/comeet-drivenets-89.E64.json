@@ -1,0 +1,62 @@
+{
+  "agent_id": "comeet:drivenets:89.E64",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/drivenets/72.006/controller/89.E64",
+  "company": "DriveNets",
+  "deadline": null,
+  "degree_time": null,
+  "description": "קונטרולר/ית — סגירות, US GAAP ובקרות פנימיות.",
+  "education": null,
+  "employment": null,
+  "experience": "2-4 שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י comeet:drivenets",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "רעננה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה — כספים, עם 2-4 שנות ניסיון."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "2-4 שנות ניסיון",
+    "התמחות ב-Big 4",
+    "US GAAP",
+    "Excel",
+    "NetSuite"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "comeet:drivenets",
+      "url": "https://drivenets.com/job/?id=89.E64"
+    }
+  ],
+  "source": "comeet:drivenets",
+  "status": "filtered",
+  "title": "Controller",
+  "url": "https://drivenets.com/job/?id=89.E64",
+  "work_mode": null
+}

@@ -1,0 +1,61 @@
+{
+  "agent_id": "drushim:38586989",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38586989/fc4f19c4/",
+  "company": "חסוי — דרך דרושים",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת ארגון ושיטות.",
+  "education": null,
+  "employment": null,
+  "experience": "1-2 שנים",
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-21, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "ראשון לציון, מודיעין-מכבים-רעות, לוד, רמלה, שוהם, ראש העין",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-01",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: הנדסת תעשייה וניהול, משרה מלאה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38586989/fc4f19c4/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "closed",
+  "title": "מהנדס/ת ארגון ושיטות",
+  "url": "https://www.drushim.co.il/job/38586989/fc4f19c4/",
+  "work_mode": null
+}

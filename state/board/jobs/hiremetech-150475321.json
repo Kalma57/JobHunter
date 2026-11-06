@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:150475321",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": "קו\"ח למייל danas@spira-cpa.com",
+  "apply_url": "https://juniors.hiremetech.com/job/150475321",
+  "company": "משרד רואי חשבון (ספירא) — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "רו\"ח מתחיל/ה במשרד רו\"ח: דוחות כספיים ובקרה פנימית ללקוחות ציבוריים.",
+  "education": "בוגר/ת או סטודנט/ית לקראת סיום (חשבונאות)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "כניסה לתחום"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה — חשבונאות."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "בוגר/ת או סטודנט/ית לקראת סיום בחשבונאות",
+    "מינימום 3 ימים"
+  ],
+  "salary": null,
+  "scope": "מלאה או חלקית, מינימום 3 ימים",
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150475321"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Student",
+  "url": "https://juniors.hiremetech.com/job/150475321",
+  "work_mode": null
+}

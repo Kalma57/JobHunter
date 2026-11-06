@@ -1,0 +1,75 @@
+{
+  "agent_id": "hiremetech:151223980",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
+    "דומה ל-amazon-10530731 (MLIL Firmware) — צוות אחר (FLOW), לא אוחדו"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151223980",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח תוכנה בצוות MLIL FLOW (Python, ML, Grafana, רגרסיות) בתל אביב. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 22 שעות' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (מגדל עזריאלי שרונה)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח תוכנה (Python, ML) בתל אביב, חלקית; שאר הדרישות לא צוינו."
+  },
+  "requirements_adv": [
+    "Python",
+    "Machine learning",
+    "Grafana",
+    "Regression"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי תגית האתר)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151223980"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Software Development Student, Software Development Student, Machine Learning Israel (MLIL) FLOW",
+  "url": "https://juniors.hiremetech.com/job/151223980",
+  "work_mode": null
+}

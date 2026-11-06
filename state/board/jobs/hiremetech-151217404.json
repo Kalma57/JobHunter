@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:151217404",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
+    "סתירה במיקום: כתובת בתל אביב לצד Gallipolis Ferry (ארה\"ב)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151217404",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות במעבדה. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני יום' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: התמחות מעבדה, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151217404"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Lab Intern",
+  "url": "https://juniors.hiremetech.com/job/151217404",
+  "work_mode": null
+}

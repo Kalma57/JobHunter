@@ -1,0 +1,73 @@
+{
+  "agent_id": "eightfold:microsoft:1970393557042485",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393557042485",
+  "company": "Microsoft",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתמחה דאטה סיינס בצוות WSSI: מודלי ראייה ממוחשבת ומודלי שפה קטנים על התקני קצה ב-Windows.",
+  "education": "סטודנט/ית ל-M.Sc או PhD במדעי המחשב / הנדסת חשמל / דאטה סיינס",
+  "employment": null,
+  "experience": "ניסיון מעשי בפיתוח מודלים, ניסויים וניתוח נתונים",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:microsoft",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "job_number": "200062523",
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "הרצליה / תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-18",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "השכלה: דורשת סטודנט/ית ל-M.Sc או PhD."
+  },
+  "requirements_adv": [
+    "ראייה ממוחשבת / עיבוד תמונה ווידאו",
+    "אופטימיזציית מודלים, קוונטיזציה, הסקה על התקני קצה",
+    "MLOps ו-data pipelines"
+  ],
+  "requirements_must": [
+    "סטודנט/ית ל-M.Sc או PhD",
+    "ניסיון מעשי בפיתוח והערכת מודלים",
+    "פיתוח Python כולל כלי קוד מבוססי AI"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557042485"
+    }
+  ],
+  "source": "eightfold:microsoft",
+  "status": "filtered",
+  "title": "Data Science INTERN",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557042485",
+  "work_mode": null
+}

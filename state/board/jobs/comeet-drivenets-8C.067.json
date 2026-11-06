@@ -1,0 +1,67 @@
+{
+  "agent_id": "comeet:drivenets:8C.067",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/drivenets/72.006/system-validation-engineer/8C.067",
+  "company": "DriveNets",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת ולידציה חשמלית לבוגרי הנדסת חשמל.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י comeet:drivenets",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "רעננה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: הנדסת חשמל, לבוגרים."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "comeet:drivenets",
+      "url": "https://drivenets.com/job/?id=8C.067"
+    }
+  ],
+  "source": "comeet:drivenets",
+  "status": "filtered",
+  "title": "System Validation Engineer",
+  "url": "https://drivenets.com/job/?id=8C.067",
+  "work_mode": null
+}

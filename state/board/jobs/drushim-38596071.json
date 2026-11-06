@@ -1,0 +1,62 @@
+{
+  "agent_id": "drushim:38596071",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38596071/54e8124f/",
+  "company": "Insite-HR",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מסירות דירות בפרויקטי בנייה.",
+  "education": "סטודנט/ית שנה ד' להנדסה אזרחית",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-14, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "אריאל, באר שבע, אשדוד, קריית גת, תל אביב, גדרה, נתניה, חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-03",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: הנדסה אזרחית."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38596071/54e8124f/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "closed",
+  "title": "סטודנט.ית להנדסה? דריסת רגל ראשונה בשטח",
+  "url": "https://www.drushim.co.il/job/38596071/54e8124f/",
+  "work_mode": null
+}

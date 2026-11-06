@@ -1,0 +1,63 @@
+{
+  "agent_id": "eightfold:microsoft:1970393557042488",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393557042488",
+  "company": "Microsoft",
+  "deadline": null,
+  "degree_time": "סיום קיץ 2028 ואילך",
+  "description": "מתמחה חקר אבטחה: ניתוח איומים ונוזקות, זיהוי ותגובה בענן, כתיבת קוד לאוטומציית זיהוי.",
+  "education": "סטודנט/ית לתואר ראשון בסטטיסטיקה / מתמטיקה / מדעי המחשב",
+  "employment": "זמנית",
+  "experience": "2+ שנים בחקר אבטחה / threat hunting",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:microsoft",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "job_number": "200062525",
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "הרצליה / תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-18",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "ניסיון: דורשת 2+ שנות ניסיון בחקר אבטחה (מעל שנה), ותפקיד סייבר ולא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לתואר ראשון, סיום קיץ 2028 ואילך",
+    "2+ שנות ניסיון בחקר אבטחה / threat hunting",
+    "הבנה עמוקה של שיטות תקיפה, OS, ענן וזהויות"
+  ],
+  "salary": null,
+  "scope": "תפקיד לשנה וחצי עד סיום התואר",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557042488"
+    }
+  ],
+  "source": "eightfold:microsoft",
+  "status": "filtered",
+  "title": "Security Research Internship Opportunities",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557042488",
+  "work_mode": null
+}

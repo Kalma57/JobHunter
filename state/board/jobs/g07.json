@@ -1,0 +1,46 @@
+{
+  "alerts": [],
+  "company": "רפאל",
+  "description": "פיתוח תוכנה בצוות מערכות Real-Time Embedded. מספר משרה 13053.",
+  "employment": "חלקית",
+  "experience": "0",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #7",
+      "status": "filtered"
+    }
+  ],
+  "level": [
+    "סטודנט"
+  ],
+  "location": "קריית ביאליק (מכון דוד)",
+  "not_stated": [
+    "salary"
+  ],
+  "notes": "",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "קריית ביאליק — צפון (אזור חובה: דרום / מרכז)."
+  },
+  "requirements_adv": [
+    "C++",
+    "Python"
+  ],
+  "requirements_must": [
+    "סטודנט למדמ\"ח / הנדסת תוכנה",
+    "זמינות של יומיים לפחות"
+  ],
+  "scope": "לפחות יומיים",
+  "source": "HireMeTech",
+  "status": "filtered",
+  "title": "סטודנט/ית למדמ\"ח / תוכנה - פיתוח",
+  "work_mode": "משרד"
+}

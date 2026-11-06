@@ -1,0 +1,74 @@
+{
+  "agent_id": "hiremetech:150404396",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150404396",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת Full Stack ג'וניור: Python, REST APIs, מסדי נתונים, תכנות אסינכרוני.",
+  "education": null,
+  "employment": null,
+  "experience": "0-2 שנים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:15:31.346Z",
+      "note": "משרת ג'וניור ומשרה מלאה כרגע לא יכול להתחייב למשרה מלאה",
+      "status": "not_interested"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_interested_reason": "משרת ג'וניור ומשרה מלאה כרגע לא יכול להתחייב למשרה מלאה",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-13",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "היקף: משרה מלאה (ג'וניור, לא משרת סטודנט)."
+  },
+  "requirements_adv": [
+    "Python",
+    "REST APIs",
+    "databases",
+    "asynchronous programming",
+    "Git"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150404396"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "not_interested",
+  "title": "Full Stack Engineer",
+  "url": "https://juniors.hiremetech.com/job/150404396",
+  "work_mode": null
+}

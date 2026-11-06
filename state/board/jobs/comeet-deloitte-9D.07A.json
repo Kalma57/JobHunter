@@ -1,0 +1,63 @@
+{
+  "agent_id": "comeet:deloitte:9D.07A",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/indirect-tax-senior/9D.07A",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ייעוץ מיסוי עקיף (מע\"מ, מכס) ללקוחות.",
+  "education": "עו\"ד מוסמך/ת (LL.B)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-08",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה — משפטים/מיסוי."
+  },
+  "requirements_adv": [
+    "ניסיון במשרד גדול",
+    "ניסיון במע\"מ"
+  ],
+  "requirements_must": [
+    "עו\"ד מוסמך/ת",
+    "עבודה עם כלי AI"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/he/position/9d-07a-he/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "filtered",
+  "title": "Indirect Tax Senior",
+  "url": "https://careers.deloitte.co.il/he/position/9d-07a-he/",
+  "work_mode": null
+}

@@ -1,0 +1,77 @@
+{
+  "agent_id": "hiremetech:150934205",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים; הכישורים מתגיות האתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150934205",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לאלגוריתמיקה: ראייה ממוחשבת ולמידה עמוקה (Python, C++).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 18 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (אזריאלי טאון)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט באלגוריתמיקה / AI בתל אביב; ההיקף והדרישות לא צוינו."
+  },
+  "requirements_adv": [
+    "Python",
+    "C++",
+    "Computer Vision",
+    "Deep Learning"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150934205"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Algorithm Student",
+  "url": "https://juniors.hiremetech.com/job/150934205",
+  "work_mode": null
+}

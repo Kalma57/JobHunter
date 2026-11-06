@@ -1,0 +1,64 @@
+{
+  "agent_id": "workday:amat:R2622470",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Industrial-Engineer---Student_R2622470",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פרויקטי תכנון ושרשרת אספקה בארגון התכנון.",
+  "education": "סטודנט/ית שנה ד' להנדסת תעשייה וניהול",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-21, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-04",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום הנדסת תעשייה וניהול — לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "שנה ד' בהנדסת תעשייה וניהול"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Industrial-Engineer---Student_R2622470"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "closed",
+  "title": "Industrial Engineer - Student",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Industrial-Engineer---Student_R2622470",
+  "work_mode": null
+}

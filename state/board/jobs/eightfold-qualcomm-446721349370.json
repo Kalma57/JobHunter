@@ -1,0 +1,71 @@
+{
+  "agent_id": "eightfold:qualcomm:446721349370",
+  "alerts": [
+    "גבולי: צוות QA, אבל העבודה היא פיתוח כלי AI — שווה מבט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://careers.qualcomm.com/careers/job/446721349370",
+  "company": "Qualcomm",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "פיתוח כלים וסוכני AI לניתוח לוגים ואוטומציית בדיקות במערכות 5G, בצוות QA.",
+  "education": "סטודנט/ית B.Sc למדמ\"ח / הנדסת תוכנה / חשמל",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י eightfold:qualcomm",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "הוד השרון",
+  "not_stated": [
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-05",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "צוות QA ופיתוח אוטומציית בדיקות — מחוץ לחיפוש (למרות רכיב AI חזק)."
+  },
+  "requirements_adv": [
+    "AI / ML / ניתוח נתונים",
+    "כלי אוטומציית בדיקות",
+    "LTE/5G",
+    "Git",
+    "C++"
+  ],
+  "requirements_must": [
+    "סטודנט/ית B.Sc",
+    "לפחות שנתיים לסיום",
+    "3 ימים במשרד",
+    "תכנות (Python)"
+  ],
+  "salary": null,
+  "scope": "לפחות 3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "eightfold:qualcomm",
+      "url": "https://careers.qualcomm.com/careers/job/446721349370"
+    }
+  ],
+  "source": "eightfold:qualcomm",
+  "status": "filtered",
+  "title": "FY27 - AI Driven Test Automation Engineering Intern",
+  "url": "https://careers.qualcomm.com/careers/job/446721349370",
+  "work_mode": "משרד"
+}

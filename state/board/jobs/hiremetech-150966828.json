@@ -1,0 +1,75 @@
+{
+  "agent_id": "hiremetech:150966828",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים; הרמה וההיקף מתגיות האתר",
+    "שם זהה ל-hiremetech-150404396 (לא מעוניין, משרה מלאה ג'וניור) — לא אוחדה כי כאן חלקית לסטודנטים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150966828",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת Full Stack (JS/TS, React/Angular, Node.js, Python, PHP, Java), משרה חלקית לסטודנטים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "0+ שנים",
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 9 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "Java"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "Student/Intern, חלקית, פיתוח Full Stack בתל אביב."
+  },
+  "requirements_adv": [
+    "JavaScript / TypeScript",
+    "React / Angular",
+    "Node.js",
+    "Python",
+    "PHP",
+    "Java"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150966828"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Full Stack Engineer",
+  "url": "https://juniors.hiremetech.com/job/150966828",
+  "work_mode": null
+}

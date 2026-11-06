@@ -1,0 +1,68 @@
+{
+  "agent_id": "jobmaster:9858554",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9858554",
+  "company": "אלביט מערכות",
+  "deadline": null,
+  "degree_time": "מסמסטר 6",
+  "description": "סטודנט/ית להנדסת חשמל בהנדסת מערכת: פיתוח ואינטגרציה של מערכות מולטי-דיסציפלינריות.",
+  "education": "סטודנט/ית ל-B.Sc הנדסת חשמל, מסמסטר 6",
+  "employment": null,
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "יקנעם עילית",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תואר: דורש סטודנט/ית להנדסת חשמל; וגם יקנעם — צפון."
+  },
+  "requirements_adv": [
+    "רקע צבאי כקצין/ה תותחנים / שריון / אמל\"ח",
+    "הנדסאי חשמל / אלקטרוניקה"
+  ],
+  "requirements_must": [
+    "סטודנט/ית לתואר ראשון בהנדסת חשמל, מסמסטר 6",
+    "אנגלית טכנית ברמה גבוהה",
+    "יכולת הובלה ועבודה מול ממשקים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9858554"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "Systems Engineering Student",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9858554",
+  "work_mode": null
+}

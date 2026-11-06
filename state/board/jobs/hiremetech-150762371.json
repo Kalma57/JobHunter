@@ -1,0 +1,72 @@
+{
+  "agent_id": "hiremetech:150762371",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150762371",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות במחקר AI לרכב אוטונומי: Deep Learning ו-Transformers (לפי התגיות בכרטיס).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:09:25.783Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "הרצליה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות AI חלקית בהרצליה עם Python ו-Deep Learning; לא ידוע אם נדרש תואר שני."
+  },
+  "requirements_adv": [
+    "Python",
+    "PyTorch / TensorFlow",
+    "Deep Learning",
+    "Transformers"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150762371"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "AI Researcher (AV) - Internship",
+  "url": "https://juniors.hiremetech.com/job/150762371",
+  "work_mode": null
+}

@@ -1,0 +1,67 @@
+{
+  "agent_id": "comeet:deloitte:3C.17C",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/junior-research--risk-management-analyst/3C.17C",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אנליסט/ית מחקר וניהול סיכונים.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Tel-Aviv, Tel Aviv",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-11",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: מחקר וניהול סיכונים, לא פיתוח."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/he/position/3c-17c-he/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "filtered",
+  "title": "Junior Research & Risk Management Analyst",
+  "url": "https://careers.deloitte.co.il/he/position/3c-17c-he/",
+  "work_mode": null
+}

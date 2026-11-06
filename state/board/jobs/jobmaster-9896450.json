@@ -1,0 +1,67 @@
+{
+  "agent_id": "jobmaster:9896450",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9896450",
+  "company": "אוניברסיטת חיפה",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ייעוץ אקדמי לסטודנטים בפקולטה למדעי הטבע, סדנאות ופרויקט התמדה.",
+  "education": "תואר ראשון בייעוץ חינוכי / עבודה סוציאלית / פסיכולוגיה",
+  "employment": null,
+  "experience": "ניסיון ייעוצי לסטודנטים",
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: ייעוץ אקדמי, לא פיתוח תוכנה ולא משרת סטודנט."
+  },
+  "requirements_adv": [
+    "תואר שני",
+    "הנחיית קבוצות"
+  ],
+  "requirements_must": [
+    "תואר ראשון בייעוץ / עבודה סוציאלית / פסיכולוגיה",
+    "ניסיון ייעוצי לסטודנטים",
+    "ניסיון בגיוס ומיון"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9896450"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "יועצ/ת אקדמי/ת למדעי הטבע ופרויקט התמדה",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9896450",
+  "work_mode": "משרד"
+}

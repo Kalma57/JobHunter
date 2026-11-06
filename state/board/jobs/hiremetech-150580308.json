@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:150580308",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150580308",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "איסוף תמונות בעברית; דורש מגורים בישראל ו-iPhone 12 ומעלה.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה: איסוף תמונות."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "מגורים בישראל",
+    "iPhone 12 ומעלה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150580308"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Image Collection Associate – Hebrew",
+  "url": "https://juniors.hiremetech.com/job/150580308",
+  "work_mode": null
+}

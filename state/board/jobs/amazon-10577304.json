@@ -1,0 +1,83 @@
+{
+  "agent_id": "amazon:10577304",
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": "לצרף גיליון ציונים יחד עם קורות החיים בקובץ PDF אחד.",
+  "apply_url": "https://account.amazon.jobs/jobs/10577304/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": "לפחות 4 סמסטרים לסיום",
+  "description": "סטודנט/ית לאינטגרציית מערכות בצוות Nitro: דשבורדים ובסיסי נתונים לנתוני ייצור, יכולות AI לניתוח דאטה, ותמיכה במעבדת שרתים.",
+  "education": "סטודנט/ית לתואר ראשון במערכות מידע / הנדסת חשמל / תחום קרוב",
+  "employment": null,
+  "experience": null,
+  "far": true,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:13:09.850Z",
+      "note": "",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:13:18.621Z",
+      "note": "נמצאת בחיפה",
+      "status": "not_interested"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_interested_reason": "נמצאת בחיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-13",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (צפון). שאר הדרישות מתאימות: סטודנט/ית, 4 סמסטרים לסיום, דאטה ו-AI."
+  },
+  "requirements_adv": [
+    "ניסיון בפיתוח תוכנה, ניתוח דאטה ו-SQL",
+    "היכרות עם שרתים"
+  ],
+  "requirements_must": [
+    "סטודנט/ית עם 4 סמסטרים לפחות לסיום"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10577304/system-integration-student-nitro-team-annapurna-labs"
+    },
+    {
+      "date": "2026-10-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150761604"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "not_interested",
+  "title": "System Integration Student, Nitro Team, Annapurna Labs",
+  "url": "https://www.amazon.jobs/en/jobs/10577304/system-integration-student-nitro-team-annapurna-labs",
+  "work_mode": null
+}

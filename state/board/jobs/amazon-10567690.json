@@ -1,0 +1,60 @@
+{
+  "agent_id": "amazon:10567690",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10567690/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות Applied Scientist לדוקטורנטים.",
+  "education": "סטודנט/ית לדוקטורט",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-02",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מיועד לדוקטורנטים."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לדוקטורט"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10567690/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "2027 Applied Scientist Internship – PhD, Amazon University Talent Acquisition",
+  "url": "https://www.amazon.jobs/en/jobs/10567690/2027-applied-scientist-internship-phd-amazon-university-talent-acquisition",
+  "work_mode": null
+}

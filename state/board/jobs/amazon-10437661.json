@@ -1,0 +1,66 @@
+{
+  "agent_id": "amazon:10437661",
+  "alerts": [
+    "משרה ישנה — פורסמה 2026-06-02 (יותר מ-60 יום)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10437661/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח ב-AWS EBS — מנוע עמידות הנתונים בשרת.",
+  "education": "תואר ראשון במדמ\"ח",
+  "employment": null,
+  "experience": "2+ שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-06-02",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "2+ שנות ניסיון (מעל שנה) — לא משרת סטודנט."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "2+ שנות ניסיון",
+    "1+ שנות ארכיטקטורה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10437661/software-development-engineer-elastic-block-storage-server-durability-engine"
+    },
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10396356/senior-software-development-engineer-elastic-block-storage-server-durability-engine"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Software Development Engineer, Elastic Block Storage, Server Durability Engine",
+  "url": "https://www.amazon.jobs/en/jobs/10437661/software-development-engineer-elastic-block-storage-server-durability-engine",
+  "work_mode": null
+}

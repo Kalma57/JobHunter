@@ -1,0 +1,61 @@
+{
+  "agent_id": "comeet:deloitte:73.856",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/it-risk-management-intern/73.856",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ניהול סיכוני IT: סקרי סיכונים וביקורת מערכות מידע.",
+  "education": "סטודנט/ית לחשבונאות בלבד",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב / ירושלים",
+  "not_stated": [
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-08",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מיועד לסטודנטים לחשבונאות בלבד."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לחשבונאות בלבד",
+    "אוריינטציה טכנולוגית",
+    "אנגלית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/position/73-856-en/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "filtered",
+  "title": "IT Risk Management Intern",
+  "url": "https://careers.deloitte.co.il/position/73-856-en/",
+  "work_mode": "היברידי"
+}

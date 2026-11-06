@@ -1,0 +1,61 @@
+{
+  "agent_id": "amazon:10530739",
+  "alerts": [],
+  "apply_instructions": "קו\"ח וגיליון ציונים בקובץ PDF אחד",
+  "apply_url": "https://account.amazon.jobs/jobs/10530739/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": "סמסטר 8 (שנה אחרונה) או בוגר/ת",
+  "description": "Physical Design לשבבים (Annapurna Labs).",
+  "education": "B.Sc בהנדסת חשמל / מחשבים",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום",
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-06",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תכנון שבבים (חומרה), ודורש תואר בחשמל/מחשבים בשנה אחרונה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "B.Sc הנדסת חשמל / מחשבים",
+    "בוגר/ת או סמסטר 8"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10530739/physical-design-engineer"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Physical Design Engineer",
+  "url": "https://www.amazon.jobs/en/jobs/10530739/physical-design-engineer",
+  "work_mode": null
+}

@@ -1,0 +1,62 @@
+{
+  "agent_id": "workday:kla:2640327-1",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Software-Developer_2640327-1",
+  "company": "KLA",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח תוכנה למערכות משולבות חומרה (.NET, multithreading).",
+  "education": "B.Sc במדמ\"ח / הנדסת תוכנה",
+  "employment": null,
+  "experience": "3+ שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י workday:kla",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "מגדל העמק",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-14",
+  "prefs_down": [
+    "C#"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "3+ שנות ניסיון, וגם מגדל העמק (צפון)."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "3+ שנות ניסיון",
+    ".NET",
+    "multithreading"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "workday:kla",
+      "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Software-Developer_2640327-1"
+    }
+  ],
+  "source": "workday:kla",
+  "status": "filtered",
+  "title": "Software Developer",
+  "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Migdal-Haemek-Israel/Software-Developer_2640327-1",
+  "work_mode": null
+}

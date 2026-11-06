@@ -1,0 +1,72 @@
+{
+  "agent_id": "google:134469159198040774",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckUGmS-9xZY7i3YHfDSfkMAX4Oi5i-CXKz8DCPirrV5eeEjsA9yzvgodd5XiZZINoYCC9UCnJZeRXTTgtwMhdEXs0C7odPBJQJXis6kF7l386tpcO8N9X3i3eKkZxWA%3D%3D_V2&loc=IL&title=Junior+CAD+Engineer",
+  "company": "Google",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת CAD לתכנון שבבים, לבוגרי אוניברסיטה.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י google:google",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "תל אביב / חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה לבוגרים בתחום כלי תכנון חומרה, לא משרת סטודנט."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "google:google",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/134469159198040774-junior-cad-engineer-university-graduate-google-cloud"
+    }
+  ],
+  "source": "google:google",
+  "status": "closed",
+  "title": "Junior CAD Engineer, University Graduate, Google Cloud",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/134469159198040774-junior-cad-engineer-university-graduate-google-cloud",
+  "work_mode": null
+}

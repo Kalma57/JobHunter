@@ -1,0 +1,75 @@
+{
+  "agent_id": "amazon:10530731",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10530731/apply",
+  "company": "Amazon (Annapurna Labs Ltd. - D62)",
+  "deadline": null,
+  "degree_time": "לפחות 3 סמסטרים לסיום",
+  "description": "פיתוח, בדיקה ודיבוג Firmware לשרתי האצת ML של AWS (Annapurna Labs), עם חונכות.",
+  "education": "סטודנט/ית לתואר ראשון ומעלה במדמ\"ח / הנדסת מחשבים / חשמל",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:11:14.228Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-06",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח תוכנה, תל אביב, 2-3 ימים, 3+ סמסטרים לסיום. C/C++ מוריד, AI מעלה."
+  },
+  "requirements_adv": [
+    "C / C++",
+    "Linux, embedded, low-level",
+    "פרוטוקולי חומרה (I2C, PCIe, SPI)",
+    "שימוש יומיומי בכלי AI לפיתוח"
+  ],
+  "requirements_must": [
+    "סטודנט/ית לתואר במדמ\"ח / תחום קרוב",
+    "לפחות 3 סמסטרים לסיום",
+    "2-3 ימים"
+  ],
+  "salary": null,
+  "scope": "לפחות 2-3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10530731/software-development-student-machine-learning-israel-mlil-firmware"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "hold",
+  "title": "Software Development Student , Machine Learning Israel (MLIL) — Firmware",
+  "url": "https://www.amazon.jobs/en/jobs/10530731/software-development-student-machine-learning-israel-mlil-firmware",
+  "work_mode": null
+}

@@ -1,0 +1,68 @@
+{
+  "agent_id": "amazon:10556590",
+  "alerts": [],
+  "apply_instructions": "לצרף גיליון ציונים יחד עם קו\"ח בקובץ PDF אחד.",
+  "apply_url": "https://account.amazon.jobs/jobs/10556590/apply",
+  "company": "Amazon (Annapurna Labs)",
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "פיתוח מודלים וירטואליים של רכיבי חומרה וסביבות סימולציה, כתיבת קוד ובדיקות, דיבוג חומרה-תוכנה.",
+  "education": "סטודנט B.Sc במדמ\"ח / הנדסת תוכנה",
+  "experience": "לא נדרש",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #3",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:13:02.466Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "level": [
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-22",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט, 2-3 ימים, שנתיים לסיום בדיוק. עיר לא צוינה. C/C++ מוריד."
+  },
+  "requirements_adv": [
+    "C / C++",
+    "Linux, embedded, low-level",
+    "ארכיטקטורת מחשבים / סימולציה",
+    "כלי פיתוח מבוססי AI"
+  ],
+  "requirements_must": [
+    "סטודנט B.Sc, לפחות שנתיים לסיום"
+  ],
+  "scope": "חלקית, לפחות 2-3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10556590/software-engineer-student-virtual-platforms-annapurna-labs"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "hold",
+  "title": "Software Engineer Student, Virtual Platforms",
+  "url": "https://www.amazon.jobs/en/jobs/10556590/software-engineer-student-virtual-platforms-annapurna-labs",
+  "work_mode": null
+}

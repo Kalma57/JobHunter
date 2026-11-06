@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:150186129",
+  "alerts": [
+    "באתר הכותרת היא 'Repost'"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150186129",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מדריך/ת Python לנוער בתכנית \"אחרייטק\", עם מנטור מהתעשייה.",
+  "education": null,
+  "employment": "שעתי",
+  "experience": "ניסיון בהדרכה",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:14:54.798Z",
+      "note": "משרת הדרכה ולא משרת פיתוח או מחקר",
+      "status": "not_interested"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ברחבי הארץ (אור עקיבא, קריית שמונה, נהריה, עפולה, קצרין, בית שאן, אשקלון, קריית מלאכי, שדרות, נתיבות)",
+  "not_interested_reason": "משרת הדרכה ולא משרת פיתוח או מחקר",
+  "not_stated": [
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-14",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד הדרכה/הוראה, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "רקע ב-Python",
+    "ניסיון בהדרכה"
+  ],
+  "salary": "80₪ לשעת הדרכה",
+  "scope": "פעם-פעמיים בשבוע, אחה\"צ-ערב",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150186129"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "not_interested",
+  "title": "משרה גמישה לבעלי רקע בפייתון 80₪ לשעת הדרכה",
+  "url": "https://juniors.hiremetech.com/job/150186129",
+  "work_mode": "בשטח"
+}

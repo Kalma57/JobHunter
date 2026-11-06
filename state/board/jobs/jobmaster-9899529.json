@@ -1,0 +1,67 @@
+{
+  "agent_id": "jobmaster:9899529",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9899529",
+  "company": "הקריה האקדמית אונו",
+  "deadline": null,
+  "degree_time": null,
+  "description": "יועץ/ת אקדמי/ת במינהל סטודנטים: שירות לסטודנטים, טיפול אדמיניסטרטיבי ועבודה מול מרצים.",
+  "education": "תואר אקדמי — יתרון",
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "שירות פרונטלי לסטודנטים"
+  },
+  "is_job": true,
+  "job_number": "9899529",
+  "level": [],
+  "location": "קריית אונו",
+  "not_stated": [
+    "level",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: אדמיניסטרציה ושירות לסטודנטים, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "תואר אקדמי"
+  ],
+  "requirements_must": [
+    "תודעת שירות ויחסי אנוש",
+    "עבודת צוות ותעדוף משימות",
+    "Office"
+  ],
+  "salary": null,
+  "scope": "50% משרה, 4 ימים בשבוע (א', ד' 12:00-17:00; ב', ה' 08:00-13:30)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9899529"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "דרוש.ה יועצ.ת אקדמי.ת למינהל סטודנטים בבית הספר לנדל\"ן",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9899529",
+  "work_mode": "משרד"
+}

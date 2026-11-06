@@ -1,0 +1,61 @@
+{
+  "agent_id": "comeet:deloitte:72.C5F",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/audit-intern---student-position/72.C5F",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "טרום התמחות בראיית חשבון — ביקורת וסקירת חברות.",
+  "education": "סטודנט/ית לתואר ראשון בחשבונאות",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-10",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום חשבונאות — לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לחשבונאות",
+    "אנגלית ברמה גבוהה",
+    "Excel",
+    "3 ימים"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/position/72-c5f-en/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "filtered",
+  "title": "Audit Intern - Student Position",
+  "url": "https://careers.deloitte.co.il/position/72-c5f-en/",
+  "work_mode": null
+}

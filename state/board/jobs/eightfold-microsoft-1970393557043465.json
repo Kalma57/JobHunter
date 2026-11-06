@@ -1,0 +1,61 @@
+{
+  "agent_id": "eightfold:microsoft:1970393557043465",
+  "alerts": [
+    "נראית כמו Applied Sciences INTERN מ-HireMeTech שסימנת 'בהמתנה' (hiremetech-150735057). שם לא ראו את הדרישה לדוקטורט — כדאי לבדוק."
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393557043465",
+  "company": "Microsoft",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות מחקר ב-CMD Labs של Microsoft Teams: סוכנים שיתופיים ומודלי דיבור.",
+  "education": "PhD או M.Sc עם פרסומים",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-21",
+  "history": [
+    {
+      "at": "2026-10-21T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:microsoft",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-21",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI",
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש סטודנט/ית לדוקטורט (או M.Sc עם פרסומים), התמחות במשרה מלאה ל-12 שבועות."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה, 12 שבועות",
+  "sightings": [
+    {
+      "date": "2026-10-21",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557043465"
+    }
+  ],
+  "source": "eightfold:microsoft",
+  "status": "filtered",
+  "title": "Applied Sciences INTERN",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557043465",
+  "work_mode": null
+}

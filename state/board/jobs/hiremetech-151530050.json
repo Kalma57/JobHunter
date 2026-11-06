@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:151530050",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151530050",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פסיכולוג/ית מתמחה במרפאת מבוגרים.",
+  "education": "תואר שני בפסיכולוגיה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "אילת",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "degree_time",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש תואר אחר (פסיכולוגיה) ותחום אחר."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תואר שני בפסיכולוגיה",
+    "רישום בפנקס הפסיכולוגים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151530050"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "פסיכולוג/ית מתמחה למרפאת מבוגרים",
+  "url": "https://juniors.hiremetech.com/job/151530050",
+  "work_mode": null
+}

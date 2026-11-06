@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:150392362",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150392362",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מומחה/ית ERP ואפליקציות עסקיות (Priority, Salesforce).",
+  "education": null,
+  "employment": null,
+  "experience": "עד 3 שנים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:15:10.704Z",
+      "note": "נמצאת בקיסריה שזה גם רחוק מידי",
+      "status": "not_interested"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "קיסריה",
+  "not_interested_reason": "נמצאת בקיסריה שזה גם רחוק מידי",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-13",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: ERP / מערכות מידע, לא משרת סטודנט."
+  },
+  "requirements_adv": [
+    "Priority ERP",
+    "Salesforce"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150392362"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "not_interested",
+  "title": "ERP & Business Applications Specialist",
+  "url": "https://juniors.hiremetech.com/job/150392362",
+  "work_mode": null
+}

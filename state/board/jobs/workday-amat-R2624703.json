@@ -1,0 +1,67 @@
+{
+  "agent_id": "workday:amat:R2624703",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Planner_R2624703",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתכנן/ת מוצר לבוגרי הנדסת תעשייה וניהול.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: תכנון ייצור, לבוגרים."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Planner_R2624703"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "filtered",
+  "title": "Planner",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Planner_R2624703",
+  "work_mode": null
+}

@@ -1,0 +1,57 @@
+{
+  "agent_id": "drushim:38526987",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38526987/e9132ce1/",
+  "company": "tactics",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הדרכת חוגי טכנולוגיה לילדים.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמת גן, תל אביב, ראשון לציון, פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-24",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: הדרכה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38526987/e9132ce1/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "דרושים.ות מדריכים.ות לתחומי טכנולוגיה, מדע וחדשנות",
+  "url": "https://www.drushim.co.il/job/38526987/e9132ce1/",
+  "work_mode": null
+}

@@ -1,0 +1,76 @@
+{
+  "agent_id": "google:103632882076918470",
+  "alerts": [],
+  "apply_instructions": "לצרף קו\"ח + גיליון ציונים באנגלית (PDF). לציין בקו\"ח חודש ושנת סיום ותאריכי זמינות.",
+  "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckaC99TRyy8CZ5z-DZwbdKbJd8JdCcJ-YH5p12c4bnYXGEjsA1Ny_i3N3YUgGNK-EjIRzOqbsjfGJRNZ5if1lVJNjzg_sqI1LFvCifACgUNmMQ8gFFpiJ-x3y5I1xPw%3D%3D_V2&loc=IL&title=Part-Time+Software+Engineering+BS/MS+Intern",
+  "company": "Google",
+  "deadline": "2026-10-23",
+  "degree_time": "שנה לפני אחרונה / אחרונה",
+  "description": "התמחות במשרה חלקית לצד הלימודים בצוות תוכנה של Google. הצוות נקבע לפי הרקע והעניין.",
+  "education": "תואר ראשון/שני במדמ\"ח בישראל, שנה לפני אחרונה או אחרונה",
+  "experience": "לא נדרש",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #16",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:10:28.840Z",
+      "note": "",
+      "status": "hold"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "מועד ההגשה עבר (2026-10-23)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {
+    "company": "שם החברה לא מופיע במודעה — הוסק מהטקסט (\"Google's needs\")."
+  },
+  "level": [
+    "התמחות",
+    "סטודנט"
+  ],
+  "location": "תל אביב או חיפה (לבחירה)",
+  "not_stated": [
+    "work_mode",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-03",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "Java"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות לסטודנטים בת\"א, 2-4 ימים חופף ל-עד 3 ימים, Python/Java."
+  },
+  "requirements_adv": [
+    "ניסיון מעשי (עוזר מחקר, מתרגל, פרויקטים אישיים)",
+    "AI/ML, תשתיות, Web, Linux"
+  ],
+  "requirements_must": [
+    "סטודנט לתואר ראשון/שני במדמ\"ח בישראל",
+    "ניסיון במבני נתונים / אלגוריתמים",
+    "קוד ב-Python, C, C++, Java או JavaScript"
+  ],
+  "scope": "2-4 ימים בשבוע, לפחות 26 שבועות מ-מרץ-מאי 2027",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "google:google",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/103632882076918470-part-time-software-engineering-bs-ms-intern-2027"
+    }
+  ],
+  "source": "google:google",
+  "status": "closed",
+  "title": "Part-Time Software Engineering BS/MS Intern, 2027",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/103632882076918470-part-time-software-engineering-bs-ms-intern-2027",
+  "work_mode": null
+}

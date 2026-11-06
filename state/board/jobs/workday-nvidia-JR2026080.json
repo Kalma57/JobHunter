@@ -1,0 +1,67 @@
+{
+  "agent_id": "workday:nvidia:JR2026080",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-C---Software-Engineer---AI-Developer-Tools_JR2026080",
+  "company": "NVIDIA",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח כלי מפתחים מבוססי AI (Genie) ב-C++ ו-Python.",
+  "education": "תואר ראשון/שני במדמ\"ח / הנדסת תוכנה",
+  "employment": null,
+  "experience": "5+ שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י workday:nvidia",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-21",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "סניור עם 5+ שנות ניסיון."
+  },
+  "requirements_adv": [
+    "RAG / embeddings",
+    "MCP / agent frameworks"
+  ],
+  "requirements_must": [
+    "5+ שנות C++",
+    "C++ ו-Python"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "workday:nvidia",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-C---Software-Engineer---AI-Developer-Tools_JR2026080"
+    }
+  ],
+  "source": "workday:nvidia",
+  "status": "filtered",
+  "title": "Senior C++ Software Engineer – AI Developer Tools",
+  "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-C---Software-Engineer---AI-Developer-Tools_JR2026080",
+  "work_mode": null
+}

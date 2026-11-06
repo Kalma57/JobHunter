@@ -1,0 +1,63 @@
+{
+  "agent_id": "google:121479339848934086",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckeFp3PuJ3C0_fHGC6_GXB-HgX38N7kM3WWKjCjCmBJUzEjsA9yzvgp6fRwINM51F1TQ9AhvRBuGrldGc8-Pzrht0peEZWKNNY381q8uoIvrCVsG1_7t0RUG9iahaMQ%3D%3D_V2&loc=IL&title=Hardware/Electrical+Engineering+BS/MS+Intern",
+  "company": "Google",
+  "deadline": "2026-11-13",
+  "degree_time": null,
+  "description": "התמחות חומרה (VLSI) — תכנון ואימות שבבים ל-Google Cloud.",
+  "education": "סטודנט/ית B.Sc/M.Sc להנדסת חשמל / מחשבים, שנה לפני אחרונה או אחרונה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י google:google",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב / חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-02",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "התמחות חומרה, דורש הנדסת חשמל/מחשבים."
+  },
+  "requirements_adv": [
+    "Python, C, C++"
+  ],
+  "requirements_must": [
+    "הנדסת חשמל / מחשבים",
+    "ניסיון בתחומי חומרה",
+    "שנה לפני אחרונה / אחרונה"
+  ],
+  "salary": null,
+  "scope": "2-4 ימים בשבוע, 26 שבועות לפחות",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "google:google",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/121479339848934086-hardware-electrical-engineering-bs-ms-intern-2027"
+    }
+  ],
+  "source": "google:google",
+  "status": "filtered",
+  "title": "Hardware/Electrical Engineering BS/MS Intern, 2027",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/121479339848934086-hardware-electrical-engineering-bs-ms-intern-2027",
+  "work_mode": null
+}

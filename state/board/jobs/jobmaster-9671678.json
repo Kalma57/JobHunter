@@ -1,0 +1,63 @@
+{
+  "agent_id": "jobmaster:9671678",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9671678",
+  "company": "UPS ישראל",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עבודת תפעול חבילות פיזית בבית UPS בנתב\"ג, משמרות ערב.",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "לא נדרש",
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום",
+    "סטודנט"
+  ],
+  "location": "נתב\"ג (לוד)",
+  "not_stated": [
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: לוגיסטיקה ותפעול חבילות, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "הגעה עצמאית לנתב\"ג",
+    "נכונות לעבודה פיזית"
+  ],
+  "salary": null,
+  "scope": "3 או 5 משמרות ערב (16:45-00:30), אפשרות לשבת",
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9671678"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "מתפעל/ת חבילות - ללא ניסיון, אפשרות למשרת סטודנט/ית!",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9671678",
+  "work_mode": "משרד"
+}

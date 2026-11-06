@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:150834020",
+  "alerts": [
+    "סתירה: האתר מתייג 'משרה מלאה', הטקסט אומר יומיים בשבוע"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150834020",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": "יתרת לימודים של שנתיים",
+  "description": "סיוע בהנדסת מערכת במטה ייצור: הוראות שינוי הנדסי, עצי מוצר, חקר תקלות, כלי תיב\"ם מכניים.",
+  "education": "סטודנט/ית להנדסת מכונות",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "משגב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: הנדסת מכונות (וגם צפון)."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית להנדסת מכונות",
+    "יתרת לימודים של שנתיים",
+    "זמינות ליומיים בשבוע"
+  ],
+  "salary": null,
+  "scope": "יומיים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150834020"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית מכונות להנדסת מערכת",
+  "url": "https://juniors.hiremetech.com/job/150834020",
+  "work_mode": null
+}

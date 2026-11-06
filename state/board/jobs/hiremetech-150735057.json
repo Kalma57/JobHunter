@@ -1,0 +1,77 @@
+{
+  "agent_id": "hiremetech:150735057",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150735057",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות ב-Applied Sciences: מחקר, סטטיסטיקה ו-LLM בתחום רפואי (לפי התגיות בכרטיס).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:10:49.210Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "הרצליה פיתוח",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת Intern חלקית במרכז עם Python ו-LLM; הדרישות המלאות לא גלויות."
+  },
+  "requirements_adv": [
+    "Python",
+    "LLM",
+    "סטטיסטיקה"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150735057"
+    },
+    {
+      "date": "2026-10-15",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557040080"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "Applied Sciences INTERN",
+  "url": "https://juniors.hiremetech.com/job/150735057",
+  "work_mode": null
+}

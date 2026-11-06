@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:151526380",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151526380",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת Core ג'וניור: Rust, C/C++, תכנות מקבילי ומערכות מבוזרות.",
+  "education": null,
+  "employment": null,
+  "experience": "0-2 שנים",
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני 6 שעות"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-24",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "היקף: משרה מלאה (ג'וניור, לא משרת סטודנט)."
+  },
+  "requirements_adv": [
+    "Rust",
+    "C",
+    "C++"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151526380"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Core Developer",
+  "url": "https://juniors.hiremetech.com/job/151526380",
+  "work_mode": null
+}

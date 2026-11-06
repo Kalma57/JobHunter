@@ -1,0 +1,63 @@
+{
+  "agent_id": "amazon:10579756",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10579756/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת אימות פורמלי לשבבי Graviton/Nitro, מהארכיטקטורה ועד sign-off.",
+  "education": "תואר ראשון בהנדסת חשמל או קרוב",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "scope",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: אימות פורמלי של שבבים, לא פיתוח תוכנה; לא משרת סטודנט; חיפה."
+  },
+  "requirements_adv": [
+    "Python/Perl/TCL",
+    "SystemVerilog"
+  ],
+  "requirements_must": [
+    "תואר בהנדסת חשמל",
+    "ניסיון בהדרכת מהנדסים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10579756/formal-verification-engineer-annapurna-labs"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Formal Verification Engineer, Annapurna Labs",
+  "url": "https://www.amazon.jobs/en/jobs/10579756/formal-verification-engineer-annapurna-labs",
+  "work_mode": null
+}

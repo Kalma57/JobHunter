@@ -1,0 +1,79 @@
+{
+  "agent_id": "hiremetech:150565012",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "מיקום: רק 'Israel'",
+    "רמה: מתויג Junior — לא ברור אם מתאים לסטודנט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150565012",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח אוטומציות, WhatsApp Business API ו-API (Python, React, Supabase, Cloud Run), חלקית ולפי שעה.",
+  "education": null,
+  "employment": "שעתי",
+  "experience": "1-2 שנים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:11:30.422Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח Python חלקי ושעתי; ניסיון 1-2 חופף ל'עד שנה'; רמת סטודנט לא נשללה."
+  },
+  "requirements_adv": [
+    "Python",
+    "React",
+    "TanStack Start",
+    "Supabase",
+    "PostgreSQL",
+    "WhatsApp Business API",
+    "Google Cloud Run",
+    "GitHub"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150565012"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "Developer – Automations, Whats App & API (Part-time, Hourly)",
+  "url": "https://juniors.hiremetech.com/job/150565012",
+  "work_mode": null
+}

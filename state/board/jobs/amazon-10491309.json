@@ -1,0 +1,73 @@
+{
+  "agent_id": "amazon:10491309",
+  "alerts": [
+    "משרה ישנה — פורסמה 2026-08-04 (יותר מ-60 יום)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10491309/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": null,
+  "description": "SDE-I בוגר/ת 2026: פיתוח מערכות מבוזרות ומיקרו-שירותים בענן, כולל כלי GenAI ותורנויות on-call.",
+  "education": "סטודנט/ית לתואר ראשון ומעלה או בוגר/ת ב-24 החודשים האחרונים (מדמ\"ח / הנדסת מחשבים / STEM)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום",
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-08-04",
+  "prefs_down": [],
+  "prefs_up": [
+    "Java",
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "משרת SDE-I לבוגרים (2026 Graduate), לא משרת סטודנט."
+  },
+  "requirements_adv": [
+    "התמחות קודמת",
+    "כלי AI לפיתוח",
+    "AWS",
+    "SQL/NoSQL"
+  ],
+  "requirements_must": [
+    "סטודנט/ית או בוגר/ת תואר במדמ\"ח / STEM",
+    "שפת תכנות אחת לפחות",
+    "מבני נתונים / אלגוריתמים / OOP"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10491309/2026-graduate-software-dev-engineer"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "2026 Graduate Software Dev Engineer",
+  "url": "https://www.amazon.jobs/en/jobs/10491309/2026-graduate-software-dev-engineer",
+  "work_mode": null
+}

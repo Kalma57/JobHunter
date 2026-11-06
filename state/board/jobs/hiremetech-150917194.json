@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:150917194",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "תחום התפקיד לא צוין",
+    "סתירה במיקום: הכתובת בשוהם, האתר מציין Kiryat Gat"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150917194",
+  "company": "טבעול (לפי שם המשרה)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט/ית בטבעול — תחום התפקיד לא מופיע בכרטיס.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 23 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "עוברת כי התחום והמיקום לא צוינו (שוהם / קריית גת — שניהם בטווח); כנראה לא פיתוח, לבדוק."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150917194"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "סטודנט/ית טבעול צבר",
+  "url": "https://juniors.hiremetech.com/job/150917194",
+  "work_mode": null
+}

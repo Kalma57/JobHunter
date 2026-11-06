@@ -1,0 +1,64 @@
+{
+  "agent_id": "eightfold:microsoft:1970393557043459",
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393557043459",
+  "company": "Microsoft",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות בניהול מוצר ב-Microsoft.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-21",
+  "history": [
+    {
+      "at": "2026-10-21T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:microsoft",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב / הרצליה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: ניהול מוצר, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-21",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557043459"
+    },
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151407988"
+    }
+  ],
+  "source": "eightfold:microsoft",
+  "status": "filtered",
+  "title": "Product Management Internship Opportunities",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557043459",
+  "work_mode": null
+}

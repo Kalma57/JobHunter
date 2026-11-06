@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:151532016",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "התפקיד (CAD אנלוגי, Python/ML) הוכרע כפיתוח כלים — בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151532016",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית ל-CAD של מעגלים אנלוגיים/Mixed-Signal, עם Python ולמידת מכונה.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "far": true,
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני 4 שעות"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "יקנעם",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-24",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — יקנעם (צפון); שאר הדרישות עוברות."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151532016"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Mixed-Signal Analog CAD Student",
+  "url": "https://juniors.hiremetech.com/job/151532016",
+  "work_mode": null
+}

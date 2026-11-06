@@ -1,0 +1,75 @@
+{
+  "agent_id": "hiremetech:151222732",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
+    "אוחדה עם משרה דומה — בדוק (HireMeTech 151231580: אותו שם, קריית גת)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151222732",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט אנליסט/ית עסקי/ת לתכנון אסטרטגי של השקעות הון בקריית גת. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 23 שעות' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "קריית גת",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: אנליסט/ית עסקי/ת, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "Business analysis",
+    "Project Management",
+    "Data Analysis",
+    "Reporting"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי תגית האתר)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151222732"
+    },
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151231580"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Capital Strategic Planning Business Analyst Student",
+  "url": "https://juniors.hiremetech.com/job/151222732",
+  "work_mode": null
+}

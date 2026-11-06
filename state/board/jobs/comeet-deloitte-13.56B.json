@@ -1,0 +1,65 @@
+{
+  "agent_id": "comeet:deloitte:13.56B",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/us-tax-manager/13.56B",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מנהל/ת מיסוי אמריקאי — ייעוץ מס ללקוחות רב-לאומיים.",
+  "education": "תואר בחשבונאות / משפטים / כלכלה",
+  "employment": null,
+  "experience": "5+ שנים",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-21, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "מנהל/ת"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה, ורמת מנהל עם 5+ שנים."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "5+ שנות ניסיון במיסוי אמריקאי",
+    "תואר בחשבונאות / משפטים / כלכלה",
+    "עבודה עם כלי AI"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/he/position/13-56b-he/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "closed",
+  "title": "US Tax Manager",
+  "url": "https://careers.deloitte.co.il/he/position/13-56b-he/",
+  "work_mode": null
+}

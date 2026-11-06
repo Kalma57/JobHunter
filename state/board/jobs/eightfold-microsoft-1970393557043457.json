@@ -1,0 +1,76 @@
+{
+  "agent_id": "eightfold:microsoft:1970393557043457",
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק (HireMeTech 151319287: אותו טקסט בדיוק)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393557043457",
+  "company": "Microsoft",
+  "deadline": null,
+  "degree_time": "לפחות 3 סמסטרים לסיום — סיום חורף 2028 ואילך",
+  "description": "מתמחה דאטה סיינס: פיתוח סוכני AI אוטונומיים, הערכת LLMs ובניית מסגרות ניסוי סטטיסטיות.",
+  "education": "סטודנט/ית לתואר שני (M.Sc) בדאטה סיינס / מתמטיקה / סטטיסטיקה / מדעי המחשב; PhD יתרון",
+  "employment": "זמנית",
+  "experience": "ניסיון בכתיבת קוד בסביבת פרודקשן ובעבודה עם LLMs",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:microsoft",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "מהמודעה ב-HireMeTech: 'Work Site: 3 days / week in-office'"
+  },
+  "is_job": true,
+  "job_number": "200062584",
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "הרצליה / תל אביב",
+  "not_stated": [
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-20",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "השכלה: דורשת סטודנט/ית לתואר שני (M.Sc), לא B.Sc."
+  },
+  "requirements_adv": [
+    "סטודנט/ית לדוקטורט"
+  ],
+  "requirements_must": [
+    "סטודנט/ית לתואר שני בתחום רלוונטי",
+    "3 סמסטרים לפחות לסיום (חורף 2028 ואילך)",
+    "ידע/ניסיון ב-LLMs",
+    "ניסיון בכתיבת קוד בפרודקשן ו-Git"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע במשרד (לפי HireMeTech); תפקיד לשנה וחצי עד סיום התואר",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557043457"
+    },
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151319287"
+    }
+  ],
+  "source": "eightfold:microsoft",
+  "status": "filtered",
+  "title": "Data Science Internship Opportunities",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393557043457",
+  "work_mode": "היברידי"
+}

@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:151192395",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151192395",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט מהנדס/ת ניתוח נתונים (Python) בירושלים. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "0+ שנים (לפי תגית האתר)",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני יום' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים (הר חוצבים)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: ניתוח נתונים (לא פיתוח תוכנה), וגם ירושלים — מחוץ לדרום/מרכז."
+  },
+  "requirements_adv": [
+    "Python"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי תגית האתר)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151192395"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Data Analysis Engineer - Student Position",
+  "url": "https://juniors.hiremetech.com/job/151192395",
+  "work_mode": null
+}

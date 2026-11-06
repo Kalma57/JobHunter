@@ -1,0 +1,70 @@
+{
+  "agent_id": "amazon:10558894",
+  "alerts": [],
+  "apply_instructions": "קו\"ח וגיליון ציונים בקובץ PDF אחד",
+  "apply_url": "https://account.amazon.jobs/jobs/10558894/apply",
+  "company": "Amazon (Annapurna Labs LTD)",
+  "deadline": null,
+  "degree_time": "לפחות 2 סמסטרים לסיום",
+  "description": "פיתוח תוכנה לפרוטוקול הרשת EFA בענן AWS (Annapurna Labs).",
+  "education": "סטודנט/ית B.Sc למדמ\"ח / הנדסת מחשבים / תוכנה / חשמל",
+  "employment": null,
+  "experience": null,
+  "far": true,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:13:50.154Z",
+      "note": "נמצא בחיפה",
+      "status": "not_interested"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_interested_reason": "נמצא בחיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-24",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (אזורי החיפוש: דרום / מרכז). עוברת את כל השאר: הנדסת תוכנה מתקבלת, 2-3 ימים, 2+ סמסטרים לסיום."
+  },
+  "requirements_adv": [
+    "C",
+    "פרוטוקולי רשת"
+  ],
+  "requirements_must": [
+    "סטודנט/ית B.Sc (כולל הנדסת תוכנה)",
+    "לפחות 2 סמסטרים לסיום",
+    "2-3 ימים"
+  ],
+  "salary": null,
+  "scope": "2-3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10558894/software-development-student-efa-annapurna-labs"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "not_interested",
+  "title": "Software Development Student, EFA Annapurna Labs",
+  "url": "https://www.amazon.jobs/en/jobs/10558894/software-development-student-efa-annapurna-labs",
+  "work_mode": null
+}

@@ -1,0 +1,77 @@
+{
+  "agent_id": "hiremetech:151245089",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151245089",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט בפיתוח מתקדם בתחום רשתות GPU (C++, deep learning, GenAI, Kubernetes, Linux) בתל אביב. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 16 שעות' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח (GPU Networking) בתל אביב, חלקית; שאר הדרישות לא צוינו."
+  },
+  "requirements_adv": [
+    "C++",
+    "Deep learning",
+    "Generative AI",
+    "Kubernetes",
+    "Linux",
+    "Networking"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי תגית האתר)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151245089"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Advanced Development Engineering Student, GPU Networking",
+  "url": "https://juniors.hiremetech.com/job/151245089",
+  "work_mode": null
+}

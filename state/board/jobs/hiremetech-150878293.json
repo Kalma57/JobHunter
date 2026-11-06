@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:150878293",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "התחום לא ברור (Technical) — לבדוק אם זה פיתוח תוכנה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150878293",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות טכנית לסטודנטים לתואר ראשון, חלקית, בחברה מתחום רפואי (לפי התגיות). פרטי התפקיד לא גלויים.",
+  "education": "סטודנט/ית לתואר ראשון",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:11:41.241Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {
+    "education": "מהכותרת 'Undergrad Intern'"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "הוד השרון / חיפה",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות לסטודנט לתואר ראשון, חלקית; התחום לא צוין ולכן עוברת."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150878293"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "hold",
+  "title": "Undergrad Intern Technical",
+  "url": "https://juniors.hiremetech.com/job/150878293",
+  "work_mode": null
+}

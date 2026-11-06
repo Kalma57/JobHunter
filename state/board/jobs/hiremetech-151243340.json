@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:151243340",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151243340",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט לתיוג תמונות לוויין (GIS, ניתוח גיאו-מרחבי). הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 16 שעות' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "job_number": "22209",
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: תיוג תמונות לוויין, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "GIS",
+    "Image Annotation",
+    "Geospatial Analysis"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151243340"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "22209 - Student Satellite Imagery Annotation Specialist",
+  "url": "https://juniors.hiremetech.com/job/151243340",
+  "work_mode": null
+}

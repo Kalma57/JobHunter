@@ -1,0 +1,59 @@
+{
+  "alerts": [
+    "המפרסם ב-Glassdoor הוא Fives — המעסיק בפועל FIL Robotics."
+  ],
+  "company": "FIL Robotics",
+  "degree_time": "שנה ג'",
+  "description": "פיתוח צד שרת למערכות רובוטיות לאוטומציית מחסנים: Java, Python, Kotlin, APIs, SQL.",
+  "education": "סטודנט שנה ג' למדמ\"ח / הנדסת תוכנה, ציונים גבוהים",
+  "experience": "לא נדרש",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #17",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:10:43.314Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "level": [
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "prefs_down": [],
+  "prefs_up": [
+    "Java",
+    "Python"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט שנה ג', Java + Python. עיר והיקף לא צוינו — עובר עם סימון."
+  },
+  "requirements_adv": [
+    "עדיפות לסטודנטים מהטכניון, ת\"א, העברית, חיפה, בר-אילן"
+  ],
+  "requirements_must": [
+    "סטודנט שנה ג'",
+    "הישגים אקדמיים גבוהים",
+    "OOP",
+    "שפת תכנות אחת לפחות (Java / Kotlin / Python / C++)",
+    "SQL בסיסי"
+  ],
+  "scope": null,
+  "source": "Glassdoor",
+  "status": "hold",
+  "title": "Junior Software Engineer - Student Position",
+  "work_mode": null
+}

@@ -1,0 +1,33 @@
+{
+  "after_prefilter": 83,
+  "at": "2026-10-24T07:00:00Z",
+  "backlog": 43,
+  "borderline": [
+    "Student Software Engineer - Cybersecurity (hiremetech 151439330) — לא כפילות של Software Engineer Intern רמת גן / DriveNets / FIL Robotics (תפקיד, טכנולוגיות ומיקום שונים)",
+    "Design Engineer Intern (hiremetech 151423207) — כפילות של Marvell 2604491 (אותו שם, יקנעם, Python/Perl); אוחדה",
+    "Product Management Internship (hiremetech 151407988) — כפילות של Microsoft 1970393557043459 (אותו שם והרצליה); אוחדה",
+    "Practical Engineering Student Kiryat Gat (hiremetech 151353258) — כפילות של Intel JR0281401 (אותו שם וקריית גת); אוחדה",
+    "Student/Part time Marcom Specialist (hiremetech 151432135) — כפילות של 151476632 (אותו שם, נס ציונה); אוחדה",
+    "Intel JR0287013 — כבר נסגרה בצעד 3; לא נוצרה כפילות"
+  ],
+  "brain_filtered": 35,
+  "candidates": 83,
+  "closed": 29,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=20"
+  ],
+  "far": 1,
+  "found_new": 0,
+  "kind": "daily",
+  "passed": 1,
+  "prefiltered": [],
+  "prefiltered_count": 0,
+  "removed": 0,
+  "sources_read": 38,
+  "sources_total": 39,
+  "summary": "1 עברו · 35 סוננו ע\"י המוח · 0 סוננו בקוד · 4 כפילויות · 0 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

@@ -1,0 +1,41 @@
+{
+  "alerts": [],
+  "company": "משרד ממשלתי — דרך SQLink",
+  "description": "CI/CD, אוטומציות, Infrastructure as Code (Terraform), Kubernetes.",
+  "experience": "שנה",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #15",
+      "status": "filtered"
+    }
+  ],
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "ג'וניור, לא משרת סטודנט; ירושלים."
+  },
+  "requirements_adv": [
+    "GitOps / ArgoCD"
+  ],
+  "requirements_must": [
+    "שנה ניסיון DevOps בענן",
+    "Terraform",
+    "GitLab CI/CD"
+  ],
+  "source": "HireMeTech",
+  "status": "filtered",
+  "title": "Junior DevOps Engineer",
+  "work_mode": "משרד"
+}

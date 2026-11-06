@@ -1,0 +1,72 @@
+{
+  "agent_id": "hiremetech:150949595",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "סתירה במיקום: הכתובת בתל אביב, האתר מציין ירושלים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150949595",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית זמני/ת ביחידת שוק ההון באגף סטטיסטיקה (Excel, מאקרו, Python, SQL).",
+  "education": null,
+  "employment": "זמנית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 13 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: סטטיסטיקה ועיבוד נתונים, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "Excel ומאקרו",
+    "Python",
+    "SQL"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150949595"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית זמני/ת ליחידת שוק ההון, באגף סטטיסטיקה, בחטיבה למידע וסטטיסטיקה (סטודנט)",
+  "url": "https://juniors.hiremetech.com/job/150949595",
+  "work_mode": null
+}

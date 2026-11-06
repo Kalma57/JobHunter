@@ -1,15 +1,20 @@
-@echo off
-rem JobHunter morning run, code half (docs/agents/morning-run.md). Run by Windows Task Scheduler ("JobHunter morning").
-rem prepare: sub-agents + prefilter + plan  ->  the Claude run (09:05) reads state\plan\next.json and writes the board
-rem finish --wait: waits for the Claude run's done marker, then public page + state backup to git.
-cd /d "%~dp0.."
-set PYTHONIOENCODING=utf-8
-if not exist state\logs mkdir state\logs
-for /f %%d in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set TODAY=%%d
-rem the background browser of the HireMeTech agent must match the Playwright version (21/10/2026: an update left it missing)
-.venv\Scripts\python.exe -m playwright install --only-shell chromium >> state\logs\morning-%TODAY%.log 2>&1
-echo ==== %DATE% %TIME% prepare >> state\logs\morning-%TODAY%.log
-.venv\Scripts\python.exe -m jobhunter.morning prepare >> state\logs\morning-%TODAY%.log 2>&1
-echo ==== %DATE% %TIME% finish --wait >> state\logs\morning-%TODAY%.log
-.venv\Scripts\python.exe -m jobhunter.morning finish --wait >> state\logs\morning-%TODAY%.log 2>&1
-echo ==== %DATE% %TIME% end >> state\logs\morning-%TODAY%.log
+@echo off
+rem JobHunter morning run (docs/agents/brain-run.md). Windows Task Scheduler "JobHunter morning", daily 08:00.
+rem prepare (sub-agents, prefilter, plan, the code's own board writes) -> brain (claude -p) -> apply (cards onto the board)
+rem -> finish (public page + backup to git). No Claude app needed (6/11/2026).
+cd /d "%~dp0.."
+set PYTHONIOENCODING=utf-8
+if not exist state\logs mkdir state\logs
+for /f %%d in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set TODAY=%%d
+set LOG=state\logs\morning-%TODAY%.log
+rem the background browser of the HireMeTech agent must match the Playwright version (21/10/2026)
+.venv\Scripts\python.exe -m playwright install --only-shell chromium >> %LOG% 2>&1
+echo ==== %DATE% %TIME% prepare >> %LOG%
+.venv\Scripts\python.exe -m jobhunter.morning prepare >> %LOG% 2>&1
+echo ==== %DATE% %TIME% brain >> %LOG%
+.venv\Scripts\python.exe -m jobhunter.morning brain >> %LOG% 2>&1
+echo ==== %DATE% %TIME% apply >> %LOG%
+.venv\Scripts\python.exe -m jobhunter.morning apply >> %LOG% 2>&1
+echo ==== %DATE% %TIME% finish >> %LOG%
+.venv\Scripts\python.exe -m jobhunter.morning finish >> %LOG% 2>&1
+echo ==== %DATE% %TIME% end >> %LOG%

@@ -1,0 +1,80 @@
+{
+  "agent_id": "workday:marvell:2604499",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/AI-Infrastructure-Engineer-Intern_2604499",
+  "company": "Marvell",
+  "deadline": null,
+  "degree_time": "סטודנט/ית מתקדם/ת (לא צוין כמה זמן לסיום)",
+  "description": "סטודנט/ית לתשתיות דאטה בקבוצת מחקר ה-AI של משרד ה-CTO: איסוף, ניקוי ועיבוד דאטה של תכנון שבבים ובניית pipelines ב-Python ו-SQL.",
+  "education": "סטודנט/ית מתקדם/ת לתואר ראשון במדעי המחשב / הנדסת תוכנה / הנדסת חשמל / מדעי הנתונים",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י workday:marvell",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:10:02.666Z",
+      "note": "יותר מהנדס נתונים ממהנדס תוכנה",
+      "status": "not_interested"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-20, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "פתח תקווה",
+  "not_interested_reason": "יותר מהנדס נתונים ממהנדס תוכנה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-12",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "סטודנט/ית מתקדם/ת בהנדסת תוכנה, Python ו-AI, פתח תקווה (מרכז)."
+  },
+  "requirements_adv": [
+    "Airflow / dbt / Spark",
+    "היכרות בסיסית עם ML"
+  ],
+  "requirements_must": [
+    "Python (pandas, NumPy)",
+    "SQL",
+    "ניקוי ועיבוד דאטה אמיתי",
+    "Git"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "workday:marvell",
+      "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/AI-Infrastructure-Engineer-Intern_2604499"
+    }
+  ],
+  "source": "workday:marvell",
+  "status": "closed",
+  "title": "AI Infrastructure Engineer Intern",
+  "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/AI-Infrastructure-Engineer-Intern_2604499",
+  "work_mode": null
+}

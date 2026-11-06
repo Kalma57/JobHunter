@@ -1,0 +1,69 @@
+{
+  "agent_id": "apple:200687166-1451",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.apple.com/en-us/details/200687166-1451/low-level-software-engineer-platform-architecture",
+  "company": "Apple",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה Low-level למודלים של SoC.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י apple:apple",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-05",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה מלאה עם דרישת ניסיון; גם חיפה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "apple:apple",
+      "url": "https://jobs.apple.com/en-us/details/200687166-1451/low-level-software-engineer-platform-architecture"
+    }
+  ],
+  "source": "apple:apple",
+  "status": "filtered",
+  "title": "Low-level Software Engineer, Platform Architecture",
+  "url": "https://jobs.apple.com/en-us/details/200687166-1451/low-level-software-engineer-platform-architecture",
+  "work_mode": null
+}

@@ -1,0 +1,62 @@
+{
+  "agent_id": "greenhouse:nebius:5011060101",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://careers.nebius.com/?gh_jid=5011060101",
+  "company": "Nebius",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תוכנית Early Talent של 3 חודשים (מינואר 2027): תפעול תשתית ענן, מעקב תיקוני צמתי GPU וניהול תחזוקות.",
+  "education": "סטודנט או בוגר טרי בהנדסה/מדעי המחשב/מערכות מידע",
+  "employment": "זמנית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י greenhouse:nebius",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "כניסה לתחום"
+  ],
+  "location": "תל אביב / אמסטרדם",
+  "not_stated": [
+    "work_mode",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: תפעול טכני וניהול פרויקטים, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "SQL",
+    "Grafana",
+    "Jira"
+  ],
+  "requirements_must": [
+    "כישורי ניתוח ותקשורת"
+  ],
+  "salary": "בתשלום (לא צוין סכום)",
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "greenhouse:nebius",
+      "url": "https://careers.nebius.com/?gh_jid=5011060101"
+    }
+  ],
+  "source": "greenhouse:nebius",
+  "status": "filtered",
+  "title": "Technical Operations & Project Management (Early Talent)",
+  "url": "https://careers.nebius.com/?gh_jid=5011060101",
+  "work_mode": null
+}

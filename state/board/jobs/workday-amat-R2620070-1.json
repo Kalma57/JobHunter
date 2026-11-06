@@ -1,0 +1,79 @@
+{
+  "agent_id": "workday:amat:R2620070-1",
+  "alerts": [
+    "משרה ישנה",
+    "סתירה: האתר מתייג 'New College Grad', הטקסט דורש 5 שנות ניסיון"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Motion-control-engineer_R2620070-1",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת בקרת תנועה: תכנון, בדיקה ואינטגרציה של מערכות סרוו רב-ציריות.",
+  "education": "B.Sc הנדסת חשמל / מכונות עם התמחות בבקרה",
+  "employment": null,
+  "experience": "5+ שנים",
+  "first_seen": "2026-10-15",
+  "history": [
+    {
+      "at": "2026-10-15T07:00:00Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-08-12",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "ניסיון: 5+ שנים, ותחום אחר (בקרה)."
+  },
+  "requirements_adv": [
+    "מערכות דיוק",
+    "M.Sc בהנדסה"
+  ],
+  "requirements_must": [
+    "B.Sc הנדסת חשמל / מכונות",
+    "5 שנות ניסיון בתכנון מערכות סרוו",
+    "ידע תיאורטי חזק בבקרה",
+    "סימולציות בקרת תנועה",
+    "אנגלית מצוינת"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-15",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Motion-control-engineer_R2620070-1"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "filtered",
+  "title": "Motion control engineer",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Motion-control-engineer_R2620070-1",
+  "work_mode": null
+}

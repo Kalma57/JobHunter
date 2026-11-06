@@ -1,0 +1,86 @@
+{
+  "agent_id": "eightfold:microsoft:1970393556768751",
+  "alerts": [
+    "המיקום באתר: Israel, Multiple Locations — עיר לא צוינה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://apply.careers.microsoft.com/careers/job/1970393556768751",
+  "company": "Microsoft",
+  "deadline": null,
+  "degree_time": "לפחות שנה לסיום",
+  "description": "מחקר אבטחה (Blue Team) בענן של Microsoft: ניתוח טלמטריה ב-KQL, כללי זיהוי ואוטומציה עם כלי AI וזרימות סוכנים.",
+  "education": "סטודנט/ית B.Sc/M.Sc/PhD למדמ\"ח / הנדסת מחשבים / סייבר",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י eightfold:microsoft",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:11:02.699Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות",
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-04",
+  "prefs_down": [
+    "C#",
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "Java",
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט (Intern) עם לפחות שנה לסיום — עובר; פיתוח אוטומציה למחקר אבטחה. עיר והיקף לא צוינו — עובר עם סימון."
+  },
+  "requirements_adv": [
+    "עניין באבטחת ענן / threat hunting",
+    "ניתוח לוגים ודאטה גדול",
+    "Kubernetes / קונטיינרים",
+    "אוטומציה וכלי AI",
+    "CTF / מחקר חולשות"
+  ],
+  "requirements_must": [
+    "סטודנט/ית לתואר במדמ\"ח / הנדסת מחשבים / סייבר",
+    "לפחות שנה לסיום",
+    "יסודות מדמ\"ח (מערכות הפעלה, רשתות, מערכות מבוזרות)",
+    "ניסיון בפיתוח בשפה מודרנית (Python, C#, Go, Java, C/C++)"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "eightfold:microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556768751"
+    }
+  ],
+  "source": "eightfold:microsoft",
+  "status": "hold",
+  "title": "Security Research Intern",
+  "url": "https://apply.careers.microsoft.com/careers/job/1970393556768751",
+  "work_mode": null
+}

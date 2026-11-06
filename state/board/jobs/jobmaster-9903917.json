@@ -1,0 +1,62 @@
+{
+  "agent_id": "jobmaster:9903917",
+  "alerts": [
+    "מפרסם ≠ מעסיק: חברת נדל\"ן חסויה דרך JobMaster"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9903917",
+  "company": "חסוי — דרך JobMaster",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עובד/ת אחזקה למעונות סטודנטים בתל אביב, משרה חלקית, כוננויות 24/7.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "ניסיון באחזקה — חובה",
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "תל אביב יפו",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא משרת סטודנט ולא פיתוח תוכנה: אחזקה למעונות סטודנטים, דורש ניסיון."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון באחזקה",
+    "Office"
+  ],
+  "salary": null,
+  "scope": "א'-ה' 8:00-14:30",
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9903917"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "דרוש/ה עובד/ת אחזקה למעונות סטודנטים בת\"א למשרה חלקית",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9903917",
+  "work_mode": null
+}

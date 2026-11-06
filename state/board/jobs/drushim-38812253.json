@@ -1,0 +1,56 @@
+{
+  "agent_id": "drushim:38812253",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38812253/e0fc11de/",
+  "company": "אוניברסיטת אריאל",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אחראי/ת סדנה לעיבוד שבבי.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-21",
+  "history": [
+    {
+      "at": "2026-10-21T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "אריאל",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-20",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: סדנת עיבוד שבבי (הנדסת מכונות), משרה מלאה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-10-21",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38812253/e0fc11de/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "אחראי סדנה לעיבוד שבבי",
+  "url": "https://www.drushim.co.il/job/38812253/e0fc11de/",
+  "work_mode": null
+}

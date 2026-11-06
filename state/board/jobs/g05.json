@@ -1,0 +1,59 @@
+{
+  "alerts": [],
+  "company": "A Security",
+  "degree_time": null,
+  "description": "סטארטאפ סייבר שבונה \"תוקף אוטונומי\" מבוסס סוכני AI. עבודה עם סוכני ה-AI של הפלטפורמה, כריית דאטה, prompt engineering ו-evals.",
+  "education": "סטודנט פעיל למדמ\"ח + ציונים גבוהים",
+  "experience": "לא נדרש",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #5",
+      "status": "new"
+    },
+    {
+      "at": "2026-10-16T06:10:20.326Z",
+      "note": "",
+      "status": "hold"
+    }
+  ],
+  "level": [
+    "סטודנט",
+    "ג'וניור",
+    "Entry"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "degree_time",
+    "salary",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-08",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בת\"א, Python + AI. היקף לא מספרי — עובר עם סימון."
+  },
+  "requirements_adv": [
+    "ניסיון עם LLMs (פרומפטים, סוכנים, evals, RAG)",
+    "SQL / Python",
+    "חשיפה לסייבר"
+  ],
+  "requirements_must": [
+    "סטודנט פעיל למדמ\"ח",
+    "ציונים גבוהים במקצועות כמותיים",
+    "זמינות שבועית משמעותית, במשרד בת\"א"
+  ],
+  "scope": "\"התחייבות שבועית משמעותית\" (לא מספרי)",
+  "source": "SecretHunter",
+  "status": "hold",
+  "title": "Junior AI Security Researcher",
+  "work_mode": "משרד"
+}

@@ -1,0 +1,79 @@
+{
+  "agent_id": "hiremetech:151319382",
+  "alerts": [
+    "המעסיק לפי הטקסט: Gentex Technologies Israel; פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151319382",
+  "company": "Gentex Technologies Israel — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית בצוות Embedded: העברת אלגוריתמי ראייה ממוחשבת ומודלי למידה עמוקה למערכות משובצות (ARM, NPU) לרכב.",
+  "education": "סטודנט/ית שנה ב' ל-B.Sc במדעי המחשב",
+  "employment": null,
+  "experience": "לא נדרש",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-20",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "שנה בתואר: מחפשים סטודנט/ית שנה ב' במפורש (אני בשנה ג')."
+  },
+  "requirements_adv": [
+    "Linux",
+    "ראייה ממוחשבת / למידה עמוקה",
+    "Embedded Linux, RTOS, ARM",
+    "PyTorch / TensorFlow / ONNX",
+    "אופטימיזציית מודלים"
+  ],
+  "requirements_must": [
+    "סטודנט/ית שנה ב' במדעי המחשב",
+    "C/C++ ברמה גבוהה",
+    "Python",
+    "עקרונות הנדסת תוכנה, אלגוריתמים ומבני נתונים",
+    "אנגלית טובה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151319382"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Embedded AI Software Student (Computer Vision & Edge AI)",
+  "url": "https://juniors.hiremetech.com/job/151319382",
+  "work_mode": null
+}

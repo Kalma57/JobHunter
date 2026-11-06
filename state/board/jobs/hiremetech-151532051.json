@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:151532051",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151532051",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת Web ג'וניור עם כלי AI (React, Next.js, TypeScript).",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "יחסי: לפני 4 שעות"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "נתניה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-24",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רמה: ג'וניור עם עד 2 שנות ניסיון, לא משרת סטודנט (היקף לא צוין)."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151532051"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Vibe Coder / AI Web Developer",
+  "url": "https://juniors.hiremetech.com/job/151532051",
+  "work_mode": null
+}

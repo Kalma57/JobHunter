@@ -1,0 +1,64 @@
+{
+  "agent_id": "jobmaster:9799376",
+  "alerts": [
+    "מפרסם ≠ מעסיק: עבודה דרך חברה מגייסת"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9799376",
+  "company": "חסוי — דרך JobMaster",
+  "deadline": null,
+  "degree_time": null,
+  "description": "רכז/ת פניות סטודנטים במוסד לימודים: שירות טלפוני ומיילים, רישום לקורסים.",
+  "education": null,
+  "employment": "דרך חברת כוח אדם",
+  "experience": "ניסיון בשירות / עבודה משרדית",
+  "far": false,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: שירות לקוחות, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון בשירות / עבודה משרדית",
+    "זמינות לקורס של חודש",
+    "אופיס"
+  ],
+  "salary": "39 ₪ לשעה + בונוס (46 ₪ בצהריים)",
+  "scope": "משמרות, 3-4 בשבוע אפשרי",
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9799376"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "מחפש.ת עבודה בסביבה איכותית?",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9799376",
+  "work_mode": "משרד"
+}

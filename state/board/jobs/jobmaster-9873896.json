@@ -1,0 +1,72 @@
+{
+  "agent_id": "jobmaster:9873896",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9873896",
+  "company": "אסם נסטלה",
+  "deadline": null,
+  "degree_time": null,
+  "description": "לבורנט/ית במעבדת פיתוח מזון.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-14",
+  "history": [
+    {
+      "at": "2026-10-14T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "שוהם",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: מעבדת מזון."
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-14",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9873896"
+    },
+    {
+      "date": "2026-10-14",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9845225"
+    },
+    {
+      "date": "2026-10-14",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9800945"
+    },
+    {
+      "date": "2026-10-14",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9888220"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "סטודנט/ית לבורנט/ית למעבדת הפיתוח הקולינרית של אסם-נסטלה - 4288",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9873896",
+  "work_mode": null
+}

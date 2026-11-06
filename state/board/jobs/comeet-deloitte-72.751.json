@@ -1,0 +1,63 @@
+{
+  "agent_id": "comeet:deloitte:72.751",
+  "alerts": [
+    "סתירה: בעברית כתוב 'בוגר/ת תואר' ו'משרה מלאה', באנגלית 'סטודנט' ו-3 ימים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/audit-intern---haifa-office/72.751",
+  "company": "Deloitte",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ביקורת וסקירת חברות בחטיבת הביקורת של Deloitte, משרד חיפה.",
+  "education": "סטודנט/ית לתואר ראשון בחשבונאות",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י comeet:deloitte",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "salary",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-10",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום חשבונאות/ביקורת — לא פיתוח תוכנה; גם חיפה מחוץ לאזורים."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לחשבונאות",
+    "אנגלית ברמה גבוהה",
+    "Excel",
+    "3 ימים בשבוע"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "comeet:deloitte",
+      "url": "https://careers.deloitte.co.il/he/position/72-751-he/"
+    }
+  ],
+  "source": "comeet:deloitte",
+  "status": "filtered",
+  "title": "Audit Intern - Haifa Office",
+  "url": "https://careers.deloitte.co.il/he/position/72-751-he/",
+  "work_mode": "היברידי"
+}

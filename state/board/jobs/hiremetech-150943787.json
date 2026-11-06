@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:150943787",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
+    "דומה ל-hiremetech-151003508 (רפאל, משגב) — לא אוחדה כי המיקום שונה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/150943787",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית למדמ\"ח לפיתוח UI (HTML, CSS, React, JS, XAML/WPF, C#).",
+  "education": "סטודנט/ית למדמ\"ח",
+  "employment": "חלקית",
+  "experience": "0+ שנים",
+  "far": true,
+  "first_seen": "2026-10-16",
+  "history": [
+    {
+      "at": "2026-10-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני 16 שעות' ביחס לאיסוף ב-16/10 בבוקר"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "מכון דוד, אזור חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-15",
+  "prefs_down": [
+    "C#"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — מכון דוד באזור חיפה (צפון)."
+  },
+  "requirements_adv": [
+    "HTML, CSS, React, JavaScript",
+    "XAML / WPF",
+    "C#",
+    "Git"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-10-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/150943787"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית למדמ\"ח -פיתוח UI",
+  "url": "https://juniors.hiremetech.com/job/150943787",
+  "work_mode": null
+}

@@ -1,0 +1,70 @@
+{
+  "agent_id": "amazon:10571818",
+  "alerts": [
+    "סתירה: הכותרת 'junior' אבל הדרישה 5+ שנות ניסיון"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10571818/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח תוכנה משובצת למוצרי רשת (Annapurna Labs).",
+  "education": "תואר ראשון במדמ\"ח / הנדסה / מתמטיקה",
+  "employment": null,
+  "experience": "5+ שנים (ניסיון מקצועי)",
+  "first_seen": "2026-10-11",
+  "history": [
+    {
+      "at": "2026-10-11T09:28:23Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-07",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "5+ שנות ניסיון — לא משרת סטודנט."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "5+ שנות ניסיון",
+    "2+ שנות תכנון ארכיטקטורה",
+    "C/C++",
+    "ממשקי HW/SW"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10571818/embedded-software-engineer-annapurna"
+    },
+    {
+      "date": "2026-10-11",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10568484/embedded-software-engineer-annapurna"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Embedded Software Engineer, Annapurna",
+  "url": "https://www.amazon.jobs/en/jobs/10571818/embedded-software-engineer-annapurna",
+  "work_mode": null
+}

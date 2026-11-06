@@ -1,0 +1,45 @@
+{
+  "alerts": [],
+  "company": "FIL Robotics",
+  "description": "פיתוח והרצת בדיקות תוכנה, אוטומציה, סקריפטים.",
+  "education": "סטודנט שנה ב' ומעלה",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #20",
+      "status": "filtered"
+    }
+  ],
+  "level": [
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "salary"
+  ],
+  "notes": "",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "QA — מחוץ לתפקידים שבחיפוש."
+  },
+  "requirements_adv": [
+    "Python (יתרון גדול)",
+    "Jira, Git, Linux, CI/CD"
+  ],
+  "requirements_must": [
+    "סטודנט שנה ב' ומעלה",
+    "3 ימים בשבוע",
+    "קוד בסיסי"
+  ],
+  "scope": "3 ימים בשבוע",
+  "source": "Glassdoor",
+  "status": "filtered",
+  "title": "Junior QA Engineer - Student Position"
+}

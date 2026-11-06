@@ -1,0 +1,74 @@
+{
+  "agent_id": "hiremetech:151192306",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
+    "סתירה: האתר מתייג Full-time, השם אומר Part-Time"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151192306",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט לתיוג נתונים (LLM, NLP) ברמת גן. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני יום' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד: תיוג נתונים, לא פיתוח תוכנה."
+  },
+  "requirements_adv": [
+    "LLM",
+    "NLP",
+    "Python",
+    "SQL",
+    "Attention to detail",
+    "English"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי השם)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151192306"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Data Labeling Specialist (Student, Part-Time position)",
+  "url": "https://juniors.hiremetech.com/job/151192306",
+  "work_mode": null
+}

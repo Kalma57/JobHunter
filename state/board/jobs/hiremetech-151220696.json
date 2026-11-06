@@ -1,0 +1,73 @@
+{
+  "agent_id": "hiremetech:151220696",
+  "alerts": [
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151220696",
+  "company": "Bluespine — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת אנליסט/ית נתונים לזיהוי הונאות וחריגות רפואיות ב-Bluespine. הטקסט המלא זמין רק למשתמשים מחוברים.",
+  "education": null,
+  "employment": null,
+  "experience": "2+ שנים (לפי תגית האתר)",
+  "far": false,
+  "first_seen": "2026-10-20",
+  "history": [
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'לפני יום' מתאריך האיסוף 20/10"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "ניסיון והיקף: 2+ שנים ומשרה מלאה, ותפקיד אנליסט/ית נתונים ולא פיתוח."
+  },
+  "requirements_adv": [
+    "Data analyst",
+    "SQL",
+    "Python",
+    "R",
+    "Excel",
+    "Healthcare / Fintech"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה (לפי תגית האתר)",
+  "sightings": [
+    {
+      "date": "2026-10-20",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151220696"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Bluespine- Medical Fraud & Anomaly",
+  "url": "https://juniors.hiremetech.com/job/151220696",
+  "work_mode": null
+}

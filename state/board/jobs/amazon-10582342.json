@@ -1,0 +1,64 @@
+{
+  "agent_id": "amazon:10582342",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10582342/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה ג'וניור בצוות Virtual Platforms: סביבות סימולציה לפיתוח תוכנה ולבדיקות מערכת.",
+  "education": "תואר ראשון/שני במדמ\"ח או הנדסת חשמל",
+  "employment": null,
+  "experience": "1+ שנים (יתרון)",
+  "first_seen": "2026-10-24",
+  "history": [
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "scope"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-19",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "רמה: ג'וניור (לא משרת סטודנט); וגם חיפה (צפון)."
+  },
+  "requirements_adv": [
+    "ניסיון בפיתוח, C/C++",
+    "ארכיטקטורת מחשב"
+  ],
+  "requirements_must": [
+    "תואר במדמ\"ח/הנדסת חשמל",
+    "OOP ומבני נתונים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-10-24",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10582342/junior-sw-engineer-virtual-platforms"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Junior SW Engineer - Virtual Platforms",
+  "url": "https://www.amazon.jobs/en/jobs/10582342/junior-sw-engineer-virtual-platforms",
+  "work_mode": null
+}

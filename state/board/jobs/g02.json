@@ -1,0 +1,49 @@
+{
+  "alerts": [
+    "משרה ישנה (פורסמה 19/04/2026) — ייתכן שנסגרה."
+  ],
+  "company": "Upwind Security",
+  "description": "ניטור סביבות ענן, טיפול בתקלות ואירועים.",
+  "employment": "שעתי",
+  "first_seen": "2026-10-09",
+  "history": [
+    {
+      "at": "2026-10-09T12:00:00Z",
+      "note": "נטען מסט הזהב #2",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-08T09:24:39.028Z",
+      "note": "יותר מידי ימים",
+      "status": "not_interested"
+    }
+  ],
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_interested_reason": "יותר מידי ימים",
+  "not_stated": [
+    "salary"
+  ],
+  "notes": "",
+  "posted_at": "2026-04-19",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לפחות 4 ימים בשבוע (מותר עד 3) + משמרות לילה."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט",
+    "לפחות 4 ימים בשבוע",
+    "משמרות 24/7",
+    "AWS/GCP/Azure, Docker, K8s, Grafana/Kibana, SQL"
+  ],
+  "scope": "לפחות 4 ימים + משמרות 24/7 כולל לילות וסופ\"ש",
+  "source": "HireMeTech",
+  "status": "not_interested",
+  "title": "Cloud Monitoring Engineer (Student Position)",
+  "work_mode": "היברידי"
+}

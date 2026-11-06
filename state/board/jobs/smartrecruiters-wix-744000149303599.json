@@ -1,0 +1,74 @@
+{
+  "agent_id": "smartrecruiters:wix:744000149303599",
+  "alerts": [
+    "סתירה: משרת סטודנט שדורשת 3+ שנות ניסיון"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.smartrecruiters.com/Wix2/744000149303599-it-support-engineer-student-?oga=true",
+  "company": "Wix",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכת IT לעובדי Wix.",
+  "education": null,
+  "employment": null,
+  "experience": "3+ שנים",
+  "first_seen": "2026-10-10",
+  "history": [
+    {
+      "at": "2026-10-10T15:15:11Z",
+      "note": "נמצא ע\"י smartrecruiters:wix",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-20T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11)",
+      "status": "closed"
+    },
+    {
+      "at": "2026-10-21T15:00:00Z",
+      "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-10-24T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-11, לא הופיעה בסריקה השבועית של 2026-10-22)",
+      "status": "closed"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "salary",
+    "education"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תמיכת IT — מחוץ לחיפוש; גם 3+ שנות ניסיון."
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "3+ שנות ניסיון בתמיכת IT"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-10-10",
+      "source": "smartrecruiters:wix",
+      "url": "https://jobs.smartrecruiters.com/Wix2/744000149303599-it-support-engineer-student-"
+    }
+  ],
+  "source": "smartrecruiters:wix",
+  "status": "closed",
+  "title": "IT Support Engineer (Student)",
+  "url": "https://jobs.smartrecruiters.com/Wix2/744000149303599-it-support-engineer-student-",
+  "work_mode": "משרד"
+}
