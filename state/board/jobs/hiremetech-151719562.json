@@ -18,6 +18,11 @@
       "at": "2026-10-24T07:00:00Z",
       "note": "נמצא ע\"י hiremetech:juniors",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-07T07:00:00Z",
+      "note": "מועד ההגשה עבר (2026-10-27)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -57,7 +62,7 @@
     }
   ],
   "source": "hiremetech:juniors",
-  "status": "filtered",
+  "status": "closed",
   "title": "סטודנט/ית לתחום התקשורת הקווית והאלחוטית לראשון לציון גן שורק",
   "url": "https://juniors.hiremetech.com/job/151719562",
   "work_mode": null

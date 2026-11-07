@@ -16,6 +16,11 @@
       "at": "2026-10-21T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-07T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-28, לא הופיעה בסריקה השבועית של 2026-11-01)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -50,7 +55,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "כמאי לחברה קבלנית משרה מלאה/חלקית",
   "url": "https://www.drushim.co.il/job/38812082/412c7088/",
   "work_mode": null

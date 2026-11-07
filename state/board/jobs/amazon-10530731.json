@@ -21,6 +21,11 @@
       "at": "2026-10-16T06:11:14.228Z",
       "note": "",
       "status": "hold"
+    },
+    {
+      "at": "2026-11-07T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-22, לא הופיעה בסריקה השבועית של 2026-11-01)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -68,7 +73,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "hold",
+  "status": "closed",
   "title": "Software Development Student , Machine Learning Israel (MLIL) — Firmware",
   "url": "https://www.amazon.jobs/en/jobs/10530731/software-development-student-machine-learning-israel-mlil-firmware",
   "work_mode": null

@@ -16,6 +16,11 @@
       "at": "2026-10-24T07:00:00Z",
       "note": "נמצא ע\"י greenhouse:nebius",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-07T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-26, לא הופיעה בסריקה השבועית של 2026-11-01)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -55,7 +60,7 @@
     }
   ],
   "source": "greenhouse:nebius",
-  "status": "filtered",
+  "status": "closed",
   "title": "Technical Operations & Project Management (Early Talent)",
   "url": "https://careers.nebius.com/?gh_jid=5011060101",
   "work_mode": null

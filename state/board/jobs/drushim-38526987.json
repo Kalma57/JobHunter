@@ -16,6 +16,11 @@
       "at": "2026-10-14T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-07T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-24, לא הופיעה בסריקה השבועית של 2026-11-01)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -50,7 +55,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "דרושים.ות מדריכים.ות לתחומי טכנולוגיה, מדע וחדשנות",
   "url": "https://www.drushim.co.il/job/38526987/e9132ce1/",
   "work_mode": null

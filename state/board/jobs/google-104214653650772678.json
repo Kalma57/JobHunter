@@ -26,6 +26,11 @@
       "at": "2026-10-21T15:00:00Z",
       "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-07T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-25, לא הופיעה בסריקה השבועית של 2026-11-01)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -60,7 +65,7 @@
     }
   ],
   "source": "google:google",
-  "status": "filtered",
+  "status": "closed",
   "title": "Software Engineer III, Database Conversion",
   "url": "https://www.google.com/about/careers/applications/jobs/results/104214653650772678-software-engineer-iii-database-conversion",
   "work_mode": null
