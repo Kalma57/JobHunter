@@ -18,6 +18,11 @@
       "at": "2026-10-11T09:28:23Z",
       "note": "נמצא ע\"י amazon:amazon",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-03, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -66,7 +71,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "filtered",
+  "status": "closed",
   "title": "2026 Graduate Software Dev Engineer",
   "url": "https://www.amazon.jobs/en/jobs/10491309/2026-graduate-software-dev-engineer",
   "work_mode": null

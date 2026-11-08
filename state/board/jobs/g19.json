@@ -18,6 +18,11 @@
       "at": "2026-10-16T06:14:00.776Z",
       "note": "נמצא בחיפה",
       "status": "not_interested"
+    },
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-02, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "level": [
@@ -57,7 +62,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "not_interested",
+  "status": "closed",
   "title": "Software Engineer Student, SPIV team",
   "url": "https://www.amazon.jobs/en/jobs/10506556/software-engineer-student-spiv-team"
 }

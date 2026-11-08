@@ -18,6 +18,11 @@
       "at": "2026-10-14T07:00:00Z",
       "note": "נמצא ע\"י workday:intel",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-01, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -56,7 +61,7 @@
     }
   ],
   "source": "workday:intel",
-  "status": "filtered",
+  "status": "closed",
   "title": "Practical Engineering Student -  Kiryat Gat",
   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Practical-Engineering-Student----Kiryat-Gat_JR0281401",
   "work_mode": null

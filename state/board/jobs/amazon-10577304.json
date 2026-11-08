@@ -29,6 +29,11 @@
       "at": "2026-10-16T06:13:18.621Z",
       "note": "נמצאת בחיפה",
       "status": "not_interested"
+    },
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-05, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -76,7 +81,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "not_interested",
+  "status": "closed",
   "title": "System Integration Student, Nitro Team, Annapurna Labs",
   "url": "https://www.amazon.jobs/en/jobs/10577304/system-integration-student-nitro-team-annapurna-labs",
   "work_mode": null
