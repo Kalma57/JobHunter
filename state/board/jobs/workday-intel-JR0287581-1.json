@@ -1,0 +1,75 @@
+{
+  "agent_id": "workday:intel:JR0287581-1",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Software-Development-student_JR0287581-1",
+  "company": "Intel",
+  "deadline": null,
+  "degree_time": "לפחות 3 סמסטרים לסיום",
+  "description": "סטודנט בצוות Data & AI Software Solutions: פיתוח Backend ופתרונות AI מקצה לקצה.",
+  "education": "סטודנט לתואר ראשון במדעי המחשב / הנדסת תוכנה",
+  "employment": null,
+  "experience": "לא נדרש",
+  "far": true,
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י workday:intel",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-01",
+  "prefs_down": [
+    "C#"
+  ],
+  "prefs_up": [
+    "Java",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (צפון); שאר הדרישות עוברות"
+  },
+  "requirements_adv": [
+    "C#/Java",
+    "REST",
+    "SQL/NoSQL",
+    "ענן",
+    "Docker/Kubernetes",
+    "AI"
+  ],
+  "requirements_must": [
+    "סטודנט BSc",
+    "לפחות 3 סמסטרים לסיום",
+    "Git",
+    "הבנת APIs"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "workday:intel",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Software-Development-student_JR0287581-1"
+    }
+  ],
+  "source": "workday:intel",
+  "status": "filtered",
+  "title": "Software Development student",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Software-Development-student_JR0287581-1",
+  "work_mode": "משרד"
+}

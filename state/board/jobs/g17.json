@@ -1,6 +1,7 @@
 {
   "alerts": [
-    "המפרסם ב-Glassdoor הוא Fives — המעסיק בפועל FIL Robotics."
+    "המפרסם ב-Glassdoor הוא Fives — המעסיק בפועל FIL Robotics.",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "company": "FIL Robotics",
   "degree_time": "שנה ג'",
@@ -52,6 +53,13 @@
     "SQL בסיסי"
   ],
   "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152048479"
+    }
+  ],
   "source": "Glassdoor",
   "status": "hold",
   "title": "Junior Software Engineer - Student Position",

@@ -1,0 +1,73 @@
+{
+  "agent_id": "amazon:10592105",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10592105/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": "לפחות שנה לסיום",
+  "description": "התמחות פיתוח תוכנה (SDE) חלקית: שירותים סקיילביליים, code review ו-CI/CD.",
+  "education": "סטודנט לתואר ראשון במדעי המחשב / הנדסת מחשבים",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "far": true,
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-29",
+  "prefs_down": [
+    "C++",
+    "C#"
+  ],
+  "prefs_up": [
+    "Java",
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (צפון); שאר הדרישות עוברות"
+  },
+  "requirements_adv": [
+    "התמחות טכנית",
+    "מערכות מבוזרות",
+    "AWS",
+    "כלי AI"
+  ],
+  "requirements_must": [
+    "סטודנט BSc",
+    "יסודות מדעי המחשב",
+    "שפת תכנות אחת"
+  ],
+  "salary": null,
+  "scope": "חלקית, 20 שעות בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10592105/2027-software-dev-engineer-intern-haifa-israel"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "2027 Software Dev Engineer Intern - Haifa",
+  "url": "https://www.amazon.jobs/en/jobs/10592105/2027-software-dev-engineer-intern-haifa-israel",
+  "work_mode": "משרד"
+}

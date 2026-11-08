@@ -1,0 +1,66 @@
+{
+  "agent_id": "jobmaster:9630887",
+  "alerts": [
+    "מפרסם ≠ מעסיק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9630887",
+  "company": "חסוי — דרך JobMaster (חברת חקלאות)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אדמיניסטרציה ורכש במעבדות מו\"פ של חברת חקלאות.",
+  "education": "סטודנט לתואר ראשון, עדיפות מדעי",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — אדמין/רכש מעבדה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון מעבדה"
+  ],
+  "requirements_must": [
+    "סטודנט לתואר ראשון",
+    "אנגלית",
+    "חלקית כולל שישי"
+  ],
+  "salary": null,
+  "scope": "חלקית, כולל ימי שישי",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9630887"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "סטודנט/ית אדמין במעבדות המחקר ופיתוח",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9630887",
+  "work_mode": null
+}

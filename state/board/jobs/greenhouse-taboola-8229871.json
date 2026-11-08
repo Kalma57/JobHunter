@@ -1,0 +1,74 @@
+{
+  "agent_id": "greenhouse:taboola:8229871",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.taboola.com/careers/job/8229871?gh_jid=8229871",
+  "company": "Taboola",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות פיתוח בצוות Ad Creatives: מערכות real-time בקנה מידה גדול ב-Java, Spark, Kafka.",
+  "education": "BSc במדעי המחשב או שווה ערך",
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י greenhouse:taboola",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "work_mode": "3 ימים במשרד (כתוב בטקסט)"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-04",
+  "prefs_down": [],
+  "prefs_up": [
+    "Java",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח תוכנה ב-Java, תל אביב; היקף וניסיון לא צוינו"
+  },
+  "requirements_adv": [
+    "Spark/Kafka",
+    "ענן וקונטיינרים"
+  ],
+  "requirements_must": [
+    "BSc מדעי המחשב",
+    "תכנות OO (Java)",
+    "SQL ו-Big Data",
+    "מערכות מבוזרות",
+    "כלי GenAI"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "greenhouse:taboola",
+      "url": "https://www.taboola.com/careers/job/8229871?gh_jid=8229871"
+    }
+  ],
+  "source": "greenhouse:taboola",
+  "status": "new",
+  "title": "Software Engineer Intern",
+  "url": "https://www.taboola.com/careers/job/8229871?gh_jid=8229871",
+  "work_mode": "היברידי"
+}

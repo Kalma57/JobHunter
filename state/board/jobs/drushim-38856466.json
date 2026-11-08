@@ -1,0 +1,60 @@
+{
+  "agent_id": "drushim:38856466",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38856466/80fd4f2e/",
+  "company": "חסוי — דרך דרושים",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיקוח על עבודות תשתית בלילות ובסופי שבוע.",
+  "education": "סטודנט להנדסה אזרחית שנה ד'",
+  "employment": "משמרות",
+  "experience": "1-2 שנים (לפי האתר)",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים, תל אביב",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-25",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — הנדסה אזרחית"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "הנדסה אזרחית שנה ד'",
+    "אופיס",
+    "רישיון נהיגה"
+  ],
+  "salary": null,
+  "scope": "חלקית, משמרות לילה וסופ\"ש",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38856466/80fd4f2e/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "סטודנט/ית להנדסה אזרחית לפיקוח עבודות לילה",
+  "url": "https://www.drushim.co.il/job/38856466/80fd4f2e/",
+  "work_mode": "בשטח"
+}

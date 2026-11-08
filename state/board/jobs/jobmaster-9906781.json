@@ -1,0 +1,62 @@
+{
+  "agent_id": "jobmaster:9906781",
+  "alerts": [
+    "מפרסם ≠ מעסיק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9906781",
+  "company": "וואן שילוב מערכות בע\"מ (ארגון ציבורי)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכה טכנית, ניטור NOC וטיפול בתקלות במשמרות.",
+  "education": "סטודנט לתואר טכנולוגי",
+  "employment": "משמרות",
+  "experience": "3 שנים בתמיכת IT/NOC (אפשר צבאי)",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "salary",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — תמיכת IT, וגם ניסיון 3 שנים וחיפה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט לתואר טכנולוגי",
+    "ניסיון 3 שנים בתמיכת IT/NOC",
+    "4 משמרות בשבוע"
+  ],
+  "salary": null,
+  "scope": "4 משמרות בשבוע, 24/6, כולל לילות וסופ\"ש",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9906781"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "תומכ/ת IT בחיפה משרת סטודנט",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9906781",
+  "work_mode": "משרד"
+}

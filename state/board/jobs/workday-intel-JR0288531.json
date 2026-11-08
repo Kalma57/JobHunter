@@ -1,0 +1,63 @@
+{
+  "agent_id": "workday:intel:JR0288531",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Haifa-Lab-support-student_JR0288531",
+  "company": "Intel",
+  "deadline": null,
+  "degree_time": "4 סמסטרים לסיום",
+  "description": "תמיכה במעבדת ולידציה: הקמה וכיול חומרה, איסוף נתונים ונהלי עבודה.",
+  "education": "סטודנט BSc הנדסת תוכנה / חשמל / אלקטרוניקה",
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י workday:intel",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — תמיכת מעבדת חומרה, לא פיתוח תוכנה (וגם 3.5-4 ימים, חיפה)"
+  },
+  "requirements_adv": [
+    "ידע IT/מחשוב"
+  ],
+  "requirements_must": [
+    "סטודנט BSc",
+    "4 סמסטרים לסיום",
+    "אנגלית",
+    "3.5-4 ימים בשבוע"
+  ],
+  "salary": null,
+  "scope": "3.5-4 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "workday:intel",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Haifa-Lab-support-student_JR0288531"
+    }
+  ],
+  "source": "workday:intel",
+  "status": "filtered",
+  "title": "Haifa Lab support student",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Haifa-Lab-support-student_JR0288531",
+  "work_mode": "משרד"
+}

@@ -1,7 +1,8 @@
 {
   "agent_id": "hiremetech:151191794",
   "alerts": [
-    "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
+    "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151191794",
@@ -58,6 +59,11 @@
       "date": "2026-10-20",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/151191794"
+    },
+    {
+      "date": "2026-11-08",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9899704"
     }
   ],
   "source": "hiremetech:juniors",

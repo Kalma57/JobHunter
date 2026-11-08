@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:151936765",
+  "alerts": [
+    "מפרסם ≠ מעסיק"
+  ],
+  "apply_instructions": "קו\"ח, גיליון ציונים ומכתב מוטיבציה",
+  "apply_url": "https://juniors.hiremetech.com/job/151936765",
+  "company": "חסוי — דרך HireMeTech (משרד עורכי דין GNY)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות כמתמחה בעריכת פטנטים במשרד עורכי דין.",
+  "education": "BSc לפחות (הנדסת מכונות/אווירונאוטיקה/חשמל/פיזיקה), ממוצע 80+",
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — מתמחה בפטנטים, דורש תואר בהנדסה אחרת"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "BSc",
+    "ממוצע 80+",
+    "עברית ואנגלית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151936765"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Intern Position — Trainee Patent Attorney",
+  "url": "https://juniors.hiremetech.com/job/151936765",
+  "work_mode": null
+}

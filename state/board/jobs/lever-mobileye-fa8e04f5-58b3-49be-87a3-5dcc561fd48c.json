@@ -1,0 +1,66 @@
+{
+  "agent_id": "lever:mobileye:fa8e04f5-58b3-49be-87a3-5dcc561fd48c",
+  "alerts": [
+    "מועמד HireMeTech (חיפה) נבדק — מיקום שונה (ירושלים), לא סומן ככפילות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/fa8e04f5-58b3-49be-87a3-5dcc561fd48c/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": "לפחות 4 סמסטרים",
+  "description": "אנליסט SOC: ניטור התראות אבטחה, חקירה והסלמה של אירועים במשמרות.",
+  "education": "סטודנט עם 4 סמסטרים לפחות לסיום",
+  "employment": "משמרות",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-20",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — SOC (סייבר תפעולי), לא פיתוח תוכנה; וגם 4 משמרות בשבוע"
+  },
+  "requirements_adv": [
+    "ניסיון SOC",
+    "SIEM/EDR"
+  ],
+  "requirements_must": [
+    "סטודנט, 4 סמסטרים לסיום",
+    "משמרות לילות וסופ\"ש",
+    "4 משמרות בשבוע",
+    "אנגלית"
+  ],
+  "salary": null,
+  "scope": "4 משמרות בשבוע, כולל לילות וסופ\"ש",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/fa8e04f5-58b3-49be-87a3-5dcc561fd48c"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "filtered",
+  "title": "SOC Analyst (Student position)",
+  "url": "https://jobs.eu.lever.co/mobileye/fa8e04f5-58b3-49be-87a3-5dcc561fd48c",
+  "work_mode": null
+}

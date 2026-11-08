@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:152076035",
+  "alerts": [
+    "המודעה קטועה — אין תיאור תפקיד אמיתי",
+    "מפרסם ≠ מעסיק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152076035",
+  "company": "חסוי — דרך HireMeTech (מנהלת המרכבה והרק\"ם)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סיוע בענף האוטומטיבי במנהלת המרכבה והרק\"ם; הטקסט כולל בעיקר רעש של האתר.",
+  "education": null,
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-29",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — סיוע בענף האוטומטיבי, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152076035"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "משרה מס' 119/26: סטודנט/ית לסיוע בענף האוטומטיבי",
+  "url": "https://juniors.hiremetech.com/job/152076035",
+  "work_mode": "משרד"
+}

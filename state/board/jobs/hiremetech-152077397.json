@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:152077397",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152077397",
+  "company": "DRS RADA Technologies (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": "לפחות שנה וחצי",
+  "description": "PMO במחלקת ה-CTO: מעקב פרויקטים, דוחות ומצגות.",
+  "education": "סטודנט BSc הנדסת תעשייה וניהול",
+  "employment": "שעתי",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "נתניה",
+  "not_stated": [
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-29",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — PMO, הנדסת תעשייה וניהול"
+  },
+  "requirements_adv": [
+    "ניתוח נתונים",
+    "עניין ברדאר/AI/תוכנה"
+  ],
+  "requirements_must": [
+    "סטודנט הנדסת תעשייה וניהול",
+    "שנה וחצי לסיום",
+    "Excel ו-PowerPoint"
+  ],
+  "salary": null,
+  "scope": "2-3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152077397"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "PMO Student – CTO Department",
+  "url": "https://juniors.hiremetech.com/job/152077397",
+  "work_mode": "משרד"
+}

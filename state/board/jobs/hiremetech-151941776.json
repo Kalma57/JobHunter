@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:151941776",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151941776",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט עיצוב UX/UI עם תיק עבודות ו-Figma.",
+  "education": "סטודנט ל-UX/UI, תקשורת חזותית או עיצוב מוצר",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — עיצוב UX/UI"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט לעיצוב",
+    "תיק עבודות",
+    "Figma"
+  ],
+  "salary": null,
+  "scope": "חלקית, שעות גמישות",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151941776"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "UX/UI DESIGN STUDENT POSITION",
+  "url": "https://juniors.hiremetech.com/job/151941776",
+  "work_mode": null
+}

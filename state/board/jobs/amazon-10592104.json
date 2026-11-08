@@ -1,0 +1,73 @@
+{
+  "agent_id": "amazon:10592104",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10592104/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": "לפחות שנה לסיום",
+  "description": "התמחות פיתוח תוכנה (SDE) חלקית: שירותים סקיילביליים, code review ו-CI/CD.",
+  "education": "סטודנט לתואר ראשון במדעי המחשב / הנדסת מחשבים",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-29",
+  "prefs_down": [
+    "C++",
+    "C#"
+  ],
+  "prefs_up": [
+    "Java",
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח תוכנה, תל אביב, 20 שעות בשבוע, ללא ניסיון, לפחות שנה לסיום"
+  },
+  "requirements_adv": [
+    "התמחות טכנית",
+    "מערכות מבוזרות",
+    "AWS",
+    "כלי AI"
+  ],
+  "requirements_must": [
+    "סטודנט BSc",
+    "יסודות מדעי המחשב",
+    "שפת תכנות אחת"
+  ],
+  "salary": null,
+  "scope": "חלקית, 20 שעות בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10592104/2027-software-dev-engineer-intern-tel-aviv-israel"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "new",
+  "title": "2027 Software Dev Engineer Intern - Tel-Aviv",
+  "url": "https://www.amazon.jobs/en/jobs/10592104/2027-software-dev-engineer-intern-tel-aviv-israel",
+  "work_mode": "משרד"
+}

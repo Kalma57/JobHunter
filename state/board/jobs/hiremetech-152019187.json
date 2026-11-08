@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:152019187",
+  "alerts": [
+    "המודעה קטועה",
+    "מפרסם ≠ מעסיק",
+    "ייתכן שזו אותה משרה של אינטל (DevOps Engineering Student, פתח תקווה) — לא אומת"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152019187",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט DevOps (תגית: Linux); הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "DevOps/פיתוח, פתח תקווה (מרכז); שאר השדות לא צוינו ולכן עוברת"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152019187"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Dev Ops Engineering Student",
+  "url": "https://juniors.hiremetech.com/job/152019187",
+  "work_mode": null
+}

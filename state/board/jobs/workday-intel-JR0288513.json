@@ -1,0 +1,74 @@
+{
+  "agent_id": "workday:intel:JR0288513",
+  "alerts": [
+    "התפקיד DevOps/תשתיות עם פיתוח אוטומציה — קרוב לפיתוח אך לא פיתוח מוצר",
+    "שני מיקומים: פתח תקווה (עיקרי) וחיפה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Petah-Tikva/DevOps-Engineering-Student_JR0288513",
+  "company": "Intel",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "סטודנט בצוות DevOps ותשתיות AI: אוטומציית Python, CI/CD ו-Kubernetes.",
+  "education": "סטודנט BSc/MSc במדעי המחשב / הנדסת תוכנה / מחשבים",
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י workday:intel",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "פתח תקווה, חיפה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-26",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח ואוטומציה ב-Python, פתח תקווה (מרכז), לא צוינו היקף וניסיון"
+  },
+  "requirements_adv": [
+    "Python",
+    "Git",
+    "Kubernetes",
+    "CI/CD"
+  ],
+  "requirements_must": [
+    "סטודנט BSc/MSc",
+    "לפחות שנתיים לסיום",
+    "תכנות בסיסי",
+    "Linux"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "workday:intel",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Petah-Tikva/DevOps-Engineering-Student_JR0288513"
+    }
+  ],
+  "source": "workday:intel",
+  "status": "new",
+  "title": "DevOps Engineering Student",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Petah-Tikva/DevOps-Engineering-Student_JR0288513",
+  "work_mode": "משרד"
+}

@@ -1,0 +1,62 @@
+{
+  "agent_id": "workday:intel:JR0288574",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Engineering-Student-for-Intel-Kiryat-Gat_JR0288574",
+  "company": "Intel",
+  "deadline": null,
+  "degree_time": "4 סמסטרים לסיום",
+  "description": "סטודנט להנדסת מודולים בייצור שבבים: תחזוקה ופתרון תקלות בציוד ובקרת תהליכים.",
+  "education": "סטודנט לתואר ראשון בהנדסת מכונות / חומרים / כימיה",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י workday:intel",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "קריית גת",
+  "not_stated": [
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — הנדסת ייצור ל-Mechanical/Materials/Chemical, לא תוכנה"
+  },
+  "requirements_adv": [
+    "ניתוח סטטיסטי"
+  ],
+  "requirements_must": [
+    "סטודנט הנדסת מכונות/חומרים/כימיה",
+    "20 שעות בשבוע",
+    "4 סמסטרים לסיום",
+    "אנגלית"
+  ],
+  "salary": null,
+  "scope": "לפחות 20 שעות בשבוע (2.5 ימים)",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "workday:intel",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Engineering-Student-for-Intel-Kiryat-Gat_JR0288574"
+    }
+  ],
+  "source": "workday:intel",
+  "status": "filtered",
+  "title": "Engineering Student for Intel Kiryat Gat",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Engineering-Student-for-Intel-Kiryat-Gat_JR0288574",
+  "work_mode": "היברידי"
+}

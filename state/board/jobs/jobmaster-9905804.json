@@ -1,0 +1,60 @@
+{
+  "agent_id": "jobmaster:9905804",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9905804",
+  "company": "מדינול בע\"מ",
+  "deadline": null,
+  "degree_time": "לפחות שנה וחצי",
+  "description": "בקרת מלאי מוצרי החברה בבתי חולים.",
+  "education": "סטודנט לתואר ראשון",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב יפו (ביקורים ברחבי הארץ)",
+  "not_stated": [
+    "salary",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — בקרת מלאי בבתי חולים, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט לתואר ראשון",
+    "רישיון נהיגה",
+    "נסיעות ברחבי הארץ"
+  ],
+  "salary": null,
+  "scope": "כ-50%",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9905804"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "משרת סטודנט/ית בחברה למכשור רפואי",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9905804",
+  "work_mode": "בשטח"
+}

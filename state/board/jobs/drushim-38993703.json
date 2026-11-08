@@ -1,0 +1,63 @@
+{
+  "agent_id": "drushim:38993703",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38993703/605555be/",
+  "company": "נטפים",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח מערכות בקרה תעשייתית ואוטומציה: אלגוריתמים, קוד, בדיקות ועבודה במעבדה ובמפעל.",
+  "education": "סטודנט להנדסת מכונות או חשמל, שנה ב'-ג'",
+  "employment": "חלקית",
+  "experience": "1-2 שנים (לפי האתר)",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חצרים",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-05",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "התואר — דורש הנדסת מכונות/חשמל (תחום אחר), תפקיד בקרה תעשייתית"
+  },
+  "requirements_adv": [
+    "לוח חשמל",
+    "שפות תכנות",
+    "אנגלית"
+  ],
+  "requirements_must": [
+    "סטודנט הנדסת מכונות/חשמל שנה ב'-ג'",
+    "היכרות עם בקרה תעשייתית"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית, לפחות יומיים מלאים",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38993703/605555be/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "סטודנט/ית להנדסת מכונות/חשמל - לפיתוח מערכות בקרה",
+  "url": "https://www.drushim.co.il/job/38993703/605555be/",
+  "work_mode": "בשטח"
+}

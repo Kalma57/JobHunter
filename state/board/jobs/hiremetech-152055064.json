@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152055064",
+  "alerts": [
+    "מפרסם ≠ מעסיק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152055064",
+  "company": "חסוי — דרך HireMeTech (חברת ניהול תיקים)",
+  "deadline": null,
+  "degree_time": "לפחות שנה",
+  "description": "שיחות יוצאות למשקיעים ותיאום פגישות במחלקת שיווק.",
+  "education": "סטודנט לתואר ראשון בתחומים פיננסיים",
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-28",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — מכירות/שיווק פיננסי"
+  },
+  "requirements_adv": [
+    "ניסיון מכירות/שירות"
+  ],
+  "requirements_must": [
+    "סטודנט בתחום פיננסי",
+    "שנה לפחות לסיום",
+    "3 ימים בשבוע"
+  ],
+  "salary": null,
+  "scope": "מינימום 3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152055064"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "תיאום פגישות למשווקי השקעות (משרת סטודנט/ית)",
+  "url": "https://juniors.hiremetech.com/job/152055064",
+  "work_mode": "משרד"
+}

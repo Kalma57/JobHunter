@@ -1,0 +1,326 @@
+{
+  "after_prefilter": 283,
+  "at": "2026-11-08T07:00:00Z",
+  "backlog": 243,
+  "borderline": [
+    "SOC Analyst (Student position) — לא כפילות",
+    "Software Engineer Intern — לא כפילות",
+    "Software Engineer - Student Position — כפילות של g17: FIL Robotics, אותה כותרת (Junior Software Engineer - Student Position), אותו תפקיד; במועמד המיקום לא ידוע, ללא סתירה",
+    "לחברה ממשלתית דרוש/ה סטודנט/ית לחומרים/כימיה החלפה לחל\"ד — כפילות של hiremetech-151191794: אותה משרה של תומר ברמלה: סטודנט/ית לחומרים/כימיה החלפה לחל\"ד, אותו תפקיד ומיקום",
+    "Haifa Lab support student — לא כפילות",
+    "Engineering Student for Intel Kiryat Gat — לא כפילות",
+    "Dev Ops Engineering Student — לא כפילות",
+    "Haifa Lab support student — לא כפילות",
+    "Engineering Student for Intel Kiryat Gat — לא כפילות",
+    "סטודנט/ית אדמין במעבדות המחקר ופיתוח — לא כפילות"
+  ],
+  "brain_filtered": 34,
+  "candidates": 319,
+  "closed": 7,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=10"
+  ],
+  "far": 4,
+  "found_new": 83,
+  "kind": "weekly",
+  "passed": 4,
+  "prefiltered": [
+    {
+      "company": "PayPal",
+      "location": "Tel Aviv, Tel Aviv District, Israel",
+      "reason": "משרה בכירה (Sr בשם המשרה)",
+      "source": "workday:paypal",
+      "title": "Sr Data Scientist",
+      "url": "https://wd1.myworkdaysite.com/recruiting/paypal/jobs/job/Tel-Aviv-Tel-Aviv-District-Israel/Sr-Data-Scientist_R0138519-1"
+    },
+    {
+      "company": "חסוי — דרך דרושים",
+      "location": "פתח תקווה, רמת גן, גבעת שמואל, הוד השרון, בני ברק, תל אביב, גבעתיים, ראש העין",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "איש תמיכה טכנית בפ\"ת-שכר גבוה ואופציה להיברידי!",
+      "url": "https://www.drushim.co.il/job/39013691/4da94aff/"
+    },
+    {
+      "company": "חסוי — דרך דרושים",
+      "location": "נשר, חיפה, קריית מוצקין, קריית אתא, טירת כרמל, עכו, קריית ביאליק",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "נציג/ת תמיכה טכנית בנשר- שכר גבוה + בונוסים!",
+      "url": "https://www.drushim.co.il/job/39015382/152cc064/"
+    },
+    {
+      "company": "חסוי — דרך דרושים",
+      "location": "ירושלים, מעלה אדומים, בית שמש, נווה אילן, ביתר עילית, אפרתה",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "נציג/ת תמיכה טכנית בירושלים- שכר גבוה + בונוסים!",
+      "url": "https://www.drushim.co.il/job/39015363/3660db43/"
+    },
+    {
+      "company": "המרכז האקדמי הרב תחומי ירושלים",
+      "location": "ירושלים",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "למרכז האקדמי הרב תחומי ירושלים דרוש/ה רכז/ת חוג",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9916086"
+    },
+    {
+      "company": "חסוי — דרך JobMaster",
+      "location": "שוהם",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "בקרי/ות NOC ל Data Center בשוהם. ללא ניסיון. סיבוס וקרן השתלמות",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9916532"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/153275420"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "רעננה",
+      "reason": "תחום אחר (Help Desk בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Help desk",
+      "url": "https://juniors.hiremetech.com/job/153275321"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Netanya",
+      "reason": "תחום אחר (חשמל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "חשמלאי/ת אחזקה לתחנת הכוח בחדרה",
+      "url": "https://juniors.hiremetech.com/job/153275120"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Haifa",
+      "reason": "תחום אחר (Sales בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Sales Coordinator",
+      "url": "https://juniors.hiremetech.com/job/153274976"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Ramat Gan",
+      "reason": "משרה בכירה (Manager בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Restaurant Partnership Manager - North",
+      "url": "https://juniors.hiremetech.com/job/153274829"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Lod",
+      "reason": "תחום אחר (Tester בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Penetration Tester",
+      "url": "https://juniors.hiremetech.com/job/153274709"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "נמל התעופה בן גוריון, שדרות רשות שדות התעופה / כביש 40, לוד 70100, יהוד",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מהנדס/ת תכנון ובקרת פרויקטים",
+      "url": "https://juniors.hiremetech.com/job/153273759"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "תל אביב, Tel Aviv",
+      "reason": "תחום אחר (Office Manager בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Office Manager",
+      "url": "https://juniors.hiremetech.com/job/153273691"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (מיסוי בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרוש.ה עו\"ד לתחום מיסוי נדל\"ן",
+      "url": "https://juniors.hiremetech.com/job/153264535"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "משרה בכירה (Manager בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Online Campaign Manager",
+      "url": "https://juniors.hiremetech.com/job/153265411"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (HR בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "HR & Recruitment Specialist",
+      "url": "https://juniors.hiremetech.com/job/153177757"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Newark Beth Israel Medical Center",
+      "reason": "תחום אחר (Technician בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Hospital Service Technician",
+      "url": "https://juniors.hiremetech.com/job/153192266"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Or Akiva",
+      "reason": "תחום אחר (Sales בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Sales & Leasing Officer",
+      "url": "https://juniors.hiremetech.com/job/153202458"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Yigal Alon St 67, Tel Aviv-Yafo, Israel, Herzliya",
+      "reason": "תחום אחר (נציג בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "נציג.ת מסירות ונסיעות התרשמות",
+      "url": "https://juniors.hiremetech.com/job/153228703"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Customer Service בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Customer Service Representative – Chat",
+      "url": "https://juniors.hiremetech.com/job/153223668"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "UCT Fluid Solutions (Ham-Let), Caesarea Industrial Park, Caesarea, Israel, Nof HaGalil",
+      "reason": "תחום אחר (Buyer בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Buyer",
+      "url": "https://juniors.hiremetech.com/job/153223160"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Herzliya",
+      "reason": "תחום אחר (מכירות בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "אשת מכירות (Inside Sales) – CYBERLABS",
+      "url": "https://juniors.hiremetech.com/job/153235534"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "רחוב חסן שוקרי 14, חיפה, Haifa",
+      "reason": "משרה בכירה (מנהל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "רכז/ת ניפוק חומרי דלק (מנהל יחידה), במחלקה לתובלה, אגף התברואה, מינהל תפעול ופיתוח תשתיות",
+      "url": "https://juniors.hiremetech.com/job/153248601"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "רחוב חסן שוקרי 14, חיפה, Haifa",
+      "reason": "תחום אחר (בודק בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "בודק/ת בקשות להיתרי בניה, באגף לרישוי הבניה, מינהל ההנדסה",
+      "url": "https://juniors.hiremetech.com/job/153248600"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "השרון",
+      "reason": "תחום אחר (מזכיר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מזכיר/ה רפואי/ת למכון טיפת חלב ברמת השרון",
+      "url": "https://juniors.hiremetech.com/job/153201274"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "השרון",
+      "reason": "תחום אחר (מזכיר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מזכיר/ה רפואי/ת להתפתחות הילד בחריש",
+      "url": "https://juniors.hiremetech.com/job/153201270"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Ramat Gan",
+      "reason": "תחום אחר (מזכיר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מזכיר/ה למרפאת בריאות הנפש רמת גן",
+      "url": "https://juniors.hiremetech.com/job/153201264"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/153246121"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "השרון",
+      "reason": "תחום אחר (מזכיר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מזכיר.ת מחלקת שיווק",
+      "url": "https://juniors.hiremetech.com/job/153201255"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "תל אביב",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "היחידה לטיפולי בית במכבי מחוז מרכז מחפשת דיאטניות/ים",
+      "url": "https://juniors.hiremetech.com/job/153201250"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (מיסוי בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרוש.ה עו\"ד לתחום מיסוי נדל\"ן",
+      "url": "https://juniors.hiremetech.com/job/153203578"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/153203571"
+    },
+    {
+      "company": "Apple",
+      "location": "Herzliya, Israel",
+      "reason": "משרה בכירה (Lead בשם המשרה)",
+      "source": "apple:apple",
+      "title": "Formal Verification Technical Lead",
+      "url": "https://jobs.apple.com/en-us/details/200692923-0865/formal-verification-technical-lead"
+    },
+    {
+      "company": "Apple",
+      "location": "Haifa, Israel",
+      "reason": "משרה בכירה (Lead בשם המשרה)",
+      "source": "apple:apple",
+      "title": "Formal Verification Technical Lead",
+      "url": "https://jobs.apple.com/en-us/details/200692923-1451/formal-verification-technical-lead"
+    },
+    {
+      "company": "Google",
+      "location": "Tel Aviv, Israel, Haifa, Israel",
+      "reason": "תחום אחר (Design Verification בשם המשרה)",
+      "source": "google:google",
+      "title": "Junior SoC Design Verification Engineer, Google Cloud",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/90617818789094086-junior-soc-design-verification-engineer-google-cloud"
+    }
+  ],
+  "prefiltered_count": 36,
+  "removed": 0,
+  "sources_read": 38,
+  "sources_total": 39,
+  "summary": "4 עברו · 34 סוננו ע\"י המוח · 36 סוננו בקוד · 2 כפילויות · 243 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

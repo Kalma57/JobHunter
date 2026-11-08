@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:151956061",
+  "alerts": [
+    "מפרסם ≠ מעסיק",
+    "האתר כותב 'משרה מלאה', הטקסט מדבר על 3 ימים לפחות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151956061",
+  "company": "חסוי — דרך HireMeTech (רפאל)",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים",
+  "description": "ראיונות אבחון ביטחוני, כתיבת חוות דעת.",
+  "education": null,
+  "employment": null,
+  "experience": "רקע בביטחון/אבחון/ראיונות",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-27",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — מראיין ביטחוני, לא פיתוח תוכנה (וגם חיפה)"
+  },
+  "requirements_adv": [
+    "סיווג",
+    "שפה נוספת"
+  ],
+  "requirements_must": [
+    "3 ימים לפחות",
+    "שנתיים לסיום",
+    "רקע בביטחון/ראיונות"
+  ],
+  "salary": null,
+  "scope": "לפחות 3 ימים",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151956061"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית מראיינ.ת בטחוני.ת",
+  "url": "https://juniors.hiremetech.com/job/151956061",
+  "work_mode": null
+}

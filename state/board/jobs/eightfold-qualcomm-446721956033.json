@@ -1,0 +1,72 @@
+{
+  "agent_id": "eightfold:qualcomm:446721956033",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://careers.qualcomm.com/careers/job/446721956033",
+  "company": "Qualcomm Israel",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט בצוות FPGA: פיתוח RTL ב-Verilog, Vivado, MATLAB ו-C משובץ למערכות תקשורת.",
+  "education": "סטודנט ל-BSc/MSc הנדסת חשמל / מחשבים / מדעי המחשב",
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:qualcomm",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "הוד השרון",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-04",
+  "prefs_down": [
+    "C"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — פיתוח FPGA/חומרה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "Vitis",
+    "DSP",
+    "AXI"
+  ],
+  "requirements_must": [
+    "סטודנט לתואר ראשון/שני",
+    "Verilog/SystemVerilog",
+    "Vivado",
+    "MATLAB",
+    "C"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "eightfold:qualcomm",
+      "url": "https://careers.qualcomm.com/careers/job/446721956033"
+    }
+  ],
+  "source": "eightfold:qualcomm",
+  "status": "filtered",
+  "title": "FY27 Intern - FPGA Intern",
+  "url": "https://careers.qualcomm.com/careers/job/446721956033",
+  "work_mode": null
+}

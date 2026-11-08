@@ -1,0 +1,63 @@
+{
+  "agent_id": "drushim:38958154",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38958154/96f70622/",
+  "company": "G STAT",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים",
+  "description": "אנליסט נתונים בארגון פיננסי: דוחות, ניתוח מכירות, Excel ו-BO.",
+  "education": "סטודנט שנה ב' להנדסת תעשייה וניהול / מערכות מידע / כלכלה",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "בני ברק, רמת גן, תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-02",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — אנליסט נתונים/BI, תחום לימודים אחר"
+  },
+  "requirements_adv": [
+    "BO"
+  ],
+  "requirements_must": [
+    "סטודנט שנה ב' בתחום תעשייה/מערכות מידע/כלכלה",
+    "שנתיים לסיום",
+    "Excel",
+    "SQL"
+  ],
+  "salary": null,
+  "scope": "כ-80 שעות בחודש",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38958154/96f70622/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "סטודנט/ית לתפקיד אנליסט/ית מתחיל/ה",
+  "url": "https://www.drushim.co.il/job/38958154/96f70622/",
+  "work_mode": null
+}

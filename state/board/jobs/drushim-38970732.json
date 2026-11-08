@@ -1,0 +1,60 @@
+{
+  "agent_id": "drushim:38970732",
+  "alerts": [],
+  "apply_instructions": "מייל למגייסת (מופיע במודעה)",
+  "apply_url": "https://www.drushim.co.il/job/38970732/140db343/",
+  "company": "ICL",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים",
+  "description": "הפעלת ציוד ויחידות ייצור, הוצאת דגימות ופיקוח תהליכים במפעל במשמרות.",
+  "education": "סטודנט לתואר ראשון או הנדסאי/טכנאי",
+  "employment": "משמרות",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "סדום (באר שבע, דימונה, ערד, ירוחם, מיתר)",
+  "not_stated": [
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-03",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — מפעיל ייצור במשמרות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון הפעלת מכונות"
+  ],
+  "requirements_must": [
+    "סטודנט",
+    "שנתיים לפחות לסיום"
+  ],
+  "salary": null,
+  "scope": "חלקית, משמרות כולל לילות וסופ\"ש",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38970732/140db343/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "מפעיל/ה לאתר המגנזיום - משרת סטודנט/ית",
+  "url": "https://www.drushim.co.il/job/38970732/140db343/",
+  "work_mode": "בשטח"
+}

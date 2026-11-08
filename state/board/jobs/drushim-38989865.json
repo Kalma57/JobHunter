@@ -1,0 +1,63 @@
+{
+  "agent_id": "drushim:38989865",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38989865/405cc4a6/",
+  "company": "תומר חברה ממשלתית",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הוצאת דגימות חומרי גלם, רישום והעברה למעבדות, עבודה פיזית עם חומרים מסוכנים.",
+  "education": "סטודנט לתואר ראשון",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמלה",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-05",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — מחסנאות/לוגיסטיקה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "כימיה/חומרים שנה א'",
+    "לוגיסטיקה"
+  ],
+  "requirements_must": [
+    "סטודנט לתואר ראשון",
+    "12 שנות לימוד",
+    "עבודה פיזית"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38989865/405cc4a6/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "סטודנט/ית למחסנים",
+  "url": "https://www.drushim.co.il/job/38989865/405cc4a6/",
+  "work_mode": "בשטח"
+}

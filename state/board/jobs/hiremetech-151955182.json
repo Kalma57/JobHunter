@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:151955182",
+  "alerts": [
+    "מפרסם ≠ מעסיק",
+    "האתר כותב 'משרה מלאה', הטקסט — חלקית"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151955182",
+  "company": "חסוי — דרך HireMeTech (hms)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתן מענה ללקוחות בתחום הלוואות ואשראי.",
+  "education": "סטודנט לכלכלה או מנהל עסקים משנה ב'",
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-08",
+  "history": [
+    {
+      "at": "2026-11-08T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמת גן / תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ותואר — שירות לקוחות פיננסי"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט לכלכלה/מנהל עסקים",
+    "ניסוח בכתב",
+    "אנגלית"
+  ],
+  "salary": null,
+  "scope": "חלקית, לפחות יומיים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151955182"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לכלכלה או מנהל עסקים לפרויקט אשראי והלוואות",
+  "url": "https://juniors.hiremetech.com/job/151955182",
+  "work_mode": null
+}
