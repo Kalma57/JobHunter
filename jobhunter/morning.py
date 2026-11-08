@@ -397,7 +397,9 @@ def run_brain(state: Path, timeout_minutes: int = 90) -> dict:
     except subprocess.TimeoutExpired:
         return {"date": nxt.get("date"), "brain": f"error: no answer in {timeout_minutes} minutes"}
     out = (done.stdout + done.stderr).strip()
-    return {"date": nxt.get("date"), "brain": "ok" if done.returncode == 0 else f"error {done.returncode}", "report": out[-3000:]}
+    result = {"date": nxt.get("date"), "brain": "ok" if done.returncode == 0 else f"error {done.returncode}", "report": out[-3000:]}
+    _write_json(state / "plan" / f"{nxt.get('date')}-brain-status.json", result)
+    return result
 
 
 def apply_brain(state: Path, board_dir: Path) -> dict:
@@ -412,7 +414,12 @@ def apply_brain(state: Path, board_dir: Path) -> dict:
     brain = _read_json(plan_dir / f"{day}-brain.json", [])
     cards = store.read_cards(plan_dir / f"{day}-cards.json")
     if brain and not cards:
-        return {"date": day, "apply": "no cards file - the jobs stay for the next run"}
+        # visible on the site's report: the morning's jobs wait in the queue until Claude can read them
+        run = _read_json(plan_dir / f"{day}-run.json", {})
+        brain_report = _read_json(plan_dir / f"{day}-brain-status.json", {})
+        run["brain_error"] = brain_report.get("report") or "Claude לא כתב כרטיסים"
+        _write_json(plan_dir / f"{day}-run.json", run)
+        return {"date": day, "apply": "no cards file - the jobs stay for the next run", "brain_error": run["brain_error"][-300:]}
     counts, missing = store.apply_cards(board_dir, brain, cards, day)
     if missing:
         backlog_path = state / "inbox" / "backlog.json"

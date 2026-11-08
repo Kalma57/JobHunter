@@ -45,7 +45,7 @@ def run_numbers(state: Path, today: date) -> dict:
         "prefiltered": run.get("prefiltered_count", 0),
         "to_brain": run.get("to_brain", 0),
         "companies": sorted({c["company"] for c in companies if "error" not in c}),
-        "errors": report.get("errors", []),
+        "errors": report.get("errors", []) + ([f"Claude לא קרא את המשרות: {run['brain_error'][:160]}"] if run.get("brain_error") else []),
         "warnings": report.get("warnings", []),
         "prefiltered_list": run.get("prefiltered", []),
     }
