@@ -264,3 +264,15 @@ def test_cards_become_board_jobs_or_merge_into_one(tmp_path):
     assert new["status"] == "new" and new["agent_id"] == "x:0" and new["history"][0]["at"] == "2026-11-06T07:00:00Z"
     assert old["status"] == "hold" and len(old["sightings"]) == 2 and old["alerts"]
     assert counts["passed"] == 1 and counts["merged"] == 1 and [m["doc_id"] for m in missing] == ["n2"]
+
+
+def test_a_duplicate_of_a_job_from_the_same_morning_merges(tmp_path):  # 8/11/2026
+    from jobhunter import store
+    (tmp_path / "jobs").mkdir()
+    brain = [{"doc_id": "hiremetech-9", "fields": {"sightings": [{"source": "hiremetech:juniors"}]}, "history_note": "n", "job": {"title": "T"}, "borderline": [{}]},
+             {"doc_id": "workday-intel-J1", "fields": {"agent_id": "workday:intel:J1", "sightings": [{"source": "workday:intel"}]}, "history_note": "n", "job": {"title": "T"}, "borderline": []}]
+    cards = [{"doc_id": "hiremetech-9", "duplicate_of": "inbox:workday:intel:J1"}, {"doc_id": "workday-intel-J1", "title": "T", "status": "filtered"}]
+    counts, _ = store.apply_cards(tmp_path, brain, cards, "2026-11-08")
+    assert counts["merged"] == 1 and not (tmp_path / "jobs" / "hiremetech-9.json").exists()
+    intel = json.loads((tmp_path / "jobs" / "workday-intel-J1.json").read_text(encoding="utf-8"))
+    assert len(intel["sightings"]) == 2

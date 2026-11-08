@@ -57,6 +57,11 @@ def apply_cards(board_dir: Path, brain: list[dict], cards: list[dict], day: str)
     code's fields (agent_id, source, first_seen, sightings, notes) and its first history line.
     """
     by_id = {c.get("doc_id"): c for c in cards if isinstance(c, dict) and c.get("doc_id")}
+    for c in by_id.values():  # a twin from this same morning is named "inbox:<agent id>" in the brain file
+        if str(c.get("duplicate_of") or "").startswith("inbox:"):
+            c["duplicate_of"] = c["duplicate_of"].removeprefix("inbox:").replace(":", "-")
+    # new jobs first, so a duplicate of a job from this same morning finds it on the board
+    brain = sorted(brain, key=lambda e: 1 if (by_id.get(e["doc_id"]) or {}).get("duplicate_of") else 0)
     counts = {"passed": 0, "brain_filtered": 0, "far": 0, "merged": 0, "no_card": 0}
     borderline_notes, missing = [], []
     for entry in brain:

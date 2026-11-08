@@ -1,6 +1,9 @@
 {
   "agent_id": "workday:intel:JR0288531",
-  "alerts": [],
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק",
+    "אוחדה עם משרה דומה — בדוק"
+  ],
   "apply_instructions": null,
   "apply_url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Haifa-Lab-support-student_JR0288531",
   "company": "Intel",
@@ -53,6 +56,16 @@
       "date": "2026-11-08",
       "source": "workday:intel",
       "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Haifa-Lab-support-student_JR0288531"
+    },
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151973112"
+    },
+    {
+      "date": "2026-11-08",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152003917"
     }
   ],
   "source": "workday:intel",
