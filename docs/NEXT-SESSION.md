@@ -4,6 +4,12 @@
 
 ---
 
+## ⭐⭐⭐⭐ עדכון — 9/11/2026: ריצה אוטומטית אמינה (קובע, גובר על 21/10)
+**הארכיטקטורה:** אין יותר ריצת Claude באפליקציה. משימת Windows "JobHunter morning" מריצה את `scripts/morning-task.cmd`: `due` ← `lock` ← `prepare` ← `brain` (`claude -p`, `docs/agents/brain-run.md`) ← `apply` ← `finish` ← `unlock`. הלוח הוא `state/board/jobs/*.json` ב-git (`jobhunter/store.py`), הקוד כותב אותו. סימוני המשתמש: `statuses.json` בענף `board-data` (`overlay.py`). ההתחברות של `claude.exe` (`auth login`) נשמרת ב-`~/.claude/.credentials.json`; אם פג — האתר מציג "Claude לא קרא את המשרות" בדוח הבוקר.
+**מתי רץ:** כל שעה 08:00-23:00 + בכניסה (3 דק') + בביטול נעילה (2 דק') + ביציאה משינה (אירוע Power-Troubleshooter 1, 2 דק'); משימה נוספת "JobHunter wake" מעירה מהמצב שינה ב-07:55 (רק בחשמל, `WakeToRun`). כולן מריצות אותו סקריפט, ו-`due` מבטיח ריצה אחת ביום: יוצא מיד אם היום כבר נשמר (`state/board/runs/<D>.json`), אם ריצה אחרת פעילה (`state/plan/running.lock` < 3 שעות), אם אין רשת (לא סופר ניסיון), או אחרי 5 ניסיונות.
+**יום נחשב "נשמר"** רק אם נקראו לפחות חצי מהמקורות (`apply_brain`); כרטיסים שכבר נכתבו (`state/plan/applied/<D>.txt`) לא חוזרים לתור ולא מתוכננים שוב.
+**אתר:** מזהיר כשהנתונים בני יומיים ומעלה.
+
 ## ⭐⭐⭐ עדכון — 21/10/2026: ריצת הבוקר בלי פקודות של Claude
 **למה הריצות נתקעו:** כל פקודה שClaude מקליד נבדקת מול רשימת היתרים לפי הטקסט המדויק. Claude לא תמיד כותב אותה אותו דבר ← אין התאמה ← הריצה מחכה לאישור. (בנוסף: ההיתרים ישבו בהתחלה רק בקובץ של הפרויקט; נוסף `~/.claude/settings.json`.)
 **הפתרון:** הקוד רץ מ-Windows Task Scheduler — משימה "JobHunter morning", כל יום 08:00 (StartWhenAvailable, ברקע דרך `conhost --headless`), הסקריפט `scripts/morning-task.cmd`: `prepare` ← `finish --wait` (מחכה לסימן `state/plan/done/runs/<D>.json` עד 10 שעות) ← דף ציבורי + גיבוי. לוג: `state/logs/morning-<D>.log`.
