@@ -297,3 +297,29 @@ def test_a_failing_morning_stops_after_three_attempts(tmp_path):
     (tmp_path / "plan").mkdir()
     (tmp_path / "plan" / f"attempts-{TODAY.isoformat()}.txt").write_text(str(MAX_ATTEMPTS))
     assert not due(tmp_path, TODAY)[0]
+
+
+
+def test_a_day_with_most_sources_unread_is_not_done(tmp_path):  # 9/11/2026: no network right after a wake-up
+    from jobhunter.morning import apply_brain, done_marker
+    plan = tmp_path / "plan"
+    plan.mkdir()
+    (plan / "next.json").write_text(json.dumps({"date": "2026-11-09"}), encoding="utf-8")
+    (plan / "2026-11-09-brain.json").write_text("[]", encoding="utf-8")
+    (plan / "2026-11-09-run.json").write_text(json.dumps({"sources_read": 3, "sources_total": 39}), encoding="utf-8")
+    (tmp_path / "board" / "jobs").mkdir(parents=True)
+    result = apply_brain(tmp_path, tmp_path / "board")
+    assert "another attempt" in result["apply"] and not done_marker(tmp_path, "2026-11-09").exists()
+    (plan / "2026-11-09-run.json").write_text(json.dumps({"sources_read": 38, "sources_total": 39}), encoding="utf-8")
+    apply_brain(tmp_path, tmp_path / "board")
+    assert done_marker(tmp_path, "2026-11-09").exists()
+
+
+def test_cards_already_applied_are_not_requeued(tmp_path):
+    from jobhunter.morning import unfinished_jobs
+    (tmp_path / "plan" / "applied").mkdir(parents=True)
+    (tmp_path / "plan" / "last-prepare.txt").write_text("2026-11-09", encoding="utf-8")
+    (tmp_path / "plan" / "2026-11-09.json").write_text(json.dumps({"jobs": [{"inbox_job": {"id": "x:1"}}]}), encoding="utf-8")
+    assert [j["id"] for j in unfinished_jobs(tmp_path)] == ["x:1"]
+    (tmp_path / "plan" / "applied" / "2026-11-09.txt").write_text("1", encoding="utf-8")
+    assert unfinished_jobs(tmp_path) == []

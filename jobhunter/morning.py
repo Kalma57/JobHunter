@@ -281,7 +281,7 @@ def unfinished_jobs(state: Path) -> list[dict]:
     if not last.exists():
         return []
     day = last.read_text(encoding="utf-8").strip()
-    if done_marker(state, day).exists():
+    if done_marker(state, day).exists() or (state / "plan" / "applied" / f"{day}.txt").exists():
         return []
     return [item["inbox_job"] for item in _read_json(state / "plan" / f"{day}.json", {}).get("jobs", [])]
 
@@ -303,6 +303,8 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
     backlog_path = state / "inbox" / "backlog.json"
     requeued = unfinished_jobs(state)
     candidates = list({j["id"]: j for j in requeued + _read_json(backlog_path, []) + Inbox(state / "inbox").read(today)}.values())
+    on_board = {p.stem for p in (board_dir / "jobs").glob("*.json")}
+    candidates = [j for j in candidates if doc_id(j["id"]) not in on_board]  # done by an earlier attempt today
     keep, filtered = prefilter.split(candidates, prefilter.load_rules())
     todays, rest = take_todays_share(keep, [], limit)
     _write_json(backlog_path, rest)
@@ -430,11 +432,31 @@ def apply_brain(state: Path, board_dir: Path) -> dict:
     run.update({k: counts[k] for k in ("passed", "brain_filtered", "far", "borderline")})
     run["summary"] = (f"{counts['passed']} עברו · {counts['brain_filtered']} סוננו ע\"י המוח · {run.get('prefiltered_count', 0)} סוננו בקוד"
                       f" · {counts['merged'] + run.get('duplicates_code', 0)} כפילויות · {run.get('backlog', 0)} ממתינות")
+    (plan_dir / "applied").mkdir(parents=True, exist_ok=True)
+    (plan_dir / "applied" / f"{day}.txt").write_text("1", encoding="utf-8")  # the cards are on the board: never requeue them
+    result = {"date": day, "apply": "ok", **{k: v for k, v in counts.items() if k != "borderline"}, "back_to_queue": len(missing)}
+    read, total = run.get("sources_read", 0), run.get("sources_total", 0)
+    if total and read * 2 < total:
+        # most sites could not be read (no network after a wake-up, say): the day is NOT done, a later attempt follows
+        result["apply"] = f"ok, but only {read}/{total} sources were read - another attempt will follow"
+        return result
     _write_json(done_marker(state, day), run)
-    return {"date": day, "apply": "ok", **{k: v for k, v in counts.items() if k != "borderline"}, "back_to_queue": len(missing)}
+    return result
 
 
-def due(state: Path, today: date) -> tuple[bool, str]:
+def online(timeout: float = 5.0) -> bool:
+    """Is the network up? (Right after a wake-up it often is not yet.)"""
+    import socket
+    for host in ("github.com", "1.1.1.1"):
+        try:
+            socket.create_connection((host, 443), timeout=timeout).close()
+            return True
+        except OSError:
+            continue
+    return False
+
+
+def due(state: Path, today: date, check_network: bool = False) -> tuple[bool, str]:
     """Should the hourly Windows task run the morning now? Not when today's morning is already on the board, and not
     while another run is going (a lock younger than 3 hours). The task tries every hour from 08:00, because Windows'
     "run a missed task when available" did not catch up after sleep (9/11/2026)."""
@@ -447,10 +469,12 @@ def due(state: Path, today: date) -> tuple[bool, str]:
     attempts = state / "plan" / f"attempts-{today.isoformat()}.txt"
     if attempts.exists() and int(attempts.read_text() or 0) >= MAX_ATTEMPTS:
         return False, f"{MAX_ATTEMPTS} attempts today already - see the morning log"
+    if check_network and not online():
+        return False, "no network yet"  # does not use an attempt: the next trigger tries again
     return True, "run"
 
 
-MAX_ATTEMPTS = 3  # a run that keeps failing (e.g. Claude signed out) must not read every site every hour
+MAX_ATTEMPTS = 5  # a run that keeps failing (e.g. Claude signed out) must not read every site every hour
 
 
 def _git(*args: str) -> tuple[int, str]:
@@ -503,7 +527,7 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(result, ensure_ascii=False, indent=1))
         return 0
     if args.cmd == "due":
-        run, why = due(args.state, args.today)
+        run, why = due(args.state, args.today, check_network=True)
         print(why)
         return 0 if run else 1
     if args.cmd == "lock":
