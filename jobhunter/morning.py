@@ -434,6 +434,25 @@ def apply_brain(state: Path, board_dir: Path) -> dict:
     return {"date": day, "apply": "ok", **{k: v for k, v in counts.items() if k != "borderline"}, "back_to_queue": len(missing)}
 
 
+def due(state: Path, today: date) -> tuple[bool, str]:
+    """Should the hourly Windows task run the morning now? Not when today's morning is already on the board, and not
+    while another run is going (a lock younger than 3 hours). The task tries every hour from 08:00, because Windows'
+    "run a missed task when available" did not catch up after sleep (9/11/2026)."""
+    import time
+    if done_marker(state, today.isoformat()).exists():
+        return False, "today's morning is already done"
+    lock = state / "plan" / "running.lock"
+    if lock.exists() and time.time() - lock.stat().st_mtime < 3 * 3600:
+        return False, "another run is going"
+    attempts = state / "plan" / f"attempts-{today.isoformat()}.txt"
+    if attempts.exists() and int(attempts.read_text() or 0) >= MAX_ATTEMPTS:
+        return False, f"{MAX_ATTEMPTS} attempts today already - see the morning log"
+    return True, "run"
+
+
+MAX_ATTEMPTS = 3  # a run that keeps failing (e.g. Claude signed out) must not read every site every hour
+
+
 def _git(*args: str) -> tuple[int, str]:
     import subprocess
     done = subprocess.run(["git", *args], capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -464,7 +483,7 @@ def finish(state: Path, board_dir: Path, today: date, push: bool = True) -> dict
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="jobhunter.morning")
     sub = parser.add_subparsers(dest="cmd", required=True)
-    for name in ("plan", "prepare", "finish", "brain", "apply"):
+    for name in ("plan", "prepare", "finish", "brain", "apply", "due", "lock", "unlock"):
         cmd = sub.add_parser(name)
         cmd.add_argument("--board-dir", type=Path, default=Path("state/board"), required=(name == "plan"))
         cmd.add_argument("--today", type=date.fromisoformat, default=date.today())
@@ -482,6 +501,19 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "prepare":
         result = prepare(args.state, args.board_dir, args.today, args.limit, run_agents=not args.no_agents)
         print(json.dumps(result, ensure_ascii=False, indent=1))
+        return 0
+    if args.cmd == "due":
+        run, why = due(args.state, args.today)
+        print(why)
+        return 0 if run else 1
+    if args.cmd == "lock":
+        (args.state / "plan").mkdir(parents=True, exist_ok=True)
+        (args.state / "plan" / "running.lock").write_text(args.today.isoformat(), encoding="utf-8")
+        attempts = args.state / "plan" / f"attempts-{args.today.isoformat()}.txt"
+        attempts.write_text(str(int(attempts.read_text() or 0) + 1 if attempts.exists() else 1), encoding="utf-8")
+        return 0
+    if args.cmd == "unlock":
+        (args.state / "plan" / "running.lock").unlink(missing_ok=True)
         return 0
     if args.cmd == "brain":
         print(json.dumps(run_brain(args.state), ensure_ascii=False, indent=1))

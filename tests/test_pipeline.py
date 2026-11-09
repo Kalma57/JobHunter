@@ -276,3 +276,24 @@ def test_a_duplicate_of_a_job_from_the_same_morning_merges(tmp_path):  # 8/11/20
     assert counts["merged"] == 1 and not (tmp_path / "jobs" / "hiremetech-9.json").exists()
     intel = json.loads((tmp_path / "jobs" / "workday-intel-J1.json").read_text(encoding="utf-8"))
     assert len(intel["sightings"]) == 2
+
+
+
+def test_the_hourly_task_runs_once_a_day(tmp_path):  # 9/11/2026
+    from jobhunter.morning import due, done_marker
+    assert due(tmp_path, TODAY)[0]
+    (tmp_path / "plan").mkdir()
+    (tmp_path / "plan" / "running.lock").write_text("x")
+    assert not due(tmp_path, TODAY)[0]                     # a run is going
+    (tmp_path / "plan" / "running.lock").unlink()
+    done_marker(tmp_path, TODAY.isoformat()).parent.mkdir(parents=True)
+    done_marker(tmp_path, TODAY.isoformat()).write_text("{}")
+    assert not due(tmp_path, TODAY)[0]                     # already done today
+
+
+
+def test_a_failing_morning_stops_after_three_attempts(tmp_path):
+    from jobhunter.morning import due, MAX_ATTEMPTS
+    (tmp_path / "plan").mkdir()
+    (tmp_path / "plan" / f"attempts-{TODAY.isoformat()}.txt").write_text(str(MAX_ATTEMPTS))
+    assert not due(tmp_path, TODAY)[0]
