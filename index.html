@@ -462,6 +462,9 @@ function render() {
   el("strip").innerHTML = r.date
     ? `<span class="when">ריצת בוקר ${fmtDate(r.date)}</span><span><b>${nf.format(r.sources_read || 0)}</b> מקורות</span><span><b>${nf.format(r.scanned || 0)}</b> משרות נסרקו</span><span><b>${nf.format(r.new || 0)}</b> חדשות</span><span><b>${nf.format(r.to_brain || 0)}</b> נקראו ע״י Claude</span>${(r.errors || []).length ? `<span class="bad">${r.errors.length} מקורות לא נקראו</span>` : ""}<button class="linkbtn" type="button" data-tab="run">לדוח המלא</button>`
     : "עוד לא הייתה ריצת בוקר.";
+  // the agent runs only while the owner's computer is on: say so plainly when the data is old
+  const ageDays = r.date ? Math.floor((Date.now() - new Date(r.date + "T12:00:00").getTime()) / 86400000) : 0;
+  if (ageDays >= 2) el("strip").insertAdjacentHTML("beforeend", `<span class="bad">העדכון האחרון לפני ${ageDays} ימים. הסוכן רץ רק כשהמחשב של הבעלים דלוק.</span>`);
   const all = jobs();
   const counts = Object.fromEntries(TABS.map((t) => [t.id, all.filter((j) => t.statuses.includes(j.status)).length]));
   el("tabs").innerHTML = TABS.map((t) => `<button class="tab" role="tab" type="button" data-tab="${t.id}" aria-selected="${t.id === state.tab}">${t.label}${t.statuses.length ? `<span class="n">${counts[t.id]}</span>` : ""}</button>`).join("");
