@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152723654",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152723654",
+  "company": "אסם נסטלה (מטרנה) — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית במחלקת האיכות במפעל מזון.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "מפעל — בשטח (הוסק)"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "מעברות",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "בקרת איכות במפעל מזון, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152723654"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית למחלקת האיכות במפעל מטרנה אסם נסטלה",
+  "url": "https://juniors.hiremetech.com/job/152723654",
+  "work_mode": "בשטח"
+}

@@ -1,8 +1,7 @@
 {
   "alerts": [],
+  "compacted": "2026-11-09",
   "company": "ZOLL Itamar",
-  "description": "פיתוח אלגוריתמים ו-ML על אותות ביולוגיים.",
-  "education": "תואר B.Sc גמור (ביו-רפואית, חשמל, פיזיקה, מתמטיקה)",
   "first_seen": "2026-10-09",
   "history": [
     {
@@ -15,30 +14,11 @@
     "ג'וניור"
   ],
   "location": "קיסריה / הרצליה",
-  "not_stated": [
-    "scope",
-    "salary"
-  ],
   "notes": "",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [
-    "Python"
-  ],
   "relevance": {
     "pass": false,
     "reason": "דורש תואר גמור (לא סטודנט)."
   },
-  "requirements_adv": [
-    "אותות ביולוגיים",
-    "ביוסטטיסטיקה"
-  ],
-  "requirements_must": [
-    "תואר גמור",
-    "Matlab / Python",
-    "C/C++ בסיסי"
-  ],
   "source": "Glassdoor",
   "status": "filtered",
   "title": "Junior Algorithm Engineer",

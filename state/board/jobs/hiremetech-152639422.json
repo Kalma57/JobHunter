@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:152639422",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152639422",
+  "company": "בנק ישראל (חסוי באתר — דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית ביחידה לניהול מסלקות בבנק ישראל (ניתוח נתונים סטטיסטיים).",
+  "education": null,
+  "employment": "שעתי",
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "company": "כתובת בנק ישראל 2 ירושלים"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד תפעול/ניתוח בבנק ולא פיתוח תוכנה (וגם ירושלים)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "אנגלית",
+    "ניתוח נתונים סטטיסטיים"
+  ],
+  "salary": null,
+  "scope": "שעות",
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152639422"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית ביחידה לניהול מסלקות, באגף מסלקות, במחלקת מערכות תשלומים וסליקה",
+  "url": "https://juniors.hiremetech.com/job/152639422",
+  "work_mode": null
+}

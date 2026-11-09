@@ -16,6 +16,11 @@
       "at": "2026-11-08T07:00:00Z",
       "note": "נמצא ע\"י greenhouse:taboola",
       "status": "new"
+    },
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-05, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {
@@ -67,7 +72,7 @@
     }
   ],
   "source": "greenhouse:taboola",
-  "status": "new",
+  "status": "closed",
   "title": "Software Engineer Intern",
   "url": "https://www.taboola.com/careers/job/8229871?gh_jid=8229871",
   "work_mode": "היברידי"

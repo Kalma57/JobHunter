@@ -1,8 +1,7 @@
 {
   "alerts": [],
+  "compacted": "2026-11-09",
   "company": "Tomax Think Academy",
-  "description": "מחקר AI עם ה-CTO: ניתוח התנהגותי לבחינות, AI להערכה חינוכית. (מתוך צילום מסך)",
-  "education": "סטודנט לדוקטורט",
   "first_seen": "2026-10-09",
   "history": [
     {
@@ -15,29 +14,11 @@
     "סטודנט"
   ],
   "location": "ישראל (עיר לא צוינה)",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary"
-  ],
   "notes": "",
-  "prefs_down": [],
-  "prefs_up": [
-    "AI"
-  ],
   "relevance": {
     "pass": false,
     "reason": "דורש סטודנט לדוקטורט (אני ב-B.Sc)."
   },
-  "requirements_adv": [
-    "NLP בעברית",
-    "וידאו / אודיו",
-    "AWS"
-  ],
-  "requirements_must": [
-    "סטודנט לדוקטורט",
-    "ניסיון ML מעשי"
-  ],
   "source": "Glassdoor",
   "status": "filtered",
   "title": "Research Engineer - Applied ML & AI"

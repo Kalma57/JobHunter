@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:152067670",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152067670",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עוזר/ת מחקר כלכלי בוועדה המוניטרית (Excel).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-08",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "עוזר/ת מחקר כלכלי, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "Excel"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152067670"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית עוזר/ת מחקר לחבר הוועדה המוניטרית (סטודנט)",
+  "url": "https://juniors.hiremetech.com/job/152067670",
+  "work_mode": null
+}

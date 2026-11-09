@@ -1,6 +1,8 @@
 {
   "agent_id": "amazon:10594018",
-  "alerts": [],
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
   "apply_instructions": "לצרף גיליון ציונים וקו\"ח בקובץ PDF אחד",
   "apply_url": "https://account.amazon.jobs/jobs/10594018/apply",
   "company": "Amazon (Annapurna Labs)",
@@ -58,6 +60,11 @@
       "date": "2026-11-08",
       "source": "amazon:amazon",
       "url": "https://www.amazon.jobs/en/jobs/10594018/chip-validation-software-student"
+    },
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152590972"
     }
   ],
   "source": "amazon:amazon",

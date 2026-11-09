@@ -16,6 +16,11 @@
       "at": "2026-11-08T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-04, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -53,7 +58,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "סטודנט/ית להנדסה אזרחית לפיקוח עבודות לילה",
   "url": "https://www.drushim.co.il/job/38856466/80fd4f2e/",
   "work_mode": "בשטח"

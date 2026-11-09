@@ -1,0 +1,73 @@
+{
+  "agent_id": "hiremetech:152732861",
+  "alerts": [
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech",
+    "הטקסט כולל משרות דומות — רעש, התעלמות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152732861",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": "יתרת לימודים של שנה וחצי–שנתיים לפחות",
+  "description": "פיתוח אלגוריתמי עיבוד תמונה וראייה ממוחשבת (סיווג) עם רשתות נוירונים ו-AI, בצוותי פיתוח.",
+  "education": "סטודנט/ית לתואר ראשון/מתקדם במדעי המחשב / הנדסת תוכנה / הנדסת חשמל / מדעי הנתונים",
+  "employment": null,
+  "experience": null,
+  "far": true,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "משגב (אזור חיפה)",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-03",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — משגב (צפון); שאר החובות עוברות (פיתוח AI/ראייה, סיום 2028 מתאים ליתרה של שנה וחצי–שנתיים)"
+  },
+  "requirements_adv": [
+    "קורסים בראייה ממוחשבת / גרפיקה / Deep Learning"
+  ],
+  "requirements_must": [
+    "סטודנט לתואר ראשון/מתקדם במדמ\"ח/הנדסת תוכנה/חשמל/דאטה",
+    "יתרת לימודים שנה וחצי–שנתיים לפחות",
+    "קורסים ב-C++ ו-Python"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152732861"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית לראייה ממוחשבת",
+  "url": "https://juniors.hiremetech.com/job/152732861",
+  "work_mode": "משרד"
+}

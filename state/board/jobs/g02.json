@@ -2,8 +2,8 @@
   "alerts": [
     "משרה ישנה (פורסמה 19/04/2026) — ייתכן שנסגרה."
   ],
+  "compacted": "2026-11-09",
   "company": "Upwind Security",
-  "description": "ניטור סביבות ענן, טיפול בתקלות ואירועים.",
   "employment": "שעתי",
   "first_seen": "2026-10-09",
   "history": [
@@ -23,24 +23,12 @@
   ],
   "location": "תל אביב",
   "not_interested_reason": "יותר מידי ימים",
-  "not_stated": [
-    "salary"
-  ],
   "notes": "",
   "posted_at": "2026-04-19",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "לפחות 4 ימים בשבוע (מותר עד 3) + משמרות לילה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט",
-    "לפחות 4 ימים בשבוע",
-    "משמרות 24/7",
-    "AWS/GCP/Azure, Docker, K8s, Grafana/Kibana, SQL"
-  ],
   "scope": "לפחות 4 ימים + משמרות 24/7 כולל לילות וסופ\"ש",
   "source": "HireMeTech",
   "status": "not_interested",

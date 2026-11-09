@@ -16,6 +16,11 @@
       "at": "2026-11-08T07:00:00Z",
       "note": "נמצא ע\"י eightfold:qualcomm",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-06, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -65,7 +70,7 @@
     }
   ],
   "source": "eightfold:qualcomm",
-  "status": "filtered",
+  "status": "closed",
   "title": "FY27 Intern - FPGA Intern",
   "url": "https://careers.qualcomm.com/careers/job/446721956033",
   "work_mode": null

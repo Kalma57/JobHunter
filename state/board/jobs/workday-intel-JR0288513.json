@@ -19,6 +19,11 @@
       "at": "2026-11-08T07:00:00Z",
       "note": "נמצא ע\"י workday:intel",
       "status": "new"
+    },
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-10-28, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -67,7 +72,7 @@
     }
   ],
   "source": "workday:intel",
-  "status": "new",
+  "status": "closed",
   "title": "DevOps Engineering Student",
   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Petah-Tikva/DevOps-Engineering-Student_JR0288513",
   "work_mode": "משרד"

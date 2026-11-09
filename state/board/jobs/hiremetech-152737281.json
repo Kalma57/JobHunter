@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:152737281",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "לא ברור אם זו אוטומציית בדיקות (נפסל) או פיתוח — לבדוק בעמוד",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152737281",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח אוטומציה (Python).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "עמק חפר",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח אוטומציה ב-Python, עמק חפר (מרכז/שרון); שאר החובות לא צוינו ← עובר"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "Python"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152737281"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Automation Development Student",
+  "url": "https://juniors.hiremetech.com/job/152737281",
+  "work_mode": null
+}

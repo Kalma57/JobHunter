@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152508431",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "R&D דיו — כנראה כימיה/חומרים, לא תוכנה; לא ודאי"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152508431",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית ב-R&D דיו (Ink), משרה חלקית.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "R&D של דיו (חומרים/כימיה), לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תשומת לב לפרטים"
+  ],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152508431"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "R&D Ink Student",
+  "url": "https://juniors.hiremetech.com/job/152508431",
+  "work_mode": null
+}

@@ -17,6 +17,11 @@
       "at": "2026-11-08T07:00:00Z",
       "note": "נמצא ע\"י workday:intel",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-03, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -68,7 +73,7 @@
     }
   ],
   "source": "workday:intel",
-  "status": "filtered",
+  "status": "closed",
   "title": "Software Development student",
   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Software-Development-student_JR0287581-1",
   "work_mode": "משרד"

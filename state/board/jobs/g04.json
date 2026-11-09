@@ -1,10 +1,9 @@
 {
   "alerts": [],
   "apply_url": "https://jobs.eu.lever.co/mobileye/60ebea6b-0d73-4b63-acd0-73e3bd01900a",
+  "compacted": "2026-11-09",
   "company": "Mobileye",
   "degree_time": "לפחות שנתיים לסיום",
-  "description": "פיתוח תוכן בדיקות למערכת הרכב האוטונומי, בסביבה מבוססת Python. דיבוג בעיות מוצר.",
-  "education": "סטודנט לתואר ראשון/שני במדמ\"ח / הנדסת תוכנה",
   "experience": "לא נדרש",
   "first_seen": "2026-10-09",
   "history": [
@@ -23,31 +22,11 @@
     "סטודנט"
   ],
   "location": "פתח תקווה",
-  "not_stated": [
-    "scope",
-    "salary"
-  ],
   "notes": "",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [
-    "Python"
-  ],
   "relevance": {
     "pass": false,
     "reason": "פיתוח אוטומציית בדיקות = QA, מחוץ לתפקידים שבחיפוש."
   },
-  "requirements_adv": [
-    "ראייה ממוחשבת",
-    "C / C++ / שפת סקריפט"
-  ],
-  "requirements_must": [
-    "לימודי B.Sc / M.Sc במדמ\"ח / הנדסת תוכנה",
-    "לפחות שנתיים לסיום",
-    "Python",
-    "תכנות כתחביב"
-  ],
   "scope": null,
   "source": "Glassdoor",
   "status": "filtered",

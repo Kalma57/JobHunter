@@ -1,0 +1,111 @@
+{
+  "after_prefilter": 259,
+  "at": "2026-11-09T07:00:00Z",
+  "backlog": 219,
+  "borderline": [
+    "Software Embedded Student — לא כפילות",
+    "BLE System Test Intern — לא כפילות",
+    "BLE System Test Intern — לא כפילות",
+    "BLE System Test Dev Ops Intern — לא כפילות",
+    "עובד/ת אחזקה למעונות הסטודנטים בת\"א — לא כפילות",
+    "6-Month Internship – Trading, Tel Aviv — לא כפילות",
+    "סטודנט ית לתפקיד אנליסט ית מתחיל ה — לא כפילות",
+    "סטודנט.ית לטיפול בפרט — לא כפילות",
+    "2027 Software Dev Engineer Intern - Tel- — כפילות של amazon-10592104: אותו כותרת (2027 Software Dev Engineer Intern), אותה עיר (תל אביב), HireMeTech מפרסם את משרת Amazon",
+    "2027 Software Dev Engineer Intern - Tel- — כפילות של amazon-10592104: אותו כותרת, מגדל עזריאלי שרונה בתל אביב (משרד Amazon), אותה משרת Intern 2027",
+    "2027 Software Dev Engineer Intern - — כפילות של amazon-10592105: אותו כותרת (2027 Software Dev Engineer Intern), Amazon Annapurna Labs מתם חיפה",
+    "2027 Software Dev Engineer Intern - — כפילות של amazon-10592105: אותו כותרת, מתם חיפה (Annapurna Labs), אותה משרת Intern 2027",
+    "Chip Validation Software Student — כפילות של amazon-10594018: אותו כותרת (Chip Validation Software Student), חיפה, Annapurna Labs, פורסם 2.11"
+  ],
+  "brain_filtered": 31,
+  "candidates": 268,
+  "closed": 7,
+  "compacted": 12,
+  "duplicates_code": 0,
+  "errors": [],
+  "far": 1,
+  "found_new": 25,
+  "kind": "daily",
+  "passed": 4,
+  "prefiltered": [
+    {
+      "company": "Deloitte",
+      "location": "Tel-Aviv, Tel Aviv",
+      "reason": "תחום אחר (Finance בשם המשרה)",
+      "source": "comeet:deloitte",
+      "title": "Finance & Billing Transformation Consultant",
+      "url": "https://careers.deloitte.co.il/position/02-562-en/"
+    },
+    {
+      "company": "אוניברסיטת תל אביב",
+      "location": "תל אביב",
+      "reason": "תחום אחר (הוראה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "מהנדס/ת מעבדת הוראה",
+      "url": "https://www.drushim.co.il/job/39032026/17a2d21a/"
+    },
+    {
+      "company": "טי.סי.אם טכנולוגיות",
+      "location": "אשקלון",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "רכז/ת מחשוב, מערכות מידע ותפעול דיגיטלי",
+      "url": "https://www.drushim.co.il/job/38692230/bbfa8bd8/"
+    },
+    {
+      "company": "נס טכנולוגיות",
+      "location": "לוד",
+      "reason": "תחום אחר (טכנאי בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "טכנאי/ת IT",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9901504"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "11 Derech Menachem Begin, Ramat Gan",
+      "reason": "תחום אחר (Marketing בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Marketing Internship role",
+      "url": "https://juniors.hiremetech.com/job/153283749"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "New York, United States",
+      "reason": "תחום אחר (NOC בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "NOC Operator",
+      "url": "https://juniors.hiremetech.com/job/153285138"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Talent Acquisition בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "2027 Applied Scientist Internship – Masters, Amazon University Talent Acquisition",
+      "url": "https://juniors.hiremetech.com/job/153306944"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "David Ben Gurion Blvd 1, Be'er Sheva, Beersheba",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "רכז/ת לענייני סטודנטים-ביה\"ס הבינלאומי ללימודי מדבר-המכונים לחקר המדבר",
+      "url": "https://juniors.hiremetech.com/job/153284108"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "פרופ' א.ד. ברגמן 2, פארק ת.מ.ר, רחובות 7670502, Petah Tikva",
+      "reason": "תחום אחר (מאבטח בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "לחוות שרתים באיזור פתח תקווה דרושים/ות מאבטחים/ות ללא נשק! תנאים מושלמים לסטודנטים!",
+      "url": "https://juniors.hiremetech.com/job/153278882"
+    }
+  ],
+  "prefiltered_count": 9,
+  "removed": 0,
+  "sources_read": 39,
+  "sources_total": 39,
+  "summary": "4 עברו · 31 סוננו ע\"י המוח · 9 סוננו בקוד · 5 כפילויות · 219 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

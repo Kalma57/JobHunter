@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152488585",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152488585",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט/ית לאחיות.",
+  "education": "סטודנט/ית ללימודי תואר ראשון/הסבה באחיות",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ראשון לציון",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש לימודי אחיות, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "לימודי תואר ראשון/הסבה באחיות",
+    "השלמת חיסונים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152488585"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לאחיות למזרח ראשון לציון",
+  "url": "https://juniors.hiremetech.com/job/152488585",
+  "work_mode": "בשטח"
+}

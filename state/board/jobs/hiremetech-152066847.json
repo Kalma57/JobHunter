@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152066847",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152066847",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עוזר/ת תפעול סטודנט/ית (Excel, Sheets).",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-08",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד תפעולי, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "Excel",
+    "Google Sheets"
+  ],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152066847"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Student / Part Time - Operations Assistant",
+  "url": "https://juniors.hiremetech.com/job/152066847",
+  "work_mode": null
+}

@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:152076881",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech",
+    "לא כפילות של Amazon Embedded (חיפה, לא מעוניין) — מיקום שונה (רחובות)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152076881",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח תוכנה משובצת (C/C++) בחברת בריאות/מכשור רפואי ברחובות.",
+  "education": null,
+  "employment": "דרך חברת כוח אדם",
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רחובות (פארק המדע)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "סטודנט בפיתוח תוכנה משובצת, רחובות (מרכז); שאר החובות לא צוינו ← עובר"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "C",
+    "C++",
+    "embedded systems"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152076881"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Software Embedded Student",
+  "url": "https://juniors.hiremetech.com/job/152076881",
+  "work_mode": null
+}

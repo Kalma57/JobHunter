@@ -1,8 +1,7 @@
 {
   "alerts": [],
+  "compacted": "2026-11-09",
   "company": "Moon Active",
-  "description": "הגנה על קניין רוחני ומותג: איתור הפרות, בקשות הסרה, דוחות.",
-  "education": "סטודנט למשפטים, לפחות שנתיים לסיום",
   "first_seen": "2026-10-09",
   "history": [
     {
@@ -15,23 +14,11 @@
     "סטודנט"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary"
-  ],
   "notes": "",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום משפטים, לא פיתוח תוכנה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט למשפטים",
-    "אנגלית ברמת שפת אם"
-  ],
   "source": "SecretHunter",
   "status": "filtered",
   "title": "IP & Brand Protection Specialist - Student Position"

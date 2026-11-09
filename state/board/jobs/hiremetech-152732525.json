@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:152732525",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152732525",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית אנליסט/ית אינטגרציה (Python, SQL, Salesforce).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (תוצרת הארץ 7)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "אנליסט אינטגרציה (Salesforce/SQL), לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "Python",
+    "SQL"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152732525"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Integration Analyst Student",
+  "url": "https://juniors.hiremetech.com/job/152732525",
+  "work_mode": null
+}

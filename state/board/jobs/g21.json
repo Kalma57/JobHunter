@@ -1,7 +1,7 @@
 {
   "alerts": [],
+  "compacted": "2026-11-09",
   "company": "HPE",
-  "description": "תפקיד מוצר במשרה חלקית. (המודעה קטועה)",
   "first_seen": "2026-10-09",
   "history": [
     {
@@ -14,19 +14,11 @@
     "התמחות"
   ],
   "location": "ישראל (עיר לא צוינה)",
-  "not_stated": [
-    "scope",
-    "salary"
-  ],
   "notes": "",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד מוצר, לא פיתוח."
   },
-  "requirements_adv": [],
-  "requirements_must": [],
   "source": "Glassdoor",
   "status": "filtered",
   "title": "Product Owner - Part Time Intern",

@@ -1,0 +1,75 @@
+{
+  "agent_id": "hiremetech:152065648",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "המיקום סותר: כתובת בנתניה, אך האתר מציין גם חיפה — לבדוק",
+    "'1+ שנות ניסיון' מתגית האתר בלבד — חופף ל'עד שנה'"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152065648",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח אלגוריתמים בתחום ראייה ממוחשבת (Python, OpenCV, TensorFlow, PyTorch).",
+  "education": null,
+  "employment": null,
+  "experience": "1+ שנים (לפי תגית האתר)",
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "נתניה (כתובת: הגביש 5)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-08",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח אלגוריתמי AI/ראייה, כתובת בנתניה (מרכז); ניסיון 1+ חופף לטווח ← עובר"
+  },
+  "requirements_adv": [
+    "TensorFlow",
+    "PyTorch",
+    "NumPy"
+  ],
+  "requirements_must": [
+    "Python",
+    "OpenCV"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152065648"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Algorithms Student in the fields of Comp[uter Vision]",
+  "url": "https://juniors.hiremetech.com/job/152065648",
+  "work_mode": null
+}

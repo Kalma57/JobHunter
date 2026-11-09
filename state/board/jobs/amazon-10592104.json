@@ -1,6 +1,9 @@
 {
   "agent_id": "amazon:10592104",
-  "alerts": [],
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק",
+    "אוחדה עם משרה דומה — בדוק"
+  ],
   "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10592104/apply",
   "company": "Amazon",
@@ -63,6 +66,16 @@
       "date": "2026-11-08",
       "source": "amazon:amazon",
       "url": "https://www.amazon.jobs/en/jobs/10592104/2027-software-dev-engineer-intern-tel-aviv-israel"
+    },
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152076961"
+    },
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152076915"
     }
   ],
   "source": "amazon:amazon",

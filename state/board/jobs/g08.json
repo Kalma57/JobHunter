@@ -1,9 +1,8 @@
 {
   "alerts": [],
+  "compacted": "2026-11-09",
   "company": "eToro",
   "degree_time": "1-2 שנים לסיום",
-  "description": "תמיכת IT: חומרה, הרשאות, M365, Active Directory, Tier 1.",
-  "education": "סטודנט למדמ\"ח / מערכות מידע",
   "first_seen": "2026-10-09",
   "history": [
     {
@@ -16,24 +15,11 @@
     "סטודנט"
   ],
   "location": "בני ברק",
-  "not_stated": [
-    "work_mode",
-    "salary"
-  ],
   "notes": "",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תמיכת IT, לא פיתוח."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "הרכבת חומרה",
-    "רשתות",
-    "M365 / AD",
-    "תמיכת Tier 1"
-  ],
   "scope": "2-3 פעמים בשבוע, שעות גמישות",
   "source": "SecretHunter",
   "status": "filtered",

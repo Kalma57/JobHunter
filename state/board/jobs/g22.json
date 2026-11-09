@@ -1,7 +1,7 @@
 {
   "alerts": [],
+  "compacted": "2026-11-09",
   "company": "Wonder",
-  "description": "אחריות על תשתיות AWS, Kubernetes, observability ו-CI/CD.",
   "experience": "8+ שנים",
   "first_seen": "2026-10-09",
   "history": [
@@ -15,25 +15,11 @@
     "מומחה"
   ],
   "location": "ישראל (עיר לא צוינה)",
-  "not_stated": [
-    "work_mode",
-    "scope"
-  ],
   "notes": "",
-  "prefs_down": [],
-  "prefs_up": [
-    "Python"
-  ],
   "relevance": {
     "pass": false,
     "reason": "Staff, 8+ שנות ניסיון."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "Staff level, 8+ שנים",
-    "Terraform, EKS, Helm",
-    "AWS multi-region"
-  ],
   "salary": "418,500-431,000 ₪ לשנה",
   "source": "Glassdoor",
   "status": "filtered",

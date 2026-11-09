@@ -1,0 +1,70 @@
+{
+  "agent_id": "jobmaster:9770714",
+  "alerts": [
+    "'סטודנט' בכותרת מתייחס ללקוחות, לא לרמת המשרה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9770714",
+  "company": "הקריה האקדמית אונו",
+  "deadline": null,
+  "degree_time": null,
+  "description": "שירות וטיפול אדמיניסטרטיבי בסטודנטים (ציונים, מערכת שעות, אישורים).",
+  "education": "תואר אקדמי – יתרון",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "שירות פרונטלי לסטודנטים — משרד (הוסק מהתיאור)"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "קריית אונו",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "אדמיניסטרציה אקדמית, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "תואר אקדמי"
+  ],
+  "requirements_must": [
+    "יחסי אנוש",
+    "תעדוף משימות",
+    "אקסל"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9770714"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "יועצ.ת אקדמי.ת למינהל סטודנטים מדעי הרוח והחברה",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9770714",
+  "work_mode": "משרד"
+}

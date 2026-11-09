@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:152850585",
+  "alerts": [
+    "הטקסט כולל משרות דומות — רעש, התעלמות",
+    "לא כפילות של hiremetech-150834019 מובטחת — לא נבדק מעבר לכותרת"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152850585",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": "שנתיים לפחות",
+  "description": "שירות לעובדים וצוותי משאבי אנוש (מענה בצ'אט, הזנת נתונים, אירועי רווחה).",
+  "education": "תואר ראשון/שני, עדיפות למדעי החברה, יתרת לימודים שנתיים לפחות",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה (מכון דוד, קריית ים)",
+  "not_stated": [
+    "employment",
+    "salary",
+    "experience",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-04",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משאבי אנוש/שירות, לא פיתוח תוכנה (וגם חיפה, 4 ימים)"
+  },
+  "requirements_adv": [
+    "שירות לקוחות",
+    "משאבי אנוש"
+  ],
+  "requirements_must": [
+    "זמינות ל-4 ימים לפחות",
+    "עברית",
+    "Office"
+  ],
+  "salary": null,
+  "scope": "לפחות 4 ימי עבודה",
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152850585"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית לטיפול בפרט",
+  "url": "https://juniors.hiremetech.com/job/152850585",
+  "work_mode": "משרד"
+}

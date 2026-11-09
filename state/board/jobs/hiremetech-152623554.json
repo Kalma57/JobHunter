@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:152623554",
+  "alerts": [
+    "הטקסט כולל לוח משרות שלם של הטכניון ומשרות דומות — רעש, התעלמות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152623554",
+  "company": "הטכניון (חסוי באתר — דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לעזרה במחקר במעבדה בטכניון (ציוד מתקדם, ניסויים, תערובות).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-09",
+  "history": [
+    {
+      "at": "2026-11-09T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה (קריית הטכניון)",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "עזרה במחקר מעבדתי (הנדסה/חומרים), לא פיתוח תוכנה, וחיפה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-09",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152623554"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית לעזרה במחקר",
+  "url": "https://juniors.hiremetech.com/job/152623554",
+  "work_mode": "משרד"
+}
