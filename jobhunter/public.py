@@ -40,6 +40,8 @@ def run_numbers(state: Path, today: date) -> dict:
         "scanned": sum(c.get("israel") or 0 for c in companies),
         "matched": sum(c.get("matched") or 0 for c in companies),
         "new": report.get("new", 0),
+        "backlog": run.get("backlog", 0),
+        "last_read": max((p.stem for p in (state / "board" / "runs").glob("*.json")), default=None),  # the last morning Claude's cards reached the board
         "candidates": run.get("candidates", 0),
         "after_prefilter": run.get("after_prefilter", 0),
         "prefiltered": run.get("prefiltered_count", 0),

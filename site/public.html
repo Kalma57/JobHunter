@@ -351,6 +351,7 @@ function cardHTML(job) {
   const rank = RANK[job.rank];
   if (rank && !["filtered", "closed"].includes(job.status)) pills.push(`<span class="pill t-${rank.tone}">${rank.label}</span>`);
   if (job.far && job.status === "filtered") pills.push(`<span class="pill t-warn">רחוקה</span>`);
+  if (job.uncertain && job.status === "new") pills.push(`<span class="pill t-warn" title="עברה בגלל ספק. ההחלטה שלך. ההסבר בהתראות למטה.">לבדיקה שלך</span>`);
   if (isBoard(job)) pills.push(`<span class="pill t-muted">מאתר משרות</span>`);
   const rel = job.relevance || {};
   const reason = rel.reason ? `<p class="reason"><b>${job.status === "filtered" ? "למה סוננה" : "למה מתאימה"}:</b> ${esc(rel.reason)}</p>` : "";
@@ -465,6 +466,10 @@ function render() {
   // the agent runs only while the owner's computer is on: say so plainly when the data is old
   const ageDays = r.date ? Math.floor((Date.now() - new Date(r.date + "T12:00:00").getTime()) / 86400000) : 0;
   if (ageDays >= 2) el("strip").insertAdjacentHTML("beforeend", `<span class="bad">העדכון האחרון לפני ${ageDays} ימים. הסוכן רץ רק כשהמחשב של הבעלים דלוק.</span>`);
+  // the agents can run every day while Claude reads nothing (6-10/11): show the queue and say so when it stalls
+  if (r.backlog) el("strip").insertAdjacentHTML("beforeend", `<span><b>${nf.format(r.backlog)}</b> ממתינות לקריאה</span>`);
+  const readGap = r.date && r.last_read ? Math.floor((new Date(r.date) - new Date(r.last_read)) / 86400000) : 0;
+  if (readGap >= 2) el("strip").insertAdjacentHTML("beforeend", `<span class="bad">Claude לא עיבד משרות כבר ${readGap} ימים. המשרות מחכות בתור.</span>`);
   const all = jobs();
   const counts = Object.fromEntries(TABS.map((t) => [t.id, all.filter((j) => t.statuses.includes(j.status)).length]));
   el("tabs").innerHTML = TABS.map((t) => `<button class="tab" role="tab" type="button" data-tab="${t.id}" aria-selected="${t.id === state.tab}">${t.label}${t.statuses.length ? `<span class="n">${counts[t.id]}</span>` : ""}</button>`).join("");
@@ -490,7 +495,7 @@ function render() {
     <button class="row" type="button" data-sel="${esc(j.id)}" aria-current="${j.id === state.sel}">
       <span class="stripe ${esc(j.rank || "")}"></span>
       <span><span class="t">${esc(j.title)}</span><br><span class="s">${esc(j.company || "")}${j.location ? " · " + esc(j.location) : ""}</span></span>
-      <span class="meta"><span class="d">${fmtDate(j.first_seen, true)}</span>${j.far && j.status === "filtered" ? `<span class="pill t-warn">רחוקה</span>` : ""}</span>
+      <span class="meta"><span class="d">${fmtDate(j.first_seen, true)}</span>${j.far && j.status === "filtered" ? `<span class="pill t-warn">רחוקה</span>` : ""}${j.uncertain && j.status === "new" ? `<span class="pill t-warn">לבדיקה שלך</span>` : ""}</span>
     </button>`).join("")}</div>`;
   el("main").innerHTML = cardHTML(all.find((j) => j.id === state.sel));
 }

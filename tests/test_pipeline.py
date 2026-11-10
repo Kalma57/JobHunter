@@ -323,3 +323,25 @@ def test_cards_already_applied_are_not_requeued(tmp_path):
     assert [j["id"] for j in unfinished_jobs(tmp_path)] == ["x:1"]
     (tmp_path / "plan" / "applied" / "2026-11-09.txt").write_text("1", encoding="utf-8")
     assert unfinished_jobs(tmp_path) == []
+
+
+
+def test_computer_engineering_student_titles_reach_the_brain():  # user's feedback 10/11/2026: EE/CE can be relevant
+    assert reject_reason(_job('סטודנט/ית להנדסת חשמל או הנדסת מחשבים'), RULES) is None
+    assert reject_reason(_job("Electrical / Computer Engineering Student"), RULES) is None
+    assert "תחום" in reject_reason(_job("סטודנט/ית להנדסת מכונות"), RULES)  # a degree with no link to software still goes
+
+
+def test_a_failed_brain_tells_the_user_once_a_day(tmp_path, monkeypatch):  # 10/11/2026: weeks passed unnoticed
+    import jobhunter.morning as m
+    sent = []
+    monkeypatch.setattr(m, "notify", lambda title, text: sent.append((title, text)) or True)
+    plan = tmp_path / "plan"
+    plan.mkdir()
+    (plan / "next.json").write_text(json.dumps({"date": "2026-11-10"}), encoding="utf-8")
+    (plan / "2026-11-10-brain.json").write_text(json.dumps([{"doc_id": "a", "fields": {"sightings": []}, "history_note": "n", "job": {"title": "T"}, "borderline": []}]), encoding="utf-8")
+    (plan / "2026-11-10-brain-status.json").write_text(json.dumps({"report": "Not logged in · Please run /login"}), encoding="utf-8")
+    (tmp_path / "board" / "jobs").mkdir(parents=True)
+    m.apply_brain(tmp_path, tmp_path / "board")
+    m.apply_brain(tmp_path, tmp_path / "board")  # the hourly retry
+    assert len(sent) == 1 and "claude auth login" in sent[0][1]

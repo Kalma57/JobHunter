@@ -1,7 +1,8 @@
 {
   "agent_id": "hiremetech:151004334",
   "alerts": [
-    "האתר מתייג student ו'משרה מלאה' — הטקסט מתאר משרת מהנדס/ת בלי רמה"
+    "האתר מתייג student ו'משרה מלאה' — הטקסט מתאר משרת מהנדס/ת בלי רמה",
+    "לבדיקה שלך: התפקיד DevOps עם AI ואוטומציה. לא ברור אם היא פתוחה לסטודנטים או למהנדסים."
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151004334",
@@ -19,6 +20,11 @@
       "at": "2026-10-16T07:00:00Z",
       "note": "נמצא ע\"י hiremetech:juniors",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-10T10:25:29Z",
+      "note": "נבדקה מחדש לפי הכללים החדשים (משוב 10/11): כשלא בטוחים, עוברת",
+      "status": "new"
     }
   ],
   "inferred": {},
@@ -42,9 +48,10 @@
   "prefs_up": [
     "AI"
   ],
+  "rank": "low",
   "relevance": {
-    "pass": false,
-    "reason": "תפקיד: מהנדס/ת DevOps (תשתיות), לא משרת סטודנט בפיתוח תוכנה."
+    "pass": true,
+    "reason": "ספק אם זו משרת סטודנט: התפקיד DevOps עם AI, והאתר מתייג אותה student."
   },
   "requirements_adv": [
     "DevOps",
@@ -62,8 +69,9 @@
     }
   ],
   "source": "hiremetech:juniors",
-  "status": "filtered",
+  "status": "new",
   "title": "לארגון מוביל דרוש/ה מהנדס/ת Dev Ops עם התמחות ב-AI ואוטומציה מתקדמת",
+  "uncertain": true,
   "url": "https://juniors.hiremetech.com/job/151004334",
   "work_mode": null
 }

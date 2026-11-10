@@ -19,6 +19,11 @@
       "at": "2026-10-20T07:00:00Z",
       "note": "נמצא ע\"י hiremetech:juniors",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-10T10:25:29Z",
+      "note": "נבדקה מחדש לפי הכללים החדשים (משוב 10/11): כשלא בטוחים, עוברת",
+      "status": "new"
     }
   ],
   "inferred": {},
@@ -44,9 +49,10 @@
     "Python",
     "AI"
   ],
+  "rank": "mid",
   "relevance": {
-    "pass": false,
-    "reason": "שנה בתואר: מחפשים סטודנט/ית שנה ב' במפורש (אני בשנה ג')."
+    "pass": true,
+    "reason": "סטודנט שנה ב' במדעי המחשב = שנה ג' בהנדסת תוכנה. פיתוח ראייה ממוחשבת ולמידה עמוקה, רמת גן."
   },
   "requirements_adv": [
     "Linux",
@@ -72,8 +78,9 @@
     }
   ],
   "source": "hiremetech:juniors",
-  "status": "filtered",
+  "status": "new",
   "title": "Embedded AI Software Student (Computer Vision & Edge AI)",
+  "uncertain": false,
   "url": "https://juniors.hiremetech.com/job/151319382",
   "work_mode": null
 }

@@ -2,7 +2,8 @@
   "agent_id": "apple:200676939-1451",
   "alerts": [
     "גבולי: תוכנה low-level, אבל דורש הנדסת חשמל/מחשבים — שווה לבדוק אם מקבלים הנדסת תוכנה",
-    "אותה משרה פורסמה ב-3 ערים (אוחדה)"
+    "אותה משרה פורסמה ב-3 ערים (אוחדה)",
+    "לבדיקה שלך: המשרה כתובה להנדסת חשמל / מחשבים. לא ברור אם מקבלים הנדסת תוכנה."
   ],
   "apply_url": "https://jobs.apple.com/en-us/details/200676939-1451/software-engineering-student",
   "compacted": "2026-11-10",
@@ -17,6 +18,11 @@
       "at": "2026-10-10T15:15:11Z",
       "note": "נמצא ע\"י apple:apple",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-10T10:25:29Z",
+      "note": "נבדקה מחדש לפי הכללים החדשים (משוב 10/11): כשלא בטוחים, עוברת",
+      "status": "new"
     }
   ],
   "is_job": true,
@@ -26,9 +32,10 @@
   "location": "חיפה / הרצליה / ירושלים",
   "notes": "",
   "posted_at": "2026-10-05",
+  "rank": "mid",
   "relevance": {
-    "pass": false,
-    "reason": "דורש תואר בהנדסת חשמל / מחשבים (תחום אחר מהנדסת תוכנה)."
+    "pass": true,
+    "reason": "פיתוח תוכנה לסטודנטים. דורשת תואר בהנדסת חשמל / מחשבים, וזה קרוב מספיק כדי שתחליט."
   },
   "salary": null,
   "scope": null,
@@ -50,8 +57,9 @@
     }
   ],
   "source": "apple:apple",
-  "status": "filtered",
+  "status": "new",
   "title": "Software Engineering Student",
+  "uncertain": true,
   "url": "https://jobs.apple.com/en-us/details/200676939-1451/software-engineering-student",
   "work_mode": null
 }

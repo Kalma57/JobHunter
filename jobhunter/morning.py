@@ -382,26 +382,62 @@ BRAIN_PROMPT = ("You are the JobHunter brain. Read docs/agents/brain-run.md and 
                 "Use only Read, Glob, Grep and Write. Nobody is watching: do not ask questions.")
 
 
+def notify(title: str, text: str) -> bool:
+    """A Windows toast. The Windows task runs in the user's own session, so it shows on their screen. Never raises:
+    a notification that fails must not break the morning (6-10/11/2026: weeks went by without anyone noticing)."""
+    import html
+    import os
+    import subprocess
+    script = (
+        "$ErrorActionPreference='Stop';"
+        "[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null;"
+        "[Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime] | Out-Null;"
+        "$x = New-Object Windows.Data.Xml.Dom.XmlDocument;"
+        "$x.LoadXml('<toast><visual><binding template=\"ToastGeneric\"><text>' + $env:JH_TITLE + '</text><text>' + $env:JH_TEXT + '</text></binding></visual></toast>');"
+        "$n = New-Object Windows.UI.Notifications.ToastNotification $x;"
+        r"[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier('{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe').Show($n)")
+    try:
+        done = subprocess.run(["powershell", "-NoProfile", "-Command", script], capture_output=True, timeout=30,
+                              env={**os.environ, "JH_TITLE": html.escape(title), "JH_TEXT": html.escape(text)})
+        return done.returncode == 0
+    except Exception:
+        return False
+
+
+def notify_once(state: Path, key: str, title: str, text: str) -> None:
+    """notify(), once per key (a key carries the day), so an hourly retry does not repeat the message."""
+    marker = state / "plan" / "notified" / f"{key}.txt"
+    if marker.exists():
+        return
+    marker.parent.mkdir(parents=True, exist_ok=True)
+    marker.write_text(text, encoding="utf-8")
+    notify(title, text)
+
+
 def run_brain(state: Path, timeout_minutes: int = 90) -> dict:
     """Claude Code headless (`claude -p`) on the Pro subscription: reads the brain file, writes the cards file.
     Headless mode never waits for an approval - a tool it may not use is refused and the run goes on."""
     import subprocess
     nxt = _read_json(state / "plan" / "next.json", {})
+    day = nxt.get("date")
+
+    def finish(result: dict) -> dict:
+        _write_json(state / "plan" / f"{day}-brain-status.json", result)
+        return result
+
     if not nxt.get("to_brain"):
-        return {"date": nxt.get("date"), "brain": "nothing to read"}
+        return {"date": day, "brain": "nothing to read"}
     exe = claude_exe()
     if not exe:
-        return {"date": nxt.get("date"), "brain": "error: Claude Code command line not found"}
+        return finish({"date": day, "brain": "error", "report": "Claude Code command line not found"})
     try:
         done = subprocess.run([exe, "-p", BRAIN_PROMPT, "--permission-mode", "acceptEdits",
                                "--allowedTools", "Read", "Glob", "Grep", "Write", "--output-format", "text"],
                               capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout_minutes * 60)
     except subprocess.TimeoutExpired:
-        return {"date": nxt.get("date"), "brain": f"error: no answer in {timeout_minutes} minutes"}
+        return finish({"date": day, "brain": "error", "report": f"no answer in {timeout_minutes} minutes"})
     out = (done.stdout + done.stderr).strip()
-    result = {"date": nxt.get("date"), "brain": "ok" if done.returncode == 0 else f"error {done.returncode}", "report": out[-3000:]}
-    _write_json(state / "plan" / f"{nxt.get('date')}-brain-status.json", result)
-    return result
+    return finish({"date": day, "brain": "ok" if done.returncode == 0 else f"error {done.returncode}", "report": out[-3000:]})
 
 
 def apply_brain(state: Path, board_dir: Path) -> dict:
@@ -421,6 +457,9 @@ def apply_brain(state: Path, board_dir: Path) -> dict:
         brain_report = _read_json(plan_dir / f"{day}-brain-status.json", {})
         run["brain_error"] = brain_report.get("report") or "Claude לא כתב כרטיסים"
         _write_json(plan_dir / f"{day}-run.json", run)
+        reason = run["brain_error"]
+        hint = "Claude לא מחובר. הרץ: claude auth login" if "Not logged in" in reason else reason[:120]
+        notify_once(state, f"brain-{day}", "JobHunter: Claude לא קרא את המשרות", f"{hint}. המשרות מחכות בתור, ולא אבדה אף אחת.")
         return {"date": day, "apply": "no cards file - the jobs stay for the next run", "brain_error": run["brain_error"][-300:]}
     counts, missing = store.apply_cards(board_dir, brain, cards, day)
     if missing:
@@ -468,6 +507,8 @@ def due(state: Path, today: date, check_network: bool = False) -> tuple[bool, st
         return False, "another run is going"
     attempts = state / "plan" / f"attempts-{today.isoformat()}.txt"
     if attempts.exists() and int(attempts.read_text() or 0) >= MAX_ATTEMPTS:
+        notify_once(state, f"attempts-{today.isoformat()}", "JobHunter: הריצה נכשלה היום",
+                    f"אחרי {MAX_ATTEMPTS} ניסיונות הבוקר לא הושלם. הפרטים בתיקיית state/logs. המשרות מחכות בתור.")
         return False, f"{MAX_ATTEMPTS} attempts today already - see the morning log"
     if check_network and not online():
         return False, "no network yet"  # does not use an attempt: the next trigger tries again

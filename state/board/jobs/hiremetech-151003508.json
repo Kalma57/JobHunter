@@ -13,12 +13,17 @@
   "education": "סטודנט/ית לתואר ראשון במדמ\"ח / הנדסת תוכנה",
   "employment": null,
   "experience": "לא נדרש",
-  "far": false,
+  "far": true,
   "first_seen": "2026-10-16",
   "history": [
     {
       "at": "2026-10-16T07:00:00Z",
       "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    },
+    {
+      "at": "2026-11-10T10:25:29Z",
+      "note": "נבדקה מחדש לפי הכללים החדשים (משוב 10/11): כשלא בטוחים, עוברת",
       "status": "filtered"
     }
   ],
@@ -43,7 +48,7 @@
   "prefs_up": [],
   "relevance": {
     "pass": false,
-    "reason": "שנה בתואר: דורש סמסטר 3-4 (אני בשנה ג'); וגם משגב — צפון."
+    "reason": "רחוקה: משגב (צפון). שאר הדרישות עוברות: סמסטר 3-4 במדמ\"ח = שנה ג' בהנדסת תוכנה."
   },
   "requirements_adv": [
     "HTML, CSS, React, JS",
