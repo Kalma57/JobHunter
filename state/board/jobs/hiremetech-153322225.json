@@ -1,0 +1,77 @@
+{
+  "agent_id": "hiremetech:153322225",
+  "alerts": [
+    "תגית האתר 'spring' שגויה — 'Spring' בכותרת הוא סמסטר האביב",
+    "הטקסט כולל שאריות תבנית שלא נוקו ('Hiring Manager to use principal responsibilities...')",
+    "המעסיק (MKS / Ophir Optics) מופיע בטקסט; מפרסם: HireMeTech",
+    "'C+' כנראה טעות הקלדה (C/C++), לא ברור"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153322225",
+  "company": "MKS Instruments — Ophir Optics (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח ותחזוקה של כלי תוכנה פנימיים בצוות הנדסת רכיבים: ניתוח נתונים, העברת נתונים לייצור, ופיתוח ושילוב כלי AI.",
+  "education": "לימודים מתקדמים בהנדסת תוכנה",
+  "employment": "חלקית",
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "ירושלים (פארק תעשייה מדעי הר חוצבים)",
+  "not_stated": [
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח תוכנה (Python, SQL, כלי AI) בירושלים, חלקית; ניסיון לא צוין ← עובר"
+  },
+  "requirements_adv": [
+    "אנגלית ברמה גבוהה",
+    "כלי Office"
+  ],
+  "requirements_must": [
+    "לימודים מתקדמים בהנדסת תוכנה",
+    "Python",
+    "SQL",
+    "C+ (כך כתוב במודעה)"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153322225"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "2027 Spring Software Engineer Undergraduate Intern",
+  "url": "https://juniors.hiremetech.com/job/153322225",
+  "work_mode": "משרד"
+}

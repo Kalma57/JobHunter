@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:153302028",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153302028",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עוזר/ת מרפאה במשרת סטודנט חלקית; Office ועברית. הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (רמת החייל)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — עוזר/ת מרפאה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "עברית",
+    "Microsoft Office"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153302028"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Clinic Assistant - Part-time, student position (רמת החייל, תל אביב)",
+  "url": "https://juniors.hiremetech.com/job/153302028",
+  "work_mode": "בשטח"
+}

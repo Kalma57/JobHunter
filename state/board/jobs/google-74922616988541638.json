@@ -1,13 +1,11 @@
 {
   "agent_id": "google:74922616988541638",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckdwcbGlt_ad5tiv3cwZQ1xMT-bJUCVXvWUPUNSXMsxbrEjsA1Ny_i3LHHGq1ffOb5oYOFyFaKOE8RvoqyyVZjZEfV-CQlqfjhv6WDY8cWqR1_6ooEYN3Yo30zm8Fhg%3D%3D_V2&loc=IL&title=Part-Time+Software+Engineering+PhD+Intern",
+  "compacted": "2026-11-10",
   "company": "Google",
   "deadline": null,
   "degree_time": null,
-  "description": "התמחות פיתוח תוכנה לדוקטורנטים.",
-  "education": "סטודנט/ית לדוקטורט במדמ\"ח, שנה לפני אחרונה/אחרונה",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -18,31 +16,18 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט",
     "התמחות"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-08-17",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "מיועד לדוקטורנטים."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "דוקטורט במדמ\"ח"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

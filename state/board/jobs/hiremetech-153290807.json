@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:153290807",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153290807",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח אלגוריתמים במרכז היזמות והחדשנות; כישורים: C, C++, Python. הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": "לא צוין",
+  "far": true,
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "מכון דוד, אזור חיפה (הכרטיס באתר: משגב)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — מכון דוד באזור חיפה / משגב (צפון); שאר הדרישות עוברות (אלגוריתמים / תוכנה / סטודנט)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153290807"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית לאלגוריתמים למרכז היזמות והחדשנות",
+  "url": "https://juniors.hiremetech.com/job/153290807",
+  "work_mode": null
+}

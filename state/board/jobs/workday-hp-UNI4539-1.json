@@ -1,0 +1,67 @@
+{
+  "agent_id": "workday:hp:UNI4539-1",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Competitive-Intelligence-Analyst---Student_UNI4539-1",
+  "company": "HP",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "אנליסט מודיעין תחרותי ואנליטיקה בצוות האסטרטגיה של HP Indigo: ניתוח שוק, דשבורדים וכלי AI פנימיים.",
+  "education": "סטודנט/ית B.Sc/M.Sc בהנדסת תעשייה וניהול, מערכות מידע, מדעי הנתונים, מדעי המחשב, כלכלה או עסקים; לפחות שנתיים לסיום",
+  "employment": "חלקית",
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י workday:hp",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "נס ציונה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — מודיעין תחרותי / אסטרטגיה ואנליטיקה עסקית, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "Power BI, Python, SQL",
+    "היכרות עם AI גנרטיבי ו-AI agents"
+  ],
+  "requirements_must": [
+    "סטודנט לתואר ראשון/שני בתחום אנליטי",
+    "לפחות שנתיים לסיום הלימודים",
+    "Excel ו-PowerPoint",
+    "אנגלית טובה"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "workday:hp",
+      "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Competitive-Intelligence-Analyst---Student_UNI4539-1"
+    }
+  ],
+  "source": "workday:hp",
+  "status": "filtered",
+  "title": "Competitive Intelligence Analyst - Student",
+  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Competitive-Intelligence-Analyst---Student_UNI4539-1",
+  "work_mode": null
+}

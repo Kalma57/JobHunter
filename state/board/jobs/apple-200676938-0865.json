@@ -3,13 +3,11 @@
   "alerts": [
     "אותה משרה פורסמה ב-3 ערים (אוחדה)"
   ],
-  "apply_instructions": null,
   "apply_url": "https://jobs.apple.com/en-us/details/200676938-0865/hardware-engineering-student",
+  "compacted": "2026-11-10",
   "company": "Apple",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט בחומרה בצוותי ההנדסה של Apple.",
-  "education": "סטודנט/ית להנדסת חשמל / מחשבים",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -20,33 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "הרצליה / ירושלים / חיפה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-09-23",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "משרת חומרה, דורש הנדסת חשמל/מחשבים."
   },
-  "requirements_adv": [
-    "Python / C / C++"
-  ],
-  "requirements_must": [
-    "הנדסת חשמל / מחשבים",
-    "לפחות 3 סמסטרים"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

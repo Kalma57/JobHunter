@@ -1,0 +1,49 @@
+{
+  "after_prefilter": 220,
+  "at": "2026-11-10T07:00:00Z",
+  "backlog": 180,
+  "borderline": [
+    "סטודנט.ית למדמ\"ח / תוכנה- אלגוריתמים — לא כפילות",
+    "Software Developer (Full-time or Student, min. 50%) — לא כפילות",
+    "Software Engineer Intern — כפילות של hiremetech-150407544: אותו כותרת (Software Engineer Intern), רמת גן, חברה חסויה ואותם כישורים (Java, SQL, מערכות מבוזרות, Big Data, כלי קוד AI); המקור LinkedIn בשניהם",
+    "FY27 Intern - FPGA — כפילות של eightfold-qualcomm-446721956033: אותה כותרת (FY27 Intern - FPGA), הוד השרון, נווה נאמן (משרדי Qualcomm); זו אותה משרת Qualcomm שפורסמה גם דרך HireMeTech"
+  ],
+  "brain_filtered": 31,
+  "candidates": 222,
+  "closed": 0,
+  "compacted": 16,
+  "duplicates_code": 1,
+  "errors": [
+    "Qualcomm: FetchError: HTTP 429 from https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=&location=Israel&start=0",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=0"
+  ],
+  "far": 3,
+  "found_new": 3,
+  "kind": "daily",
+  "passed": 6,
+  "prefiltered": [
+    {
+      "company": "Intel",
+      "location": "Israel, Kiryat-Gat",
+      "reason": "תחום אחר (Technician בשם המשרה)",
+      "source": "workday:intel",
+      "title": "Manufacturing Technician for Intel Kiryat Gat",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Manufacturing-Technician-for-Intel-Kiryat-Gat_JR0288605"
+    },
+    {
+      "company": "טי.סי.אם טכנולוגיות",
+      "location": "אשקלון",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "רכז/ת מחשוב, מערכות מידע ותפעול דיגיטלי",
+      "url": "https://www.drushim.co.il/job/39039360/6a4f425d/"
+    }
+  ],
+  "prefiltered_count": 2,
+  "removed": 0,
+  "sources_read": 37,
+  "sources_total": 39,
+  "summary": "6 עברו · 31 סוננו ע\"י המוח · 2 סוננו בקוד · 3 כפילויות · 180 ממתינות",
+  "to_brain": 39,
+  "warnings": []
+}

@@ -1,0 +1,72 @@
+{
+  "agent_id": "amazon:10594451",
+  "alerts": [
+    "סתירה בתוך המודעה: חלק מהטקסט מזכיר 1+ שנות ניסיון ללא התמחות, והחלק העיקרי דורש 3 שנים — נלקח הנוסח המחמיר",
+    "המילה 'Internship' בטקסט היא 'non-internship' ולא משרת סטודנט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10594451/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה משובצת בצוות Data Path HAL של Annapurna Labs (AWS), בפיתוח מוצרי רשת. תפקיד בכיר שמוביל משימות.",
+  "education": "בוגר/ת הנדסת חשמל / מחשבים",
+  "employment": null,
+  "experience": "3 שנות ניסיון בפיתוח משובץ",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-03",
+  "prefs_down": [
+    "C"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "רמה וניסיון — דורש 3 שנות ניסיון ובוגר, לא משרת סטודנט"
+  },
+  "requirements_adv": [
+    "ניסיון בפיתוח SoC",
+    "סביבות Linux"
+  ],
+  "requirements_must": [
+    "3 שנות ניסיון בפיתוח תוכנה משובצת",
+    "שליטה ב-C",
+    "ניסיון בממשקי חומרה-תוכנה",
+    "בוגר/ת הנדסת חשמל / מחשבים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10594451/embedded-software-engineer-nitro-annapurna-labs-k2-core-sw-data-path-hal"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Embedded Software Engineer - Nitro, Annapurna Labs, K2 Core SW Data Path HAL",
+  "url": "https://www.amazon.jobs/en/jobs/10594451/embedded-software-engineer-nitro-annapurna-labs-k2-core-sw-data-path-hal",
+  "work_mode": null
+}

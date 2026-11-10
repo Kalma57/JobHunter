@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:153201079",
+  "alerts": [
+    "סתירה: הכרטיס באתר כתוב 'תל אביב' ואילו הטקסט אומר גליל עליון — הטקסט קובע"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153201079",
+  "company": "מכבי שירותי בריאות (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סיוע לאחות מוסמכת במרפאה: ניטור, מדידות, חבישות ואק\"ג.",
+  "education": "סטודנט/ית לתואר ראשון באחיות, שנים א'-ד'",
+  "employment": "חלקית",
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "גליל עליון (קריית שמונה, צפת)",
+  "not_stated": [
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד / תחום לימודים — סיעוד, לא פיתוח תוכנה; וגם צפון"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לאחיות שנים א'-ד' או בהסבה שנה א'"
+  ],
+  "salary": null,
+  "scope": "כ-40% (גמיש)",
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153201079"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לאחיות למרחב גליל עליון (מכבי)",
+  "url": "https://juniors.hiremetech.com/job/153201079",
+  "work_mode": "בשטח"
+}

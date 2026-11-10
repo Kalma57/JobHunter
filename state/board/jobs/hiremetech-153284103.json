@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:153284103",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech",
+    "תפקידים לא מוגדרים; ייתכן שמיועד לאוכלוסיות ייצוג הולם"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153284103",
+  "company": "חסוי — דרך HireMeTech (הבנק, ירושלים)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרות סטודנטים כלליות בחטיבות הבנק במסגרת ייצוג הולם; התפקיד הספציפי לא צוין. הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים (קריית בן גוריון)",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — 'תפקידים שונים' בחטיבות הבנק (תגית Office), לא צוין פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153284103"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנטים/ות לתפקידים שונים בחטיבות הבנק - ייצוג הולם",
+  "url": "https://juniors.hiremetech.com/job/153284103",
+  "work_mode": "משרד"
+}

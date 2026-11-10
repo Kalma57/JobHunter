@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:152971790",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152971790",
+  "company": "חסוי — דרך HireMeTech (חברה ביטחונית ממשלתית, 'תומר')",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הוצאת דגימות חומרי גלם והעברתן למעבדות, רישום וכתיבת הוראות בטיחות. עבודה פיזית עם חומרים מסוכנים.",
+  "education": "12 שנות לימוד; סטודנט לכימיה/חומרים שנה א' — יתרון",
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "company": "שם החברה 'תומר' מופיע בכותרת התחתונה של האתר המקורי; לא ודאי שהוא המעסיק"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמלה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "deadline",
+    "degree_time",
+    "experience"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-05",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — מחסנאות / דגימות חומרי גלם, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "סטודנט לכימיה / חומרים שנה א'",
+    "הכרת לוגיסטיקה"
+  ],
+  "requirements_must": [
+    "12 שנות לימוד",
+    "ידע ב-Office",
+    "עבודה פיזית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152971790"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית למחסנים JB-784",
+  "url": "https://juniors.hiremetech.com/job/152971790",
+  "work_mode": "בשטח"
+}

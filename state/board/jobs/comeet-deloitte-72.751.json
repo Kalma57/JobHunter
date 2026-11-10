@@ -3,13 +3,11 @@
   "alerts": [
     "סתירה: בעברית כתוב 'בוגר/ת תואר' ו'משרה מלאה', באנגלית 'סטודנט' ו-3 ימים"
   ],
-  "apply_instructions": null,
   "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/audit-intern---haifa-office/72.751",
+  "compacted": "2026-11-10",
   "company": "Deloitte",
   "deadline": null,
   "degree_time": null,
-  "description": "ביקורת וסקירת חברות בחטיבת הביקורת של Deloitte, משרד חיפה.",
-  "education": "סטודנט/ית לתואר ראשון בחשבונאות",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -20,32 +18,18 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט",
     "התמחות"
   ],
   "location": "חיפה",
-  "not_stated": [
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-10",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום חשבונאות/ביקורת — לא פיתוח תוכנה; גם חיפה מחוץ לאזורים."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט/ית לחשבונאות",
-    "אנגלית ברמה גבוהה",
-    "Excel",
-    "3 ימים בשבוע"
-  ],
   "salary": null,
   "scope": "3 ימים בשבוע",
   "sightings": [

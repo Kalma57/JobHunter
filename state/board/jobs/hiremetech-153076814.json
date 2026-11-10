@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:153076814",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech; הטקסט מזכיר את משרד GNY"
+  ],
+  "apply_instructions": "קורות חיים, גיליון ציונים ומכתב מקדים על העניין בקניין רוחני",
+  "apply_url": "https://juniors.hiremetech.com/job/153076814",
+  "company": "חסוי — דרך HireMeTech (משרד עורכי דין GNY)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות כעורך/ת פטנטים במשרד עורכי דין לקניין רוחני.",
+  "education": "B.Sc בהנדסת מכונות / אוירונוטיקה / חשמל / פיזיקה, ממוצע 80+",
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "deadline",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-06",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — התמחות בקניין רוחני / פטנטים, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "B.Sc בהנדסת מכונות, אוירונוטיקה, חשמל או פיזיקה",
+    "ממוצע 80 לפחות (87 למכללות)",
+    "עברית ואנגלית ברמה גבוהה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153076814"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Intern Position (מתמחה/ה בפטנטים — GNY)",
+  "url": "https://juniors.hiremetech.com/job/153076814",
+  "work_mode": "משרד"
+}

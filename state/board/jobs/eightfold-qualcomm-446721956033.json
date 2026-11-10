@@ -1,6 +1,8 @@
 {
   "agent_id": "eightfold:qualcomm:446721956033",
-  "alerts": [],
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
   "apply_instructions": null,
   "apply_url": "https://careers.qualcomm.com/careers/job/446721956033",
   "company": "Qualcomm Israel",
@@ -67,6 +69,11 @@
       "date": "2026-11-08",
       "source": "eightfold:qualcomm",
       "url": "https://careers.qualcomm.com/careers/job/446721956033"
+    },
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152887101"
     }
   ],
   "source": "eightfold:qualcomm",

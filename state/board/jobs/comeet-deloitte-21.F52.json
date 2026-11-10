@@ -1,13 +1,11 @@
 {
   "agent_id": "comeet:deloitte:21.F52",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/audit-intern---financial-sector/21.F52",
+  "compacted": "2026-11-10",
   "company": "Deloitte",
   "deadline": null,
   "degree_time": null,
-  "description": "מתמחה בראיית חשבון, אשכול הפיננסים.",
-  "education": "תואר ראשון בחשבונאות",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -18,30 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "התמחות"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-08",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום חשבונאות, תואר גמור ומשרה מלאה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "תואר ראשון בחשבונאות",
-    "משרה מלאה"
-  ],
   "salary": null,
   "scope": "משרה מלאה",
   "sightings": [

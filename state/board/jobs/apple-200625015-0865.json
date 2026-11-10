@@ -1,13 +1,11 @@
 {
   "agent_id": "apple:200625015-0865",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://jobs.apple.com/en-us/details/200625015-0865/advanced-optics-design-validation-student-camera-hw",
+  "compacted": "2026-11-10",
   "company": "Apple",
   "deadline": null,
   "degree_time": null,
-  "description": "תכנון ואימות רכיבים מיקרו-אופטיים למצלמות.",
-  "education": "סטודנט/ית לתואר שני / דוקטורט באלקטרו-אופטיקה / פיזיקה / חשמל",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -18,33 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "הרצליה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-08-26",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אופטיקה / חומרה — לא פיתוח תוכנה."
   },
-  "requirements_adv": [
-    "M.Sc / PhD"
-  ],
-  "requirements_must": [
-    "ניסיון במדידות אופטיות",
-    "ידע באופטיקה ולייזרים"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

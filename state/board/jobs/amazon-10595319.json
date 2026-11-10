@@ -1,0 +1,79 @@
+{
+  "agent_id": "amazon:10595319",
+  "alerts": [
+    "לא משרת סטודנט מפורשת — מסלול בוגרים 2027; ההתאמה לסטודנט שמסיים ב-2028 לא ודאית",
+    "המילה 'Internship' בטקסט היא 'non-internship'"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10595319/apply",
+  "company": "Amazon",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה ברמת SDE-I בגיוס לשנת 2027: פיתוח שירותים, code review, עבודה עם כלי AI, תורנויות. מיועד לבוגרים / מסיימים.",
+  "education": "מצוי בלימודי תואר ראשון ומעלה במדעי המחשב / הנדסת מחשבים / מדעי הנתונים / מערכות מידע",
+  "employment": null,
+  "experience": "'ניסיון מקצועי (לא התמחות)' בפיתוח, ללא מספר שנים",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "level": "לפי 'SDE-I' ו'2027' — תפקיד כניסה לבוגרים, לא משרת סטודנט"
+  },
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-03",
+  "prefs_down": [
+    "C++",
+    "C#"
+  ],
+  "prefs_up": [
+    "Python",
+    "Java",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רמה — תפקיד SDE-I לבוגרים (2027) עם ניסיון מקצועי ותורנויות, לא משרת סטודנט; וגם חיפה"
+  },
+  "requirements_adv": [
+    "AWS",
+    "SQL / NoSQL",
+    "תרומה ל-open source"
+  ],
+  "requirements_must": [
+    "תואר ראשון במדעי המחשב או דומה (או בתהליך)",
+    "ניסיון מקצועי בפיתוח (לא התמחות)",
+    "שפת תכנות אחת לפחות (Java, Python, C++...)",
+    "כלי פיתוח מבוססי AI"
+  ],
+  "salary": null,
+  "scope": "לא צוין (תפקיד SDE-I עם תורנויות)",
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10595319/software-development-engineer-2027"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Software Development Engineer - 2027",
+  "url": "https://www.amazon.jobs/en/jobs/10595319/software-development-engineer-2027",
+  "work_mode": null
+}

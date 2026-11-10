@@ -4,13 +4,11 @@
     "גבולי: תוכנה low-level, אבל דורש הנדסת חשמל/מחשבים — שווה לבדוק אם מקבלים הנדסת תוכנה",
     "אותה משרה פורסמה ב-3 ערים (אוחדה)"
   ],
-  "apply_instructions": "לצרף גיליון ציונים",
   "apply_url": "https://jobs.apple.com/en-us/details/200676939-1451/software-engineering-student",
+  "compacted": "2026-11-10",
   "company": "Apple",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט בתוכנה low-level בצוותי ההנדסה של Apple; השיבוץ לצוות נעשה עם הגיוס.",
-  "education": "סטודנט/ית B.Sc/M.Sc להנדסת חשמל / הנדסת מחשבים, אחרי 3 סמסטרים לפחות",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -21,37 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "חיפה / הרצליה / ירושלים",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-05",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [
-    "Python"
-  ],
   "relevance": {
     "pass": false,
     "reason": "דורש תואר בהנדסת חשמל / מחשבים (תחום אחר מהנדסת תוכנה)."
   },
-  "requirements_adv": [
-    "Python / C / C++"
-  ],
-  "requirements_must": [
-    "סטודנט/ית להנדסת חשמל / מחשבים",
-    "לפחות 3 סמסטרים"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

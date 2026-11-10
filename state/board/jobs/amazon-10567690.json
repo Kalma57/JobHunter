@@ -1,13 +1,11 @@
 {
   "agent_id": "amazon:10567690",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10567690/apply",
+  "compacted": "2026-11-10",
   "company": "Amazon",
   "deadline": null,
   "degree_time": null,
-  "description": "התמחות Applied Scientist לדוקטורנטים.",
-  "education": "סטודנט/ית לדוקטורט",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -18,31 +16,18 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט",
     "התמחות"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-02",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "מיועד לדוקטורנטים."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט/ית לדוקטורט"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

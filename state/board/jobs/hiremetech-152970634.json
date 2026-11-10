@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:152970634",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152970634",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מחלקת מעבר חום ומסה: ניתוח תרמי, CFD ובדיקות מעבדה. הטקסט המלא לא זמין.",
+  "education": "סטודנט להנדסת מכונות / אוירונוטיקה",
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "מכון דוד, אזור חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד — ניתוח תרמי / הנדסת מכונות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט להנדסת מכונות / אוירו (לפי הכותרת)"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152970634"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית מכונות/אוירו - למחלקת מעבר חום ומסה",
+  "url": "https://juniors.hiremetech.com/job/152970634",
+  "work_mode": null
+}

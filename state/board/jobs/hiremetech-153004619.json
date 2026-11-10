@@ -1,0 +1,73 @@
+{
+  "agent_id": "hiremetech:153004619",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech (מקור: LinkedIn)",
+    "התמחות '2027' — יש לוודא מועד התחלה והיקף"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153004619",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות כמפתח/ת כמותי: Python, C++, Java, מבני נתונים, אלגוריתמים, תכנון מערכות, הסתברות וסטטיסטיקה. הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "רמת גן (מגדל משה אביב, ז'בוטינסקי 7)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "Java"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות פיתוח (Quant Developer) ברמת גן (מרכז); היקף וניסיון לא צוינו ← עובר"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153004619"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "2027 Quantitative Developer Intern, Tel Aviv",
+  "url": "https://juniors.hiremetech.com/job/153004619",
+  "work_mode": null
+}

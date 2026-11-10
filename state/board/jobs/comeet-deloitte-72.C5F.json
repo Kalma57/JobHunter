@@ -1,13 +1,11 @@
 {
   "agent_id": "comeet:deloitte:72.C5F",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://www.comeet.com/jobs/deloitte/F7.00B/audit-intern---student-position/72.C5F",
+  "compacted": "2026-11-10",
   "company": "Deloitte",
   "deadline": null,
   "degree_time": null,
-  "description": "טרום התמחות בראיית חשבון — ביקורת וסקירת חברות.",
-  "education": "סטודנט/ית לתואר ראשון בחשבונאות",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-10",
@@ -18,32 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-10",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום חשבונאות — לא פיתוח תוכנה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט/ית לחשבונאות",
-    "אנגלית ברמה גבוהה",
-    "Excel",
-    "3 ימים"
-  ],
   "salary": null,
   "scope": "3 ימים בשבוע",
   "sightings": [

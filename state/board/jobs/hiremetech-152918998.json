@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:152918998",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech (מקור: LinkedIn)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152918998",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית להנדסת תוכנה בתחום AI, עם C++ ו-Linux. הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": "לא צוין",
+  "far": true,
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (צפון); שאר הדרישות עוברות (תוכנה / AI / סטודנט)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152918998"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "AI SW Engineering Student",
+  "url": "https://juniors.hiremetech.com/job/152918998",
+  "work_mode": null
+}

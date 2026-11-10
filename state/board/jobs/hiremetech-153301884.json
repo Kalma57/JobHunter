@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:153301884",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech",
+    "שפות תכנות לא צוינו; ייתכן עיסוק באלגוריתמים יותר מאשר בפיתוח תוכנה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153301884",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לפיתוח אלגוריתמי ראייה ממוחשבת והדמיה תלת-ממדית. הטקסט המלא לא זמין.",
+  "education": null,
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב (אזריאלי טאון)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "סטודנט באלגוריתמי ראייה ממוחשבת (פיתוח AI / R&D) בתל אביב (מרכז); פרטים לא צוינו ← עובר"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153301884"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Computer Vision and 3D Imaging Algorithm Student",
+  "url": "https://juniors.hiremetech.com/job/153301884",
+  "work_mode": null
+}

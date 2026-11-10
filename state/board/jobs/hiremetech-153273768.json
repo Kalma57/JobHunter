@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:153273768",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153273768",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מחלקת אוירודינמיקה; כלים: Matlab, Python, C, C++. הטקסט המלא לא זמין.",
+  "education": "סטודנט לאוירונאוטיקה",
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "מכון דוד, אזור חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום לימודים ותפקיד — אוירונוטיקה / אוירודינמיקה, לא פיתוח תוכנה; וגם אזור חיפה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט לאוירונאוטיקה (לפי הכותרת)"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153273768"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט.ית לאוירונאוטיקה - מחלקת אוירודינמיקה",
+  "url": "https://juniors.hiremetech.com/job/153273768",
+  "work_mode": null
+}

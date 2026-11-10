@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:153274825",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153274825",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עבודה בחדר צמחים ובקרת איכות על מרשמים וחומרי גלם. הטקסט המלא לא זמין.",
+  "education": "סטודנט/ית לרפואה סינית",
+  "employment": "חלקית",
+  "experience": "לא צוין",
+  "first_seen": "2026-11-10",
+  "history": [
+    {
+      "at": "2026-11-10T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "יקנעם",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד / תחום לימודים — רפואה סינית, לא פיתוח תוכנה; וגם יקנעם (צפון)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לרפואה סינית",
+    "ידע ב-Office"
+  ],
+  "salary": null,
+  "scope": "2-3 משמרות בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153274825"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לרפואה סינית למחלקה המקצועית",
+  "url": "https://juniors.hiremetech.com/job/153274825",
+  "work_mode": null
+}

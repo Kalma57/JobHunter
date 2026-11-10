@@ -3,7 +3,8 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
     "בכרטיס באתר: Full-time — לא מאומת מול הטקסט; לבדוק היקף",
-    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech (מקור: LinkedIn)"
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech (מקור: LinkedIn)",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150407544",
@@ -63,6 +64,11 @@
       "date": "2026-10-11",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/150407544"
+    },
+    {
+      "date": "2026-11-10",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152987461"
     }
   ],
   "source": "hiremetech:juniors",
