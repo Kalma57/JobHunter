@@ -328,5 +328,16 @@
   ],
   "not_interested_reason": "יותר מהנדס נתונים ממהנדס תוכנה",
   "status": "not_interested"
+ },
+ "hiremetech-150917194": {
+  "not_interested_reason": "התחום לא רלוונטי",
+  "history": [
+   {
+    "status": "not_interested",
+    "at": "2026-11-10T07:26:46.839Z",
+    "note": "התחום לא רלוונטי"
+   }
+  ],
+  "status": "not_interested"
  }
 }
