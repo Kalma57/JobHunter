@@ -3,7 +3,8 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא מוסתר באתר",
     "לא ברור אם זו אוטומציית בדיקות (נפסל) או פיתוח — לבדוק בעמוד",
-    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/152737281",
@@ -60,6 +61,11 @@
       "date": "2026-11-09",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/152737281"
+    },
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153354704"
     }
   ],
   "source": "hiremetech:juniors",

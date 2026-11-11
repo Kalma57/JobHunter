@@ -3,13 +3,11 @@
   "alerts": [
     "משרה ישנה — פורסמה 2026-07-31 (יותר מ-60 יום)"
   ],
-  "apply_instructions": null,
   "apply_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Architect_JR2022248",
+  "compacted": "2026-11-11",
   "company": "NVIDIA",
   "deadline": null,
   "degree_time": null,
-  "description": "ארכיטקט/ית תוכנה למערכות משובצות ב-NVIDIA (C/C++, לינוקס).",
-  "education": "B.Sc/M.Sc במדמ\"ח / הנדסת חשמל / מחשבים",
   "employment": null,
   "experience": "1+ שנים",
   "first_seen": "2026-10-11",
@@ -20,33 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "ג'וניור"
   ],
   "location": "יקנעם / תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary"
-  ],
   "notes": "",
   "posted_at": "2026-07-31",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "משרה מלאה למהנדס/ת עם תואר וניסיון — לא משרת סטודנט."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "1+ שנות ניסיון",
-    "C/C++",
-    "לינוקס / מערכות משובצות"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

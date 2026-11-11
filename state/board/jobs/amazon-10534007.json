@@ -1,13 +1,11 @@
 {
   "agent_id": "amazon:10534007",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10534007/apply",
+  "compacted": "2026-11-11",
   "company": "Amazon (Annapurna Labs Ltd.)",
   "deadline": null,
   "degree_time": null,
-  "description": "פיתוח דרייברים ל-EFA בקרנל לינוקס.",
-  "education": "תואר ראשון במדמ\"ח / הנדסה",
   "employment": null,
   "experience": "3+ שנים",
   "first_seen": "2026-10-11",
@@ -18,32 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "ביניים"
   ],
   "location": "חיפה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary"
-  ],
   "notes": "",
   "posted_at": "2026-09-09",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "3+ שנות ניסיון, וגם חיפה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "3+ שנות ניסיון ב-C/C++",
-    "דרייברים low-level"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

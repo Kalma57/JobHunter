@@ -1,13 +1,11 @@
 {
   "agent_id": "amazon:10568490",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10568490/apply",
+  "compacted": "2026-11-11",
   "company": "Amazon",
   "deadline": null,
   "degree_time": null,
-  "description": "פיתוח חוויות פרסונליזציה מבוססות LLM ב-Amazon Stores.",
-  "education": "תואר ראשון במדמ\"ח / הנדסה",
   "employment": null,
   "experience": "5+ שנים",
   "first_seen": "2026-10-11",
@@ -18,36 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סניור"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary"
-  ],
   "notes": "",
   "posted_at": "2026-10-04",
-  "prefs_down": [],
-  "prefs_up": [
-    "AI"
-  ],
   "relevance": {
     "pass": false,
     "reason": "5+ שנות ניסיון — לא משרת סטודנט."
   },
-  "requirements_adv": [
-    "A/B testing",
-    "AI/ML ו-GenAI"
-  ],
-  "requirements_must": [
-    "5+ שנות ניסיון",
-    "Java / Python / C++ / C#",
-    "ארכיטקטורה ותכנון"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

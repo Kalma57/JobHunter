@@ -1,0 +1,60 @@
+{
+  "agent_id": "hiremetech:153321397",
+  "alerts": [],
+  "apply_instructions": "קורות חיים ל-jobs@neuronicode.com",
+  "apply_url": "https://juniors.hiremetech.com/job/153321397",
+  "company": "Neuronic",
+  "deadline": null,
+  "degree_time": "שנה אחרונה",
+  "description": "עוזר/ת מנכ\"ל ותפעול בחברת AI ורובוטיקה.",
+  "education": "סטודנט בשנה אחרונה או בוגר",
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "נתניה",
+  "not_stated": [
+    "salary",
+    "experience",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-09",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד אדמיניסטרטיבי, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט בשנה אחרונה או בוגר",
+    "כישורי ארגון",
+    "עברית ואנגלית"
+  ],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153321397"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Executive Assistant",
+  "url": "https://juniors.hiremetech.com/job/153321397",
+  "work_mode": "משרד"
+}

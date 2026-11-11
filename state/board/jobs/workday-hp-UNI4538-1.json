@@ -1,0 +1,60 @@
+{
+  "agent_id": "workday:hp:UNI4538-1",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Opex-Student_UNI4538-1",
+  "company": "HP",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט אדמיניסטרטיבית (Opex) ב-HP, לסטודנטים לתואר שני.",
+  "education": "סטודנט לתואר שני (סיים שנה א')",
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י workday:hp",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "נס ציונה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-10",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד אדמיניסטרטיבי, ודורש סטודנט לתואר שני"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט לתואר שני שסיים שנה א'"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "workday:hp",
+      "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Opex-Student_UNI4538-1"
+    }
+  ],
+  "source": "workday:hp",
+  "status": "filtered",
+  "title": "Opex Student",
+  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Opex-Student_UNI4538-1",
+  "work_mode": null
+}

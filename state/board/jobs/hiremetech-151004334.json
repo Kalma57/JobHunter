@@ -2,7 +2,8 @@
   "agent_id": "hiremetech:151004334",
   "alerts": [
     "האתר מתייג student ו'משרה מלאה' — הטקסט מתאר משרת מהנדס/ת בלי רמה",
-    "לבדיקה שלך: התפקיד DevOps עם AI ואוטומציה. לא ברור אם היא פתוחה לסטודנטים או למהנדסים."
+    "לבדיקה שלך: התפקיד DevOps עם AI ואוטומציה. לא ברור אם היא פתוחה לסטודנטים או למהנדסים.",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151004334",
@@ -66,6 +67,11 @@
       "date": "2026-10-16",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/151004334"
+    },
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152488917"
     }
   ],
   "source": "hiremetech:juniors",

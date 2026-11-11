@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:153442783",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech",
+    "הכתובת באתר (חיפה) סותרת את הכותרת (ראשון לציון / גן שורק); הכותרת קובעת"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153442783",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט בתקשורת קווית ואלחוטית (מערכות תקשורת, רדיו, IP, אינטגרציה).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ראשון לציון",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום תקשורת / אינטגרציה של מערכות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153442783"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית לתחום התקשורת הקווית והאלחוטית לראשון לציון גן שורק",
+  "url": "https://juniors.hiremetech.com/job/153442783",
+  "work_mode": null
+}

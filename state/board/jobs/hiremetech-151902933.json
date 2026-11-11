@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:151902933",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151902933",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אנליסט אבטחה בחצי משרה: Red Team, פישינג, הנדסה חברתית, Python.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד אנליסט אבטחה (Red Team / פישינג), לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151902933"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Security Analyst (Part Time)",
+  "url": "https://juniors.hiremetech.com/job/151902933",
+  "work_mode": null
+}

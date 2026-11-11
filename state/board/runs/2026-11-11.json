@@ -1,0 +1,257 @@
+{
+  "after_prefilter": 195,
+  "at": "2026-11-11T07:00:00Z",
+  "backlog": 155,
+  "borderline": [
+    "Internship Software Engineer — לא כפילות",
+    "Lab Student — לא כפילות",
+    "Competitive Intelligence & Data Analyst - Student — לא כפילות",
+    "סטודנט/ית לתחום התקשורת הקווית והאלחוטית לראשון לציון גן שורק — לא כפילות",
+    "AI Researcher (AV) Internship (Ph D Student) — לא כפילות",
+    "Competitive Intelligence Analyst - Student — לא כפילות",
+    "Junior Software Engineer — לא כפילות",
+    "דרושים.ות מדריכים.ות לתחומי טכנולוגיה, מדע וחדשנות — לא כפילות",
+    "Full Stack Engineer — לא כפילות",
+    "Automation Development Student — כפילות של hiremetech-152737281: אותו שם תפקיד (Automation Development Student), אותו אזור (עמק חפר), אותה טכנולוגיה (Python) ואותו מפרסם חסוי; פורסמה יום אחרי",
+    "Competitive Intelligence Analyst - Student — כפילות של workday-hp-UNI4539-1: אותו שם תפקיד (Competitive Intelligence Analyst - Student), אותה כתובת ב-נס ציונה (HP) ואותן דרישות; HireMeTech מפרסם מחדש את משרת HP",
+    "לארגון מוביל דרוש/ה מהנדס/ת Dev Ops עם התמחות ב-AI ואוטומציה מתקדמת — כפילות של hiremetech-151004334: אותה כותרת בדיוק (מהנדס/ת Dev Ops עם התמחות ב-AI ואוטומציה מתקדמת), אותה עיר (פתח תקווה) ואותו מפרסם חסוי"
+  ],
+  "brain_filtered": 33,
+  "candidates": 222,
+  "closed": 1,
+  "compacted": 24,
+  "duplicates_code": 2,
+  "errors": [
+    "Teva: FetchError: listed 33 jobs but the site says 34",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=20"
+  ],
+  "far": 3,
+  "found_new": 42,
+  "kind": "daily",
+  "passed": 2,
+  "prefiltered": [
+    {
+      "company": "Intel",
+      "location": "Israel, Kiryat-Gat",
+      "reason": "תחום אחר (Chemistry בשם המשרה)",
+      "source": "workday:intel",
+      "title": "Analytical Chemistry Lab Engineer",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Analytical-Chemistry-Lab-Engineer_JR0289033"
+    },
+    {
+      "company": "Marvell",
+      "location": "Petah-Tikva",
+      "reason": "תחום אחר (Design Verification בשם המשרה)",
+      "source": "workday:marvell",
+      "title": "Design Verification Intern",
+      "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/Design-Verification-Intern_2604492"
+    },
+    {
+      "company": "Nova",
+      "location": "Rehovot, IL (Nova HQ), Rehovot",
+      "reason": "דורש 5+ שנות ניסיון",
+      "source": "comeet:nova",
+      "title": "Purchase to Pay & Inventory Controller",
+      "url": "https://www.novami.com/comeetitem/bf47f/?t=1794379964061"
+    },
+    {
+      "company": "CALANIT by one",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "נציג תמיכה למוקד טכני בפתח תקווה",
+      "url": "https://www.drushim.co.il/job/39050950/f85ab68e/"
+    },
+    {
+      "company": "יונילינק",
+      "location": "תל אביב",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "דרושים סטודנטים להנדסת חשמל!",
+      "url": "https://www.drushim.co.il/job/38755880/a1f3104c/"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Holon",
+      "reason": "תחום אחר (כספים בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט/ית למחלקת כספים",
+      "url": "https://juniors.hiremetech.com/job/153524226"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "פארק מתם, חיפה, Haifa",
+      "reason": "תחום אחר (Hardware בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Hardware Validation & Automation Student",
+      "url": "https://juniors.hiremetech.com/job/153424375"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "דרך אם המושבות 94, בית יבמ, קריית אריה, פתח תקווה 4970602",
+      "reason": "דורש תואר מתקדם (PhD בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "LLM Adapters for Agentic Workflows- MSC/PHD Student Position- Research Lab",
+      "url": "https://juniors.hiremetech.com/job/153428992"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "זרחין 13, הייטק פארק בניין A, רעננה 4366241, Raanana",
+      "reason": "תחום אחר (Paralegal בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "G&A - Paralegal Law Student",
+      "url": "https://juniors.hiremetech.com/job/153461114"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "הפסגות 9, פארק עופר, פתח תקווה 4970602, Petah Tikva",
+      "reason": "תחום אחר (Design Verification בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Design Verification Intern",
+      "url": "https://juniors.hiremetech.com/job/153471491"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "רחוב בנק ישראל 2, קריית בן גוריון, ירושלים",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט/ית ביחידת בקרה ומטה, בחטיבת השווקים (סטודנט)",
+      "url": "https://juniors.hiremetech.com/job/153468723"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Netanya",
+      "reason": "תחום אחר (Electrical Engineering בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Student Job: Electrical Engineering (f/m/div)",
+      "url": "https://juniors.hiremetech.com/job/153464925"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "נתיב האור 1, חיפה 3508510, Haifa",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מאגר סטודנטים/יות להנדסת חשמל",
+      "url": "https://juniors.hiremetech.com/job/153480537"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "הקידמה 26, פארק תעשייה עופר, יוקנעם עילית 2069200, Yokneam",
+      "reason": "תחום אחר (QA בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Software QA Student",
+      "url": "https://juniors.hiremetech.com/job/153424800"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "הקידמה 26, פארק תעשייה עופר, יוקנעם עילית 2069200, Yokneam",
+      "reason": "תחום אחר (QA בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Software QA Student",
+      "url": "https://juniors.hiremetech.com/job/153416237"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "נתיב האור 1, חיפה 3508510, Haifa",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט/ית להנדסת חשמל לתכנון חשמלי של תחנות משנה ומיתוג לחיפה",
+      "url": "https://juniors.hiremetech.com/job/153430174"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "הברזל 26, כניסה א, תל אביב-יפו 6971037",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרושים סטודנטים להנדסת חשמל!",
+      "url": "https://juniors.hiremetech.com/job/153442382"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "נתיב האור 1, חיפה 3508510, Haifa",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט/ית להנדסת חשמל לתכנון תחנות משנה ומיתוג לחיפה",
+      "url": "https://juniors.hiremetech.com/job/153384891"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "תובל 21, מגדל היהלום, סוויטה 1362, רמת גן 5252236, Jerusalem",
+      "reason": "תחום אחר (Customer Success בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Customer Success Operations Specialist - Student",
+      "url": "https://juniors.hiremetech.com/job/153338572"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "David Ben Gurion Blvd 1, Be'er Sheva, Beersheba",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "רכז/ת פקולטית לענייני סטודנטים-מזכירות הפקולטה-הפקולטה למדעי ההנדסה",
+      "url": "https://juniors.hiremetech.com/job/153336123"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "קפלן 23, הקריה, תל אביב-יפו 6473424, ית",
+      "reason": "תחום אחר (ביטחון בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "משרה מס' (123/26): למשרד הביטחון דרוש/ה סטודנט/ית לניהול לשכה",
+      "url": "https://juniors.hiremetech.com/job/153335561"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tsiporit Industrial Zone, HaMerkava 8, Natsrat Ilit, 1789064, Nazareth Illit",
+      "reason": "תחום אחר (משאבי אנוש בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנטית למשאבי אנוש",
+      "url": "https://juniors.hiremetech.com/job/153335204"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "היצירה 3, רמת גן 5252141, Petah Tikva",
+      "reason": "תחום אחר (Supply Chain בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Supply Chain Analyst (Student Position)",
+      "url": "https://juniors.hiremetech.com/job/153339999"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "כביש Upper Galilee, 9977, Qiryat Shemona, 1220800, Kiryat Shmona",
+      "reason": "דורש תואר מתקדם (Doctoral בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Doctoral and Post doctoral students",
+      "url": "https://juniors.hiremetech.com/job/153354665"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Talent Acquisition בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "2027 Applied Scientist Internship – Masters, Amazon University Talent Acquisition",
+      "url": "https://juniors.hiremetech.com/job/153372160"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "רשת עמל מגייסת רכז/ת מערכת מידע ותורמים – משרת סטודנט",
+      "url": "https://juniors.hiremetech.com/job/153378348"
+    },
+    {
+      "company": "Amazon (Annapurna Labs Ltd.)",
+      "location": "Haifa, Haifa, ISR",
+      "reason": "דורש 3+ שנות ניסיון",
+      "source": "amazon:amazon",
+      "title": "Software Embedded Engineer",
+      "url": "https://www.amazon.jobs/en/jobs/10600959/software-embedded-engineer"
+    }
+  ],
+  "prefiltered_count": 27,
+  "removed": 0,
+  "sources_read": 37,
+  "sources_total": 39,
+  "summary": "2 עברו · 33 סוננו ע\"י המוח · 27 סוננו בקוד · 5 כפילויות · 155 ממתינות",
+  "to_brain": 38,
+  "warnings": []
+}

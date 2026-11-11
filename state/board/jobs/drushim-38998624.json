@@ -1,0 +1,60 @@
+{
+  "agent_id": "drushim:38998624",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38998624/6514dc01/",
+  "company": "tactics",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הדרכת קבוצות ילדים ונוער בתכנות, רובוטיקה ו-AI בשעות אחר הצהריים.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "הדרכה / עבודה עם ילדים – חובה",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "פתח תקווה / ראשון לציון / רעננה",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-05",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "הדרכה / הוראה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "רקע בתכנות"
+  ],
+  "requirements_must": [
+    "ניסיון בהדרכה / הוראה / עבודה עם ילדים"
+  ],
+  "salary": null,
+  "scope": "שעות אחר הצהריים",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38998624/6514dc01/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "מדריכים.ות לתחומי טכנולוגיה, מדע וחדשנות",
+  "url": "https://www.drushim.co.il/job/38998624/6514dc01/",
+  "work_mode": "בשטח"
+}

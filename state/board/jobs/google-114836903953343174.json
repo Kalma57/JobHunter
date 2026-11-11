@@ -3,13 +3,11 @@
   "alerts": [
     "משרה ישנה — פורסמה 2026-07-13 (יותר מ-60 יום)"
   ],
-  "apply_instructions": null,
   "apply_url": "https://www.google.com/about/careers/applications/signin?jobId=CiUAL2FckQnaIEi6Sq7JthJ6VscF4whIADs1X3qqOIpCR2UN9VX6EjsA1Ny_i7pLe-AZQTSss8jahdltVuDGjSJlxVisv70EpXbZCYLaCk_JP5nIyKsd0LxwTh2gCZ7avWL0rw%3D%3D_V2&loc=IL&title=Signal/Power+Integrity+Engineer",
+  "compacted": "2026-11-11",
   "company": "Google",
   "deadline": null,
   "degree_time": null,
-  "description": "מהנדס/ת Signal/Power Integrity לשבבים של Google.",
-  "education": "PhD בהנדסת חשמל / מחשבים / פיזיקה / מדמ\"ח",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-11",
@@ -20,31 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "כניסה לתחום"
   ],
   "location": "חיפה / תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-07-13",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "דורש דוקטורט — נפסלת."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "PhD",
-    "Python לניתוח נתונים"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

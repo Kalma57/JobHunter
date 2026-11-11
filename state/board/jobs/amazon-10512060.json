@@ -1,13 +1,11 @@
 {
   "agent_id": "amazon:10512060",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10512060/apply",
+  "compacted": "2026-11-11",
   "company": "Amazon (Annapurna Labs Ltd.)",
   "deadline": null,
   "degree_time": null,
-  "description": "אופטימיזציית ביצועי ML ב-Neuron SDK למאיצי Inferentia/Trainium.",
-  "education": "B.Sc במדמ\"ח / הנדסת מחשבים",
   "employment": null,
   "experience": "6+ שנים",
   "first_seen": "2026-10-11",
@@ -18,36 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סניור"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary"
-  ],
   "notes": "",
   "posted_at": "2026-08-24",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [
-    "Python",
-    "AI"
-  ],
   "relevance": {
     "pass": false,
     "reason": "סניור עם 6+ שנות ניסיון."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "6+ שנות ניסיון",
-    "Python / C++",
-    "PyTorch / TensorFlow / JAX"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

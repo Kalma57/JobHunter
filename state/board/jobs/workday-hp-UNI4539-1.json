@@ -1,6 +1,8 @@
 {
   "agent_id": "workday:hp:UNI4539-1",
-  "alerts": [],
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
   "apply_instructions": null,
   "apply_url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Competitive-Intelligence-Analyst---Student_UNI4539-1",
   "company": "HP",
@@ -57,6 +59,11 @@
       "date": "2026-11-10",
       "source": "workday:hp",
       "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Competitive-Intelligence-Analyst---Student_UNI4539-1"
+    },
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153352218"
     }
   ],
   "source": "workday:hp",

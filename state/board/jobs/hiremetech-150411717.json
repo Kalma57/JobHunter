@@ -3,13 +3,11 @@
   "alerts": [
     "מפרסם ≠ מעסיק: פורסם ב-HireMeTech"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150411717",
+  "compacted": "2026-11-11",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": "יתרת לימודים של שנתיים",
-  "description": "תפעול ובקרה: תכניות עבודה, הצעות מחיר, רכש ומדדי אפקטיביות.",
-  "education": "סטודנט/ית לתואר ראשון/שני בהנדסת תעשייה וניהול / כלכלה / ניהול",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-11",
@@ -20,31 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "חיפה",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-09",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "לא פיתוח תוכנה (תעשייה וניהול), וגם חיפה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט/ית לתעשייה וניהול / כלכלה / ניהול",
-    "שנתיים לסיום",
-    "Excel"
-  ],
   "salary": null,
   "scope": "יומיים בשבוע",
   "sightings": [

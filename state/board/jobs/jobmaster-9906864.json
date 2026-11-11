@@ -1,0 +1,61 @@
+{
+  "agent_id": "jobmaster:9906864",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9906864",
+  "company": "קופת חולים מאוחדת",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ספרן/ית רפואי/ת בקופת חולים.",
+  "education": "תעודת ספרן / מידען",
+  "employment": "פרילנס",
+  "experience": "שנתיים לפחות",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "ראשון לציון / תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "ספרנות רפואית, לא פיתוח תוכנה, ודורש ניסיון"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תעודת ספרן/מידען",
+    "ניסיון של שנתיים"
+  ],
+  "salary": null,
+  "scope": "25% משרה",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9906864"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "ספרן/ית רפואי/ת",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9906864",
+  "work_mode": null
+}

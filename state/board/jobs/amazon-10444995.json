@@ -3,13 +3,11 @@
   "alerts": [
     "משרה ישנה — פורסמה 2026-06-10 (יותר מ-60 יום)"
   ],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10444995/apply",
+  "compacted": "2026-11-11",
   "company": "Amazon",
   "deadline": null,
   "degree_time": null,
-  "description": "Sr. SDE בפלטפורמת in-memory של ElastiCache.",
-  "education": null,
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-11",
@@ -20,33 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סניור"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience",
-    "education"
-  ],
   "notes": "",
   "posted_at": "2026-06-10",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "סניור עם ניסיון מקצועי והובלה — לא משרת סטודנט."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "ניסיון כמנטור / ראש צוות",
-    "הובלת ארכיטקטורה",
-    "ניסיון מקצועי בפיתוח"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

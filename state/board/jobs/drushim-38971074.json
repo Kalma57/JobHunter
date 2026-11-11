@@ -1,0 +1,62 @@
+{
+  "agent_id": "drushim:38971074",
+  "alerts": [
+    "מפרסם ≠ מעסיק: חברת השמה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38971074/e92a3269/",
+  "company": "גולדמן מיון והשמה",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ריכוז וניהול פרויקטים ותפעול בארגון גדול.",
+  "education": "הנדסת תעשייה וניהול / מנהל עסקים",
+  "employment": "דרך חברת כוח אדם",
+  "experience": "לא חובה",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-03",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ניהול פרויקטים / תפעול, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/בוגר הנדסת תעשייה וניהול / מנהל עסקים",
+    "Excel"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה או 4 ימים",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38971074/e92a3269/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "רכז/ת פרויקטים ותפעול",
+  "url": "https://www.drushim.co.il/job/38971074/e92a3269/",
+  "work_mode": null
+}

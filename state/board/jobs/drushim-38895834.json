@@ -1,0 +1,61 @@
+{
+  "agent_id": "drushim:38895834",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38895834/360c261c/",
+  "company": "טופ אדיו(קיישן)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הדרכת קורסי תכנות, אפליקציות ו-AI לילדים ונוער.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "ניסיון בהדרכה – פלוס",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "חולון, ראשון לציון, יבנה, גדרה, רמלה ועוד",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-29",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "הדרכה / הוראה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון בהדרכה"
+  ],
+  "requirements_must": [
+    "אהבה לטכנולוגיה",
+    "נכונות למשרה חלקית"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38895834/360c261c/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "מדריכים/ות לקורסים טכנולוגיים לילדים ונוער",
+  "url": "https://www.drushim.co.il/job/38895834/360c261c/",
+  "work_mode": "בשטח"
+}

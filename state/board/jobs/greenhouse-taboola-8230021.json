@@ -1,0 +1,77 @@
+{
+  "agent_id": "greenhouse:taboola:8230021",
+  "alerts": [
+    "לבדיקה שלך: זו משרת ג'וניור ולא מוגדרת כמשרת סטודנט, ודורשת 1–2 שנות ניסיון (מותר גם כמתמחה / בתפקיד סטודנט). לא ברור אם היא פתוחה לסטודנט שנה ג'. ההיקף לא צוין.",
+    "המשרה פורסמה לפני כ-6 שבועות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.taboola.com/careers/job/8230021?gh_jid=8230021",
+  "company": "Taboola",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת תוכנה זוטר/ה בקבוצת Emerging Growth ב-Taboola: פיתוח פלטפורמת self-service לפרסום, עבודה עם סוכני AI. Java, Python, React.",
+  "education": "B.Sc במדעי המחשב או שווה ערך",
+  "employment": null,
+  "experience": "1–2 שנות ניסיון (גם כמתמחה / סטודנט)",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י greenhouse:taboola",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-09-29",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "Java",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח תוכנה בתל אביב עם Python / Java / AI; ספק לגבי רמה וניסיון (1–2 שנים, ניסיון כסטודנט נחשב) ← עוברת לבדיקה שלך"
+  },
+  "requirements_adv": [
+    "Java או שפה מונחית עצמים",
+    "בניית סוכני AI / MCP",
+    "Full-stack JS/TS ו-React",
+    "SQL / NoSQL",
+    "Kafka, Docker, K8s"
+  ],
+  "requirements_must": [
+    "B.Sc במדעי המחשב או שווה ערך",
+    "1–2 שנות ניסיון בפיתוח (גם כמתמחה / בתפקיד סטודנט)",
+    "עבודה יומיומית עם כלי AI לקידוד"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "greenhouse:taboola",
+      "url": "https://www.taboola.com/careers/job/8230021?gh_jid=8230021"
+    }
+  ],
+  "source": "greenhouse:taboola",
+  "status": "new",
+  "title": "Junior Software Engineer",
+  "uncertain": true,
+  "url": "https://www.taboola.com/careers/job/8230021?gh_jid=8230021",
+  "work_mode": "היברידי"
+}

@@ -19,6 +19,11 @@
       "at": "2026-11-10T07:00:00Z",
       "note": "נמצא ע\"י amazon:amazon",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-03, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -65,7 +70,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "filtered",
+  "status": "closed",
   "title": "Embedded Software Engineer - Nitro, Annapurna Labs, K2 Core SW Data Path HAL",
   "url": "https://www.amazon.jobs/en/jobs/10594451/embedded-software-engineer-nitro-annapurna-labs-k2-core-sw-data-path-hal",
   "work_mode": null

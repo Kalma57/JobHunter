@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:153429882",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153429882",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות באימות ASIC (חומרה): Verilog / SystemVerilog, ארכיטקטורת מחשב.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "עומר",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום חומרה (ASIC), ומשרה מלאה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153429882"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "ASIC Front End Validation Intern",
+  "url": "https://juniors.hiremetech.com/job/153429882",
+  "work_mode": null
+}

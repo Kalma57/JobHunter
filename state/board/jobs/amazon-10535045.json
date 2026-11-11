@@ -1,13 +1,11 @@
 {
   "agent_id": "amazon:10535045",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10535045/apply",
+  "compacted": "2026-11-11",
   "company": "Amazon (AWS EMEA SARL (Israel Branch))",
   "deadline": null,
   "degree_time": null,
-  "description": "מנהל/ת שיווק ABM ל-ISV ב-EMEA.",
-  "education": null,
   "employment": null,
   "experience": "4+ שנים",
   "first_seen": "2026-10-11",
@@ -18,30 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "מנהל/ת"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "education"
-  ],
   "notes": "",
   "posted_at": "2026-09-09",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "לא פיתוח תוכנה — שיווק."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "4+ שנות ניסיון בשיווק"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

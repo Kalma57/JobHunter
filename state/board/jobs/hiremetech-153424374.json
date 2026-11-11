@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:153424374",
+  "alerts": [
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153424374",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": "שנה אחרונה / בוגרים",
+  "description": "תוכנית התמחות מלאה של שנה בפיתוח תוכנה ו-AI לבוגרים וסטודנטים בשנה אחרונה.",
+  "education": "בוגרי B.Sc במדעי המחשב וסטודנטים בשנה אחרונה",
+  "employment": "דרך חברת כוח אדם",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-10",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה מלאה, ומיועדת לבוגרים / שנה אחרונה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "בוגר/ת B.Sc מדעי המחשב או סטודנט/ית בשנה אחרונה"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה (שנה)",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153424374"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Internship Software Engineer",
+  "url": "https://juniors.hiremetech.com/job/153424374",
+  "work_mode": null
+}

@@ -1,0 +1,71 @@
+{
+  "agent_id": "drushim:39006110",
+  "alerts": [
+    "מפרסם ≠ מעסיק: Experis Academy מכשירה ומשמה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/39006110/8f358a87/",
+  "company": "Experis Academy",
+  "deadline": null,
+  "degree_time": "עד סמסטר אחד לסיום",
+  "description": "תוכנית הכשרה ל-BI ודאטה (SQL, Power BI) לבוגרי תואר, עם השמה.",
+  "education": "בוגר/ת תואר ראשון (ממוצע 80+)",
+  "employment": "דרך חברת כוח אדם",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה מלאה לבוגרים, ותפקיד BI"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "בוגר/ת תואר ראשון בתחום רלוונטי, ממוצע 80+",
+    "לא מתאים לסטודנטים עם יתרת לימודים של יותר מסמסטר"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/39006110/8f358a87/"
+    },
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/39006148/151bcacc/"
+    },
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38959142/0675c91a/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "Junior BI Analyst - בוגרי תואר",
+  "url": "https://www.drushim.co.il/job/39006110/8f358a87/",
+  "work_mode": null
+}

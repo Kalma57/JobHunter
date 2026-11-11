@@ -1,0 +1,76 @@
+{
+  "agent_id": "hiremetech:151973328",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech",
+    "לבדיקה שלך: התפקיד DevOps / Cloud (גבולי), והמשרה היא 'מסלול כניסה' ולא בהכרח משרת סטודנט. ההיקף לא צוין."
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151973328",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מסלול כניסה ל-DevOps ו-Cloud (Python, Bash, CI/CD, Infrastructure as Code).",
+  "education": null,
+  "employment": null,
+  "experience": "עד שנה",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום",
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "DevOps / Cloud עם Python בתל אביב, ניסיון עד שנה; ספק לגבי התפקיד וסוג המשרה ← עוברת לבדיקה שלך"
+  },
+  "requirements_adv": [
+    "Python",
+    "Bash",
+    "Cloud",
+    "CI/CD",
+    "Infrastructure as Code"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151973328"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Dev Ops & Cloud Engineer - Entry Level Career Path",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151973328",
+  "work_mode": null
+}

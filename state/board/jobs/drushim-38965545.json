@@ -1,0 +1,59 @@
+{
+  "agent_id": "drushim:38965545",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38965545/74385b1b/",
+  "company": "Effectivate",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מעצב/ת גרפי/ת למשחקים וחוויות דיגיטליות (Figma, Photoshop, Illustrator).",
+  "education": null,
+  "employment": null,
+  "experience": "1-2 שנים",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-03",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד עיצוב גרפי, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "Figma, Photoshop, Illustrator",
+    "תיק עבודות"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה או 4 ימים",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38965545/74385b1b/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "Digital Designer",
+  "url": "https://www.drushim.co.il/job/38965545/74385b1b/",
+  "work_mode": "משרד"
+}

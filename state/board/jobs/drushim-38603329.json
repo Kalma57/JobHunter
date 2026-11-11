@@ -1,0 +1,60 @@
+{
+  "agent_id": "drushim:38603329",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38603329/8910939d/",
+  "company": "אם.אר.סי תפעול",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ניהול ארכיון הנדסי באתר אנרגיה.",
+  "education": "הנדסאי מכונות / חשמל או סטודנט הנדסה",
+  "employment": "זמנית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "עפולה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-04",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תיעוד הנדסי, לא פיתוח תוכנה, משרה מלאה ובעפולה (צפון)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "הנדסאי/ת מכונות / חשמל או סטודנט/ית הנדסה",
+    "אנגלית טובה"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38603329/8910939d/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "אחראי/ת תיעוד הנדסי",
+  "url": "https://www.drushim.co.il/job/38603329/8910939d/",
+  "work_mode": null
+}

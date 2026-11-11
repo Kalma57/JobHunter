@@ -1,0 +1,58 @@
+{
+  "agent_id": "drushim:38649404",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38649404/1733954b/",
+  "company": "ecocity",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת ביצוע בשטח בחברת התחדשות עירונית.",
+  "education": "מהנדס/ת בניין / אזרחי או סטודנט שנה ד'",
+  "employment": "קבועה",
+  "experience": "שנה לפחות – יתרון",
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-12",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "הנדסה אזרחית, לא קשור לתוכנה, ומשרה מלאה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "מהנדס/ת בניין / אזרחי או סטודנט/ית שנה ד'"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38649404/1733954b/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "מהנדס/ת ביצוע",
+  "url": "https://www.drushim.co.il/job/38649404/1733954b/",
+  "work_mode": "בשטח"
+}

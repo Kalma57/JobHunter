@@ -1,0 +1,71 @@
+{
+  "agent_id": "workday:cisco:2031073",
+  "alerts": [
+    "המשרה אינה בהכרח פתוחה היום — פרסום למשרות עתידיות",
+    "לא ברור אם היא פתוחה לסטודנטים (ג'וניור, ממוצע 85+)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Caesarea-Israel/Junior-Software-Engineer---ETR--Israel_2031073",
+  "company": "Cisco",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח SDK ב-Linux/C++ למכשירי Cisco Silicon One, כולל אינטגרציית SW/HW. הפרסום הוא למשרות עתידיות אפשריות.",
+  "education": "B.Sc / M.Sc במדעי המחשב, הנדסת מחשבים או הנדסת תוכנה, ממוצע 85+",
+  "employment": null,
+  "experience": "לא נדרש",
+  "far": true,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י workday:cisco",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור",
+    "כניסה לתחום"
+  ],
+  "location": "קיסריה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-05",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — קיסריה (צפון); שאר הדרישות עברו בספק"
+  },
+  "requirements_adv": [
+    "יכולת למידה מהירה",
+    "עבודת צוות"
+  ],
+  "requirements_must": [
+    "B.Sc / M.Sc במדעי המחשב, הנדסת מחשבים או הנדסת תוכנה מאוניברסיטה מובילה בישראל, ממוצע 85+",
+    "אנגלית שוטפת"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "workday:cisco",
+      "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Caesarea-Israel/Junior-Software-Engineer---ETR--Israel_2031073"
+    }
+  ],
+  "source": "workday:cisco",
+  "status": "filtered",
+  "title": "Junior Software Engineer - ETR - Israel",
+  "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Caesarea-Israel/Junior-Software-Engineer---ETR--Israel_2031073",
+  "work_mode": null
+}

@@ -3,13 +3,11 @@
   "alerts": [
     "משרה ישנה — פורסמה 2026-07-08 (יותר מ-60 יום)"
   ],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10468890/apply",
+  "compacted": "2026-11-11",
   "company": "Amazon",
   "deadline": null,
   "degree_time": null,
-  "description": "מנהל/ת פיתוח ב-AWS EBS.",
-  "education": null,
   "employment": null,
   "experience": "7+ שנים",
   "first_seen": "2026-10-11",
@@ -20,33 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "מנהל/ת"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "education"
-  ],
   "notes": "",
   "posted_at": "2026-07-08",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "משרת ניהול עם 7+ שנות ניסיון."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "7+ שנות ניסיון",
-    "3+ שנות ניהול"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

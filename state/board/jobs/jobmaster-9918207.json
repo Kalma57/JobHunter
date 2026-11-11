@@ -1,0 +1,68 @@
+{
+  "agent_id": "jobmaster:9918207",
+  "alerts": [
+    "מפרסם ≠ מעסיק: Malam Team מגייסת לארגון אחר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9918207",
+  "company": "Malam Team",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכה טכנית ואפליקטיבית ללקוחות (מערכת Priority) במשמרות.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ראש העין",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תמיכה טכנית, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "הנדסת תעשייה וניהול / מערכות מידע",
+    "היכרות עם Priority"
+  ],
+  "requirements_must": [
+    "אנגלית ברמה גבוהה",
+    "זמינות למשמרות בוקר, ערב וסופ\"ש"
+  ],
+  "salary": null,
+  "scope": "חלקית, משמרות בוקר / ערב / סופ\"ש",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9918207"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "תומך/ת טכני/ת",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9918207",
+  "work_mode": null
+}

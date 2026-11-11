@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:153431420",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר",
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153431420",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט במשמרות ערב ולילה הדורשת ידע טכנולוגי בסיסי (כנראה תפעול / תמיכה).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-11",
+  "history": [
+    {
+      "at": "2026-11-11T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משמרות ערב / לילה בתפקיד תפעול / תמיכה, לא פיתוח"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ידע טכנולוגי בסיסי"
+  ],
+  "salary": null,
+  "scope": "משמרות ערב ולילה",
+  "sightings": [
+    {
+      "date": "2026-11-11",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153431420"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "משרת סטודנט/ית במשמרות ערב / לילה",
+  "url": "https://juniors.hiremetech.com/job/153431420",
+  "work_mode": null
+}
