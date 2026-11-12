@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:151422831",
+  "alerts": [
+    "המודעה קטועה",
+    "לא בטוח: הנדסת מערכת בתחום מחשוב/תקשורת/IT — ייתכן שאינו פיתוח תוכנה, והיקף המשרה לא צוין"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151422831",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת מערכת מתחיל/ה (מערכות מחשוב, תקשורת, IT) ברמת גן; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "Ramat Gan",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "תפקיד גבולי (הנדסת מערכת), לא ברור — עובר לבדיקת המשתמש"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151422831"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "מהנדס/ת מערכת מתחיל/ה",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151422831",
+  "work_mode": null
+}

@@ -1,0 +1,60 @@
+{
+  "agent_id": "hiremetech:151815301",
+  "alerts": [
+    "המודעה אינה רלוונטית (עבודת כפיים בארה\"ב), הטקסט מתנגש עם המיקום באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151815301",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עובד כללי במחלקת רחובות (מודעה אמריקאית, איווה).",
+  "education": "תיכון",
+  "employment": null,
+  "experience": "6-12 חודשים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "Or HaNer",
+  "not_stated": [
+    "degree_time",
+    "deadline",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-24",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "עבודת כפיים, לא פיתוח תוכנה, משרה מלאה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "רישיון נהיגה של איווה"
+  ],
+  "salary": "$23.68-32.86 לשעה",
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151815301"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Full Time -Street Department Laborer",
+  "url": "https://juniors.hiremetech.com/job/151815301",
+  "work_mode": "בשטח"
+}

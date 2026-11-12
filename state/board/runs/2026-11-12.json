@@ -1,0 +1,74 @@
+{
+  "after_prefilter": 155,
+  "at": "2026-11-12T07:00:00Z",
+  "backlog": 115,
+  "borderline": [
+    "C++ Software Engineer — לא כפילות",
+    "Product Analyst — לא כפילות",
+    "Software Engineer — לא כפילות",
+    "AI So C Design Verification Engineer, Google Cloud — לא כפילות",
+    "דרושים.ות תומכ.ת חינוך לגנים ובתי הספר — כפילות של hiremetech-151861712: אותו שם תפקיד (תומכ.ת חינוך לגנים ובתי הספר), אותו מקום (תל אביב) ואותו מקור HireMeTech",
+    "Software Engineer — כפילות של hiremetech-151436552: אותו תפקיד (Software Engineer), פתח תקווה, אותן טכנולוגיות (SQL, Python, Spark, ETL, AWS), 1+ שנים, אותו מקור"
+  ],
+  "brain_filtered": 33,
+  "candidates": 159,
+  "closed": 6,
+  "compacted": 0,
+  "duplicates_code": 1,
+  "errors": [
+    "Teva: FetchError: network error from https://www.careers.teva/api/apply/v2/jobs?domain=tevapharm.com&location=Israel&start=0&num=10: <urlopen error timed out>",
+    "Microsoft: FetchError: network error from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=0: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "DriveNets: FetchError: network error from https://www.comeet.co/careers-api/2.0/company/72.006/positions?token=2769D81626762C4E762762C4EC4E1626&details=true: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "Nova: FetchError: network error from https://www.comeet.co/careers-api/2.0/company/A5.007/positions?token=5A71C4332DFB4E10F532DFB4E32DF0B4E&details=true: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "Deloitte: FetchError: network error from https://www.comeet.co/careers-api/2.0/company/F7.00B/positions?token=7FB2FE21FEC3FD847D33FD8FF603FD81FEC&details=true: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "Drushim: FetchError: network error from https://webapi.drushim.co.il/api/jobs/search?searchterm=%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98&catdir=5&page=1: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "JobMaster: FetchError: network error from https://www.jobmaster.co.il/jobs/q-%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98-%D7%AA%D7%95%D7%9B%D7%A0%D7%94/: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "HireMeTech: Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://juniors.hiremetech.com/jobs-app?view=jobs&sort_by=posted_date&sort_order=desc&page=1\nCall log:\n  - navigating to \"https://juniors.hiremetech.com/jobs-app?view=jobs&sort_by=posted_date&sort_order=desc&page=1\", waiting until \"networkidle\"\n",
+    "Amazon: FetchError: network error from https://www.amazon.jobs/en/search.json?country=ISR&result_limit=100&offset=0&base_query=: <urlopen error [Errno 11001] getaddrinfo failed>"
+  ],
+  "far": 0,
+  "found_new": 4,
+  "kind": "daily",
+  "passed": 4,
+  "prefiltered": [
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Yokneam",
+      "reason": "משרה בכירה (Senior בשם המשרה)",
+      "source": "workday:nvidia",
+      "title": "Senior Materials Engineer",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Materials-Engineer_JR2028975"
+    },
+    {
+      "company": "Applied Materials",
+      "location": "Rehovot,ISR",
+      "reason": "דורש 2+ שנות ניסיון",
+      "source": "workday:amat",
+      "title": "AGS Verity Application Instructor",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/AGS-Training-Service-DDP-New-Product--NPI--Instructor-III----E3-_R2618366"
+    },
+    {
+      "company": "Intel",
+      "location": "Israel, Kiryat-Gat",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "workday:intel",
+      "title": "Mechanical\\Materials\\Chemical Engineering Student for Intel Kiryat Gat",
+      "url": "https://intel.wd1.myworkdayjobs.com/External/job/Israel-Kiryat-Gat/Mechanical-Materials-Chemical-Engineering-Student-for-Intel-Kiryat-Gat_JR0289159"
+    },
+    {
+      "company": "Apple",
+      "location": "Herzliya, Israel",
+      "reason": "דורש תואר מתקדם (Ph.D בשם המשרה)",
+      "source": "apple:apple",
+      "title": "MS.c/Ph.D Process Engineering Intern, Camera Modules",
+      "url": "https://jobs.apple.com/en-us/details/200694502-0865/ms-c-ph-d-process-engineering-intern-camera-modules"
+    }
+  ],
+  "prefiltered_count": 4,
+  "removed": 0,
+  "sources_read": 30,
+  "sources_total": 39,
+  "summary": "4 עברו · 33 סוננו ע\"י המוח · 4 סוננו בקוד · 3 כפילויות · 115 ממתינות",
+  "to_brain": 39,
+  "warnings": []
+}

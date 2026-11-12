@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:151444335",
+  "alerts": [
+    "המודעה קטועה",
+    "לא בטוח: ניסיון 'עד 2 שנים' והיקף המשרה / סטטוס סטודנט לא צוינו"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151444335",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת Backend ג'וניור בפתח תקווה (Java/Spring, Python/FastAPI, AWS, שימוש ב-LLM וכלי AI); הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Petah Tikva",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "Java",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח Backend ב-Java/Python עם AI; פרטי היקף וניסיון לא ברורים — עובר לבדיקת המשתמש"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151444335"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Back End Engineer 1 - (Petah Tikva, Central District, Israel)",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151444335",
+  "work_mode": null
+}

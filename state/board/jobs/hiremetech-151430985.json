@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:151430985",
+  "alerts": [
+    "המודעה קטועה",
+    "מיקום סותר: האתר מציין תל אביב, המודעה בברזיל"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151430985",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עוזר/ת מחסן בברזיל.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "Jacareí, Brazil",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "עבודת מחסן בברזיל"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151430985"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Assistente de Almoxarifado (Terceiro)",
+  "url": "https://juniors.hiremetech.com/job/151430985",
+  "work_mode": null
+}

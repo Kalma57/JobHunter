@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:151861712",
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151861712",
+  "company": "חסוי — דרך HireMeTech (עיריית תל אביב-יפו)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכת חינוך בגנים ובבתי ספר בתל אביב.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "employment"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-25",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום חינוך, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "גישה חינוכית",
+    "עבודת צוות"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה או חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151861712"
+    },
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151387167"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "דרושים.ות תומכ.ת חינוך לגנים ובתי הספר",
+  "url": "https://juniors.hiremetech.com/job/151861712",
+  "work_mode": "בשטח"
+}

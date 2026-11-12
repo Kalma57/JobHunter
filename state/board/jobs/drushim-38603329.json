@@ -16,6 +16,11 @@
       "at": "2026-11-11T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-02, לא הופיעה בסריקה השבועית של 2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -53,7 +58,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "אחראי/ת תיעוד הנדסי",
   "url": "https://www.drushim.co.il/job/38603329/8910939d/",
   "work_mode": null

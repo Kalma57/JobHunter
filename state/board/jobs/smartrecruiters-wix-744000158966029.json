@@ -1,0 +1,68 @@
+{
+  "agent_id": "smartrecruiters:wix:744000158966029",
+  "alerts": [
+    "ההגשה נסגרה ב-8.11.2026"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.smartrecruiters.com/Wix2/744000158966029-career-boost-program-full-stack-ai-marketer-base44?oga=true",
+  "company": "Wix",
+  "deadline": "2026-11-08",
+  "degree_time": null,
+  "description": "תוכנית שיווק של יומיים ב-Base44; ההגשה נסגרה ב-8/11.",
+  "education": null,
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י smartrecruiters:wix",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התחלה"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-01",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד שיווק, וההגשה סגורה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "הבנת קהל ומסר",
+    "יכולת יצירת תוכן"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "smartrecruiters:wix",
+      "url": "https://jobs.smartrecruiters.com/Wix2/744000158966029-career-boost-program-full-stack-ai-marketer-base44"
+    },
+    {
+      "date": "2026-11-12",
+      "source": "smartrecruiters:wix",
+      "url": "https://jobs.smartrecruiters.com/Wix2/744000158969209-career-boost-program-full-stack-ai-marketer-base44"
+    }
+  ],
+  "source": "smartrecruiters:wix",
+  "status": "filtered",
+  "title": "Career Boost Program: Full-Stack AI Marketer - Base44",
+  "url": "https://jobs.smartrecruiters.com/Wix2/744000158966029-career-boost-program-full-stack-ai-marketer-base44",
+  "work_mode": "משרד"
+}

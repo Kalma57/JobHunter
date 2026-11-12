@@ -1,0 +1,65 @@
+{
+  "agent_id": "amazon:10597413",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10597413/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס שלמות אות וחבילות שבבים (חומרה) בצוות שבבים של Annapurna.",
+  "education": "B.Sc הנדסת חשמל",
+  "employment": null,
+  "experience": "1-3 שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Haifa",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-05",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד חומרה (SI/PI), ניסיון 1-3 שנים, חיפה"
+  },
+  "requirements_adv": [
+    "PCIe/DDR/SerDes",
+    "HFSS, Sigrity"
+  ],
+  "requirements_must": [
+    "B.Sc בהנדסת חשמל",
+    "1-3 שנות ניסיון בתכנון לוחות / מדידות מעבדה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10597413/junior-si-pi-and-packaging-engineer"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Junior SI/PI and Packaging Engineer",
+  "url": "https://www.amazon.jobs/en/jobs/10597413/junior-si-pi-and-packaging-engineer",
+  "work_mode": null
+}

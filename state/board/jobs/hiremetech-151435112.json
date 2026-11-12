@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:151435112",
+  "alerts": [
+    "המודעה קטועה",
+    "לא בטוח: האתר מציין Full-time, אך הטקסט המלא מוסתר — ייתכן שאין אפשרות למשרת סטודנט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151435112",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת AI ג'וניור בתל אביב (Python, Prompt Engineering, SQL); הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "0-2 שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח AI ב-Python בתל אביב; היקף לא ודאי — עובר לבדיקת המשתמש"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה (לפי האתר)",
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151435112"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "מפתח.ת AI ג׳וניור.ית",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151435112",
+  "work_mode": null
+}

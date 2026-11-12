@@ -1,0 +1,71 @@
+{
+  "agent_id": "lever:mobileye:be730214-2c22-4acf-aff9-422fb6823f3e",
+  "alerts": [
+    "משרה ישנה (מעל 60 יום)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/be730214-2c22-4acf-aff9-422fb6823f3e/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח רשתות נוירונים לתפיסה לרכב אוטונומי.",
+  "education": "M.Sc (חובה)",
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Jerusalem",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-01-13",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "דורשת תואר שני"
+  },
+  "requirements_adv": [
+    "PhD"
+  ],
+  "requirements_must": [
+    "M.Sc",
+    "Python",
+    "למידת מכונה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/be730214-2c22-4acf-aff9-422fb6823f3e"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "filtered",
+  "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
+  "url": "https://jobs.eu.lever.co/mobileye/be730214-2c22-4acf-aff9-422fb6823f3e",
+  "work_mode": null
+}

@@ -1,0 +1,60 @@
+{
+  "agent_id": "workday:amat:R2623659",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Application-Engineer_R2623659",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס אפליקציה מול לקוחות לכלי מטרולוגיה של מוליכים למחצה, נסיעות ~25%.",
+  "education": "BSc/MSc בהנדסה (חשמל, חומרים, מכונות וכו')",
+  "employment": null,
+  "experience": "0-1 שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "Rehovot",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-01",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד הנדסת יישומים מול לקוחות (לא פיתוח תוכנה), משרה מלאה לבוגרים"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תואר הנדסי",
+    "אנגלית"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה (New College Grad)",
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Application-Engineer_R2623659"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "filtered",
+  "title": "Application Engineer",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Application-Engineer_R2623659",
+  "work_mode": null
+}

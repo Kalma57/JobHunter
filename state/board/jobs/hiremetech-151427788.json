@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:151427788",
+  "alerts": [
+    "המודעה קטועה",
+    "דומה למשרת Google google-133363303903568582 שכבר בלוח (סוננה)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151427788",
+  "company": "חסוי — דרך HireMeTech (כנראה Google)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אימות תכנון שבבים (חומרה) ב-Google Cloud.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "אימות שבבים — תחום חומרה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151427788"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "AI SoC Design Verification Engineer, Google Cloud",
+  "url": "https://juniors.hiremetech.com/job/151427788",
+  "work_mode": null
+}

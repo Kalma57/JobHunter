@@ -1,0 +1,74 @@
+{
+  "agent_id": "hiremetech:151436552",
+  "alerts": [
+    "המודעה קטועה",
+    "לא בטוח: ייתכן שעיקר התפקיד הנדסת נתונים (ETL/Spark), והיקף משרה וסטטוס סטודנט לא צוינו",
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151436552",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה בפתח תקווה; מהתגיות (SQL, Python, Spark, ETL, AWS) נראה שהכיוון הנדסת נתונים. הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "1+ שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Petah Tikva",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "תפקיד תוכנה, לא ברור אם הנדסת נתונים — עובר לבדיקת המשתמש"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151436552"
+    },
+    {
+      "date": "2026-11-12",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151447498"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Software Engineer",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151436552",
+  "work_mode": null
+}

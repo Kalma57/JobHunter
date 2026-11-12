@@ -1,0 +1,65 @@
+{
+  "agent_id": "workday:cisco:2025235",
+  "alerts": [
+    "מודעת עתיד: ייתכן שהתפקיד אינו פתוח כעת"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Tel-Aviv-Yafo-Israel/Junior-DFT-Engineer--ETR--Israel_2025235",
+  "company": "Cisco",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תכנון בדיקתיות שבבים (DFT, ATPG) בצוות Silicon One.",
+  "education": "B.Sc/M.Sc חשמל/מחשבים, בוגרים עם ממוצע 85+",
+  "employment": null,
+  "experience": "לא צוין",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י workday:cisco",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-29",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד חומרה (DFT) ודרישה לבוגרים"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "בוגר/ת הנדסת חשמל / מחשבים",
+    "ממוצע מעל 85"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "workday:cisco",
+      "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Tel-Aviv-Yafo-Israel/Junior-DFT-Engineer--ETR--Israel_2025235"
+    }
+  ],
+  "source": "workday:cisco",
+  "status": "filtered",
+  "title": "Junior DFT Engineer- ETR- Israel",
+  "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Tel-Aviv-Yafo-Israel/Junior-DFT-Engineer--ETR--Israel_2025235",
+  "work_mode": null
+}

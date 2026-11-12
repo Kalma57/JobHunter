@@ -1,0 +1,65 @@
+{
+  "agent_id": "ashby:monday:1f7fb90d-036a-4cd0-bb85-4b4db66f912e",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.ashbyhq.com/monday.com/1f7fb90d-036a-4cd0-bb85-4b4db66f912e/application",
+  "company": "monday.com",
+  "deadline": null,
+  "degree_time": null,
+  "description": "בניית מערכות AI ואג'נטים לארגון ההכנסות; כתוב במפורש שאינה משרה לג'וניורים.",
+  "education": null,
+  "employment": null,
+  "experience": "4+ שנים",
+  "first_seen": "2026-11-12",
+  "history": [
+    {
+      "at": "2026-11-12T07:00:00Z",
+      "note": "נמצא ע\"י ashby:monday",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-02",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "נדרשות 4+ שנות ניסיון, 'לא תפקיד ג'וניור'"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "4+ שנות ניסיון",
+    "ניסיון בסוכני AI ו-RAG"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-12",
+      "source": "ashby:monday",
+      "url": "https://jobs.ashbyhq.com/monday.com/1f7fb90d-036a-4cd0-bb85-4b4db66f912e"
+    }
+  ],
+  "source": "ashby:monday",
+  "status": "filtered",
+  "title": "AI Solutions Builder",
+  "url": "https://jobs.ashbyhq.com/monday.com/1f7fb90d-036a-4cd0-bb85-4b4db66f912e",
+  "work_mode": null
+}
