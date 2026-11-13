@@ -1,0 +1,61 @@
+{
+  "agent_id": "jobmaster:9913418",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9913418",
+  "company": "א.א. פוליטיב (1999)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ניהול תוכן ברשתות חברתיות וקידום פעילות חברה יצרנית.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "ניסיון בסיסי בשיווק דיגיטלי",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "עינת",
+  "not_stated": [
+    "work_mode",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד שיווק ופרסום, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון בסיסי בשיווק דיגיטלי / פרסום",
+    "הכרות תוכנות פרסום"
+  ],
+  "salary": "שעתי",
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9913418"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "סטודנט/ית לפרסום למשרה חלקית",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9913418",
+  "work_mode": null
+}

@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:151353233",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151353233",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת שירות בשטח לציוד מוליכים למחצה (ואקום, אלקטרוניקה, רובוטיקה).",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "קריית גת",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "הנדסת שירות בשטח / חומרה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151353233"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Field Service Engineer (Early Career)",
+  "url": "https://juniors.hiremetech.com/job/151353233",
+  "work_mode": "בשטח"
+}

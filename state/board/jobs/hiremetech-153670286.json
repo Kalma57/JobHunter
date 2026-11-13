@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:153670286",
+  "alerts": [
+    "המודעה קטועה",
+    "דומה למשרה hiremetech-152639422 (סוננה) אך לא ודאי שזו אותה משרה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153670286",
+  "company": "בנק ישראל (חסוי באתר — דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט ביחידת ניהול מסלקות במערכות תשלומים.",
+  "education": null,
+  "employment": "שעתי",
+  "experience": null,
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד תפעולי במסלקות תשלומים, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "שעות (סטודנטים)",
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153670286"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "סטודנט/ית ביחידה לניהול מסלקות, מחלקת מערכות תשלומים וסליקה",
+  "url": "https://juniors.hiremetech.com/job/153670286",
+  "work_mode": null
+}

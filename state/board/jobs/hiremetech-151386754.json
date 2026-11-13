@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:151386754",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151386754",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "חוויית עובד / משאבי אנוש במשרה חלקית.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משאבי אנוש, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151386754"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Employee Experience Specialist - Part Time",
+  "url": "https://juniors.hiremetech.com/job/151386754",
+  "work_mode": null
+}

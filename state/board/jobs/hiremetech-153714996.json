@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:153714996",
+  "alerts": [
+    "המודעה כוללת הרבה רעש מהאתר (משרות דומות); נקרא רק הטקסט של המשרה"
+  ],
+  "apply_instructions": "קו\"ח, גיליון ציונים ומכתב מוטיבציה",
+  "apply_url": "https://juniors.hiremetech.com/job/153714996",
+  "company": "חסוי — דרך HireMeTech (משרד עורכי דין GNY)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות כעורך פטנטים במשרד עורכי דין לקניין רוחני.",
+  "education": "תואר ראשון לפחות, עדיף הנדסת מכונות / אוויר / חשמל / פיזיקה",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "salary",
+    "scope",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-13",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד משפטי של קניין רוחני, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תואר ראשון לפחות",
+    "ממוצע 80 לפחות",
+    "עברית ואנגלית ברמה גבוהה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153714996"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Intern Position (מתמחה בפטנטים)",
+  "url": "https://juniors.hiremetech.com/job/153714996",
+  "work_mode": "משרד"
+}

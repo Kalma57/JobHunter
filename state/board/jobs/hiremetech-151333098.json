@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:151333098",
+  "alerts": [
+    "המודעה קטועה",
+    "לא בטוח: תפקיד משולב פיתוח ו-DevOps; הרמה ג'וניור ולא מצוין שזו משרת סטודנט או ההיקף"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151333098",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "שילוב של פיתוח תוכנה (Backend/Frontend) ו-DevOps (CI/CD, ענן, IaC).",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "נס ציונה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "תפקיד פיתוח במרכז (נס ציונה); היקף ורמה לא צוינו ולכן עוברת לבדיקת המשתמש"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151333098"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Software developer and Dev Ops engineer",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151333098",
+  "work_mode": null
+}

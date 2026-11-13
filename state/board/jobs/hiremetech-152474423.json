@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:152474423",
+  "alerts": [
+    "המודעה כוללת רעש רב מהאתר (משרות דומות); נקרא רק טקסט המשרה",
+    "סתירה בתאריך: 'פורסם היום' מול 1 Nov 2026"
+  ],
+  "apply_instructions": "הודעה עם נימוק קצר",
+  "apply_url": "https://juniors.hiremetech.com/job/152474423",
+  "company": "Igani (חסוי — דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מכירות טלפוניות (cold calls) לסוכנויות נדל\"ן עבור חברת תוכנה.",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "נתניה",
+  "not_stated": [
+    "scope",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-01",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מכירות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "רקע בנדל\"ן / SaaS / B2B"
+  ],
+  "requirements_must": [
+    "נוחות בשיחות טלפון",
+    "עברית שוטפת ואנגלית טובה"
+  ],
+  "salary": "עמלה 25% על כל פרויקט עד 15,000 ₪",
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152474423"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Salesperson",
+  "url": "https://juniors.hiremetech.com/job/152474423",
+  "work_mode": "משרד"
+}

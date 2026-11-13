@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:151328309",
+  "alerts": [
+    "המודעה קטועה",
+    "לא כפילות של משרת Assistant Controller ברמת גן: מיקום שונה (פתח תקווה) ודרישות שונות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151328309",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עוזר/ת קונטרולר, כספים וחשבונאות.",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "1+ שנים",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "כספים ומשרה מלאה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151328309"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Assistant Controller",
+  "url": "https://juniors.hiremetech.com/job/151328309",
+  "work_mode": null
+}

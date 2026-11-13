@@ -2,7 +2,8 @@
   "agent_id": "hiremetech:153442383",
   "alerts": [
     "המודעה קטועה — הטקסט המלא מוסתר באתר",
-    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech"
+    "מפרסם ≠ מעסיק: חברה חסויה דרך HireMeTech",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/153442383",
@@ -56,6 +57,11 @@
       "date": "2026-11-11",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/153442383"
+    },
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153527773"
     }
   ],
   "source": "hiremetech:juniors",

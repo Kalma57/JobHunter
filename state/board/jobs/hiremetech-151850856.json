@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:151850856",
+  "alerts": [
+    "המודעה קטועה",
+    "לא בטוח: ג'וניור ולא מצוין שזו משרת סטודנט או ההיקף; תפקיד משולב Backend ו-DevOps; ניסיון 'עד 2 שנים' חופף חלקית למגבלת שנה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151850856",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח Backend ו-DevOps (TypeScript, Node.js, AWS, CI/CD, אבטחת אפליקציות).",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח Backend בתל אביב; היקף ורמה לא צוינו ולכן עוברת לבדיקת המשתמש"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151850856"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Backend & Dev Ops Engineer",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/151850856",
+  "work_mode": null
+}

@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:152489845",
+  "alerts": [
+    "סתירה בתאריך: 'פורסם היום' מול 1 Nov 2026"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152489845",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ניקיון משרדים ואזורי ייצור בחולון.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "חולון",
+  "not_stated": [
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-01",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "עבודת ניקיון, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון בניקיון"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "6 שעות ביום, משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152489845"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "עובד/ת ניקיון (משרה חלקית)",
+  "url": "https://juniors.hiremetech.com/job/152489845",
+  "work_mode": "משרד"
+}

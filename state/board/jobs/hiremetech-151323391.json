@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:151323391",
+  "alerts": [
+    "המודעה קטועה",
+    "לא כפילות של Software Developer ב-KLA: מיקום שונה (הרצליה מול מגדל העמק)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/151323391",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת תוכנה ג'וניור בהרצליה (C, C++, Python, Java, Linux).",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "0–2 שנים",
+  "first_seen": "2026-11-13",
+  "history": [
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "הרצליה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at",
+    "requirements_must"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "Java"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה מלאה ולא משרת סטודנט"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151323391"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Software Developer",
+  "url": "https://juniors.hiremetech.com/job/151323391",
+  "work_mode": null
+}

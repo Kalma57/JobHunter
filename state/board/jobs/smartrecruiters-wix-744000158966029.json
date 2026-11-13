@@ -18,6 +18,11 @@
       "at": "2026-11-12T07:00:00Z",
       "note": "נמצא ע\"י smartrecruiters:wix",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-13T07:00:00Z",
+      "note": "מועד ההגשה עבר (2026-11-08)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -61,7 +66,7 @@
     }
   ],
   "source": "smartrecruiters:wix",
-  "status": "filtered",
+  "status": "closed",
   "title": "Career Boost Program: Full-Stack AI Marketer - Base44",
   "url": "https://jobs.smartrecruiters.com/Wix2/744000158966029-career-boost-program-full-stack-ai-marketer-base44",
   "work_mode": "משרד"

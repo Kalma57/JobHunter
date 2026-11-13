@@ -1,0 +1,250 @@
+{
+  "after_prefilter": 127,
+  "at": "2026-11-13T07:00:00Z",
+  "backlog": 87,
+  "borderline": [
+    "סטודנט/ית ביחידה לניהול מסלקות, באגף מערכות תשלומים, במחלקת מערכות תשלומים וסליקה (סטודנטים/שעות) — לא כפילות",
+    "Software Developer — לא כפילות",
+    "Software Engineer — לא כפילות",
+    "Assistant Controller — לא כפילות",
+    "Software Engineer — לא כפילות",
+    "סטודנט/ית מדעי המחשב לתפקיד איש/ת NOC בנתניה — כפילות של hiremetech-153442383: אותה כותרת (סטודנט/ית מדעי המחשב לתפקיד איש/ת NOC בנתניה), אותו מיקום ואותו מקור HireMeTech",
+    "מפתח.ת AI ג׳וניור.ית — כפילות של hiremetech-151435112: אותה כותרת (מפתח.ת AI ג׳וניור.ית), אותו מיקום (תל אביב) ואותו מקור",
+    "דרושים.ות תומכ.ת חינוך לגנים ובתי הספר — כפילות של hiremetech-151861712: אותה כותרת (תומכ.ת חינוך לגנים ובתי הספר), עיריית תל אביב-יפו, אותו מיקום"
+  ],
+  "brain_filtered": 32,
+  "candidates": 154,
+  "closed": 1,
+  "compacted": 0,
+  "duplicates_code": 1,
+  "errors": [],
+  "far": 0,
+  "found_new": 39,
+  "kind": "daily",
+  "passed": 4,
+  "prefiltered": [
+    {
+      "company": "אוניברסיטת אריאל",
+      "location": "אריאל",
+      "reason": "תחום אחר (שיווק בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "ראש מדור תקשורת שיווקית (מרקום)",
+      "url": "https://www.drushim.co.il/job/39063376/f97f1c80/"
+    },
+    {
+      "company": "Elad Software",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "בקר/ית NOC - משרת סטודנט",
+      "url": "https://www.drushim.co.il/job/39067157/71d4dd25/"
+    },
+    {
+      "company": "Ness",
+      "location": "לוד",
+      "reason": "תחום אחר (Help Desk בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "תומכ/ת Help Desk",
+      "url": "https://www.drushim.co.il/job/39077018/81126260/"
+    },
+    {
+      "company": "Malam מערכות",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (Help Desk בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "Help Desk junior",
+      "url": "https://www.drushim.co.il/job/39055624/88003294/"
+    },
+    {
+      "company": "בינת סמך",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "נציגי.ות תמיכה טכנית ללקוחות פרטיים ועסקיים בפ\"ת",
+      "url": "https://www.drushim.co.il/job/39024122/f5b0987c/"
+    },
+    {
+      "company": "המכללה האקדמית להנדסה סמי שמעון",
+      "location": "אשדוד",
+      "reason": "תחום אחר (טכנאי בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "טכנאי/ת מעבדות חשמל ואלקטרוניקה, קמפוס אשדוד",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9921660"
+    },
+    {
+      "company": "חסוי — דרך JobMaster",
+      "location": "יבנה",
+      "reason": "תחום אחר (הנדסת מכונות בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "סטודנט/ת להנדסת מכונות",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9921597"
+    },
+    {
+      "company": "המסלול האקדמי המכללה למינהל",
+      "location": "ראשון לציון",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "רכז.ת מרכז קריירה- החלפה לחל\"ד",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9921324"
+    },
+    {
+      "company": "חסוי — דרך JobMaster",
+      "location": "שוהם",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "בקרי/ות NOC ל Data Center בשוהם. ללא ניסיון. סיבוס וקרן השתלמות",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9920415"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "מנחם בגין 13, מגדל ICON, קומה 25, רמת גן, Ramat Gan",
+      "reason": "תחום אחר (Technical Support בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Technical Support Engineer- Student",
+      "url": "https://juniors.hiremetech.com/job/153641422"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "קפלן 23, הקריה, תל אביב-יפו 6473424, ית",
+      "reason": "תחום אחר (ביטחון בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "משרה מס' (126/26): למשרד הביטחון דרוש/ה סטודנט/ית לסיוע ביחידה להגנה על מו\"פ ואמל\"ח",
+      "url": "https://juniors.hiremetech.com/job/153641197"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "יעל מן 1, ביג גלילות, רמת השרון, Haifa",
+      "reason": "תחום אחר (Test Engineer בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Software Test Engineer - Student Position",
+      "url": "https://juniors.hiremetech.com/job/153640361"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "משכית 12, הרצליה פיתוח 4673312, Herzliya",
+      "reason": "דורש תואר מתקדם (Ph.D בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "MS.c/Ph.D Process Engineering Intern, Camera Modules",
+      "url": "https://juniors.hiremetech.com/job/153649208"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "שדרות יצחק הנשיא 100, אשדוד 7710202, Ashdod",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "בקרת חוזי רכש- החלפה לחל\"ד",
+      "url": "https://juniors.hiremetech.com/job/153649112"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Ha-Marpe St 7, Jerusalem, Galway, Ireland",
+      "reason": "תחום אחר (Test Engineer בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Software Test Engineer - Student Position",
+      "url": "https://juniors.hiremetech.com/job/153652290"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "מכון דוד, קריית ים / אזור חיפה (ת.ד. 2250, חיפה 3102102), Haifa",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט.ית לבקרת תשתיות ואכלוס",
+      "url": "https://juniors.hiremetech.com/job/153639373"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Ashdod",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "בקרת חוזי רכש- החלפה לחל\"ד",
+      "url": "https://juniors.hiremetech.com/job/153690645"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "מכון דוד, קריית ים / אזור חיפה (ת.ד. 2250, חיפה 3102102), Haifa",
+      "reason": "תחום אחר (תעשייה וניהול בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט.ית להנדסת תעשייה וניהול",
+      "url": "https://juniors.hiremetech.com/job/153639365"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "נתיב האור 1, חיפה 3508510, Rishon LeZion",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט/ית להנדסת חשמל זרם חזק לאשקלון",
+      "url": "https://juniors.hiremetech.com/job/153546642"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "מכון וינגייט, נתניה, Netanya",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "רפרנט /ית סטודנטים במנהל הסטודנטים למרכז האקדמי לוינסקי-וינגייט",
+      "url": "https://juniors.hiremetech.com/job/153547024"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Kiryat Gat",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Mechanical\\Materials\\Chemical Engineering Student for Intel Kiryat Gat",
+      "url": "https://juniors.hiremetech.com/job/153596376"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "שדרות עבץ 2, אזור התעשייה, קריית גת 82109, Kiryat Gat",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Mechanical\\Materials\\Chemical Engineering Student for Intel Kiryat Gat",
+      "url": "https://juniors.hiremetech.com/job/153546129"
+    },
+    {
+      "company": "Amazon",
+      "location": "Haifa, Haifa, ISR",
+      "reason": "דורש 4+ שנות ניסיון",
+      "source": "amazon:amazon",
+      "title": "Software Development Engineer, AWS Agentic AI",
+      "url": "https://www.amazon.jobs/en/jobs/10602408/software-development-engineer-aws-agentic-ai"
+    },
+    {
+      "company": "Amazon",
+      "location": "Haifa, Haifa, ISR",
+      "reason": "דורש 3+ שנות ניסיון",
+      "source": "amazon:amazon",
+      "title": "Software Development Engineer, AWS Agentic AI",
+      "url": "https://www.amazon.jobs/en/jobs/3147697/software-development-engineer-aws-agentic-ai"
+    },
+    {
+      "company": "Apple",
+      "location": "Jerusalem, Israel",
+      "reason": "תחום אחר (Hardware בשם המשרה)",
+      "source": "apple:apple",
+      "title": "MSc Hardware Engineering Student",
+      "url": "https://jobs.apple.com/en-us/details/200694237-6109/msc-hardware-engineering-student"
+    },
+    {
+      "company": "Apple",
+      "location": "Haifa, Israel",
+      "reason": "תחום אחר (Hardware בשם המשרה)",
+      "source": "apple:apple",
+      "title": "MSc Hardware Engineering Student",
+      "url": "https://jobs.apple.com/en-us/details/200694237-1451/msc-hardware-engineering-student"
+    },
+    {
+      "company": "Apple",
+      "location": "Herzliya, Israel",
+      "reason": "תחום אחר (Hardware בשם המשרה)",
+      "source": "apple:apple",
+      "title": "MSc Hardware Engineering Student",
+      "url": "https://jobs.apple.com/en-us/details/200694237-0865/msc-hardware-engineering-student"
+    }
+  ],
+  "prefiltered_count": 27,
+  "removed": 0,
+  "sources_read": 39,
+  "sources_total": 39,
+  "summary": "4 עברו · 32 סוננו ע\"י המוח · 27 סוננו בקוד · 4 כפילויות · 87 ממתינות",
+  "to_brain": 39,
+  "warnings": []
+}

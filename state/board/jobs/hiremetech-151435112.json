@@ -2,7 +2,8 @@
   "agent_id": "hiremetech:151435112",
   "alerts": [
     "המודעה קטועה",
-    "לא בטוח: האתר מציין Full-time, אך הטקסט המלא מוסתר — ייתכן שאין אפשרות למשרת סטודנט"
+    "לא בטוח: האתר מציין Full-time, אך הטקסט המלא מוסתר — ייתכן שאין אפשרות למשרת סטודנט",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151435112",
@@ -57,6 +58,11 @@
       "date": "2026-11-12",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/151435112"
+    },
+    {
+      "date": "2026-11-13",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/151423431"
     }
   ],
   "source": "hiremetech:juniors",
