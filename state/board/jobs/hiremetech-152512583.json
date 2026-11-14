@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:152512583",
+  "alerts": [
+    "המודעה קטועה",
+    "התגיות של האתר בלבד, ללא טקסט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152512583",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אנליסט מחקר (תגיות: סייבר ענן, למידת מכונה, Python). תפקיד מחקר/אנליזה, לא ברור שהוא פיתוח.",
+  "education": null,
+  "employment": null,
+  "experience": "1–2 שנים",
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "אנליסט מחקר במשרה מלאה עם ניסיון 1–2 שנים, לא משרת סטודנט"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152512583"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Research Analyst",
+  "url": "https://juniors.hiremetech.com/job/152512583",
+  "work_mode": null
+}

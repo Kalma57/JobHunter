@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:152509616",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152509616",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אנליסט סייבר (SIEM, EDR). תפקיד אנליסט ולא פיתוח.",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "אנליסט סייבר במשרה מלאה, לא פיתוח תוכנה ולא משרת סטודנט"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "SIEM",
+    "EDR"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152509616"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Cyber Security Analyst",
+  "url": "https://juniors.hiremetech.com/job/152509616",
+  "work_mode": null
+}

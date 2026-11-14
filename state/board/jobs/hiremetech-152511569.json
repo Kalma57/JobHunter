@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152511569",
+  "alerts": [
+    "המודעה קטועה",
+    "המיקום סותר: ירושלים ובני ברק"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152511569",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "יישום מערכות SAP CRM. תפקיד הטמעה, לא פיתוח תוכנה.",
+  "education": null,
+  "employment": null,
+  "experience": "2–3 שנים",
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "ירושלים / בני ברק",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "ניסיון 2–3 שנים, משרה מלאה, תפקיד הטמעה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "SAP CRM",
+    "SQL"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152511569"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "SAP CRM Implementer",
+  "url": "https://juniors.hiremetech.com/job/152511569",
+  "work_mode": null
+}

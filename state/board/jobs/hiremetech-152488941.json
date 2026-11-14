@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:152488941",
+  "alerts": [
+    "המודעה קטועה",
+    "קורס הכשרה לבוגרים ולא משרת סטודנט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152488941",
+  "company": "קבוצת אמן — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "קורס הכשרה לפיתוח RPG (שפת IBM, מערכות מיינפריים) לבוגרי תואר ראשון.",
+  "education": "בוגר/ת תואר ראשון",
+  "employment": null,
+  "experience": "עד שנה",
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "company": "קבוצת אמן מופיעה בכותרת"
+  },
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש בוגר/ת תואר ראשון (קורס הכשרה), לא משרת סטודנט"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "בוגר/ת תואר ראשון"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152488941"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "בוגר/ת תואר ראשון לקורס פיתוח RPG בקבוצת אמן",
+  "url": "https://juniors.hiremetech.com/job/152488941",
+  "work_mode": null
+}

@@ -1,0 +1,56 @@
+{
+  "after_prefilter": 88,
+  "at": "2026-11-14T07:00:00Z",
+  "backlog": 48,
+  "borderline": [
+    "יועצי/ות מכירה ואחראי/ות משמרת חולון Foot Locker — לא כפילות",
+    "יועצי/ות מכירה ארי אמריקן איגל - גרנד ב\"ש — לא כפילות",
+    "יועצי/ות מכירה ואחראי/ות משמרת ים המלח Foot Locker — לא כפילות"
+  ],
+  "brain_filtered": 40,
+  "candidates": 90,
+  "closed": 1,
+  "compacted": 5,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 521 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 521 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 521 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 521 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 521 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "Marvell: FetchError: HTTP 521 from https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+    "HP: FetchError: HTTP 521 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Cisco: FetchError: HTTP 521 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 521 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Cadence: FetchError: HTTP 521 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs"
+  ],
+  "far": 0,
+  "found_new": 3,
+  "kind": "daily",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "פלאפון",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "משרה היברידית! נציגי.ות שירות ותמיכה לחברת פלאפון",
+      "url": "https://www.drushim.co.il/job/39079032/fec6fc04/"
+    },
+    {
+      "company": "שביט סופטוור (2009)",
+      "location": "תל אביב יפו",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "דרוש/ה רכז./ת הטמעה ותמיכה טכנולוגית למשרת סטודנט זמנית!",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9919325"
+    }
+  ],
+  "prefiltered_count": 2,
+  "removed": 0,
+  "sources_read": 29,
+  "sources_total": 39,
+  "summary": "0 עברו · 40 סוננו ע\"י המוח · 2 סוננו בקוד · 0 כפילויות · 48 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

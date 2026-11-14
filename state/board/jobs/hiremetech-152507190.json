@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:152507190",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152507190",
+  "company": "NIKE — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מכירות בחנות.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "אילת",
+  "not_stated": [
+    "experience",
+    "education",
+    "degree_time",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מכירות, לא פיתוח תוכנה; משרה מלאה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "עבודה בסופי שבוע"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה במשמרות",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152507190"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מוכרנים/ות ואחמ\"שים/ות לNIKE רויאל ביץ' אילת",
+  "url": "https://juniors.hiremetech.com/job/152507190",
+  "work_mode": "בשטח"
+}

@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152060191",
+  "alerts": [
+    "המודעה קטועה",
+    "האתר מציין שהמשרה לא זמינה כרגע"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152060191",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "בקרת איכות ובדיקות ויזואליות בייצור.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "יקנעם",
+  "not_stated": [
+    "work_mode",
+    "experience",
+    "education",
+    "degree_time",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "בקרת איכות בייצור, לא פיתוח תוכנה; יקנעם (צפון); משרה מלאה"
+  },
+  "requirements_adv": [
+    "Excel"
+  ],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152060191"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "QC Inspector",
+  "url": "https://juniors.hiremetech.com/job/152060191",
+  "work_mode": "בשטח"
+}

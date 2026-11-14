@@ -1,0 +1,60 @@
+{
+  "agent_id": "hiremetech:152507191",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152507191",
+  "company": "FOX HOME — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מחסנאי/ת, עבודה פיזית.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "גלילות",
+  "not_stated": [
+    "experience",
+    "education",
+    "degree_time",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לוגיסטיקה, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משמרת בוקר א-ה",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152507191"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מחסנאי/ת FOX HOME גלילות",
+  "url": "https://juniors.hiremetech.com/job/152507191",
+  "work_mode": "בשטח"
+}

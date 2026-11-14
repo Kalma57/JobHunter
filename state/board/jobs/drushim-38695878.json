@@ -1,13 +1,11 @@
 {
   "agent_id": "drushim:38695878",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://www.drushim.co.il/job/38695878/afea7dc9/",
+  "compacted": "2026-11-14",
   "company": "טאואר סמיקונדקטור",
   "deadline": null,
   "degree_time": null,
-  "description": "סטודנט/ית לאחזקת מכונות בקו הייצור של טאואר.",
-  "education": "הנדסאי/ת מכונות / מכטרוניקה / חשמל / אלקטרוניקה",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-14",
@@ -18,27 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "מגדל העמק",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-11",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: אחזקת ציוד, להנדסאים; גם רחוקה (מגדל העמק)."
   },
-  "requirements_adv": [],
-  "requirements_must": [],
   "salary": null,
   "scope": "משמרות",
   "sightings": [

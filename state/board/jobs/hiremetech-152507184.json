@@ -1,0 +1,60 @@
+{
+  "agent_id": "hiremetech:152507184",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152507184",
+  "company": "Foot Locker — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מכירות בחנות.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "קריית אונו",
+  "not_stated": [
+    "experience",
+    "education",
+    "degree_time",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מכירות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משמרות בוקר/ערב, שישי, מוצ\"ש",
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152507184"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "יועצי/ות מכירה ואחראי/ות משמרת מכירה עזריאלי קריית אונו Foot Locker",
+  "url": "https://juniors.hiremetech.com/job/152507184",
+  "work_mode": "בשטח"
+}

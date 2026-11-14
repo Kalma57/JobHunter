@@ -3,13 +3,11 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150643858",
+  "compacted": "2026-11-14",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "סטודנט/ית לסיוע לחטיבת תעשיות קטנות ובינוניות במשרד ממשלתי.",
-  "education": null,
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-14",
@@ -20,28 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": null,
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: סיוע לחטיבה עסקית במשרד ממשלתי."
   },
-  "requirements_adv": [],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

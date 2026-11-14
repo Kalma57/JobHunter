@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:152507180",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152507180",
+  "company": "American Eagle — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מכירות בחנות.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "ראשון לציון",
+  "not_stated": [
+    "scope",
+    "experience",
+    "education",
+    "degree_time",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מכירות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152507180"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "יועצי/ות מכירה אמריקן איגל - ראשון לציון קניון הזהב",
+  "url": "https://juniors.hiremetech.com/job/152507180",
+  "work_mode": "בשטח"
+}

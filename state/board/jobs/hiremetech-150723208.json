@@ -4,13 +4,11 @@
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
     "אוחדה עם משרה דומה — בדוק"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150723208",
+  "compacted": "2026-11-14",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": "לפחות שנתיים לסיום",
-  "description": "סטודנט/ית שמוביל/ה חדשנות בארגון (פרטי הכרטיס בלבד).",
-  "education": null,
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-14",
@@ -21,30 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "אשדוד",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": null,
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד חדשנות ומערכות מידע, לא פיתוח תוכנה (לפי הכרטיס)."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "אנגלית ברמה גבוהה",
-    "ידע במערכות מידע"
-  ],
   "salary": null,
   "scope": "לפחות 3 ימים",
   "sightings": [

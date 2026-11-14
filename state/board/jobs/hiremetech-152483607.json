@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:152483607",
+  "alerts": [
+    "המודעה קטועה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152483607",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עורך/ת דין במחלקת הייטק במשרד עורכי דין.",
+  "education": "תואר במשפטים (משתמע)",
+  "employment": null,
+  "experience": "1–3 שנים",
+  "first_seen": "2026-11-14",
+  "history": [
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "education": "עו\"ד דורש תואר במשפטים"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "degree_time",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-14",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד משפטי, לא פיתוח תוכנה; ניסיון 1–3 שנים"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון במחלקה מסחרית בינלאומית",
+    "אנגלית ברמה גבוהה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-14",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152483607"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "עו\"ד למחלקת הייטק",
+  "url": "https://juniors.hiremetech.com/job/152483607",
+  "work_mode": null
+}

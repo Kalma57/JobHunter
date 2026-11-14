@@ -14,6 +14,11 @@
       "at": "2026-10-10T15:15:11Z",
       "note": "נמצא ע\"י google:google",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-14T07:00:00Z",
+      "note": "מועד ההגשה עבר (2026-11-13)",
+      "status": "closed"
     }
   ],
   "is_job": true,
@@ -38,7 +43,7 @@
     }
   ],
   "source": "google:google",
-  "status": "filtered",
+  "status": "closed",
   "title": "Hardware/Electrical Engineering BS/MS Intern, 2027",
   "url": "https://www.google.com/about/careers/applications/jobs/results/121479339848934086-hardware-electrical-engineering-bs-ms-intern-2027",
   "work_mode": null

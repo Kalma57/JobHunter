@@ -1,13 +1,11 @@
 {
   "agent_id": "jobmaster:9873896",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9873896",
+  "compacted": "2026-11-14",
   "company": "אסם נסטלה",
   "deadline": null,
   "degree_time": null,
-  "description": "לבורנט/ית במעבדת פיתוח מזון.",
-  "education": null,
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-14",
@@ -18,28 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "שוהם",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience"
-  ],
   "notes": "",
   "posted_at": null,
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: מעבדת מזון."
   },
-  "requirements_adv": [],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [
