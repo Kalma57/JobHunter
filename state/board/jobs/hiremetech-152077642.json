@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:152077642",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "סתירה במיקום: קרית גת מול גבעתיים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152077642",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אימות תכנון שבבים (Design Verification), C/C++, חומרה.",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "2-3 שנים",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "קרית גת / גבעתיים (לא ברור)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה מלאה, 2-3 שנות ניסיון, תחום חומרה (VLSI)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152077642"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "VLSI Engineer (SW/DV)",
+  "url": "https://juniors.hiremetech.com/job/152077642",
+  "work_mode": null
+}

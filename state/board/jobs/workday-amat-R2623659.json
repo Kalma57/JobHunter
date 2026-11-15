@@ -16,6 +16,11 @@
       "at": "2026-11-12T07:00:00Z",
       "note": "נמצא ע\"י workday:amat",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-08, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -53,7 +58,7 @@
     }
   ],
   "source": "workday:amat",
-  "status": "filtered",
+  "status": "closed",
   "title": "Application Engineer",
   "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Application-Engineer_R2623659",
   "work_mode": null

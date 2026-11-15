@@ -14,6 +14,11 @@
       "at": "2026-10-14T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-11, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "is_job": true,
@@ -42,7 +47,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "לחברה ממשלתית דרוש/ה סטודנט/ית לענף הנדסה",
   "url": "https://www.drushim.co.il/job/38737070/896b2847/",
   "work_mode": null

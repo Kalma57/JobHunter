@@ -18,6 +18,11 @@
       "at": "2026-11-10T07:00:00Z",
       "note": "נמצא ע\"י workday:hp",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-11, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -67,7 +72,7 @@
     }
   ],
   "source": "workday:hp",
-  "status": "filtered",
+  "status": "closed",
   "title": "Competitive Intelligence Analyst - Student",
   "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Ness-Ziona-Center-District-Israel/Competitive-Intelligence-Analyst---Student_UNI4539-1",
   "work_mode": null

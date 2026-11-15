@@ -26,6 +26,11 @@
       "at": "2026-10-21T15:00:00Z",
       "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-08, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -62,7 +67,7 @@
     }
   ],
   "source": "apple:apple",
-  "status": "filtered",
+  "status": "closed",
   "title": "Low-level Software Engineer, Platform Architecture",
   "url": "https://jobs.apple.com/en-us/details/200687166-0865/low-level-software-engineer-platform-architecture",
   "work_mode": null

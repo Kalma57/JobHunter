@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:153259694",
+  "alerts": [
+    "סתירה במיקום: שוהם מול תל אביב; הטקסט קובע — תל אביב"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153259694",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח דוחות ודשבורדים ומודלי נתונים ב-Qlik Sense מול מחסן נתונים.",
+  "education": "תואר ראשון במדעי המחשב / הנדסה / כלכלה",
+  "employment": "קבועה",
+  "experience": "שנתיים לפחות (חובה)",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-08",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד BI / נתונים, משרה מלאה, שנתיים ניסיון חובה"
+  },
+  "requirements_adv": [
+    "MSSQL",
+    "DWH"
+  ],
+  "requirements_must": [
+    "שנתיים ניסיון ב-Qlik Sense",
+    "תואר ראשון",
+    "פיתוח מודלים מורכבים"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153259694"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מפתח/ת Qlik Sense",
+  "url": "https://juniors.hiremetech.com/job/153259694",
+  "work_mode": "היברידי"
+}

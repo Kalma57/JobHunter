@@ -1,0 +1,63 @@
+{
+  "agent_id": "hiremetech:153266656",
+  "alerts": [
+    "מועמד הכפילות g18 (ZOLL Itamar) — תפקיד דומה אך מיקום וחברה שונים, לא כפילות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153266656",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח אלגוריתמי עיבוד אות ותקשורת (Matlab/Python, FPGA) בחטיבת מערכות טילים וחלל.",
+  "education": "תואר שני בהנדסת חשמל (חובה)",
+  "employment": "קבועה",
+  "experience": "שנתיים לפחות",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "באר יעקב",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-08",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש תואר שני בחשמל, שנתיים ניסיון, משרה מלאה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "תואר שני בהנדסת חשמל",
+    "שנתיים ניסיון בעיבוד אות"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153266656"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Algorithm Engineer",
+  "url": "https://juniors.hiremetech.com/job/153266656",
+  "work_mode": "משרד"
+}

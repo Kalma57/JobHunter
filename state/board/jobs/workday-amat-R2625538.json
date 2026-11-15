@@ -1,0 +1,61 @@
+{
+  "agent_id": "workday:amat:R2625538",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/System-Integration-Engineer_R2625538",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אינטגרציית מערכות חומרה מורכבות (מכניקה, אלקטרוניקה, אופטיקה) לפני משלוח ללקוח, כולל נסיעות להתקנות.",
+  "education": "הנדסאי/ת מכונות / חשמל",
+  "employment": "קבועה",
+  "experience": "0-3 שנים",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-10",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד חומרה / אינטגרציית מערכות, דורש הנדסאי, משרה מלאה — לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "רקע טכני"
+  ],
+  "requirements_must": [
+    "תעודת הנדסאי במכונות / חשמל",
+    "0-3 שנות ניסיון טכני"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/System-Integration-Engineer_R2625538"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "filtered",
+  "title": "System Integration Engineer",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/System-Integration-Engineer_R2625538",
+  "work_mode": "משרד"
+}

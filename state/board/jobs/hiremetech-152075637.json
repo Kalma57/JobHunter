@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:152075637",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152075637",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הייג'ניסט זמני באתר מפעל.",
+  "education": null,
+  "employment": "זמנית",
+  "experience": null,
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "שדרות",
+  "not_stated": [
+    "scope",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד לא קשור לתוכנה (הייג'ניסט במפעל)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152075637"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "הייג'ניסט/ית זמני/ת לאתר אסם נסטלה בשדרות",
+  "url": "https://juniors.hiremetech.com/job/152075637",
+  "work_mode": "בשטח"
+}

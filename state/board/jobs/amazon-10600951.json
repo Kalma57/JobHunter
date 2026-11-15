@@ -1,0 +1,69 @@
+{
+  "agent_id": "amazon:10600951",
+  "alerts": [
+    "מועמדי כפילות מ-HireMeTech הם חסויים, ללא ודאות — לא סומנה ככפילות"
+  ],
+  "apply_instructions": "לצרף גיליון ציונים עם קורות החיים בקובץ PDF אחד",
+  "apply_url": "https://account.amazon.jobs/jobs/10600951/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח תוכנה משובצת (C, Linux) לחומרת רשת של Annapurna Labs ב-AWS, כולל תוכנית הכשרה בהצטרפות.",
+  "education": "B.Sc במדעי המחשב / הנדסת מחשבים / חשמל",
+  "employment": "קבועה",
+  "experience": "לא צוין (תפקיד ג'וניור)",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-10",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "מיקום חיפה (צפון) ותפקיד ג'וניור במשרה מלאה, לא משרת סטודנט"
+  },
+  "requirements_adv": [
+    "ניסיון בפיתוח משובץ",
+    "Linux",
+    "ממשקי HW/SW",
+    "הבנת ארכיטקטורת מחשב"
+  ],
+  "requirements_must": [
+    "B.Sc במדעי המחשב / הנדסת מחשבים / חשמל או קרוב",
+    "ידע בשפת C",
+    "גיליון ציונים בקובץ PDF אחד עם קורות החיים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10600951/embedded-software-engineer"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Embedded Software Engineer",
+  "url": "https://www.amazon.jobs/en/jobs/10600951/embedded-software-engineer",
+  "work_mode": null
+}

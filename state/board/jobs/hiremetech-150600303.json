@@ -4,13 +4,11 @@
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
     "אוחדה עם משרה דומה — בדוק"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150600303",
+  "compacted": "2026-11-15",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "מעצב/ת גרפי/ת לפרסום AVOD / CTV: Photoshop, כלי AI, טיפוגרפיה.",
-  "education": null,
   "employment": null,
   "experience": "2 שנים",
   "first_seen": "2026-10-15",
@@ -21,34 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "ג'וניור"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "employment",
-    "salary",
-    "education",
-    "degree_time"
-  ],
   "notes": "",
   "posted_at": "2026-10-15",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: עיצוב גרפי."
   },
-  "requirements_adv": [
-    "Adobe Photoshop",
-    "AI tools",
-    "SVG",
-    "typography"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": "משרה מלאה",
   "sightings": [

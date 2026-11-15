@@ -1,0 +1,67 @@
+{
+  "agent_id": "lever:mobileye:b1883e14-5a78-4cd4-af6d-f22790187366",
+  "alerts": [
+    "משרה ישנה — פורסמה לפני יותר מ-60 יום"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/b1883e14-5a78-4cd4-af6d-f22790187366/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": null,
+  "description": "וולידציה ברמת מערכת של מערכות משובצות ADAS, בניית סביבות בדיקה, בדיקות ידניות ואוטומטיות.",
+  "education": "B.Sc בהנדסת חשמל / מכונות / מערכות תקשורת",
+  "employment": "קבועה",
+  "experience": "לפחות שנה בוולידציה / QA / אינטגרציה",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "scope",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-07-07",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד QA / וולידציה (לא פיתוח), דורש ניסיון ותואר חשמל/מכונות, לא משרת סטודנט"
+  },
+  "requirements_adv": [
+    "מערכות משובצות",
+    "Jira"
+  ],
+  "requirements_must": [
+    "B.Sc בחשמל / מכונות / תקשורת",
+    "שנת ניסיון לפחות בוולידציה / QA",
+    "Linux",
+    "עברית ואנגלית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/b1883e14-5a78-4cd4-af6d-f22790187366"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "filtered",
+  "title": "Junior Validation & Integration Engineer",
+  "url": "https://jobs.eu.lever.co/mobileye/b1883e14-5a78-4cd4-af6d-f22790187366",
+  "work_mode": "משרד"
+}

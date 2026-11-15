@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:153238168",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "לא בטוח: תפקיד משולב Backend ו-DevOps (גבולי), ולא כתוב אם זו משרת סטודנט או היקף המשרה",
+    "הבדיקה מול hiremetech-151850856 (אותו שם תפקיד, אותה עיר, חברה חסויה בשני הצדדים) — לא הוכח שזו אותה משרה, לכן לא סומנה ככפילות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153238168",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "Backend ו-DevOps (TypeScript, Node.js, PostgreSQL, AWS, Docker).",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח Backend, תל אביב (מרכז); תפקיד DevOps גבולי והיקף לא צוין ולכן עוברת לבדיקתך"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153238168"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Backend & Dev Ops Engineer",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/153238168",
+  "work_mode": null
+}

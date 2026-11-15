@@ -18,6 +18,11 @@
       "at": "2026-11-12T07:00:00Z",
       "note": "נמצא ע\"י lever:mobileye",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-08, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -64,7 +69,7 @@
     }
   ],
   "source": "lever:mobileye",
-  "status": "filtered",
+  "status": "closed",
   "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
   "url": "https://jobs.eu.lever.co/mobileye/be730214-2c22-4acf-aff9-422fb6823f3e",
   "work_mode": null

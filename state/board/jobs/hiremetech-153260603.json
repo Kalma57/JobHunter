@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:153260603",
+  "alerts": [
+    "סתירה במיקום: שוהם מול 'מרכז הארץ'"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153260603",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ציד איומי סייבר בארגון אנטרפרייז: תחקור לוגים, SIEM, EDR.",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "2+ שנים (חובה)",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "שוהם",
+  "not_stated": [
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-08",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "סייבר (לא פיתוח), שנתיים ניסיון חובה, משרה מלאה"
+  },
+  "requirements_adv": [
+    "SOC Tier 2/3",
+    "פורנזיקה",
+    "Python / PowerShell"
+  ],
+  "requirements_must": [
+    "שנתיים ניסיון בתחקור לוגים ווזיהוי פעילות חריגה",
+    "ניסיון ב-SIEM, EDR, Firewalls"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153260603"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Threat Hunter",
+  "url": "https://juniors.hiremetech.com/job/153260603",
+  "work_mode": "משרד"
+}

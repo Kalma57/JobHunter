@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:153201261",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153201261",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "אחות בטיפת חלב.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "location": "מהכותרת; באתר מסומן תל אביב"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "נס ציונה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "סיעוד, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "רישיון אחות מוסמכת"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153201261"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "אח/ות טיפת חלב לנס ציונה",
+  "url": "https://juniors.hiremetech.com/job/153201261",
+  "work_mode": null
+}

@@ -18,6 +18,11 @@
       "at": "2026-10-24T07:00:00Z",
       "note": "נמצא ע\"י workday:marvell",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-11, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -61,7 +66,7 @@
     }
   ],
   "source": "workday:marvell",
-  "status": "filtered",
+  "status": "closed",
   "title": "Design Engineer Intern",
   "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Yokneam/Design-Engineer-Intern_2604491",
   "work_mode": null

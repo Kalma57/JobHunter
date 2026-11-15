@@ -3,13 +3,11 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150580308",
+  "compacted": "2026-11-15",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "איסוף תמונות בעברית; דורש מגורים בישראל ו-iPhone 12 ומעלה.",
-  "education": null,
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-15",
@@ -20,35 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "כניסה לתחום"
   ],
   "location": null,
-  "not_stated": [
-    "location",
-    "work_mode",
-    "scope",
-    "employment",
-    "salary",
-    "experience",
-    "education",
-    "degree_time"
-  ],
   "notes": "",
   "posted_at": "2026-10-15",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "לא פיתוח תוכנה: איסוף תמונות."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "מגורים בישראל",
-    "iPhone 12 ומעלה"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

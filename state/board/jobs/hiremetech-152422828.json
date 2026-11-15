@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:152422828",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "לא בטוח: שם התפקיד כללי והתגיות אוטומטיות (כוללות talent acquisition) — לא ברור אם זה פיתוח תוכנה, ומה היקף המשרה"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/152422828",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תפקיד הנדסי בתחום כרטיסי אשראי עסקיים; התגיות מצביעות על ענן ופיתוח (Python, Java, Go, Kubernetes).",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "Java"
+  ],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "ייתכן פיתוח תוכנה, תל אביב; תפקיד לא ברור ולכן עוברת לבדיקתך"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/152422828"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Engineer (Business Cards)",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/152422828",
+  "work_mode": null
+}

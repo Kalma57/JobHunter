@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:153260916",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153260916",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תרגום מעברית לאנגלית ועריכה והגהה.",
+  "education": null,
+  "employment": "חלקית",
+  "experience": "2+ שנים",
+  "first_seen": "2026-11-15",
+  "history": [
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תרגום, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-15",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153260916"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "דרוש/ה מתרגם/ת למשרה חלקית",
+  "url": "https://juniors.hiremetech.com/job/153260916",
+  "work_mode": null
+}

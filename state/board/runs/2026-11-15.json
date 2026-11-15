@@ -1,0 +1,197 @@
+{
+  "after_prefilter": 64,
+  "at": "2026-11-15T07:00:00Z",
+  "backlog": 24,
+  "borderline": [
+    "Embedded Software Engineer — לא כפילות",
+    "Algorithm Engineer — לא כפילות",
+    "Backend & Dev Ops Engineer — לא כפילות"
+  ],
+  "brain_filtered": 37,
+  "candidates": 85,
+  "closed": 17,
+  "compacted": 9,
+  "duplicates_code": 0,
+  "errors": [],
+  "far": 0,
+  "found_new": 37,
+  "kind": "weekly",
+  "passed": 3,
+  "prefiltered": [
+    {
+      "company": "Nebius",
+      "location": "Israel",
+      "reason": "תחום אחר (Technician בשם המשרה)",
+      "source": "greenhouse:nebius",
+      "title": "Data Center Technician (Early Talent) - Masmiya",
+      "url": "https://careers.nebius.com/?gh_jid=5016255101"
+    },
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Tel Aviv",
+      "reason": "תחום אחר (Chip Design בשם המשרה)",
+      "source": "workday:nvidia",
+      "title": "Senior Chip Design Verification Engineer",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Chip-Design-Verification-Engineer_JR2029755"
+    },
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Yokneam",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "workday:nvidia",
+      "title": "Senior Mechanical Hardware Design Engineer, IC Product",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Mechanical-Hardware-Design-Engineer--IC-Product_JR2029722"
+    },
+    {
+      "company": "Applied Materials",
+      "location": "Rehovot,ISR",
+      "reason": "דורש 8+ שנות ניסיון",
+      "source": "workday:amat",
+      "title": "Computing DevOps engineer",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/Computing-DevOps-engineer_R2633047"
+    },
+    {
+      "company": "Microsoft",
+      "location": "Israel, Tel Aviv, Herzliya",
+      "reason": "משרה בכירה (Senior בשם המשרה)",
+      "source": "eightfold:microsoft",
+      "title": "Senior Data Science",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557041799"
+    },
+    {
+      "company": "Deloitte",
+      "location": "Haifa - MATAM, Haifa",
+      "reason": "דורש 4+ שנות ניסיון",
+      "source": "comeet:deloitte",
+      "title": "AI Software Engineer",
+      "url": "https://careers.deloitte.co.il/position/7e-478-en/?t=1794398549061"
+    },
+    {
+      "company": "Deloitte",
+      "location": "Tel-Aviv, Tel Aviv",
+      "reason": "תחום אחר (Financial בשם המשרה)",
+      "source": "comeet:deloitte",
+      "title": "Financial Consultant/",
+      "url": "https://careers.deloitte.co.il/position/cf-47c-en/"
+    },
+    {
+      "company": "Deloitte",
+      "location": "Tel-Aviv, Tel Aviv",
+      "reason": "משרה בכירה (Lead בשם המשרה)",
+      "source": "comeet:deloitte",
+      "title": "Lead Data Scientist- R&D and Innovation Center",
+      "url": "https://careers.deloitte.co.il/position/bf-47a-en/"
+    },
+    {
+      "company": "בזן -בתי זיקוק בחיפה",
+      "location": "חיפה",
+      "reason": "תחום אחר (הנדסה כימית בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "סטודנט/ית להנדסה כימית/חומרים/סביבה- מקומכם איתנו!",
+      "url": "https://www.drushim.co.il/job/39085226/16896d19/"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "דרך מנחם בגין 132, תל אביב-יפו 6701101, Tel Aviv",
+      "reason": "תחום אחר (Administrative בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Administrative Assistant",
+      "url": "https://juniors.hiremetech.com/job/153820714"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/153806362"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Herzliya",
+      "reason": "תחום אחר (Marketing בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Asst Mgr-Marketing",
+      "url": "https://juniors.hiremetech.com/job/153813989"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/153767420"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/153737207"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "9 Arie Shenkar Street, Herzliya Pituah, Zichron",
+      "reason": "תחום אחר (יועץ בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "יועץ/ת מכירה בחנות (8 שעות בשבוע)",
+      "url": "https://juniors.hiremetech.com/job/153613005"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "נתיב האור 1, פארק מדעי החיים, חיפה 3508510, Haifa",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Mechanical Engineer",
+      "url": "https://juniors.hiremetech.com/job/153611133"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Bangalroe, United States",
+      "reason": "תחום אחר (Customer Success בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Customer Success Specialist",
+      "url": "https://juniors.hiremetech.com/job/153625066"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Beit Shemesh",
+      "reason": "תחום אחר (Operator בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Datacenter Operator",
+      "url": "https://juniors.hiremetech.com/job/153630481"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel aviv",
+      "reason": "תחום אחר (Tester בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Application Penetration Tester",
+      "url": "https://juniors.hiremetech.com/job/153540018"
+    },
+    {
+      "company": "Amazon (Annapurna Labs Ltd.)",
+      "location": "Haifa, Haifa, ISR",
+      "reason": "דורש 5+ שנות ניסיון",
+      "source": "amazon:amazon",
+      "title": "Cloud Software Engineer, Annapurna Labs",
+      "url": "https://www.amazon.jobs/en/jobs/10599438/cloud-software-engineer-annapurna-labs"
+    },
+    {
+      "company": "Apple",
+      "location": "Israel",
+      "reason": "תחום אחר (Design Verification בשם המשרה)",
+      "source": "apple:apple",
+      "title": "Junior Wireless SoC Design Verification Engineer",
+      "url": "https://jobs.apple.com/en-us/details/200694073-0881/junior-wireless-soc-design-verification-engineer"
+    }
+  ],
+  "prefiltered_count": 21,
+  "removed": 9,
+  "sources_read": 39,
+  "sources_total": 39,
+  "summary": "3 עברו · 37 סוננו ע\"י המוח · 21 סוננו בקוד · 0 כפילויות · 24 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

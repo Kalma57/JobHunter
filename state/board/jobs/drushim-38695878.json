@@ -14,6 +14,11 @@
       "at": "2026-10-14T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-15T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-10, לא הופיעה בסריקה השבועית של 2026-11-15)",
+      "status": "closed"
     }
   ],
   "is_job": true,
@@ -37,7 +42,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "Tower Semiconductor מחפשת הנדסאי/ת סטודנט/ית",
   "url": "https://www.drushim.co.il/job/38695878/afea7dc9/",
   "work_mode": null
