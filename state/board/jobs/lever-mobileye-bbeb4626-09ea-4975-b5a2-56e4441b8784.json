@@ -1,0 +1,78 @@
+{
+  "agent_id": "lever:mobileye:bbeb4626-09ea-4975-b5a2-56e4441b8784",
+  "alerts": [
+    "לבדיקה שלך: ירושלים — אזור גבולי",
+    "לבדיקה שלך: דורשת 2-3 סמסטרים לסיום; לפי סיום 2028 נשארו כ-3-4 סמסטרים — חפיפה חלקית",
+    "המשרה מבקשת מדעי המחשב (תואר קרוב — לא פוסל)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/bbeb4626-09ea-4975-b5a2-56e4441b8784/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": "2-3 סמסטרים לסיום",
+  "description": "פיתוח ותחזוקה של אלגוריתמי כיול וגאומטריה חישובית וכלי תשתית פנימיים ב-C++ וב-Python, כולל שימוש בכלי פיתוח מבוססי AI.",
+  "education": "סטודנט/ית B.Sc/M.Sc במדעי המחשב (עדיף עם חטיבה במתמטיקה/פיזיקה/סטטיסטיקה/ביולוגיה)",
+  "employment": null,
+  "experience": "ניסיון מעשי בתכנות C++ ו-Python",
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-10-08",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח אלגוריתמים, 3 ימים בשבוע; ירושלים וזמן הסיום גבוליים"
+  },
+  "requirements_adv": [
+    "Git ו-GitLab",
+    "קורסים/פרויקטים ב-ML ו-DL",
+    "ניסיון עם כלי AI לפיתוח (Cursor, Claude, Copilot)"
+  ],
+  "requirements_must": [
+    "לימודי B.Sc/M.Sc במדעי המחשב",
+    "זמינות של 3 ימים בשבוע לפחות",
+    "2-3 סמסטרים לסיום",
+    "ניסיון מעשי ב-C++ וב-Python",
+    "הבנה בסיסית ב-ML ו-Deep Learning"
+  ],
+  "salary": null,
+  "scope": "לפחות 3 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/bbeb4626-09ea-4975-b5a2-56e4441b8784"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "new",
+  "title": "Algorithm SW Developer Student - Calibration Team",
+  "uncertain": true,
+  "url": "https://jobs.eu.lever.co/mobileye/bbeb4626-09ea-4975-b5a2-56e4441b8784",
+  "work_mode": null
+}

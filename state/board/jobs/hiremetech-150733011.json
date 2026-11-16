@@ -3,13 +3,11 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150733011",
+  "compacted": "2026-11-16",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט/ית בצוות Data & Technology (פרטי הכרטיס בלבד).",
-  "education": null,
   "employment": null,
   "experience": "0+ שנים",
   "far": true,
@@ -26,27 +24,18 @@
       "status": "not_interested"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "חיפה",
   "not_interested_reason": "נמצא בחיפה",
-  "not_stated": [
-    "work_mode",
-    "salary"
-  ],
   "notes": "",
   "posted_at": null,
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "רחוקה — חיפה (צפון). התחום והדרישות לא גלויים בכרטיס."
   },
-  "requirements_adv": [],
-  "requirements_must": [],
   "salary": null,
   "scope": "משרה חלקית",
   "sightings": [

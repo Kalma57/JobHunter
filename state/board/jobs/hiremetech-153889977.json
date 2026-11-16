@@ -1,0 +1,76 @@
+{
+  "agent_id": "hiremetech:153889977",
+  "alerts": [
+    "מפרסם ≠ מעסיק — פורסם ב-HireMeTech, המעסיק לפי הטקסט: NiCE",
+    "סתירה: בטקסט כתוב 'Associate Software Engineer', בכותרת 'Student Software Engineer'"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153889977",
+  "company": "NiCE (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": "שנה אחרונה או בוגרים",
+  "description": "פיתוח פיצ'רים Full Stack בענן AWS לפלטפורמת ניהול כוח אדם של NiCE, עם עבודה יומיומית עם סוכני AI.",
+  "education": "B.Sc/BE במדעי המחשב — בוגרים או סטודנטים בשנה האחרונה, ממוצע 85 לפחות",
+  "employment": null,
+  "experience": "0-1 שנים",
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "כניסה לתחום"
+  ],
+  "location": "רעננה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-16",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "דורשת בוגרים או סטודנטים בשנה האחרונה — אני בשנה ג' מתוך 4"
+  },
+  "requirements_adv": [
+    "פרויקט AI/LLM",
+    "פרויקט גמר / האקתון / קוד פתוח",
+    "ניסיון בסביבות SaaS",
+    "כישורי הובלה"
+  ],
+  "requirements_must": [
+    "B.Sc במדעי המחשב — בוגרים או שנה אחרונה",
+    "ממוצע 85 לפחות",
+    "0-1 שנות ניסיון",
+    "שימוש מעשי בכלי AI לפיתוח",
+    "OOP ו-OOD",
+    "ידע בסיסי ב-client/server",
+    "אנגלית ברמה גבוהה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153889977"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Student Software Engineer",
+  "url": "https://juniors.hiremetech.com/job/153889977",
+  "work_mode": "היברידי"
+}

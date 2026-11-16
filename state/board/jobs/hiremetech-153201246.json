@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:153201246",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "סתירה: האתר מסמן תל אביב, הכותרת אומרת מחוז צפון"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153201246",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "טיפול משפחתי במרפאת התמכרויות.",
+  "education": "הכשרה בטיפול משפחתי",
+  "employment": null,
+  "experience": "2+ שנים",
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "מחוז צפון",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "טיפול / רפואה, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "הכשרה בטיפול משפחתי"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153201246"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מטפל/ת משפחתי/ת למרפאת התמכרויות במחוז צפון",
+  "url": "https://juniors.hiremetech.com/job/153201246",
+  "work_mode": null
+}

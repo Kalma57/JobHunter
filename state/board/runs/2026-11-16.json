@@ -1,0 +1,102 @@
+{
+  "after_prefilter": 43,
+  "at": "2026-11-16T07:00:00Z",
+  "backlog": 3,
+  "borderline": [
+    "Student Software Engineer — לא כפילות",
+    "Internship Software Engineer — לא כפילות",
+    "Software Engineer Intern — לא כפילות",
+    "Software/Firmware Engineering Intern — לא כפילות",
+    "מתאמ/ת שירות רפואי לאלעד — לא כפילות",
+    "System Integration Student, SPIV team — כפילות של amazon-10597527: אותה משרה של Amazon Annapurna Labs (Job ID A10597527) — אותו תפקיד, דרישות ומיקום בחיפה, מפורסמת מחדש ב-HireMeTech",
+    "System Integration Student, SPIV team — כפילות של amazon-10597527: אותה משרה — System Integration Student, SPIV team ב-Amazon Annapurna Labs, מת\"ם חיפה",
+    "HRBP — כפילות של hiremetech-153264529: אותה משרת HRBP באותה כתובת בתל אביב, פורסמה שוב ב-HireMeTech",
+    "דרוש/ה מתרגם/ת למשרה חלקית — כפילות של hiremetech-153260916: אותה משרת מתרגם/ת לחצי משרה באותה כתובת בתל אביב, 2+ שנות ניסיון — פורסמה שוב",
+    "דרוש/ה עו\"ד בתחום הליטיגציה — כפילות של hiremetech-153264534: אותה משרת עו\"ד ליטיגציה בתל אביב, 2-3 שנות ניסיון — פורסמה שוב",
+    "עו\"ד למחלקת מימון ובנקאות — כפילות של hiremetech-153264532: אותה משרת עו\"ד למחלקת מימון ובנקאות בתל אביב — פורסמה שוב",
+    "עו\"ד בתחום ההייטק, הבינלאומי והמיזוגים והרכישות — כפילות של hiremetech-153264530: אותה משרת עו\"ד הייטק, בינלאומי ומיזוגים ורכישות בתל אביב — פורסמה שוב",
+    "HRBP — כפילות של hiremetech-153264529: אותה משרת HRBP בתל אביב (גיוס) — פורסמה שוב",
+    "HRBP — כפילות של hiremetech-153264529: אותה משרת HRBP של משרד גורניצקי באותה כתובת בתל אביב — פורסמה שוב",
+    "Associate – Hi-Tech, Cross-Border And M&A — כפילות של hiremetech-153806356: אותה משרת Associate – Hi-Tech, Cross-Border And M&A בתל אביב, אותן תגיות — פורסמה שוב",
+    "Associate – Hi-Tech, Cross-Border And M&A — כפילות של hiremetech-153806356: אותה משרת Associate – Hi-Tech, Cross-Border And M&A בתל אביב, אותן תגיות — פורסמה שוב"
+  ],
+  "brain_filtered": 24,
+  "candidates": 49,
+  "closed": 0,
+  "compacted": 22,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 429 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "Marvell: FetchError: HTTP 429 from https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Salesforce: FetchError: HTTP 429 from https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 429 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Cadence: FetchError: HTTP 429 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs"
+  ],
+  "far": 1,
+  "found_new": 25,
+  "kind": "daily",
+  "passed": 5,
+  "prefiltered": [
+    {
+      "company": "אוניברסיטת בן גוריון (ראשי)",
+      "location": "באר שבע",
+      "reason": "דורש 5+ שנות ניסיון",
+      "source": "drushim:drushim",
+      "title": "מרכז/ת מחשוב בית הספר להנדסת חשמל ומחשבים",
+      "url": "https://www.drushim.co.il/job/38777673/35ff95ef/"
+    },
+    {
+      "company": "חסוי — דרך דרושים",
+      "location": "רמת גן",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "דרוש/ה רכז/ת מערכות מידע ו- IT",
+      "url": "https://www.drushim.co.il/job/39058132/966f7a9e/"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "מכון דוד, קריית ים / אזור חיפה (ת.ד. 2250, חיפה 3102102), Haifa",
+      "reason": "תחום אחר (פיזיקה בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "סטודנט.ית לפיזיקה",
+      "url": "https://juniors.hiremetech.com/job/153889873"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "המדע 6, פארק תעשייה מורדות הכרמל, יוקנעם עילית 2069203, Yokneam",
+      "reason": "תחום אחר (Physical Design בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Physical Design Intern",
+      "url": "https://juniors.hiremetech.com/job/153832990"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "שדרות הנשיא 77, חיפה, Haifa",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Development position - mechanical engineering student",
+      "url": "https://juniors.hiremetech.com/job/153848575"
+    },
+    {
+      "company": "Amazon (Annapurna Labs Ltd.)",
+      "location": "Tel Aviv-Yafo, Tel Aviv, ISR",
+      "reason": "תחום אחר (Chip Design בשם המשרה)",
+      "source": "amazon:amazon",
+      "title": "Chip Design Student, Graviton Server",
+      "url": "https://www.amazon.jobs/en/jobs/10599709/chip-design-student-graviton-server"
+    }
+  ],
+  "prefiltered_count": 6,
+  "removed": 7,
+  "sources_read": 28,
+  "sources_total": 39,
+  "summary": "5 עברו · 24 סוננו ע\"י המוח · 6 סוננו בקוד · 11 כפילויות · 3 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

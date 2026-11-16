@@ -1,0 +1,83 @@
+{
+  "agent_id": "amazon:10597527",
+  "alerts": [
+    "אוחדה עם משרה דומה — בדוק",
+    "אוחדה עם משרה דומה — בדוק"
+  ],
+  "apply_instructions": "לצרף גיליון ציונים יחד עם קורות החיים בקובץ PDF אחד",
+  "apply_url": "https://account.amazon.jobs/jobs/10597527/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "סטודנט/ית בצוות SPIV בחיפה: פיתוח כלים ואוטומציה ב-Python, Bash ו-AWS לפלטפורמות השבבים K2 ו-Graviton.",
+  "education": "סטודנט/ית B.Sc במדעי המחשב, הנדסת תוכנה או תחום קרוב",
+  "employment": null,
+  "experience": "ניסיון בפייתון ולינוקס (לא צוינו שנים)",
+  "far": true,
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-15",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — חיפה (צפון); שאר הדרישות מתאימות"
+  },
+  "requirements_adv": [
+    "היכרות עם AWS (EC2, Lambda, S3)",
+    "CI/CD ואוטומציה",
+    "Pytest / Jenkins",
+    "סקריפטים ב-Bash",
+    "OOP"
+  ],
+  "requirements_must": [
+    "סטודנט/ית B.Sc במדמ\"ח / הנדסת תוכנה / תחום קרוב, לפחות שנתיים לסיום",
+    "ניסיון ב-Python ובסביבת Linux"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10597527/system-integration-student-spiv-team"
+    },
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153869640"
+    },
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153865978"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "System Integration Student, SPIV team",
+  "url": "https://www.amazon.jobs/en/jobs/10597527/system-integration-student-spiv-team",
+  "work_mode": null
+}

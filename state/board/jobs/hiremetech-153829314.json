@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:153829314",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153829314",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות במשרד עורכי דין (פטנטים, ליטיגציה, קניין רוחני) לפי תגיות האתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "התמחות משפטית (פטנטים, ליטיגציה), לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153829314"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Intern Position",
+  "url": "https://juniors.hiremetech.com/job/153829314",
+  "work_mode": null
+}

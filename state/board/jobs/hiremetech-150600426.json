@@ -4,13 +4,11 @@
     "מפרסם ≠ מעסיק: פורסם ב-HireMeTech; הטקסט מזכיר את רפאל",
     "האתר מתייג 'משרה מלאה' — הטקסט לא מציין היקף"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150600426",
+  "compacted": "2026-11-16",
   "company": "רפאל — דרך HireMeTech",
   "deadline": null,
   "degree_time": "לפחות שנה וחצי לסיום",
-  "description": "פיתוח סימולציה מערכתית ב-C++ וניתוח ב-Matlab/Python, אינטגרציה במעבדות.",
-  "education": "סטודנט/ית לתואר ראשון בהנדסת תוכנה / מדמ\"ח / מערכות מידע",
   "employment": null,
   "experience": null,
   "far": true,
@@ -27,39 +25,18 @@
       "status": "not_interested"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "חיפה",
   "not_interested_reason": "נמצא בחיפה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience",
-    "employment"
-  ],
   "notes": "",
   "posted_at": "2026-10-11",
-  "prefs_down": [
-    "C++"
-  ],
-  "prefs_up": [
-    "Python"
-  ],
   "relevance": {
     "pass": false,
     "reason": "רחוקה — חיפה (אזורי החיפוש: דרום / מרכז). עוברת את כל השאר: משרת סטודנט בפיתוח, שנה וחצי לסיום."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "סטודנט/ית לתואר ראשון בהנדסת תוכנה / מדמ\"ח / מערכות מידע",
-    "לפחות שנה וחצי לסיום",
-    "OOP",
-    "ראייה מערכתית"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:153815199",
+  "alerts": [
+    "מפרסם ≠ מעסיק — פורסם ב-HireMeTech, המעסיק לפי הטקסט: Marriott (W Hotels)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153815199",
+  "company": "W Hotels / Marriott International (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיקוח על משק בית במלון W בהרצליה.",
+  "education": "תעודת בגרות או מקבילה",
+  "employment": null,
+  "experience": "לפחות שנה בתחום ושנה כמפקח/ת",
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "הרצליה",
+  "not_stated": [
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משק בית במלון, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "שנת ניסיון בתחום",
+    "שנת ניסיון כמפקח/ת"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153815199"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Supervisor-Housekeeping",
+  "url": "https://juniors.hiremetech.com/job/153815199",
+  "work_mode": "משרד"
+}

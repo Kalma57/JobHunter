@@ -4,13 +4,11 @@
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
     "סתירה במיקום: הכתובת בתל אביב, העיר מתויגת גבעת שמואל"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150494879",
+  "compacted": "2026-11-16",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "מפתח/ת BI ג'וניור: SQL, Power BI, dbt, Spark, Python, מחסני נתונים.",
-  "education": null,
   "employment": null,
   "experience": "עד שנתיים",
   "first_seen": "2026-10-15",
@@ -26,42 +24,18 @@
       "status": "not_interested"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "ג'וניור"
   ],
   "location": "תל אביב (מגדל שלום, אחד העם 9)",
   "not_interested_reason": "יותר מהנדס נתונים ממהנדס תוכנה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "employment",
-    "salary",
-    "education",
-    "degree_time"
-  ],
   "notes": "",
   "posted_at": "2026-10-14",
-  "prefs_down": [],
-  "prefs_up": [
-    "Python"
-  ],
   "relevance": {
     "pass": false,
     "reason": "רמה: משרת ג'וניור בדאטה/BI, לא משרת סטודנט."
   },
-  "requirements_adv": [
-    "SQL",
-    "Power BI",
-    "dbt",
-    "Spark",
-    "Python",
-    "data warehouse",
-    "עברית",
-    "אנגלית"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

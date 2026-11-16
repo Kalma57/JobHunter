@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:153842749",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "לבדיקה שלך: אין פרטים על היקף, שנה בתואר וטכנולוגיות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153842749",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות בהנדסת תוכנה במגדל אלקטרה, תל אביב; פרטים נוספים מוסתרים באתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "התמחות",
+    "סטודנט"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות בהנדסת תוכנה בתל אביב; שאר דרישות החובה לא צוינו"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153842749"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Software Engineer Intern",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/153842749",
+  "work_mode": null
+}

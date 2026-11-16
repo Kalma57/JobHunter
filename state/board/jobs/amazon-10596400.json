@@ -1,0 +1,68 @@
+{
+  "agent_id": "amazon:10596400",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10596400/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ניתוח ואופטימיזציה של צריכת הספק בשבבי Graviton ו-Nitro, מהארכיטקטורה ועד אחרי הסיליקון.",
+  "education": "B.Sc בהנדסת חשמל או הנדסת מחשבים",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "הנדסת חומרה (הספק בשבבים), לא משרת סטודנט, ובחיפה"
+  },
+  "requirements_adv": [
+    "ניסיון בניתוח הספק, תכן לוגי, Backend, אימות שבבים",
+    "PrimeTime/PrimePower, PowerArtist, Voltus",
+    "C, Python, Tcl"
+  ],
+  "requirements_must": [
+    "B.Sc בהנדסת חשמל או מחשבים",
+    "יכולת פתרון בעיות",
+    "עבודה רב-תחומית בתכן שבבים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10596400/soc-power-engineer-graviton-team"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "SoC Power Engineer, Graviton Team",
+  "url": "https://www.amazon.jobs/en/jobs/10596400/soc-power-engineer-graviton-team",
+  "work_mode": null
+}

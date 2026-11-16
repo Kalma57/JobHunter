@@ -4,13 +4,11 @@
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
     "סתירה במיקום: הכתובת במודיעין, האתר מציין Tel Aviv"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/150960102",
+  "compacted": "2026-11-16",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "סטודנט/ית ב-Business Operations (Customer Success, onboarding).",
-  "education": null,
   "employment": null,
   "experience": null,
   "far": false,
@@ -22,38 +20,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {
-    "posted_at": "'לפני 10 שעות' ביחס לאיסוף ב-16/10 בבוקר"
-  },
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": null,
-  "not_stated": [
-    "location",
-    "work_mode",
-    "scope",
-    "employment",
-    "salary",
-    "experience",
-    "education",
-    "degree_time",
-    "deadline"
-  ],
   "notes": "",
   "posted_at": "2026-10-15",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד: Business Operations, לא פיתוח תוכנה."
   },
-  "requirements_adv": [
-    "אנגלית",
-    "תקשורת"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

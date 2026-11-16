@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:153201240",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153201240",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עבודה סוציאלית טיפולית בבני ברק, החלפה לחופשת לידה.",
+  "education": "רישום בפנקס העובדים הסוציאליים",
+  "employment": "זמנית (החלפה לחופשת לידה)",
+  "experience": null,
+  "first_seen": "2026-11-16",
+  "history": [
+    {
+      "at": "2026-11-16T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "בני ברק",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "עבודה סוציאלית, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "רישום בפנקס העובדים הסוציאליים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-16",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153201240"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "דרוש/ה עובד/ת סוציאלי/ת בבני ברק - החלפה לחל\"ד",
+  "url": "https://juniors.hiremetech.com/job/153201240",
+  "work_mode": null
+}

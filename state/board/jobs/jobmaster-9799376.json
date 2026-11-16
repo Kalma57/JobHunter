@@ -3,13 +3,11 @@
   "alerts": [
     "מפרסם ≠ מעסיק: עבודה דרך חברה מגייסת"
   ],
-  "apply_instructions": null,
   "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9799376",
+  "compacted": "2026-11-16",
   "company": "חסוי — דרך JobMaster",
   "deadline": null,
   "degree_time": null,
-  "description": "רכז/ת פניות סטודנטים במוסד לימודים: שירות טלפוני ומיילים, רישום לקורסים.",
-  "education": null,
   "employment": "דרך חברת כוח אדם",
   "experience": "ניסיון בשירות / עבודה משרדית",
   "far": false,
@@ -21,32 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "כניסה לתחום"
   ],
   "location": "חיפה",
-  "not_stated": [
-    "education",
-    "degree_time",
-    "deadline",
-    "posted_at"
-  ],
   "notes": "",
   "posted_at": null,
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד: שירות לקוחות, לא פיתוח תוכנה."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "ניסיון בשירות / עבודה משרדית",
-    "זמינות לקורס של חודש",
-    "אופיס"
-  ],
   "salary": "39 ₪ לשעה + בונוס (46 ₪ בצהריים)",
   "scope": "משמרות, 3-4 בשבוע אפשרי",
   "sightings": [
