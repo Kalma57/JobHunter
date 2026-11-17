@@ -1,0 +1,70 @@
+{
+  "agent_id": "drushim:38931212",
+  "alerts": [
+    "ONE BPO מפרסמת בשם משרד ממשלתי — המעסיק בפועל לא צוין"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/38931212/74954403/",
+  "company": "ONE BPO",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הטמעת מפות ושרטוטים במערכת GIS ועדכון תוכניות בינוי במשרד ממשלתי.",
+  "education": "הנדסאי/ת אדריכלות או בניין, שרטט/ת, סטודנט/ית לאדריכלות, אדריכל/ית או מהנדס/ת בניין/מכונות + קורס GIS",
+  "employment": null,
+  "experience": "12 חודשים לפחות ב-AutoCAD ו-12 חודשים לפחות ב-GIS",
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-02",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר (GIS/CAD), משרה מלאה ונדרשת שנת ניסיון"
+  },
+  "requirements_adv": [
+    "מפרטי שרטוט מבא\"ת",
+    "SAP",
+    "Revit",
+    "ניסיון ניהולי"
+  ],
+  "requirements_must": [
+    "השכלה באדריכלות / בניין / שרטוט",
+    "קורס GIS",
+    "12 חודשי ניסיון ב-AutoCAD ו-12 ב-GIS",
+    "שליטה ב-Office, CAD ו-ArcGIS/GISPRO"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/38931212/74954403/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "דרוש\\ה מפעיל/ת GIS וCAD במשרד ממשלתי",
+  "url": "https://www.drushim.co.il/job/38931212/74954403/",
+  "work_mode": null
+}

@@ -1,0 +1,71 @@
+{
+  "agent_id": "lever:mobileye:10c70ff9-9def-46ce-9d7e-389c818fd92a",
+  "alerts": [
+    "משרה ישנה — פורסמה ב-19/02/2026, לפני יותר מ-60 יום",
+    "לבדיקה שלך: המשרה מיועדת בעיקר לסטודנטים לתואר שני; סטודנטים לתואר ראשון ייבחנו רק עם הישגים מצוינים",
+    "נדרש ניסיון מעשי בראייה ממוחשבת / ML"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/10c70ff9-9def-46ce-9d7e-389c818fd92a/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח אלגוריתמי ראייה ממוחשבת ולמידה עמוקה (Transformers) לזיהוי נתיבים בנהיגה אוטונומית.",
+  "education": "סטודנט/ית ל-M.Sc במדעי המחשב, הנדסת חשמל או תחום קרוב; סטודנטים מצטיינים ל-B.Sc ייבחנו גם",
+  "employment": "חלקית",
+  "experience": "ניסיון מעשי בפיתוח פתרונות ראייה ממוחשבת / למידת מכונה (חובה, ללא מספר שנים)",
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-02-19",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "AI"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "פיתוח אלגוריתמי AI לסטודנטים ברמת גן; פתוחה גם לסטודנטים מצטיינים לתואר ראשון"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית ל-M.Sc (או B.Sc עם הישגים אקדמיים מצוינים) במדעי המחשב, הנדסת חשמל או תחום קרוב",
+    "ניסיון מעשי בפיתוח ראייה ממוחשבת / ML ב-Python עם PyTorch או TensorFlow",
+    "בסיס חזק באלגוריתמים, מבני נתונים, ראייה ממוחשבת ולמידה עמוקה",
+    "יכולת אנליטית, אחריות ועבודת צוות",
+    "לפחות 2 ימים בשבוע במשרדי רמת גן"
+  ],
+  "salary": null,
+  "scope": "לפחות 2 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/10c70ff9-9def-46ce-9d7e-389c818fd92a"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "new",
+  "title": "M.Sc Student Deep Learning Algorithm Developer",
+  "uncertain": true,
+  "url": "https://jobs.eu.lever.co/mobileye/10c70ff9-9def-46ce-9d7e-389c818fd92a",
+  "work_mode": "משרד"
+}

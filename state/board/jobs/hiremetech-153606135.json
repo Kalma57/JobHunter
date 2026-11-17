@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:153606135",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153606135",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "בקרת איכות ותפעול CNC במודיעין.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"1 day ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "מודיעין",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must",
+    "requirements_adv"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-16",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — תעשייה / בקרת איכות CNC, משרה מלאה ולא משרת סטודנט"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153606135"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "CNC Quality Control",
+  "url": "https://juniors.hiremetech.com/job/153606135",
+  "work_mode": null
+}

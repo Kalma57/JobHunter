@@ -1,0 +1,77 @@
+{
+  "agent_id": "workday:paypal:R0138730",
+  "alerts": [
+    "היקף המשרה לא צוין (המודעה מזכירה רק מודל היברידי כללי של 3 ימים במשרד לרוב העובדים)",
+    "חלק מהתפקיד הוא אוטומציית בדיקות, אבל העיקר פיתוח Backend"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://wd1.myworkdaysite.com/recruiting/paypal/jobs/job/Tel-Aviv-Tel-Aviv-District-Israel/Software-Engineer-Intern_R0138730",
+  "company": "PayPal",
+  "deadline": null,
+  "degree_time": "לפחות 2-3 סמסטרים לסיום התואר",
+  "description": "התמחות בפיתוח Backend ואוטומציית בדיקות בארגון Crypto & Blockchain של PayPal.",
+  "education": "סטודנט/ית למדעי המחשב או תחום קרוב",
+  "employment": null,
+  "experience": "לא נדרש (ניסיון קודם — יתרון)",
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י workday:paypal",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-15",
+  "prefs_down": [],
+  "prefs_up": [
+    "Python",
+    "Java"
+  ],
+  "rank": "high",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות בפיתוח תוכנה בתל אביב, דרישת זמן לסיום מתאימה, Python/Java"
+  },
+  "requirements_adv": [
+    "ניסיון קודם בהנדסת תוכנה",
+    "היכרות עם טכנולוגיות בלוקצ'יין",
+    "ניסיון עם GCP",
+    "ידע במחשוב ענן ומערכות מבוזרות"
+  ],
+  "requirements_must": [
+    "סטודנט/ית למדעי המחשב או תחום קרוב, עם לפחות 2-3 סמסטרים לסיום",
+    "שליטה בשפה אחת לפחות: Python, Java, C++ או C#",
+    "יסודות חזקים במבני נתונים, אלגוריתמים ומערכות הפעלה",
+    "כישורי תקשורת ועבודת צוות",
+    "תחושת אחריות (ownership)"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "workday:paypal",
+      "url": "https://wd1.myworkdaysite.com/recruiting/paypal/jobs/job/Tel-Aviv-Tel-Aviv-District-Israel/Software-Engineer-Intern_R0138730"
+    }
+  ],
+  "source": "workday:paypal",
+  "status": "new",
+  "title": "Software Engineer Intern",
+  "url": "https://wd1.myworkdaysite.com/recruiting/paypal/jobs/job/Tel-Aviv-Tel-Aviv-District-Israel/Software-Engineer-Intern_R0138730",
+  "work_mode": null
+}

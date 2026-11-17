@@ -1,0 +1,70 @@
+{
+  "agent_id": "eightfold:qualcomm:446717394546",
+  "alerts": [],
+  "apply_instructions": "לצרף גיליון ציונים מלא לקורות החיים ולהגשה",
+  "apply_url": "https://careers.qualcomm.com/careers/job/446717394546",
+  "company": "Qualcomm",
+  "deadline": null,
+  "degree_time": "סמסטר 3-5 בתואר",
+  "description": "סטודנט/ית בצוות מערכות המצלמה — פיתוח והערכה של אלגוריתמים לעיבוד וידאו ותמונה.",
+  "education": "סטודנט/ית לתואר ראשון במדעי המחשב, הנדסת חשמל או תחום קרוב",
+  "employment": "חלקית",
+  "experience": null,
+  "far": true,
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י eightfold:qualcomm",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "חיפה",
+  "not_stated": [
+    "salary",
+    "experience",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-16",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "Python"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "רחוקה — המשרה בחיפה (צפון); שאר דרישות החובה מתאימות"
+  },
+  "requirements_adv": [
+    "קורסים בעיבוד אותות, עיבוד תמונה או למידת מכונה",
+    "רקע בעיבוד תמונה וראייה ממוחשבת"
+  ],
+  "requirements_must": [
+    "סטודנט/ית לתואר ראשון בסמסטר 3-5, ממוצע 85 ומעלה",
+    "מדעי המחשב, הנדסת חשמל או תחום קרוב",
+    "ניסיון בתכנות ב-C++, Python ו-Matlab",
+    "זמינות של 2 ימים בשבוע, עבודה מהמשרד בחיפה"
+  ],
+  "salary": null,
+  "scope": "2 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "eightfold:qualcomm",
+      "url": "https://careers.qualcomm.com/careers/job/446717394546"
+    }
+  ],
+  "source": "eightfold:qualcomm",
+  "status": "filtered",
+  "title": "FY27 Intern - Camera Algorithm and Architecture Intern - Haifa",
+  "url": "https://careers.qualcomm.com/careers/job/446717394546",
+  "work_mode": "משרד"
+}

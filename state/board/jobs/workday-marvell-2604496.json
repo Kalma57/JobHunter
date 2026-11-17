@@ -1,0 +1,69 @@
+{
+  "agent_id": "workday:marvell:2604496",
+  "alerts": [
+    "ייתכן שזו אותה משרה כמו hiremetech-153827773 (אותו שם תפקיד, פתח תקווה), אבל שם החברה והדרישות שם מוסתרים — לא סומנה ככפילות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/Software-Firmware-Engineering_2604496",
+  "company": "Marvell",
+  "deadline": null,
+  "degree_time": null,
+  "description": "פיתוח תוכנה Embedded/RT ב-SDK של מתגי Data Center של Marvell, ותשתיות CI/CD.",
+  "education": "סטודנט/ית ל-B.Sc בהנדסת חשמל או מדעי המחשב באחת האוניברסיטאות המובילות",
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י workday:marvell",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "התמחות בפיתוח תוכנה Embedded, לפחות 2 ימים בשבוע, פתח תקווה (מרכז)"
+  },
+  "requirements_adv": [
+    "ידע ב-Networking"
+  ],
+  "requirements_must": [
+    "סטודנט/ית ל-B.Sc בהנדסת חשמל או מדעי המחשב",
+    "זמינות של לפחות 2 ימים בשבוע",
+    "רצון ללמוד",
+    "היכרות עם Linux"
+  ],
+  "salary": null,
+  "scope": "לפחות 2 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "workday:marvell",
+      "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/Software-Firmware-Engineering_2604496"
+    }
+  ],
+  "source": "workday:marvell",
+  "status": "new",
+  "title": "Software/Firmware Engineering Intern",
+  "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/Software-Firmware-Engineering_2604496",
+  "work_mode": null
+}

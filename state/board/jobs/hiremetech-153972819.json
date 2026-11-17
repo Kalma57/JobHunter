@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:153972819",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153972819",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות במחלקה כלכלית (מודלים פיננסיים, הערכות שווי) בתל אביב.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"1h ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט",
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must",
+    "requirements_adv"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-17",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — כלכלה / פיננסים, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153972819"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מתמחה למחלקה הכלכלית בתל אביב",
+  "url": "https://juniors.hiremetech.com/job/153972819",
+  "work_mode": null
+}

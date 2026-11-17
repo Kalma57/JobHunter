@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:153972817",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153972817",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתמחה / רואה חשבון צעיר לחטיבת ייעוץ כלכלי בירושלים.",
+  "education": null,
+  "employment": null,
+  "experience": "עד 2 שנים",
+  "first_seen": "2026-11-17",
+  "history": [
+    {
+      "at": "2026-11-17T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"1h ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות",
+    "ג'וניור"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "requirements_must",
+    "requirements_adv"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-17",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — ראיית חשבון / ייעוץ כלכלי, משרה מלאה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-17",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153972817"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מתמחה שנה ב' / רו\"ח צעיר/ה לחטיבת הייעוץ הכלכלי",
+  "url": "https://juniors.hiremetech.com/job/153972817",
+  "work_mode": null
+}
