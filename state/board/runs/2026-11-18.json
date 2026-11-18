@@ -1,0 +1,53 @@
+{
+  "after_prefilter": 2,
+  "at": "2026-11-18T07:00:00Z",
+  "backlog": 0,
+  "borderline": [],
+  "brain_filtered": 2,
+  "candidates": 4,
+  "closed": 0,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 429 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "Marvell: FetchError: HTTP 429 from https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 429 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Cadence: FetchError: HTTP 429 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=10"
+  ],
+  "far": 0,
+  "found_new": 4,
+  "kind": "daily",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "Payoneer",
+      "location": "Herzliya, Tel Aviv District, Israel",
+      "reason": "תחום אחר (Sales בשם המשרה)",
+      "source": "greenhouse:payoneer",
+      "title": "Mid-Market Sales Specialist",
+      "url": "https://www.payoneer.com/careers/position/8392384/?gh_jid=8392384"
+    },
+    {
+      "company": "Amazon",
+      "location": "Tel Aviv-Yafo, Tel Aviv, ISR",
+      "reason": "דורש 5+ שנות ניסיון",
+      "source": "amazon:amazon",
+      "title": "Software Development Engineer - Shopping Personalization, Amazon Stores",
+      "url": "https://www.amazon.jobs/en/jobs/10570946/software-development-engineer-shopping-personalization-amazon-stores"
+    }
+  ],
+  "prefiltered_count": 2,
+  "removed": 0,
+  "sources_read": 28,
+  "sources_total": 39,
+  "summary": "0 עברו · 2 סוננו ע\"י המוח · 2 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 2,
+  "warnings": []
+}

@@ -1,0 +1,74 @@
+{
+  "agent_id": "lever:mobileye:2aa6daf7-93a0-4053-ae47-6d4d5f6bcebc",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.eu.lever.co/mobileye/2aa6daf7-93a0-4053-ae47-6d4d5f6bcebc/apply",
+  "company": "Mobileye",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "סטודנט/ית לתפעול ולוגיסטיקה בקבוצת NPI של הרדאר: ניהול BOM ורכש רכיבים, תיאום ספקים וקבלני משנה, משלוחים, מעקב תקציב והזמנות רכש ובקשות ב-Jira.",
+  "education": "סטודנט/ית לתואר ראשון בהנדסת תעשייה וניהול או הנדסת חשמל",
+  "employment": null,
+  "experience": "לא נדרש (ניסיון בייצור אלקטרוניקה / NPI / רכש — יתרון)",
+  "first_seen": "2026-11-18",
+  "history": [
+    {
+      "at": "2026-11-18T07:00:00Z",
+      "note": "נמצא ע\"י lever:mobileye",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "Petah Tikva, Israel",
+  "not_stated": [
+    "employment",
+    "salary",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-17",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — תפקיד לוגיסטיקה, רכש ותפעול NPI ולא פיתוח תוכנה (גם דורש תעשייה וניהול / חשמל ו-3.5 ימים בשבוע)"
+  },
+  "requirements_adv": [
+    "ניסיון בייצור אלקטרוניקה, NPI או סביבת ייצור",
+    "היכרות עם ייצור PCB/SMT ורכיבים אלקטרוניים",
+    "ניסיון עם BOM, רכש, ספקים או קבלני משנה",
+    "ניסיון עם Jira, מערכות ERP/רכש או ניהול מלאי",
+    "ניסיון בתיאום לוגיסטיקה ומשלוחים",
+    "Excel מתקדם (Pivot, XLOOKUP/VLOOKUP, דשבורדים)",
+    "ניסיון צבאי בלוגיסטיקה, תפעול או שרשרת אספקה"
+  ],
+  "requirements_must": [
+    "סטודנט/ית ל-B.Sc בהנדסת תעשייה וניהול או הנדסת חשמל, עם לפחות שנתיים לסיום",
+    "זמינות של לפחות 3.5 ימי עבודה בשבוע",
+    "אוריינטציה טכנית והבנה ברכיבים אלקטרוניים, BOM ומעגלים מודפסים (PCB)",
+    "יכולות ארגון, ניהול משימות במקביל ומעקב",
+    "תקשורת טובה מול מהנדסים, ספקים וצוותים שונים",
+    "שליטה טובה ב-Excel",
+    "אנגלית טובה בכתב ובעל פה",
+    "יכולות אנליטיות"
+  ],
+  "salary": null,
+  "scope": "לפחות 3.5 ימים בשבוע מהמשרד",
+  "sightings": [
+    {
+      "date": "2026-11-18",
+      "source": "lever:mobileye",
+      "url": "https://jobs.eu.lever.co/mobileye/2aa6daf7-93a0-4053-ae47-6d4d5f6bcebc"
+    }
+  ],
+  "source": "lever:mobileye",
+  "status": "filtered",
+  "title": "NPI Logistic and Operations Student - Radar",
+  "url": "https://jobs.eu.lever.co/mobileye/2aa6daf7-93a0-4053-ae47-6d4d5f6bcebc",
+  "work_mode": "משרד"
+}

@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:154077232",
+  "alerts": [
+    "סתירה: האתר מציג מיקום 'Israel', אבל הטקסט מתאר ארגון קנדי (Inuvialuit, כתובת ב-Mackenzie Road וטלפון 867) — מיקום המשרה לא כתוב במפורש ולכן null",
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech; המעסיק לפי הטקסט הוא Inuvialuit Regional Corporation",
+    "סתירה: האתר מציג Full-time, הטקסט אומר Casual",
+    "מועד הגשה: Open Until Filled"
+  ],
+  "apply_instructions": "להגיש קו\"ח ומכתב מקדים דרך כפתור Apply for This Job; לציין אם את/ה מוטב/ת של הסכם ה-IFA",
+  "apply_url": "https://juniors.hiremetech.com/job/154077232",
+  "company": "Inuvialuit Regional Corporation (IRC) — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תוכנית עבודת קיץ בתשלום (מאי–סוף אוגוסט 2027) לצעירים בארגון Inuvialuit Regional Corporation ובחברות הבנות שלו בקנדה — עזרה במשימות ובפרויקטים יומיומיים במחלקות שונות.",
+  "education": "גילאי 15-30 שלומדים או מתכננים לחזור לתיכון, מכללה או אוניברסיטה",
+  "employment": "זמנית",
+  "experience": "לא נדרש (ניסיון בעבודה / התנדבות / פרויקט — יתרון)",
+  "first_seen": "2026-11-18",
+  "history": [
+    {
+      "at": "2026-11-18T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": null,
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-18",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — תוכנית עבודת קיץ כללית בארגון קנדי, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון מעבודה, התנדבות או פרויקט בלימודים",
+    "היכרות עם התרבות, הקהילות או השפה של ה-Inuvialuit",
+    "עניין בקריירה עתידית ב-IRC",
+    "עדיפות למוטבי הסכם ה-IFA"
+  ],
+  "requirements_must": [
+    "גיל 15 עד 30",
+    "לומד/ת או מתכנן/ת ללמוד / לחזור לתיכון, מכללה או אוניברסיטה",
+    "בחלק מהשיבוצים: בדיקת רישום פלילי או Vulnerable Sector Check"
+  ],
+  "salary": null,
+  "scope": "Casual (לא צוין מספר ימים / שעות)",
+  "sightings": [
+    {
+      "date": "2026-11-18",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154077232"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Summer Student Program",
+  "url": "https://juniors.hiremetech.com/job/154077232",
+  "work_mode": "משרד"
+}
