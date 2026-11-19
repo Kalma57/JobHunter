@@ -1,0 +1,70 @@
+{
+  "after_prefilter": 0,
+  "at": "2026-11-19T07:00:00Z",
+  "backlog": 0,
+  "borderline": [],
+  "brain_filtered": 0,
+  "candidates": 4,
+  "closed": 0,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 429 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "Marvell: FetchError: HTTP 429 from https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Salesforce: FetchError: HTTP 429 from https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/Israel---Tel-Aviv/Product-Security-Lead_JR368663",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 429 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=0",
+    "HireMeTech: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://juniors.hiremetech.com/jobs-app?view=jobs&sort_by=posted_date&sort_order=desc&page=1\", waiting until \"networkidle\"\n"
+  ],
+  "far": 0,
+  "found_new": 4,
+  "kind": "daily",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "יונילינק",
+      "location": "תל אביב",
+      "reason": "תחום אחר (הנדסת חשמל בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "דרושים סטודנטים להנדסת חשמל!",
+      "url": "https://www.drushim.co.il/job/39141770/8986dd1e/"
+    },
+    {
+      "company": "קבוצת CivilEng",
+      "location": "בת ים, תל אביב, גבעת שמואל",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "לחברה יזמית קבלנית דרוש בקר איכות לפרויקטי בינוי",
+      "url": "https://www.drushim.co.il/job/39138920/f03ee4b8/"
+    },
+    {
+      "company": "Malam Team",
+      "location": "ירושלים",
+      "reason": "תחום אחר (Help Desk בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "Help Desk 24/7 לארגון ביטחוני בירושלים – משמרות גמישות ומתאים גם לסטודנטים.ות",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9926338"
+    },
+    {
+      "company": "חסוי — דרך JobMaster",
+      "location": "גדרה , יבנה",
+      "reason": "תחום אחר (הנדסת מכונות בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "סטודנט/ת להנדסת מכונות",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9926191"
+    }
+  ],
+  "prefiltered_count": 4,
+  "removed": 1,
+  "sources_read": 27,
+  "sources_total": 39,
+  "summary": "0 עברו · 0 סוננו ע\"י המוח · 4 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 0,
+  "warnings": []
+}
