@@ -3,13 +3,11 @@
   "alerts": [
     "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151156473",
+  "compacted": "2026-11-20",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט מנהל/ת תוכניות (Israel Response) בתל אביב. הטקסט המלא זמין רק למשתמשים מחוברים.",
-  "education": null,
   "employment": null,
   "experience": null,
   "far": false,
@@ -21,41 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {
-    "posted_at": "'לפני 2 ימים' מתאריך האיסוף 20/10"
-  },
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "employment",
-    "salary",
-    "experience",
-    "education",
-    "degree_time",
-    "deadline"
-  ],
   "notes": "",
   "posted_at": "2026-10-18",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד: ניהול תוכניות, לא פיתוח תוכנה."
   },
-  "requirements_adv": [
-    "Excel",
-    "Microsoft Office",
-    "monday.com",
-    "Project coordination",
-    "Hebrew",
-    "English"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

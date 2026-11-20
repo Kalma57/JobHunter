@@ -1,0 +1,69 @@
+{
+  "agent_id": "jobmaster:9862370",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9862370",
+  "company": "תומר חברה ממשלתית בע\"מ",
+  "deadline": null,
+  "degree_time": "יתרת לימודים של שנתיים לפחות",
+  "description": "לבורנט/ית במעבדה: בדיקות כימיות ופיזיקליות של חומרים, פיתוח וולידציה של שיטות בדיקה ומחקרי חומרים ותהליכים.",
+  "education": "סטודנט/ית לכימיה / הנדסת כימיה / הנדסת חומרים",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-20",
+  "history": [
+    {
+      "at": "2026-11-20T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "עבודת מעבדה עם מכשור מעבדתי — מתבצעת במקום"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רמלה",
+  "not_stated": [
+    "employment",
+    "salary",
+    "experience",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — עבודת מעבדה לסטודנטים לכימיה / הנדסת כימיה / חומרים, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית לכימיה / הנדסת כימיה / חומרים",
+    "יתרת לימודים של שנתיים לפחות",
+    "זמינות 3 ימים בשבוע לפחות",
+    "ידע בסיסי במחשב ואופיס",
+    "יכולת עבודה עצמאית",
+    "יחסים בינאישיים ועבודת צוות",
+    "עברית ואנגלית ברמה מלאה",
+    "סיווג ביטחוני"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע לפחות",
+  "sightings": [
+    {
+      "date": "2026-11-20",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9862370"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "לחברה ממשלתית דרוש/ה סטודנט/ית לכימיה/הנדסת כימיה/חומרים",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9862370",
+  "work_mode": "משרד"
+}

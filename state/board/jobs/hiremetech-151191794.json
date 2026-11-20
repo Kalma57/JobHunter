@@ -4,13 +4,11 @@
     "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
     "אוחדה עם משרה דומה — בדוק"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151191794",
+  "compacted": "2026-11-20",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט/ית לחומרים/כימיה (עבודות מעבדה), החלפה לחופשת לידה. הטקסט המלא זמין רק למשתמשים מחוברים.",
-  "education": null,
   "employment": "זמנית",
   "experience": null,
   "far": false,
@@ -22,36 +20,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {
-    "posted_at": "'לפני יום' מתאריך האיסוף 20/10"
-  },
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "רמלה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "salary",
-    "experience",
-    "education",
-    "degree_time",
-    "deadline"
-  ],
   "notes": "",
   "posted_at": "2026-10-19",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד: חומרים/כימיה, לא פיתוח תוכנה."
   },
-  "requirements_adv": [
-    "עבודות מעבדה",
-    "Office"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

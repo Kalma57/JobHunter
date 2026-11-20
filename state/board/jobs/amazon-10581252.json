@@ -3,13 +3,11 @@
   "alerts": [
     "סתירה: המיקום תל אביב אבל נדרשת זכות עבודה בספרד"
   ],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10581252/apply",
+  "compacted": "2026-11-20",
   "company": "Amazon (AWS EMEA SARL (Israel Branch))",
   "deadline": null,
   "degree_time": "סיום 2027 או 2028",
-  "description": "התמחות Solutions Architect ב-AWS: תוכנית הכשרה, תכנון פתרונות ענן ו-GenAI ופרויקט אמיתי על AWS.",
-  "education": "שנה לפני אחרונה או אחרונה ב-B.Sc / M.Sc במדעי המחשב / הנדסה, סיום 2027 או 2028",
   "employment": "זמנית",
   "experience": "ניסיון בשפת תכנות מודרנית אחת לפחות",
   "far": false,
@@ -21,7 +19,6 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "job_number": "10581252",
   "level": [
@@ -29,34 +26,12 @@
     "התמחות"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "deadline"
-  ],
   "notes": "",
   "posted_at": "2026-10-16",
-  "prefs_down": [],
-  "prefs_up": [
-    "AI"
-  ],
   "relevance": {
     "pass": false,
     "reason": "היקף: משרה מלאה ל-3/6 חודשים, ותפקיד Solutions Architect ולא פיתוח תוכנה."
   },
-  "requirements_adv": [
-    "רשתות, אבטחה, אחסון, בסיסי נתונים",
-    "מערכות הפעלה",
-    "GenAI / LLM APIs / סוכנים",
-    "ניהול מערכות ורשתות"
-  ],
-  "requirements_must": [
-    "שנה לפני אחרונה / אחרונה בתואר, סיום 2027-2028",
-    "אנגלית ועברית ברמת C1",
-    "שפת תכנות מודרנית אחת לפחות",
-    "זכות עבודה בספרד לתקופת ההתמחות",
-    "הבנה בסיסית במערכות IT / ארכיטקטורה"
-  ],
   "salary": null,
   "scope": "משרה מלאה ל-3 או 6 חודשים במהלך 2027",
   "sightings": [

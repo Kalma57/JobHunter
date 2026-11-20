@@ -1,0 +1,56 @@
+{
+  "after_prefilter": 3,
+  "at": "2026-11-20T07:00:00Z",
+  "backlog": 0,
+  "borderline": [
+    "מנהל/ת פרויקטים טכנולוגיים - מישרת סטודנט/ית — לא כפילות"
+  ],
+  "brain_filtered": 3,
+  "candidates": 5,
+  "closed": 0,
+  "compacted": 22,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 429 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "Marvell: FetchError: HTTP 429 from https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Salesforce: FetchError: HTTP 429 from https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "Cadence: FetchError: HTTP 429 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=22",
+    "HireMeTech: Error: Page.goto: net::ERR_CONNECTION_REFUSED at https://juniors.hiremetech.com/jobs-app?view=jobs&sort_by=posted_date&sort_order=desc&page=19\nCall log:\n  - navigating to \"https://juniors.hiremetech.com/jobs-app?view=jobs&sort_by=posted_date&sort_order=desc&page=19\", waiting until \"networkidle\"\n"
+  ],
+  "far": 0,
+  "found_new": 5,
+  "kind": "daily",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "קורן טק טכנולוגיות",
+      "location": "חיפה",
+      "reason": "תחום אחר (NOC בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "דרוש/ה NOC לחברה צפונית מובילה בתחום התשתיות",
+      "url": "https://www.drushim.co.il/job/39147983/11b3f3e3/"
+    },
+    {
+      "company": "תומר חברה ממשלתית בע\"מ",
+      "location": "רמלה",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "לחברה ממשלתית דרוש/ה סטודנט/ית רכז/ת קב\"מ ספקי הובלה",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9853383"
+    }
+  ],
+  "prefiltered_count": 2,
+  "removed": 6,
+  "sources_read": 27,
+  "sources_total": 39,
+  "summary": "0 עברו · 3 סוננו ע\"י המוח · 2 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 3,
+  "warnings": []
+}

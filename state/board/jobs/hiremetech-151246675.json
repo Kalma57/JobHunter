@@ -3,13 +3,11 @@
   "alerts": [
     "המודעה קטועה — רק פרטי הכרטיס מהרשימה"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151246675",
+  "compacted": "2026-11-20",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט אנליסט/ית SOC בחיפה (SIEM, SOAR, EDR, Firewalls). הטקסט המלא זמין רק למשתמשים מחוברים.",
-  "education": null,
   "employment": null,
   "experience": null,
   "far": false,
@@ -21,42 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {
-    "posted_at": "'לפני 15 שעות' מתאריך האיסוף 20/10"
-  },
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "חיפה",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "employment",
-    "salary",
-    "experience",
-    "education",
-    "degree_time",
-    "deadline"
-  ],
   "notes": "",
   "posted_at": "2026-10-19",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תפקיד: אנליסט/ית SOC (תפעול סייבר), לא פיתוח תוכנה; וגם חיפה (צפון)."
   },
-  "requirements_adv": [
-    "SIEM",
-    "SOAR",
-    "EDR",
-    "DLP",
-    "NAC",
-    "Firewalls",
-    "Linux"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

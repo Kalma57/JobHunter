@@ -1,0 +1,72 @@
+{
+  "agent_id": "jobmaster:9927468",
+  "alerts": [
+    "המודעה נמצאה דרך מילת החיפוש \"סטודנט\", אבל היא לא משרת סטודנט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927468",
+  "company": "מכון פילת מקבוצת היי קפיטל",
+  "deadline": null,
+  "degree_time": null,
+  "description": "גיוס ומיון מועמדים למשרות פיתוח וטכנולוגיה בעמותה לצמצום פערי תעסוקה בהייטק, כולל קשר עם מעסיקים וליווי מועמדים.",
+  "education": null,
+  "employment": null,
+  "experience": "שנתיים לפחות בגיוס טכנולוגי",
+  "first_seen": "2026-11-20",
+  "history": [
+    {
+      "at": "2026-11-20T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "level": "דרישה לשנתיים ניסיון בגיוס — לא משרת סטודנט"
+  },
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "נתניה, אזור תעשייה פולג",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד גיוס (משאבי אנוש), לא פיתוח תוכנה, ודורש שנתיים ניסיון"
+  },
+  "requirements_adv": [
+    "ניסיון בעבודה עם אוכלוסיות בתת-ייצוג",
+    "רשת קשרים בתעשיית ההייטק"
+  ],
+  "requirements_must": [
+    "שנתיים ניסיון לפחות בגיוס טכנולוגי (חברת השמה או הייטק)",
+    "הבנה בתפקידי פיתוח ותוכנה",
+    "כישורי תקשורת בין-אישית מצוינים",
+    "עבודה עצמאית וניהול כמה תהליכים במקביל"
+  ],
+  "salary": null,
+  "scope": "גמיש",
+  "sightings": [
+    {
+      "date": "2026-11-20",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927468"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "דרוש/ה מגייס/ת טכנולוגי/ת",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927468",
+  "work_mode": null
+}

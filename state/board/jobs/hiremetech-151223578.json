@@ -4,13 +4,11 @@
     "המודעה קטועה — רק פרטי הכרטיס מהרשימה",
     "יש משרה דומה מאותו יום (HireMeTech 151225021) — תגיות והיקף שונים, לא אוחדו"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151223578",
+  "compacted": "2026-11-20",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "משרת סטודנט Forward Deployed Engineer בתל אביב (Python, APIs, data systems). הטקסט המלא זמין רק למשתמשים מחוברים.",
-  "education": null,
   "employment": null,
   "experience": null,
   "far": false,
@@ -22,42 +20,18 @@
       "status": "new"
     }
   ],
-  "inferred": {
-    "posted_at": "'לפני 22 שעות' מתאריך האיסוף 20/10"
-  },
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "תל אביב",
-  "not_stated": [
-    "work_mode",
-    "scope",
-    "employment",
-    "salary",
-    "experience",
-    "education",
-    "degree_time",
-    "deadline",
-    "requirements_must"
-  ],
   "notes": "",
   "posted_at": "2026-10-19",
-  "prefs_down": [],
-  "prefs_up": [
-    "Python"
-  ],
   "rank": "high",
   "relevance": {
     "pass": true,
     "reason": "משרת סטודנט בהנדסת תוכנה (FDE, Python) בתל אביב; ההיקף ושאר הפרטים לא צוינו."
   },
-  "requirements_adv": [
-    "Python",
-    "APIs",
-    "Data systems"
-  ],
-  "requirements_must": [],
   "salary": null,
   "scope": null,
   "sightings": [

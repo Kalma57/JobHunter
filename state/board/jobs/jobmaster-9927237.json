@@ -1,0 +1,71 @@
+{
+  "agent_id": "jobmaster:9927237",
+  "alerts": [
+    "דומה למשרה jobmaster-9910992 של אותה חברה (סוננה ב-9/11), אבל הדרישות שונות (ERP/פריוריטי ומערכות מידע מול אקסל/BI) — לא סומנה ככפילות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927237",
+  "company": "מפעיל בע\"מ",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ניהול פרויקטים טכנולוגיים (לוגיסטיקה ותוכנה) בחברת מפעיל טכנולוגיות: גאנט, תיאום מול לקוחות וספקים, יישום והדרכה אצל הלקוח.",
+  "education": "סטודנט/ית שנה רביעית הנדסת תעשייה וניהול (התמחות במערכות מידע) או ניהול מערכות מידע",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-20",
+  "history": [
+    {
+      "at": "2026-11-20T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "פתח תקווה",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד ניהול פרויקטים (לא פיתוח תוכנה) לסטודנטים בשנה ד' בתעשייה וניהול / ניהול מערכות מידע"
+  },
+  "requirements_adv": [
+    "פריוריטי"
+  ],
+  "requirements_must": [
+    "סטודנט/ית שנה ד' הנדסת תעשייה וניהול עם התמחות במערכות מידע, או ניהול מערכות מידע",
+    "שליטה במערכות מידע ניהוליות (ניהול פרויקטים, ERP)",
+    "אנגלית ברמה מעולה",
+    "סדר וארגון",
+    "תקשורת בינאישית מעולה"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-20",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927237"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "מנהל/ת פרויקטים טכנולוגיים - מישרת סטודנט/ית",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927237",
+  "work_mode": null
+}
