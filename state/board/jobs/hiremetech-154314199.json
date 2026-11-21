@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:154314199",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "תפקיד לא ברור: תגיות האתר (attorney, patent, litigation) מרמזות על התמחות בפטנטים — כנראה דומה למשרת GNY (hiremetech-154381951); לבדוק באתר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154314199",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת התמחות בתל אביב; הטקסט המלא מוסתר. לפי תגיות האתר (patent, attorney, litigation) כנראה התמחות בקניין רוחני.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"21h ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב-יפו (הַחָרָש 20)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-20",
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "low",
+  "relevance": {
+    "pass": true,
+    "reason": "המודעה קטועה ואין טקסט להכרעה — עוברת בספק (התגיות מרמזות על משפטים)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154314199"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Intern Position",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/154314199",
+  "work_mode": null
+}

@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:154381951",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech, המעסיק GNY לפי טקסט המודעה"
+  ],
+  "apply_instructions": "לשלוח קו\"ח, גיליון ציונים ומכתב מקדים שמסביר את העניין ב-IP",
+  "apply_url": "https://juniors.hiremetech.com/job/154381951",
+  "company": "GNY (משרד עורכי דין, דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתמחה לעריכת פטנטים (Trainee Patent Attorney) בצוות הקניין הרוחני של משרד עורכי דין.",
+  "education": "תואר ראשון לפחות, עדיף הנדסת מכונות / אווירונאוטיקה / חשמל / פיזיקה; ממוצע 80+ (מכללה 87+)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"Posted today\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — התמחות בעריכת פטנטים (משפטים), דורשת תואר ראשון גמור"
+  },
+  "requirements_adv": [
+    "רקע בהנדסת מכונות, אווירונאוטיקה, חשמל או פיזיקה",
+    "עניין בקניין רוחני"
+  ],
+  "requirements_must": [
+    "תואר B.Sc לפחות",
+    "ממוצע 80 מאוניברסיטה מובילה / 87 ממכללה",
+    "אנגלית ועברית ברמה גבוהה",
+    "יכולת אנליטית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154381951"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Intern Position",
+  "url": "https://juniors.hiremetech.com/job/154381951",
+  "work_mode": "משרד"
+}

@@ -1,0 +1,80 @@
+{
+  "after_prefilter": 11,
+  "at": "2026-11-21T07:00:00Z",
+  "backlog": 0,
+  "borderline": [
+    "Student temporary Position – Lead Management (Maternity Leave Cover) — לא כפילות",
+    "Data Engineer - Entry Level Career Path Leading to Future Employment — לא כפילות"
+  ],
+  "brain_filtered": 8,
+  "candidates": 16,
+  "closed": 0,
+  "compacted": 11,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 429 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "Marvell: FetchError: HTTP 429 from https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Salesforce: FetchError: HTTP 429 from https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/Israel---Tel-Aviv/Product-Security-Lead_JR368663",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 429 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Cadence: FetchError: HTTP 429 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs"
+  ],
+  "far": 0,
+  "found_new": 16,
+  "kind": "daily",
+  "passed": 3,
+  "prefiltered": [
+    {
+      "company": "אלביט מערכות בע\"מ",
+      "location": "נוף הגליל",
+      "reason": "תחום אחר (הנדסת מכונות בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "סטודנט.ית להנדסת מכונות",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9926257"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Rehovot",
+      "reason": "תחום אחר (Industrial Engineer בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Industrial Engineer - Student",
+      "url": "https://juniors.hiremetech.com/job/154272984"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Israel",
+      "reason": "תחום אחר (Operator בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Network Operations Center Operator",
+      "url": "https://juniors.hiremetech.com/job/154246362"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "קפלן 23, הקריה, תל אביב-יפו 6473424, ית",
+      "reason": "תחום אחר (ביטחון בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "משרה מס' (127/26): למשרד הביטחון דרוש/ה סטודנט/ית לסיוע ליחידה לניהול האיכות",
+      "url": "https://juniors.hiremetech.com/job/154117149"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Petah Tikva",
+      "reason": "תחום אחר (Sales בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Sales Development Representative Intern Position",
+      "url": "https://juniors.hiremetech.com/job/154144741"
+    }
+  ],
+  "prefiltered_count": 5,
+  "removed": 1,
+  "sources_read": 28,
+  "sources_total": 39,
+  "summary": "3 עברו · 8 סוננו ע\"י המוח · 5 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 11,
+  "warnings": []
+}

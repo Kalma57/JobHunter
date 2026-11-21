@@ -1,0 +1,66 @@
+{
+  "agent_id": "hiremetech:154162332",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "לא כפילות של hiremetech-154380086 למרות כותרת זהה — המיקום שונה (Northridge, ארה\"ב מול הרצליה)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154162332",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט זמנית במכירות טלפוניות וניהול לידים; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": "זמנית",
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"2 days ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "Northridge, ארה\"ב (חו\"ל)",
+  "not_stated": [
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-19",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — מכירות טלפוניות וניהול לידים, ובנוסף בחו\"ל"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154162332"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Student temporary Position – Lead Management (Maternity Leave Cover)",
+  "url": "https://juniors.hiremetech.com/job/154162332",
+  "work_mode": "משרד"
+}

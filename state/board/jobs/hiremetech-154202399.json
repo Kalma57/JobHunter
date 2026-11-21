@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:154202399",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "סתירה במיקום: \"שחם 32, פתח תקווה, Raanana, Czechia\"",
+    "סתירה ברמה: האתר מתייג Lead, הכותרת Intern"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154202399",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות בשיפור תהליכים (Practical Process Improvement); הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"2 days ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": null,
+  "not_stated": [
+    "location",
+    "work_mode",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-19",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — שיפור תהליכים (תפעול/תעשייה וניהול), לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "חלקית (לפי האתר)",
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154202399"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Intern - PPI (Practical Process Improvement)",
+  "url": "https://juniors.hiremetech.com/job/154202399",
+  "work_mode": null
+}

@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:154214405",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154214405",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התמחות בראיית חשבון למחזור 2028; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"1 day ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "התמחות"
+  ],
+  "location": "תל אביב-יפו (בית אמות BDO, דרך מנחם בגין 48)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-20",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — התמחות בראיית חשבון (Accounting)"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": "$8–$17 לשעה (לפי האתר)",
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154214405"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מתמחים 2028",
+  "url": "https://juniors.hiremetech.com/job/154214405",
+  "work_mode": null
+}

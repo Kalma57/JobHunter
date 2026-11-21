@@ -1,0 +1,70 @@
+{
+  "agent_id": "hiremetech:154241933",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "\"Career Path Leading to Future Employment\" — נראה כמו מסלול הכשרה ולא משרה",
+    "לא כפילות של hiremetech-151979838 (Cybersecurity Specialist) — תפקיד אחר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154241933",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מסלול כניסה לתחום הנדסת נתונים שמוביל להעסקה עתידית; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"1 day ago\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "רמת גן (ז'בוטינסקי 1)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-20",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד מוחרג — הנדסת נתונים (Data Engineer), לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154241933"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Data Engineer - Entry Level Career Path Leading to Future Employment",
+  "url": "https://juniors.hiremetech.com/job/154241933",
+  "work_mode": null
+}

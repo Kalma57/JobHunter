@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:154384068",
+  "alerts": [
+    "מיקום גבולי: המיקום הראשי חיפה (צפון), אבל מופיע גם TLV כמיקום נוסף — לבדוק אם אפשר לעבוד מתל אביב",
+    "תפקיד גבולי: Engineering Compute קרוב לתשתיות/IT, אבל המודעה מדברת על פיתוח פתרונות וכתיבת קוד",
+    "החברה חסויה (פורסם דרך HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154384068",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכה בצוות פיתוח מוליכים למחצה בתחום ה-Engineering Compute: פיתוח פתרונות לניטור וניהול משאבים ואינטראקציה עם משתמשים.",
+  "education": "סטודנט/ית לתואר ראשון במדעי המחשב או הנדסה",
+  "employment": "זמנית",
+  "experience": null,
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "new"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"Posted today\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "חיפה (מיקום נוסף: תל אביב)",
+  "not_stated": [
+    "salary",
+    "experience",
+    "degree_time",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט חלקית לפיתוח כלים — עוברת בספק בגלל מיקום (חיפה/ת\"א) ותפקיד גבולי"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "לומד/ת לתואר B.Sc במדעי המחשב או הנדסה",
+    "הבנה של איך מחשבים עובדים ברמה הנדסית ורצון לכתוב קוד",
+    "יוזמה ולמידה עצמית",
+    "יכולת תקשורת ותודעת שירות"
+  ],
+  "salary": null,
+  "scope": "חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154384068"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "new",
+  "title": "Engineering Compute student",
+  "uncertain": true,
+  "url": "https://juniors.hiremetech.com/job/154384068",
+  "work_mode": "משרד"
+}

@@ -1,0 +1,69 @@
+{
+  "agent_id": "hiremetech:154380086",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ב-HireMeTech, שם המעסיק MiniMed מופיע בטקסט המודעה",
+    "סתירה: האתר מציין Full-time, הטקסט אומר משרה חלקית — הטקסט קובע"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154380086",
+  "company": "MiniMed (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "משרת סטודנט זמנית (החלפת חופשת לידה) במכירות טלפוניות וניהול לידים מקמפיינים ברשתות חברתיות.",
+  "education": "סטודנט/ית פעיל/ה בתוכנית אקדמית",
+  "employment": "זמנית",
+  "experience": "לא נדרש (ניסיון במכירות טלפוניות — יתרון)",
+  "first_seen": "2026-11-21",
+  "history": [
+    {
+      "at": "2026-11-21T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "\"Posted today\" לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "הרצליה",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — מכירות טלפוניות וניהול לידים, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון במכירות טלפוניות"
+  ],
+  "requirements_must": [
+    "סטודנט/ית פעיל/ה",
+    "שליטה ב-Office",
+    "זמינות ל-3-4 ימים בשבוע",
+    "אוריינטציית שירות ועבודת צוות"
+  ],
+  "salary": null,
+  "scope": "חלקית, 3-4 ימים בשבוע",
+  "sightings": [
+    {
+      "date": "2026-11-21",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154380086"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Student temporary Position – Lead Management (Maternity Leave Cover)",
+  "url": "https://juniors.hiremetech.com/job/154380086",
+  "work_mode": "משרד"
+}
