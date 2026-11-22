@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:154448713",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154448713",
+  "company": "טמפו משקאות (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מלגזן/ת באתר טמפו ברמלה; נדרש רישיון מלגזה בתוקף.",
+  "education": null,
+  "employment": null,
+  "experience": "1+ שנים",
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'1h ago' לפי תאריך האיסוף",
+    "work_mode": "עבודה במחסן"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "רמלה",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: לוגיסטיקה / מלגזה — לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "רישיון מלגזה בתוקף"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154448713"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מלגזן/ת לטמפו משקאות אתר רמלה",
+  "url": "https://juniors.hiremetech.com/job/154448713",
+  "work_mode": "בשטח"
+}

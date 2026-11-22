@@ -20,6 +20,11 @@
       "at": "2026-11-16T07:00:00Z",
       "note": "נמצא ע\"י lever:mobileye",
       "status": "new"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-16, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -70,7 +75,7 @@
     }
   ],
   "source": "lever:mobileye",
-  "status": "new",
+  "status": "closed",
   "title": "Algorithm SW Developer Student - Calibration Team",
   "uncertain": true,
   "url": "https://jobs.eu.lever.co/mobileye/bbeb4626-09ea-4975-b5a2-56e4441b8784",

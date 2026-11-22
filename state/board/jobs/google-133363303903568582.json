@@ -16,6 +16,11 @@
       "at": "2026-10-24T07:00:00Z",
       "note": "נמצא ע\"י google:google",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-15, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -55,7 +60,7 @@
     }
   ],
   "source": "google:google",
-  "status": "filtered",
+  "status": "closed",
   "title": "Junior AI SoC Design Verification Engineer, Google Cloud",
   "url": "https://www.google.com/about/careers/applications/jobs/results/133363303903568582-junior-ai-soc-design-verification-engineer-google-cloud",
   "work_mode": null

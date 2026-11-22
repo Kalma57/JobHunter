@@ -1,0 +1,71 @@
+{
+  "agent_id": "hiremetech:154447968",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154447968",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מפתח/ת Full Stack ב-C#, React ו-AWS; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "ניסיון ב-C# ו-React (לפי הכותרת)",
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'2h ago' לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "רמת גן",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [
+    "C#"
+  ],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרת ג'וניור שדורשת ניסיון ב-C# ו-React — לא משרת סטודנט"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון ב-C#",
+    "ניסיון ב-React"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154447968"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מפתח/ת Full Stack - ניסיון ב #C ו React",
+  "url": "https://juniors.hiremetech.com/job/154447968",
+  "work_mode": null
+}

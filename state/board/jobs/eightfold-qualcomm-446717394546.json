@@ -17,6 +17,16 @@
       "at": "2026-11-17T07:00:00Z",
       "note": "נמצא ע\"י eightfold:qualcomm",
       "status": "filtered"
+    },
+    {
+      "at": "2026-10-16T06:13:56.765Z",
+      "note": "נמצא בחיפה",
+      "status": "not_interested"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-18, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -63,7 +73,7 @@
     }
   ],
   "source": "eightfold:qualcomm",
-  "status": "filtered",
+  "status": "closed",
   "title": "FY27 Intern - Camera Algorithm and Architecture Intern - Haifa",
   "url": "https://careers.qualcomm.com/careers/job/446717394546",
   "work_mode": "משרד"

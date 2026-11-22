@@ -18,6 +18,11 @@
       "at": "2026-11-15T07:00:00Z",
       "note": "נמצא ע\"י amazon:amazon",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-15, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -62,7 +67,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "filtered",
+  "status": "closed",
   "title": "Embedded Software Engineer",
   "url": "https://www.amazon.jobs/en/jobs/10600951/embedded-software-engineer",
   "work_mode": null

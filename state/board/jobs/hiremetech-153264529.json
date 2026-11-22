@@ -4,6 +4,7 @@
     "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
     "אוחדה עם משרה דומה — בדוק",
     "אוחדה עם משרה דומה — בדוק",
+    "אוחדה עם משרה דומה — בדוק",
     "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
@@ -72,6 +73,11 @@
       "date": "2026-11-16",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/153809772"
+    },
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154447282"
     }
   ],
   "source": "hiremetech:juniors",

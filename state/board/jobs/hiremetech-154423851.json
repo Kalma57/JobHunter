@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:154423851",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154423851",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת לקוח בתחזוקת ציוד (שרטוטים חשמליים ומכניים, פנאומטיקה, הידראוליקה, ואקום); הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "1+ שנים",
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'14h ago' לפי תאריך האיסוף",
+    "work_mode": "עבודה עם כלי עבודה על ציוד"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "קריית גת",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: תחזוקת ציוד אלקטרו-מכני, 1+ שנות ניסיון"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154423851"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Costumer Engineer (i Team)",
+  "url": "https://juniors.hiremetech.com/job/154423851",
+  "work_mode": "בשטח"
+}

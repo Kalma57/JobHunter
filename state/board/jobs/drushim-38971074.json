@@ -18,6 +18,11 @@
       "at": "2026-11-11T07:00:00Z",
       "note": "נמצא ע\"י drushim:drushim",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-17, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -55,7 +60,7 @@
     }
   ],
   "source": "drushim:drushim",
-  "status": "filtered",
+  "status": "closed",
   "title": "רכז/ת פרויקטים ותפעול",
   "url": "https://www.drushim.co.il/job/38971074/e92a3269/",
   "work_mode": null

@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:154417529",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "סתירה במיקום: הכותרת אומרת יבנה, האתר מציג רמת גן / באר שבע"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154417529",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "יועצת יופי בסניף סופר-פארם; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": "שעתי",
+  "experience": null,
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "employment": "היקף בשעות ומשמרות",
+    "posted_at": "'20h ago' לפי תאריך האיסוף",
+    "work_mode": "עבודה בסניף"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "יבנה (לפי הכותרת)",
+  "not_stated": [
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: מכירות וייעוץ בחנות — לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "103 שעות, משמרות וסופי שבוע",
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154417529"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "יועצת יופי ס.פ יבנה הקישון 103 שעות",
+  "url": "https://juniors.hiremetech.com/job/154417529",
+  "work_mode": "משרד"
+}

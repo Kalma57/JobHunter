@@ -3,7 +3,8 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
     "האתר מתייג Full-time — אם זו משרה מלאה היא נפסלת; לבדוק",
-    "תפקיד גבולי: Project Analyst — לא ברור אם זה פיתוח; תגיות Go/Python מרמזות על עבודה טכנית"
+    "תפקיד גבולי: Project Analyst — לא ברור אם זה פיתוח; תגיות Go/Python מרמזות על עבודה טכנית",
+    "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/154193473",
@@ -63,6 +64,11 @@
       "date": "2026-11-21",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/154193473"
+    },
+    {
+      "date": "2026-11-22",
+      "source": "workday:marvell",
+      "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Petah-Tikva/Associate-Project-Analyst-Professional--student-position_2605309"
     }
   ],
   "source": "hiremetech:juniors",

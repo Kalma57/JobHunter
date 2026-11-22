@@ -31,6 +31,11 @@
       "at": "2026-10-21T15:00:00Z",
       "note": "נפתחה מחדש — הסגירה מ-20/10 הייתה שגויה (סריקה שבועית שלא רצה ביום ראשון)",
       "status": "not_interested"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-15, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "is_job": true,
@@ -55,7 +60,7 @@
     }
   ],
   "source": "amazon:amazon",
-  "status": "not_interested",
+  "status": "closed",
   "title": "Embedded Software Engineer",
   "url": "https://www.amazon.jobs/en/jobs/10458621/embedded-software-engineer",
   "work_mode": null

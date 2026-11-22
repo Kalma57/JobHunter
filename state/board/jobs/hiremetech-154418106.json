@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:154418106",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154418106",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עובד/ת בלבוי במלון; הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'19h ago' לפי תאריך האיסוף",
+    "work_mode": "עבודה במלון"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: שירות במלונאות — לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154418106"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Bellperson",
+  "url": "https://juniors.hiremetech.com/job/154418106",
+  "work_mode": "בשטח"
+}

@@ -1,0 +1,67 @@
+{
+  "agent_id": "hiremetech:154447759",
+  "alerts": [
+    "מפרסם ≠ מעסיק: HireMeTech, המעסיק אלתא (תע\"א) לפי הטקסט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154447759",
+  "company": "התעשייה האווירית — אלתא (דרך HireMeTech)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת מערכות להגדרה ותכנון מערכות אימון למטוסי משימה באלתא, כולל סקירות לקוח ונסיעות לחו\"ל.",
+  "education": "תואר ראשון בהנדסה (חובה); מדעי המחשב או הנדסת מערכות — יתרון",
+  "employment": null,
+  "experience": "ניסיון במערכות אימון / סימולטורים — יתרון",
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "אשדוד",
+  "not_stated": [
+    "employment",
+    "salary",
+    "degree_time",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרה מלאה לג'וניור שדורשת תואר הנדסה גמור — לא משרת סטודנט"
+  },
+  "requirements_adv": [
+    "תואר במדעי המחשב או הנדסת מערכות",
+    "ניסיון במערכות אימון / סימולטורים",
+    "רקע בתוכנה",
+    "היכרות עם כלי ניהול דרישות ובדיקות"
+  ],
+  "requirements_must": [
+    "תואר ראשון בהנדסה"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154447759"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Training Systems Engineer",
+  "url": "https://juniors.hiremetech.com/job/154447759",
+  "work_mode": "משרד"
+}

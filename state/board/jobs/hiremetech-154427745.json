@@ -1,0 +1,68 @@
+{
+  "agent_id": "hiremetech:154427745",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא זמין רק למשתמשים מחוברים",
+    "מודעה בגרמנית — המיקום בישראל כנראה שגוי"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154427745",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "עוזר/ת רוקחות (PTA) — מודעה בגרמנית; הטקסט המלא מוסתר.",
+  "education": "הסמכת PTA (עוזר/ת רוקחות)",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "posted_at": "'13h ago' לפי תאריך האיסוף"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "עין חוד (לפי האתר)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "requirements_must",
+    "requirements_adv",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-21",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: רוקחות — לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154427745"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "PTA (m/w/d) gesucht",
+  "url": "https://juniors.hiremetech.com/job/154427745",
+  "work_mode": null
+}

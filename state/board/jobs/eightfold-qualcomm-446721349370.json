@@ -16,6 +16,11 @@
       "at": "2026-10-10T15:15:11Z",
       "note": "נמצא ע\"י eightfold:qualcomm",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-18, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "is_job": true,
@@ -39,7 +44,7 @@
     }
   ],
   "source": "eightfold:qualcomm",
-  "status": "filtered",
+  "status": "closed",
   "title": "FY27 - AI Driven Test Automation Engineering Intern",
   "url": "https://careers.qualcomm.com/careers/job/446721349370",
   "work_mode": "משרד"

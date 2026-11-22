@@ -1,0 +1,65 @@
+{
+  "agent_id": "workday:amat:R2614690",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/PWP-reaserch-Student_R2614690",
+  "company": "Applied Materials",
+  "deadline": null,
+  "degree_time": "לפחות שנה וחצי לסיום",
+  "description": "עוזר/ת מעבדה בבדיקות חומרים וזיהום חלקיקים: ציפוי והכנת פרוסות, עבודה בחדר נקי ובמעבדת כימיה רטובה, ניתוח נתונים ודוחות.",
+  "education": "סטודנט/ית או B.Sc בכימיה, פיזיקה, מדע חומרים או הנדסה כימית",
+  "employment": "חלקית",
+  "experience": "ניסיון במעבדה — יתרון",
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י workday:amat",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "עבודה בחדר נקי ובמעבדות — מחייב נוכחות"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "salary",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-15",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר: עבודת מעבדה בכימיה/חומרים, דורש תואר בכימיה/פיזיקה — לא תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון בעבודת מעבדה",
+    "ניסיון בניתוח נתונים וסטטיסטיקה"
+  ],
+  "requirements_must": [
+    "סטודנט/ית או תואר בכימיה, פיזיקה, מדע חומרים או הנדסה כימית",
+    "לפחות 1.5 שנים לסיום התואר",
+    "זמינות של כ-2-3 ימים בשבוע"
+  ],
+  "salary": null,
+  "scope": "כ-2-3 ימים בשבוע (חלקית)",
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "workday:amat",
+      "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/PWP-reaserch-Student_R2614690"
+    }
+  ],
+  "source": "workday:amat",
+  "status": "filtered",
+  "title": "Student Lab Assistant",
+  "url": "https://amat.wd1.myworkdayjobs.com/External/job/RehovotISR/PWP-reaserch-Student_R2614690",
+  "work_mode": "משרד"
+}

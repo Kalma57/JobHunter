@@ -20,6 +20,11 @@
       "at": "2026-11-16T07:00:00Z",
       "note": "נמצא ע\"י lever:mobileye",
       "status": "new"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-16, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -66,7 +71,7 @@
     }
   ],
   "source": "lever:mobileye",
-  "status": "new",
+  "status": "closed",
   "title": "Algorithm Developer Student",
   "uncertain": true,
   "url": "https://jobs.eu.lever.co/mobileye/0ea9583a-7cee-48d2-91b7-efaa08725de2",

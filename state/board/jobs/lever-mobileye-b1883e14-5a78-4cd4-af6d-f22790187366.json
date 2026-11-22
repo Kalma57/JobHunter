@@ -18,6 +18,11 @@
       "at": "2026-11-15T07:00:00Z",
       "note": "נמצא ע\"י lever:mobileye",
       "status": "filtered"
+    },
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "ירדה מאתר החברה (נראתה לאחרונה 2026-11-15, לא הופיעה בסריקה השבועית של 2026-11-22)",
+      "status": "closed"
     }
   ],
   "inferred": {},
@@ -60,7 +65,7 @@
     }
   ],
   "source": "lever:mobileye",
-  "status": "filtered",
+  "status": "closed",
   "title": "Junior Validation & Integration Engineer",
   "url": "https://jobs.eu.lever.co/mobileye/b1883e14-5a78-4cd4-af6d-f22790187366",
   "work_mode": "משרד"

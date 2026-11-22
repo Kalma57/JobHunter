@@ -1,0 +1,233 @@
+{
+  "after_prefilter": 62,
+  "at": "2026-11-22T07:00:00Z",
+  "backlog": 22,
+  "borderline": [
+    "Verification Engineer — לא כפילות",
+    "System Engineer — לא כפילות",
+    "Forward Deployed AI Engineer — לא כפילות",
+    "Beauty Advisor/Artist Beauty Advisor — לא כפילות",
+    "Associate Project Analyst Professional- student position — כפילות של hiremetech-154193473: אותה משרה (Associate Project Analyst Professional- student position, פתח תקווה, פורסמה 19/11) — כאן הטקסט המלא של Marvell: דורשים סטודנטים שנה ב' להנדסת תעשייה וניהול, כלומר המשרה בלוח כנראה לא מתאימה",
+    "עו\"ד למחלקת מימון ובנקאות — כפילות של hiremetech-153264532: פרסום חוזר של אותה משרה: אותה כותרת (עו\"ד למחלקת מימון ובנקאות), אותו משרד ברחוב החרש 20 בתל אביב",
+    "עו\"ד בתחום ההייטק, הבינלאומי והמיזוגים והרכישות — כפילות של hiremetech-153264530: פרסום חוזר של אותה משרה: אותה כותרת, אותן תגיות (1+ שנים, מיזוגים ורכישות, רוסית) ואותו משרד ברחוב החרש 20",
+    "HRBP — כפילות של hiremetech-153264529: פרסום חוזר של אותה משרה: HRBP באותו משרד ברחוב החרש 20, תל אביב (כבר אוחדו בלוח כמה פרסומים שלה)",
+    "דרוש/ה מתרגם/ת למשרה חלקית — כפילות של hiremetech-153260916: פרסום חוזר של אותה משרה: מתרגם/ת למשרה חלקית, 2+ שנים, אותו משרד ברחוב החרש 20",
+    "עו\"ד למחלקת מימון ובנקאות — כפילות של hiremetech-153264532: פרסום חוזר של אותה משרה: עו\"ד למחלקת מימון ובנקאות, אותו משרד ברחוב החרש 20",
+    "עו\"ד בתחום ההייטק, הבינלאומי והמיזוגים והרכישות — כפילות של hiremetech-153264530: פרסום חוזר של אותה משרה: אותה כותרת ותגיות (מיזוגים ורכישות, 1+ שנים), אותו משרד ברחוב החרש 20",
+    "Associate – Hi-Tech, Cross-Border And M&A — כפילות של hiremetech-153806356: פרסום חוזר של אותה משרה: Associate – Hi-Tech, Cross-Border And M&A, אותו משרד ברחוב החרש 20 (כבר אוחדו בלוח פרסומים קודמים)"
+  ],
+  "brain_filtered": 32,
+  "candidates": 85,
+  "closed": 14,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/SoC-Clocks-Design-Automation-Engineer_JR2029866",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Salesforce: FetchError: HTTP 429 from https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 429 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Cadence: FetchError: HTTP 429 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=0"
+  ],
+  "far": 0,
+  "found_new": 85,
+  "kind": "weekly",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaYozma Street 3, Tirat Carmel, Beer Yaakov",
+      "reason": "תחום אחר (Electronics בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Electronics NPI Engineer",
+      "url": "https://juniors.hiremetech.com/job/154449864"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Or Yehuda",
+      "reason": "תחום אחר (Talent Acquisition בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Talent Acquisition",
+      "url": "https://juniors.hiremetech.com/job/154449690"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaMa'ayan St 55, Modi'in-Maccabim-Re'ut 7177871, Israel, Ashdod",
+      "reason": "תחום אחר (נציג בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "נציג.ת שירות רפואה משלימה",
+      "url": "https://juniors.hiremetech.com/job/154449630"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/154449358"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "מנחם בגין 11, מגדל תדהר, רמת גן 5268104, השרון",
+      "reason": "משרה בכירה (מנהל בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "מנהל/ת מוצר AI ותהליכים",
+      "url": "https://juniors.hiremetech.com/job/154448792"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "יגאל אלון 110, בית בלושטיין, תל אביב-יפו 6789149, Tel Aviv",
+      "reason": "תחום אחר (טכנאי בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "טכנאי דרג ב סלולר חברה בטחונית",
+      "url": "https://juniors.hiremetech.com/job/154448787"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "הפנינה 7, פארק אינפיניטי, רעננה 4310302, אזור השפלה",
+      "reason": "תחום אחר (NOC בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "איש/ אשת NOC",
+      "url": "https://juniors.hiremetech.com/job/154448182"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Hof HaCarmel Regional Council",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Project & Business Development Associate",
+      "url": "https://juniors.hiremetech.com/job/154451154"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (מיסוי בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרוש.ה עו\"ד לתחום מיסוי נדל\"ן",
+      "url": "https://juniors.hiremetech.com/job/154447288"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "אנדריי סחרוב 9, פארק מתם, ת.ד. 15067, חיפה 3190500, Haifa",
+      "reason": "תחום אחר (Customer Service בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Customer Service Coordinator - Haifa",
+      "url": "https://juniors.hiremetech.com/job/154449866"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "שמשון 9, קומה 2, פתח תקווה, 4952707",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרוש/ה מנתח/ת מערכות לחברה מובילה במרכז הארץ",
+      "url": "https://juniors.hiremetech.com/job/154449625"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaYozma Street 3, Tirat Carmel, Haifa",
+      "reason": "תחום אחר (Economist בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Economist",
+      "url": "https://juniors.hiremetech.com/job/154447978"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (מיסוי בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרוש.ה עו\"ד לתחום מיסוי נדל\"ן",
+      "url": "https://juniors.hiremetech.com/job/154432612"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/154432606"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Central District",
+      "reason": "תחום אחר (מכירות בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "איש/אשת מכירות - אירועים",
+      "url": "https://juniors.hiremetech.com/job/154400620"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "רחוב ביאליק 155, רמת גן 5252346, Ashdod",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "רכז/ת לוגיסטיקה ושירות לקוחות",
+      "url": "https://juniors.hiremetech.com/job/154431383"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "רחוב ביאליק 155, רמת גן 5252346, Ramat Gan",
+      "reason": "תחום אחר (מחסן בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "אחראי/ת מחסן טכני למפעל מוצרי בטון בעד הלום",
+      "url": "https://juniors.hiremetech.com/job/154431382"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (מיסוי בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "דרוש.ה עו\"ד לתחום מיסוי נדל\"ן",
+      "url": "https://juniors.hiremetech.com/job/154419350"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "HaHarash St 20, Tel Aviv-Yafo, 6761310, Israel",
+      "reason": "תחום אחר (Business Development בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Business Development & Marketing Associate",
+      "url": "https://juniors.hiremetech.com/job/154419343"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "התדהר 5, מגדל A, רעננה 4366507, Airport City",
+      "reason": "תחום אחר (Electronics בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Technical Knowledge Instructor (Electronics/UAVs) - Entry Level",
+      "url": "https://juniors.hiremetech.com/job/154282411"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Haifa",
+      "reason": "תחום אחר (שיווק בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "עובד.ת למחלקת השיווק",
+      "url": "https://juniors.hiremetech.com/job/154299729"
+    },
+    {
+      "company": "חסוי — דרך HireMeTech",
+      "location": "Tel Aviv",
+      "reason": "תחום אחר (Payroll בשם המשרה)",
+      "source": "hiremetech:juniors",
+      "title": "Payroll Controller",
+      "url": "https://juniors.hiremetech.com/job/154332256"
+    },
+    {
+      "company": "Amazon (Annapurna Labs Ltd.)",
+      "location": "Haifa, Haifa, ISR",
+      "reason": "משרה בכירה (Senior בשם המשרה)",
+      "source": "amazon:amazon",
+      "title": "Senior SerDes Characterization Engineer",
+      "url": "https://www.amazon.jobs/en/jobs/10609366/senior-serdes-characterization-engineer"
+    }
+  ],
+  "prefiltered_count": 23,
+  "removed": 1,
+  "sources_read": 29,
+  "sources_total": 39,
+  "summary": "0 עברו · 32 סוננו ע\"י המוח · 23 סוננו בקוד · 8 כפילויות · 22 ממתינות",
+  "to_brain": 40,
+  "warnings": []
+}

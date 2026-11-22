@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:154447612",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154447612",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "תמיכה בחשבי שכר בחברת תוכנה לשכר, פנסיה ונוכחות.",
+  "education": null,
+  "employment": "קבועה",
+  "experience": "ניסיון קודם בשירות לקוחות / תמיכה טכנית / תפעול / שכר — חובה",
+  "first_seen": "2026-11-22",
+  "history": [
+    {
+      "at": "2026-11-22T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "employment": "משרה מלאה קבועה לפי תיאור השעות"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "בני ברק",
+  "not_stated": [
+    "salary",
+    "education",
+    "degree_time",
+    "apply_instructions",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תמיכת מערכות שכר במשרה מלאה — לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ידע בחשבות שכר או רקע פיננסי"
+  ],
+  "requirements_must": [
+    "ניסיון בשירות לקוחות / תמיכה טכנית / תפעול / הנה\"ח"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה, א'-ה' 08:30-17:00, שישי פעם בחודש-חודש וחצי",
+  "sightings": [
+    {
+      "date": "2026-11-22",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154447612"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "תומכי מערכות שכר (#1089325)",
+  "url": "https://juniors.hiremetech.com/job/154447612",
+  "work_mode": "משרד"
+}
