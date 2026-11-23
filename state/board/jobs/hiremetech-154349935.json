@@ -1,0 +1,61 @@
+{
+  "agent_id": "hiremetech:154349935",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154349935",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מתאם/ת טיפול בדיור מוגן (בריאות הנפש ושיקום) באילת. הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": "זמנית",
+  "experience": null,
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Eilat",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום טיפולי / רווחה, לא תוכנה; היקף 85%"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "85%",
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154349935"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מתאמ.ת טיפול דיור מוגן – תקן זמני קבוע (אילת,85%)",
+  "url": "https://juniors.hiremetech.com/job/154349935",
+  "work_mode": null
+}

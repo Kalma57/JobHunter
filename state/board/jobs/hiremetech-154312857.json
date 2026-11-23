@@ -1,0 +1,64 @@
+{
+  "agent_id": "hiremetech:154312857",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154312857",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת שירות שטח — התקנה, כיול ותחזוקה של ציוד. הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "Field Services — התקנות ותחזוקה אצל לקוח"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Haifa",
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "שירות שטח לציוד (חומרה), לא תוכנה; בחיפה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154312857"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Field Services Engineer",
+  "url": "https://juniors.hiremetech.com/job/154312857",
+  "work_mode": "בשטח"
+}

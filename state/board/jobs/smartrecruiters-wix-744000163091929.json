@@ -1,0 +1,67 @@
+{
+  "agent_id": "smartrecruiters:wix:744000163091929",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.smartrecruiters.com/Wix2/744000163091929-travel-coordinator-student-?oga=true",
+  "company": "Wix",
+  "deadline": null,
+  "degree_time": null,
+  "description": "רכז/ת נסיעות עסקיות לעובדי Wix בעולם — הזמנות, טיפול בבקשות ובעיות, מעקב ב-Excel, מול סוכנות נסיעות בארה\"ב.",
+  "education": "סטודנט/ית פעיל/ה",
+  "employment": null,
+  "experience": "לא נדרש (ניסיון בשירות לקוחות — יתרון)",
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י smartrecruiters:wix",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "Tel Aviv",
+  "not_stated": [
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד אדמיניסטרציה / נסיעות, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "ניסיון בשירות לקוחות",
+    "כישורים אדמיניסטרטיביים"
+  ],
+  "requirements_must": [
+    "סטטוס סטודנט",
+    "זמינות 3 ימים בשבוע אחה\"צ/ערב",
+    "אנגלית מצוינת",
+    "כישורי תקשורת ושירות",
+    "Excel",
+    "פתרון בעיות עצמאי"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע, צהריים וערב (מהצהריים), לא בימי ראשון",
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "smartrecruiters:wix",
+      "url": "https://jobs.smartrecruiters.com/Wix2/744000163091929-travel-coordinator-student-"
+    }
+  ],
+  "source": "smartrecruiters:wix",
+  "status": "filtered",
+  "title": "Travel Coordinator (Student)",
+  "url": "https://jobs.smartrecruiters.com/Wix2/744000163091929-travel-coordinator-student-",
+  "work_mode": "משרד"
+}

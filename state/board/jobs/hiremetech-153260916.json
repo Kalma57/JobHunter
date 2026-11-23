@@ -3,6 +3,8 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
     "אוחדה עם משרה דומה — בדוק",
+    "אוחדה עם משרה דומה — בדוק",
+    "אוחדה עם משרה דומה — בדוק",
     "אוחדה עם משרה דומה — בדוק"
   ],
   "apply_instructions": null,
@@ -63,6 +65,16 @@
       "date": "2026-11-22",
       "source": "hiremetech:juniors",
       "url": "https://juniors.hiremetech.com/job/154447280"
+    },
+    {
+      "date": "2026-11-23",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154419341"
+    },
+    {
+      "date": "2026-11-23",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154381953"
     }
   ],
   "source": "hiremetech:juniors",

@@ -1,0 +1,68 @@
+{
+  "agent_id": "apple:200696452-1451",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.apple.com/en-us/details/200696452-1451/sourcing-student",
+  "company": "Apple",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית לגיוס (Sourcing) בצוות הגיוס של Apple — איתור מועמדים, ניהול תהליכי גיוס מקצה לקצה.",
+  "education": "סטודנט/ית לתואר ראשון או שני (העדפה)",
+  "employment": null,
+  "experience": "לא נדרש (ניסיון בגיוס — יתרון)",
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י apple:apple",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "Haifa",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפקיד גיוס (משאבי אנוש), לא פיתוח תוכנה; גם בחיפה"
+  },
+  "requirements_adv": [
+    "ניסיון בגיוס (השמה / In-house)",
+    "ניסיון בגיוס הנדסי (חומרה, תוכנה, AI/ML)",
+    "לימודים לתואר ראשון או שני"
+  ],
+  "requirements_must": [
+    "כישורי תקשורת מצוינים",
+    "תשומת לב לפרטים וארגון",
+    "שימוש בנתונים ומדדים",
+    "אנגלית"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "apple:apple",
+      "url": "https://jobs.apple.com/en-us/details/200696452-1451/sourcing-student"
+    }
+  ],
+  "source": "apple:apple",
+  "status": "filtered",
+  "title": "Sourcing student",
+  "url": "https://jobs.apple.com/en-us/details/200696452-1451/sourcing-student",
+  "work_mode": null
+}

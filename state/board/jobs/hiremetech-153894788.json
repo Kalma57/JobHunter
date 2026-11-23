@@ -1,0 +1,62 @@
+{
+  "agent_id": "hiremetech:153894788",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "האתר מציין 'Not available now'"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/153894788",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת אינטגרציה — הרכבה מכנית, אלקטרוניקה, חיווט ומכשירי מדידה. הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": "2+ שנים",
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Petah Tikva",
+  "not_stated": [
+    "work_mode",
+    "employment",
+    "salary",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "אינטגרציית חומרה (הרכבה מכנית, חיווט), משרה מלאה, 2+ שנות ניסיון"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": "משרה מלאה",
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/153894788"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "Integration engineer",
+  "url": "https://juniors.hiremetech.com/job/153894788",
+  "work_mode": null
+}

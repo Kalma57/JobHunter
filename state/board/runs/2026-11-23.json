@@ -1,0 +1,76 @@
+{
+  "after_prefilter": 26,
+  "at": "2026-11-23T07:00:00Z",
+  "backlog": 0,
+  "borderline": [
+    "Data Engineer — לא כפילות",
+    "Data Science — לא כפילות",
+    "Integration engineer — לא כפילות",
+    "Software Engineer — לא כפילות",
+    "Software Engineer — לא כפילות",
+    "Beauty Advisor/Artist Beauty Advisor — כפילות של hiremetech-152322786: אותו תפקיד (Beauty Advisor/Artist Beauty Advisor) באותם מיקומים (רמת גן / באר שבע), פרסום חוזר ב-HireMeTech",
+    "עו\"ד למחלקת מימון ובנקאות — כפילות של hiremetech-153264532: אותו תפקיד (עו\"ד למחלקת מימון ובנקאות) בתל אביב, פרסום חוזר ב-HireMeTech",
+    "עו\"ד בתחום ההייטק, הבינלאומי והמיזוגים והרכישות — כפילות של hiremetech-153264530: אותו תפקיד (עו\"ד בתחום ההייטק, הבינלאומי והמיזוגים והרכישות) בתל אביב, פרסום חוזר ב-HireMeTech",
+    "HRBP — כפילות של hiremetech-153264529: אותו תפקיד (HRBP) בתל אביב עם אותן תגיות, פרסום חוזר (כבר אוחדו אליה כמה פרסומים)",
+    "דרוש/ה מתרגם/ת למשרה חלקית — כפילות של hiremetech-153260916: אותו תפקיד (מתרגם/ת למשרה חלקית) בתל אביב, פרסום חוזר ב-HireMeTech",
+    "Associate – Hi-Tech, Cross-Border And M&A — כפילות של hiremetech-153806356: אותו תפקיד (Associate – Hi-Tech, Cross-Border And M&A) בתל אביב, אותן תגיות",
+    "HRBP — כפילות של hiremetech-153264529: אותו תפקיד (HRBP) בתל אביב עם אותן תגיות (גיוס, פיתוח, שימור, תגמול, הכשרה), פרסום חוזר",
+    "דרוש/ה מתרגם/ת למשרה חלקית — כפילות של hiremetech-153260916: אותו תפקיד (מתרגם/ת למשרה חלקית) בתל אביב, אותן דרישות (2+ שנים, עברית-אנגלית)",
+    "Associate – Hi-Tech, Cross-Border And M&A — כפילות של hiremetech-153806356: אותו תפקיד (Associate – Hi-Tech, Cross-Border And M&A) בתל אביב, רשימת תגיות זהה"
+  ],
+  "brain_filtered": 17,
+  "candidates": 29,
+  "closed": 0,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "NVIDIA: FetchError: HTTP 429 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "KLA: FetchError: HTTP 429 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
+    "Applied Materials: FetchError: HTTP 429 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs",
+    "Palo Alto Networks: FetchError: HTTP 429 from https://paloaltonetworks.wd5.myworkdayjobs.com/wday/cxs/paloaltonetworks/panwexternalcareers/jobs",
+    "Intel: FetchError: HTTP 429 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+    "HP: FetchError: HTTP 429 from https://hp.wd5.myworkdayjobs.com/wday/cxs/hp/ExternalCareerSite/jobs",
+    "Cisco: FetchError: HTTP 429 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs",
+    "PayPal: FetchError: HTTP 429 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs",
+    "Cadence: FetchError: HTTP 429 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/External_Careers/jobs"
+  ],
+  "far": 0,
+  "found_new": 0,
+  "kind": "daily",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "קבוצת תדהר",
+      "location": "רעננה",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "בקר/ית תקציב ופרויקטים",
+      "url": "https://www.drushim.co.il/job/39108463/a42ac1b7/"
+    },
+    {
+      "company": "פידליס גרופ",
+      "location": "באר שבע , דימונה , ירוחם , ערד",
+      "reason": "תחום אחר (חשמל בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "דרוש/ה: סטודנט/ית לכימיה /חשמל לחברת כימיקלים מובילה לצבירת ניסיון התחלתי!",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9925534"
+    },
+    {
+      "company": "מאגרי אנוש - תל אביב - חולון",
+      "location": "ירושלים",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "רכז.ת סטודנטים לקמפוס ירושלים",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9924971"
+    }
+  ],
+  "prefiltered_count": 3,
+  "removed": 0,
+  "sources_read": 30,
+  "sources_total": 39,
+  "summary": "0 עברו · 17 סוננו ע\"י המוח · 3 סוננו בקוד · 9 כפילויות · 0 ממתינות",
+  "to_brain": 26,
+  "warnings": [
+    "HireMeTech: 0 jobs in Israel today, 90 last run - the site may have changed"
+  ]
+}

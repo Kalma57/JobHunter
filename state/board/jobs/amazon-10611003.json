@@ -1,0 +1,66 @@
+{
+  "agent_id": "amazon:10611003",
+  "alerts": [
+    "האתר תייג את המשרה כ-Internship, אבל הטקסט מתאר משרת ג'וניור שדורשת ניסיון מקצועי שאינו התמחות"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10611003/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה משובצת ג'וניור בצוות EFA של Annapurna Labs — פיתוח פיצ'רים לחומרת רשת של AWS, עם תוכנית קליטה והכשרה.",
+  "education": "תואר ראשון במדעי המחשב או מקביל (העדפה)",
+  "employment": null,
+  "experience": "1+ שנים ניסיון מקצועי בפיתוח (לא כולל התמחות)",
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "Haifa",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "משרת ג'וניור (לא סטודנט) עם 1+ שנות ניסיון מקצועי, ובחיפה"
+  },
+  "requirements_adv": [
+    "תואר ראשון במדעי המחשב או מקביל"
+  ],
+  "requirements_must": [
+    "1+ שנות ניסיון מקצועי בפיתוח תוכנה (לא התמחות)",
+    "ניסיון בשפת תכנות אחת לפחות"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10611003/embedded-software-engineer-efa-team"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Embedded Software Engineer, EFA Team",
+  "url": "https://www.amazon.jobs/en/jobs/10611003/embedded-software-engineer-efa-team",
+  "work_mode": null
+}

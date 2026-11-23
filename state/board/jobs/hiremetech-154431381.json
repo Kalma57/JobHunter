@@ -1,0 +1,65 @@
+{
+  "agent_id": "hiremetech:154431381",
+  "alerts": [
+    "המודעה קטועה — הטקסט המלא מוסתר באתר (HireMeTech)",
+    "סתירה: הכותרת אומרת עד הלום (אשדוד), הכתובת באתר היא רמת גן (כנראה משרדי המעסיק)"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://juniors.hiremetech.com/job/154431381",
+  "company": "חסוי — דרך HireMeTech",
+  "deadline": null,
+  "degree_time": null,
+  "description": "הפעלת תחנת ערבול במפעל מוצרי בטון, מערכות ממוחשבות ותחזוקה שוטפת. הטקסט המלא מוסתר.",
+  "education": null,
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-23",
+  "history": [
+    {
+      "at": "2026-11-23T07:00:00Z",
+      "note": "נמצא ע\"י hiremetech:juniors",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "תפעול מפעל — עבודה באתר המפעל"
+  },
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": null,
+  "not_stated": [
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-22",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תפעול מפעל בטון, לא תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-23",
+      "source": "hiremetech:juniors",
+      "url": "https://juniors.hiremetech.com/job/154431381"
+    }
+  ],
+  "source": "hiremetech:juniors",
+  "status": "filtered",
+  "title": "מפעיל/ת תחנת בטון למפעל מוצרי בטון בעד הלום",
+  "url": "https://juniors.hiremetech.com/job/154431381",
+  "work_mode": "בשטח"
+}
