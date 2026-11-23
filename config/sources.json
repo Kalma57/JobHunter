@@ -2,94 +2,367 @@
   "_about": "Data for the company agents (stage 8, docs/agents/company-agents.md). Adding a company on an existing system = one entry here, no code change. Keywords mirror docs/search.md.",
   "keywords": {
     "_rules": "Whole words, case-insensitive. English: a trailing s also matches (Intern -> Interns). Hebrew: prefix letters and endings also match (סטודנט -> לסטודנטים, סטודנטית).",
-    "daily": ["Student", "Intern", "Internship", "סטודנט"],
-    "weekly": ["Student", "Intern", "Internship", "סטודנט", "Junior", "Graduate", "Early Career", "Entry Level", "College Grad", "College Graduate"]
+    "daily": [
+      "Student",
+      "Intern",
+      "Internship",
+      "סטודנט"
+    ],
+    "weekly": [
+      "Student",
+      "Intern",
+      "Internship",
+      "סטודנט",
+      "Junior",
+      "Graduate",
+      "Early Career",
+      "Entry Level",
+      "College Grad",
+      "College Graduate"
+    ]
   },
   "israel": {
-    "country_codes": ["IL"],
-    "names": ["Israel", "ישראל",
-              "Tel Aviv", "Tel-Aviv", "Jerusalem", "Haifa", "Herzliya", "Petah Tikva", "Petach Tikva", "Ramat Gan",
-              "Ra'anana", "Raanana", "Netanya", "Rehovot", "Yokneam", "Caesarea", "Hod Hasharon", "Kfar Saba",
-              "Rosh HaAyin", "Rosh Haayin", "Beer Sheva", "Be'er Sheva", "Beersheba", "Airport City", "Or Yehuda",
-              "Modiin", "Modi'in", "Holon", "Bnei Brak", "Givatayim", "Rishon LeZion", "Ness Ziona", "Lod",
-              "Migdal HaEmek", "Migdal Haemek", "Kiryat Gat", "Ashdod", "Ashkelon", "Beit Shemesh",
-              "תל אביב", "ירושלים", "חיפה", "הרצליה", "פתח תקווה", "רמת גן", "רעננה", "נתניה", "רחובות", "יקנעם",
-              "באר שבע", "כפר סבא", "הוד השרון", "ראש העין", "מודיעין", "חולון", "קריית גת", "אשדוד"]
+    "country_codes": [
+      "IL"
+    ],
+    "names": [
+      "Israel",
+      "ישראל",
+      "Tel Aviv",
+      "Tel-Aviv",
+      "Jerusalem",
+      "Haifa",
+      "Herzliya",
+      "Petah Tikva",
+      "Petach Tikva",
+      "Ramat Gan",
+      "Ra'anana",
+      "Raanana",
+      "Netanya",
+      "Rehovot",
+      "Yokneam",
+      "Caesarea",
+      "Hod Hasharon",
+      "Kfar Saba",
+      "Rosh HaAyin",
+      "Rosh Haayin",
+      "Beer Sheva",
+      "Be'er Sheva",
+      "Beersheba",
+      "Airport City",
+      "Or Yehuda",
+      "Modiin",
+      "Modi'in",
+      "Holon",
+      "Bnei Brak",
+      "Givatayim",
+      "Rishon LeZion",
+      "Ness Ziona",
+      "Lod",
+      "Migdal HaEmek",
+      "Migdal Haemek",
+      "Kiryat Gat",
+      "Ashdod",
+      "Ashkelon",
+      "Beit Shemesh",
+      "תל אביב",
+      "ירושלים",
+      "חיפה",
+      "הרצליה",
+      "פתח תקווה",
+      "רמת גן",
+      "רעננה",
+      "נתניה",
+      "רחובות",
+      "יקנעם",
+      "באר שבע",
+      "כפר סבא",
+      "הוד השרון",
+      "ראש העין",
+      "מודיעין",
+      "חולון",
+      "קריית גת",
+      "אשדוד"
+    ]
   },
   "systems": {
     "greenhouse": [
-      {"company": "Nebius", "slug": "nebius"},
-      {"company": "ScaleOps", "slug": "scaleops"},
-      {"company": "Cato Networks", "slug": "catonetworks"},
-      {"company": "Wiz", "slug": "wizinc"},
-      {"company": "JFrog", "slug": "jfrog"},
-      {"company": "Taboola", "slug": "taboola"},
-      {"company": "Similarweb", "slug": "similarweb"},
-      {"company": "Payoneer", "slug": "payoneer"},
-      {"company": "SentinelOne", "slug": "sentinellabs"}
+      {
+        "company": "Nebius",
+        "slug": "nebius"
+      },
+      {
+        "company": "ScaleOps",
+        "slug": "scaleops"
+      },
+      {
+        "company": "Cato Networks",
+        "slug": "catonetworks"
+      },
+      {
+        "company": "Wiz",
+        "slug": "wizinc"
+      },
+      {
+        "company": "JFrog",
+        "slug": "jfrog"
+      },
+      {
+        "company": "Taboola",
+        "slug": "taboola"
+      },
+      {
+        "company": "Similarweb",
+        "slug": "similarweb"
+      },
+      {
+        "company": "Payoneer",
+        "slug": "payoneer"
+      },
+      {
+        "company": "SentinelOne",
+        "slug": "sentinellabs"
+      }
     ],
     "lever": [
-      {"company": "Mobileye", "slug": "mobileye", "host": "api.eu.lever.co"}
+      {
+        "company": "Mobileye",
+        "slug": "mobileye",
+        "host": "api.eu.lever.co"
+      }
     ],
     "workday": [
-      {"company": "NVIDIA", "slug": "nvidia", "host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia", "site": "NVIDIAExternalCareerSite"},
-      {"company": "KLA", "slug": "kla", "host": "kla.wd1.myworkdayjobs.com", "tenant": "kla", "site": "Search"},
-      {"company": "Applied Materials", "slug": "amat", "host": "amat.wd1.myworkdayjobs.com", "tenant": "amat", "site": "External"},
-      {"company": "Palo Alto Networks", "slug": "paloalto", "host": "paloaltonetworks.wd5.myworkdayjobs.com", "tenant": "paloaltonetworks", "site": "panwexternalcareers"},
-      {"company": "Intel", "slug": "intel", "host": "intel.wd1.myworkdayjobs.com", "tenant": "intel", "site": "External"},
-      {"company": "Marvell", "slug": "marvell", "host": "marvell.wd1.myworkdayjobs.com", "tenant": "marvell", "site": "MarvellCareers"},
-      {"company": "HP", "slug": "hp", "host": "hp.wd5.myworkdayjobs.com", "tenant": "hp", "site": "ExternalCareerSite"},
-      {"company": "Salesforce", "slug": "salesforce", "host": "salesforce.wd12.myworkdayjobs.com", "tenant": "salesforce", "site": "External_Career_Site"},
-      {"company": "Cisco", "slug": "cisco", "host": "cisco.wd5.myworkdayjobs.com", "tenant": "cisco", "site": "Cisco_Careers"},
-      {"company": "PayPal", "slug": "paypal", "host": "paypal.wd1.myworkdayjobs.com", "tenant": "paypal", "site": "jobs"},
-      {"company": "Cadence", "slug": "cadence", "host": "cadence.wd1.myworkdayjobs.com", "tenant": "cadence", "site": "External_Careers"}
+      {
+        "company": "KLA",
+        "slug": "kla",
+        "host": "kla.wd1.myworkdayjobs.com",
+        "tenant": "kla",
+        "site": "Search"
+      },
+      {
+        "company": "Applied Materials",
+        "slug": "amat",
+        "host": "amat.wd1.myworkdayjobs.com",
+        "tenant": "amat",
+        "site": "External"
+      },
+      {
+        "company": "Intel",
+        "slug": "intel",
+        "host": "intel.wd1.myworkdayjobs.com",
+        "tenant": "intel",
+        "site": "External"
+      },
+      {
+        "company": "Marvell",
+        "slug": "marvell",
+        "host": "marvell.wd1.myworkdayjobs.com",
+        "tenant": "marvell",
+        "site": "MarvellCareers"
+      },
+      {
+        "company": "HP",
+        "slug": "hp",
+        "host": "hp.wd5.myworkdayjobs.com",
+        "tenant": "hp",
+        "site": "ExternalCareerSite"
+      },
+      {
+        "company": "Salesforce",
+        "slug": "salesforce",
+        "host": "salesforce.wd12.myworkdayjobs.com",
+        "tenant": "salesforce",
+        "site": "External_Career_Site"
+      },
+      {
+        "company": "Cisco",
+        "slug": "cisco",
+        "host": "cisco.wd5.myworkdayjobs.com",
+        "tenant": "cisco",
+        "site": "Cisco_Careers"
+      },
+      {
+        "company": "Cadence",
+        "slug": "cadence",
+        "host": "cadence.wd1.myworkdayjobs.com",
+        "tenant": "cadence",
+        "site": "External_Careers"
+      }
     ],
     "sitemap": [
-      {"company": "Intuit", "slug": "intuit", "host": "jobs.intuit.com"},
-      {"company": "Synopsys", "slug": "synopsys", "host": "careers.synopsys.com"}
+      {
+        "company": "Intuit",
+        "slug": "intuit",
+        "host": "jobs.intuit.com"
+      },
+      {
+        "company": "Synopsys",
+        "slug": "synopsys",
+        "host": "careers.synopsys.com"
+      },
+      {
+        "company": "Palo Alto Networks",
+        "slug": "paloalto",
+        "host": "jobs.paloaltonetworks.com"
+      }
     ],
     "eightfold": [
-      {"company": "Qualcomm", "slug": "qualcomm", "host": "careers.qualcomm.com", "domain": "qualcomm.com", "api": "pcsx"},
-      {"company": "Teva", "slug": "teva", "host": "www.careers.teva", "domain": "tevapharm.com", "api": "apply_v2"},
-      {"company": "Microsoft", "slug": "microsoft", "host": "apply.careers.microsoft.com", "domain": "microsoft.com", "api": "pcsx", "pause_seconds": 10}
+      {
+        "company": "Qualcomm",
+        "slug": "qualcomm",
+        "host": "careers.qualcomm.com",
+        "domain": "qualcomm.com",
+        "api": "pcsx"
+      },
+      {
+        "company": "Teva",
+        "slug": "teva",
+        "host": "www.careers.teva",
+        "domain": "tevapharm.com",
+        "api": "apply_v2"
+      },
+      {
+        "company": "Microsoft",
+        "slug": "microsoft",
+        "host": "apply.careers.microsoft.com",
+        "domain": "microsoft.com",
+        "api": "pcsx",
+        "pause_seconds": 10
+      },
+      {
+        "company": "NVIDIA",
+        "slug": "nvidia",
+        "host": "jobs.nvidia.com",
+        "domain": "nvidia.com",
+        "api": "pcsx"
+      },
+      {
+        "company": "PayPal",
+        "slug": "paypal",
+        "host": "paypal.eightfold.ai",
+        "domain": "paypal.com",
+        "api": "pcsx"
+      }
     ],
     "comeet": [
-      {"company": "DriveNets", "slug": "drivenets", "uid": "72.006", "token": "2769D81626762C4E762762C4EC4E1626"},
-      {"company": "Nova", "slug": "nova", "uid": "A5.007", "token": "5A71C4332DFB4E10F532DFB4E32DF0B4E"},
-      {"company": "Deloitte", "slug": "deloitte", "uid": "F7.00B", "token": "7FB2FE21FEC3FD847D33FD8FF603FD81FEC"}
+      {
+        "company": "DriveNets",
+        "slug": "drivenets",
+        "uid": "72.006",
+        "token": "2769D81626762C4E762762C4EC4E1626"
+      },
+      {
+        "company": "Nova",
+        "slug": "nova",
+        "uid": "A5.007",
+        "token": "5A71C4332DFB4E10F532DFB4E32DF0B4E"
+      },
+      {
+        "company": "Deloitte",
+        "slug": "deloitte",
+        "uid": "F7.00B",
+        "token": "7FB2FE21FEC3FD847D33FD8FF603FD81FEC"
+      }
     ],
     "drushim": [
-      {"company": "Drushim", "slug": "drushim", "queries": [
-        {"term": "סטודנט", "catdir": 5}, {"term": "סטודנט", "catdir": 10},
-        {"term": "סטודנטית", "catdir": 5}, {"term": "התמחות", "catdir": 5}]}
+      {
+        "company": "Drushim",
+        "slug": "drushim",
+        "queries": [
+          {
+            "term": "סטודנט",
+            "catdir": 5
+          },
+          {
+            "term": "סטודנט",
+            "catdir": 10
+          },
+          {
+            "term": "סטודנטית",
+            "catdir": 5
+          },
+          {
+            "term": "התמחות",
+            "catdir": 5
+          }
+        ]
+      }
     ],
     "jobmaster": [
-      {"company": "JobMaster", "slug": "jobmaster", "queries": ["q-סטודנט-תוכנה", "q-סטודנט-פיתוח", "q-סטודנט-מדעי-המחשב", "q-סטודנט-הייטק", "q-סטודנט-אלגוריתמים", "q-סטודנט-data", "q-student-software", "q-student-developer", "q-intern-software"]}
+      {
+        "company": "JobMaster",
+        "slug": "jobmaster",
+        "queries": [
+          "q-סטודנט-תוכנה",
+          "q-סטודנט-פיתוח",
+          "q-סטודנט-מדעי-המחשב",
+          "q-סטודנט-הייטק",
+          "q-סטודנט-אלגוריתמים",
+          "q-סטודנט-data",
+          "q-student-software",
+          "q-student-developer",
+          "q-intern-software"
+        ]
+      }
     ],
     "hiremetech": [
-      {"company": "HireMeTech", "slug": "juniors", "host": "juniors.hiremetech.com", "max_pages": 40}
+      {
+        "company": "HireMeTech",
+        "slug": "juniors",
+        "host": "juniors.hiremetech.com",
+        "max_pages": 40
+      }
     ],
     "amazon": [
-      {"company": "Amazon", "slug": "amazon", "country": "ISR"}
+      {
+        "company": "Amazon",
+        "slug": "amazon",
+        "country": "ISR"
+      }
     ],
     "smartrecruiters": [
-      {"company": "Wix", "slug": "wix", "company_id": "Wix2"}
+      {
+        "company": "Wix",
+        "slug": "wix",
+        "company_id": "Wix2"
+      }
     ],
     "ashby": [
-      {"company": "monday.com", "slug": "monday", "board": "monday.com"}
+      {
+        "company": "monday.com",
+        "slug": "monday",
+        "board": "monday.com"
+      }
     ],
     "apple": [
-      {"company": "Apple", "slug": "apple", "location": "israel-ISR"}
+      {
+        "company": "Apple",
+        "slug": "apple",
+        "location": "israel-ISR"
+      }
     ],
     "google": [
-      {"company": "Google", "slug": "google", "location": "Israel"}
+      {
+        "company": "Google",
+        "slug": "google",
+        "location": "Israel"
+      }
     ],
     "hibob": [
-      {"company": "HiBob", "slug": "hibob"}
+      {
+        "company": "HiBob",
+        "slug": "hibob"
+      }
     ],
     "oracle": [
-      {"company": "Oracle", "slug": "oracle", "host": "eeho.fa.us2.oraclecloud.com", "site": "CX_45001",
-       "job_url": "https://careers.oracle.com/en/sites/jobsearch/job/{id}"}
+      {
+        "company": "Oracle",
+        "slug": "oracle",
+        "host": "eeho.fa.us2.oraclecloud.com",
+        "site": "CX_45001",
+        "job_url": "https://careers.oracle.com/en/sites/jobsearch/job/{id}"
+      }
     ]
-  }
+  },
+  "_workday_note": "12/11/2026: Cloudflare put a bot check on myworkdayjobs.com (HTTP 429, Cf-Mitigated: challenge). NVIDIA, PayPal and Palo Alto moved to their own career sites (Eightfold / sitemap), which have no check. The other Workday companies are blocked and are NOT worked around; the agent tries once a run and reads them again the day the check is lifted."
 }

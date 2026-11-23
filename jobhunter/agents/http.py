@@ -34,6 +34,13 @@ class FetchError(Exception):
     """The site could not be read (network error, HTTP error, or a body that isn't JSON)."""
 
 
+class BlockedError(FetchError):
+    """The site answered with a bot check (a Cloudflare challenge: it wants a browser running JavaScript).
+    We do not get around it - no browser disguise, no solving the check (the user's rule of 10/10/2026: a site that
+    blocks is not circumvented). One request, no retries; the agent tries again at the next run, and reads the
+    site as usual again the day the check is lifted."""
+
+
 def _wait_for_turn(host: str) -> None:
     last = _last_request.get(host)
     if last is not None:
@@ -69,6 +76,8 @@ def _fetch(url: str, body: bytes | None) -> bytes:
         try:
             return _request_once(url, body)
         except urllib.error.HTTPError as e:
+            if (e.headers or {}).get("Cf-Mitigated", "").lower() == "challenge":
+                raise BlockedError(f"blocked by the site's bot check (HTTP {e.code}) at {url}") from e
             retryable = e.code >= 500 or e.code == 429
             if not retryable or attempt == 2:
                 raise FetchError(f"HTTP {e.code} from {url}") from e

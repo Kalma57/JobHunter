@@ -24,7 +24,7 @@ LD_JSON = re.compile(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', re
 
 def job_urls(sitemap_xml: str, host: str, cities: list[str]) -> list[str]:
     city = "|".join(re.escape(c) for c in cities)
-    pattern = re.compile(rf"https://{re.escape(host)}/job/(?:{city})/[^<\s]+", re.I)
+    pattern = re.compile(rf"https://{re.escape(host)}(?:/[a-z]{{2}})?/job/(?:{city})/[^<\s]+", re.I)  # Palo Alto: /en/job/...
     return list(dict.fromkeys(pattern.findall(sitemap_xml)))
 
 

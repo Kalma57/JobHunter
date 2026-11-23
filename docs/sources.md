@@ -122,6 +122,11 @@
 
 נבדקו ולא נוספו (21/10): Dell (חוסם כלים אוטומטיים, ה-sitemap בלי משרות), Amdocs (robots.txt אוסר הכל), NICE / SAP / IBM / Meta (ה-sitemap בלי משרות בישראל, אין ממשק פתוח), Broadcom (אין "Israel" בפילטר), Western Digital / Sandisk / Akamai (אין גישה). המשרות שלהן מגיעות רק דרך אתרי המשרות.
 
+### חסימת Workday (12/11/2026)
+ב-12/11 Cloudflare הפעיל בדיקת בוטים על אתרי Workday (`myworkdayjobs.com`): HTTP 429 עם הכותרת `Cf-Mitigated: challenge` ועמוד "Security Check, Enable JavaScript and cookies". זו לא הגבלת קצב אלא חסימה של כל קריאה אוטומטית. **לא עוקפים** (כלל המשתמש מ-10/10: אתר שחוסם לא עוקפים; בלי התחזות לדפדפן ובלי לפתור את הבדיקה). הסוכן שולח בקשה אחת בלי ניסיון חוזר (`BlockedError`), רושם "האתר חוסם קריאה אוטומטית", ויקרא שוב בלי שינוי ביום שהבדיקה תוסר. כשרשימת החסומים משתנה — התראת Windows (`notify_blocked`).
+**הועברו לממשק הפתוח של אתר הקריירה שלהן:** NVIDIA ו-PayPal (Eightfold, `jobs.nvidia.com`, `paypal.eightfold.ai`), Palo Alto Networks (`sitemap.py`, `jobs.paloaltonetworks.com`).
+**חסומים כרגע, בלי חלופה פתוחה:** KLA, Applied Materials, Intel, Marvell, HP, Salesforce, Cisco, Cadence. נבדקו: ל-Intel ול-Cisco אתר משלהם עם שגיאת אישור SSL (לא מבטלים בדיקת אבטחה), ל-Marvell הכתובת לא נפתרת, ול-KLA / AMAT / HP / Salesforce אין sitemap עם משרות. המשרות שלהן מגיעות רק אם הן מופיעות באתרי המשרות, או דרך התראות מייל.
+
 ### שכבה 3 — בלי סוכן משלהן (המשרות מגיעות דרך סוכני אתרי החיפוש, שלב 9)
 
 | חברה | סיבה |

@@ -21,6 +21,7 @@ from pathlib import Path
 
 from jobhunter.agents import (amazon, apple, ashby, comeet, drushim, eightfold, google, greenhouse, hibob, hiremetech, jobmaster,
                               lever, oracle, sitemap, smartrecruiters, workday)
+from jobhunter.agents.http import BlockedError
 from jobhunter.state import Inbox, SeenStore, collect_new
 
 AGENTS = {"greenhouse": greenhouse.fetch, "lever": lever.fetch, "workday": workday.fetch, "eightfold": eightfold.fetch,
@@ -54,6 +55,11 @@ def run_all(config: dict, state: Path, today: date, weekly: bool = False) -> dic
                 fetch = AGENTS[system]
                 extra = {"cache_dir": state / "cache" / f"{system}-{company['slug']}"} if system in CACHED else {}
                 jobs, stats = fetch(company, config["israel"], keywords, **extra)
+            except BlockedError:  # the site's bot check: not an error of ours, and not worked around
+                row["error"] = "האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה."
+                row["blocked"] = True
+                companies.append(row)
+                continue
             except Exception as e:  # any failure of one site: skip it, mark nothing as seen
                 row["error"] = f"{type(e).__name__}: {e}"
                 companies.append(row)

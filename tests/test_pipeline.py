@@ -345,3 +345,48 @@ def test_a_failed_brain_tells_the_user_once_a_day(tmp_path, monkeypatch):  # 10/
     m.apply_brain(tmp_path, tmp_path / "board")
     m.apply_brain(tmp_path, tmp_path / "board")  # the hourly retry
     assert len(sent) == 1 and "claude auth login" in sent[0][1]
+
+
+
+def test_a_bot_check_is_reported_as_blocked_and_never_retried(monkeypatch):  # Workday behind Cloudflare, 12/11/2026
+    import io
+    import urllib.error
+    from jobhunter.agents import http
+    calls = []
+
+    def once(url, body):
+        calls.append(url)
+        raise urllib.error.HTTPError(url, 429, "Too Many Requests", {"Cf-Mitigated": "challenge"}, io.BytesIO(b"Security Check"))
+
+    monkeypatch.setattr(http, "_request_once", once)
+    monkeypatch.setattr(http.time, "sleep", lambda s: None)
+    try:
+        http.fetch_json("https://x.myworkdayjobs.com/wday/cxs/x/y/jobs", {"limit": 1})
+        raise AssertionError("expected BlockedError")
+    except http.BlockedError:
+        pass
+    assert len(calls) == 1  # no retry, no waiting: a bot check is not a rate limit
+
+
+
+def test_sitemap_agent_reads_job_urls_with_a_language_prefix():  # Palo Alto: /en/job/<city>/...
+    from jobhunter.agents import sitemap
+    xml = ("<loc>https://jobs.p.com/en/job/tel-aviv/sw-intern/1/2</loc><loc>https://jobs.p.com/en/job/santa-clara/x/1/3</loc>"
+           "<loc>https://jobs.p.com/job/petah-tikva/y/1/4</loc>")
+    assert sitemap.job_urls(xml, "jobs.p.com", sitemap.ISRAEL_CITIES) == [
+        "https://jobs.p.com/en/job/tel-aviv/sw-intern/1/2", "https://jobs.p.com/job/petah-tikva/y/1/4"]
+
+
+
+def test_blocked_sites_are_announced_only_when_the_list_changes(tmp_path, monkeypatch):
+    import jobhunter.morning as m
+    sent = []
+    monkeypatch.setattr(m, "notify", lambda title, text: sent.append(text) or True)
+    (tmp_path / "plan").mkdir()
+    report = {"companies": [{"company": "KLA", "blocked": True}, {"company": "Intel", "blocked": True}, {"company": "Wix"}]}
+    assert m.notify_blocked(tmp_path, report) == ["Intel", "KLA"]
+    m.notify_blocked(tmp_path, report)  # the next morning, same list
+    assert len(sent) == 1 and "2 חברות" in sent[0]
+    report["companies"][0]["blocked"] = False  # KLA is readable again
+    m.notify_blocked(tmp_path, report)
+    assert len(sent) == 2

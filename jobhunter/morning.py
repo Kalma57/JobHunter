@@ -299,6 +299,7 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         report = run_all(json.loads(config.read_text(encoding="utf-8")), state, today, weekly_due(state, today))
         _write_json(report_path, report)
     report = _read_json(report_path, {"new": 0, "errors": [], "warnings": [], "companies": [], "kind": "daily"})
+    notify_blocked(state, report)
 
     backlog_path = state / "inbox" / "backlog.json"
     requeued = unfinished_jobs(state)
@@ -412,6 +413,19 @@ def notify_once(state: Path, key: str, title: str, text: str) -> None:
     marker.parent.mkdir(parents=True, exist_ok=True)
     marker.write_text(text, encoding="utf-8")
     notify(title, text)
+
+
+def notify_blocked(state: Path, report: dict) -> list[str]:
+    """Tell the user when the set of sites blocking us changes (12/11/2026: eight Workday sites were blocked for
+    weeks, unseen). Not repeated while the list stays the same."""
+    blocked = sorted(c["company"] for c in report.get("companies", []) if c.get("blocked"))
+    marker = state / "plan" / "blocked-notified.json"
+    if blocked != _read_json(marker, []):
+        _write_json(marker, blocked)
+        if blocked:
+            notify("JobHunter: אתרים חוסמים קריאה אוטומטית",
+                   f"{len(blocked)} חברות: {', '.join(blocked[:6])}{'...' if len(blocked) > 6 else ''}. לא עוקפים. המשרות שלהן לא נקראות עד שהחסימה תוסר.")
+    return blocked
 
 
 def run_brain(state: Path, timeout_minutes: int = 90) -> dict:
