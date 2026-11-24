@@ -4,13 +4,11 @@
     "מפרסם ≠ מעסיק: CVS Health דרך HireMeTech (משרה בארה\"ב, ככל הנראה)",
     "סתירה: המיקום מתויג נצרת, הטקסט על חנות CVS בארה\"ב"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151511311",
+  "compacted": "2026-11-24",
   "company": "CVS Health (דרך HireMeTech)",
   "deadline": "2026-12-21",
   "degree_time": null,
-  "description": "עובד/ת חנות קמעונאית ב-CVS: קופה, מדפים, שירות לקוחות.",
-  "education": "לא נדרשת",
   "employment": "חלקית",
   "experience": "לא נדרש",
   "first_seen": "2026-10-24",
@@ -21,29 +19,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "כניסה לתחום"
   ],
   "location": "נצרת (לפי התגית)",
-  "not_stated": [
-    "work_mode"
-  ],
   "notes": "",
   "posted_at": "2026-10-22",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: קמעונאות, לא פיתוח תוכנה."
   },
-  "requirements_adv": [
-    "ניסיון בקמעונאות"
-  ],
-  "requirements_must": [
-    "גיל 16+"
-  ],
   "salary": "$15-19 לשעה",
   "scope": "20 שעות בשבוע",
   "sightings": [

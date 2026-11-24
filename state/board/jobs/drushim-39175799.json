@@ -1,0 +1,63 @@
+{
+  "agent_id": "drushim:39175799",
+  "alerts": [
+    "סתירה: האתר מציין היקף 'משמרות', והטקסט אומר משרה מלאה א'-ה' 08:00-16:00 — הטקסט קובע"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/39175799/28e71334/",
+  "company": "אורן מערכות",
+  "deadline": null,
+  "degree_time": null,
+  "description": "התקנת מערכות תקשורת בשטח באזור הדרום והמרכז, עם הכשרה מלאה והסעות.",
+  "education": null,
+  "employment": null,
+  "experience": "לא נדרש",
+  "first_seen": "2026-11-24",
+  "history": [
+    {
+      "at": "2026-11-24T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "כניסה לתחום"
+  ],
+  "location": "אזור דרום-מרכז (הסעות מאשקלון, נתיבות, אופקים, שדרות ובאר שבע)",
+  "not_stated": [
+    "employment",
+    "education",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "לא פיתוח תוכנה — עבודת התקנות בשטח, ובנוסף משרה מלאה"
+  },
+  "requirements_adv": [
+    "מוטיבציה גבוהה, ידיים טובות ורצון ללמוד"
+  ],
+  "requirements_must": [
+    "לא נדרש ידע או ניסיון קודם"
+  ],
+  "salary": "מעל שכר המינימום + בונוסים",
+  "scope": "משרה מלאה, א'-ה' 08:00-16:00",
+  "sightings": [
+    {
+      "date": "2026-11-24",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/39175799/28e71334/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "עובד/ת למערכות תקשורת",
+  "url": "https://www.drushim.co.il/job/39175799/28e71334/",
+  "work_mode": "בשטח"
+}

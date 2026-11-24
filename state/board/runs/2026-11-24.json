@@ -1,0 +1,82 @@
+{
+  "after_prefilter": 3,
+  "at": "2026-11-24T07:00:00Z",
+  "backlog": 0,
+  "borderline": [],
+  "brain_filtered": 2,
+  "candidates": 9,
+  "closed": 0,
+  "compacted": 31,
+  "duplicates_code": 0,
+  "errors": [
+    "KLA: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Applied Materials: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Intel: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Marvell: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "HP: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Salesforce: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Cisco: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "HireMeTech: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://juniors.hiremetech.com/jobs-app?view=jobs&sort_by=posted_date&sort_order=desc&page=1\", waiting until \"networkidle\"\n"
+  ],
+  "far": 0,
+  "found_new": 9,
+  "kind": "daily",
+  "passed": 1,
+  "prefiltered": [
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Tel Aviv",
+      "reason": "משרה בכירה (Senior בשם המשרה)",
+      "source": "eightfold:nvidia",
+      "title": "Senior C++ Software Engineer – AI Developer Tools",
+      "url": "https://jobs.nvidia.com/careers/job/893397799755"
+    },
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Yokneam, Israel, Tel Aviv",
+      "reason": "משרה בכירה (Architect בשם המשרה)",
+      "source": "eightfold:nvidia",
+      "title": "Software Architect",
+      "url": "https://jobs.nvidia.com/careers/job/893396811162"
+    },
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Yokneam",
+      "reason": "תחום אחר (Mechanical בשם המשרה)",
+      "source": "eightfold:nvidia",
+      "title": "Manager, Mechanical Engineering",
+      "url": "https://jobs.nvidia.com/careers/job/893394644852"
+    },
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Yokneam",
+      "reason": "דורש תואר מתקדם (PhD בשם המשרה)",
+      "source": "eightfold:nvidia",
+      "title": "Laser Development PhD Student",
+      "url": "https://jobs.nvidia.com/careers/job/893391945660"
+    },
+    {
+      "company": "NVIDIA",
+      "location": "Israel, Yokneam",
+      "reason": "משרה בכירה (Senior בשם המשרה)",
+      "source": "eightfold:nvidia",
+      "title": "Senior Materials Engineer",
+      "url": "https://jobs.nvidia.com/careers/job/893398675023"
+    },
+    {
+      "company": "שנקר - בית-ספר גבוה להנדסה ולעיצוב",
+      "location": "רמת גן",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "מנהל/ת מרכז נגישות למוסד אקדמי במרכז - החלפה לחל\"ד (100%-75% משרה, שכיר/פרילאנס)",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9927072"
+    }
+  ],
+  "prefiltered_count": 6,
+  "removed": 0,
+  "sources_read": 31,
+  "sources_total": 39,
+  "summary": "1 עברו · 2 סוננו ע\"י המוח · 6 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 3,
+  "warnings": []
+}

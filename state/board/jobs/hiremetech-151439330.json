@@ -4,13 +4,11 @@
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים",
     "מספר ימי העבודה בשבוע לא צוין (Part-time)"
   ],
-  "apply_instructions": "הגשה עם מילוי אוטומטי",
   "apply_url": "https://juniors.hiremetech.com/job/151439330",
+  "compacted": "2026-11-24",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "סטודנט/ית להנדסת תוכנה בתחום סייבר: Python, Linux, Docker, Kubernetes, מחקר ו-LLM.",
-  "education": null,
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-24",
@@ -21,35 +19,18 @@
       "status": "new"
     }
   ],
-  "inferred": {
-    "posted_at": "יחסי: לפני 23 שעות"
-  },
   "is_job": true,
   "level": [
     "סטודנט"
   ],
   "location": "רמת גן",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "experience",
-    "education",
-    "degree_time"
-  ],
   "notes": "נבדק מול משרות דומות (Software Engineer Intern רמת גן ועוד) — לא כפילות.",
   "posted_at": "2026-10-23",
-  "prefs_down": [],
-  "prefs_up": [
-    "Python",
-    "AI"
-  ],
   "rank": "high",
   "relevance": {
     "pass": true,
     "reason": "משרת סטודנט בפיתוח תוכנה (סייבר) ברמת גן (מרכז), חלקית; Python + LLM."
   },
-  "requirements_adv": [],
-  "requirements_must": [],
   "salary": null,
   "scope": "חלקית",
   "sightings": [

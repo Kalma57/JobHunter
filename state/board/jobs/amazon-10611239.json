@@ -1,0 +1,68 @@
+{
+  "agent_id": "amazon:10611239",
+  "alerts": [
+    "האתר תייג את המשרה במילת המפתח Internship, אבל המודעה דורשת ניסיון מקצועי שאינו התמחות — זו לא משרת סטודנט"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://account.amazon.jobs/jobs/10611239/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": null,
+  "description": "מהנדס/ת תוכנה לפיתוח תשתיות ושירותי אוטומציה על ענן AWS, כולל תמיכה במפתחי אוטומציה והנחיית מהנדסים צעירים.",
+  "education": "יתרון: תואר ראשון במדעי המחשב או מקביל",
+  "employment": null,
+  "experience": "1+ שנות ניסיון מקצועי בפיתוח תוכנה (לא התמחות)",
+  "first_seen": "2026-11-24",
+  "history": [
+    {
+      "at": "2026-11-24T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ג'וניור"
+  ],
+  "location": "חיפה (חיפה והקריות)",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-23",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "לא משרת סטודנט — דורשת שנת ניסיון מקצועי (לא התמחות), ובנוסף בחיפה (צפון)"
+  },
+  "requirements_adv": [
+    "תואר ראשון במדעי המחשב או מקביל"
+  ],
+  "requirements_must": [
+    "שנה ומעלה של ניסיון מקצועי בפיתוח תוכנה (לא התמחות)",
+    "ניסיון בתכנות בשפת תכנות אחת לפחות"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-24",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10611239/cloud-software-engineer-annapurna-labs"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "filtered",
+  "title": "Cloud Software Engineer, Annapurna Labs",
+  "url": "https://www.amazon.jobs/en/jobs/10611239/cloud-software-engineer-annapurna-labs",
+  "work_mode": null
+}

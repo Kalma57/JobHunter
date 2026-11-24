@@ -1,13 +1,11 @@
 {
   "agent_id": "amazon:10579756",
   "alerts": [],
-  "apply_instructions": null,
   "apply_url": "https://account.amazon.jobs/jobs/10579756/apply",
+  "compacted": "2026-11-24",
   "company": "Amazon (Annapurna Labs Ltd.)",
   "deadline": null,
   "degree_time": null,
-  "description": "מהנדס/ת אימות פורמלי לשבבי Graviton/Nitro, מהארכיטקטורה ועד sign-off.",
-  "education": "תואר ראשון בהנדסת חשמל או קרוב",
   "employment": null,
   "experience": null,
   "first_seen": "2026-10-24",
@@ -18,34 +16,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {},
   "is_job": true,
   "level": [
     "ביניים"
   ],
   "location": "חיפה",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "scope",
-    "experience"
-  ],
   "notes": "",
   "posted_at": "2026-10-15",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: אימות פורמלי של שבבים, לא פיתוח תוכנה; לא משרת סטודנט; חיפה."
   },
-  "requirements_adv": [
-    "Python/Perl/TCL",
-    "SystemVerilog"
-  ],
-  "requirements_must": [
-    "תואר בהנדסת חשמל",
-    "ניסיון בהדרכת מהנדסים"
-  ],
   "salary": null,
   "scope": null,
   "sightings": [

@@ -1,0 +1,73 @@
+{
+  "agent_id": "amazon:10611215",
+  "alerts": [
+    "דרישה ל'לפחות שנתיים עד סיום התואר' — סיום משוער 2028 (חודש לא צוין), כדאי לוודא שעומד בדרישה"
+  ],
+  "apply_instructions": "לצרף גיליון ציונים יחד עם קורות החיים בקובץ PDF אחד",
+  "apply_url": "https://account.amazon.jobs/jobs/10611215/apply",
+  "company": "Amazon (Annapurna Labs Ltd.)",
+  "deadline": null,
+  "degree_time": "לפחות שנתיים לסיום",
+  "description": "סטודנט/ית לפיתוח תוכנה בצוות Virtual Platforms: פיתוח ותחזוקה של מודלי סימולציה של רכיבי חומרה, כתיבת קוד ובדיקות, דיבוג ממשקי חומרה-תוכנה ובניית כלי אוטומציה.",
+  "education": "סטודנט/ית לתואר ראשון (B.Sc) במדעי המחשב, הנדסת תוכנה או תחום קשור",
+  "employment": "חלקית",
+  "experience": null,
+  "first_seen": "2026-11-24",
+  "history": [
+    {
+      "at": "2026-11-24T07:00:00Z",
+      "note": "נמצא ע\"י amazon:amazon",
+      "status": "new"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "תל אביב-יפו (מרכז)",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "experience",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-23",
+  "prefs_down": [
+    "C++"
+  ],
+  "prefs_up": [
+    "AI"
+  ],
+  "rank": "mid",
+  "relevance": {
+    "pass": true,
+    "reason": "משרת סטודנט בפיתוח תוכנה בתל אביב, 2-3 ימים בשבוע, דרישת 'לפחות שנתיים לסיום' תואמת לסיום 2028"
+  },
+  "requirements_adv": [
+    "ניסיון בתכנות ב-C / C++",
+    "ניסיון עם Linux, מערכות משובצות או תכנות low-level",
+    "היכרות עם ארכיטקטורת מחשבים, סימולציה/מידול או ממשקי חומרה-תוכנה",
+    "שימוש מוקדם בכלי פיתוח מבוססי AI"
+  ],
+  "requirements_must": [
+    "סטודנט/ית ל-B.Sc במדעי המחשב, הנדסת תוכנה או תחום קשור",
+    "לפחות שנתיים עד סיום התואר",
+    "זמינות למשרה חלקית (לפחות 2-3 ימים בשבוע)"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית, לפחות 2-3 ימים בשבוע לצד הלימודים",
+  "sightings": [
+    {
+      "date": "2026-11-24",
+      "source": "amazon:amazon",
+      "url": "https://www.amazon.jobs/en/jobs/10611215/software-engineer-student-virtual-platforms-annapurna-labs"
+    }
+  ],
+  "source": "amazon:amazon",
+  "status": "new",
+  "title": "Software Engineer Student, Virtual Platforms, Annapurna Labs",
+  "url": "https://www.amazon.jobs/en/jobs/10611215/software-engineer-student-virtual-platforms-annapurna-labs",
+  "work_mode": null
+}

@@ -3,13 +3,11 @@
   "alerts": [
     "המודעה קטועה — הטקסט המלא באתר רק למשתמשים מחוברים"
   ],
-  "apply_instructions": null,
   "apply_url": "https://juniors.hiremetech.com/job/151527932",
+  "compacted": "2026-11-24",
   "company": "חסוי — דרך HireMeTech",
   "deadline": null,
   "degree_time": null,
-  "description": "אנליסט/ית Private Equity, משרה מלאה.",
-  "education": null,
   "employment": null,
   "experience": "1+ שנים",
   "first_seen": "2026-10-24",
@@ -20,33 +18,17 @@
       "status": "filtered"
     }
   ],
-  "inferred": {
-    "posted_at": "יחסי: לפני 5 שעות"
-  },
   "is_job": true,
   "level": [
     "ג'וניור"
   ],
   "location": "רמת גן",
-  "not_stated": [
-    "work_mode",
-    "salary",
-    "education",
-    "degree_time"
-  ],
   "notes": "",
   "posted_at": "2026-10-24",
-  "prefs_down": [],
-  "prefs_up": [],
   "relevance": {
     "pass": false,
     "reason": "תחום אחר: פיננסים; משרה מלאה, לא משרת סטודנט."
   },
-  "requirements_adv": [],
-  "requirements_must": [
-    "Excel",
-    "אנגלית ברמה גבוהה"
-  ],
   "salary": null,
   "scope": "משרה מלאה",
   "sightings": [
