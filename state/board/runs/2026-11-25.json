@@ -1,0 +1,42 @@
+{
+  "after_prefilter": 1,
+  "at": "2026-11-25T07:00:00Z",
+  "backlog": 0,
+  "borderline": [],
+  "brain_filtered": 1,
+  "candidates": 2,
+  "closed": 0,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "KLA: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Applied Materials: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Intel: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Marvell: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "HP: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Salesforce: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Cisco: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "JobMaster: FetchError: network error from https://www.jobmaster.co.il/jobs/q-%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98-%D7%AA%D7%95%D7%9B%D7%A0%D7%94/: The read operation timed out"
+  ],
+  "far": 0,
+  "found_new": 2,
+  "kind": "daily",
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "לין ביכלר ראשי",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (תומך בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "תומך/ת טכני/ת לחברה טכנולוגית - משרה היברידית!",
+      "url": "https://www.drushim.co.il/job/39191873/045e7236/"
+    }
+  ],
+  "prefiltered_count": 1,
+  "removed": 0,
+  "sources_read": 31,
+  "sources_total": 39,
+  "summary": "0 עברו · 1 סוננו ע\"י המוח · 1 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 1,
+  "warnings": []
+}

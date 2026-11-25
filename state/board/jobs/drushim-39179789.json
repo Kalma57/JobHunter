@@ -1,0 +1,66 @@
+{
+  "agent_id": "drushim:39179789",
+  "alerts": [
+    "מפרסם ≠ מעסיק: פורסם ע\"י שגב השמה ושיווק נדלן בשם חברת הנדסה ובנייה ביקיר"
+  ],
+  "apply_instructions": null,
+  "apply_url": "https://www.drushim.co.il/job/39179789/e1c54c29/",
+  "company": "חסוי — דרך שגב השמה ושיווק נדלן",
+  "deadline": null,
+  "degree_time": null,
+  "description": "איש/אשת ביצוע בחברת בנייה של וילות מודולריות ביקיר: בדק בית, ניהול מלאי ועבודה מול ספקים, ליווי פעילות הביצוע בשטח.",
+  "education": "הנדסאי/ת בניין / סטודנטים; אין חובה בזכות חתימה",
+  "employment": "דרך חברת כוח אדם",
+  "experience": "ניסיון קודם בתחום הביצוע – חובה (האתר: 1-2 שנים)",
+  "first_seen": "2026-11-25",
+  "history": [
+    {
+      "at": "2026-11-25T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "employment": "המפרסם הוא חברת השמה (שגב השמה ושיווק נדלן)",
+    "work_mode": "מהתיאור 'השתלבות בפעילות השטח' וליווי ביצוע — עבודת שטח"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "יקיר",
+  "not_stated": [
+    "salary",
+    "apply_instructions",
+    "deadline",
+    "degree_time"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-23",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — ביצוע בבנייה (הנדסאי בניין), לא פיתוח תוכנה; גם משרה מלאה ודרישת ניסיון"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "ניסיון קודם בתחום הביצוע",
+    "רישיון לנשיאת נשק פרטי",
+    "משרת/ת מילואים פעיל/ה"
+  ],
+  "salary": null,
+  "scope": "משרה מלאה, א'-ה', 06:15–16:15",
+  "sightings": [
+    {
+      "date": "2026-11-25",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/39179789/e1c54c29/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "לחברה קטנה ביקיר ליד אלקנה הנדסאי/ת בניין",
+  "url": "https://www.drushim.co.il/job/39179789/e1c54c29/",
+  "work_mode": "בשטח"
+}
