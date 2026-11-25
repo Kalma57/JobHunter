@@ -4,7 +4,7 @@
   "backlog": 0,
   "borderline": [],
   "brain_filtered": 0,
-  "candidates": 4,
+  "candidates": 5,
   "closed": 0,
   "compacted": 0,
   "duplicates_code": 0,
@@ -16,7 +16,7 @@
     "HP: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
     "Salesforce: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
     "Cisco: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
-    "JobMaster: FetchError: network error from https://www.jobmaster.co.il/jobs/q-%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98-%D7%AA%D7%95%D7%9B%D7%A0%D7%94/: The read operation timed out"
+    "JobMaster: FetchError: network error from https://www.jobmaster.co.il/jobs/q-%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98-%D7%94%D7%99%D7%99%D7%98%D7%A7/: The read operation timed out"
   ],
   "far": 0,
   "found_new": 2,
@@ -47,14 +47,22 @@
       "source": "drushim:drushim",
       "title": "תומך/ת טכני/ת לחברה טכנולוגית - משרה היברידית!",
       "url": "https://www.drushim.co.il/job/39191873/045e7236/"
+    },
+    {
+      "company": "לין ביכלר ראשי",
+      "location": "פתח תקווה",
+      "reason": "תחום אחר (תומך בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "תומך/ת טכני/ת לחברה טכנולוגית - משרה היברידית!",
+      "url": "https://www.drushim.co.il/job/39191873/045e7236/"
     }
   ],
-  "prefiltered_count": 3,
+  "prefiltered_count": 4,
   "removed": 0,
   "retry_pass": true,
   "sources_read": 31,
   "sources_total": 39,
-  "summary": "0 עברו · 0 סוננו ע\"י המוח · 3 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "summary": "0 עברו · 0 סוננו ע\"י המוח · 4 סוננו בקוד · 0 כפילויות · 0 ממתינות",
   "to_brain": 1,
   "warnings": []
 }
