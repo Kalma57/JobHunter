@@ -532,8 +532,8 @@ def online(timeout: float = 5.0) -> bool:
 
 
 def due(state: Path, today: date, check_network: bool = False) -> tuple[bool, str]:
-    """Should the hourly Windows task run the morning now? Not when today's morning is already on the board, and not
-    while another run is going (a lock younger than 3 hours). The task tries every hour from 08:00, because Windows'
+    """Should the Windows task (every two hours 08:00-22:00, and at wake / unlock / logon) run the morning now? Not when today's morning is already on the board, and not
+    while another run is going (a lock younger than 3 hours). The task keeps trying until it has worked, because Windows'
     "run a missed task when available" did not catch up after sleep (9/11/2026)."""
     import time
     retry = False

@@ -1,5 +1,5 @@
 @echo off
-rem JobHunter morning run (docs/agents/brain-run.md). Windows Task Scheduler "JobHunter morning": every hour 08:00-23:00;
+rem JobHunter morning run (docs/agents/brain-run.md). Windows Task Scheduler "JobHunter morning": every two hours 08:00-22:00 (plus at wake, unlock and logon);
 rem runs once a day - "due" exits at once when today is done or a run is going (9/11/2026: a missed run was not caught up).
 rem prepare -> brain (claude -p) -> apply (cards onto the board) -> finish (public page + backup to git). No Claude app needed.
 cd /d "%~dp0.."
