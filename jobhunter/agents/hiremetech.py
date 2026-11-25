@@ -20,6 +20,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from jobhunter.agents.filters import matching_keyword
+from jobhunter.agents.http import FetchError
 from jobhunter.state import _read_json, _write_json
 
 USER_AGENT = "JobHunter/1.0 (personal job search; read-only; one request at a time)"
@@ -106,6 +107,8 @@ def collect(read_list_page, read_job_page, company: dict, keywords: list[str], c
         cards = read_list_page(page)
         pages += 1
         if not cards:
+            if page == 1:  # the site lists Israel jobs all day: an empty first page is its server failing (23 and 25/11/2026)
+                raise FetchError("HireMeTech עצמו לא מחזיר משרות כרגע (שגיאת רשת בעמוד שלהם). ננסה שוב בהמשך היום.")
             break
         for job_id, text in cards:
             if job_id not in cache:
@@ -155,11 +158,15 @@ def fetch(company: dict, israel: dict, keywords: list[str], cache_dir: Path | No
                 page.goto(url, wait_until="networkidle", timeout=60_000)
 
             def read_list_page(n: int) -> list[tuple[str, str]]:
-                open_page(LIST_URL.format(host=company["host"], page=n))
-                try:  # the list renders after the network goes quiet; an empty page only after a real wait
-                    page.wait_for_selector('a[href*="/job/"]', timeout=20_000)
-                except PlaywrightTimeout:
-                    return []
+                for attempt in range(3 if n == 1 else 1):  # the site's server flaps: the first page gets three tries
+                    open_page(LIST_URL.format(host=company["host"], page=n))
+                    try:  # the list renders after the network goes quiet; an empty page only after a real wait
+                        page.wait_for_selector('a[href*="/job/"]', timeout=20_000)
+                        break
+                    except PlaywrightTimeout:
+                        if attempt == 2 or n != 1:
+                            return []
+                        time.sleep(30)
                 found = page.eval_on_selector_all(
                     'a[href*="/job/"]',
                     "els => els.map(e => [e.getAttribute('href'), (e.closest('div[class]') || e).innerText])")

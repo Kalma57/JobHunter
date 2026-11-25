@@ -290,13 +290,22 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
             config: Path = Path("config/sources.json"), run_agents: bool = True, use_marks: bool = True) -> dict:
     """Steps 1-3 of the morning run in one command: sub-agents, code prefilter, plan, and the brain's files."""
     from jobhunter import prefilter
-    from jobhunter.agents.__main__ import SUNDAY, run_all
+    from jobhunter.agents.__main__ import SUNDAY, merge_reports, retryable_failures, run_all
 
     plan_dir = state / "plan"
     plan_dir.mkdir(parents=True, exist_ok=True)
     report_path = state / "runs" / f"{today.isoformat()}-agents.json"
+    existing = _read_json(report_path, None)
+    retry = existing is not None and done_marker(state, today.isoformat()).exists()  # the day is done: only the sources that flapped
     if run_agents:
-        report = run_all(json.loads(config.read_text(encoding="utf-8")), state, today, weekly_due(state, today))
+        cfg = json.loads(config.read_text(encoding="utf-8"))
+        if retry:
+            fresh = run_all(cfg, state, today, existing.get("kind") == "weekly", only=retryable_failures(existing))
+            report = merge_reports(existing, fresh)
+            counter = plan_dir / f"retries-{today.isoformat()}.txt"
+            counter.write_text(str(int(counter.read_text() or 0) + 1 if counter.exists() else 1), encoding="utf-8")
+        else:
+            report = run_all(cfg, state, today, weekly_due(state, today))
         _write_json(report_path, report)
     report = _read_json(report_path, {"new": 0, "errors": [], "warnings": [], "companies": [], "kind": "daily"})
     notify_blocked(state, report)
@@ -345,9 +354,19 @@ def prepare(state: Path, board_dir: Path, today: date, limit: int = DAILY_LIMIT,
         "errors": report.get("errors", []),
         "warnings": report.get("warnings", []) + ([marks_error] if marks_error else []),
     }
+    if retry:  # the day's numbers stay whole: add this pass to the morning's
+        prev = _read_json(files["run"], {})
+        for k in ("to_brain", "duplicates_code", "prefiltered_count", "candidates", "after_prefilter", "closed", "compacted", "removed"):
+            run[k] = run.get(k, 0) + prev.get(k, 0)
+        run["prefiltered"] = list(prev.get("prefiltered") or []) + run["prefiltered"]
+        for k in ("passed", "brain_filtered", "far", "borderline", "merged", "summary"):
+            if k in prev:
+                run[k] = prev[k]
+        run["retry_pass"] = True
     _write_json(files["run"], run)
     (plan_dir / "last-prepare.txt").write_text(today.isoformat(), encoding="utf-8")
-    done_marker(state, today.isoformat()).unlink(missing_ok=True)
+    if not retry:
+        done_marker(state, today.isoformat()).unlink(missing_ok=True)
     result = {
         "date": today.isoformat(),
         "sources_read": f"{run['sources_read']}/{run['sources_total']}",
@@ -482,9 +501,12 @@ def apply_brain(state: Path, board_dir: Path) -> dict:
         by_doc = {doc_id(item["inbox_job"]["id"]): item["inbox_job"] for item in plan.get("jobs", [])}
         _write_json(backlog_path, [by_doc[m["doc_id"]] for m in missing if m["doc_id"] in by_doc] + _read_json(backlog_path, []))
     run = _read_json(plan_dir / f"{day}-run.json", {})
-    run.update({k: counts[k] for k in ("passed", "brain_filtered", "far", "borderline")})
-    run["summary"] = (f"{counts['passed']} עברו · {counts['brain_filtered']} סוננו ע\"י המוח · {run.get('prefiltered_count', 0)} סוננו בקוד"
-                      f" · {counts['merged'] + run.get('duplicates_code', 0)} כפילויות · {run.get('backlog', 0)} ממתינות")
+    for k in ("passed", "brain_filtered", "far"):  # a retry pass adds to the morning's numbers
+        run[k] = run.get(k, 0) + counts[k]
+    run["borderline"] = list(run.get("borderline") or []) + counts["borderline"]
+    run["merged"] = run.get("merged", 0) + counts["merged"]
+    run["summary"] = (f"{run['passed']} עברו · {run['brain_filtered']} סוננו ע\"י המוח · {run.get('prefiltered_count', 0)} סוננו בקוד"
+                      f" · {run['merged'] + run.get('duplicates_code', 0)} כפילויות · {run.get('backlog', 0)} ממתינות")
     (plan_dir / "applied").mkdir(parents=True, exist_ok=True)
     (plan_dir / "applied" / f"{day}.txt").write_text("1", encoding="utf-8")  # the cards are on the board: never requeue them
     result = {"date": day, "apply": "ok", **{k: v for k, v in counts.items() if k != "borderline"}, "back_to_queue": len(missing)}
@@ -514,19 +536,45 @@ def due(state: Path, today: date, check_network: bool = False) -> tuple[bool, st
     while another run is going (a lock younger than 3 hours). The task tries every hour from 08:00, because Windows'
     "run a missed task when available" did not catch up after sleep (9/11/2026)."""
     import time
+    retry = False
     if done_marker(state, today.isoformat()).exists():
-        return False, "today's morning is already done"
+        if not retry_due(state, today):
+            return False, "today's morning is already done"
+        retry = True
     lock = state / "plan" / "running.lock"
     if lock.exists() and time.time() - lock.stat().st_mtime < 3 * 3600:
         return False, "another run is going"
     attempts = state / "plan" / f"attempts-{today.isoformat()}.txt"
-    if attempts.exists() and int(attempts.read_text() or 0) >= MAX_ATTEMPTS:
+    if not retry and attempts.exists() and int(attempts.read_text() or 0) >= MAX_ATTEMPTS:
         notify_once(state, f"attempts-{today.isoformat()}", "JobHunter: הריצה נכשלה היום",
                     f"אחרי {MAX_ATTEMPTS} ניסיונות הבוקר לא הושלם. הפרטים בתיקיית state/logs. המשרות מחכות בתור.")
         return False, f"{MAX_ATTEMPTS} attempts today already - see the morning log"
     if check_network and not online():
         return False, "no network yet"  # does not use an attempt: the next trigger tries again
-    return True, "run"
+    return True, "retry the sources that failed" if retry else "run"
+
+
+MAX_RETRIES = 3           # a source that flaps is read again up to three times in the same day...
+RETRY_AFTER_MINUTES = 50  # ...at least this long after the last run
+
+
+def retry_due(state: Path, today: date) -> bool:
+    """Today's morning is done, but a source failed for a reason that may pass (HireMeTech's server, a timeout):
+    read just those sources again (run_all(only=...)) and give Claude whatever they bring."""
+    import time
+    from jobhunter.agents.__main__ import retryable_failures
+    day = today.isoformat()
+    report = _read_json(state / "runs" / f"{day}-agents.json", None)
+    if not report or not retryable_failures(report):
+        return False
+    counter = state / "plan" / f"retries-{day}.txt"
+    if counter.exists() and int(counter.read_text() or 0) >= MAX_RETRIES:
+        return False
+    attempts = state / "plan" / f"attempts-{day}.txt"
+    if attempts.exists() and int(attempts.read_text() or 0) >= MAX_ATTEMPTS:
+        return False
+    last = state / "plan" / "last-prepare.txt"
+    return not last.exists() or time.time() - last.stat().st_mtime >= RETRY_AFTER_MINUTES * 60
 
 
 MAX_ATTEMPTS = 5  # a run that keeps failing (e.g. Claude signed out) must not read every site every hour

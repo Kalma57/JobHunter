@@ -13,7 +13,7 @@ The owner's name and links come from config/public.json.
 import argparse
 import json
 import sys
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 from jobhunter.state import _read_json
@@ -57,7 +57,8 @@ def build(board_dir: Path, state: Path, today: date, out_dir: Path = OUT_DIR) ->
     from jobhunter.morning import load_board
     from jobhunter import overlay
     marks, _ = overlay.load()
-    data = {"config": _read_json(CONFIG, {}), "run": run_numbers(state, today), "jobs": board_jobs(load_board(board_dir)),
+    built_at = datetime.now().astimezone().isoformat(timespec="minutes")
+    data = {"config": _read_json(CONFIG, {}), "run": {**run_numbers(state, today), "built_at": built_at}, "jobs": board_jobs(load_board(board_dir)),
             "marks": marks}
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     html = TEMPLATE.read_text(encoding="utf-8").replace("/*__DATA__*/null", payload)

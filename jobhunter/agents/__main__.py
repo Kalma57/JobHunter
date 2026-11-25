@@ -40,7 +40,24 @@ def previous_report(runs_dir: Path, today: date) -> dict | None:
     return json.loads(earlier[-1].read_text(encoding="utf-8")) if earlier else None
 
 
-def run_all(config: dict, state: Path, today: date, weekly: bool = False) -> dict:
+def retryable_failures(report: dict) -> set[str]:
+    """Sources that failed for a reason that may pass within the day (a site that flaps) - not a bot check, and not
+    a 429 (a site that asks us to slow down is not asked again the same day)."""
+    return {c["source"] for c in report.get("companies", [])
+            if "error" in c and not c.get("blocked") and "429" not in c["error"]}
+
+
+def merge_reports(old: dict, fresh: dict) -> dict:
+    """The day's report after a retry pass: the retried sources replace their old rows, the rest stays."""
+    rows = {c["source"]: c for c in old.get("companies", [])}
+    rows.update({c["source"]: c for c in fresh.get("companies", [])})
+    companies = list(rows.values())
+    return {**old, "companies": companies, "new": sum(c.get("new", 0) for c in companies),
+            "errors": [f"{c['company']}: {c['error']}" for c in companies if "error" in c],
+            "warnings": [f"{c['company']}: {c['warning']}" for c in companies if "warning" in c]}
+
+
+def run_all(config: dict, state: Path, today: date, weekly: bool = False, only: set[str] | None = None) -> dict:
     keywords = config["keywords"]["weekly" if weekly else "daily"]
     inbox = Inbox(state / "inbox")
     before = previous_report(state / "runs", today)
@@ -50,6 +67,8 @@ def run_all(config: dict, state: Path, today: date, weekly: bool = False) -> dic
     for system, entries in config["systems"].items():
         for company in entries:
             source = f"{system}:{company['slug']}"
+            if only is not None and source not in only:
+                continue
             row = {"source": source, "company": company["company"]}
             try:
                 fetch = AGENTS[system]
