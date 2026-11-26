@@ -3,8 +3,8 @@
   "at": "2026-11-26T07:00:00Z",
   "backlog": 0,
   "borderline": [],
-  "brain_filtered": 2,
-  "candidates": 8,
+  "brain_filtered": 0,
+  "candidates": 14,
   "closed": 0,
   "compacted": 0,
   "duplicates_code": 0,
@@ -71,13 +71,62 @@
       "source": "jobmaster:jobmaster",
       "title": "למרכז האקדמי הרב תחומי ירושלים דרוש/ה רכז/ת חוג",
       "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9930223"
+    },
+    {
+      "company": "אינטרנט רימון",
+      "location": "בני ברק, רמת גן, אור יהודה, פתח תקווה, ראש העין, אלעד, יהוד, גבעת שמואל",
+      "reason": "תחום אחר (תמיכה בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "נציג/ת תמיכה טכנית- שילוב עבודה מהבית!",
+      "url": "https://www.drushim.co.il/job/39208536/aa0363d9/"
+    },
+    {
+      "company": "קבוצת תדהר",
+      "location": "רעננה",
+      "reason": "תחום אחר (בקר בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "בקר/ית פרויקטים - תדהר גמרים",
+      "url": "https://www.drushim.co.il/job/39202437/7be7faa4/"
+    },
+    {
+      "company": "המכללה האקדמית להנדסה סמי שמעון",
+      "location": "אשדוד",
+      "reason": "תחום אחר (טכנאי בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "טכנאי/ת מעבדות חשמל ואלקטרוניקה, קמפוס אשדוד",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9933015"
+    },
+    {
+      "company": "המרכז האקדמי הרב תחומי ירושלים",
+      "location": "ירושלים",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "למרכז האקדמי הרב תחומי ירושלים דרוש/ה רכז/ת חוג",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9931242"
+    },
+    {
+      "company": "המרכז האקדמי הרב תחומי ירושלים",
+      "location": "ירושלים",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "למרכז האקדמי הרב תחומי ירושלים דרוש/ה רכז/ת חוג",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9930233"
+    },
+    {
+      "company": "המרכז האקדמי הרב תחומי ירושלים",
+      "location": "ירושלים",
+      "reason": "תחום אחר (רכז בשם המשרה)",
+      "source": "jobmaster:jobmaster",
+      "title": "למרכז האקדמי הרב תחומי ירושלים דרוש/ה רכז/ת חוג",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9930223"
     }
   ],
-  "prefiltered_count": 6,
+  "prefiltered_count": 12,
   "removed": 0,
+  "retry_pass": true,
   "sources_read": 31,
   "sources_total": 39,
-  "summary": "0 עברו · 2 סוננו ע\"י המוח · 6 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "summary": "0 עברו · 0 סוננו ע\"י המוח · 12 סוננו בקוד · 0 כפילויות · 0 ממתינות",
   "to_brain": 2,
   "warnings": []
 }
