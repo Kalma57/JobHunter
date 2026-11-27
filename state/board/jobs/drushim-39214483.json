@@ -1,0 +1,67 @@
+{
+  "agent_id": "drushim:39214483",
+  "alerts": [
+    "האתר תייג 'סטודנט', אבל זו לא משרת סטודנט — דורש תואר שני"
+  ],
+  "apply_instructions": null,
+  "apply_url": null,
+  "company": "אוניברסיטת תל אביב",
+  "deadline": null,
+  "degree_time": null,
+  "description": "ריכוז וניהול פרויקטי הגמר בבית הספר להנדסת תעשייה ומערכות נבונות, קשר עם התעשייה ומנחים.",
+  "education": "תואר שני בהנדסה או במדעים מדויקים",
+  "employment": "חלקית",
+  "experience": "1-2 שנים (לפי האתר)",
+  "first_seen": "2026-11-27",
+  "history": [
+    {
+      "at": "2026-11-27T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "ביניים"
+  ],
+  "location": "תל אביב",
+  "not_stated": [
+    "work_mode",
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "דורש תואר שני ואינו משרת סטודנט או פיתוח תוכנה"
+  },
+  "requirements_adv": [
+    "תואר בהנדסת תעשייה וניהול",
+    "ניסיון בהוראה / הדרכה / ליווי פרויקטים"
+  ],
+  "requirements_must": [
+    "תואר שני בהנדסה או במדעים מדויקים",
+    "היכרות עם התעשייה",
+    "עברית ואנגלית ברמה גבוהה מאוד",
+    "נכונות לשעות נוספות"
+  ],
+  "salary": null,
+  "scope": "משרה חלקית",
+  "sightings": [
+    {
+      "date": "2026-11-27",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/39214483/8d951762/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "אחראי/ת פרויקטי גמר לתואר ראשון",
+  "url": "https://www.drushim.co.il/job/39214483/8d951762/",
+  "work_mode": null
+}

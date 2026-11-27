@@ -1,0 +1,61 @@
+{
+  "after_prefilter": 4,
+  "at": "2026-11-27T07:00:00Z",
+  "backlog": 0,
+  "borderline": [],
+  "brain_filtered": 4,
+  "candidates": 7,
+  "closed": 0,
+  "compacted": 0,
+  "duplicates_code": 0,
+  "errors": [
+    "KLA: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Applied Materials: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Intel: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Marvell: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "HP: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Salesforce: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Cisco: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Cadence: האתר חוסם קריאה אוטומטית (בדיקת בוטים). לא עוקפים; ננסה שוב בריצה הבאה.",
+    "Microsoft: FetchError: HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=Israel&start=0",
+    "HireMeTech: FetchError: HireMeTech עצמו לא מחזיר משרות כרגע (שגיאת רשת בעמוד שלהם). ננסה שוב בהמשך היום."
+  ],
+  "far": 0,
+  "found_new": 7,
+  "kind": "daily",
+  "merged": 0,
+  "passed": 0,
+  "prefiltered": [
+    {
+      "company": "מודיעין אזרחי-מטה",
+      "location": "ירושלים",
+      "reason": "תחום אחר (בודק בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "מוקדנים/ות ובודקים/ות ביטחוניים/ות – ירושלים",
+      "url": "https://www.drushim.co.il/job/39216288/1d1f1610/"
+    },
+    {
+      "company": "Elbit Systems",
+      "location": "רחובות",
+      "reason": "תחום אחר (Physics בשם המשרה)",
+      "source": "drushim:drushim",
+      "title": "Physics Master’s / PhD Student",
+      "url": "https://www.drushim.co.il/job/39217504/211c1ae0/"
+    },
+    {
+      "company": "Amazon (Annapurna Labs Ltd.)",
+      "location": "Tel Aviv-Yafo, Tel Aviv, ISR",
+      "reason": "תחום אחר (Chip Design בשם המשרה)",
+      "source": "amazon:amazon",
+      "title": "Chip Design Student, Chip Design Student",
+      "url": "https://www.amazon.jobs/en/jobs/10596368/chip-design-student-chip-design-student"
+    }
+  ],
+  "prefiltered_count": 3,
+  "removed": 0,
+  "sources_read": 29,
+  "sources_total": 39,
+  "summary": "0 עברו · 4 סוננו ע\"י המוח · 3 סוננו בקוד · 0 כפילויות · 0 ממתינות",
+  "to_brain": 4,
+  "warnings": []
+}

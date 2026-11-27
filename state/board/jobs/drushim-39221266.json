@@ -1,0 +1,62 @@
+{
+  "agent_id": "drushim:39221266",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": null,
+  "company": "קבוצת אשטרום",
+  "deadline": null,
+  "degree_time": null,
+  "description": "בקר/ית איכות במשרת סטודנט בפרויקט מגורים של אשטרום באזור ירושלים, עתודה למהנדס/ת ביצוע.",
+  "education": "סטודנט/ית להנדסת בניין, שנה ג'",
+  "employment": "חלקית",
+  "experience": "ללא ניסיון",
+  "first_seen": "2026-11-27",
+  "history": [
+    {
+      "at": "2026-11-27T07:00:00Z",
+      "note": "נמצא ע\"י drushim:drushim",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {
+    "work_mode": "הוסק מ'ניסיון מעשי בשטח' בפרויקט מגורים"
+  },
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "ירושלים",
+  "not_stated": [
+    "salary",
+    "degree_time",
+    "deadline"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-26",
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — בקרת איכות בבנייה, דורש הנדסת בניין"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית להנדסת בניין, שנה ג'",
+    "3 ימים בשבוע",
+    "זמינות 07:00–17:00"
+  ],
+  "salary": null,
+  "scope": "3 ימים בשבוע, 07:00–17:00",
+  "sightings": [
+    {
+      "date": "2026-11-27",
+      "source": "drushim:drushim",
+      "url": "https://www.drushim.co.il/job/39221266/c378e832/"
+    }
+  ],
+  "source": "drushim:drushim",
+  "status": "filtered",
+  "title": "מתחילים לבנות את הקריירה כבר במהלך הלימודים",
+  "url": "https://www.drushim.co.il/job/39221266/c378e832/",
+  "work_mode": "בשטח"
+}

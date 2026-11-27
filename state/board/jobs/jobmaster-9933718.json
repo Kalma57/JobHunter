@@ -1,0 +1,68 @@
+{
+  "agent_id": "jobmaster:9933718",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": null,
+  "company": "מכון ויצמן למדע",
+  "deadline": null,
+  "degree_time": null,
+  "description": "רכז/ת ביחידות הפיתוח הארגוני והלמידה: תוצרי למידה דיגיטליים, סקרי משוב, ניהול LMS ותפעול אדמיניסטרטיבי.",
+  "education": "סטודנט/ית לתואר ראשון בטכנולוגיות למידה, שנה ב'",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-27",
+  "history": [
+    {
+      "at": "2026-11-27T07:00:00Z",
+      "note": "נמצא ע\"י jobmaster:jobmaster",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "רחובות",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "posted_at"
+  ],
+  "notes": "",
+  "posted_at": null,
+  "prefs_down": [],
+  "prefs_up": [],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — ריכוז פיתוח ארגוני ולמידה, דורש תואר בטכנולוגיות למידה"
+  },
+  "requirements_adv": [
+    "Microsoft 365, כלי AI, Canva, Genially, Storyline",
+    "ניסיון במערכות LMS",
+    "התנסות ב-UX/UI ו-LX"
+  ],
+  "requirements_must": [
+    "סטודנט/ית לתואר ראשון בטכנולוגיות למידה — שנה ב'",
+    "אנגלית ברמה שוטפת"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-27",
+      "source": "jobmaster:jobmaster",
+      "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9933718"
+    }
+  ],
+  "source": "jobmaster:jobmaster",
+  "status": "filtered",
+  "title": "סטודנט.ית – רכז.ת טכנולוגיות למידה ופיתוח ארגוני למכון ויצמן למדע",
+  "url": "https://www.jobmaster.co.il/jobs/checknum.asp?key=9933718",
+  "work_mode": null
+}
