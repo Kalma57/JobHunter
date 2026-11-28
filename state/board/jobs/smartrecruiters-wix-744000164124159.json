@@ -1,0 +1,70 @@
+{
+  "agent_id": "smartrecruiters:wix:744000164124159",
+  "alerts": [],
+  "apply_instructions": null,
+  "apply_url": "https://jobs.smartrecruiters.com/Wix2/744000164124159-social-media-specialist-ai-tech-brand-student?oga=true",
+  "company": "Wix",
+  "deadline": null,
+  "degree_time": null,
+  "description": "סטודנט/ית בצוות יחסי הציבור של Wix: יצירת סרטונים קצרים ופוסטים לרשתות חברתיות (X, LinkedIn) על AI, טכנולוגיה ומותג, ומעקב אחרי מדדי מעורבות.",
+  "education": "סטודנט/ית פעיל/ה בתקשורת או בתחום טכני (למשל תעשייה וניהול), רצוי שנה ב'",
+  "employment": null,
+  "experience": null,
+  "first_seen": "2026-11-28",
+  "history": [
+    {
+      "at": "2026-11-28T07:00:00Z",
+      "note": "נמצא ע\"י smartrecruiters:wix",
+      "status": "filtered"
+    }
+  ],
+  "inferred": {},
+  "is_job": true,
+  "level": [
+    "סטודנט"
+  ],
+  "location": "Tel Aviv, Israel",
+  "not_stated": [
+    "work_mode",
+    "scope",
+    "employment",
+    "salary",
+    "experience",
+    "degree_time",
+    "deadline",
+    "apply_instructions"
+  ],
+  "notes": "",
+  "posted_at": "2026-11-28",
+  "prefs_down": [],
+  "prefs_up": [
+    "AI"
+  ],
+  "relevance": {
+    "pass": false,
+    "reason": "תחום אחר — תפקיד שיווק / רשתות חברתיות ביחסי ציבור, לא פיתוח תוכנה"
+  },
+  "requirements_adv": [],
+  "requirements_must": [
+    "סטודנט/ית בתקשורת או בתחום טכני, רצוי שנה ב'",
+    "עניין ב-AI, טכנולוגיה ומיתוג, וניסיון מעשי בכלי AI ועריכת וידאו",
+    "יכולת מוכחת ליצור תוכן וידאו קצר",
+    "היכרות עם רשתות חברתיות (X, LinkedIn)",
+    "כישורי כתיבה חזקים",
+    "יוזמה ויחסי אנוש מצוינים"
+  ],
+  "salary": null,
+  "scope": null,
+  "sightings": [
+    {
+      "date": "2026-11-28",
+      "source": "smartrecruiters:wix",
+      "url": "https://jobs.smartrecruiters.com/Wix2/744000164124159-social-media-specialist-ai-tech-brand-student"
+    }
+  ],
+  "source": "smartrecruiters:wix",
+  "status": "filtered",
+  "title": "Social Media Specialist AI, Tech & Brand – Student",
+  "url": "https://jobs.smartrecruiters.com/Wix2/744000164124159-social-media-specialist-ai-tech-brand-student",
+  "work_mode": null
+}
